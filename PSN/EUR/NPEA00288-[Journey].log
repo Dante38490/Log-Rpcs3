@@ -1,29 +1,22 @@
 HLE: ! path: /dev_hdd0/game/
 HLE: W No pause.bin found, Auto Pause will not work.
 HLE: W No pause.bin found, Auto Pause will not work.
-LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00288/USRDIR/BOOT.BIN'...
+LDR: ! Loading 'd:/emulateurs/rpcs3/dev_hdd0/game/npea00288/USRDIR/BOOT.BIN'...
 LDR: !  
 LDR: ! Mount info:
-LDR: ! /dev_hdd0/ -> ./dev_hdd0/
-LDR: ! /dev_hdd1/ -> ./dev_hdd1/
-LDR: ! /dev_flash/ -> ./dev_flash/
-LDR: ! /dev_usb000/ -> ./dev_usb000/
-LDR: ! /dev_usb/ -> ./dev_usb000/
-LDR: ! /app_home/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00288/
-LDR: ! /dev_bdvd/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00288//../
-LDR: ! /host_root/ -> 
-LDR: ! /app_home/PS3_GAME/USRDIR/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00288//USRDIR/
-LDR: ! /dev_flash2/ -> ./dev_flash2/
-LDR: ! /app_home/Game/PS3_GAME/USRDIR/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00288//USRDIR/
-LDR: ! //dev_hdd0/ -> ./dev_hdd0/
-LDR: ! / -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00288//USRDIR/
-LDR: ! /app_home//dev_bdvd/PS3_GAME/USRDIR/data/gos/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00288//USRDIR/
+LDR: ! dev_usb000/ -> d:/emulateurs/rpcs3/dev_usb000/
+LDR: ! dev_flash/ -> d:/emulateurs/rpcs3/dev_flash/
+LDR: ! host_root/ -> 
+LDR: ! dev_hdd0/ -> d:/emulateurs/rpcs3/dev_hdd0/
+LDR: ! dev_hdd1/ -> d:/emulateurs/rpcs3/dev_hdd1/
+LDR: ! dev_bdvd/ -> d:/emulateurs/rpcs3/dev_hdd0/game/npea00288/../
+LDR: ! dev_usb/ -> d:/emulateurs/rpcs3/dev_usb000/
 LDR: !  
 LDR: ! Title: Journey
 LDR: ! Serial: NPEA00288
 LDR: !  
-LDR: W m_ehdr.e_type = 0x2
-MEM: ! Initializing memory: base_addr = 0xc70d440000
+LDR: E loader::init() failed: Broken file
+MEM: ! Initializing memory: base_addr = 0x5315080000
 MEM: ! Memory initialized.
 LDR: W Unknown module 'HotLoadEUGold'
 LDR: ! Imported function 'Unknown func id: 0x0435dfc7' in 'HotLoadEUGold' module  (HLE)
@@ -550,7 +543,7 @@ LDR: ! Imported function 'sys_lwmutex_create' in 'sysPrxForUser' module  (HLE)
 LDR: ! Imported function 'sys_ppu_thread_get_id' in 'sysPrxForUser' module  (HLE)
 LDR: ! Imported function 'sys_prx_register_library' in 'sysPrxForUser' module  (HLE)
 LDR: ! Imported function '_sys_spu_printf_initialize' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'Unknown func id: 0x4f7172c9' in 'sysPrxForUser' module  (HLE)
+LDR: ! Imported function 'sys_process_is_stack' in 'sysPrxForUser' module  (HLE)
 LDR: ! Imported function 'sys_game_process_exitspawn2' in 'sysPrxForUser' module  (HLE)
 LDR: ! Imported function 'sys_initialize_tls' in 'sysPrxForUser' module  (HLE)
 LDR: ! Imported function 'sys_prx_stop_module' in 'sysPrxForUser' module  (HLE)
@@ -570,88 +563,88 @@ LDR: ! Imported function 'sys_lwcond_signal_all' in 'sysPrxForUser' module  (HLE
 LDR: ! Imported function 'sys_lwcond_signal' in 'sysPrxForUser' module  (HLE)
 LDR: ! Imported function 'sys_prx_unload_module' in 'sysPrxForUser' module  (HLE)
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9e448, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 3
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 3
 HLE: W {PPU[1] Thread (main_thread)[0x003443d0]} sys_memory warning: sys_memory_get_user_memory_size(mem_info_addr=0xd000fc04)
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9e090, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 4
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 4
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9d3d8, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 5
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 5
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9d400, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 6
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 6
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9d428, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 7
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 7
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9d310, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 8
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 8
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9d338, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 9
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 9
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9d360, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 10
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 10
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9d388, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 11
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 11
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9d3b0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 12
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 12
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9e598, attr_addr=0x9a65f8)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lgcmtx] (attribute=0x12): sq_id = 13
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lgcmtx] (attribute=0x12): sq_id = 13
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xe9e558, attr_addr=0x9a6608)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lgcmtx] (attribute=0x22): sq_id = 14
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lgcmtx] (attribute=0x22): sq_id = 14
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100020, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 15
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 15
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301000a0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 16
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 16
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100130, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 17
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 17
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100190, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 18
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 18
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301001d0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 19
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 19
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100210, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 20
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 20
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301002d0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 21
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 21
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100300, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 22
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 22
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100330, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 23
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 23
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100360, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 24
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 24
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100390, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 25
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 25
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301003c0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 26
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 26
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100450, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 27
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 27
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301004a0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 28
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 28
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301004f0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 29
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 29
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100540, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 30
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 30
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100590, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 31
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 31
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301005e0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 32
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 32
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100630, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 33
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 33
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100680, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 34
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 34
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301006d0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 35
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 35
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100720, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 36
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 36
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100770, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 37
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 37
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301007c0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 38
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 38
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xddc0c0, attr_addr=0xd000fb40)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 39
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 39
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30235110, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 40
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 40
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30235160, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 41
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 41
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x302351b0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 42
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 42
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30235920, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 43
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 43
 HLE: E {PPU[1] Thread (main_thread)[0x00eed070]} sys_prx TODO: sys_prx_register_library(lib_addr=0x50b580)
 HLE: E {PPU[1] Thread (main_thread)[0x00eed070]} sys_prx TODO: sys_prx_register_library(lib_addr=0x50b59c)
 HLE: E {PPU[1] Thread (main_thread)[0x00eed070]} sys_prx TODO: sys_prx_register_library(lib_addr=0x50b5b8)
@@ -684,67 +677,67 @@ HLE: W {PPU[1] Thread (main_thread)[0x00ecd010]} cellSysmodule warning: cellSysm
 HLE: W {PPU[1] Thread (main_thread)[0x00ecd010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_FS)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecd010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_GAME)
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d690, attr_addr=0xd000f780)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 44
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 44
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d690): id = 45
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d700, attr_addr=0xd000f700)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 46
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 46
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d700): id = 47
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d760, attr_addr=0xd000f800)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 48
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 48
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d760): id = 49
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d7a0, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 50
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 50
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d7a0): id = 51
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d7e0, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 52
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 52
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d7e0): id = 53
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d820, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 54
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 54
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d820): id = 55
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d860, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 56
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 56
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d860): id = 57
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d8a0, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 58
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 58
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d8a0): id = 59
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d8e0, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 60
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 60
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d8e0): id = 61
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d920, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 62
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 62
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d920): id = 63
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d990, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 64
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 64
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d990): id = 65
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023d9d0, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 66
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 66
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023d9d0): id = 67
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023da10, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 68
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 68
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023da10): id = 69
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023da50, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 70
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 70
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023da50): id = 71
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023da90, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 72
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 72
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023da90): id = 73
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023db00, attr_addr=0xd000f710)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 74
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 74
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023db00): id = 75
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023db70, attr_addr=0xd000f710)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 76
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 76
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023db70): id = 77
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023dbb0, attr_addr=0xd000f770)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 78
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 78
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023dbb0): id = 79
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3023e6a0, attr_addr=0xd000f5f0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 80
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 80
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x3023e6a0): id = 81
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30240ef0, attr_addr=0xd000f670)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 82
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 82
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x30240ef0): id = 83
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30240f30, attr_addr=0xd000f560)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 84
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 84
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x30240f30): id = 85
 HLE: E {PPU[1] Thread (main_thread)[0x00ed1034]} cellNetCtl TODO: cellNetCtlGetInfo(code=0x10, info_addr=0xd000f5a0)
 HLE: E {PPU[1] Thread (main_thread)[0x00eed070]} sys_prx TODO: sys_prx_register_library(lib_addr=0x50b580)
@@ -756,25 +749,25 @@ HLE: W {PPU[1] Thread (main_thread)[0x00ecf088]} cellSpurs warning: _cellSpursAt
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf004]} cellSpurs warning: cellSpursAttributeEnableSpuPrintfIfAvailable(attr_addr=0xd000f628)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf094]} cellSpurs warning: cellSpursAttributeEnableSystemWorkload(attr_addr=0xd000f628, priority_addr=0xd000f610, maxSpu=6, isPreemptible_addr=0xd000f618)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf0d0]} cellSpurs warning: cellSpursInitializeWithAttribute(spurs_addr=0x37a00400, attr_addr=0xd000f628)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 86
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 87
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 88
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 89
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 90
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 91
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 92
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 93
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 94
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 95
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 96
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 97
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 98
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 99
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 100
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuWkl] (protocol=0x2): id = 101
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore : *** semaphore created [_spuPrv] (protocol=0x2): id = 102
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 86
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 87
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 88
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 89
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 90
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 91
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 92
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 93
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 94
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 95
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 96
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 97
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 98
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 99
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 100
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 101
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_semaphore: *** semaphore created [_spuPrv] (protocol=0x2): id = 102
 HLE: E {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu TODO: Unsupported SPU Thread Group type (0x20)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu : *** SPU Thread Group created [CellSpursKernelGroup] (num=6, prio=249, type=0x20, container=0): id=103
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu: *** SPU Thread Group created [CellSpursKernelGroup] (num=6, prio=249, type=0x20, container=0): id=103
 HLE: E {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu TODO: Unsupported SPU Thread options (0x2)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu warning: *** New SPU Thread [CellSpursKernel0] (ep=0x0, opt=0x2, a1=0x0, a2=0x0, a3=0x0, a4=0x0): id=104, spu_offset=0x30056000
 HLE: E {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu TODO: Unsupported SPU Thread options (0x2)
@@ -787,20 +780,20 @@ HLE: E {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu TODO: Unsupported SPU T
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu warning: *** New SPU Thread [CellSpursKernel4] (ep=0x0, opt=0x2, a1=0x0, a2=0x0, a3=0x0, a4=0x0): id=108, spu_offset=0x37b80000
 HLE: E {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu TODO: Unsupported SPU Thread options (0x2)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu warning: *** New SPU Thread [CellSpursKernel5] (ep=0x0, opt=0x2, a1=0x0, a2=0x0, a3=0x0, a4=0x0): id=109, spu_offset=0x37bc0000
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_lwmutex : *** lwmutex created [_spuPrv] (attribute=0x22): sq_id = 110
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_lwmutex: *** lwmutex created [_spuPrv] (attribute=0x22): sq_id = 110
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_lwcond warning: *** lwcond created [_spuPrv] (lwmutex_addr=0x37a011b0): id = 111
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_event warning: *** event_queue created [_spuPrv] (protocol=0x1, type=0x1, key=0x0, size=0x2a): id = 112
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu warning: sys_spu_thread_group_connect_event_all_threads(id=103, eq_id=112, req=0xffffffffffff0000, spup_addr=0x37a004c9)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu warning: *** spup -> 16
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_event warning: *** sys_event_port created: id = 113
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_event warning: sys_event_port_connect_local(eport_id=113, equeue_id=112)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_ppu_thread : *** New PPU Thread [SpursHdlr0] (joinable, entry=0x0): id = 114
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_ppu_thread: *** New PPU Thread [SpursHdlr0] (joinable, entry=0x0): id = 114
 HLE: W {PPU[114] Thread (SpursHdlr0)[0x00000000]} sys_spu warning: sys_spu_thread_group_start(id=103)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_ppu_thread : *** New PPU Thread [SpursHdlr1] (joinable, entry=0x0): id = 115
+HLE: ! {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_ppu_thread: *** New PPU Thread [SpursHdlr1] (joinable, entry=0x0): id = 115
 HLE: E {PPU[1] Thread (main_thread)[0x00ecf0d0]} sys_spu TODO: sys_spu_thread_group_connect_event(id=103, eq=112, et=0x2)
 HLE: W {PPU[1] Thread (main_thread)[0x002aa56c]} sys_event warning: sys_event_queue_create(equeue_id_addr=0xe8e610, attr_addr=0xd000f540, event_queue_key=0x0, size=8)
 HLE: W {PPU[1] Thread (main_thread)[0x002aa56c]} sys_event warning: *** event_queue created [] (protocol=0x2, type=0x1, key=0x0, size=0x8): id = 116
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed028]} sys_ppu_thread : *** New PPU Thread [spu_printf_handler] (joinable, entry=0x70e4e0): id = 117
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed028]} sys_ppu_thread: *** New PPU Thread [spu_printf_handler] (joinable, entry=0x70e4e0): id = 117
 HLE: W {PPU[1] Thread (main_thread)[0x002aa950]} sys_event warning: sys_event_port_create(eport_id_addr=0xe8e614, port_type=0x1, name=0xd1ed1ed1)
 HLE: W {PPU[1] Thread (main_thread)[0x002aa950]} sys_event warning: *** sys_event_port created: id = 118
 HLE: W {PPU[1] Thread (main_thread)[0x002aa964]} sys_event warning: sys_event_port_connect_local(eport_id=118, equeue_id=116)
@@ -809,33 +802,33 @@ HLE: W {PPU[1] Thread (main_thread)[0x00ecf190]} sys_spu warning: sys_spu_thread
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf190]} sys_spu warning: *** spup -> 1
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf154]} cellSpurs warning: cellSpursAddWorkload(spurs_addr=0x37a00400, wid_addr=0xe8e600, pm_addr=0x674080, size=0xa00, data=0xe8e680, priorityTable_addr=0x9a3ec4, minContention=0x1, maxContention=0x6)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf178]} cellSpurs warning: _cellSpursWorkloadFlagReceiver(spurs_addr=0x37a00400, wid=0, is_set=1)
-HLE: W {PPU[114] Thread (SpursHdlr0)[0x00000000]} sys_spu warning: sys_spu_thread_group_join(id=103, cause_addr=0x0, status_addr=0x0)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf1a8]} cellSpurs warning: cellSpursReadyCountStore(spurs_addr=0x37a00400, wid=0, value=0x6)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf160]} cellSpurs warning: cellSpursWakeUp(spurs_addr=0x37a00400)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecd010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_NET)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecd010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_NP2)
 HLE: W {PPU[1] Thread (main_thread)[0x006df010]} sys_net warning: sys_net_initialize_network_ex(param_addr=0xd000f590)
+HLE: W {PPU[114] Thread (SpursHdlr0)[0x00000000]} sys_spu warning: sys_spu_thread_group_join(id=103, cause_addr=0x0, status_addr=0x0)
 HLE: E {PPU[1] Thread (main_thread)[0x00edd070]} TODO: sceNp2Init
 HLE: W {PPU[1] Thread (main_thread)[0x006d901c]} cellGame warning: cellGameBootCheck(type_addr=0xd000f4f0, attributes_addr=0xd000f4f4, size_addr=0xddc518, dirName_addr=0xd000f4f8)
-SPU: E {SPU[104] Thread (CellSpursKernel0)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
-SPU: E {SPU[106] Thread (CellSpursKernel2)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
-SPU: E {SPU[108] Thread (CellSpursKernel4)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
-SPU: E {SPU[107] Thread (CellSpursKernel3)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
-SPU: E {SPU[105] Thread (CellSpursKernel1)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
-SPU: E {SPU[109] Thread (CellSpursKernel5)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
 HLE: W {PPU[1] Thread (main_thread)[0x006d9004]} cellGame warning: cellGameContentPermit(contentInfoPath_addr=0xd000f518, usrdirPath_addr=0xddc498)
 HLE: W {PPU[1] Thread (main_thread)[0x00ed1028]} cellNetCtl warning: cellNetCtlInit()
 TTY: [37;41mTTY: sceNpManagerGetStatus() failed: TTY: [0mTTY: [37;41mTTY: 0xTTY: [0mTTY: [37;41mTTY: 8002aa01TTY: [0mTTY: [37;41mTTY: 
 TTY: [0mHLE: E {PPU[1] Thread (main_thread)[0x00edb0f4]} sceNp TODO: sceNpManagerRegisterCallback
+SPU: E {SPU[107] Thread (CellSpursKernel3)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
+SPU: E {SPU[108] Thread (CellSpursKernel4)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
+SPU: E {SPU[105] Thread (CellSpursKernel1)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
+SPU: E {SPU[106] Thread (CellSpursKernel2)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
+SPU: E {SPU[104] Thread (CellSpursKernel0)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
+SPU: E {SPU[109] Thread (CellSpursKernel5)[0x00000a00]} SPURecompilerCore::Compile(ls_addr=0xa00): branch to 0x0 opcode
 HLE: W {PPU[1] Thread (main_thread)[0x00ecf19c]} cellSpurs warning: cellSpursGetWorkloadFlag(spurs_addr=0x37a00400, flag_addr=0xd000f560)
 HLE: W {PPU[1] Thread (main_thread)[0x00ee7010]} cellGcmSys warning: cellGcmGetReportDataAddressLocation(index=0, location=1)
 TTY: [37;41mTTY: Booting game
 TTY: [0mTTY:  + create reliability system
 HLE: W {PPU[1] Thread (main_thread)[0x006d7010]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_ENTER_BUTTON_ASSIGN
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x395b4af0, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 119
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 119
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x39fb4b00, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 120
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 120
 HLE: W {PPU[1] Thread (main_thread)[0x00ee7010]} cellGcmSys warning: cellGcmGetReportDataAddressLocation(index=512, location=1)
 HLE: W {PPU[1] Thread (main_thread)[0x00ecd010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_HTTP)
 HLE: W {PPU[1] Thread (main_thread)[0x006df010]} sys_net warning: sys_net_initialize_network_ex(param_addr=0xd000f590)
@@ -845,65 +838,66 @@ HLE: W {PPU[1] Thread (main_thread)[0x006d7010]} cellSysutil warning: cellSysuti
 HLE: W {PPU[1] Thread (main_thread)[0x006d7010]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
 HLE: W {PPU[1] Thread (main_thread)[0x006d7010]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x302c7240, attr_addr=0xd000f3c0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 121
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 121
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x302c7240): id = 122
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x302c7270, attr_addr=0xd000f440)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 123
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 123
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x302c7270): id = 124
 HLE: E {PPU[1] Thread (main_thread)[0x00ed1034]} cellNetCtl TODO: cellNetCtlGetInfo(code=0x10, info_addr=0xd000f370)
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x39523210, attr_addr=0x5489b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 125
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 125
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x302c9e60, attr_addr=0xd000f340)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 126
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 126
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x302c9e60): id = 127
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x302c9e90, attr_addr=0xd000f3c0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 128
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 128
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x302c9e90): id = 129
 HLE: E {PPU[1] Thread (main_thread)[0x00ed1034]} cellNetCtl TODO: cellNetCtlGetInfo(code=0x10, info_addr=0xd000f2f0)
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x34b20b00, attr_addr=0xd000f640)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 130
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 130
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x34b20b28, attr_addr=0xd000f640)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 131
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed028]} sys_ppu_thread : *** New PPU Thread [Resource Streamer] (joinable, entry=0x7075c8): id = 132
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 131
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed028]} sys_ppu_thread: *** New PPU Thread [Resource Streamer] (joinable, entry=0x7075c8): id = 132
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x302cee50, attr_addr=0xd000f2e0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 133
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 133
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x302cee50): id = 134
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x302cee90, attr_addr=0xd000f360)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 135
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 135
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x302cee90): id = 136
 HLE: E {PPU[1] Thread (main_thread)[0x00ed1034]} cellNetCtl TODO: cellNetCtlGetInfo(code=0x10, info_addr=0xd000f290)
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x302d05a0, attr_addr=0xd000f270)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 137
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 137
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x302d05a0): id = 138
 HLE: W {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x302d05e0, attr_addr=0xd000f2f0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex : *** lwmutex created [] (attribute=0x22): sq_id = 139
+HLE: ! {PPU[1] Thread (main_thread)[0x00eed058]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 139
 HLE: W {PPU[1] Thread (main_thread)[0x00eed124]} sys_lwcond warning: *** lwcond created [] (lwmutex_addr=0x302d05e0): id = 140
 HLE: E {PPU[1] Thread (main_thread)[0x00ed1034]} cellNetCtl TODO: cellNetCtlGetInfo(code=0x10, info_addr=0xd000f220)
 HLE: W {PPU[1] Thread (main_thread)[0x00edb0ac]} sceNp warning: sceNpDrmIsAvailable(k_licensee_addr=0xd000f2f0, drm_path_addr=0xd000f390('/dev_hdd0/game/NPEA00288/USRDIR/Data/Prx/HotLoadEUGold.sprx'))
 HLE: W {PPU[1] Thread (main_thread)[0x00edb0ac]} sceNp warning: npDrmIsAvailable: Found DRM license file at /dev_hdd0/game/NPEA00288/USRDIR/Data/Prx/HotLoadEUGold.sprx
 HLE: W {PPU[1] Thread (main_thread)[0x00edb0ac]} sceNp warning: npDrmIsAvailable: Using k_licensee 0x0b0090227200902272009022720090227
-LDR: E {PPU[1] Thread (main_thread)[0x00edb0ac]} EDAT: D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00288\USRDIR\Data\Prx\HotLoadEUGold.sprx has invalid NPD header or already decrypted.
+LDR: E {PPU[1] Thread (main_thread)[0x00edb0ac]} EDAT: d:/emulateurs/rpcs3/dev_hdd0/game/npea00288/usrdir/data/prx/hotloadeugold.sprx has invalid NPD header or already decrypted.
 HLE: E {PPU[1] Thread (main_thread)[0x00eed034]} sys_prx TODO: sys_prx_load_module(path="/dev_hdd0/game/NPEA00288/USRDIR/Data/Prx/HotLoadEUGold.sprx", flags=0x0, pOpt=0x0)
 LDR: E {PPU[1] Thread (main_thread)[0x00eed034]} SELF: Failed to decrypt metadata info!
 LDR: E {PPU[1] Thread (main_thread)[0x00eed034]} SELF: Failed to load SELF file metadata!
 HLE: W {PPU[1] Thread (main_thread)[0x00edb0ac]} sceNp warning: sceNpDrmIsAvailable(k_licensee_addr=0xd000f2f0, drm_path_addr=0xd000f390('/dev_hdd0/game/NPEA00288/USRDIR/Data/Prx/elfEUGold.sprx'))
 HLE: W {PPU[1] Thread (main_thread)[0x00edb0ac]} sceNp warning: npDrmIsAvailable: Found DRM license file at /dev_hdd0/game/NPEA00288/USRDIR/Data/Prx/elfEUGold.sprx
 HLE: W {PPU[1] Thread (main_thread)[0x00edb0ac]} sceNp warning: npDrmIsAvailable: Using k_licensee 0x0b0090227200902272009022720090227
-LDR: E {PPU[1] Thread (main_thread)[0x00edb0ac]} EDAT: D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00288\USRDIR\Data\Prx\elfEUGold.sprx has invalid NPD header or already decrypted.
+LDR: E {PPU[1] Thread (main_thread)[0x00edb0ac]} EDAT: d:/emulateurs/rpcs3/dev_hdd0/game/npea00288/usrdir/data/prx/elfeugold.sprx has invalid NPD header or already decrypted.
 HLE: E {PPU[1] Thread (main_thread)[0x00eed034]} sys_prx TODO: sys_prx_load_module(path="/dev_hdd0/game/NPEA00288/USRDIR/Data/Prx/elfEUGold.sprx", flags=0x0, pOpt=0x0)
 LDR: E {PPU[1] Thread (main_thread)[0x00eed034]} SELF: Failed to decrypt metadata info!
 LDR: E {PPU[1] Thread (main_thread)[0x00eed034]} SELF: Failed to load SELF file metadata!
+HLE: E {PPU[1] Thread (main_thread)[0x00eed00c]} sys_lwmutex error: sys_lwmutex_t::unlock(0): wrong recursive value fixed (0)
 G: E {PPU[1] Thread (main_thread)[0x0020a7d0]} Exception: Access violation: addr = 0xcffed860 (is_alive=1, last_syscall=0x0 (Unknown func id: 0x00000000))
-RSX: W {RSXThread} RSX thread aborted
 RSX: W {VBlank thread} VBlank thread aborted
-HLE: W {PPU[114] Thread (SpursHdlr0)[0x00000000]} sys_spu warning: sys_spu_thread_group_join(id=103) aborted
-HLE: W {SPU[104] Thread (CellSpursKernel0)[0x00000000]} cellSpurs warning: Spurs Kernel aborted
-HLE: W {SPU[109] Thread (CellSpursKernel5)[0x00000000]} cellSpurs warning: Spurs Kernel aborted
-HLE: W {SPU[107] Thread (CellSpursKernel3)[0x00000000]} cellSpurs warning: Spurs Kernel aborted
 HLE: W {SPU[108] Thread (CellSpursKernel4)[0x00000000]} cellSpurs warning: Spurs Kernel aborted
-HLE: W {PPU[117] Thread (spu_printf_handler)[0x002aad50]} sys_event warning: sys_event_queue_receive(equeue=116) aborted
-HLE: W {SPU[106] Thread (CellSpursKernel2)[0x00000000]} cellSpurs warning: Spurs Kernel aborted
+RSX: W {RSXThread} RSX thread aborted
 HLE: W {SPU[105] Thread (CellSpursKernel1)[0x00000000]} cellSpurs warning: Spurs Kernel aborted
+HLE: W {SPU[107] Thread (CellSpursKernel3)[0x00000000]} cellSpurs warning: Spurs Kernel aborted
+HLE: W {PPU[117] Thread (spu_printf_handler)[0x002aad50]} sys_event warning: sys_event_queue_receive(equeue=116) aborted
+HLE: W {SPU[104] Thread (CellSpursKernel0)[0x00000000]} cellSpurs warning: Spurs Kernel aborted
+HLE: W {SPU[106] Thread (CellSpursKernel2)[0x00000000]} cellSpurs warning: Spurs Kernel aborted
+HLE: W {SPU[109] Thread (CellSpursKernel5)[0x00000000]} cellSpurs warning: Spurs Kernel aborted
+HLE: W {PPU[114] Thread (SpursHdlr0)[0x00000000]} sys_spu warning: sys_spu_thread_group_join(id=103) aborted
 HLE: W {PPU[114] Thread (SpursHdlr0)[0x00000000]} cellSpurs warning: SPURS Handler Thread 0 aborted
 PPU: ! {PPU Recompilation Engine} PPU LLVM Recompilation thread exiting.
 HLE: ! All threads stopped...
