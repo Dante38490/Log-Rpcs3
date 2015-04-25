@@ -1,320 +1,420 @@
 HLE: ! path: /dev_hdd0/game/
-HLE: W No pause.bin found, Auto Pause will not work.
-HLE: W No pause.bin found, Auto Pause will not work.
-LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00394/USRDIR/BOOT.BIN'...
+LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00394/USRDIR/BOOT.BIN'...
+G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00394/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: !  
 LDR: ! Mount info:
-LDR: ! /dev_hdd0/ -> ./dev_hdd0/
-LDR: ! /dev_hdd1/ -> ./dev_hdd1/
-LDR: ! /dev_flash/ -> ./dev_flash/
-LDR: ! /dev_usb000/ -> ./dev_usb000/
-LDR: ! /dev_usb/ -> ./dev_usb000/
-LDR: ! /app_home/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00394/
-LDR: ! /dev_bdvd/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00394//../
+LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
+LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
 LDR: ! /host_root/ -> 
-LDR: ! /app_home/PS3_GAME/USRDIR/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00394//USRDIR/
-LDR: ! /dev_flash2/ -> ./dev_flash2/
-LDR: ! /app_home/Game/PS3_GAME/USRDIR/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00394//USRDIR/
-LDR: ! //dev_hdd0/ -> ./dev_hdd0/
-LDR: ! / -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00394//USRDIR/
-LDR: ! /app_home//dev_bdvd/PS3_GAME/USRDIR/data/gos/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00394//USRDIR/
+LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
+LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
+LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: !  
 LDR: ! Title: rain
 LDR: ! Serial: NPEA00394
-LDR: !  
-LDR: W m_ehdr.e_type = 0x2
-MEM: ! Initializing memory: base_addr = 0x192c9e0000
+LDR: ! Elf path: /dev_hdd0/game/NPEA00394/USRDIR/BOOT.BIN
+LDR: ! loader::init() failed: Broken file
+MEM: ! Initializing memory: g_base_addr = 0x33f7e50000, g_priv_addr = 0x34f7e50000
 MEM: ! Memory initialized.
 LDR: W Unknown module 'PRXManager'
-LDR: ! Imported function 'Unknown func id: 0x2889d84e' in 'PRXManager' module  (HLE)
-LDR: ! Imported function 'cellPadInit' in 'sys_io' module  (HLE)
-LDR: ! Imported function 'cellPadEnd' in 'sys_io' module  (HLE)
-LDR: ! Imported function 'cellPadSetPortSetting' in 'sys_io' module  (HLE)
-LDR: ! Imported function 'cellPadGetData' in 'sys_io' module  (HLE)
-LDR: ! Imported function 'cellPadGetInfo2' in 'sys_io' module  (HLE)
-LDR: ! Imported function 'cellPadSetActDirect' in 'sys_io' module  (HLE)
-LDR: ! Imported function 'cellFsReadWithOffset' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsRmdir' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsClose' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsOpendir' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsRead' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsReaddir' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsStat' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsUnlink' in 'sys_fs' module  (HLE)
-LDR: W Unimplemented function 'cellFsWriteWithOffset' in 'sys_fs' module (HLE)
-LDR: ! Imported function 'cellFsFsync' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsSdataOpen' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsMkdir' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsWrite' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsFstat' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsRename' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsClosedir' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'sys_net_initialize_network_ex' in 'sys_net' module  (HLE)
-LDR: ! Imported function 'connect' in 'sys_net' module  (HLE)
-LDR: ! Imported function 'socketclose' in 'sys_net' module  (HLE)
-LDR: W Unimplemented function 'gethostbyname' in 'sys_net' module (HLE)
-LDR: ! Imported function 'setsockopt' in 'sys_net' module  (HLE)
-LDR: ! Imported function 'socket' in 'sys_net' module  (HLE)
-LDR: ! Imported function 'sys_net_finalize_network' in 'sys_net' module  (HLE)
-LDR: ! Imported function 'inet_addr' in 'sys_net' module  (HLE)
-LDR: ! Imported function 'send' in 'sys_net' module  (HLE)
-LDR: W Unimplemented function 'gethostbyaddr' in 'sys_net' module (HLE)
-LDR: ! Imported function 'recv' in 'sys_net' module  (HLE)
-LDR: ! Imported function 'cellSysmoduleUnloadModule' in 'cellSysmodule' module  (HLE)
-LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module  (HLE)
-LDR: ! Imported function 'cellSysmoduleIsLoaded' in 'cellSysmodule' module  (HLE)
-LDR: ! Imported function 'cellSpursQueueDetachLv2EventQueue' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursAttributeSetNamePrefix' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function '_cellSpursQueueInitialize' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursAttributeEnableSpuPrintfIfAvailable' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function '_cellSpursTasksetAttributeInitialize' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursDestroyTaskset2' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursEventFlagDetachLv2EventQueue' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursCreateJobChainWithAttribute' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursInitializeWithAttribute2' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function '_cellSpursJobChainAttributeInitialize' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursEventFlagWait' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursCreateTaskset2' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursDetachLv2EventQueue' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function '_cellSpursEventFlagInitialize' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursTasksetAttributeSetName' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursJobGuardInitialize' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursShutdownJobChain' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursEventFlagAttachLv2EventQueue' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursQueuePopBody' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursQueuePushBody' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function '_cellSpursAttributeInitialize' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursJoinTaskset' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursJobChainAttributeSetName' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursShutdownTaskset' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursJoinTask2' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursJoinJobChain' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursAttributeSetSpuThreadGroupType' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursInitializeWithAttribute' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursInitialize' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursAttachLv2EventQueue' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursCreateTask' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursCreateTasksetWithAttribute' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function '_cellSpursTasksetAttribute2Initialize' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursFinalize' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursJobGuardNotify' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursCreateTask2WithBinInfo' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursQueueAttachLv2EventQueue' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursRunJobChain' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursJobQueueAttributeInitialize' in 'cellSpursJq' module  (HLE)
-LDR: ! Imported function 'cellSpursShutdownJobQueue' in 'cellSpursJq' module  (HLE)
-LDR: ! Imported function 'cellSpursJoinJobQueue' in 'cellSpursJq' module  (HLE)
-LDR: ! Imported function '_cellSpursCreateJobQueueWithJobDescriptorPool' in 'cellSpursJq' module  (HLE)
-LDR: ! Imported function 'cellSpursJobQueuePort2Destroy' in 'cellSpursJq' module  (HLE)
-LDR: ! Imported function 'cellSpursJobQueuePort2Create' in 'cellSpursJq' module  (HLE)
-LDR: ! Imported function 'cellSysutilUnregisterCallback' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellVideoOutConfigure' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module  (HLE)
-LDR: W Unimplemented function 'cellSaveDataUserAutoSave' in 'cellSysutil' module (HLE)
-LDR: ! Imported function 'cellMsgDialogOpen2' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellAudioOutSetCopyControl' in 'cellSysutil' module  (HLE)
-LDR: W Unimplemented function 'cellSaveDataUserAutoLoad' in 'cellSysutil' module (HLE)
-LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellNetCtlTerm' in 'cellNetCtl' module  (HLE)
-LDR: ! Imported function 'cellNetCtlGetState' in 'cellNetCtl' module  (HLE)
-LDR: ! Imported function 'cellNetCtlInit' in 'cellNetCtl' module  (HLE)
-LDR: ! Imported function 'cellGcmGetTiledPitchSize' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmAddressToOffset' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmBindTile' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetFlipMode' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetLastFlipTime' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmBindZcull' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmMapMainMemory' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetDisplayBuffer' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmUnbindZcull' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetVBlankHandler' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetTileInfo' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmInitDefaultFifoMode' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmUnbindTile' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetConfiguration' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetLabelAddress' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmInitSystemMode' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetVBlankFrequency' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function '_cellGcmInitBody' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function '_cellGcmSetFlipCommand' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function '_cellGcmFunc15' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetDefaultCommandWordSize' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetDefaultSegmentWordSize' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetDefaultFifoSize' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetControlRegister' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function '_cellGcmSetFlipCommandWithWaitLabel' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'sceNpDrmVerifyUpgradeLicense' in 'sceNp' module  (HLE)
-LDR: ! Imported function 'sceNpTerm' in 'sceNp' module  (HLE)
-LDR: ! Imported function 'sceNpDrmIsAvailable' in 'sceNp' module  (HLE)
-LDR: ! Imported function 'sceNpInit' in 'sceNp' module  (HLE)
-LDR: ! Imported function 'sceNpDrmExecuteGamePurchase' in 'sceNp' module  (HLE)
-LDR: ! Imported function 'cellAudioCreateNotifyEventQueue' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioInit' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioSetNotifyEventQueue' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioGetPortTimestamp' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioPortClose' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioPortStop' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioGetPortConfig' in 'cellAudio' module  (HLE)
-LDR: W Unimplemented function 'cellAudioAdd6chData' in 'cellAudio' module (HLE)
-LDR: ! Imported function 'cellAudioPortStart' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioAdd2chData' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioQuit' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioPortOpen' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioAddData' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioGetPortBlockTag' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioRemoveNotifyEventQueue' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellOvisGetOverlayTableSize' in 'cellOvis' module  (HLE)
-LDR: ! Imported function 'cellOvisInitializeOverlayTable' in 'cellOvis' module  (HLE)
+LDR: E Unimplemented function '0x2889D84E' in 'PRXManager' module (0x95e3c0)
+LDR: ! Imported function 'cellPadInit' in 'sys_io' module (0x95e3f8)
+LDR: ! Imported function 'cellPadEnd' in 'sys_io' module (0x95e430)
+LDR: ! Imported function 'cellPadSetPortSetting' in 'sys_io' module (0x95e468)
+LDR: ! Imported function 'cellPadGetData' in 'sys_io' module (0x95e4a0)
+LDR: ! Imported function 'cellPadGetInfo2' in 'sys_io' module (0x95e4d8)
+LDR: ! Imported function 'cellPadSetActDirect' in 'sys_io' module (0x95e510)
+LDR: ! Imported function 'cellFsReadWithOffset' in 'sys_fs' module (0x95e548)
+LDR: ! Imported function 'cellFsRmdir' in 'sys_fs' module (0x95e580)
+LDR: ! Imported function 'cellFsClose' in 'sys_fs' module (0x95e5b8)
+LDR: ! Imported function 'cellFsOpendir' in 'sys_fs' module (0x95e5f0)
+LDR: ! Imported function 'cellFsRead' in 'sys_fs' module (0x95e628)
+LDR: ! Imported function 'cellFsReaddir' in 'sys_fs' module (0x95e660)
+LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module (0x95e698)
+LDR: ! Imported function 'cellFsStat' in 'sys_fs' module (0x95e6d0)
+LDR: ! Imported function 'cellFsUnlink' in 'sys_fs' module (0x95e708)
+LDR: ! Imported function 'cellFsWriteWithOffset' in 'sys_fs' module (0x95e740)
+LDR: ! Imported function 'cellFsFsync' in 'sys_fs' module (0x95e778)
+LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module (0x95e7b0)
+LDR: ! Imported function 'cellFsSdataOpen' in 'sys_fs' module (0x95e7e8)
+LDR: ! Imported function 'cellFsMkdir' in 'sys_fs' module (0x95e820)
+LDR: ! Imported function 'cellFsWrite' in 'sys_fs' module (0x95e858)
+LDR: ! Imported function 'cellFsFstat' in 'sys_fs' module (0x95e890)
+LDR: ! Imported function 'cellFsRename' in 'sys_fs' module (0x95e8c8)
+LDR: ! Imported function 'cellFsClosedir' in 'sys_fs' module (0x95e900)
+LDR: ! Imported function 'sys_net_initialize_network_ex' in 'sys_net' module (0x95e938)
+LDR: ! Imported function 'connect' in 'sys_net' module (0x95e970)
+LDR: ! Imported function 'socketclose' in 'sys_net' module (0x95e9a8)
+LDR: ! Imported function 'gethostbyname' in 'sys_net' module (0x95e9e0)
+LDR: ! Imported function 'setsockopt' in 'sys_net' module (0x95ea18)
+LDR: ! Imported function 'socket' in 'sys_net' module (0x95ea50)
+LDR: ! Imported function 'sys_net_finalize_network' in 'sys_net' module (0x95ea88)
+LDR: ! Imported function 'inet_addr' in 'sys_net' module (0x95eac0)
+LDR: ! Imported function 'send' in 'sys_net' module (0x95eaf8)
+LDR: ! Imported function 'gethostbyaddr' in 'sys_net' module (0x95eb30)
+LDR: ! Imported function 'recv' in 'sys_net' module (0x95eb68)
+LDR: ! Imported function 'cellSysmoduleUnloadModule' in 'cellSysmodule' module (0x95eba0)
+LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module (0x95ebd8)
+LDR: ! Imported function 'cellSysmoduleIsLoaded' in 'cellSysmodule' module (0x961808)
+LDR: ! Imported function 'cellSpursQueueDetachLv2EventQueue' in 'cellSpurs' module (0x95ec10)
+LDR: ! Imported function 'cellSpursAttributeSetNamePrefix' in 'cellSpurs' module (0x95ec48)
+LDR: ! Imported function '_cellSpursQueueInitialize' in 'cellSpurs' module (0x95ec80)
+LDR: ! Imported function 'cellSpursAttributeEnableSpuPrintfIfAvailable' in 'cellSpurs' module (0x95ecb8)
+LDR: ! Imported function '_cellSpursTasksetAttributeInitialize' in 'cellSpurs' module (0x95ecf0)
+LDR: ! Imported function 'cellSpursDestroyTaskset2' in 'cellSpurs' module (0x95ed28)
+LDR: ! Imported function 'cellSpursEventFlagDetachLv2EventQueue' in 'cellSpurs' module (0x95ed60)
+LDR: ! Imported function 'cellSpursCreateJobChainWithAttribute' in 'cellSpurs' module (0x95ed98)
+LDR: ! Imported function 'cellSpursInitializeWithAttribute2' in 'cellSpurs' module (0x95edd0)
+LDR: ! Imported function '_cellSpursJobChainAttributeInitialize' in 'cellSpurs' module (0x95ee08)
+LDR: ! Imported function 'cellSpursEventFlagWait' in 'cellSpurs' module (0x95ee40)
+LDR: ! Imported function 'cellSpursCreateTaskset2' in 'cellSpurs' module (0x95ee78)
+LDR: ! Imported function 'cellSpursDetachLv2EventQueue' in 'cellSpurs' module (0x95eeb0)
+LDR: ! Imported function '_cellSpursEventFlagInitialize' in 'cellSpurs' module (0x95eee8)
+LDR: ! Imported function 'cellSpursTasksetAttributeSetName' in 'cellSpurs' module (0x95ef20)
+LDR: ! Imported function 'cellSpursJobGuardInitialize' in 'cellSpurs' module (0x95ef58)
+LDR: ! Imported function 'cellSpursShutdownJobChain' in 'cellSpurs' module (0x95ef90)
+LDR: ! Imported function 'cellSpursEventFlagAttachLv2EventQueue' in 'cellSpurs' module (0x95efc8)
+LDR: ! Imported function 'cellSpursQueuePopBody' in 'cellSpurs' module (0x95f000)
+LDR: ! Imported function 'cellSpursQueuePushBody' in 'cellSpurs' module (0x95f038)
+LDR: ! Imported function '_cellSpursAttributeInitialize' in 'cellSpurs' module (0x95f070)
+LDR: ! Imported function 'cellSpursJoinTaskset' in 'cellSpurs' module (0x95f0a8)
+LDR: ! Imported function 'cellSpursJobChainAttributeSetName' in 'cellSpurs' module (0x95f0e0)
+LDR: ! Imported function 'cellSpursShutdownTaskset' in 'cellSpurs' module (0x95f118)
+LDR: ! Imported function 'cellSpursJoinTask2' in 'cellSpurs' module (0x95f150)
+LDR: ! Imported function 'cellSpursJoinJobChain' in 'cellSpurs' module (0x95f188)
+LDR: ! Imported function 'cellSpursAttributeSetSpuThreadGroupType' in 'cellSpurs' module (0x95f1c0)
+LDR: ! Imported function 'cellSpursInitializeWithAttribute' in 'cellSpurs' module (0x95f1f8)
+LDR: ! Imported function 'cellSpursInitialize' in 'cellSpurs' module (0x95f230)
+LDR: ! Imported function 'cellSpursAttachLv2EventQueue' in 'cellSpurs' module (0x95f268)
+LDR: ! Imported function 'cellSpursCreateTask' in 'cellSpurs' module (0x95f2a0)
+LDR: ! Imported function 'cellSpursCreateTasksetWithAttribute' in 'cellSpurs' module (0x95f2d8)
+LDR: ! Imported function '_cellSpursTasksetAttribute2Initialize' in 'cellSpurs' module (0x95f310)
+LDR: ! Imported function 'cellSpursFinalize' in 'cellSpurs' module (0x95f348)
+LDR: ! Imported function 'cellSpursJobGuardNotify' in 'cellSpurs' module (0x95f380)
+LDR: ! Imported function 'cellSpursCreateTask2WithBinInfo' in 'cellSpurs' module (0x95f3b8)
+LDR: ! Imported function 'cellSpursQueueAttachLv2EventQueue' in 'cellSpurs' module (0x95f3f0)
+LDR: ! Imported function 'cellSpursRunJobChain' in 'cellSpurs' module (0x95f428)
+LDR: ! Imported function 'cellSpursJobQueueAttributeInitialize' in 'cellSpursJq' module (0x95f460)
+LDR: ! Imported function 'cellSpursShutdownJobQueue' in 'cellSpursJq' module (0x95f498)
+LDR: ! Imported function 'cellSpursJoinJobQueue' in 'cellSpursJq' module (0x95f4d0)
+LDR: ! Imported function '_cellSpursCreateJobQueueWithJobDescriptorPool' in 'cellSpursJq' module (0x95f508)
+LDR: ! Imported function 'cellSpursJobQueuePort2Destroy' in 'cellSpursJq' module (0x95f540)
+LDR: ! Imported function 'cellSpursJobQueuePort2Create' in 'cellSpursJq' module (0x95f578)
+LDR: ! Imported function 'cellSysutilUnregisterCallback' in 'cellSysutil' module (0x95f5b0)
+LDR: ! Imported function 'cellVideoOutConfigure' in 'cellSysutil' module (0x95f5e8)
+LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module (0x95f620)
+LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module (0x95f658)
+LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module (0x95f690)
+LDR: ! Imported function 'cellSaveDataUserAutoSave' in 'cellSysutil' module (0x95f6c8)
+LDR: ! Imported function 'cellMsgDialogOpen2' in 'cellSysutil' module (0x95f700)
+LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module (0x95f738)
+LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module (0x95f770)
+LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module (0x95f7a8)
+LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module (0x95f7e0)
+LDR: ! Imported function 'cellAudioOutSetCopyControl' in 'cellSysutil' module (0x95f818)
+LDR: ! Imported function 'cellSaveDataUserAutoLoad' in 'cellSysutil' module (0x95f850)
+LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module (0x95f888)
+LDR: ! Imported function 'cellNetCtlTerm' in 'cellNetCtl' module (0x95f8c0)
+LDR: ! Imported function 'cellNetCtlGetState' in 'cellNetCtl' module (0x95f8f8)
+LDR: ! Imported function 'cellNetCtlInit' in 'cellNetCtl' module (0x95f930)
+LDR: ! Imported function 'cellGcmGetTiledPitchSize' in 'cellGcmSys' module (0x95f968)
+LDR: ! Imported function 'cellGcmAddressToOffset' in 'cellGcmSys' module (0x95f9a0)
+LDR: ! Imported function 'cellGcmBindTile' in 'cellGcmSys' module (0x95f9d8)
+LDR: ! Imported function 'cellGcmSetFlipMode' in 'cellGcmSys' module (0x95fa10)
+LDR: ! Imported function 'cellGcmGetLastFlipTime' in 'cellGcmSys' module (0x95fa48)
+LDR: ! Imported function 'cellGcmBindZcull' in 'cellGcmSys' module (0x95fa80)
+LDR: ! Imported function 'cellGcmMapMainMemory' in 'cellGcmSys' module (0x95fab8)
+LDR: ! Imported function 'cellGcmSetDisplayBuffer' in 'cellGcmSys' module (0x95faf0)
+LDR: ! Imported function 'cellGcmUnbindZcull' in 'cellGcmSys' module (0x95fb28)
+LDR: ! Imported function 'cellGcmSetVBlankHandler' in 'cellGcmSys' module (0x95fb60)
+LDR: ! Imported function 'cellGcmSetTileInfo' in 'cellGcmSys' module (0x95fb98)
+LDR: ! Imported function 'cellGcmInitDefaultFifoMode' in 'cellGcmSys' module (0x95fbd0)
+LDR: ! Imported function 'cellGcmUnbindTile' in 'cellGcmSys' module (0x95fc08)
+LDR: ! Imported function 'cellGcmGetConfiguration' in 'cellGcmSys' module (0x95fc40)
+LDR: ! Imported function 'cellGcmGetLabelAddress' in 'cellGcmSys' module (0x95fc78)
+LDR: ! Imported function 'cellGcmInitSystemMode' in 'cellGcmSys' module (0x95fcb0)
+LDR: ! Imported function 'cellGcmSetVBlankFrequency' in 'cellGcmSys' module (0x95fce8)
+LDR: ! Imported function '_cellGcmInitBody' in 'cellGcmSys' module (0x961840)
+LDR: ! Imported function '_cellGcmSetFlipCommand' in 'cellGcmSys' module (0x961878)
+LDR: ! Imported function '_cellGcmFunc15' in 'cellGcmSys' module (0x9618b0)
+LDR: ! Imported function 'cellGcmGetDefaultCommandWordSize' in 'cellGcmSys' module (0x9618e8)
+LDR: ! Imported function 'cellGcmGetDefaultSegmentWordSize' in 'cellGcmSys' module (0x961920)
+LDR: ! Imported function 'cellGcmSetDefaultFifoSize' in 'cellGcmSys' module (0x961958)
+LDR: ! Imported function 'cellGcmGetControlRegister' in 'cellGcmSys' module (0x961990)
+LDR: ! Imported function '_cellGcmSetFlipCommandWithWaitLabel' in 'cellGcmSys' module (0x9619c8)
+LDR: ! Imported function 'sceNpDrmVerifyUpgradeLicense' in 'sceNp' module (0x95fd20)
+LDR: ! Imported function 'sceNpTerm' in 'sceNp' module (0x95fd58)
+LDR: ! Imported function 'sceNpDrmIsAvailable' in 'sceNp' module (0x95fd90)
+LDR: ! Imported function 'sceNpInit' in 'sceNp' module (0x95fdc8)
+LDR: ! Imported function 'sceNpDrmExecuteGamePurchase' in 'sceNp' module (0x95fe00)
+LDR: ! Imported function 'cellAudioCreateNotifyEventQueue' in 'cellAudio' module (0x95fe38)
+LDR: ! Imported function 'cellAudioInit' in 'cellAudio' module (0x95fe70)
+LDR: ! Imported function 'cellAudioSetNotifyEventQueue' in 'cellAudio' module (0x95fea8)
+LDR: ! Imported function 'cellAudioGetPortTimestamp' in 'cellAudio' module (0x95fee0)
+LDR: ! Imported function 'cellAudioPortClose' in 'cellAudio' module (0x95ff18)
+LDR: ! Imported function 'cellAudioPortStop' in 'cellAudio' module (0x95ff50)
+LDR: ! Imported function 'cellAudioGetPortConfig' in 'cellAudio' module (0x95ff88)
+LDR: ! Imported function 'cellAudioAdd6chData' in 'cellAudio' module (0x95ffc0)
+LDR: ! Imported function 'cellAudioPortStart' in 'cellAudio' module (0x95fff8)
+LDR: ! Imported function 'cellAudioAdd2chData' in 'cellAudio' module (0x960030)
+LDR: ! Imported function 'cellAudioQuit' in 'cellAudio' module (0x960068)
+LDR: ! Imported function 'cellAudioPortOpen' in 'cellAudio' module (0x9600a0)
+LDR: ! Imported function 'cellAudioAddData' in 'cellAudio' module (0x9600d8)
+LDR: ! Imported function 'cellAudioGetPortBlockTag' in 'cellAudio' module (0x960110)
+LDR: ! Imported function 'cellAudioRemoveNotifyEventQueue' in 'cellAudio' module (0x960148)
+LDR: ! Imported function 'cellOvisGetOverlayTableSize' in 'cellOvis' module (0x960180)
+LDR: ! Imported function 'cellOvisInitializeOverlayTable' in 'cellOvis' module (0x9601b8)
 LDR: W Unknown module 'libgem'
-LDR: ! Imported function 'cellGemUpdateStart' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemInit' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemGetTrackerHue' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemConvertVideoFinish' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemEnableMagnetometer' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemGetMemorySize' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemUpdateFinish' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemSetRumble' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemGetState' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemConvertVideoStart' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemFilterState' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemTrackHues' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemGetImageState' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemPrepareCamera' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemCalibrate' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemPrepareVideoConvert' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemHSVtoRGB' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemGetInertialState' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemReset' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemEnd' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemInvalidateCalibration' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellGemGetStatusFlags' in 'libgem' module  (HLE)
-LDR: ! Imported function 'cellCameraStop' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'cellCameraGetBufferInfoEx' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'cellCameraReadEx' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'cellCameraClose' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'cellCameraRemoveNotifyEventQueue2' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'cellCameraStart' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'cellCameraGetType' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'cellCameraEnd' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'cellCameraOpenEx' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'cellCameraReset' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'cellCameraSetNotifyEventQueue2' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'cellCameraInit' in 'cellCamera' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyRegisterContext' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyCreateHandle' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyGetRequiredDiskSpace' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyDestroyContext' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyInit' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyGetGameInfo' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyDestroyHandle' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyUnlockTrophy' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyTerm' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyCreateContext' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyGetTrophyInfo' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'cellGameGetParamString' in 'cellGame' module  (HLE)
-LDR: ! Imported function 'cellGameContentPermit' in 'cellGame' module  (HLE)
-LDR: ! Imported function 'cellGameContentErrorDialog' in 'cellGame' module  (HLE)
-LDR: ! Imported function 'cellGameBootCheck' in 'cellGame' module  (HLE)
-LDR: ! Imported function 'cellPamfReaderGetPresentationStartTime' in 'cellPamf' module  (HLE)
-LDR: ! Imported function 'cellPamfReaderGetPresentationEndTime' in 'cellPamf' module  (HLE)
-LDR: ! Imported function 'cellSailGraphicsAdapterGetFrame' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailDescriptorCreateDatabase' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailFutureReset' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerSetSoundAdapter' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailGraphicsAdapterPtsToTimePosition' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerFinalize' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerSetGraphicsAdapter' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailGraphicsAdapterInitialize' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailSoundAdapterSetPreferredFormat' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerInitialize2' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailDescriptorDestroyDatabase' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailGraphicsAdapterSetPreferredFormat' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailMemAllocatorInitialize' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerOpenStream' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailFutureGet' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailSoundAdapterInitialize' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailGraphicsAdapterUpdateAvSync' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailSoundAdapterPtsToTimePosition' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailFutureInitialize' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailMp4MovieGetMovieInfo' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerSetParameter' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailAviMovieGetMovieInfo' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailGraphicsAdapterFinalize' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerAddDescriptor' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailSoundAdapterGetFrame' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailFutureFinalize' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailFutureSet' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerBoot' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailSoundAdapterFinalize' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerSetPaused' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerCreateDescriptor' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerStart' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerStop' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailSoundAdapterUpdateAvSync' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailSoundAdapterGetFormat' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerSetRepeatMode' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailPlayerDestroyDescriptor' in 'cellSail' module  (HLE)
-LDR: ! Imported function 'cellSailGraphicsAdapterGetFormat' in 'cellSail' module  (HLE)
-LDR: W Unimplemented function 'cellPngEncOpen' in 'cellPngEnc' module (HLE)
-LDR: W Unimplemented function 'cellPngEncQueryAttr' in 'cellPngEnc' module (HLE)
-LDR: W Unimplemented function 'cellPngEncGetStreamInfo' in 'cellPngEnc' module (HLE)
-LDR: W Unimplemented function 'cellPngEncEncodePicture' in 'cellPngEnc' module (HLE)
-LDR: W Unimplemented function 'cellPngEncWaitForOutput' in 'cellPngEnc' module (HLE)
-LDR: ! Imported function 'cellFiberPpuRunFibers' in 'cellFiber' module  (HLE)
-LDR: ! Imported function 'cellFiberPpuCreateFiber' in 'cellFiber' module  (HLE)
-LDR: ! Imported function 'cellFiberPpuFinalizeScheduler' in 'cellFiber' module  (HLE)
-LDR: ! Imported function '_cellFiberPpuSchedulerAttributeInitialize' in 'cellFiber' module  (HLE)
-LDR: ! Imported function 'cellFiberPpuJoinFiber' in 'cellFiber' module  (HLE)
-LDR: ! Imported function 'cellFiberPpuInitializeScheduler' in 'cellFiber' module  (HLE)
-LDR: ! Imported function '_cellFiberPpuInitialize' in 'cellFiber' module  (HLE)
-LDR: ! Imported function 'sys_lwmutex_lock' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_lwmutex_unlock' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_ppu_thread_create' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_prx_load_module' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function '_sys_process_atexitspawn' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_lwmutex_create' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_ppu_thread_get_id' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_mmapper_free_memory' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_prx_register_library' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function '_sys_spu_printf_initialize' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_mmapper_unmap_memory' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_game_process_exitspawn2' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_initialize_tls' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_prx_stop_module' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_time_get_system_time' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_prx_get_module_info' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function '_sys_process_at_Exitspawn' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_prx_start_module' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_prx_exitspawn_with_level' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_ppu_thread_once' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_lwmutex_trylock' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_ppu_thread_exit' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_mmapper_allocate_memory' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_lwmutex_destroy' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_mmapper_map_memory' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function '_sys_spu_printf_finalize' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_prx_unload_module' in 'sysPrxForUser' module  (HLE)
-HLE: W {PPU[1] Thread (main_thread)[0x00d56040]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xc89e78, attr_addr=0xd000fce0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00d56040]} sys_lwmutex : *** lwmutex created [mallocm] (attribute=0x22): sq_id = 3
-HLE: W {PPU[1] Thread (main_thread)[0x00d56040]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0xc89e40, attr_addr=0xd000fc60)
-HLE: ! {PPU[1] Thread (main_thread)[0x00d56040]} sys_lwmutex : *** lwmutex created [ps3mono] (attribute=0x12): sq_id = 4
-HLE: W {PPU[1] Thread (main_thread)[0x00142418]} sys_memory warning: sys_memory_get_user_memory_size(mem_info_addr=0xd000fc3c)
-HLE: W {PPU[1] Thread (main_thread)[0x00d5610c]} sys_mmapper warning: sys_mmapper_allocate_memory(size=0x2d00000, flags=0x400, mem_id_addr=0xd000fc38)
-HLE: W {PPU[1] Thread (main_thread)[0x00142480]} sys_mmapper warning: sys_mmapper_allocate_address(size=0x10000000, flags=0xf, alignment=0x10000000, alloc_addr=0xd000fc30)
-HLE: W {PPU[1] Thread (main_thread)[0x00d5610c]} sys_mmapper warning: sys_mmapper_allocate_memory(size=0x10000000, flags=0x400, mem_id_addr=0xd000fc34)
-HLE: W {PPU[1] Thread (main_thread)[0x00d56124]} sys_mmapper warning: sys_mmapper_map_memory(start_addr=0x0, mem_id=0x6, flags=0x40000)
-HLE: E {PPU[1] Thread (main_thread)[0x00d56124]} sys_mmapper error: sys_mmapper_map_memory failed!
-HLE: W {PPU[1] Thread (main_thread)[0x00d56058]} sys_mmapper warning: sys_mmapper_free_memory(mem_id=0x5)
-G: E {PPU[1] Thread (main_thread)[0x00762b00]} Exception: Access violation: addr = 0x10 (is_alive=1, last_syscall=0x0 (Unknown func id: 0x00000000))
-PPU: ! {PPU Recompilation Engine} PPU LLVM Recompilation thread exiting.
+LDR: ! Imported function 'cellGemUpdateStart' in 'libgem' module (0x9601f0)
+LDR: ! Imported function 'cellGemInit' in 'libgem' module (0x960228)
+LDR: ! Imported function 'cellGemGetTrackerHue' in 'libgem' module (0x960260)
+LDR: ! Imported function 'cellGemConvertVideoFinish' in 'libgem' module (0x960298)
+LDR: ! Imported function 'cellGemEnableMagnetometer' in 'libgem' module (0x9602d0)
+LDR: ! Imported function 'cellGemGetMemorySize' in 'libgem' module (0x960308)
+LDR: ! Imported function 'cellGemUpdateFinish' in 'libgem' module (0x960340)
+LDR: ! Imported function 'cellGemSetRumble' in 'libgem' module (0x960378)
+LDR: ! Imported function 'cellGemGetState' in 'libgem' module (0x9603b0)
+LDR: ! Imported function 'cellGemConvertVideoStart' in 'libgem' module (0x9603e8)
+LDR: ! Imported function 'cellGemFilterState' in 'libgem' module (0x960420)
+LDR: ! Imported function 'cellGemTrackHues' in 'libgem' module (0x960458)
+LDR: ! Imported function 'cellGemGetImageState' in 'libgem' module (0x960490)
+LDR: ! Imported function 'cellGemPrepareCamera' in 'libgem' module (0x9604c8)
+LDR: ! Imported function 'cellGemCalibrate' in 'libgem' module (0x960500)
+LDR: ! Imported function 'cellGemPrepareVideoConvert' in 'libgem' module (0x960538)
+LDR: ! Imported function 'cellGemHSVtoRGB' in 'libgem' module (0x960570)
+LDR: ! Imported function 'cellGemGetInertialState' in 'libgem' module (0x9605a8)
+LDR: ! Imported function 'cellGemReset' in 'libgem' module (0x9605e0)
+LDR: ! Imported function 'cellGemEnd' in 'libgem' module (0x960618)
+LDR: ! Imported function 'cellGemInvalidateCalibration' in 'libgem' module (0x960650)
+LDR: ! Imported function 'cellGemGetStatusFlags' in 'libgem' module (0x960688)
+LDR: ! Imported function 'cellCameraStop' in 'cellCamera' module (0x9606c0)
+LDR: ! Imported function 'cellCameraGetBufferInfoEx' in 'cellCamera' module (0x9606f8)
+LDR: ! Imported function 'cellCameraReadEx' in 'cellCamera' module (0x960730)
+LDR: ! Imported function 'cellCameraClose' in 'cellCamera' module (0x960768)
+LDR: ! Imported function 'cellCameraRemoveNotifyEventQueue2' in 'cellCamera' module (0x9607a0)
+LDR: ! Imported function 'cellCameraStart' in 'cellCamera' module (0x9607d8)
+LDR: ! Imported function 'cellCameraGetType' in 'cellCamera' module (0x960810)
+LDR: ! Imported function 'cellCameraEnd' in 'cellCamera' module (0x960848)
+LDR: ! Imported function 'cellCameraOpenEx' in 'cellCamera' module (0x960880)
+LDR: ! Imported function 'cellCameraReset' in 'cellCamera' module (0x9608b8)
+LDR: ! Imported function 'cellCameraSetNotifyEventQueue2' in 'cellCamera' module (0x9608f0)
+LDR: ! Imported function 'cellCameraInit' in 'cellCamera' module (0x960928)
+LDR: ! Imported function 'sceNpTrophyRegisterContext' in 'sceNpTrophy' module (0x960960)
+LDR: ! Imported function 'sceNpTrophyCreateHandle' in 'sceNpTrophy' module (0x960998)
+LDR: ! Imported function 'sceNpTrophyGetRequiredDiskSpace' in 'sceNpTrophy' module (0x9609d0)
+LDR: ! Imported function 'sceNpTrophyDestroyContext' in 'sceNpTrophy' module (0x960a08)
+LDR: ! Imported function 'sceNpTrophyInit' in 'sceNpTrophy' module (0x960a40)
+LDR: ! Imported function 'sceNpTrophyGetGameInfo' in 'sceNpTrophy' module (0x960a78)
+LDR: ! Imported function 'sceNpTrophyDestroyHandle' in 'sceNpTrophy' module (0x960ab0)
+LDR: ! Imported function 'sceNpTrophyUnlockTrophy' in 'sceNpTrophy' module (0x960ae8)
+LDR: ! Imported function 'sceNpTrophyTerm' in 'sceNpTrophy' module (0x960b20)
+LDR: ! Imported function 'sceNpTrophyCreateContext' in 'sceNpTrophy' module (0x960b58)
+LDR: ! Imported function 'sceNpTrophyGetTrophyInfo' in 'sceNpTrophy' module (0x960b90)
+LDR: ! Imported function 'cellGameGetParamString' in 'cellGame' module (0x960bc8)
+LDR: ! Imported function 'cellGameContentPermit' in 'cellGame' module (0x960c00)
+LDR: ! Imported function 'cellGameContentErrorDialog' in 'cellGame' module (0x960c38)
+LDR: ! Imported function 'cellGameBootCheck' in 'cellGame' module (0x960c70)
+LDR: ! Imported function 'cellPamfReaderGetPresentationStartTime' in 'cellPamf' module (0x960ca8)
+LDR: ! Imported function 'cellPamfReaderGetPresentationEndTime' in 'cellPamf' module (0x960ce0)
+LDR: ! Imported function 'cellSailGraphicsAdapterGetFrame' in 'cellSail' module (0x960d18)
+LDR: ! Imported function 'cellSailDescriptorCreateDatabase' in 'cellSail' module (0x960d50)
+LDR: ! Imported function 'cellSailFutureReset' in 'cellSail' module (0x960d88)
+LDR: ! Imported function 'cellSailPlayerSetSoundAdapter' in 'cellSail' module (0x960dc0)
+LDR: ! Imported function 'cellSailGraphicsAdapterPtsToTimePosition' in 'cellSail' module (0x960df8)
+LDR: ! Imported function 'cellSailPlayerFinalize' in 'cellSail' module (0x960e30)
+LDR: ! Imported function 'cellSailPlayerSetGraphicsAdapter' in 'cellSail' module (0x960e68)
+LDR: ! Imported function 'cellSailGraphicsAdapterInitialize' in 'cellSail' module (0x960ea0)
+LDR: ! Imported function 'cellSailSoundAdapterSetPreferredFormat' in 'cellSail' module (0x960ed8)
+LDR: ! Imported function 'cellSailPlayerInitialize2' in 'cellSail' module (0x960f10)
+LDR: ! Imported function 'cellSailDescriptorDestroyDatabase' in 'cellSail' module (0x960f48)
+LDR: ! Imported function 'cellSailGraphicsAdapterSetPreferredFormat' in 'cellSail' module (0x960f80)
+LDR: ! Imported function 'cellSailMemAllocatorInitialize' in 'cellSail' module (0x960fb8)
+LDR: ! Imported function 'cellSailPlayerOpenStream' in 'cellSail' module (0x960ff0)
+LDR: ! Imported function 'cellSailFutureGet' in 'cellSail' module (0x961028)
+LDR: ! Imported function 'cellSailSoundAdapterInitialize' in 'cellSail' module (0x961060)
+LDR: ! Imported function 'cellSailGraphicsAdapterUpdateAvSync' in 'cellSail' module (0x961098)
+LDR: ! Imported function 'cellSailSoundAdapterPtsToTimePosition' in 'cellSail' module (0x9610d0)
+LDR: ! Imported function 'cellSailFutureInitialize' in 'cellSail' module (0x961108)
+LDR: ! Imported function 'cellSailMp4MovieGetMovieInfo' in 'cellSail' module (0x961140)
+LDR: ! Imported function 'cellSailPlayerSetParameter' in 'cellSail' module (0x961178)
+LDR: ! Imported function 'cellSailAviMovieGetMovieInfo' in 'cellSail' module (0x9611b0)
+LDR: ! Imported function 'cellSailGraphicsAdapterFinalize' in 'cellSail' module (0x9611e8)
+LDR: ! Imported function 'cellSailPlayerAddDescriptor' in 'cellSail' module (0x961220)
+LDR: ! Imported function 'cellSailSoundAdapterGetFrame' in 'cellSail' module (0x961258)
+LDR: ! Imported function 'cellSailFutureFinalize' in 'cellSail' module (0x961290)
+LDR: ! Imported function 'cellSailFutureSet' in 'cellSail' module (0x9612c8)
+LDR: ! Imported function 'cellSailPlayerBoot' in 'cellSail' module (0x961300)
+LDR: ! Imported function 'cellSailSoundAdapterFinalize' in 'cellSail' module (0x961338)
+LDR: ! Imported function 'cellSailPlayerSetPaused' in 'cellSail' module (0x961370)
+LDR: ! Imported function 'cellSailPlayerCreateDescriptor' in 'cellSail' module (0x9613a8)
+LDR: ! Imported function 'cellSailPlayerStart' in 'cellSail' module (0x9613e0)
+LDR: ! Imported function 'cellSailPlayerStop' in 'cellSail' module (0x961418)
+LDR: ! Imported function 'cellSailSoundAdapterUpdateAvSync' in 'cellSail' module (0x961450)
+LDR: ! Imported function 'cellSailSoundAdapterGetFormat' in 'cellSail' module (0x961488)
+LDR: ! Imported function 'cellSailPlayerSetRepeatMode' in 'cellSail' module (0x9614c0)
+LDR: ! Imported function 'cellSailPlayerDestroyDescriptor' in 'cellSail' module (0x9614f8)
+LDR: ! Imported function 'cellSailGraphicsAdapterGetFormat' in 'cellSail' module (0x961530)
+LDR: W Unknown module 'cellPngEnc'
+LDR: E Unimplemented function 'cellPngEncOpen' in 'cellPngEnc' module (0x961568)
+LDR: E Unimplemented function 'cellPngEncQueryAttr' in 'cellPngEnc' module (0x9615a0)
+LDR: E Unimplemented function 'cellPngEncGetStreamInfo' in 'cellPngEnc' module (0x9615d8)
+LDR: E Unimplemented function 'cellPngEncEncodePicture' in 'cellPngEnc' module (0x961610)
+LDR: E Unimplemented function 'cellPngEncWaitForOutput' in 'cellPngEnc' module (0x961648)
+LDR: ! Imported function 'cellFiberPpuRunFibers' in 'cellFiber' module (0x961680)
+LDR: ! Imported function 'cellFiberPpuCreateFiber' in 'cellFiber' module (0x9616b8)
+LDR: ! Imported function 'cellFiberPpuFinalizeScheduler' in 'cellFiber' module (0x9616f0)
+LDR: ! Imported function '_cellFiberPpuSchedulerAttributeInitialize' in 'cellFiber' module (0x961728)
+LDR: ! Imported function 'cellFiberPpuJoinFiber' in 'cellFiber' module (0x961760)
+LDR: ! Imported function 'cellFiberPpuInitializeScheduler' in 'cellFiber' module (0x961798)
+LDR: ! Imported function '_cellFiberPpuInitialize' in 'cellFiber' module (0x9617d0)
+LDR: ! Imported function 'sys_lwmutex_lock' in 'sysPrxForUser' module (0x961a00)
+LDR: ! Imported function 'sys_lwmutex_unlock' in 'sysPrxForUser' module (0x961a38)
+LDR: ! Imported function 'sys_ppu_thread_create' in 'sysPrxForUser' module (0x961a70)
+LDR: ! Imported function 'sys_prx_load_module' in 'sysPrxForUser' module (0x961aa8)
+LDR: ! Imported function '_sys_process_atexitspawn' in 'sysPrxForUser' module (0x961ae0)
+LDR: ! Imported function 'sys_lwmutex_create' in 'sysPrxForUser' module (0x961b18)
+LDR: ! Imported function 'sys_ppu_thread_get_id' in 'sysPrxForUser' module (0x961b50)
+LDR: ! Imported function 'sys_mmapper_free_memory' in 'sysPrxForUser' module (0x961b88)
+LDR: ! Imported function 'sys_prx_register_library' in 'sysPrxForUser' module (0x961bc0)
+LDR: ! Imported function '_sys_spu_printf_initialize' in 'sysPrxForUser' module (0x961bf8)
+LDR: ! Imported function 'sys_mmapper_unmap_memory' in 'sysPrxForUser' module (0x961c30)
+LDR: ! Imported function 'sys_game_process_exitspawn2' in 'sysPrxForUser' module (0x961c68)
+LDR: ! Imported function 'sys_initialize_tls' in 'sysPrxForUser' module (0x961ca0)
+LDR: ! Imported function 'sys_prx_stop_module' in 'sysPrxForUser' module (0x961cd8)
+LDR: ! Imported function 'sys_time_get_system_time' in 'sysPrxForUser' module (0x961d10)
+LDR: ! Imported function 'sys_prx_get_module_info' in 'sysPrxForUser' module (0x961d48)
+LDR: ! Imported function '_sys_process_at_Exitspawn' in 'sysPrxForUser' module (0x961d80)
+LDR: ! Imported function 'sys_prx_start_module' in 'sysPrxForUser' module (0x961db8)
+LDR: ! Imported function 'sys_prx_exitspawn_with_level' in 'sysPrxForUser' module (0x961df0)
+LDR: ! Imported function 'sys_ppu_thread_once' in 'sysPrxForUser' module (0x961e28)
+LDR: ! Imported function 'sys_lwmutex_trylock' in 'sysPrxForUser' module (0x961e60)
+LDR: ! Imported function 'sys_ppu_thread_exit' in 'sysPrxForUser' module (0x961e98)
+LDR: ! Imported function 'sys_mmapper_allocate_memory' in 'sysPrxForUser' module (0x961ed0)
+LDR: ! Imported function 'sys_lwmutex_destroy' in 'sysPrxForUser' module (0x961f08)
+LDR: ! Imported function 'sys_mmapper_map_memory' in 'sysPrxForUser' module (0x961f40)
+LDR: ! Imported function '_sys_spu_printf_finalize' in 'sysPrxForUser' module (0x961f78)
+LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0x961fb0)
+LDR: ! Imported function 'sys_prx_unload_module' in 'sysPrxForUser' module (0x961fe8)
+HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0xd38000, user_size=0x2fc)
+*** TLS segment addr: 0x00c5cb38
+*** TLS segment size: 0x00000008
+LDR: E 'BreakPoints.dat' is broken (version=0xdb50, break_count=0x0, marked_count=0x93173968, length=0x6)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00961b18]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xc89e78, attr=*0xd000fce0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00961b18]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xc89e40, attr=*0xd000fc60)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00142418]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000fc3c)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00961ed0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x2d00000, flags=0x400, mem_id_addr=0xd000fc38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00142480]} sys_mmapper: sys_mmapper_allocate_address(size=0x10000000, flags=0xf, alignment=0x10000000, alloc_addr=0xd000fc30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00961ed0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x10000000, flags=0x400, mem_id_addr=0xd000fc34)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00961f40]} sys_mmapper: sys_mmapper_map_memory(start_addr=0x0, mem_id=0x6, flags=0x40000)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00961f40]} sys_mmapper error: sys_mmapper_map_memory failed!
+HLE: W {PPU[0x1] Thread (main_thread)[0x00961b88]} sys_mmapper: sys_mmapper_free_memory(mem_id=0x5)
+G: E {PPU[0x1] Thread (main_thread)[0x00762b00]} Exception: Access violation writing location 0x10
+G: E {PPU[0x1] Thread (main_thread)[0x00762b00]} Information: is_alive=1, m_last_syscall=0x0 ()
+G: W {PPU[0x1] Thread (main_thread)[0x00762b00]} Registers:
+=========
+GPR[0] = 0x3
+GPR[1] = 0xd000fb10
+GPR[2] = 0xc59748
+GPR[3] = 0x10
+GPR[4] = 0x0
+GPR[5] = 0x70
+GPR[6] = 0x10
+GPR[7] = 0x180
+GPR[8] = 0xcb8128
+GPR[9] = 0x0
+GPR[10] = 0xc5f96c
+GPR[11] = 0x100000
+GPR[12] = 0x100000
+GPR[13] = 0xd3f030
+GPR[14] = 0x0
+GPR[15] = 0xc17000
+GPR[16] = 0xc16000
+GPR[17] = 0x0
+GPR[18] = 0xc15000
+GPR[19] = 0x100000
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x10
+GPR[26] = 0xcb8128
+GPR[27] = 0x0
+GPR[28] = 0x8
+GPR[29] = 0x1d0
+GPR[30] = 0x10000000
+GPR[31] = 0x10
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x42000084
+LR = 0x7623cc
+CTR = 0x3
+XER = 0x20000000 [CA=227633266689 | OV=0 | SO=140694538682368]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+HLE: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} CallbackManager thread aborted
 HLE: ! All threads stopped...
 MEM: ! Closing memory...
