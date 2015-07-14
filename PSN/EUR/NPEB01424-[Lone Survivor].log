@@ -1,5 +1,5 @@
-HLE: ! path: /dev_hdd0/game/
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB01424/USRDIR/BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB01424/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: !  
@@ -15,8 +15,11 @@ LDR: ! Title: Lone Survivor
 LDR: ! Serial: NPEB01424
 LDR: ! Elf path: /dev_hdd0/game/NPEB01424/USRDIR/BOOT.BIN
 LDR: ! loader::init() failed: Broken file
-MEM: ! Initializing memory: g_base_addr = 0x9094ba0000, g_priv_addr = 0x9194ba0000
-MEM: ! Memory initialized.
+LDR: ! *** sdk version: 0x440001
+LDR: ! *** primary prio: 1001
+LDR: ! *** primary stacksize: 0x20000
+LDR: ! *** malloc pagesize: 0x100000
+LDR: ! *** ppc seg: 0x0
 LDR: ! Imported function 'cellPadInit' in 'sys_io' module (0x1caab0)
 LDR: ! Imported function 'cellPadEnd' in 'sys_io' module (0x1caad0)
 LDR: ! Imported function 'cellPadSetPortSetting' in 'sys_io' module (0x1caaf0)
@@ -51,16 +54,16 @@ LDR: ! Imported function 'cellSysutilUnregisterCallback' in 'cellSysutil' module
 LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module (0x1cadd0)
 LDR: ! Imported function 'cellSaveDataFixedLoad2' in 'cellSysutil' module (0x1cadf0)
 LDR: ! Imported function 'cellSaveDataFixedSave2' in 'cellSysutil' module (0x1cae10)
-LDR: E Unimplemented function 'cellOskDialogUnloadAsync' in 'cellSysutil' module (0x1cae30)
+LDR: E Unknown function 'cellOskDialogUnloadAsync' in 'cellSysutil' module (0x1cae30)
 LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module (0x1cae50)
 LDR: ! Imported function 'cellMsgDialogOpen2' in 'cellSysutil' module (0x1cae70)
-LDR: E Unimplemented function 'cellOskDialogLoadAsync' in 'cellSysutil' module (0x1cae90)
+LDR: E Unknown function 'cellOskDialogLoadAsync' in 'cellSysutil' module (0x1cae90)
 LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module (0x1caeb0)
 LDR: ! Imported function 'cellSaveDataAutoSave2' in 'cellSysutil' module (0x1caed0)
 LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module (0x1caef0)
-LDR: E Unimplemented function 'cellOskDialogSetKeyLayoutOption' in 'cellSysutil' module (0x1caf10)
+LDR: E Unknown function 'cellOskDialogSetKeyLayoutOption' in 'cellSysutil' module (0x1caf10)
 LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module (0x1caf30)
-LDR: E Unimplemented function 'cellOskDialogSetLayoutMode' in 'cellSysutil' module (0x1caf50)
+LDR: E Unknown function 'cellOskDialogSetLayoutMode' in 'cellSysutil' module (0x1caf50)
 LDR: ! Imported function 'cellSaveDataAutoLoad2' in 'cellSysutil' module (0x1caf70)
 LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module (0x1cb350)
 LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module (0x1cb370)
@@ -77,7 +80,7 @@ LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module (0x
 LDR: ! Imported function 'cellSysmoduleInitialize' in 'cellSysmodule' module (0x1cb050)
 LDR: ! Imported function 'cellSysmoduleFinalize' in 'cellSysmodule' module (0x1cb070)
 LDR: ! Imported function 'cellRtcGetCurrentClockLocalTime' in 'cellRtc' module (0x1cb090)
-LDR: E Unimplemented function 'UTF32stoUTF8s' in 'cellL10n' module (0x1cb0b0)
+LDR: E Unknown function 'UTF32stoUTF8s' in 'cellL10n' module (0x1cb0b0)
 LDR: ! Imported function 'cellAudioInit' in 'cellAudio' module (0x1cb0d0)
 LDR: ! Imported function 'cellAudioPortClose' in 'cellAudio' module (0x1cb0f0)
 LDR: ! Imported function 'cellAudioPortStop' in 'cellAudio' module (0x1cb110)
@@ -142,7 +145,6 @@ LDR: ! Imported function 'sceNpScoreAbortTransaction' in 'sceNp' module (0x1cb91
 LDR: ! Imported function 'sceNpDrmIsAvailable2' in 'sceNp' module (0x1cb930)
 LDR: ! Imported function 'sceNpScoreGetRankingByRange' in 'sceNp' module (0x1cb950)
 LDR: ! Imported function 'sceNpManagerGetNpId' in 'sceNp' module (0x1cb970)
-LDR: W Unknown module 'sceNp2'
 LDR: ! Imported function 'sceNp2Init' in 'sceNp2' module (0x1cb990)
 LDR: ! Imported function 'sceNp2Term' in 'sceNp2' module (0x1cb9b0)
 LDR: ! Imported function 'sceNpTusCreateTransactionCtx' in 'sceNpTus' module (0x1cb9d0)
@@ -167,9 +169,8 @@ LDR: ! Imported function 'sceNpTrophyCreateContext' in 'sceNpTrophy' module (0x1
 HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x2f6000, user_size=0x130)
 *** TLS segment addr: 0x00225a68
 *** TLS segment size: 0x00000004
-LDR: E 'BreakPoints.dat' is broken (version=0xdac0, break_count=0x0, marked_count=0x93173968, length=0x6)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2b02c8, attr=*0x1f5450)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00139c68]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd001fc04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00139c68]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd001fc04)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2b00c8, attr=*0x1f5450)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2af850, attr=*0x1f5450)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2af878, attr=*0x1f5450)
@@ -179,7 +180,9 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2af7d8, attr=*0x1f5450)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2af800, attr=*0x1f5450)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2af828, attr=*0x1f5450)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001760d4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd001f7d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001760d4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd001f7d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0017615c]} sys_memory: sys_memory_allocate(size=0xe200000, flags=0x400, alloc_addr=*0xd001f7d8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00138c0c]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd001f520)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0011e3ec]} sys_mutex: sys_mutex_create(mutex_id=*0xd001f680, attr=*0xd001f688)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000290, attr=*0x1f5450)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000350, attr=*0x1f5450)
@@ -197,492 +200,45 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x229220, attr=*0xd001fbb0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2291f8, attr=*0xd001fbd0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb050]} cellSysmodule: cellSysmoduleInitialize()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001caef0]} cellSysutil: cellSysutilRegisterCallback(slot=0, func_addr=0x223628, userdata=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001caef0]} cellSysutil: cellSysutilRegisterCallback(slot=0, func=*0x223628, userdata=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cad90]} cellGame: cellGameBootCheck(type=*0x271770, attributes=*0x271774, size=*0xd001fc54, dirName=*0x270b70)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cad70]} cellGame: cellGameDataCheck(type=2, dirName=*0x270b70, size=*0xd001fc54)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cad30]} cellGame: cellGameContentPermit(contentInfoPath=*0x270f70, usrdirPath=*0x271370)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cad30]} cellGame: cellGameContentPermit(): path_set=1, contentInfo='/dev_hdd0/game/NPEB01424', usrdir='/dev_hdd0/game/NPEB01424/USRDIR'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cbc30]} cellGcmSys: _cellGcmInitBody(context_addr=0x2b0818, cmdSize=0x80000, ioSize=0x100000, ioAddress=0x20100000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cbc30]} cellGcmSys: _cellGcmInitBody(context=*0x2b0818, cmdSize=0x80000, ioSize=0x100000, ioAddress=0x20100000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cbc30]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cbc30]} cellGcmSys: cellGcmInit(): 256MB io address space used
 RSX: ! {RSXThread} RSX thread started
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x001f: CELL_SYSMODULE_RESC)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb6f0]} cellResc: cellRescInit(initConfig_addr=0xd001fb04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb6f0]} cellResc: cellRescInit(initConfig=*0xd001fb04)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb670]} cellResc: cellRescSetDisplayMode(displayMode=4)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb670]} cellSysutil: cellVideoOutConfigure(videoOut=0, config_addr=0x2e306000, option_addr=0x0, waitForEvent=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb670]} cellSysutil: cellVideoOutConfigure(videoOut=0, config=*0xd001fa80, option=*0x0, waitForEvent=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb670]} cellGcmSys: cellGcmSetFlipMode(mode=2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb710]} cellResc: cellRescGetBufferSize(colorBuffers_addr=0xd001fb64, vertexArray_addr=0xd001fb68, fragmentShader_addr=0xd001fb6c)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb750]} cellResc: cellRescSetBufferAddress(colorBuffers_addr=0xc0720000, vertexArray_addr=0xc1830000, fragmentShader_addr=0xc0384280)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb710]} cellResc: cellRescGetBufferSize(colorBuffers=*0xd001fb64, vertexArray=*0xd001fb68, fragmentShader=*0xd001fb6c)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb750]} cellResc: cellRescSetBufferAddress(colorBuffers=*0xc0720000, vertexArray=*0xc1830000, fragmentShader=*0xc0384280)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cacf0]} cellGcmSys: cellGcmSetTileInfo(index=14, location=0, offset=7471104, size=17891328, pitch=5120, comp=7, base=114, bank=0)
-HLE: E {PPU[0x1] Thread (main_thread)[0x001cacf0]} cellGcmSys error: cellGcmSetTileInfo: bad compression mode! (7)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001cacf0]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (7)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cacd0]} cellGcmSys: cellGcmBindTile(index=14)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb6d0]} cellResc: cellRescSetFlipHandler(handler_addr=0x2235a0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb6d0]} cellResc: cellRescSetFlipHandler(handler=*0x2235a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00176288]} sys_spu: sys_spu_initialize(max_usable_spu=6, max_raw_spu=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x0009: CELL_SYSMODULE_RTC)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0011e3ec]} sys_mutex: sys_mutex_create(mutex_id=*0xd001fb10, attr=*0xd001fb18)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x0038: CELL_SYSMODULE_SYSUTIL_NP2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x0014: CELL_SYSMODULE_NETCTL)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001caff0]} cellNetCtl: cellNetCtlInit()
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x001e: CELL_SYSMODULE_L10N)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb990]} sceNp: sceNp2Init(mem_size=0x20000, mem_addr=0x271a04)
-HLE: E {PPU[0x1] Thread (main_thread)[0x001cb8f0]} sceNp error: sceNpManagerRegisterCallback
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb990]} sceNp2: sceNp2Init(poolsize=131072, poolptr=0x271a04)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001cb8f0]} sceNp: sceNpManagerRegisterCallback
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0xf035: CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cbc10]} sceNpTrophy: sceNpTrophyCreateContext(context_addr=0x291a34, commID_addr=0x1d2bb8, commSign_addr=0x1d2c44, options=0x0)
-HLE: E {PPU[0x1] Thread (main_thread)[0x001cbaf0]} sceNpTrophy TODO: sceNpTrophyCreateHandle(handle_addr=0xd001fb28)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cbb50]} sceNpTrophy: sceNpTrophyInit(pool=*0x0, poolSize=0x0, containerId=0xffffffff, options=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cbc10]} sceNpTrophy: sceNpTrophyCreateContext(context=*0x291a34, commId=*0x1d2bb8, commSign=*0x1d2c44, options=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cbaf0]} sceNpTrophy: sceNpTrophyCreateHandle(handle=*0xd001fb28)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2e200090, attr=*0xd001f790)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2e200030, entry=0x223ee8, arg=0x2e20003000000000, prio=0, stacksize=0x1000, flags=0x1, threadname=*0xd001f7a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2e200030, param=*0xd001f708, arg=0x2e20003000000000, unk=0x0, prio=0, stacksize=0x1000, flags=0x1, threadname=*0xd001f7a0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x1f)
-HLE: W {PPU[0x1f] Thread (2e200030)[0x001cbb10]} sceNpTrophy: sceNpTrophyGetRequiredDiskSpace(context=0x1, handle=0x0, reqspace_addr=0x291a38, options=0x0)
-HLE: W {PPU[0x1f] Thread (2e200030)[0x001cbad0]} sceNpTrophy: sceNpTrophyRegisterContext(context=0x1, handle=0x0, statusCb_addr=0x2235f0, arg_addr=0x0, options=0x1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x21)
+HLE: E {PPU[0x21] Thread (2e200030)[0x001cbb10]} sceNpTrophy: sceNpTrophyGetRequiredDiskSpace(context=0x1e, handle=0x1f, reqspace*=0x291a38, options=0x0)
+HLE: E {PPU[0x21] Thread (2e200030)[0x001cbad0]} sceNpTrophy: sceNpTrophyRegisterContext(context=0x1e, handle=0x1f, statusCb=*0x2235f0, arg=*0x0, options=0x1)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-G: E {PPU[0x1f] Thread (2e200030)[0x0011f46c]} Exception: Access violation reading location 0x28
-G: E {PPU[0x1f] Thread (2e200030)[0x0011f46c]} Information: is_alive=1, m_last_syscall=0x0 ()
-G: W {PPU[0x1f] Thread (2e200030)[0x0011f46c]} Registers:
-=========
-GPR[0] = 0x11ed68
-GPR[1] = 0xd0033c30
-GPR[2] = 0x22ca48
-GPR[3] = 0x0
-GPR[4] = 0x0
-GPR[5] = 0x64
-GPR[6] = 0x64
-GPR[7] = 0x0
-GPR[8] = 0x229218
-GPR[9] = 0x1f
-GPR[10] = 0x2e200030
-GPR[11] = 0xd0030000
-GPR[12] = 0x0
-GPR[13] = 0x2fd2f0
-GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
-GPR[20] = 0x0
-GPR[21] = 0x0
-GPR[22] = 0x0
-GPR[23] = 0x0
-GPR[24] = 0x0
-GPR[25] = 0x0
-GPR[26] = 0x0
-GPR[27] = 0x0
-GPR[28] = 0x0
-GPR[29] = 0x2e200090
-GPR[30] = 0x0
-GPR[31] = 0x0
-FPR[0] = 0
-FPR[1] = 0
-FPR[2] = 0
-FPR[3] = 0
-FPR[4] = 0
-FPR[5] = 0
-FPR[6] = 0
-FPR[7] = 0
-FPR[8] = 0
-FPR[9] = 0
-FPR[10] = 0
-FPR[11] = 0
-FPR[12] = 0
-FPR[13] = 0
-FPR[14] = 0
-FPR[15] = 0
-FPR[16] = 0
-FPR[17] = 0
-FPR[18] = 0
-FPR[19] = 0
-FPR[20] = 0
-FPR[21] = 0
-FPR[22] = 0
-FPR[23] = 0
-FPR[24] = 0
-FPR[25] = 0
-FPR[26] = 0
-FPR[27] = 0
-FPR[28] = 0
-FPR[29] = 0
-FPR[30] = 0
-FPR[31] = 0
-VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x22000028
-LR = 0x11ed68
-CTR = 0x83564
-XER = 0x0 [CA=631360192512 | OV=0 | SO=140694538682368]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
-
-HLE: W {PPU[0x1] Thread (main_thread)[0x0011efa8]} sys_ppu_thread: sys_ppu_thread_join(thread_id=0x1f, vptr=*0xd001f7f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb590]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x1e)
-HLE: E {PPU[0x1] Thread (main_thread)[0x001cbb90]} sceNpTrophy error: sceNpTrophyDestroyHandle
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-HLE: E {PPU[0x1] Thread (main_thread)[0x001cbaf0]} sceNpTrophy TODO: sceNpTrophyCreateHandle(handle_addr=0xd001fbd8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cbbf0]} sceNpTrophy: sceNpTrophyGetTrophyUnlockState(context=0x1, handle=0x0, flags_addr=0xd001fbc4, count_addr=0xd001fbd4)
-HLE: E {PPU[0x1] Thread (main_thread)[0x001cbb90]} sceNpTrophy error: sceNpTrophyDestroyHandle
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x0045: CELL_SYSMODULE_SYSUTIL_NP_TUS)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cbab0]} sceNpTus: sceNpTusInit()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001caab0]} sys_io: cellPadInit(max_connect=7)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cae50]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f394, flags=0, fd=*0xd001f798, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f394, flags=0, fd=*0xd001f798, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/loading_atlas_fre_ps3-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f3a4, flags=0, fd=*0xd001f7a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f3a4, flags=0, fd=*0xd001f7a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/shaders/d_font.vs'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f3a4, flags=0, fd=*0xd001f7a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f3a4, flags=0, fd=*0xd001f7a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/shaders/d_font.fs'
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} New FBO (1280x720)
-RSX: W {RSXThread} TODO: NV4097_SET_COLOR_MASK_MRT: 0xfff0
-RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_INPUT_MASK: 0x109
-RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_OUTPUT_MASK: 0x4025
-RSX: W {RSXThread} TODO: NV4097_SET_TEX_COORD_CONTROL
-RSX: W {RSXThread} FP not found in buffer!
-RSX: W {RSXThread} VP not found in buffer!
-RSX: ! {RSXThread} Add program (0):
-RSX: ! {RSXThread} *** prog id = 3
-RSX: ! {RSXThread} *** vp id = 2
-RSX: ! {RSXThread} *** fp id = 1
-RSX: ! {RSXThread} *** vp data size = 96
-RSX: ! {RSXThread} *** fp data size = 32
-RSX: ! {RSXThread} *** vp shader = 
-#version 420
-
-uniform mat4 scaleOffsetMat = mat4(1.0);
-vec4 dst_reg1 = vec4(0.0);
-vec4 dst_reg7 = vec4(0.0);
-vec4 dst_reg0 = vec4(0.0f, 0.0f, 0.0f, 1.0f);
-layout (location = 3) in vec4 in_diff_color;
-layout (location = 8) in vec4 in_tc0;
-layout (location = 0) in vec4 in_pos;
-uniform vec4 vc[468];
-out vec4 diff_color;
-out vec4 tc0;
-
-void func0();
-
-void main()
-{
-	func0();
-	gl_Position = dst_reg0;
-	diff_color = dst_reg1;
-	tc0 = dst_reg7;
-	gl_Position = gl_Position * scaleOffsetMat;
-}
-
-void func0()
-{
-	dst_reg1 = in_diff_color;
-	dst_reg7.xy = in_tc0.xyxx.xy;
-	dst_reg0.w = vec4(dot(vec4(in_pos.xyzx.xyz, 1.0), vc[259])).w;
-	dst_reg0.z = vec4(dot(vec4(in_pos.xyzx.xyz, 1.0), vc[258])).z;
-	dst_reg0.y = vec4(dot(vec4(in_pos.xyzx.xyz, 1.0), vc[257])).y;
-	dst_reg0.x = vec4(dot(vec4(in_pos.xyzx.xyz, 1.0), vc[256])).x;
-}
-
-RSX: ! {RSXThread} *** fp shader = 
-#version 420
-
-vec4 h0 = vec4(0.0);
-uniform sampler2D tex0;
-in vec4 tc0;
-in vec4 diff_color;
-layout (location = 0) out vec4 ocol0;
-
-void main()
-{
-	h0 = texture(tex0, tc0.xy);
-	h0 = (h0 * diff_color);
-	ocol0 = h0;
-}
-
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cae50]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2e200090, attr=*0xd001f7a0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2e200030, entry=0x223ee8, arg=0x2e20003000000000, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd001f7b0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2e200030, param=*0xd001f718, arg=0x2e20003000000000, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd001f7b0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x24)
-HLE: W {PPU[0x24] Thread (2e200030)[0x001caf70]} cellSysutil: cellSaveDataAutoLoad2(version=1, dirName=*0x2924c8, errDialog=1, setBuf=*0xd0037cac, funcStat=*0x223650, funcFile=*0x223658, container=0xffffffff, userdata=*0x0)
-G: W {PPU[0x24] Thread (2e200030)[0x001caf70]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/home/00000001/savedata/NPEB01424_SAVEDATA/PARAM.SFO', 0x1) failed: error 0x3
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f3b4, flags=0, fd=*0xd001f7b8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f3b4, flags=0, fd=*0xd001f7b8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/shaders/sprite_basic.vs'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f3b4, flags=0, fd=*0xd001f7b8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f3b4, flags=0, fd=*0xd001f7b8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/shaders/sprite_basic.fs'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/tiles1_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/tiles1_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cae50]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/tiles2_atlas_fre.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f034, flags=0, fd=*0xd001f438, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f034, flags=0, fd=*0xd001f438, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/tiles2_atlas_fre-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cae50]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/tiles3_atlas_fre.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f034, flags=0, fd=*0xd001f438, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f034, flags=0, fd=*0xd001f438, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/tiles3_atlas_fre-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/tiles4_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/tiles4_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/tiles5_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/tiles5_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/tiles6_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/tiles6_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/tiles7_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/tiles7_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/tiles8_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/tiles8_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/player_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/player_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/playernf_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/playernf_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/items_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/items_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/decorsimplea_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/decorsimplea_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/decorsimpleb_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/decorsimpleb_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cae50]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/decortiled_atlas_fre.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f034, flags=0, fd=*0xd001f438, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f034, flags=0, fd=*0xd001f438, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/decortiled_atlas_fre-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/chars_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/chars_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/monster_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/monster_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/pickups_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/pickups_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cae50]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/splash2_atlas_fre_ps3.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f034, flags=0, fd=*0xd001f438, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f034, flags=0, fd=*0xd001f438, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/splash2_atlas_fre_ps3-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cae50]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/splash_atlas_fre_ps3.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f034, flags=0, fd=*0xd001f438, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f034, flags=0, fd=*0xd001f438, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/splash_atlas_fre_ps3-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cae50]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/postlighting_atlas_fre_ps3.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f034, flags=0, fd=*0xd001f438, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f034, flags=0, fd=*0xd001f438, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/postlighting_atlas_fre_ps3-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cae50]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f0d4, flags=0, fd=*0xd001f4d8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/map_atlas_fre.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f034, flags=0, fd=*0xd001f438, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f034, flags=0, fd=*0xd001f438, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/map_atlas_fre-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/flashlight_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/flashlight_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/lensflare_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/lensflare_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1a4, flags=0, fd=*0xd001f5a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/additive_atlas.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f104, flags=0, fd=*0xd001f508, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f104, flags=0, fd=*0xd001f508, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/additive_atlas-0.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cae50]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f4b4, flags=0, fd=*0xd001f8b8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f4b4, flags=0, fd=*0xd001f8b8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/strings/french.bin'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f624, flags=0, fd=*0xd001fa28, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f624, flags=0, fd=*0xd001fa28, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/strings/english.bin'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f654, flags=0, fd=*0xd001fa58, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f654, flags=0, fd=*0xd001fa58, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/functions.dat'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f664, flags=0, fd=*0xd001fa68, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f664, flags=0, fd=*0xd001fa68, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/items.dat'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f654, flags=0, fd=*0xd001fa58, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f654, flags=0, fd=*0xd001fa58, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/spriteclasses.dat'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f634, flags=0, fd=*0xd001fa38, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f634, flags=0, fd=*0xd001fa38, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/temprooms.dat'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f344, flags=0, fd=*0xd001f748, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f344, flags=0, fd=*0xd001f748, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/textures/font.tex'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f354, flags=0, fd=*0xd001f758, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f354, flags=0, fd=*0xd001f758, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/shaders/d_font.vs'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f354, flags=0, fd=*0xd001f758, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f354, flags=0, fd=*0xd001f758, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/shaders/d_font.fs'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f3e4, flags=0, fd=*0xd001f7e8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f3e4, flags=0, fd=*0xd001f7e8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/misc/fontuvs.txt'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1c4, flags=0, fd=*0xd001f5c8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1c4, flags=0, fd=*0xd001f5c8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/shaders/font.vs'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f1c4, flags=0, fd=*0xd001f5c8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f1c4, flags=0, fd=*0xd001f5c8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/shaders/font.fs'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0xd001f2a4, flags=0, fd=*0xd001f6a8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0xd001f2a4, flags=0, fd=*0xd001f6a8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_hdd0/game/NPEB01424/USRDIR/data/fonts/arial.ttf'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb0d0]} cellAudio: cellAudioInit()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb190]} cellAudio: cellAudioPortOpen(audioParam=*0xd001f5b8, portNum=*0x2af4fc)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb190]} cellAudio: *** audio port opened(nChannel=8, nBlock=8, attr=0x0, level=1.000000): port = 0
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb130]} cellAudio: cellAudioGetPortConfig(portNum=0, portConfig=*0xd001f5d8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb290]} cellSpurs: _cellSpursAttributeInitialize(attr_addr=0xd001f610, revision=2, sdkVersion=0x330000, nSpus=1, spuPriority=250, ppuPriority=1000, exitIfNoWork=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb1d0]} cellSpurs: cellSpursInitializeWithAttribute2(spurs_addr=0x242cf880, attr_addr=0xd001f610)
-HLE: E {PPU[0x1] Thread (main_thread)[0x001cb1d0]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb1d0]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x85, eq=0x89, req=0xffffffffffff0000, spup=*0x242cf949)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb1d0]} sys_event: sys_event_port_connect_local(eport_id=0x8a, equeue_id=0x89)
-HLE: W {PPU[0x8b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x85)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb1d0]} sys_spu: sys_spu_thread_group_connect_event(id=0x85, eq=0x89, et=2)
-HLE: W {PPU[0x8b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x85, cause=*0x0, status=*0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2b1e00, attr=*0xd001f3c0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb230]} cellSpurs: cellSpursCreateTaskset(spurs_addr=0x242cf880, taskset_addr=0x2b2200, args=0x0, priority_addr=0xd001f810, maxContention=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb230]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr_addr=0x2e306000, revision=1, sdkVersion=0x33, pm_addr=0x200, size=0x1e40, data=0x2b2200, priorityTable_addr=0xd001f810, minContention=0x8, maxContention=0x1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb230]} cellSpurs: cellSpursWorkloadAttributeSetName(attr_addr=0x2e306000, nameClass_addr=0x0, nameInstance_addr=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb230]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs_addr=0x242cf880, wid_addr=0x2e307000, attr_addr=0x2e306000)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb250]} cellSpurs: _cellSpursEventFlagInitialize(spurs_addr=0x0, taskset_addr=0x2b2200, eventFlag_addr=0x2b3b80, flagClearMode=0, flagDirection=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb270]} cellSpurs: cellSpursEventFlagAttachLv2EventQueue(eventFlag_addr=0x2b3b80)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb270]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x85, eq=0x8e, req=0xffffffffffff0000, spup=*0x2e306000)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb250]} cellSpurs: _cellSpursEventFlagInitialize(spurs_addr=0x0, taskset_addr=0x2b2200, eventFlag_addr=0x2b7c80, flagClearMode=0, flagDirection=2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001226a0]} sys_event: sys_event_queue_create(equeue_id=*0x2b1b80, attr=*0xd001f434, event_queue_key=0x0, size=8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2af560, entry=0x223f30, arg=0x0, prio=1000, stacksize=0x10000, flags=0x1, threadname=*0x1fd360)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2af560, param=*0xd001f3b8, arg=0x0, unk=0x0, prio=1000, stacksize=0x10000, flags=0x1, threadname=*0x1fd360)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x90)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00122730]} sys_event: sys_event_port_create(eport_id=*0x2b1b00, port_type=1, name=0xfee1dead)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00122748]} sys_event: sys_event_port_connect_local(eport_id=0x91, equeue_id=0x8f)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb2f0]} cellSpurs: cellSpursAttachLv2EventQueue(spurs_addr=0x242cf880, queue=0x8f, port_addr=0xd001f430, isDynamic=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb2f0]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x85, eq=0x8f, req=0x2, spup=*0xd001f430)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb310]} cellSpurs: cellSpursCreateTask(taskset_addr=0x2b2200, taskID_addr=0x2b3b00, elf_addr_addr=0x200880, context_addr_addr=0x2b7d00, context_size=250880, lsPattern_addr=0x1f47a0, argument_addr=0xd001f4f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb310]} cellSpurs: cellSpursSendWorkloadSignal(spurs=0x242cf880, workloadId=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb310]} cellSpurs: cellSpursWakeUp(spurs_addr=0x242cf880)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} cellFs: cellFsOpen(path=*0x1fd978, flags=0, fd=*0xd001f410, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: sys_fs_open(path=*0x1fd978, flags=0, fd=*0xd001f410, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cabd0]} sys_fs: *** path = '/dev_flash/sys/external/flashATRAC.pic'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb1f0]} cellSpurs: cellSpursEventFlagWait(eventFlag_addr=0x2b3b80, mask_addr=0x228fac, mode=1)
-HLE: ! {Audio Thread} cellAudio: 18446744949882880.000000 ms adjusted
-HLE: W {PPU[0x8b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x85) aborted
-HLE: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} CallbackManager thread aborted
-HLE: W {PPU[0x8b] Thread (SpursHdlr0)[0x00000000]} cellSpurs: SPURS Handler Thread 0 aborted
-RSX: W {RSXThread} RSX thread aborted
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb1f0]} sys_event: sys_event_queue_receive(equeue_id=0x8e) aborted
-RSX: ! {RSXThread} RSX thread ended
-HLE: ! {VBlank thread} VBlank thread aborted
-HLE: W {PPU[0x90] Thread (spu_printf_handler)[0x00122870]} sys_event: sys_event_queue_receive(equeue_id=0x8f) aborted
-HLE: ! {Internal Audio Thread} Internal Audio Thread aborted
-HLE: ! {Audio Thread} Audio Thread aborted
-HLE: ! All threads stopped...
-RSX: W GLVertexProgram::Delete(): glDeleteShader(2) avoided
-RSX: W GLFragmentProgram::Delete(): glDeleteShader(1) avoided
-MEM: ! Closing memory...

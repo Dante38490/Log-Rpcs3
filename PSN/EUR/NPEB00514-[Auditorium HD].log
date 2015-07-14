@@ -1,5 +1,5 @@
-HLE: ! path: /dev_hdd0/game/
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00514/USRDIR/BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00514/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: !  
@@ -15,8 +15,11 @@ LDR: ! Title: Auditorium HD Demo
 LDR: ! Serial: NPEB00514
 LDR: ! Elf path: /dev_hdd0/game/NPEB00514/USRDIR/BOOT.BIN
 LDR: ! loader::init() failed: Broken file
-MEM: ! Initializing memory: g_base_addr = 0xd5f1eb0000, g_priv_addr = 0xd6f1eb0000
-MEM: ! Memory initialized.
+LDR: ! *** sdk version: 0x410001
+LDR: ! *** primary prio: 1001
+LDR: ! *** primary stacksize: 0x10000
+LDR: ! *** malloc pagesize: 0x100000
+LDR: ! *** ppc seg: 0x0
 LDR: ! Imported function 'cellCameraGetBufferInfoEx' in 'cellCamera' module (0xf0508)
 LDR: ! Imported function 'cellCameraReadEx' in 'cellCamera' module (0xf0528)
 LDR: ! Imported function 'cellCameraRemoveNotifyEventQueue2' in 'cellCamera' module (0xf0548)
@@ -28,7 +31,7 @@ LDR: ! Imported function 'cellCameraReset' in 'cellCamera' module (0xf05e8)
 LDR: ! Imported function 'cellCameraSetAttribute' in 'cellCamera' module (0xf0608)
 LDR: ! Imported function 'cellCameraSetNotifyEventQueue2' in 'cellCamera' module (0xf0628)
 LDR: ! Imported function 'cellCameraInit' in 'cellCamera' module (0xf0648)
-LDR: W Unknown module 'libgem'
+LDR: E Unknown module 'libgem'
 LDR: ! Imported function 'cellGemUpdateStart' in 'libgem' module (0xf0668)
 LDR: ! Imported function 'cellGemInit' in 'libgem' module (0xf0688)
 LDR: ! Imported function 'cellGemConvertVideoFinish' in 'libgem' module (0xf06a8)
@@ -141,7 +144,6 @@ LDR: ! Imported function 'sceNpManagerGetOnlineId' in 'sceNp' module (0xf1268)
 LDR: ! Imported function 'sceNpDrmVerifyUpgradeLicense2' in 'sceNp' module (0xf1288)
 LDR: ! Imported function 'sceNpManagerRegisterCallback' in 'sceNp' module (0xf12a8)
 LDR: ! Imported function 'sceNpDrmIsAvailable2' in 'sceNp' module (0xf12c8)
-LDR: W Unknown module 'sceNp2'
 LDR: ! Imported function 'sceNp2Init' in 'sceNp2' module (0xf12e8)
 LDR: ! Imported function 'sceNp2Term' in 'sceNp2' module (0xf1308)
 LDR: ! Imported function 'sceNpTrophyRegisterContext' in 'sceNpTrophy' module (0xf1328)
@@ -175,7 +177,7 @@ LDR: ! Imported function 'cellSaveDataAutoLoad2' in 'cellSysutil' module (0xf168
 LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module (0xf1fa8)
 LDR: ! Imported function 'cellAudioOutGetConfiguration' in 'cellSysutil' module (0xf1fc8)
 LDR: ! Imported function 'cellAudioOutGetState' in 'cellSysutil' module (0xf1fe8)
-LDR: W Unknown module 'cellSysutilAvconfExt'
+LDR: E Unknown module 'cellSysutilAvconfExt'
 LDR: ! Imported function 'cellVideoOutGetScreenSize' in 'cellSysutilAvconfExt' module (0xf16a8)
 LDR: ! Imported function 'cellGameGetParamString' in 'cellGame' module (0xf16c8)
 LDR: ! Imported function 'cellGameContentPermit' in 'cellGame' module (0xf16e8)
@@ -184,8 +186,8 @@ LDR: ! Imported function 'cellGamePatchCheck' in 'cellGame' module (0xf1728)
 LDR: ! Imported function 'cellGameDataCheck' in 'cellGame' module (0xf1748)
 LDR: ! Imported function 'cellGameGetSizeKB' in 'cellGame' module (0xf1768)
 LDR: ! Imported function 'cellGameBootCheck' in 'cellGame' module (0xf1788)
-LDR: E Unimplemented function 'UTF16stoUTF8s' in 'cellL10n' module (0xf17a8)
-LDR: E Unimplemented function 'UTF8stoUTF16s' in 'cellL10n' module (0xf17c8)
+LDR: ! Imported function 'UTF16stoUTF8s' in 'cellL10n' module (0xf17a8)
+LDR: E Unknown function 'UTF8stoUTF16s' in 'cellL10n' module (0xf17c8)
 LDR: ! Imported function 'cellSailGraphicsAdapterGetFrame' in 'cellSail' module (0xf17e8)
 LDR: ! Imported function 'cellSailDescriptorCreateDatabase' in 'cellSail' module (0xf1808)
 LDR: ! Imported function 'cellSailFutureReset' in 'cellSail' module (0xf1828)
@@ -226,7 +228,7 @@ LDR: ! Imported function 'cellSailPlayerDestroyDescriptor' in 'cellSail' module 
 LDR: ! Imported function 'cellSailGraphicsAdapterGetFormat' in 'cellSail' module (0xf1c88)
 LDR: ! Imported function 'cellPamfReaderGetPresentationStartTime' in 'cellPamf' module (0xf1ca8)
 LDR: ! Imported function 'cellPamfReaderGetPresentationEndTime' in 'cellPamf' module (0xf1cc8)
-LDR: W Unknown module 'cellSaveData'
+LDR: E Unknown module 'cellSaveData'
 LDR: ! Imported function 'cellSaveDataGetListItem' in 'cellSaveData' module (0xf1ce8)
 LDR: ! Imported function 'cellScreenShotEnable' in 'cellScreenShotUtility' module (0xf1d08)
 LDR: ! Imported function 'cellScreenShotSetParameter' in 'cellScreenShotUtility' module (0xf1d28)
@@ -259,9 +261,8 @@ LDR: ! Imported function 'sys_prx_unload_module' in 'sysPrxForUser' module (0xf2
 HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x119000, user_size=0xa8)
 *** TLS segment addr: 0x0012c17c
 *** TLS segment size: 0x00000000
-LDR: E 'BreakPoints.dat' is broken (version=0xd810, break_count=0x0, marked_count=0x93173968, length=0x6)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f20a8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x94a6a8, attr=*0xf4740)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000dbabc]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000fc04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000dbabc]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000fc04)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f20a8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x94a4a8, attr=*0xf4740)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f20a8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x949c30, attr=*0xf4740)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f20a8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x949c58, attr=*0xf4740)
@@ -288,27 +289,59 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x000f0fa8]} cellSysmodule: cellSysmoduleL
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0fa8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0038: CELL_SYSMODULE_SYSUTIL_NP2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0fa8]} cellSysmodule: cellSysmoduleLoadModule(id=0x005a: CELL_SYSMODULE_GEM)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0fa8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0023: CELL_SYSMODULE_CAMERA)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f12e8]} sceNp: sceNp2Init(mem_size=0x20000, mem_addr=0x923788)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f28]} cellSpurs: _cellSpursAttributeInitialize(attr_addr=0xd000ea28, revision=2, sdkVersion=0x330000, nSpus=6, spuPriority=250, ppuPriority=1000, exitIfNoWork=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f0ee8]} cellSpurs: cellSpursAttributeSetNamePrefix(attr_addr=0xd000ea28, prefix_addr=0xf9328, size=12)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} cellSpurs: cellSpursInitializeWithAttribute(spurs_addr=0x21200780, attr_addr=0xd000ea28)
-HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x1e, eq=0x27, req=0xffffffffffff0000, spup=*0x21200849)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f12e8]} sceNp2: sceNp2Init(poolsize=131072, poolptr=0x923788)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000da3b8]} sys_memory: sys_memory_allocate(size=0xb500000, flags=0x400, alloc_addr=*0xd000e260)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f28]} cellSpurs: _cellSpursAttributeInitialize(attr=*0xd000ea28, revision=2, sdkVersion=0x330000, nSpus=6, spuPriority=250, ppuPriority=1000, exitIfNoWork=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0ee8]} cellSpurs: cellSpursAttributeSetNamePrefix(attr=*0xd000ea28, prefix=*0xf9328, size=12)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x21200780, attr=*0xd000ea28)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x21200780, flags=0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_semaphore: sys_semaphore_create(sem=*0xd000e9a8, attr=*0xd000e988, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: sys_spu_thread_group_create(id=*0xd000e968, num=6, prio=250, attr=*0xd000e8d8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: sys_spu_thread_initialize(thread=*0xd000e8b0, group=0x1e, spu_num=0, img=*0x212014f0, attr=*0xd000e8a0, arg=*0xd000e8b8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: sys_spu_thread_initialize(thread=*0xd000e8b0, group=0x1e, spu_num=1, img=*0x212014f0, attr=*0xd000e8a0, arg=*0xd000e8b8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: sys_spu_thread_initialize(thread=*0xd000e8b0, group=0x1e, spu_num=2, img=*0x212014f0, attr=*0xd000e8a0, arg=*0xd000e8b8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: sys_spu_thread_initialize(thread=*0xd000e8b0, group=0x1e, spu_num=3, img=*0x212014f0, attr=*0xd000e8a0, arg=*0xd000e8b8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: sys_spu_thread_initialize(thread=*0xd000e8b0, group=0x1e, spu_num=4, img=*0x212014f0, attr=*0xd000e8a0, arg=*0xd000e8b8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: sys_spu_thread_initialize(thread=*0xd000e8b0, group=0x1e, spu_num=5, img=*0x212014f0, attr=*0xd000e8a0, arg=*0xd000e8b8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21201530, attr=*0xd000e970)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sysPrxForUser: sys_lwcond_create(lwcond=*0x21201548, lwmutex=*0x21201530, attr=*0xd000e980)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_event: sys_event_queue_create(equeue_id=*0x212014dc, attr=*0xd000e808, event_queue_key=0x0, size=42)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x1e, eq=0x27, req=0xffffffffffff0000, spup=*0xd000e7f8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_event: sys_event_port_create(eport_id=*0x212014e0, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_event: sys_event_port_connect_local(eport_id=0x28, equeue_id=0x27)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x21200780, flag=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} sys_spu: sys_spu_thread_group_connect_event(id=0x1e, eq=0x27, et=2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f15e8]} cellSysutil: cellSysutilRegisterCallback(slot=0, func_addr=0x122748, userdata=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f48]} cellSpurs: cellSpursWakeUp(spurs=*0x21200780)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f15e8]} cellSysutil: cellSysutilRegisterCallback(slot=0, func=*0x122748, userdata=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0fa8]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0xd000dc60, entry=0x124790, arg=0x0, prio=1001, stacksize=0x8000, flags=0x0, threadname=*0xfc488)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0xd000dc60, param=*0xd000dbe8, arg=0x0, unk=0x0, prio=1001, stacksize=0x8000, flags=0x0, threadname=*0xfc488)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x2b)
 HLE: E {PPU[0x2b] Thread (ClConfiguration_CheckBootGameContent)[0x000f1288]} sceNp TODO: sceNpDrmVerifyUpgradeLicense2(content_id_addr=0xfc4c0)
 HLE: W {PPU[0x2b] Thread (ClConfiguration_CheckBootGameContent)[0x000f1788]} cellGame: cellGameBootCheck(type=*0xd0033d90, attributes=*0xd0033d98, size=*0xd0033d9c, dirName=*0xd0033da8)
-HLE: E {PPU[0x2b] Thread (ClConfiguration_CheckBootGameContent)[0x000f1768]} cellGame error: cellGameGetSizeKB
+HLE: E {PPU[0x2b] Thread (ClConfiguration_CheckBootGameContent)[0x000f1768]} cellGame: cellGameGetSizeKB
 HLE: W {PPU[0x2b] Thread (ClConfiguration_CheckBootGameContent)[0x000f1708]} cellGame: cellGameGetParamInt(id=102, value=*0xd0033c60)
 HLE: W {PPU[0x2b] Thread (ClConfiguration_CheckBootGameContent)[0x000f1708]} cellGame: cellGameGetParamInt(id=103, value=*0xd0033c60)
 HLE: W {PPU[0x2b] Thread (ClConfiguration_CheckBootGameContent)[0x000f1708]} cellGame: cellGameGetParamInt(id=104, value=*0xd0033c60)
@@ -334,20 +367,20 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} cellFs: cellFsStat(path=*0xd0
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} sys_fs: sys_fs_stat(path=*0xd000d728, sb=*0xd000d2c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} sys_fs: *** path = '/dev_hdd0/game/NPEB00514/USRDIR/SaveData//ICON0.PNG.edat'
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: sceNpDrmIsAvailable(k_licensee_addr=0xf3000, drm_path_addr=0xd000d728('/dev_hdd0/game/NPEB00514/USRDIR/SaveData//ICON0.PNG.edat'))
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable: Found DRM license file at /dev_hdd0/game/NPEB00514/USRDIR/SaveData//ICON0.PNG.edat
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable: Using k_licensee 0x005ef7c90d1bc2effd3db8f25698edebd
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable(): Found DRM license file at /dev_hdd0/game/NPEB00514/USRDIR/SaveData//ICON0.PNG.edat
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable(): Using k_licensee 0x005ef7c90d1bc2effd3db8f25698edebd
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable(): Can't find RAP file for '/dev_hdd0/game/NPEB00514/USRDIR/SaveData//ICON0.PNG.edat' (titleID='NPEB00514')
 G: W {PPU[0x1] Thread (main_thread)[0x000f1248]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/home/00000001/exdata', 0x1) failed: error 0x5
 LDR: E {PPU[0x1] Thread (main_thread)[0x000f1248]} EDAT: D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00514/USRDIR/SaveData/ICON0.PNG.edat has invalid NPD header or already decrypted.
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0be8]} cellFs: cellFsOpen(path=*0xd000d728, flags=0, fd=*0xd000d2b0, arg=*0xd000d2b8, size=0x8) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0be8]} sys_fs: sys_fs_open(path=*0xd000d728, flags=0, fd=*0xd000d2b0, mode=0, arg=*0xd000d2b8, size=0x8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0be8]} sys_fs: *** path = '/dev_hdd0/game/NPEB00514/USRDIR/SaveData//ICON0.PNG.edat'
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0cc8]} sys_fs: sys_fs_fstat(fd=0x2e, sb=*0xd000d2f4)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f08c8]} cellGcmSys: _cellGcmInitBody(context_addr=0x949934, cmdSize=0x50000, ioSize=0x100000, ioAddress=0x21300000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f08c8]} cellGcmSys: _cellGcmInitBody(context=*0x949934, cmdSize=0x50000, ioSize=0x100000, ioAddress=0x21300000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f08c8]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f08c8]} cellGcmSys: cellGcmInit(): 256MB io address space used
 RSX: ! {RSXThread} RSX thread started
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f1608]} cellSysutil: cellVideoOutGetResolutionAvailability(videoOut=0, resolutionId=0x81, aspect=0, option=0)
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0aa8]} cellGcmSys: cellGcmSetTileInfo(index=0, location=0, offset=0, size=3932160, pitch=5120, comp=0, base=0, bank=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0948]} cellGcmSys: cellGcmBindTile(index=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0aa8]} cellGcmSys: cellGcmSetTileInfo(index=1, location=0, offset=3932160, size=3932160, pitch=5120, comp=0, base=60, bank=0)
@@ -356,16 +389,15 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x000f0aa8]} cellGcmSys: cellGcmSetTileInf
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0948]} cellGcmSys: cellGcmBindTile(index=2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0aa8]} cellGcmSys: cellGcmSetTileInfo(index=3, location=0, offset=11796480, size=3932160, pitch=5120, comp=0, base=180, bank=3)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0948]} cellGcmSys: cellGcmBindTile(index=3)
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x3
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f1448]} cellSysutil: cellVideoOutConfigure(videoOut=0, config_addr=0xd000c9f0, option_addr=0x0, waitForEvent=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f1448]} cellSysutil: cellVideoOutConfigure(videoOut=0, config=*0xd000c9f0, option=*0x0, waitForEvent=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0968]} cellGcmSys: cellGcmSetFlipMode(mode=2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000817bc]} sys_semaphore: sys_semaphore_create(sem=*0x3f6b30, attr=*0xd000db98, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000817f0]} sys_semaphore: sys_semaphore_create(sem=*0x3f6b34, attr=*0xd000db78, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0xd000db70, entry=0x125610, arg=0x0, prio=1000, stacksize=0x10000, flags=0x0, threadname=*0xfdbb0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0xd000db70, param=*0xd000daf8, arg=0x0, unk=0x0, prio=1000, stacksize=0x10000, flags=0x0, threadname=*0xfdbb0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x31)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f0a28]} cellGcmSys: cellGcmMapMainMemory(ea=0x21500000,size=0x100000,offset_addr=0x3f6bb0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f14e8]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f0a28]} cellGcmSys: cellGcmMapMainMemory(ea=0x21500000, size=0x100000, offset=*0x3f6bb0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f14e8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000dbf0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} cellFs: cellFsStat(path=*0xd000d098, sb=*0xd000d060) -> sys_fs_stat()
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} sys_fs: sys_fs_stat(path=*0xd000d098, sb=*0xd000d060)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} sys_fs: *** path = '/dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mdf.edat'
@@ -373,8 +405,9 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} cellFs: cellFsStat(path=*0xd0
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} sys_fs: sys_fs_stat(path=*0xd000d090, sb=*0xd000d05c)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} sys_fs: *** path = '/dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mtc.edat'
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: sceNpDrmIsAvailable(k_licensee_addr=0xf2e48, drm_path_addr=0xd000d090('/dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mtc.edat'))
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable: Found DRM license file at /dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mtc.edat
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable: Using k_licensee 0x005ef7c90d1bc2effd3db8f25698edebd
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable(): Found DRM license file at /dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mtc.edat
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable(): Using k_licensee 0x005ef7c90d1bc2effd3db8f25698edebd
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable(): Can't find RAP file for '/dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mtc.edat' (titleID='NPEB00514')
 G: W {PPU[0x1] Thread (main_thread)[0x000f1248]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/home/00000001/exdata', 0x1) failed: error 0x5
 LDR: E {PPU[0x1] Thread (main_thread)[0x000f1248]} EDAT: D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mtc.edat has invalid NPD header or already decrypted.
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0be8]} cellFs: cellFsOpen(path=*0xd000d090, flags=0, fd=*0x160208, arg=*0xd000d020, size=0x8) -> sys_fs_open()
@@ -382,1077 +415,719 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x000f0be8]} sys_fs: sys_fs_open(path=*0xd
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0be8]} sys_fs: *** path = '/dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mtc.edat'
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0cc8]} sys_fs: sys_fs_fstat(fd=0x32, sb=*0xd000d028)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c68]} cellFs: cellFsAioRead(aio=*0x160210, id=*0x16020c, func=*0x1221e8)
-HLE: ! {FS AIO Read Thread} cellFs: FS AIO Request(1): fd=0x32, offset=0x0, buf=*0x214027f0, size=0x800, user_data=0x160208
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x5
+HLE: ! {FS AIO Read Thread} cellFs: FS AIO Request(2): fd=0x32, offset=0x0, buf=*0x214027f0, size=0x800, user_data=0x160208
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} New FBO (1280x720)
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x7
+RSX: W {RSXThread} Creating RTT
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x9
+RSX: W {RSXThread} Creating RTT
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xb
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xd
+RSX: W {RSXThread} Creating RTT
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xf
+RSX: W {RSXThread} Creating RTT
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x11
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x13
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x15
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x17
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x19
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1b
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1d
+RSX: W {RSXThread} Creating RTT
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} cellFs: cellFsStat(path=*0xd000dac0, sb=*0xd000da8c) -> sys_fs_stat()
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} sys_fs: sys_fs_stat(path=*0xd000dac0, sb=*0xd000da8c)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c08]} sys_fs: *** path = '/dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mdf.edat'
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: sceNpDrmIsAvailable(k_licensee_addr=0xf2e48, drm_path_addr=0xd000dac0('/dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mdf.edat'))
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable: Found DRM license file at /dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mdf.edat
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable: Using k_licensee 0x005ef7c90d1bc2effd3db8f25698edebd
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable(): Found DRM license file at /dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mdf.edat
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable(): Using k_licensee 0x005ef7c90d1bc2effd3db8f25698edebd
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f1248]} sceNp: npDrmIsAvailable(): Can't find RAP file for '/dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mdf.edat' (titleID='NPEB00514')
+G: W {PPU[0x1] Thread (main_thread)[0x000f1248]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/home/00000001/exdata', 0x1) failed: error 0x5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-G: W {PPU[0x1] Thread (main_thread)[0x000f1248]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/home/00000001/exdata', 0x1) failed: error 0x5
 LDR: E {PPU[0x1] Thread (main_thread)[0x000f1248]} EDAT: D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mdf.edat has invalid NPD header or already decrypted.
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0be8]} cellFs: cellFsOpen(path=*0xd000dac0, flags=0, fd=*0x160208, arg=*0xd000da50, size=0x8) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0be8]} sys_fs: sys_fs_open(path=*0xd000dac0, flags=0, fd=*0x160208, mode=0, arg=*0xd000da50, size=0x8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0be8]} sys_fs: *** path = '/dev_hdd0/game/NPEB00514/USRDIR/Main_1_ps3.mdf.edat'
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0cc8]} sys_fs: sys_fs_fstat(fd=0x33, sb=*0xd000da58)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0c68]} cellFs: cellFsAioRead(aio=*0x160210, id=*0x16020c, func=*0x1221e8)
-HLE: ! {FS AIO Read Thread} cellFs: FS AIO Request(2): fd=0x33, offset=0x0, buf=*0x21403030, size=0x98000, user_data=0x160208
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1f
+HLE: ! {FS AIO Read Thread} cellFs: FS AIO Request(3): fd=0x33, offset=0x0, buf=*0x21403030, size=0x98000, user_data=0x160208
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x21
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x23
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x25
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x27
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x29
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x31
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x33
+RSX: W {RSXThread} Creating RTT
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0fa8]} cellSysmodule: cellSysmoduleLoadModule(id=0x004e: CELL_SYSMODULE_SYSUTIL_SCREENSHOT)
-HLE: E {PPU[0x1] Thread (main_thread)[0x000f17a8]} Unimplemented function: UTF16stoUTF8s -> CELL_OK
-HLE: E {PPU[0x1] Thread (main_thread)[0x000f17a8]} Unimplemented function: UTF16stoUTF8s -> CELL_OK
-HLE: E {PPU[0x1] Thread (main_thread)[0x000f17a8]} Unimplemented function: UTF16stoUTF8s -> CELL_OK
-HLE: E {PPU[0x1] Thread (main_thread)[0x000f1d28]} cellScreenshot error: cellScreenShotSetParameter
-HLE: E {PPU[0x1] Thread (main_thread)[0x000f1d08]} cellScreenshot error: cellScreenShotEnable
+HLE: E {PPU[0x1] Thread (main_thread)[0x000f17a8]} cellL10n TODO: UTF16stoUTF8s(utf16=*0x21498bc0, utf16_len=*0xd000d130, utf8=*0xd000d350, utf8_len=*0xd000d134)
+HLE: E {PPU[0x1] Thread (main_thread)[0x000f17a8]} cellL10n TODO: UTF16stoUTF8s(utf16=*0x21498bd8, utf16_len=*0xd000d130, utf8=*0xd000d250, utf8_len=*0xd000d134)
+HLE: E {PPU[0x1] Thread (main_thread)[0x000f17a8]} cellL10n TODO: UTF16stoUTF8s(utf16=*0x21498bf4, utf16_len=*0xd000d130, utf8=*0xd000d150, utf8_len=*0xd000d134)
+HLE: E {PPU[0x1] Thread (main_thread)[0x000f1d28]} cellScreenshot: cellScreenShotSetParameter
+HLE: E {PPU[0x1] Thread (main_thread)[0x000f1d08]} cellScreenshot: cellScreenShotEnable
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0f88]} cellSysmodule: cellSysmoduleUnloadModule(id=0x004e: CELL_SYSMODULE_SYSUTIL_SCREENSHOT)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f0fa8]} cellSysmodule: cellSysmoduleLoadModule(id=0xf035: CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x16e188, entry=0x122888, arg=0x0, prio=1002, stacksize=0x4000, flags=0x1, threadname=*0xf89a8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x16e188, param=*0xd000d0b8, arg=0x0, unk=0x0, prio=1002, stacksize=0x4000, flags=0x1, threadname=*0xf89a8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x34)
-HLE: W {PPU[0x34] Thread (Trophy Initialization Thread)[0x000f1428]} sceNpTrophy: sceNpTrophyCreateContext(context_addr=0x16e174, commID_addr=0xf2ef8, commSign_addr=0xf2f04, options=0x0)
-HLE: E {PPU[0x34] Thread (Trophy Initialization Thread)[0x000f1348]} sceNpTrophy TODO: sceNpTrophyCreateHandle(handle_addr=0x16e178)
-HLE: W {PPU[0x34] Thread (Trophy Initialization Thread)[0x000f1368]} sceNpTrophy: sceNpTrophyGetRequiredDiskSpace(context=0x1, handle=0x0, reqspace_addr=0x191980, options=0x0)
+HLE: W {PPU[0x34] Thread (Trophy Initialization Thread)[0x000f13a8]} sceNpTrophy: sceNpTrophyInit(pool=*0x0, poolSize=0x0, containerId=0xffffffff, options=0x0)
+HLE: W {PPU[0x34] Thread (Trophy Initialization Thread)[0x000f1428]} sceNpTrophy: sceNpTrophyCreateContext(context=*0x16e174, commId=*0xf2ef8, commSign=*0xf2f04, options=0x0)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x35
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x37
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x39
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x3b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x3d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x3f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x41
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x43
+HLE: W {PPU[0x34] Thread (Trophy Initialization Thread)[0x000f1348]} sceNpTrophy: sceNpTrophyCreateHandle(handle=*0x16e178)
+HLE: E {PPU[0x34] Thread (Trophy Initialization Thread)[0x000f1368]} sceNpTrophy: sceNpTrophyGetRequiredDiskSpace(context=0x35, handle=0x36, reqspace*=0x191980, options=0x0)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x45
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x47
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x49
+RSX: W {RSXThread} Creating RTT
 HLE: W {PPU[0x1] Thread (main_thread)[0x00039890]} sys_ppu_thread: sys_ppu_thread_join(thread_id=0x34, vptr=*0xd000d138)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x4b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x4d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x4f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x51
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x53
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x55
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x57
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x59
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x5b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x5d
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x5f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x61
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x63
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x65
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x67
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x69
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x6b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x6d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x6f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x71
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x73
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x75
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x77
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x79
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x7b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x7d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x7f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x81
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x83
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x85
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x87
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x89
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x8b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x8d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x8f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x91
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x93
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x95
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x97
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x99
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x9b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x9d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x9f
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xa1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xa3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xa5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xa7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xa9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xab
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xad
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xaf
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xb1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xb3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xb5
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xb7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xb9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xbb
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xbd
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xbf
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xc1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xc3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xc5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xc7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xc9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xcb
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xcd
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xcf
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xd1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xd3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xd5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xd7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xd9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xdb
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xdd
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xdf
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xe1
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xe3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xe5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xe7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xe9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xeb
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xed
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xef
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xf1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xf3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xf5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xf7
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xf9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xfb
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xfd
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xff
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x101
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x103
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x105
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x107
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x109
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x10b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x10d
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x10f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x111
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x113
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x115
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x117
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x119
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x11b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x11d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x11f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x121
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x123
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x125
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x127
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x129
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x12b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x12d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x12f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x131
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x133
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x135
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x137
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x139
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x13b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x13d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x13f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x141
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x143
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x145
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x147
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x149
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x14b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x14d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x14f
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x151
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x153
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x155
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x157
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x159
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x15b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x15d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x15f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x161
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x163
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x165
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x167
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x169
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x16b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x16d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x16f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x171
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x173
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x175
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x177
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x179
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x17b
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x17d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x17f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x181
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x183
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x185
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x187
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x189
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x18b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x18d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x18f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x191
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x193
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x195
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x197
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x199
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x19b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x19d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x19f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1a1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1a3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1a5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1a7
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1a9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1ab
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1ad
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1af
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1b1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1b3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1b5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1b7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1b9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1bb
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1bd
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1bf
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1c1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1c3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1c5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1c7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1c9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1cb
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1cd
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1cf
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1d1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1d3
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1d5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1d7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1d9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1db
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1dd
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1df
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1e1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1e3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1e5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1e7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1e9
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1eb
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1ed
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1ef
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1f1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1f3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1f5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1f7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1f9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1fb
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1fd
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1ff
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x201
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x203
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x205
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x207
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x209
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x20b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x20d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x20f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x211
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x213
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x215
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x217
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x219
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x21b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x21d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x21f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x221
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x223
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x225
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x227
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x229
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x22b
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x22d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x22f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x231
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x233
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x235
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x237
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x239
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x23b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x23d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x23f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x241
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x243
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x245
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x247
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x249
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x24b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x24d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x24f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x251
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x253
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x255
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x257
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x259
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x25b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x25d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x25f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x261
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x263
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x265
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x267
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x269
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x26b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x26d
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x26f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x271
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x273
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x275
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x277
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x279
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x27b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x27d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x27f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x281
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x283
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x285
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x287
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x289
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x28b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x28d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x28f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x291
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x293
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x295
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x297
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x299
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x29b
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x29d
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x29f
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2a1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2a3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2a5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2a7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2a9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2ab
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2ad
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2af
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2b1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2b3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2b5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2b7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2b9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2bb
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2bd
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2bf
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2c1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2c3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2c5
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2c7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2c9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2cb
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2cd
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2cf
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2d1
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2d3
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2d5
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2d7
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2d9
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2db
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x2dd
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0xd000dc50, entry=0x122958, arg=0x0, prio=1001, stacksize=0x4000, flags=0x0, threadname=*0xf9108)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0xd000dc50, param=*0xd000dbd8, arg=0x0, unk=0x0, prio=1001, stacksize=0x4000, flags=0x0, threadname=*0xf9108)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x35)
-HLE: W {PPU[0x35] Thread (SaveDataListItemUtility)[0x000f14a8]} cellSysutil: cellSaveDataListAutoLoad(version=0, errDialog=0, setList=*0xd004fca0, setBuf=*0xd004fcb0, funcFixed=*0x122900, funcStat=*0x0, funcFile=*0x0, container=0xffffffff, userdata=*0x16e868)
-HLE: W {PPU[0x35] Thread (SaveDataListItemUtility)[0x000f0fa8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0033: CELL_SYSMODULE_SYSUTIL_SAVEDATA)
-HLE: W {PPU[0x35] Thread (SaveDataListItemUtility)[0x000f0f88]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0033: CELL_SYSMODULE_SYSUTIL_SAVEDATA)
-MEM: W {PPU[0x35] Thread (SaveDataListItemUtility)[0x000f14a8]} decode_x64_reg_op(00007ff691dd8d60h): unsupported opcode found (803A0075084533C0E9C3FEFFFF4983C8)
-G: E {PPU[0x35] Thread (SaveDataListItemUtility)[0x000f14a8]} Exception: Access violation reading location 0x0
-G: E {PPU[0x35] Thread (SaveDataListItemUtility)[0x000f14a8]} Information: is_alive=1, m_last_syscall=0x21425307 (cellSaveDataListAutoLoad)
-G: W {PPU[0x35] Thread (SaveDataListItemUtility)[0x000f14a8]} Registers:
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f2048]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x37)
+HLE: W {PPU[0x37] Thread (SaveDataListItemUtility)[0x000f14a8]} cellSysutil: cellSaveDataListAutoLoad(version=0, errDialog=0, setList=*0xd0043ca0, setBuf=*0xd0043cb0, funcFixed=*0x122900, funcStat=*0x0, funcFile=*0x0, container=0xffffffff, userdata=*0x0)
+HLE: W {PPU[0x37] Thread (SaveDataListItemUtility)[0x000f0fa8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0033: CELL_SYSMODULE_SYSUTIL_SAVEDATA)
+HLE: W {PPU[0x37] Thread (SaveDataListItemUtility)[0x000f0f88]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0033: CELL_SYSMODULE_SYSUTIL_SAVEDATA)
+MEM: W {PPU[0x37] Thread (SaveDataListItemUtility)[0x000f14a8]} decode_x64_reg_op(00000002006a3902h): unsupported opcode found (44383A75054D8BC7EB0D4D8BC69049FF)
+HLE: S {PPU[0x37] Thread (SaveDataListItemUtility)[0x000f14a8]} Last function: cellSaveDataListAutoLoad (0x21425307)
+G: W {PPU[0x37] Thread (SaveDataListItemUtility)[0x000f14a8]} Registers:
 =========
 GPR[0] = 0x114000
-GPR[1] = 0xd004fc20
+GPR[1] = 0xd0043ba8
 GPR[2] = 0x130630
 GPR[3] = 0x0
 GPR[4] = 0x0
@@ -1482,6 +1157,126 @@ GPR[27] = 0x0
 GPR[28] = 0x0
 GPR[29] = 0x0
 GPR[30] = 0x16e1f8
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000001000000000000000000 [x: 0 y: 3.58732e-43 z: 0 w: 0]
+VPR[1] = 0x00c94ab72d00002d0000000000000000 [x: 1.84857e-38 y: 7.276e-12 z: 0 w: 0]
+VPR[2] = 0x000000000a4046f00000000002df76d0 [x: 0 y: 9.25781e-33 z: 0 w: 3.28351e-37]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000082
+LR = 0x3b0a4
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: E {PPU[0x37] Thread (SaveDataListItemUtility)[0x000f14a8]} Exception: Access violation reading location 0x0
+(in file ..\Utilities\Thread.cpp:1098, in function _se_translator)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+G: W {SPU[0x21] Thread (SPURS_THINGSCellSpursKernel2)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:27, in function CPUThread::{ctor}::<lambda_a9639ec70c509beee870b0e7d67f792f>::operator ())
+G: W {SPU[0x20] Thread (SPURS_THINGSCellSpursKernel1)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:27, in function CPUThread::{ctor}::<lambda_a9639ec70c509beee870b0e7d67f792f>::operator ())
+G: W {SPU[0x24] Thread (SPURS_THINGSCellSpursKernel5)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:27, in function CPUThread::{ctor}::<lambda_a9639ec70c509beee870b0e7d67f792f>::operator ())
+G: W {SPU[0x22] Thread (SPURS_THINGSCellSpursKernel3)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:27, in function CPUThread::{ctor}::<lambda_a9639ec70c509beee870b0e7d67f792f>::operator ())
+G: W {SPU[0x1f] Thread (SPURS_THINGSCellSpursKernel0)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:27, in function CPUThread::{ctor}::<lambda_a9639ec70c509beee870b0e7d67f792f>::operator ())
+G: W {SPU[0x23] Thread (SPURS_THINGSCellSpursKernel4)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:27, in function CPUThread::{ctor}::<lambda_a9639ec70c509beee870b0e7d67f792f>::operator ())
+G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Registers:
+=========
+GPR[0] = 0x114000
+GPR[1] = 0xd001fe00
+GPR[2] = 0x0
+GPR[3] = 0x160208
+GPR[4] = 0x989680
+GPR[5] = 0x3
+GPR[6] = 0x98000
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x0
+GPR[12] = 0x22000082
+GPR[13] = 0x120108
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
 GPR[31] = 0x0
 FPR[0] = 0
 FPR[1] = 0
@@ -1548,17 +1343,544 @@ VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 CR = 0x22000082
-LR = 0x3b0a4
-CTR = 0x3af64
-XER = 0x0 [CA=927712935936 | OV=0 | SO=140694538682368]
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
 FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
-HLE: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} CallbackManager thread aborted
-HLE: W {PPU[0x29] Thread (SPURS_THINGSSpursHdlr0)[0x00000000]} sys_lwcond: _sys_lwcond_queue_wait(lwcond_id=0x26) aborted
-RSX: W {RSXThread} RSX thread aborted
-HLE: W {PPU[0x29] Thread (SPURS_THINGSSpursHdlr0)[0x00000000]} cellSpurs: SPURS Handler Thread 0 aborted
-RSX: ! {RSXThread} RSX thread ended
-HLE: W {PPU[0x1] Thread (main_thread)[0x0007fffc]} sys_semaphore: sys_semaphore_wait(47) aborted
-HLE: ! {VBlank thread} VBlank thread aborted
-HLE: ! All threads stopped...
-MEM: ! Closing memory...
+G: W {PPU[0x2d] Thread (ClFileIO Worker Thread)[0x000354a8]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd002fd60
+GPR[2] = 0x130630
+GPR[3] = 0x0
+GPR[4] = 0x989680
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x8d
+GPR[12] = 0x22000082
+GPR[13] = 0x120390
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x160000
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x15fff8
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00550020003a007500700073005f0073 [x: 7.80606e-39 y: 5.32662e-39 z: 1.02857e-38 w: 8.72453e-39]
+VPR[1] = 0x00740072006f0070007000750073006e [x: 1.06531e-38 y: 1.01939e-38 z: 1.02857e-38 w: 1.05612e-38]
+VPR[2] = 0x00540020005500500053002000640065 [x: 7.71423e-39 y: 7.80613e-39 z: 7.62239e-39 w: 9.18369e-39]
+VPR[3] = 0x0070006f002000640061006500720068 [x: 1.02857e-38 y: 2.93888e-39 z: 8.90818e-39 w: 1.04694e-38]
+VPR[4] = 0x0030002800200073006e006f00690074 [x: 4.40816e-39 y: 2.9389e-39 z: 1.01021e-38 w: 9.64289e-39]
+VPR[5] = 0x0050007b00200045000d002900320078 [x: 7.34701e-39 y: 2.93883e-39 z: 1.19392e-39 w: 4.59194e-39]
+VPR[6] = 0x0020005d003100780030005b00550050 [x: 2.93887e-39 y: 4.50011e-39 z: 4.40823e-39 w: 7.80613e-39]
+VPR[7] = 0x00280020006400610065007200680054 [x: 3.67346e-39 y: 9.18369e-39 z: 9.27554e-39 w: 9.55101e-39]
+VPR[8] = 0x007200680074005f006e00690061006d [x: 1.04694e-38 y: 1.06531e-38 z: 1.01021e-38 w: 8.9082e-39]
+VPR[9] = 0x003000780030005b0029006400610065 [x: 4.40827e-39 y: 4.40823e-39 z: 3.7654e-39 w: 8.90818e-39]
+VPR[10] = 0x005d0038003400660030006600300030 [x: 8.54078e-39 y: 4.77559e-39 z: 4.40825e-39 w: 4.40817e-39]
+VPR[11] = 0x00700073005f0073007900730020007d [x: 1.02857e-38 y: 8.72453e-39 z: 1.11123e-38 w: 2.93891e-39]
+VPR[12] = 0x007000750073006e00550020003a0075 [x: 1.02857e-38 y: 1.05612e-38 z: 7.80606e-39 w: 5.32662e-39]
+VPR[13] = 0x005300200064006500740072006f0070 [x: 7.62239e-39 y: 9.18369e-39 z: 1.06531e-38 w: 1.01939e-38]
+VPR[14] = 0x00610065007200680054002000550050 [x: 8.90818e-39 y: 1.04694e-38 z: 7.71423e-39 w: 7.80613e-39]
+VPR[15] = 0x006e006f006900740070006f00200064 [x: 1.01021e-38 y: 9.64289e-39 z: 1.02857e-38 w: 2.93888e-39]
+VPR[16] = 0x000d0029003200780030002800200073 [x: 1.19392e-39 y: 4.59194e-39 z: 4.40816e-39 w: 2.9389e-39]
+VPR[17] = 0x0030005b005500500050007b00200045 [x: 4.40823e-39 y: 7.80613e-39 z: 7.34701e-39 w: 2.93883e-39]
+VPR[18] = 0x00650072006800540020005d00310078 [x: 9.27554e-39 y: 9.55101e-39 z: 2.93887e-39 w: 4.50011e-39]
+VPR[19] = 0x006e00690061006d0028002000640061 [x: 1.01021e-38 y: 8.9082e-39 z: 3.67346e-39 w: 9.18369e-39]
+VPR[20] = 0x0029006400610065007200680074005f [x: 3.7654e-39 y: 8.90818e-39 z: 1.04694e-38 w: 1.06531e-38]
+VPR[21] = 0x0030006600300030003000780030005b [x: 4.40825e-39 y: 4.40817e-39 z: 4.40827e-39 w: 4.40823e-39]
+VPR[22] = 0x007900730020007d005d003800340066 [x: 1.11123e-38 y: 2.93891e-39 z: 8.54078e-39 w: 4.77559e-39]
+VPR[23] = 0x00550020003a007500700073005f0073 [x: 7.80606e-39 y: 5.32662e-39 z: 1.02857e-38 w: 8.72453e-39]
+VPR[24] = 0x00740072006f0070007000750073006e [x: 1.06531e-38 y: 1.01939e-38 z: 1.02857e-38 w: 1.05612e-38]
+VPR[25] = 0x00540020005500500053002000640065 [x: 7.71423e-39 y: 7.80613e-39 z: 7.62239e-39 w: 9.18369e-39]
+VPR[26] = 0x0070006f002000640061006500720068 [x: 1.02857e-38 y: 2.93888e-39 z: 8.90818e-39 w: 1.04694e-38]
+VPR[27] = 0x0030002800200073006e006f00690074 [x: 4.40816e-39 y: 2.9389e-39 z: 1.01021e-38 w: 9.64289e-39]
+VPR[28] = 0x0000000000000000000d002900320078 [x: 0 y: 0 z: 1.19392e-39 w: 4.59194e-39]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22002082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x31] Thread (Render Worker Thread)[0x000809bc]} Registers:
+=========
+GPR[0] = 0x2e0
+GPR[1] = 0xd003fb00
+GPR[2] = 0x130630
+GPR[3] = 0x0
+GPR[4] = 0xd003fad0
+GPR[5] = 0x2e0
+GPR[6] = 0x2131aee0
+GPR[7] = 0x2131aee8
+GPR[8] = 0xff0
+GPR[9] = 0x2de
+GPR[10] = 0x41d70
+GPR[11] = 0x8d
+GPR[12] = 0x2131aee8
+GPR[13] = 0x120468
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x3f668c
+GPR[22] = 0x21201ce0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x40d5ac
+GPR[26] = 0x0
+GPR[27] = 0x8b56e0
+GPR[28] = 0x0
+GPR[29] = 0x949934
+GPR[30] = 0x949934
+GPR[31] = 0x12ec48
+FPR[0] = 30984
+FPR[1] = 0
+FPR[2] = 1
+FPR[3] = 0
+FPR[4] = -39.695
+FPR[5] = -1.0005
+FPR[6] = 999.5
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0.5
+FPR[10] = -360
+FPR[11] = 640
+FPR[12] = 0.5
+FPR[13] = 5.72213E+10
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x3f5acdac3f5acdac3f5acdac3f5acdac [x: 0.854701 y: 0.854701 z: 0.854701 w: 0.854701]
+VPR[5] = 0xbf5acdadbf5acdadbf5acdadbf5acdad [x: -0.854701 y: -0.854701 z: -0.854701 w: -0.854701]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0xbb6fe323bb6fe323bb6fe323bb6fe323 [x: -0.00366039 y: -0.00366039 z: -0.00366039 w: -0.00366039]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x3b06f9033b06f9033b06f9033b06f903 [x: 0.00205952 y: 0.00205952 z: 0.00205952 w: 0.00205952]
+VPR[12] = 0xbf800000bf800000bf800000bf800000 [x: -1 y: -1 z: -1 w: -1]
+VPR[13] = 0xbca3d70abca3d70abca3d70abca3d70a [x: -0.02 y: -0.02 z: -0.02 w: -0.02]
+VPR[14] = 0x00000000000000000000000053fca4cb [x: 0 y: 0 z: 0 w: 2.17019e+12]
+VPR[15] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[16] = 0x00000000531e6ea80000000000000010 [x: 0 y: 6.80461e+11 z: 0 w: 2.24208e-44]
+VPR[17] = 0x00000000531e6c49000000005324ea8e [x: 0 y: 6.80422e+11 z: 0 w: 7.0831e+11]
+VPR[18] = 0x3f8000003f8000003f8000003f800000 [x: 1 y: 1 z: 1 w: 1]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000100000000000000062 [x: 0 y: 2.24208e-44 z: 0 w: 1.37327e-43]
+VPR[21] = 0x0000000053b609ee0000000053b609ee [x: 0 y: 1.5637e+12 z: 0 w: 1.5637e+12]
+VPR[22] = 0x000000000b1929000000000053b5eed8 [x: 0 y: 2.94976e-32 z: 0 w: 1.56279e+12]
+VPR[23] = 0x00000000000000000000000053ba7d15 [x: 0 y: 0 z: 0 w: 1.60192e+12]
+VPR[24] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[25] = 0x0000000053ee1e2c0000000000000010 [x: 0 y: 2.04542e+12 z: 0 w: 2.24208e-44]
+VPR[26] = 0x0000000053ee1e2c0000000053ee1e2c [x: 0 y: 2.04542e+12 z: 0 w: 2.04542e+12]
+VPR[27] = 0x0000000053ee1a53000000000b192600 [x: 0 y: 2.04529e+12 z: 0 w: 2.94953e-32]
+VPR[28] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[29] = 0x00000000000000100000000000000062 [x: 0 y: 2.24208e-44 z: 0 w: 1.37327e-43]
+VPR[30] = 0x0000000053b6d3330000000053b6d333 [x: 0 y: 1.57045e+12 z: 0 w: 1.57045e+12]
+VPR[31] = 0x000000000b1923000000000053b61b64 [x: 0 y: 2.94931e-32 z: 0 w: 1.56429e+12]
+CR = 0x24000028
+LR = 0x809c4
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\Callback.cpp:58, in function CallbackManager::Init::<lambda_46ea869b6054320987a0d5fa0b32bb88>::operator ())
+G: W {PPU[0x2d] Thread (ClFileIO Worker Thread)[0x000354a8]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:261, in function CPUThread::CheckStatus)
+G: W {PPU[0x31] Thread (Render Worker Thread)[0x000809bc]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:261, in function CPUThread::CheckStatus)
+G: W {VBlank Thread} Exception: Aborted (emulation stopped)
+(in file Emu\RSX\RSXThread.cpp:2654, in function RSXThread::Task::<lambda_35da4a5bc935cd1c9a062d9f015244c2>::operator ())
+HLE: S {PPU[0x1] Thread (main_thread)[0x0007fffc]} Last syscall: 92 (sys_semaphore_wait)
+G: W {PPU[0x29] Thread (SPURS_THINGSSpursHdlr1)[0x00000000]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd0027cf8
+GPR[2] = 0x0
+GPR[3] = 0x21200780
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x0
+GPR[12] = 0x0
+GPR[13] = 0x1201e0
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x29] Thread (SPURS_THINGSSpursHdlr1)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_event.cpp:175, in function sys_event_queue_receive)
+G: W {PPU[0x1] Thread (main_thread)[0x0007fffc]} Registers:
+=========
+GPR[0] = 0x7ed7c
+GPR[1] = 0xd000d2f0
+GPR[2] = 0x130630
+GPR[3] = 0x2f
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x3e9
+GPR[7] = 0x4000
+GPR[8] = 0x16ec6c
+GPR[9] = 0x3f6938
+GPR[10] = 0x0
+GPR[11] = 0x5c
+GPR[12] = 0x48002082
+GPR[13] = 0x120030
+GPR[14] = 0x0
+GPR[15] = 0xd000dd18
+GPR[16] = 0x31
+GPR[17] = 0x0
+GPR[18] = 0x115000
+GPR[19] = 0x191864
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0xff4f8
+GPR[27] = 0x16e858
+GPR[28] = 0x16e86c
+GPR[29] = 0xd000dfa0
+GPR[30] = 0x16e864
+GPR[31] = 0x12ec64
+FPR[0] = 0
+FPR[1] = 0.0137044
+FPR[2] = 0
+FPR[3] = 2.2
+FPR[4] = 0.12
+FPR[5] = 0.08
+FPR[6] = 1.85
+FPR[7] = 0.15
+FPR[8] = 0.189944
+FPR[9] = 1
+FPR[10] = 1
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 1
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x48002082
+LR = 0x7ed7c
+CTR = 0x39800
+XER = 0x20000000 [CA=1 | OV=0 | SO=8589934592]
+FPSCR = 0x20000400 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=1 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=1 | FEX=0 | FX=0]
+
+G: W {PPU[0x2a] Thread (SPURS_THINGSSpursHdlr0)[0x00000000]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd002be00
+GPR[2] = 0x0
+GPR[3] = 0x21200780
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x0
+GPR[12] = 0x0
+GPR[13] = 0x1202b8
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x1] Thread (main_thread)[0x0007fffc]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_semaphore.cpp:94, in function sys_semaphore_wait)
+G: W {PPU[0x2a] Thread (SPURS_THINGSSpursHdlr0)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_lwcond.cpp:184, in function _sys_lwcond_queue_wait)
+G: ! All threads stopped...

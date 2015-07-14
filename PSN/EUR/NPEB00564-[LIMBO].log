@@ -1,5 +1,5 @@
-HLE: ! path: /dev_hdd0/game/
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00564/USRDIR/BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00564/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: !  
@@ -15,8 +15,11 @@ LDR: ! Title: LIMBO Trial
 LDR: ! Serial: NPEB00564
 LDR: ! Elf path: /dev_hdd0/game/NPEB00564/USRDIR/BOOT.BIN
 LDR: ! loader::init() failed: Broken file
-MEM: ! Initializing memory: g_base_addr = 0x29c860000, g_priv_addr = 0x39c860000
-MEM: ! Memory initialized.
+LDR: ! *** sdk version: 0x350001
+LDR: ! *** primary prio: 1001
+LDR: ! *** primary stacksize: 0x100000
+LDR: ! *** malloc pagesize: 0x100000
+LDR: ! *** ppc seg: 0x0
 LDR: ! Imported function 'cellFsReadWithOffset' in 'sys_fs' module (0x31969c)
 LDR: ! Imported function 'cellFsClose' in 'sys_fs' module (0x3196d4)
 LDR: ! Imported function 'cellFsOpendir' in 'sys_fs' module (0x31970c)
@@ -142,9 +145,8 @@ LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0x31af8c)
 HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x43f000, user_size=0x1c4)
 *** TLS segment addr: 0x003b0714
 *** TLS segment size: 0x00000004
-LDR: E 'BreakPoints.dat' is broken (version=0xdc80, break_count=0x0, marked_count=0x93173968, length=0x6)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x43d3b0, attr=*0x353d60)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0025a3e4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd00ffc04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0025a3e4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd00ffc04)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x43d1b8, attr=*0x353d60)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x43c940, attr=*0x353d60)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x43c968, attr=*0x353d60)
@@ -154,6 +156,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x43c8c8, attr=*0x353d60)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x43c8f0, attr=*0x353d60)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x43c918, attr=*0x353d60)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00259394]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ff790)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000020, attr=*0x353d60)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200000a0, attr=*0x353d60)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000130, attr=*0x353d60)
@@ -174,13 +177,13 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x41c2a0, attr=*0xd00ffbd0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ad94]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x3c1e48, attr=*0xd00ffbc0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00021370]} sys_spu: sys_spu_initialize(max_usable_spu=6, max_raw_spu=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00021380]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd00ffcc0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0031a7e4]} cellSysutil: cellSysutilRegisterCallback(slot=0, func_addr=0x3a4928, userdata=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00021380]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd00ffcc0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0031a7e4]} cellSysutil: cellSysutilRegisterCallback(slot=0, func=*0x3a4928, userdata=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0004286c]} sys_semaphore: sys_semaphore_create(sem=*0x20027510, attr=*0xd00ff850, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031a624]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031a624]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031a624]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0031ab64]} sceNp: sceNpInit(mem_size=0x20000, mem_addr=0x3c2008)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0031ab64]} sceNp: sceNpInit(poolsize=131072, poolptr=0x3c2008)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ac7c]} cellGame: cellGameBootCheck(type=*0xd00ff870, attributes=*0xd00ff874, size=*0xd00ff878, dirName=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ac0c]} cellGame: cellGameContentPermit(contentInfoPath=*0xd00ff8a0, usrdirPath=*0xd00ff920)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ac0c]} cellGame: cellGameContentPermit(): path_set=1, contentInfo='/dev_hdd0/game/NPEB00564', usrdir='/dev_hdd0/game/NPEB00564/USRDIR'
@@ -188,12 +191,232 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x003197ec]} cellFs: cellFsStat(path=*0x20
 HLE: W {PPU[0x1] Thread (main_thread)[0x003197ec]} sys_fs: sys_fs_stat(path=*0x200276b0, sb=*0xd00ff7e8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003197ec]} sys_fs: *** path = '/dev_hdd0/game/NPEB00564/USRDIR/limbo_boot.EDAT'
 HLE: W {PPU[0x1] Thread (main_thread)[0x0031ab2c]} sceNp: sceNpDrmIsAvailable(k_licensee_addr=0x0, drm_path_addr=0x200276b0('/dev_hdd0/game/NPEB00564/USRDIR/limbo_boot.EDAT'))
-HLE: W {PPU[0x1] Thread (main_thread)[0x0031ab2c]} sceNp: npDrmIsAvailable: Found DRM license file at /dev_hdd0/game/NPEB00564/USRDIR/limbo_boot.EDAT
-HLE: W {PPU[0x1] Thread (main_thread)[0x0031ab2c]} sceNp: npDrmIsAvailable: Using k_licensee 0x0
+HLE: W {PPU[0x1] Thread (main_thread)[0x0031ab2c]} sceNp: npDrmIsAvailable(): Found DRM license file at /dev_hdd0/game/NPEB00564/USRDIR/limbo_boot.EDAT
+HLE: W {PPU[0x1] Thread (main_thread)[0x0031ab2c]} sceNp: npDrmIsAvailable(): Using k_licensee 0x0
 LDR: E {PPU[0x1] Thread (main_thread)[0x0031ab2c]} EDAT: NPD hash validation failed!
 HLE: W {PPU[0x1] Thread (main_thread)[0x003197b4]} cellFs: cellFsOpen(path=*0x200276b0, flags=0, fd=*0x20027644, arg=*0xd00ff7a8, size=0x8) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x003197b4]} sys_fs: sys_fs_open(path=*0x200276b0, flags=0, fd=*0x20027644, mode=0, arg=*0xd00ff7a8, size=0x8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003197b4]} sys_fs: *** path = '/dev_hdd0/game/NPEB00564/USRDIR/limbo_boot.EDAT'
-HLE: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} CallbackManager thread aborted
-HLE: ! All threads stopped...
-MEM: ! Closing memory...
+HLE: W {PPU[0x1] Thread (main_thread)[0x00259394]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ff670)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00259394]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ff670)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00259394]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ff670)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00259394]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ff670)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00259394]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ff670)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00259394]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ff670)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00259394]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ff670)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00259394]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ff670)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+G: W {PPU[0x1] Thread (main_thread)[0x00039d9c]} Registers:
+=========
+GPR[0] = 0x39d14
+GPR[1] = 0xd00ff7c0
+GPR[2] = 0x3b69c8
+GPR[3] = 0x0
+GPR[4] = 0x0
+GPR[5] = 0x20
+GPR[6] = 0xff9dcc4ac0000000
+GPR[7] = 0x208dfd20
+GPR[8] = 0x1
+GPR[9] = 0x43daa0
+GPR[10] = 0x200275f0
+GPR[11] = 0x5c
+GPR[12] = 0x200275f0
+GPR[13] = 0x446030
+GPR[14] = 0x0
+GPR[15] = 0x39f000
+GPR[16] = 0x39e000
+GPR[17] = 0x0
+GPR[18] = 0x66023f9e
+GPR[19] = 0x0
+GPR[20] = 0xf4240
+GPR[21] = 0x19000000
+GPR[22] = 0xaab9b1
+GPR[23] = 0x0
+GPR[24] = 0xc04acc9d
+GPR[25] = 0x2e829
+GPR[26] = 0xffffffffe4ac21c4
+GPR[27] = 0x44504e
+GPR[28] = 0x20027620
+GPR[29] = 0x3b0000
+GPR[30] = 0x41e5a2
+GPR[31] = 0x20027620
+FPR[0] = 0.0380913
+FPR[1] = 1
+FPR[2] = 100
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 2
+FPR[6] = 0.693147
+FPR[7] = 0.0416573
+FPR[8] = 0.00830136
+FPR[9] = 0.00132988
+FPR[10] = 1
+FPR[11] = -0.007717
+FPR[12] = 0.628224
+FPR[13] = 1.25992
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 9.53674E-07
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x3fc000003fc000003fc000003fc00000 [x: 1.5 y: 1.5 z: 1.5 w: 1.5]
+VPR[3] = 0x00019edc00019edc00019edc00019edc [x: 1.48824e-40 y: 1.48824e-40 z: 1.48824e-40 w: 1.48824e-40]
+VPR[4] = 0x478a4980478a4980478a4980478a4980 [x: 70803 y: 70803 z: 70803 w: 70803]
+VPR[5] = 0x80000000800000008000000080000000 [x: -0 y: -0 z: -0 w: -0]
+VPR[6] = 0x80000000800000008000000080000000 [x: -0 y: -0 z: -0 w: -0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x28000042
+LR = 0x39d14
+CTR = 0x2e4a8
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd010fe00
+GPR[2] = 0x0
+GPR[3] = 0x0
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x0
+GPR[12] = 0x0
+GPR[13] = 0x446224
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x80002800551060530000000000000000 [x: -1.43493e-41 y: 9.92146e+12 z: 0 w: 0]
+VPR[2] = 0x7c355a1b50e034badd9fc03020dfcab3 [x: 3.76653e+36 y: 3.00924e+10 z: -1.43891e+18 w: 3.79118e-19]
+VPR[3] = 0x1c4cbe41df8e53981936b50570239e7c [x: 6.77438e-22 y: -2.05114e+19 z: 9.44574e-24 w: 2.02551e+29]
+VPR[4] = 0x77e33c068d2624418b6f7c5d8927bf1d [x: 9.21773e+33 y: -5.11963e-31 z: -4.61233e-32 w: -2.01918e-33]
+VPR[5] = 0x1bd6b698bae035fd80d17194a5f77c81 [x: 3.55213e-22 y: -0.00171059 z: -1.92344e-38 w: -4.2932e-16]
+VPR[6] = 0xc1a44e0df5f34b5feef99550b0a4c44d [x: -20.5381 y: -6.16825e+32 z: -3.86211e+28 w: -1.19884e-09]
+VPR[7] = 0x568403785ae858e78b5b0b3e18e5173a [x: 7.25752e+13 y: 3.27e+16 z: -4.21863e-32 w: 5.92186e-24]
+VPR[8] = 0x68718ef9e61ce8dd8df932738a8b169c [x: 4.56291e+24 y: -1.85246e+23 z: -1.5358e-30 w: -1.33937e-32]
+VPR[9] = 0xd10bea34d3b00c77c7239a18409b2d8d [x: -3.75581e+10 y: -1.51225e+12 z: -41882.1 w: 4.84931]
+VPR[10] = 0xf6f0c456e315ba99938dd536b25236ec [x: -2.44167e+33 y: -2.76201e+21 z: -3.58036e-27 w: -1.22361e-08]
+VPR[11] = 0x0000152b7f547a049c353586c06bfe65 [x: 7.59364e-42 y: 2.8243e+38 z: -5.99571e-22 w: -3.6874]
+VPR[12] = 0x80002900556b60440000000000000000 [x: -1.4708e-41 y: 1.61749e+13 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x80002a00557e60490000000000000000 [x: -1.50668e-41 y: 1.74806e+13 z: 0 w: 0]
+VPR[24] = 0x0063006100620020006e006500680057 [x: 9.09185e-39 y: 8.99992e-39 z: 1.0102e-38 w: 9.55101e-39]
+VPR[25] = 0x006f007400700075002000640065006b [x: 1.01939e-38 y: 1.02857e-38 z: 2.93888e-39 w: 9.27554e-39]
+VPR[26] = 0x0073007400630065006a0062006f0020 [x: 1.05612e-38 y: 9.09186e-39 z: 9.7347e-39 w: 1.01938e-38]
+VPR[27] = 0x0073002700200065006800740020002c [x: 1.05611e-38 y: 2.93888e-39 z: 9.55105e-39 w: 2.9388e-39]
+VPR[28] = 0x00270075007200680074002000650065 [x: 3.58175e-39 y: 1.04694e-38 z: 1.0653e-38 w: 9.27553e-39]
+VPR[29] = 0x0069006e0061006800630065006d0020 [x: 9.64288e-39 y: 8.90819e-39 z: 9.09186e-39 w: 1.00101e-38]
+VPR[30] = 0x002000730065006f00640020006d0073 [x: 2.9389e-39 y: 9.27554e-39 z: 9.18359e-39 w: 1.00102e-38]
+VPR[31] = 0x006b0072006f007700200074006f006e [x: 9.82656e-39 y: 1.01939e-38 z: 2.9389e-39 w: 1.01939e-38]
+CR = 0x22000082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x1] Thread (main_thread)[0x00039d9c]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:261, in function CPUThread::CheckStatus)
+G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\Callback.cpp:58, in function CallbackManager::Init::<lambda_46ea869b6054320987a0d5fa0b32bb88>::operator ())
+G: ! All threads stopped...

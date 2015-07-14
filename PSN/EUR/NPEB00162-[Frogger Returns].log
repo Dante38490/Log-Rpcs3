@@ -1,7 +1,7 @@
-HLE: ! path: /dev_hdd0/game/
-HLE: W No pause.bin found, Auto Pause will not work.
-HLE: W No pause.bin found, Auto Pause will not work.
+LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00162/USRDIR/BOOT.BIN'...
+G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00162/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: !  
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
@@ -9,1133 +9,932 @@ LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
 LDR: ! /host_root/ -> 
 LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
-LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00162/../
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: !  
 LDR: ! Title: Frogger Returns
 LDR: ! Serial: NPEB00162
-LDR: !  
-LDR: E loader::init() failed: Broken file
-MEM: ! Initializing memory: base_addr = 0x39e37e0000
-MEM: ! Memory initialized.
-LDR: ! Imported function 'cellFsClose' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsRead' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsWrite' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellFsFstat' in 'sys_fs' module  (HLE)
-LDR: ! Imported function 'cellPadInit' in 'sys_io' module  (HLE)
-LDR: ! Imported function 'cellPadSetPortSetting' in 'sys_io' module  (HLE)
-LDR: ! Imported function 'cellPadGetData' in 'sys_io' module  (HLE)
-LDR: ! Imported function 'cellPadGetInfo2' in 'sys_io' module  (HLE)
-LDR: ! Imported function 'cellVideoOutConfigure' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSaveDataUserListAutoSave' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSaveDataUserListSave' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellMsgDialogClose' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSaveDataUserListAutoLoad' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSaveDataUserListLoad' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellMsgDialogOpenErrorCode' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSaveDataUserFixedSave' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellMsgDialogAbort' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSaveDataUserFixedLoad' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellMsgDialogOpen2' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSaveDataUserFixedDelete' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellVideoOutGetResolutionAvailability' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellAudioOutSetCopyControl' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellAudioOutGetNumberOfDevice' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellAudioOutGetConfiguration' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellAudioOutGetState' in 'cellSysutil' module  (HLE)
-LDR: ! Imported function 'cellRescGetNumColorBuffers' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescSetWaitFlip' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescSetDsts' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescAdjustAspectRatio' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescSetDisplayMode' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescSetConvertAndFlip' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescExit' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescSetFlipHandler' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescInit' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescGetBufferSize' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescSetSrc' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescSetBufferAddress' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescSetVBlankHandler' in 'cellResc' module  (HLE)
-LDR: ! Imported function 'cellRescCreateInterlaceTable' in 'cellResc' module  (HLE)
-LDR: ! Imported function '_cellGcmInitBody' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function '_cellGcmSetFlipCommand' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmAddressToOffset' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmIoOffsetToAddress' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function '_cellGcmFunc15' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmBindTile' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetFlipMode' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetDebugOutputLevel' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetDefaultCommandWordSize' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetLastFlipTime' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmMapEaIoAddress' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetFlipStatus' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetDefaultSegmentWordSize' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetReport' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetDefaultFifoSize' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmBindZcull' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmMapMainMemory' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetFlipHandler' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetDisplayBuffer' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetControlRegister' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetReportDataLocation' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmUnbindZcull' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetVBlankHandler' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmResetFlipStatus' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetTileInfo' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmSetGraphicsHandler' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function '_cellGcmSetFlipCommandWithWaitLabel' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmUnbindTile' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetConfiguration' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellGcmGetLabelAddress' in 'cellGcmSys' module  (HLE)
-LDR: ! Imported function 'cellSysmoduleUnloadModule' in 'cellSysmodule' module  (HLE)
-LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module  (HLE)
-LDR: ! Imported function 'cellAudioInit' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioPortStop' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioGetPortConfig' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioPortStart' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioQuit' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellAudioPortOpen' in 'cellAudio' module  (HLE)
-LDR: ! Imported function 'cellSpursEventFlagDetachLv2EventQueue' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursEventFlagWait' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursDetachLv2EventQueue' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursJoinTaskset' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursShutdownTaskset' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'cellSpursAttachLv2EventQueue' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function '_cellSpursSendSignal' in 'cellSpurs' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyRegisterContext' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyCreateHandle' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyGetRequiredDiskSpace' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyDestroyContext' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyInit' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyAbortHandle' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyGetGameInfo' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyDestroyHandle' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyUnlockTrophy' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyTerm' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyGetTrophyIcon' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyCreateContext' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyGetTrophyInfo' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpTrophyGetGameIcon' in 'sceNpTrophy' module  (HLE)
-LDR: ! Imported function 'sceNpInit' in 'sceNp' module  (HLE)
-LDR: ! Imported function 'cellGameContentPermit' in 'cellGame' module  (HLE)
-LDR: ! Imported function 'cellGameContentErrorDialog' in 'cellGame' module  (HLE)
-LDR: ! Imported function 'cellGameBootCheck' in 'cellGame' module  (HLE)
-LDR: W Unknown module 'cellSaveData'
-LDR: ! Imported function 'cellSaveDataUserListDelete' in 'cellSaveData' module  (HLE)
-LDR: ! Imported function 'cellUserInfoSelectUser_ListType' in 'cellUserInfo' module  (HLE)
-LDR: ! Imported function 'cellUserInfoSelectUser_SetList' in 'cellUserInfo' module  (HLE)
-LDR: ! Imported function 'cellUserInfoGetList' in 'cellUserInfo' module  (HLE)
-LDR: ! Imported function 'sys_lwmutex_lock' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_lwmutex_unlock' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_ppu_thread_create' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function '_sys_process_atexitspawn' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_lwmutex_create' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_ppu_thread_get_id' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_prx_register_library' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_initialize_tls' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_time_get_system_time' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function '_sys_process_at_Exitspawn' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_prx_exitspawn_with_level' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_ppu_thread_exit' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_lwmutex_destroy' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_spu_image_close' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module  (HLE)
-LDR: ! Imported function 'sys_spu_image_import' in 'sysPrxForUser' module  (HLE)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19db88, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 3
-HLE: W {PPU[1] Thread (main_thread)[0x000e98b8]} sys_memory warning: sys_memory_get_user_memory_size(mem_info_addr=0xd000fc04)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19d990, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 4
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19d118, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 5
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19d140, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 6
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19d168, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 7
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19d050, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 8
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19d078, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 9
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19d0a0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 10
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19d0c8, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 11
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19d0f0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 12
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19e168, attr_addr=0x199870)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lgcmtx] (attribute=0x12): sq_id = 13
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x19e128, attr_addr=0x199880)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lgcmtx] (attribute=0x22): sq_id = 14
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100020, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 15
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301000a0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 16
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100130, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 17
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100190, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 18
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301001d0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 19
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100210, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 20
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301002d0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 21
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100300, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 22
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100330, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 23
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100360, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 24
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100390, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 25
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301003c0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 26
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x2617b8, attr_addr=0xd000fbf0)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 27
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x261788, attr_addr=0xd000fbe0)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 28
-HLE: W {PPU[1] Thread (main_thread)[0x002cc010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_SAVEDATA)
-HLE: W {PPU[1] Thread (main_thread)[0x000ca99c]} sys_spu warning: sys_spu_initialize(max_usable_spu=6, max_raw_spu=1)
-HLE: W {PPU[1] Thread (main_thread)[0x002cc010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_GCM_SYS)
-HLE: W {PPU[1] Thread (main_thread)[0x002cc010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_GCM_SYS)
-HLE: W {PPU[1] Thread (main_thread)[0x002cc010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_FS)
-HLE: W {PPU[1] Thread (main_thread)[0x002cc010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_USBD)
-HLE: W {PPU[1] Thread (main_thread)[0x002cc010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_IO)
-HLE: W {PPU[1] Thread (main_thread)[0x002cc010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_GAME)
-HLE: W {PPU[1] Thread (main_thread)[0x002cc010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_NP)
-HLE: W {PPU[1] Thread (main_thread)[0x0017f0c4]} cellSysutil warning: cellSysutilRegisterCallback(slot=0, func_addr=0x184e28, userdata=0x0)
-HLE: W {PPU[1] Thread (main_thread)[0x002d4004]} sceNp warning: sceNpInit(mem_size=0x20000, mem_addr=0x2617d8)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc01c]} sys_ppu_thread: *** New PPU Thread [vhearts] (detached, entry=0x184e20): id = 29
-HLE: W {PPU[29] Thread (vhearts)[0x002d601c]} cellGame warning: cellGameBootCheck(type_addr=0xd002f9d0, attributes_addr=0xd002f9d4, size_addr=0xd002f9d8, dirName_addr=0x0)
-HLE: W {PPU[29] Thread (vhearts)[0x002d6004]} cellGame warning: cellGameContentPermit(contentInfoPath_addr=0xd002f9e8, usrdirPath_addr=0x2817d8)
-HLE: W {PPU[1] Thread (main_thread)[0x002cc010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_GCM_SYS)
-HLE: W {PPU[1] Thread (main_thread)[0x002cc010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_RESC)
-HLE: W {PPU[1] Thread (main_thread)[0x00056700]} sys_spu warning: sys_raw_spu_create(id_addr=0x19bd64, attr_addr=0xd000f9d0)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca004]} cellGcmSys warning: _cellGcmInitBody(context_addr=0x19ce18, cmdSize=0x10000, ioSize=0x100000, ioAddress=0x30200000)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca004]} cellGcmSys warning: *** local memory(addr=0xc0000000, size=0xf900000)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca004]} cellGcmSys warning: cellGcmInit(): 256MB io address space used
-HLE: W {PPU[1] Thread (main_thread)[0x002ca004]} cellGcmSys warning: cellGcmMapEaIoAddress(ea=0x30200000, io=0x0, size=0x100000)
+LDR: ! Elf path: /dev_hdd0/game/NPEB00162/USRDIR/BOOT.BIN
+LDR: ! loader::init() failed: Broken file
+LDR: ! *** sdk version: 0x280001
+LDR: ! *** primary prio: 1001
+LDR: ! *** primary stacksize: 0x20000
+LDR: ! *** malloc pagesize: 0x100000
+LDR: ! *** ppc seg: 0x0
+LDR: ! Imported function 'cellFsClose' in 'sys_fs' module (0x148ee4)
+LDR: ! Imported function 'cellFsRead' in 'sys_fs' module (0x148f04)
+LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module (0x148f24)
+LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module (0x148f44)
+LDR: ! Imported function 'cellFsWrite' in 'sys_fs' module (0x148f64)
+LDR: ! Imported function 'cellFsFstat' in 'sys_fs' module (0x148f84)
+LDR: ! Imported function 'cellPadInit' in 'sys_io' module (0x148fa4)
+LDR: ! Imported function 'cellPadSetPortSetting' in 'sys_io' module (0x148fc4)
+LDR: ! Imported function 'cellPadGetData' in 'sys_io' module (0x148fe4)
+LDR: ! Imported function 'cellPadGetInfo2' in 'sys_io' module (0x149004)
+LDR: ! Imported function 'cellVideoOutConfigure' in 'cellSysutil' module (0x149024)
+LDR: ! Imported function 'cellSaveDataUserListAutoSave' in 'cellSysutil' module (0x149044)
+LDR: ! Imported function 'cellSaveDataUserListSave' in 'cellSysutil' module (0x149064)
+LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module (0x149084)
+LDR: ! Imported function 'cellMsgDialogClose' in 'cellSysutil' module (0x1490a4)
+LDR: ! Imported function 'cellSaveDataUserListAutoLoad' in 'cellSysutil' module (0x1490c4)
+LDR: ! Imported function 'cellSaveDataUserListLoad' in 'cellSysutil' module (0x1490e4)
+LDR: ! Imported function 'cellMsgDialogOpenErrorCode' in 'cellSysutil' module (0x149104)
+LDR: ! Imported function 'cellSaveDataUserFixedSave' in 'cellSysutil' module (0x149124)
+LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module (0x149144)
+LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module (0x149164)
+LDR: ! Imported function 'cellMsgDialogAbort' in 'cellSysutil' module (0x149184)
+LDR: ! Imported function 'cellSaveDataUserFixedLoad' in 'cellSysutil' module (0x1491a4)
+LDR: ! Imported function 'cellMsgDialogOpen2' in 'cellSysutil' module (0x1491c4)
+LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module (0x1491e4)
+LDR: ! Imported function 'cellSaveDataUserFixedDelete' in 'cellSysutil' module (0x149204)
+LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module (0x149224)
+LDR: ! Imported function 'cellVideoOutGetResolutionAvailability' in 'cellSysutil' module (0x149244)
+LDR: ! Imported function 'cellAudioOutSetCopyControl' in 'cellSysutil' module (0x149264)
+LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module (0x149284)
+LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module (0x149cc4)
+LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module (0x149ce4)
+LDR: ! Imported function 'cellAudioOutGetNumberOfDevice' in 'cellSysutil' module (0x149d04)
+LDR: ! Imported function 'cellAudioOutGetConfiguration' in 'cellSysutil' module (0x149d24)
+LDR: ! Imported function 'cellAudioOutGetState' in 'cellSysutil' module (0x149d44)
+LDR: ! Imported function 'cellRescGetNumColorBuffers' in 'cellResc' module (0x1492a4)
+LDR: ! Imported function 'cellRescSetWaitFlip' in 'cellResc' module (0x1492c4)
+LDR: ! Imported function 'cellRescSetDsts' in 'cellResc' module (0x1492e4)
+LDR: ! Imported function 'cellRescAdjustAspectRatio' in 'cellResc' module (0x149304)
+LDR: ! Imported function 'cellRescSetDisplayMode' in 'cellResc' module (0x149324)
+LDR: ! Imported function 'cellRescSetConvertAndFlip' in 'cellResc' module (0x149344)
+LDR: ! Imported function 'cellRescExit' in 'cellResc' module (0x149364)
+LDR: ! Imported function 'cellRescSetFlipHandler' in 'cellResc' module (0x149384)
+LDR: ! Imported function 'cellRescInit' in 'cellResc' module (0x1493a4)
+LDR: ! Imported function 'cellRescGetBufferSize' in 'cellResc' module (0x1493c4)
+LDR: ! Imported function 'cellRescSetSrc' in 'cellResc' module (0x1493e4)
+LDR: ! Imported function 'cellRescSetBufferAddress' in 'cellResc' module (0x149404)
+LDR: ! Imported function 'cellRescSetVBlankHandler' in 'cellResc' module (0x149424)
+LDR: ! Imported function 'cellRescCreateInterlaceTable' in 'cellResc' module (0x149444)
+LDR: ! Imported function '_cellGcmInitBody' in 'cellGcmSys' module (0x149464)
+LDR: ! Imported function '_cellGcmSetFlipCommand' in 'cellGcmSys' module (0x149484)
+LDR: ! Imported function 'cellGcmAddressToOffset' in 'cellGcmSys' module (0x1494a4)
+LDR: ! Imported function 'cellGcmIoOffsetToAddress' in 'cellGcmSys' module (0x1494c4)
+LDR: ! Imported function '_cellGcmFunc15' in 'cellGcmSys' module (0x1494e4)
+LDR: ! Imported function 'cellGcmBindTile' in 'cellGcmSys' module (0x149504)
+LDR: ! Imported function 'cellGcmSetFlipMode' in 'cellGcmSys' module (0x149524)
+LDR: ! Imported function 'cellGcmSetDebugOutputLevel' in 'cellGcmSys' module (0x149544)
+LDR: ! Imported function 'cellGcmGetDefaultCommandWordSize' in 'cellGcmSys' module (0x149564)
+LDR: ! Imported function 'cellGcmGetLastFlipTime' in 'cellGcmSys' module (0x149584)
+LDR: ! Imported function 'cellGcmMapEaIoAddress' in 'cellGcmSys' module (0x1495a4)
+LDR: ! Imported function 'cellGcmGetFlipStatus' in 'cellGcmSys' module (0x1495c4)
+LDR: ! Imported function 'cellGcmGetDefaultSegmentWordSize' in 'cellGcmSys' module (0x1495e4)
+LDR: ! Imported function 'cellGcmGetReport' in 'cellGcmSys' module (0x149604)
+LDR: ! Imported function 'cellGcmSetDefaultFifoSize' in 'cellGcmSys' module (0x149624)
+LDR: ! Imported function 'cellGcmBindZcull' in 'cellGcmSys' module (0x149644)
+LDR: ! Imported function 'cellGcmMapMainMemory' in 'cellGcmSys' module (0x149664)
+LDR: ! Imported function 'cellGcmSetFlipHandler' in 'cellGcmSys' module (0x149684)
+LDR: ! Imported function 'cellGcmSetDisplayBuffer' in 'cellGcmSys' module (0x1496a4)
+LDR: ! Imported function 'cellGcmGetControlRegister' in 'cellGcmSys' module (0x1496c4)
+LDR: ! Imported function 'cellGcmGetReportDataLocation' in 'cellGcmSys' module (0x1496e4)
+LDR: ! Imported function 'cellGcmUnbindZcull' in 'cellGcmSys' module (0x149704)
+LDR: ! Imported function 'cellGcmSetVBlankHandler' in 'cellGcmSys' module (0x149724)
+LDR: ! Imported function 'cellGcmResetFlipStatus' in 'cellGcmSys' module (0x149744)
+LDR: ! Imported function 'cellGcmSetTileInfo' in 'cellGcmSys' module (0x149764)
+LDR: ! Imported function 'cellGcmSetGraphicsHandler' in 'cellGcmSys' module (0x149784)
+LDR: ! Imported function '_cellGcmSetFlipCommandWithWaitLabel' in 'cellGcmSys' module (0x1497a4)
+LDR: ! Imported function 'cellGcmUnbindTile' in 'cellGcmSys' module (0x1497c4)
+LDR: ! Imported function 'cellGcmGetConfiguration' in 'cellGcmSys' module (0x1497e4)
+LDR: ! Imported function 'cellGcmGetLabelAddress' in 'cellGcmSys' module (0x149804)
+LDR: ! Imported function 'cellSysmoduleUnloadModule' in 'cellSysmodule' module (0x149824)
+LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module (0x149844)
+LDR: ! Imported function 'cellAudioInit' in 'cellAudio' module (0x149864)
+LDR: ! Imported function 'cellAudioPortStop' in 'cellAudio' module (0x149884)
+LDR: ! Imported function 'cellAudioGetPortConfig' in 'cellAudio' module (0x1498a4)
+LDR: ! Imported function 'cellAudioPortStart' in 'cellAudio' module (0x1498c4)
+LDR: ! Imported function 'cellAudioQuit' in 'cellAudio' module (0x1498e4)
+LDR: ! Imported function 'cellAudioPortOpen' in 'cellAudio' module (0x149904)
+LDR: ! Imported function 'cellSpursEventFlagDetachLv2EventQueue' in 'cellSpurs' module (0x149924)
+LDR: ! Imported function 'cellSpursEventFlagWait' in 'cellSpurs' module (0x149944)
+LDR: ! Imported function 'cellSpursDetachLv2EventQueue' in 'cellSpurs' module (0x149964)
+LDR: ! Imported function 'cellSpursJoinTaskset' in 'cellSpurs' module (0x149984)
+LDR: ! Imported function 'cellSpursShutdownTaskset' in 'cellSpurs' module (0x1499a4)
+LDR: ! Imported function 'cellSpursAttachLv2EventQueue' in 'cellSpurs' module (0x1499c4)
+LDR: ! Imported function '_cellSpursSendSignal' in 'cellSpurs' module (0x1499e4)
+LDR: ! Imported function 'sceNpTrophyRegisterContext' in 'sceNpTrophy' module (0x149a04)
+LDR: ! Imported function 'sceNpTrophyCreateHandle' in 'sceNpTrophy' module (0x149a24)
+LDR: ! Imported function 'sceNpTrophyGetRequiredDiskSpace' in 'sceNpTrophy' module (0x149a44)
+LDR: ! Imported function 'sceNpTrophyDestroyContext' in 'sceNpTrophy' module (0x149a64)
+LDR: ! Imported function 'sceNpTrophyInit' in 'sceNpTrophy' module (0x149a84)
+LDR: ! Imported function 'sceNpTrophyAbortHandle' in 'sceNpTrophy' module (0x149aa4)
+LDR: ! Imported function 'sceNpTrophyGetGameInfo' in 'sceNpTrophy' module (0x149ac4)
+LDR: ! Imported function 'sceNpTrophyDestroyHandle' in 'sceNpTrophy' module (0x149ae4)
+LDR: ! Imported function 'sceNpTrophyUnlockTrophy' in 'sceNpTrophy' module (0x149b04)
+LDR: ! Imported function 'sceNpTrophyTerm' in 'sceNpTrophy' module (0x149b24)
+LDR: ! Imported function 'sceNpTrophyGetTrophyIcon' in 'sceNpTrophy' module (0x149b44)
+LDR: ! Imported function 'sceNpTrophyCreateContext' in 'sceNpTrophy' module (0x149b64)
+LDR: ! Imported function 'sceNpTrophyGetTrophyInfo' in 'sceNpTrophy' module (0x149b84)
+LDR: ! Imported function 'sceNpTrophyGetGameIcon' in 'sceNpTrophy' module (0x149ba4)
+LDR: ! Imported function 'sceNpInit' in 'sceNp' module (0x149bc4)
+LDR: ! Imported function 'cellGameContentPermit' in 'cellGame' module (0x149be4)
+LDR: ! Imported function 'cellGameContentErrorDialog' in 'cellGame' module (0x149c04)
+LDR: ! Imported function 'cellGameBootCheck' in 'cellGame' module (0x149c24)
+LDR: E Unknown module 'cellSaveData'
+LDR: ! Imported function 'cellSaveDataUserListDelete' in 'cellSaveData' module (0x149c44)
+LDR: ! Imported function 'cellUserInfoSelectUser_ListType' in 'cellUserInfo' module (0x149c64)
+LDR: ! Imported function 'cellUserInfoSelectUser_SetList' in 'cellUserInfo' module (0x149c84)
+LDR: ! Imported function 'cellUserInfoGetList' in 'cellUserInfo' module (0x149ca4)
+LDR: ! Imported function 'sys_lwmutex_lock' in 'sysPrxForUser' module (0x149d64)
+LDR: ! Imported function 'sys_lwmutex_unlock' in 'sysPrxForUser' module (0x149d84)
+LDR: ! Imported function 'sys_ppu_thread_create' in 'sysPrxForUser' module (0x149da4)
+LDR: ! Imported function '_sys_process_atexitspawn' in 'sysPrxForUser' module (0x149dc4)
+LDR: ! Imported function 'sys_lwmutex_create' in 'sysPrxForUser' module (0x149de4)
+LDR: ! Imported function 'sys_ppu_thread_get_id' in 'sysPrxForUser' module (0x149e04)
+LDR: ! Imported function 'sys_prx_register_library' in 'sysPrxForUser' module (0x149e24)
+LDR: ! Imported function 'sys_initialize_tls' in 'sysPrxForUser' module (0x149e44)
+LDR: ! Imported function 'sys_time_get_system_time' in 'sysPrxForUser' module (0x149e64)
+LDR: ! Imported function '_sys_process_at_Exitspawn' in 'sysPrxForUser' module (0x149e84)
+LDR: ! Imported function 'sys_prx_exitspawn_with_level' in 'sysPrxForUser' module (0x149ea4)
+LDR: ! Imported function 'sys_ppu_thread_exit' in 'sysPrxForUser' module (0x149ec4)
+LDR: ! Imported function 'sys_lwmutex_destroy' in 'sysPrxForUser' module (0x149ee4)
+LDR: ! Imported function 'sys_spu_image_close' in 'sysPrxForUser' module (0x149f04)
+LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0x149f24)
+LDR: ! Imported function 'sys_spu_image_import' in 'sysPrxForUser' module (0x149f44)
+HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x2c7000, user_size=0x1b8)
+*** TLS segment addr: 0x00187374
+*** TLS segment size: 0x00000004
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19db88, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e98b8]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd001fc04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19d990, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19d118, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19d140, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19d168, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19d050, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19d078, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19d0a0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19d0c8, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19d0f0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19e168, attr=*0x199870)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x19e128, attr=*0x199880)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e856c]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd001f770)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000020, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200000a0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000130, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000190, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200001d0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000210, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200002d0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000300, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000330, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000360, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000390, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200003c0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2617b8, attr=*0xd001fbf0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x261788, attr=*0xd001fbe0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149844]} cellSysmodule: cellSysmoduleLoadModule(id=0x0033: CELL_SYSMODULE_SYSUTIL_SAVEDATA)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000ca99c]} sys_spu: sys_spu_initialize(max_usable_spu=6, max_raw_spu=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149844]} cellSysmodule: cellSysmoduleLoadModule(id=0x0010: CELL_SYSMODULE_GCM_SYS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149844]} cellSysmodule: cellSysmoduleLoadModule(id=0x0010: CELL_SYSMODULE_GCM_SYS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149844]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149844]} cellSysmodule: cellSysmoduleLoadModule(id=0x001c: CELL_SYSMODULE_USBD)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149844]} cellSysmodule: cellSysmoduleLoadModule(id=0x0017: CELL_SYSMODULE_IO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149844]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149844]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149224]} cellSysutil: cellSysutilRegisterCallback(slot=0, func=*0x184e28, userdata=*0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149bc4]} sceNp: sceNpInit(poolsize=131072, poolptr=0x2617d8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149da4]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0xd001fb90, entry=0x184e20, arg=0x0, prio=1001, stacksize=0x4000, flags=0x0, threadname=*0x15eeac)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149da4]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0xd001fb90, param=*0xd001fb18, arg=0x0, unk=0x0, prio=1001, stacksize=0x4000, flags=0x0, threadname=*0x15eeac)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149da4]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x1d)
+HLE: W {PPU[0x1d] Thread (vhearts)[0x00149c24]} cellGame: cellGameBootCheck(type=*0xd00339d0, attributes=*0xd00339d4, size=*0xd00339d8, dirName=*0x0)
+HLE: W {PPU[0x1d] Thread (vhearts)[0x00149be4]} cellGame: cellGameContentPermit(contentInfoPath=*0xd00339e8, usrdirPath=*0x2817d8)
+HLE: W {PPU[0x1d] Thread (vhearts)[0x00149be4]} cellGame: cellGameContentPermit(): path_set=1, contentInfo='/dev_hdd0/game/NPEB00162', usrdir='/dev_hdd0/game/NPEB00162/USRDIR'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149844]} cellSysmodule: cellSysmoduleLoadModule(id=0x0010: CELL_SYSMODULE_GCM_SYS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149844]} cellSysmodule: cellSysmoduleLoadModule(id=0x001f: CELL_SYSMODULE_RESC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00056700]} sys_spu: sys_raw_spu_create(id=*0x19bd64, attr=*0xd001f9d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e856c]} sys_memory: sys_memory_allocate(size=0x300000, flags=0x400, alloc_addr=*0xd001f6e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149464]} cellGcmSys: _cellGcmInitBody(context=*0x19ce18, cmdSize=0x10000, ioSize=0x100000, ioAddress=0x20100000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149464]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149464]} cellGcmSys: cellGcmInit(): 256MB io address space used
 RSX: ! {RSXThread} RSX thread started
-HLE: W {PPU[1] Thread (main_thread)[0x002ca058]} cellGcmSys warning: cellGcmSetDebugOutputLevel(level=2)
-HLE: E {PPU[1] Thread (main_thread)[0x002ca130]} cellGcmSys TODO: cellGcmSetGraphicsHandler
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149544]} cellGcmSys: cellGcmSetDebugOutputLevel(level=2)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00149784]} cellGcmSys: cellGcmSetGraphicsHandler
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-HLE: W {PPU[1] Thread (main_thread)[0x002ca07c]} cellGcmSys warning: cellGcmMapEaIoAddress(ea=0x30500000, io=0xe000000, size=0x100000)
-HLE: W {PPU[1] Thread (main_thread)[0x0017f0d0]} cellSysutil warning: cellVideoOutGetResolutionAvailability(videoOut=0, resolutionId=0x1, option_addr=0x2, aspect=0, option=-397561360)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=0)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=1)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=2)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=3)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=4)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=5)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=6)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=7)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=8)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=9)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=10)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=11)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=12)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=13)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca148]} cellGcmSys warning: cellGcmUnbindTile(index=14)
-HLE: W {PPU[1] Thread (main_thread)[0x002c8064]} cellResc warning: cellRescInit(initConfig_addr=0xd000f960)
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x1
-HLE: W {PPU[1] Thread (main_thread)[0x002ca124]} cellGcmSys warning: cellGcmSetTileInfo(index=0, location=0, offset=253558784, size=7536640, pitch=5120, comp=0, base=0, bank=0)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca040]} cellGcmSys warning: cellGcmBindTile(index=0)
-HLE: W {PPU[1] Thread (main_thread)[0x002c8034]} cellResc warning: cellRescSetDisplayMode(displayMode=4)
-HLE: W {PPU[1] Thread (main_thread)[0x002c8034]} cellSysutil warning: cellVideoOutConfigure(videoOut=0, config_addr=0x30016000, option_addr=0x0, waitForEvent=0x0)
-HLE: W {PPU[1] Thread (main_thread)[0x002c8034]} cellGcmSys warning: cellGcmSetFlipMode(mode=2)
-HLE: W {PPU[1] Thread (main_thread)[0x002c8070]} cellResc warning: cellRescGetBufferSize(colorBuffers_addr=0xd000f930, vertexArray_addr=0xd000f928, fragmentShader_addr=0xd000f92c)
-HLE: W {PPU[1] Thread (main_thread)[0x002c8088]} cellResc warning: cellRescSetBufferAddress(colorBuffers_addr=0xcf1d0000, vertexArray_addr=0xc0000000, fragmentShader_addr=0xc0000180)
-HLE: W {PPU[1] Thread (main_thread)[0x002c8028]} cellResc warning: cellRescAdjustAspectRatio(horizontal=1.000000, vertical=1.000000)
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x3
-HLE: W {PPU[1] Thread (main_thread)[0x002ca124]} cellGcmSys warning: cellGcmSetTileInfo(index=1, location=0, offset=245694464, size=7864320, pitch=10240, comp=7, base=1, bank=0)
-HLE: E {PPU[1] Thread (main_thread)[0x002ca124]} cellGcmSys error: cellGcmSetTileInfo: bad compression mode! (7)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca040]} cellGcmSys warning: cellGcmBindTile(index=1)
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x5
-HLE: W {PPU[1] Thread (main_thread)[0x002ca124]} cellGcmSys warning: cellGcmSetTileInfo(index=2, location=0, offset=237830144, size=7864320, pitch=10240, comp=7, base=121, bank=0)
-HLE: E {PPU[1] Thread (main_thread)[0x002ca124]} cellGcmSys error: cellGcmSetTileInfo: bad compression mode! (7)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca040]} cellGcmSys warning: cellGcmBindTile(index=2)
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x7
-HLE: W {PPU[1] Thread (main_thread)[0x002ca124]} cellGcmSys warning: cellGcmSetTileInfo(index=3, location=0, offset=233897984, size=3932160, pitch=5120, comp=0, base=0, bank=0)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca040]} cellGcmSys warning: cellGcmBindTile(index=3)
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0x9
-HLE: W {PPU[1] Thread (main_thread)[0x002ca124]} cellGcmSys warning: cellGcmSetTileInfo(index=3, location=0, offset=229965824, size=7864320, pitch=5120, comp=0, base=0, bank=0)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca040]} cellGcmSys warning: cellGcmBindTile(index=3)
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xb
-HLE: W {PPU[1] Thread (main_thread)[0x002ca124]} cellGcmSys warning: cellGcmSetTileInfo(index=4, location=0, offset=222101504, size=7864320, pitch=10240, comp=11, base=241, bank=3)
-HLE: E {PPU[1] Thread (main_thread)[0x002ca124]} cellGcmSys error: cellGcmSetTileInfo: bad compression mode! (11)
-HLE: W {PPU[1] Thread (main_thread)[0x002ca040]} cellGcmSys warning: cellGcmBindTile(index=4)
-RSX: W {RSXThread} TODO: NV406E_SEMAPHORE_ACQUIRE: 0xd
-HLE: W {PPU[1] Thread (main_thread)[0x002ca0b8]} cellGcmSys warning: cellGcmBindZcull(index=0)
-HLE: W {PPU[1] Thread (main_thread)[0x000a84b8]} sys_semaphore warning: sys_semaphore_create(sem_addr=0x19c428, attr_addr=0xd000f980, initial_count=1, max_count=2)
-HLE: ! {PPU[1] Thread (main_thread)[0x000a84b8]} sys_semaphore: *** semaphore created [] (protocol=0x2): id = 31
-HLE: W {PPU[1] Thread (main_thread)[0x002c8058]} cellResc warning: cellRescSetFlipHandler(handler_addr=0x1843e8)
-HLE: W {PPU[1] Thread (main_thread)[0x0005641c]} sys_mutex warning: *** mutex created [] (protocol=0x2, recursive=false): id = 32
-HLE: W {PPU[1] Thread (main_thread)[0x0005655c]} sys_cond warning: *** cond created [@„] (mutex_id=32): id = 33
+HLE: W {PPU[0x1] Thread (main_thread)[0x00057c04]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0x19c084)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001495a4]} cellGcmSys: cellGcmMapEaIoAddress(ea=0x20400000, io=0xe000000, size=0x100000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149244]} cellSysutil: cellVideoOutGetResolutionAvailability(videoOut=0, resolutionId=0x1, aspect=2, option=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=3)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=5)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=6)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=7)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=9)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=10)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=11)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=12)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=13)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001497c4]} cellGcmSys: cellGcmUnbindTile(index=14)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001493a4]} cellResc: cellRescInit(initConfig=*0xd001f960)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149764]} cellGcmSys: cellGcmSetTileInfo(index=0, location=0, offset=253558784, size=7536640, pitch=5120, comp=0, base=0, bank=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149504]} cellGcmSys: cellGcmBindTile(index=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149324]} cellResc: cellRescSetDisplayMode(displayMode=4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149324]} cellSysutil: cellVideoOutConfigure(videoOut=0, config=*0xd001f880, option=*0x0, waitForEvent=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149324]} cellGcmSys: cellGcmSetFlipMode(mode=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001493c4]} cellResc: cellRescGetBufferSize(colorBuffers=*0xd001f930, vertexArray=*0xd001f928, fragmentShader=*0xd001f92c)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149404]} cellResc: cellRescSetBufferAddress(colorBuffers=*0xcf1d0000, vertexArray=*0xc0000000, fragmentShader=*0xc0000180)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149304]} cellResc: cellRescAdjustAspectRatio(horizontal=1.000000, vertical=1.000000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149764]} cellGcmSys: cellGcmSetTileInfo(index=1, location=0, offset=245694464, size=7864320, pitch=10240, comp=7, base=1, bank=0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00149764]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (7)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149504]} cellGcmSys: cellGcmBindTile(index=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149764]} cellGcmSys: cellGcmSetTileInfo(index=2, location=0, offset=237830144, size=7864320, pitch=10240, comp=7, base=121, bank=0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00149764]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (7)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149504]} cellGcmSys: cellGcmBindTile(index=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149764]} cellGcmSys: cellGcmSetTileInfo(index=3, location=0, offset=233897984, size=3932160, pitch=5120, comp=0, base=0, bank=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149504]} cellGcmSys: cellGcmBindTile(index=3)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149764]} cellGcmSys: cellGcmSetTileInfo(index=3, location=0, offset=229965824, size=7864320, pitch=5120, comp=0, base=0, bank=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149504]} cellGcmSys: cellGcmBindTile(index=3)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149764]} cellGcmSys: cellGcmSetTileInfo(index=4, location=0, offset=222101504, size=7864320, pitch=10240, comp=11, base=241, bank=3)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00149764]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (11)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149504]} cellGcmSys: cellGcmBindTile(index=4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149644]} cellGcmSys: cellGcmBindZcull(index=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000a84b8]} sys_semaphore: sys_semaphore_create(sem=*0x19c428, attr=*0xd001f980, initial_val=1, max_val=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149384]} cellResc: cellRescSetFlipHandler(handler=*0x1843e8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0005641c]} sys_mutex: sys_mutex_create(mutex_id=*0x20005900, attr=*0xd001f850)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0005655c]} sys_cond: sys_cond_create(cond_id=*0x20005910, mutex_id=0x20, attr=*0xd001f860)
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0001
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ZCULL_CONTROL0: 0x10
 RSX: W {RSXThread} TODO: NV4097_SET_SCULL_CONTROL: 0xff000007
-RSX: W {RSXThread} New FBO (1280x720)
+RSX: W {RSXThread} Creating RTT
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0001
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleVS.cgelf" opened: fd = 34
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30114090, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 35
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=34)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30114090)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleVS.cgelf" opened: fd = 36
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30114090, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 37
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=36)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30114090)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleShadowedVS.cgelf" opened: fd = 38
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 39
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=38)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleShadowedVS.cgelf" opened: fd = 40
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 41
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=40)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorVS.cgelf" opened: fd = 42
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301189b0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 43
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=42)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301189b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorVS.cgelf" opened: fd = 44
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301189b0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 45
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=44)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301189b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorNormalVS.cgelf" opened: fd = 46
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3011b420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 47
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=46)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x3011b420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorNormalVS.cgelf" opened: fd = 48
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3011b420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 49
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=48)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x3011b420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorNormalShadowedVS.cgelf" opened: fd = 50
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 51
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=50)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorNormalShadowedVS.cgelf" opened: fd = 52
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 53
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=52)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/skinColorNormalVS.cgelf" opened: fd = 54
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301201e0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 55
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=54)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301201e0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/skinColorNormalVS.cgelf" opened: fd = 56
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301201e0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 57
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=56)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301201e0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/shadowCasterVS.cgelf" opened: fd = 58
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301234f0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 59
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=58)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301234f0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/shadowCasterVS.cgelf" opened: fd = 60
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301234f0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 61
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=60)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301234f0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/skinColorNormalShadowedVS.cgelf" opened: fd = 62
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30125330, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 63
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=62)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30125330)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/skinColorNormalShadowedVS.cgelf" opened: fd = 64
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30125330, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 65
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=64)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30125330)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/postVS.cgelf" opened: fd = 66
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30125330, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 67
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=66)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30125330)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/postVS.cgelf" opened: fd = 68
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30125330, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 69
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=68)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30125330)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unifiedVS.cgelf" opened: fd = 70
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 71
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=70)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unifiedVS.cgelf" opened: fd = 72
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 73
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=72)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simplePS.cgelf" opened: fd = 74
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 75
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=74)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simplePS.cgelf" opened: fd = 76
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 77
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=76)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleShadowedPS.cgelf" opened: fd = 78
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 79
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=78)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleShadowedPS.cgelf" opened: fd = 80
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 81
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=80)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unlitPS.cgelf" opened: fd = 82
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 83
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=82)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unlitPS.cgelf" opened: fd = 84
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 85
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=84)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitPS.cgelf" opened: fd = 86
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 87
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=86)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitPS.cgelf" opened: fd = 88
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 89
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=88)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitShadowedPS.cgelf" opened: fd = 90
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 91
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=90)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitShadowedPS.cgelf" opened: fd = 92
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 93
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=92)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitNormalMappedPS.cgelf" opened: fd = 94
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 95
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=94)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitNormalMappedPS.cgelf" opened: fd = 96
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30116420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 97
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=96)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30116420)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/postPS.cgelf" opened: fd = 98
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301189b0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 99
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=98)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301189b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/postPS.cgelf" opened: fd = 100
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301189b0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 101
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=100)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301189b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unifiedPS.cgelf" opened: fd = 102
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301189b0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 103
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=102)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301189b0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unifiedPS.cgelf" opened: fd = 104
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301189b0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 105
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=104)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301189b0)
-HLE: W {PPU[1] Thread (main_thread)[0x0017d004]} sys_io warning: cellPadInit(max_connect=7)
-HLE: W {PPU[1] Thread (main_thread)[0x0017f070]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/6809_chargen_36.bfont" opened: fd = 106
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30125330, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 107
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/6809_chargen_36_00.dds" opened: fd = 108
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301eefb0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 109
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=108)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301eefb0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/6809_chargen_36_00.dds" opened: fd = 110
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301eefb0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 111
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=110)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301eefb0)
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=106)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30125330)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/sf_digital_readout_36.bfont" opened: fd = 112
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301f2780, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 113
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/sf_digital_readout_36_00.dds" opened: fd = 114
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301f2a00, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 115
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=114)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301f2a00)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/sf_digital_readout_36_00.dds" opened: fd = 116
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301f2a00, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 117
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=116)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301f2a00)
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=112)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301f2780)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/arial_black_26.bfont" opened: fd = 118
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301f7390, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 119
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/arial_black_26_00.dds" opened: fd = 120
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301f7600, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 121
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=120)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301f7600)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/arial_black_26_00.dds" opened: fd = 122
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301f7600, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 123
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=122)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301f7600)
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=118)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301f7390)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_32.bfont" opened: fd = 124
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301fabb0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 125
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_32_00.dds" opened: fd = 126
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301fae50, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 127
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=126)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301fae50)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_32_00.dds" opened: fd = 128
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301fae50, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 129
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=128)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301fae50)
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=124)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301fabb0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_50.bfont" opened: fd = 130
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301fe430, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 131
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_50_00.dds" opened: fd = 132
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301fe7d0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 133
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=132)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301fe7d0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_50_00.dds" opened: fd = 134
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301fe7d0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 135
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=134)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301fe7d0)
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=130)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301fe430)
-HLE: ! {PPU[1] Thread (main_thread)[0x0017b01c]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/icon0.png" opened: fd = 136
-HLE: W {PPU[1] Thread (main_thread)[0x0017b040]} sys_fs warning: cellFsFstat(fd=136, sb_addr=0xd000f884)
-HLE: W {PPU[1] Thread (main_thread)[0x0017b004]} sys_fs warning: cellFsClose(fd=136)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc01c]} sys_ppu_thread: *** New PPU Thread [save_data_thread] (detached, entry=0x184d28): id = 137
-HLE: E {PPU[137] Thread (save_data_thread)[0x0017f040]} cellSysutil TODO: cellSaveDataUserListAutoLoad(version=0, userId=0, errDialog=0, setList_addr=0xd004fb54, setBuf_addr=0xd004fb64, funcFixed_addr=0x184d20, funcStat_addr=0x184cf8, funcFile_addr=0x184d00, container=-1, userdata_addr=0x2610d8)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/effects/box_particle.dds" opened: fd = 138
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301f28a0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 139
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=138)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301f28a0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/effects/box_particle.dds" opened: fd = 140
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301f28a0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 141
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=140)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301f28a0)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30137ce0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 142
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3011b420, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 143
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/config/effects/poof.ini" opened: fd = 144
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301f28a0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 145
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=144)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301f28a0)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x3011b420)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x30137ce0)
-RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_INPUT_MASK: 0xf0d
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=32, height=1, pitch=64, origin=2, inter=0, offset=0x4500, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4480, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=16, height=1, pitch=64, origin=2, inter=0, offset=0x4540, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4480, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x1, conv_out_x=0x0, conv_out_y=0x1
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=16, height=1, pitch=64, origin=2, inter=0, offset=0x4600, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4580, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=32, height=1, pitch=64, origin=2, inter=0, offset=0x4700, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4680, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=16, height=1, pitch=64, origin=2, inter=0, offset=0x4740, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4680, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x1, conv_out_x=0x0, conv_out_y=0x1
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=16, height=1, pitch=64, origin=2, inter=0, offset=0x4800, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4780, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=16, height=1, pitch=64, origin=2, inter=0, offset=0x4880, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4780, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=16, height=1, pitch=64, origin=2, inter=0, offset=0x4980, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4900, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=32, height=2, pitch=64, origin=2, inter=0, offset=0x4b00, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4a00, m_color: conv_in_h=0x2, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=24, height=1, pitch=64, origin=2, inter=0, offset=0x4b80, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4a00, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x2, conv_out_x=0x0, conv_out_y=0x2
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=16, height=1, pitch=64, origin=2, inter=0, offset=0x4c80, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4c00, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=32, height=7, pitch=64, origin=2, inter=0, offset=0x4f00, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x4d00, m_color: conv_in_h=0x7, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=32, height=9, pitch=64, origin=2, inter=0, offset=0x5380, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x5100, m_color: conv_in_h=0x9, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=16, height=1, pitch=64, origin=2, inter=0, offset=0x55c0, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x5100, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x9, conv_out_x=0x0, conv_out_y=0x9
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=32, height=8, pitch=64, origin=2, inter=0, offset=0x5800, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x5600, m_color: conv_in_h=0x8, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=16, height=1, pitch=64, origin=2, inter=0, offset=0x5a80, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x5a00, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=32, height=16, pitch=64, origin=2, inter=0, offset=0x5f80, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x5b00, m_color: conv_in_h=0x10, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=24, height=1, pitch=64, origin=2, inter=0, offset=0x6380, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x5b00, m_color: conv_in_h=0x1, format_src_pitch=0x40, conv_in_x=0x0, conv_in_y=0x10, conv_out_x=0x0, conv_out_y=0x10
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0001
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ZCULL_CONTROL0: 0x10
-RSX: W {RSXThread} TODO: NV4097_SET_SCULL_CONTROL: 0xff000007
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/sprites/gray_1280x720.dds" opened: fd = 146
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301febd0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 147
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=146)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301febd0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/sprites/gray_1280x720.dds" opened: fd = 148
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301febd0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 149
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=148)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301febd0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/sprites/splash_konami_1280x720.dds" opened: fd = 150
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301febd0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 151
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=150)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301febd0)
-HLE: ! {PPU[1] Thread (main_thread)[0x000e5658]} sys_fs: "/dev_hdd0/game/NPEB00162/USRDIR/data/sprites/splash_konami_1280x720.dds" opened: fd = 152
-HLE: W {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301febd0, attr_addr=0x160a40)
-HLE: ! {PPU[1] Thread (main_thread)[0x002dc034]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 153
-HLE: W {PPU[1] Thread (main_thread)[0x000e55d0]} sys_fs warning: cellFsClose(fd=152)
-HLE: W {PPU[1] Thread (main_thread)[0x002dc094]} sys_lwmutex warning: sys_lwmutex_destroy(lwmutex_addr=0x301febd0)
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=1024, height=180, pitch=5120, origin=2, inter=0, offset=0x12c6a80, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x11e5a80, m_color: conv_in_h=0xb4, format_src_pitch=0x1400, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=1024, height=180, pitch=5120, origin=2, inter=0, offset=0x12c7280, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x11e6280, m_color: conv_in_h=0xb4, format_src_pitch=0x1400, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV3089_SET_COLOR_CONVERSION
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: width=512, height=180, pitch=5120, origin=2, inter=0, offset=0x12c7a80, u=0, v=0
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: m_dst_offset=0x11e6a80, m_color: conv_in_h=0xb4, format_src_pitch=0x1400, conv_in_x=0x0, conv_in_y=0x0, conv_out_x=0x0, conv_out_y=0x0
-RSX: W {RSXThread} TODO: NV4097_INVALIDATE_L2: 0x1
-RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_INPUT_MASK: 0x1f8f
-RSX: W {RSXThread} TODO: NV4097_SET_TRANSFORM_BRANCH_BITS: 0x1
-RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_OUTPUT_MASK: 0x30d003
-RSX: W {RSXThread} TODO: NV4097_SET_TEX_COORD_CONTROL
-RSX: W {RSXThread} TODO: NV4097_SET_TEX_COORD_CONTROL
-RSX: W {RSXThread} TODO: NV4097_SET_TEX_COORD_CONTROL
-RSX: W {RSXThread} TODO: NV4097_SET_TEX_COORD_CONTROL
-RSX: W {RSXThread} TODO: NV4097_SET_TEX_COORD_CONTROL
-RSX: W {RSXThread} TODO: NV4097_SET_ZMIN_MAX_CONTROL: cullNearFarEnable=1, zclampEnable=0, cullIgnoreW=0
-RSX: W {RSXThread} TODO: NV0039_PITCH_IN: 0x10
-RSX: ! {RSXThread} OutOfArgsCount(x=1, count=1): unknown/illegal method [0x0000230c](0x580)
-RSX: ! {RSXThread} OutOfArgsCount(x=2, count=1): unknown/illegal method [0x0000230c](0x580)
-RSX: ! {RSXThread} OutOfArgsCount(x=3, count=1): unknown/illegal method [0x0000230c](0x580)
-RSX: ! {RSXThread} OutOfArgsCount(x=4, count=1): unknown/illegal method [0x0000230c](0x580)
-RSX: ! {RSXThread} OutOfArgsCount(x=5, count=1): unknown/illegal method [0x0000230c](0x580)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x580)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x580)
-RSX: ! {RSXThread} OutOfArgsCount(x=7, count=1): unknown/illegal method [0x0000230c](0x580)
-RSX: E {RSXThread} NV0039_OFFSET_IN: Unsupported format: inFormat=0, outFormat=0
-RSX: E {RSXThread} NV0039_OFFSET_IN: bad offset(in=0x580, out=0x0), pitch(in=0x0, out=0x0), line(len=0x0, cnt=0x0), fmt(in=0x0, out=0x0), notify=0x0
-RSX: E {RSXThread} TODO: NV0039_OFFSET_OUT: offset=0x5e40
-RSX: ! {RSXThread} OutOfArgsCount(x=1, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=2, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=3, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=4, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=5, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=7, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: E {RSXThread} NV0039_OFFSET_IN: Unsupported format: inFormat=0, outFormat=0
-RSX: E {RSXThread} NV0039_OFFSET_IN: bad offset(in=0x590, out=0x0), pitch(in=0x0, out=0x0), line(len=0x0, cnt=0x0), fmt(in=0x0, out=0x0), notify=0x0
-RSX: E {RSXThread} TODO: NV0039_OFFSET_OUT: offset=0x5ee0
-RSX: ! {RSXThread} OutOfArgsCount(x=1, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=2, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=3, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=4, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=5, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: ! {RSXThread} OutOfArgsCount(x=7, count=1): unknown/illegal method [0x0000230c](0x590)
-RSX: E {RSXThread} NV0039_OFFSET_IN: Unsupported format: inFormat=0, outFormat=0
-RSX: E {RSXThread} NV0039_OFFSET_IN: bad offset(in=0x590, out=0x0), pitch(in=0x0, out=0x0), line(len=0x0, cnt=0x0), fmt(in=0x0, out=0x0), notify=0x0
-RSX: E {RSXThread} TODO: NV0039_OFFSET_OUT: offset=0x5d30
-RSX: ! {RSXThread} OutOfArgsCount(x=1, count=1): unknown/illegal method [0x0000230c](0x5a0)
-RSX: ! {RSXThread} OutOfArgsCount(x=2, count=1): unknown/illegal method [0x0000230c](0x5a0)
-RSX: ! {RSXThread} OutOfArgsCount(x=3, count=1): unknown/illegal method [0x0000230c](0x5a0)
-RSX: ! {RSXThread} OutOfArgsCount(x=4, count=1): unknown/illegal method [0x0000230c](0x5a0)
-RSX: ! {RSXThread} OutOfArgsCount(x=5, count=1): unknown/illegal method [0x0000230c](0x5a0)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x5a0)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x5a0)
-RSX: ! {RSXThread} OutOfArgsCount(x=7, count=1): unknown/illegal method [0x0000230c](0x5a0)
-RSX: E {RSXThread} NV0039_OFFSET_IN: Unsupported format: inFormat=0, outFormat=0
-RSX: E {RSXThread} NV0039_OFFSET_IN: bad offset(in=0x5a0, out=0x0), pitch(in=0x0, out=0x0), line(len=0x0, cnt=0x0), fmt(in=0x0, out=0x0), notify=0x0
-RSX: E {RSXThread} TODO: NV0039_OFFSET_OUT: offset=0x5b40
-RSX: ! {RSXThread} OutOfArgsCount(x=1, count=1): unknown/illegal method [0x0000230c](0x5b0)
-RSX: ! {RSXThread} OutOfArgsCount(x=2, count=1): unknown/illegal method [0x0000230c](0x5b0)
-RSX: ! {RSXThread} OutOfArgsCount(x=3, count=1): unknown/illegal method [0x0000230c](0x5b0)
-RSX: ! {RSXThread} OutOfArgsCount(x=4, count=1): unknown/illegal method [0x0000230c](0x5b0)
-RSX: ! {RSXThread} OutOfArgsCount(x=5, count=1): unknown/illegal method [0x0000230c](0x5b0)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x5b0)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x5b0)
-RSX: ! {RSXThread} OutOfArgsCount(x=7, count=1): unknown/illegal method [0x0000230c](0x5b0)
-RSX: E {RSXThread} NV0039_OFFSET_IN: Unsupported format: inFormat=0, outFormat=0
-RSX: E {RSXThread} NV0039_OFFSET_IN: bad offset(in=0x5b0, out=0x0), pitch(in=0x0, out=0x0), line(len=0x0, cnt=0x0), fmt(in=0x0, out=0x0), notify=0x0
-RSX: E {RSXThread} TODO: NV0039_OFFSET_OUT: offset=0x5d80
-RSX: ! {RSXThread} OutOfArgsCount(x=1, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=2, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=3, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=4, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=5, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=7, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: E {RSXThread} NV0039_OFFSET_IN: Unsupported format: inFormat=0, outFormat=0
-RSX: E {RSXThread} NV0039_OFFSET_IN: bad offset(in=0x600, out=0x0), pitch(in=0x0, out=0x0), line(len=0x0, cnt=0x0), fmt(in=0x0, out=0x0), notify=0x0
-RSX: E {RSXThread} TODO: NV0039_OFFSET_OUT: offset=0x5c80
-RSX: ! {RSXThread} OutOfArgsCount(x=1, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=2, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=3, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=4, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=5, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: ! {RSXThread} OutOfArgsCount(x=7, count=1): unknown/illegal method [0x0000230c](0x600)
-RSX: E {RSXThread} NV0039_OFFSET_IN: Unsupported format: inFormat=0, outFormat=0
-RSX: E {RSXThread} NV0039_OFFSET_IN: bad offset(in=0x600, out=0x0), pitch(in=0x0, out=0x0), line(len=0x0, cnt=0x0), fmt(in=0x0, out=0x0), notify=0x0
-RSX: E {RSXThread} TODO: NV0039_OFFSET_OUT: offset=0x5b20
-RSX: ! {RSXThread} OutOfArgsCount(x=1, count=1): unknown/illegal method [0x0000230c](0x610)
-RSX: ! {RSXThread} OutOfArgsCount(x=2, count=1): unknown/illegal method [0x0000230c](0x610)
-RSX: ! {RSXThread} OutOfArgsCount(x=3, count=1): unknown/illegal method [0x0000230c](0x610)
-RSX: ! {RSXThread} OutOfArgsCount(x=4, count=1): unknown/illegal method [0x0000230c](0x610)
-RSX: ! {RSXThread} OutOfArgsCount(x=5, count=1): unknown/illegal method [0x0000230c](0x610)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x610)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x610)
-RSX: ! {RSXThread} OutOfArgsCount(x=7, count=1): unknown/illegal method [0x0000230c](0x610)
-RSX: E {RSXThread} NV0039_OFFSET_IN: Unsupported format: inFormat=0, outFormat=0
-RSX: E {RSXThread} NV0039_OFFSET_IN: bad offset(in=0x610, out=0x0), pitch(in=0x0, out=0x0), line(len=0x0, cnt=0x0), fmt(in=0x0, out=0x0), notify=0x0
-RSX: E {RSXThread} TODO: NV0039_OFFSET_OUT: offset=0x5cc0
-RSX: ! {RSXThread} OutOfArgsCount(x=1, count=1): unknown/illegal method [0x0000230c](0x620)
-RSX: ! {RSXThread} OutOfArgsCount(x=2, count=1): unknown/illegal method [0x0000230c](0x620)
-RSX: ! {RSXThread} OutOfArgsCount(x=3, count=1): unknown/illegal method [0x0000230c](0x620)
-RSX: ! {RSXThread} OutOfArgsCount(x=4, count=1): unknown/illegal method [0x0000230c](0x620)
-RSX: ! {RSXThread} OutOfArgsCount(x=5, count=1): unknown/illegal method [0x0000230c](0x620)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x620)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x620)
-RSX: ! {RSXThread} OutOfArgsCount(x=7, count=1): unknown/illegal method [0x0000230c](0x620)
-RSX: E {RSXThread} NV0039_OFFSET_IN: Unsupported format: inFormat=0, outFormat=0
-RSX: E {RSXThread} NV0039_OFFSET_IN: bad offset(in=0x620, out=0x0), pitch(in=0x0, out=0x0), line(len=0x0, cnt=0x0), fmt(in=0x0, out=0x0), notify=0x0
-RSX: E {RSXThread} TODO: NV0039_OFFSET_OUT: offset=0x5bd0
-RSX: ! {RSXThread} OutOfArgsCount(x=1, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=2, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=3, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=4, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=5, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=7, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: E {RSXThread} NV0039_OFFSET_IN: Unsupported format: inFormat=0, outFormat=0
-RSX: E {RSXThread} NV0039_OFFSET_IN: bad offset(in=0x630, out=0x0), pitch(in=0x0, out=0x0), line(len=0x0, cnt=0x0), fmt(in=0x0, out=0x0), notify=0x0
-RSX: E {RSXThread} TODO: NV0039_OFFSET_OUT: offset=0x5de0
-RSX: ! {RSXThread} OutOfArgsCount(x=1, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=2, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=3, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=4, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=5, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=6, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: ! {RSXThread} OutOfArgsCount(x=7, count=1): unknown/illegal method [0x0000230c](0x630)
-RSX: E {RSXThread} NV0039_OFFSET_IN: Unsupported format: inFormat=0, outFormat=0
-RSX: E {RSXThread} NV0039_OFFSET_IN: bad offset(in=0x630, out=0x0), pitch(in=0x0, out=0x0), line(len=0x0, cnt=0x0), fmt(in=0x0, out=0x0), notify=0x0
-RSX: E {RSXThread} TODO: NV0039_OFFSET_OUT: offset=0x5ba0
-RSX: W {RSXThread} TODO: NV4097_SET_ZMIN_MAX_CONTROL: cullNearFarEnable=1, zclampEnable=0, cullIgnoreW=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0001
-RSX: W {RSXThread} TODO: NV4097_SET_REDUCE_DST_COLOR: 0x1
-RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_OUTPUT_MASK: 0x30d003
-RSX: W {RSXThread} TODO: NV4097_SET_POINT_PARAMS_ENABLE: 0x1
-RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_OUTPUT_MASK: 0x30d003
-RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_OUTPUT_MASK: 0x30d003
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-RSX: W {RSXThread} FP not found in buffer!
-RSX: W {RSXThread} VP not found in buffer!
-RSX: E {RSXThread} Unimplemented sca_opcode BRB
-RSX: E {RSXThread} Unknown vp sca_opcode 0x9
-RSX: E {RSXThread} Unimplemented sca_opcode BRB
-RSX: E {RSXThread} Unknown vp sca_opcode 0x9
-RSX: E {RSXThread} Unimplemented sca_opcode BRB
-RSX: E {RSXThread} Unknown vp sca_opcode 0x9
-RSX: E {RSXThread} Unknown vp sca_opcode 0x9
-RSX: E {RSXThread} Unknown vp sca_opcode 0x9
-RSX: E {RSXThread} Unimplemented sca_opcode BRB
-RSX: E {RSXThread} Unimplemented sca_opcode BRB
-RSX: E {RSXThread} Unknown vp sca_opcode 0x9
-RSX: ! {RSXThread} Add program (0):
-RSX: ! {RSXThread} *** prog id = 3
-RSX: ! {RSXThread} *** vp id = 2
-RSX: ! {RSXThread} *** fp id = 1
-RSX: ! {RSXThread} *** vp data size = 1680
-RSX: ! {RSXThread} *** fp data size = 2224
-RSX: ! {RSXThread} *** vp shader = 
-#version 330
+RSX: W {RSXThread} Creating RTT
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20014090, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x23)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20014090, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x25)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleShadowedVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x27)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleShadowedVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x29)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200189b0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x2b)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200189b0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x2d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorNormalVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2001b420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x2f)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorNormalVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2001b420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x31)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorNormalShadowedVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x33)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/colorNormalShadowedVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x35)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/skinColorNormalVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200201e0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x37)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/skinColorNormalVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200201e0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x39)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/shadowCasterVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200234f0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x3b)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/shadowCasterVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200234f0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x3d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/skinColorNormalShadowedVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20025330, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x3f)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/skinColorNormalShadowedVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20025330, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x41)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/postVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20025330, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x43)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/postVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20025330, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x45)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unifiedVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x47)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unifiedVS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x49)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simplePS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x4b)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simplePS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x4d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleShadowedPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x4f)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/simpleShadowedPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x51)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unlitPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x53)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unlitPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x55)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x57)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x59)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitShadowedPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x5b)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitShadowedPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x5d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitNormalMappedPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x5f)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/dirlitNormalMappedPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20016420, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x61)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/postPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200189b0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x63)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/postPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200189b0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x65)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f360, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unifiedPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200189b0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x67)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001f690, flags=0, fd=*0xd001f2c0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/shaders/unifiedPS.cgelf'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200189b0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x69)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00148fa4]} sys_io: cellPadInit(max_connect=7)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149144]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd001fb60)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001d480, flags=0, fd=*0xd001c230, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/6809_chargen_36.bfont'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20025330, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0x200eeee0, flags=0, fd=*0xd001b9e0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/6809_chargen_36_00.dds'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200eefb0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x6d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0x200eeee0, flags=0, fd=*0xd001b9e0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/6809_chargen_36_00.dds'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200eefb0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x6f)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x6b)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001d480, flags=0, fd=*0xd001c230, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/sf_digital_readout_36.bfont'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200f2780, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0x20044f40, flags=0, fd=*0xd001b9e0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/sf_digital_readout_36_00.dds'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200f2a00, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x73)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0x20044f40, flags=0, fd=*0xd001b9e0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/sf_digital_readout_36_00.dds'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200f2a00, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x75)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x71)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001d480, flags=0, fd=*0xd001c230, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/arial_black_26.bfont'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200f7390, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0x200f7530, flags=0, fd=*0xd001b9e0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/arial_black_26_00.dds'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200f7600, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x79)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0x200f7530, flags=0, fd=*0xd001b9e0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/arial_black_26_00.dds'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200f7600, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x7b)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x77)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e856c]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd001f320)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001d480, flags=0, fd=*0xd001c230, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_32.bfont'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200fabb0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0x200fad90, flags=0, fd=*0xd001b9e0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_32_00.dds'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200fae50, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x7f)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0x200fad90, flags=0, fd=*0xd001b9e0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_32_00.dds'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200fae50, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x81)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x7d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0xd001d480, flags=0, fd=*0xd001c230, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_50.bfont'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200fe430, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0x200fe710, flags=0, fd=*0xd001b9e0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_50_00.dds'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200fe7d0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x85)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: sys_fs_open(path=*0x200fe710, flags=0, fd=*0xd001b9e0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e5658]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/fonts/mellow_50_00.dds'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149de4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200fe7d0, attr=*0x160a40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x87)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e856c]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd001b8f0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149ee4]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x83)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00148f24]} cellFs: cellFsOpen(path=*0x203f7938, flags=0, fd=*0xd001f880, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0x1] Thread (main_thread)[0x00148f24]} sys_fs: sys_fs_open(path=*0x203f7938, flags=0, fd=*0xd001f880, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00148f24]} sys_fs: *** path = '/dev_hdd0/game/NPEB00162/USRDIR/data/icon0.png'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00148f84]} sys_fs: sys_fs_fstat(fd=0x88, sb=*0xd001f884)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149da4]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0xd001f980, entry=0x184d28, arg=0x2610d8, prio=1001, stacksize=0x4000, flags=0x0, threadname=*0x1995a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149da4]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0xd001f980, param=*0xd001f908, arg=0x2610d8, unk=0x0, prio=1001, stacksize=0x4000, flags=0x0, threadname=*0x1995a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00149da4]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x89)
+HLE: E {PPU[0x89] Thread (save_data_thread)[0x001490c4]} cellSysutil: cellSaveDataUserListAutoLoad(version=0, userId=0, errDialog=0, setList=*0xd0033b54, setBuf=*0xd0033b64, funcFixed=*0x184d20, funcStat=*0x184cf8, funcFile=*0x184d00, container=0x2610d8, userdata=*0xd0033a70)
+HLE: S {PPU[0x89] Thread (save_data_thread)[0x000c6670]} Last function: cellSaveDataUserListAutoLoad (0x248bd1d8)
+G: W {PPU[0x89] Thread (save_data_thread)[0x000c6670]} Registers:
+=========
+GPR[0] = 0x17b000
+GPR[1] = 0xd00338c8
+GPR[2] = 0x18d760
+GPR[3] = 0x5
+GPR[4] = 0x0
+GPR[5] = 0x11
+GPR[6] = 0xd0033b54
+GPR[7] = 0xd0033b64
+GPR[8] = 0x184d20
+GPR[9] = 0x184cf8
+GPR[10] = 0x184d00
+GPR[11] = 0x2610d8
+GPR[12] = 0x180000
+GPR[13] = 0x2ce400
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0xd0033a70
+GPR[28] = 0xd00339e8
+GPR[29] = 0xd00339d8
+GPR[30] = 0x0
+GPR[31] = 0xd0033a38
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x000000000000000e8000000c70001001 [x: 0 y: 1.96182e-44 z: -1.68156e-44 w: 1.58534e+29]
+VPR[1] = 0x00000230ffffffff0000000100001003 [x: 7.84727e-43 y: -nan z: 1.4013e-45 w: 5.74392e-42]
+VPR[2] = 0x000000000afe1228000000000afe1158 [x: 0 y: 2.44661e-32 z: 0 w: 2.44658e-32]
+VPR[3] = 0x000000000b030b0d0000001200010206 [x: 0 y: 2.5238e-32 z: 2.52234e-44 w: 9.25614e-41]
+VPR[4] = 0x000000000b033c88000000000b031b48 [x: 0 y: 2.52752e-32 z: 0 w: 2.52502e-32]
+VPR[5] = 0x000000000000012b0000000000000000 [x: 0 y: 4.18988e-43 z: 0 w: 0]
+VPR[6] = 0x0000000100001003000000000afe1208 [x: 1.4013e-45 y: 5.74392e-42 z: 0 w: 2.44661e-32]
+VPR[7] = 0x8000000c7000100100000210ffffffff [x: -1.68156e-44 y: 1.58534e+29 z: 7.39886e-43 w: -nan]
+VPR[8] = 0x000000000afe11c0000000000000000e [x: 0 y: 2.4466e-32 z: 0 w: 1.96182e-44]
+VPR[9] = 0x0000001300050003000000000afe1260 [x: 2.66247e-44 y: 4.59182e-40 z: 0 w: 2.44662e-32]
+VPR[10] = 0x0000000000000000000000000b03077d [x: 0 y: 0 z: 0 w: 2.52353e-32]
+VPR[11] = 0x0000000000000000000000000b033c80 [x: 0 y: 0 z: 0 w: 2.52752e-32]
+VPR[12] = 0x000000000afe12c8000000000afe1228 [x: 0 y: 2.44664e-32 z: 0 w: 2.44661e-32]
+VPR[13] = 0x000000000b030b250000001400010206 [x: 0 y: 2.52381e-32 z: 2.8026e-44 w: 9.25614e-41]
+VPR[14] = 0x000000000b033c78000000000b031bc0 [x: 0 y: 2.52752e-32 z: 0 w: 2.52506e-32]
+VPR[15] = 0x000000000001012b0000000000000000 [x: 0 y: 9.22545e-41 z: 0 w: 0]
+VPR[16] = 0x8000000d70001001000000000afe12a8 [x: -1.82169e-44 y: 1.58534e+29 z: 0 w: 2.44663e-32]
+VPR[17] = 0x0000000100001003000000000000000e [x: 1.4013e-45 y: 5.74392e-42 z: 0 w: 1.96182e-44]
+VPR[18] = 0x000000000afe1260000001b0ffffffff [x: 0 y: 2.44662e-32 z: 6.05361e-43 w: -nan]
+VPR[19] = 0x0000001500010206000000000afe1330 [x: 2.94273e-44 y: 9.25614e-41 z: 0 w: 2.44665e-32]
+VPR[20] = 0x000000000b031c38000000000b030b3d [x: 0 y: 2.52509e-32 z: 0 w: 2.52381e-32]
+VPR[21] = 0x0000000000000000000000000b033c70 [x: 0 y: 0 z: 0 w: 2.52752e-32]
+VPR[22] = 0x000000000afe13100000000000ff01d8 [x: 0 y: 2.44665e-32 z: 0 w: 2.34187e-38]
+VPR[23] = 0x000000000000000e8000000d70001001 [x: 0 y: 1.96182e-44 z: -1.82169e-44 w: 1.58534e+29]
+VPR[24] = 0x0000000000000004ffffffff00000004 [x: 0 y: 5.60519e-45 z: -nan w: 5.60519e-45]
+VPR[25] = 0x000000000afe1398000000000afe12c8 [x: 0 y: 2.44667e-32 z: 0 w: 2.44664e-32]
+VPR[26] = 0x000000000b030b4d0000001600010206 [x: 0 y: 2.52382e-32 z: 3.08286e-44 w: 9.25614e-41]
+VPR[27] = 0x000000000b033c68000000000b031c98 [x: 0 y: 2.52751e-32 z: 0 w: 2.52512e-32]
+VPR[28] = 0x000000000000012b0000000000000000 [x: 0 y: 4.18988e-43 z: 0 w: 0]
+VPR[29] = 0x0000000100001003000000000afe1378 [x: 1.4013e-45 y: 5.74392e-42 z: 0 w: 2.44666e-32]
+VPR[30] = 0x8000000d7000100100000220ffffffff [x: -1.82169e-44 y: 1.58534e+29 z: 7.62306e-43 w: -nan]
+VPR[31] = 0x000000000afe1330000000000000000e [x: 0 y: 2.44665e-32 z: 0 w: 1.96182e-44]
+CR = 0x28000084
+LR = 0xc84fc
+CTR = 0xc8adc
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
-uniform mat4 scaleOffsetMat = mat4(1.0);
-vec4 tmp0;
-vec4 tmp3;
-vec4 tmp7;
-vec4 tmp6;
-vec4 tmp2;
-vec4 tmp1;
-vec4 tmp5;
-vec4 tmp4;
-vec4 cc0 = vec4(0.0);
-vec4 dst_reg0 = vec4(0.0f, 0.0f, 0.0f, 1.0f);
-vec4 dst_reg12 = vec4(0.0);
-vec4 dst_reg1 = vec4(0.0);
-vec4 dst_reg2 = vec4(0.0);
-vec4 dst_reg15 = vec4(0.0);
-vec4 dst_reg7 = vec4(0.0);
-vec4 dst_reg8 = vec4(0.0);
-vec4 dst_reg9 = vec4(0.0);
-vec4 dst_reg10 = vec4(0.0);
-vec4 dst_reg11 = vec4(0.0);
-vec4 dst_reg13 = vec4(0.0);
-vec4 dst_reg14 = vec4(0.0);
-layout (location = 7) in vec4 in_7;
-layout (location = 2) in vec4 in_normal;
-layout (location = 0) in vec4 in_pos;
-layout (location = 1) in vec4 in_weight;
-layout (location = 8) in vec4 in_tc0;
-layout (location = 9) in vec4 in_tc1;
-layout (location = 10) in vec4 in_tc2;
-layout (location = 11) in vec4 in_tc3;
-layout (location = 12) in vec4 in_tc4;
-layout (location = 3) in vec4 in_diff_color;
-uniform vec4 vc[468];
-ivec4 a0 = ivec4(0);
-out vec4 diff_color;
-out vec4 spec_color;
-out vec4 tc0;
-out vec4 tc1;
-out vec4 tc2;
-out vec4 tc3;
-out vec4 tc4;
-out vec4 tc5;
-out vec4 tc6;
-out vec4 tc7;
-out vec4 tc8;
+G: E {PPU[0x89] Thread (save_data_thread)[0x000c6670]} Exception: Access violation writing location 0x5f7
+(in file ..\Utilities\Thread.cpp:1098, in function _se_translator)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+G: W {RawSPU_0[0x1e] Thread (0)[0x00000260]} Registers:
+=========
+GPR[0] = 0x00000138000000000000000000000000
+GPR[1] = 0x0003ffa00002f2e00003ffa00003ffa0
+GPR[2] = 0x0000000f000000000000000000000000
+GPR[3] = 0x0012000d000000000000000000000000
+GPR[4] = 0x00000a20000008800000088000000880
+GPR[5] = 0x00000000000000000000000000000000
+GPR[6] = 0x0000000d000000000000000000000000
+GPR[7] = 0x00000000000000000000000000000000
+GPR[8] = 0x00000000000000000000000000000000
+GPR[9] = 0x00000020000000200000002000000020
+GPR[10] = 0x00000003000000000000000000000000
+GPR[11] = 0x00000000000000000000000000000000
+GPR[12] = 0x00000000000000030000000300000003
+GPR[13] = 0x000001a0000000000000000000000000
+GPR[14] = 0x0000000c0000000c0000000c0000000c
+GPR[15] = 0x00000000000000000000000000000000
+GPR[16] = 0x0000000d000000000000000000000000
+GPR[17] = 0x205fe100000000002020009000000000
+GPR[18] = 0x00004000000000000000000000000000
+GPR[19] = 0x00000020000000200000002000000020
+GPR[20] = 0x00000000000040000000000000000000
+GPR[21] = 0x00000000deadbeef0000000000000000
+GPR[22] = 0x00000000205fe1000000000020200090
+GPR[23] = 0x00004a8000004a8000004a8000004a80
+GPR[24] = 0x00000000000003ff0000000000000000
+GPR[25] = 0x00000000000000000000000000000000
+GPR[26] = 0x00010a8000010a8000010a8000010a80
+GPR[27] = 0x00000000000000000000000000000000
+GPR[28] = 0xffffffffffffffffffffffffffffffff
+GPR[29] = 0x00000000000000000000000000000000
+GPR[30] = 0x00000000000000000000000000000000
+GPR[31] = 0x00000000000000000000000000000000
+GPR[32] = 0x00004000000040000000400000004000
+GPR[33] = 0x00000a8000000a8000000a8000000a80
+GPR[34] = 0x00000890000008900000089000000890
+GPR[35] = 0x00000a8000000a8000000a8000000a80
+GPR[36] = 0x04050607808080800c0d0e0f80808080
+GPR[37] = 0x00000022000000220000002200000022
+GPR[38] = 0x00000042000000420000004200000042
+GPR[39] = 0x00000000000000000000000000000000
+GPR[40] = 0x00000003000000030000000300000003
+GPR[41] = 0x00000800000008000000080000000800
+GPR[42] = 0x00000880000008800000088000000880
+GPR[43] = 0x00000004000000040000000400000004
+GPR[44] = 0x00000020000000200000002000000020
+GPR[45] = 0x00000002000000020000000200000002
+GPR[46] = 0x0000000f0000000f0000000f0000000f
+GPR[47] = 0x00010000000100000001000000010000
+GPR[48] = 0x000000000000000f000000000000000f
+GPR[49] = 0x00000001000000010000000100000001
+GPR[50] = 0x00020000000200000002000000020000
+GPR[51] = 0x80000000800000008000000080000000
+GPR[52] = 0x00100000001000000010000000100000
+GPR[53] = 0x00040000000400000004000000040000
+GPR[54] = 0x00080000000800000008000000080000
+GPR[55] = 0x00000008000000080000000800000008
+GPR[56] = 0x000000002022009000000000205e2100
+GPR[57] = 0x00000000000040000000000000000000
+GPR[58] = 0x00000001000000010000000100000001
+GPR[59] = 0x00020000000000000000000000000000
+GPR[60] = 0xdeadbeef000000000000000000000000
+GPR[61] = 0x00000000deadbeef0000000000000000
+GPR[62] = 0x00000a34000008940000089400000894
+GPR[63] = 0x00000004000000040000000400000004
+GPR[64] = 0x00000a30000008900000089000000890
+GPR[65] = 0x00000024000000240000002400000024
+GPR[66] = 0x00000000000000000000000000000000
+GPR[67] = 0x00000000deadbeef0000000000000000
+GPR[68] = 0x000000008012000d0000000000000000
+GPR[69] = 0x101112130001020318191a1b1c1d1e1f
+GPR[70] = 0x00000000deadbeef0000000000000000
+GPR[71] = 0x000102031415161718191a1b1c1d1e1f
+GPR[72] = 0x0003ffc00002f3000003ffc00003ffc0
+GPR[73] = 0x00000024000000240000002400000024
+GPR[74] = 0x00000000000000000000000000000000
+GPR[75] = 0x00100000000000000000000000000000
+GPR[76] = 0x00000024000000240000002400000024
+GPR[77] = 0x8000000c8012000d0000000000000000
+GPR[78] = 0x8000000c000000000000000000000000
+GPR[79] = 0x101112130001020318191a1b1c1d1e1f
+GPR[80] = 0x00000000000000000000000000000000
+GPR[81] = 0x00000000000000000000000000000000
+GPR[82] = 0x00000000000000000000000000000000
+GPR[83] = 0x00000000000000000000000000000000
+GPR[84] = 0x00000000000000000000000000000000
+GPR[85] = 0x00000000000000000000000000000000
+GPR[86] = 0x00000000000000000000000000000000
+GPR[87] = 0x00000000000000000000000000000000
+GPR[88] = 0x00000000000000000000000000000000
+GPR[89] = 0x00000000000000000000000000000000
+GPR[90] = 0x00000000000000000000000000000000
+GPR[91] = 0x00000000000000000000000000000000
+GPR[92] = 0x00000000000000000000000000000000
+GPR[93] = 0x00000000000000000000000000000000
+GPR[94] = 0x00000000000000000000000000000000
+GPR[95] = 0x00000000000000000000000000000000
+GPR[96] = 0x00000000000000000000000000000000
+GPR[97] = 0x00000000000000000000000000000000
+GPR[98] = 0x00000000000000000000000000000000
+GPR[99] = 0x00000000000000000000000000000000
+GPR[100] = 0x00000000000000000000000000000000
+GPR[101] = 0x00000000000000000000000000000000
+GPR[102] = 0x00000000000000000000000000000000
+GPR[103] = 0x00000000000000000000000000000000
+GPR[104] = 0x00000000000000000000000000000000
+GPR[105] = 0x00000000000000000000000000000000
+GPR[106] = 0x00000000000000000000000000000000
+GPR[107] = 0x00000000000000000000000000000000
+GPR[108] = 0x00000000000000000000000000000000
+GPR[109] = 0x00000000000000000000000000000000
+GPR[110] = 0x00000000000000000000000000000000
+GPR[111] = 0x00000000000000000000000000000000
+GPR[112] = 0x00000000000000000000000000000000
+GPR[113] = 0x00000000000000000000000000000000
+GPR[114] = 0x00000000000000000000000000000000
+GPR[115] = 0x00000000000000000000000000000000
+GPR[116] = 0x00000000000000000000000000000000
+GPR[117] = 0x00000000000000000000000000000000
+GPR[118] = 0x00000000000000000000000000000000
+GPR[119] = 0x00000000000000000000000000000000
+GPR[120] = 0x00000000000000000000000000000000
+GPR[121] = 0x00000000000000000000000000000000
+GPR[122] = 0x00000000000000000000000000000000
+GPR[123] = 0x00000000000000000000000000000000
+GPR[124] = 0x00000000000000000000000000000000
+GPR[125] = 0x00000000000000000000000000000000
+GPR[126] = 0x00000000000000000000000000000000
+GPR[127] = 0x00000000000000000000000000000000
 
-void func0();
+G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd002fe00
+GPR[2] = 0x0
+GPR[3] = 0x0
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x0
+GPR[12] = 0x0
+GPR[13] = 0x2ce218
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00730074006300650066006600650020 [x: 1.05612e-38 y: 9.09186e-39 z: 9.36736e-39 w: 9.27543e-39]
+VPR[1] = 0x0020007200650064006e006500720020 [x: 2.9389e-39 y: 9.27553e-39 z: 1.0102e-38 w: 1.04693e-38]
+VPR[2] = 0x0063006500720072006f0063006e0069 [x: 9.09186e-39 y: 1.04694e-38 z: 1.01939e-38 w: 1.01021e-38]
+VPR[3] = 0x0000000000000000002e0079006c0074 [x: 0 y: 0 z: 4.2246e-39 w: 9.9184e-39]
+VPR[4] = 0x80002800291d47a40000000000000000 [x: -1.43493e-41 y: 3.49231e-14 z: 0 w: 0]
+VPR[5] = 0x00650068007400200079006c006e004f [x: 9.27553e-39 y: 1.0653e-38 z: 1.11122e-38 w: 1.0102e-38]
+VPR[6] = 0x006e0065006d00650076006f006d0020 [x: 1.0102e-38 y: 1.00102e-38 z: 1.08367e-38 w: 1.00101e-38]
+VPR[7] = 0x00730065006e00650063007300200074 [x: 1.05612e-38 y: 1.0102e-38 z: 9.09188e-39 w: 2.9389e-39]
+VPR[8] = 0x006e0069006900200065007200610020 [x: 1.01021e-38 y: 9.64277e-39 z: 9.27554e-39 w: 8.90809e-39]
+VPR[9] = 0x006500740053002f0044003300440020 [x: 9.27555e-39 y: 7.62241e-39 z: 6.24489e-39 w: 6.24486e-39]
+VPR[10] = 0x00740073006500720020006f00650072 [x: 1.06531e-38 y: 9.27554e-39 z: 2.93889e-39 w: 9.27554e-39]
+VPR[11] = 0x00720065007200700020007300690020 [x: 1.04694e-38 y: 1.04694e-38 z: 2.9389e-39 w: 9.64277e-39]
+VPR[12] = 0x002000640065007200650064006e0065 [x: 2.93888e-39 y: 9.27554e-39 z: 9.27553e-39 w: 1.0102e-38]
+VPR[13] = 0x0065006e006500630073007400750063 [x: 9.27554e-39 y: 9.27552e-39 z: 1.05612e-38 w: 1.07449e-38]
+VPR[14] = 0x80002900291747ae0000000000000073 [x: -1.4708e-41 y: 3.35909e-14 z: 0 w: 1.61149e-43]
+VPR[15] = 0x006a0062006f00200065006d006f0053 [x: 9.7347e-39 y: 1.01938e-38 z: 9.27554e-39 w: 1.01939e-38]
+VPR[16] = 0x006e0065007200200073007400630065 [x: 1.0102e-38 y: 1.04693e-38 z: 1.05612e-38 w: 9.09186e-39]
+VPR[17] = 0x00770020007400610020007200650064 [x: 1.09285e-38 y: 1.06531e-38 z: 2.9389e-39 w: 9.27553e-39]
+VPR[18] = 0x00700065006400200067006e006f0072 [x: 1.02857e-38 y: 9.18359e-39 z: 9.45921e-39 w: 1.01939e-38]
+VPR[19] = 0x0065006d006f00530020002e00680074 [x: 9.27554e-39 y: 1.01939e-38 z: 2.9388e-39 w: 9.55105e-39]
+VPR[20] = 0x0073007400630065006a0062006f0020 [x: 1.05612e-38 y: 9.09186e-39 z: 9.7347e-39 w: 1.01938e-38]
+VPR[21] = 0x0020007200650064006e006500720020 [x: 2.9389e-39 y: 9.27553e-39 z: 1.0102e-38 w: 1.04693e-38]
+VPR[22] = 0x0063006500720072006f0063006e0069 [x: 9.09186e-39 y: 1.04694e-38 z: 1.01939e-38 w: 1.01021e-38]
+VPR[23] = 0x0000000000000000002e0079006c0074 [x: 0 y: 0 z: 4.2246e-39 w: 9.9184e-39]
+VPR[24] = 0x80002a00292147b00000000000000000 [x: -1.50668e-41 y: 3.58114e-14 z: 0 w: 0]
+VPR[25] = 0x0063002000680063006e00750061004c [x: 9.09176e-39 y: 9.55103e-39 z: 1.01021e-38 w: 8.90815e-39]
+VPR[26] = 0x006100720075006700690066006e006f [x: 8.9082e-39 y: 1.07449e-38 z: 9.64287e-39 w: 1.01021e-38]
+VPR[27] = 0x006f006f00740020006e006f00690074 [x: 1.01939e-38 y: 1.0653e-38 z: 1.01021e-38 w: 9.64289e-39]
+VPR[28] = 0x007300200074006500530020003a006c [x: 1.05611e-38 y: 1.06531e-38 z: 7.62239e-39 w: 5.32661e-39]
+VPR[29] = 0x0074002000730077006f006400610068 [x: 1.0653e-38 y: 1.05612e-38 z: 1.01939e-38 w: 8.90819e-39]
+VPR[30] = 0x00680053002000460046004f0020006f [x: 9.55101e-39 y: 2.93883e-39 z: 6.4286e-39 w: 2.93889e-39]
+VPR[31] = 0x00650072002000730077006f00640061 [x: 9.27554e-39 y: 2.9389e-39 z: 1.09286e-38 w: 9.18369e-39]
+CR = 0x22000082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
-void main()
-{
-	func0();
-	gl_Position = dst_reg0;
-	diff_color = dst_reg1;
-	spec_color = dst_reg2;
-	tc0 = dst_reg7;
-	tc1 = dst_reg8;
-	tc2 = dst_reg9;
-	tc3 = dst_reg10;
-	tc4 = dst_reg11;
-	tc5 = dst_reg12;
-	tc6 = dst_reg13;
-	tc7 = dst_reg14;
-	tc8 = dst_reg15;
-	gl_Position = gl_Position * scaleOffsetMat;
-}
+G: W {RawSPU_0[0x1e] Thread (0)[0x00000260]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:261, in function CPUThread::CheckStatus)
+G: W {PPU[0x1] Thread (main_thread)[0x000c77a4]} Registers:
+=========
+GPR[0] = 0x37338
+GPR[1] = 0xd001fa10
+GPR[2] = 0x18d760
+GPR[3] = 0x1
+GPR[4] = 0x184d28
+GPR[5] = 0x2610d8
+GPR[6] = 0x3e9
+GPR[7] = 0x4000
+GPR[8] = 0x0
+GPR[9] = 0x1995a8
+GPR[10] = 0x1995a8
+GPR[11] = 0x8e
+GPR[12] = 0x42000084
+GPR[13] = 0x2ce030
+GPR[14] = 0x0
+GPR[15] = 0x17e000
+GPR[16] = 0x17d000
+GPR[17] = 0x0
+GPR[18] = 0x17c000
+GPR[19] = 0x100000
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x17d000
+GPR[27] = 0x17e000
+GPR[28] = 0x1
+GPR[29] = 0x17d000
+GPR[30] = 0x260000
+GPR[31] = 0x235758
+FPR[0] = -1000
+FPR[1] = 21
+FPR[2] = 0.3
+FPR[3] = 0.7
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 1.25829E+07
+FPR[9] = 0
+FPR[10] = 0.00012207
+FPR[11] = -0.5
+FPR[12] = 1
+FPR[13] = 1000
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000deadbeef0000000000000000 [x: 0 y: -6.25985e+18 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x44000042
+LR = 0x37340
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
-void func0()
-{
-	int jump_position = 0;
-	while (true)
-	{
-	if (jump_position <= 0)
-	{
-			tmp0 = floor(in_7.wzxy);
-			tmp0 = (tmp0 * vc[467].xxxx);
-			a0.x = ivec4(tmp0).x;
-			tmp3.z = vec4(dot(vc[66 + a0.x].xyzx.xyz, in_normal.xyzx.xyz)).z;
-			tmp3.y = vec4(dot(vc[65 + a0.x].xyzx.xyz, in_normal.xyzx.xyz)).y;
-			tmp3.x = vec4(dot(vc[64 + a0.x].xyzx.xyz, in_normal.xyzx.xyz)).x;
-			tmp7.z = vec4(dot(vc[66 + a0.x], in_pos)).z;
-			tmp7.y = vec4(dot(in_pos, vc[65 + a0.x])).y;
-			tmp7.x = vec4(dot(in_pos, vc[64 + a0.x])).x;
-			tmp6.z = vec4(dot(in_pos, vc[66 + a0.y])).z;
-			tmp6.y = vec4(dot(in_pos, vc[65 + a0.y])).y;
-			tmp6.x = vec4(dot(in_pos, vc[64 + a0.y])).x;
-			tmp2.z = vec4(dot(vc[66 + a0.y].xyzx.xyz, in_normal.xyzx.xyz)).z;
-			tmp2.y = vec4(dot(vc[65 + a0.y].xyzx.xyz, in_normal.xyzx.xyz)).y;
-			tmp2.x = vec4(dot(vc[64 + a0.y].xyzx.xyz, in_normal.xyzx.xyz)).x;
-			tmp1.z = vec4(dot(vc[66 + a0.z].xyzx.xyz, in_normal.xyzx.xyz)).z;
-			tmp1.y = vec4(dot(vc[65 + a0.z].xyzx.xyz, in_normal.xyzx.xyz)).y;
-			tmp1.x = vec4(dot(vc[64 + a0.z].xyzx.xyz, in_normal.xyzx.xyz)).x;
-			tmp5.z = vec4(dot(in_pos, vc[66 + a0.z])).z;
-			tmp5.y = vec4(dot(in_pos, vc[65 + a0.z])).y;
-			tmp5.x = vec4(dot(in_pos, vc[64 + a0.z])).x;
-			tmp4.z = vec4(dot(in_pos, vc[66 + a0.w])).z;
-			tmp4.y = vec4(dot(in_pos, vc[65 + a0.w])).y;
-			tmp0.z = vec4(dot(vc[66 + a0.w].xyzx.xyz, in_normal.xyzx.xyz)).z;
-			tmp0.y = vec4(dot(vc[65 + a0.w].xyzx.xyz, in_normal.xyzx.xyz)).y;
-			tmp0.x = vec4(dot(vc[64 + a0.w].xyzx.xyz, in_normal.xyzx.xyz)).x;
-			tmp4.x = vec4(dot(in_pos, vc[64 + a0.w])).x;
-			tmp0.xyz = (in_weight.yyyy * tmp0.xyzx).xyz;
-			tmp4.xyz = (in_weight.yyyy * tmp4.xyzx).xyz;
-			tmp4.xyz = (in_weight.xxxx * tmp5.xyzx + tmp4.xyzx).xyz;
-			tmp0.xyz = (in_weight.xxxx * tmp1.xyzx + tmp0.xyzx).xyz;
-			tmp0.xyz = (in_weight.zzzz * tmp2.xyzx + tmp0.xyzx).xyz;
-			tmp1.xyz = (in_weight.zzzz * tmp6.xyzx + tmp4.xyzx).xyz;
-			tmp1.xyz = (in_weight.wwww * tmp7.xyzx + tmp1.xyzx).xyz;
-			tmp4.xyz = (in_weight.wwww * tmp3.xyzx + tmp0.xyzx).xyz;
-			tmp0 = (tmp1.yyyy * vc[1]);
-			tmp0 = (tmp1.xxxx * vc[0] + tmp0);
-			tmp0 = (tmp1.zzzz * vc[2] + tmp0);
-			tmp0 = (vc[3] + tmp0);
-			//Unknown vp sca_opcode 0x9
-			tmp0 = (in_pos.yyyy * vc[1]);
-			tmp4.xyz = in_normal.xyzx.xyz;
-			tmp0 = (in_pos.xxxx * vc[0] + tmp0);
-			tmp0 = (in_pos.zzzz * vc[2] + tmp0);
-			tmp0 = (in_pos.wwww * vc[3] + tmp0);
-		}
-		
-		if (jump_position <= 1)
-		{
-			tmp5.xy = (vc[16].xyxx + in_tc0.xyxx).xy;
-			tmp5.zw = (vc[16].xxxy + in_tc1.xxxy).zw;
-			tmp6.xy = (vc[16].xyxx + in_tc2.xyxx).xy;
-			tmp6.zw = (vc[16].xxxy + in_tc3.xxxy).zw;
-			tmp7.xy = (vc[16].xyxx + in_tc4.xyxx).xy;
-			//Unknown vp sca_opcode 0x9
-			tmp5.xy = in_tc0.xyxx.xy;
-			tmp5.zw = in_tc1.xxxy.zw;
-			tmp6.xy = in_tc2.xyxx.xy;
-			tmp6.zw = in_tc3.xxxy.zw;
-			tmp7.xy = in_tc4.xyxx.xy;
-		}
-		
-		if (jump_position <= 2)
-		{
-			tmp1.x = vc[467].yyyy.x;
-			cc0.x = vec4(lessThan(tmp1.xxxx, vc[63].xxxx)).x;
-			tmp1.xyz = vc[467].yyyy.xyz;
-			tmp1.w = vc[467].yyyy.w;
-			//Unknown vp sca_opcode 0x9
-			tmp2.w = vc[467].yyyy.w;
-		}
-		
-		if (jump_position <= 3)
-		{
-		a0.x = ivec4(tmp1.wwww).x;
-			tmp2.xyz = (in_pos.xyzx + -vc[21 + a0.x].xyzx).xyz;
-			tmp3.x = vec4(dot(tmp2.xyzx.xyz, tmp2.xyzx.xyz)).x;
-			tmp2.w = (vc[467].zzzz + tmp2.wwww).w;
-			tmp3.y = inversesqrt(abs(tmp3.xxxx)).y;
-			tmp1.w = (vc[467].zzzz + tmp1.wwww).w;
-			cc0.x = vec4(lessThan(tmp2.wwww, vc[63].xxxx)).x;
-			tmp3.x = (1.0 / tmp3.yyyy).x;
-			tmp3.x = (-vc[39 + a0.x].wwww + tmp3.xxxx).x;
-			tmp2.xyz = (tmp3.yyyy * tmp2.xyzx).xyz;
-			tmp3.x = max(tmp3.xxxx, vc[467].yyyy).x;
-			tmp3.x = clamp((1.0 / tmp3.xxxx).x, 0.0, 1.0);
-			tmp3.y = vec4(dot(tmp4.xyzx.xyz, -tmp2.xyzx.xyz)).y;
-			tmp2.xyz = (tmp3.xxxx * vc[39 + a0.x].xyzx).xyz;
-			tmp1.xyz = (tmp2.xyzx * tmp3.yyyy + tmp1.xyzx).xyz;
-			//Unknown vp sca_opcode 0x9
-		}
-		
-		if (jump_position <= 4)
-		{
-		tmp1.xyz = clamp(tmp1.xyzx.xyz, 0.0, 1.0);
-			//Unknown vp sca_opcode 0x9
-			tmp1.w = vc[467].zzzz.w;
-			tmp1 = vc[467].yyyy;
-		}
-		
-		if (jump_position <= 5)
-		{
-		tmp2 = in_diff_color;
-			tmp2 = (in_diff_color * vc[4]);
-			tmp2 = clamp(tmp2, 0.0, 1.0);
-			tmp3 = (in_pos.yyyy * vc[10]);
-			tmp3 = (in_pos.xxxx * vc[9] + tmp3);
-			tmp3 = (in_pos.zzzz * vc[11] + tmp3);
-			tmp3 = (in_pos.wwww * vc[12] + tmp3);
-			//Unknown vp sca_opcode 0x9
-			tmp3 = vc[467].zzzz;
-		}
-		
-		if (jump_position <= 6)
-		{
-		dst_reg0 = tmp0;
-			dst_reg12 = tmp3;
-			dst_reg1 = tmp2;
-			dst_reg2 = tmp1;
-			dst_reg15.xyz = tmp4.xyzx.xyz;
-			dst_reg7.xy = tmp5.xyxx.xy;
-			dst_reg8.xy = tmp5.zwzz.xy;
-			dst_reg9.xy = tmp6.xyxx.xy;
-			dst_reg10.xy = tmp6.zwzz.xy;
-			dst_reg11.xy = tmp7.xyxx.xy;
-			dst_reg13.xyz = vc[14].xyzx.xyz;
-	dst_reg14.xyz = vc[15].xyzx.xyz;
-	}
-	break;
-	}
-}
-
-RSX: ! {RSXThread} *** fp shader = 
-#version 330
-
-vec4 r1 = vec4(0.0);
-vec4 r0 = vec4(0.0);
-vec4 cc0;
-vec4 h6 = vec4(0.0);
-vec4 r3 = vec4(0.0);
-vec4 r2 = vec4(0.0);
-vec4 h7 = vec4(0.0);
-vec4 h4 = vec4(0.0);
-in vec4 tc6;
-in vec4 tc8;
-in vec4 tc0;
-in vec4 tc7;
-in vec4 tc1;
-in vec4 spec_color;
-in vec4 diff_color;
-uniform vec4 fc1184 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1216 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1264 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1312 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1360 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1392 = vec4(1.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1440 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1488 = vec4(1.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1536 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1568 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1600 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1664 = vec4(1.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1712 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1744 = vec4(0.000000, 0.000000, 0.000000, 1.000000);
-uniform vec4 fc1792 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1888 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc1984 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc2032 = vec4(6.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc2064 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc2144 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform vec4 fc2176 = vec4(0.000000, 0.000000, 0.000000, 0.000000);
-uniform sampler2D tex0;
-uniform sampler2D tex1;
-layout (location = 0) out vec4 ocol0;
-layout (location = 1) out vec4 ocol1;
-layout (location = 2) out vec4 ocol2;
-
-void main()
-{
-	r1.xyz = tc6.xyz;
-	r0.w = fc1184.xxxx.w;
-	cc0.w = fc1216.xxxx.w;
-	r0.xyz = tc8.xyz;
-	h6.w = vec4(notEqual(r0, fc1264.xxxx)).w;
-	r0.w = clamp(vec4(dot(r0.xyz, r1.xyz)), 0.0, 1.0).w;
-	r3.w = fc1312.xxxx.w;
-	r1.w = (r0 * 2.0).w;
-	cc0.y = fc1360.xxxx.y;
-	r2 = fc1392.xxxx;
-	if (notEqual(cc0.wwww, vec4(0.0)).x) r2.x = texture(tex0, tc0.xy).x;
-	if (notEqual(cc0.wwww, vec4(0.0)).y) r2.y = texture(tex0, tc0.xy).y;
-	if (notEqual(cc0.wwww, vec4(0.0)).z) r2.z = texture(tex0, tc0.xy).z;
-	if (notEqual(cc0.wwww, vec4(0.0)).w) r2.w = texture(tex0, tc0.xy).w;
-	h7.w = vec4(notEqual(r3, fc1440.xxxx)).w;
-	cc0.x = clamp((h6.wwww + h7.wwww), 0.0, 1.0).x;
-	r3.w = fc1488.xxxx.w;
-	r0.xyz = (r0 * r1.wwww + -r1).xyz;
-	cc0.w = fc1536.xxxx.w;
-	if (notEqual(cc0.xxxx, vec4(0.0)).x) r3.w = vec4(fc1568.yyyy.w).x;
-	cc0.x = fc1600.xxxx.x;
-	r1.w = r2.w;
-	r1.xyz = r3.wwww.xyz;
-	if (notEqual(cc0.yyyy, vec4(0.0)).x) r1.w = vec4(fc1664.xxxx.w).x;
-	r2.w = vec4(dot(r0.xyz, tc7.xyz)).w;
-	if (notEqual(cc0.wwww, vec4(0.0)).x) r1.xyz.x = (r0.wwww * fc1712 + r3.wwww).xyz.x;
-	if (notEqual(cc0.wwww, vec4(0.0)).y) r1.xyz.y = (r0.wwww * fc1712 + r3.wwww).xyz.y;
-	if (notEqual(cc0.wwww, vec4(0.0)).z) r1.xyz.z = (r0.wwww * fc1712 + r3.wwww).xyz.z;
-	r0.w = fc1744.w;
-	r0.y = vec4(dot(r0.xyz, r0.xyz)).y;
-	cc0.w = fc1792.xxxx.w;
-	r0.z = r1.wwww.z;
-	r0.x = texture(tex1, tc1.xy).x;
-	if (notEqual(cc0.wwww, vec4(0.0)).x) r0.z = vec4((r1.wwww * r0.xxxx).z).x;
-	h6 = spec_color;
-	cc0.w = fc1888.xxxx.w;
-	r0.x = clamp((r2.wwww / sqrt(r0.yyyy)), 0.0, 1.0).x;
-	r3.z = log2(r0).z;
-	r2.w = r0.zzzz.w;
-	r0.xyz = r1.xyz;
-	if (notEqual(cc0.wwww, vec4(0.0)).x) r0.xyz.x = (r1 + fc1984).xyz.x;
-	if (notEqual(cc0.wwww, vec4(0.0)).y) r0.xyz.y = (r1 + fc1984).xyz.y;
-	if (notEqual(cc0.wwww, vec4(0.0)).z) r0.xyz.z = (r1 + fc1984).xyz.z;
-	r1.w = (r3.zzzz * fc2032.xxxx).w;
-	r1.xyz = fc2064.yyyy.xyz;
-	r1.w = exp2(r1.wwww).w;
-	r0 = clamp((h6 + r0), 0.0, 1.0);
-	r0 = (r2 * r0);
-	if (notEqual(cc0.xxxx, vec4(0.0)).x) r1.xyz.x = (r1.wwww * fc2144.wwww).xyz.x;
-	if (notEqual(cc0.xxxx, vec4(0.0)).y) r1.xyz.y = (r1.wwww * fc2144.wwww).xyz.y;
-	if (notEqual(cc0.xxxx, vec4(0.0)).z) r1.xyz.z = (r1.wwww * fc2144.wwww).xyz.z;
-	r1.w = fc2176.xxxx.w;
-	h4 = diff_color;
-	r0 = (r0 * h4 + r1);
-	ocol0 = r0;
-	ocol1 = r2;
-	ocol2 = r3;
-}
-
-RSX: W {VBlank thread} VBlank thread aborted
-RSX: W {RSXThread} RSX thread aborted
-PPU: ! {PPU Recompilation Engine} PPU LLVM Recompilation thread exiting.
-HLE: ! All threads stopped...
-RSX: W GLVertexProgram::Delete(): glDeleteShader(2) avoided
-RSX: W GLFragmentProgram::Delete(): glDeleteShader(1) avoided
-MEM: ! Closing memory...
+G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\Callback.cpp:58, in function CallbackManager::Init::<lambda_46ea869b6054320987a0d5fa0b32bb88>::operator ())
+G: W {PPU[0x1] Thread (main_thread)[0x000c77a4]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:261, in function CPUThread::CheckStatus)
+G: W {VBlank Thread} Exception: Aborted (emulation stopped)
+(in file Emu\RSX\RSXThread.cpp:2654, in function RSXThread::Task::<lambda_35da4a5bc935cd1c9a062d9f015244c2>::operator ())
+G: ! All threads stopped...

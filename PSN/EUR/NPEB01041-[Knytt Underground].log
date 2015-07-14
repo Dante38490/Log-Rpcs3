@@ -1,5 +1,5 @@
-HLE: ! path: /dev_hdd0/game/
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB01041/USRDIR/BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB01041/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: !  
@@ -15,8 +15,11 @@ LDR: ! Title: Knytt Underground
 LDR: ! Serial: NPEB01041
 LDR: ! Elf path: /dev_hdd0/game/NPEB01041/USRDIR/BOOT.BIN
 LDR: ! loader::init() failed: Broken file
-MEM: ! Initializing memory: g_base_addr = 0x38ac680000, g_priv_addr = 0x39ac680000
-MEM: ! Memory initialized.
+LDR: ! *** sdk version: 0x420001
+LDR: ! *** primary prio: 1001
+LDR: ! *** primary stacksize: 0x10000
+LDR: ! *** malloc pagesize: 0x100000
+LDR: ! *** ppc seg: 0x0
 LDR: ! Imported function 'cellSysutilUnregisterCallback' in 'cellSysutil' module (0x473228)
 LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module (0x473248)
 LDR: ! Imported function 'cellMsgDialogOpenErrorCode' in 'cellSysutil' module (0x473268)
@@ -75,7 +78,6 @@ LDR: ! Imported function 'sceNpBasicUnregisterHandler' in 'sceNp' module (0x4735
 LDR: ! Imported function 'sceNpBasicRegisterHandler' in 'sceNp' module (0x473548)
 LDR: ! Imported function 'sceNpDrmIsAvailable2' in 'sceNp' module (0x473568)
 LDR: ! Imported function 'sceNpManagerGetNpId' in 'sceNp' module (0x473588)
-LDR: W Unknown module 'sceNp2'
 LDR: ! Imported function 'sceNp2Init' in 'sceNp2' module (0x4735a8)
 LDR: ! Imported function 'sceNp2Term' in 'sceNp2' module (0x4735c8)
 LDR: ! Imported function 'sceNpTrophyRegisterContext' in 'sceNpTrophy' module (0x4735e8)
@@ -132,10 +134,10 @@ LDR: ! Imported function 'sys_spu_image_import' in 'sysPrxForUser' module (0x473
 LDR: ! Imported function 'sys_lwcond_signal' in 'sysPrxForUser' module (0x473c48)
 LDR: ! Imported function 'sys_prx_load_module' in 'sysPrxForUser' module (0x474b48)
 LDR: ! Imported function 'sys_process_is_stack' in 'sysPrxForUser' module (0x474b68)
-LDR: E Unimplemented function 'sys_prx_load_module_on_memcontainer_by_fd' in 'sysPrxForUser' module (0x474b88)
+LDR: E Unknown function 'sys_prx_load_module_on_memcontainer_by_fd' in 'sysPrxForUser' module (0x474b88)
 LDR: ! Imported function 'sys_prx_load_module_on_memcontainer' in 'sysPrxForUser' module (0x474ba8)
 LDR: ! Imported function 'sys_lwmutex_trylock' in 'sysPrxForUser' module (0x474bc8)
-LDR: E Unimplemented function 'sys_prx_load_module_by_fd' in 'sysPrxForUser' module (0x474be8)
+LDR: E Unknown function 'sys_prx_load_module_by_fd' in 'sysPrxForUser' module (0x474be8)
 LDR: ! Imported function 'listen' in 'sys_net' module (0x473d48)
 LDR: ! Imported function 'socketselect' in 'sys_net' module (0x473d68)
 LDR: ! Imported function '_sys_net_errno_loc' in 'sys_net' module (0x473d88)
@@ -232,17 +234,16 @@ LDR: ! Imported function 'cellMicSetNotifyEventQueue' in 'cellMic' module (0x474
 LDR: ! Imported function 'cellMicClose' in 'cellMic' module (0x474a68)
 LDR: ! Imported function 'cellMicStart' in 'cellMic' module (0x474a88)
 LDR: ! Imported function 'cellMicStop' in 'cellMic' module (0x474aa8)
-LDR: W Unknown module 'cellSysutilAvconfExt'
-LDR: E Unimplemented function 'cellAudioInGetAvailableDeviceInfo' in 'cellSysutilAvconfExt' module (0x474ac8)
-LDR: E Unimplemented function 'cellAudioInSetDeviceMode' in 'cellSysutilAvconfExt' module (0x474ae8)
-LDR: E Unimplemented function 'cellAudioInRegisterDevice' in 'cellSysutilAvconfExt' module (0x474b08)
-LDR: E Unimplemented function 'cellAudioInUnregisterDevice' in 'cellSysutilAvconfExt' module (0x474b28)
+LDR: E Unknown module 'cellSysutilAvconfExt'
+LDR: E Unknown function 'cellAudioInGetAvailableDeviceInfo' in 'cellSysutilAvconfExt' module (0x474ac8)
+LDR: E Unknown function 'cellAudioInSetDeviceMode' in 'cellSysutilAvconfExt' module (0x474ae8)
+LDR: E Unknown function 'cellAudioInRegisterDevice' in 'cellSysutilAvconfExt' module (0x474b08)
+LDR: E Unknown function 'cellAudioInUnregisterDevice' in 'cellSysutilAvconfExt' module (0x474b28)
 HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x8b4000, user_size=0x194)
 *** TLS segment addr: 0x00581920
 *** TLS segment size: 0x00000008
-LDR: E 'BreakPoints.dat' is broken (version=0xde30, break_count=0x0, marked_count=0x93173968, length=0x6)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x5aaea0, attr=*0x475e88)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000205d4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000fc04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000205d4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000fc04)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x5aaca0, attr=*0x475e88)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x5aa428, attr=*0x475e88)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x5aa450, attr=*0x475e88)
@@ -253,69 +254,84 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x5aa3d8, attr=*0x475e88)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x5aa400, attr=*0x475e88)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x5dc168, attr=*0xd000fb50)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e1940]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e1940]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e1940]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e1c90]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fa70, summertime_addr=0xd000fa74)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e1c90]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e1c90]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e19cc]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e19cc]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e19cc]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e1c90]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fa70, summertime_addr=0xd000fa74)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e1c90]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e1c90]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e18ec]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e18ec]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e18ec]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e19cc]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e19cc]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x000e19cc]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e1940]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e19cc]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e18ec]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000e19cc]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0001f27c]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd000f860)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473408]} cellSysmodule: cellSysmoduleLoadModule(id=0x004e: CELL_SYSMODULE_SYSUTIL_SCREENSHOT)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00473868]} cellScreenshot error: cellScreenShotSetParameter
-HLE: E {PPU[0x1] Thread (main_thread)[0x00473848]} cellScreenshot error: cellScreenShotEnable
+HLE: E {PPU[0x1] Thread (main_thread)[0x00473868]} cellScreenshot: cellScreenShotSetParameter
+HLE: E {PPU[0x1] Thread (main_thread)[0x00473848]} cellScreenshot: cellScreenShotEnable
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473408]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473408]} cellSysmodule: cellSysmoduleLoadModule(id=0x0045: CELL_SYSMODULE_SYSUTIL_NP_TUS)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473408]} cellSysmodule: cellSysmoduleLoadModule(id=0x0009: CELL_SYSMODULE_RTC)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00473308]} cellSysutil: cellSysutilRegisterCallback(slot=2, func_addr=0x557d00, userdata=0x837990)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00473f28]} cellGcmSys: _cellGcmInitBody(context_addr=0x5c90dc, cmdSize=0xf0000, ioSize=0x100000, ioAddress=0x20100000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00473308]} cellSysutil: cellSysutilRegisterCallback(slot=2, func=*0x557d00, userdata=*0x837990)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003e8998]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd000fa70)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00473f28]} cellGcmSys: _cellGcmInitBody(context=*0x5c90dc, cmdSize=0xf0000, ioSize=0x100000, ioAddress=0x20100000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473f28]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473f28]} cellGcmSys: cellGcmInit(): 256MB io address space used
 RSX: ! {RSXThread} RSX thread started
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474168]} cellGcmSys: cellGcmSetVBlankHandler(handler_addr=0x56a2b8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00473ee8]} cellGcmSys: cellGcmSetUserHandler(handler_addr=0x56a600)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474168]} cellGcmSys: cellGcmSetVBlankHandler(handler=*0x56a2b8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00473ee8]} cellGcmSys: cellGcmSetUserHandler(handler=*0x56a600)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473ca8]} cellSysutil: cellVideoOutGetNumberOfDevice(videoOut=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473ce8]} cellSysutil: cellVideoOutGetResolutionAvailability(videoOut=0, resolutionId=0x2, aspect=0, option=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00473c68]} cellSysutil: cellVideoOutConfigure(videoOut=0, config_addr=0xd000faa4, option_addr=0x0, waitForEvent=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00473c68]} cellSysutil: cellVideoOutConfigure(videoOut=0, config=*0xd000faa4, option=*0x0, waitForEvent=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473fe8]} cellGcmSys: cellGcmSetFlipMode(mode=2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004741c8]} cellGcmSys: cellGcmSetTileInfo(index=0, location=0, offset=0, size=7864320, pitch=5120, comp=7, base=0, bank=0)
-HLE: E {PPU[0x1] Thread (main_thread)[0x004741c8]} cellGcmSys error: cellGcmSetTileInfo: bad compression mode! (7)
+HLE: E {PPU[0x1] Thread (main_thread)[0x004741c8]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (7)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473fc8]} cellGcmSys: cellGcmBindTile(index=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004741c8]} cellGcmSys: cellGcmSetTileInfo(index=1, location=0, offset=7864320, size=15073280, pitch=10240, comp=8, base=120, bank=0)
-HLE: E {PPU[0x1] Thread (main_thread)[0x004741c8]} cellGcmSys error: cellGcmSetTileInfo: bad compression mode! (8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x004741c8]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473fc8]} cellGcmSys: cellGcmBindTile(index=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004741c8]} cellGcmSys: cellGcmSetTileInfo(index=2, location=0, offset=22937600, size=15073280, pitch=10240, comp=10, base=580, bank=2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x004741c8]} cellGcmSys error: cellGcmSetTileInfo: bad compression mode! (10)
+HLE: E {PPU[0x1] Thread (main_thread)[0x004741c8]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (10)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473fc8]} cellGcmSys: cellGcmBindTile(index=2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004740e8]} cellGcmSys: cellGcmBindZcull(index=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474048]} cellGcmSys: cellGcmMapEaIoAddress(ea=0x20300000, io=0xa100000, size=0x3f00000)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474028]} cellGcmSys: cellGcmMapEaIoAddressWithFlags(ea=0x24200000, io=0xe000000, size=0x100000, flags=0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002e3a74]} sys_memory: sys_memory_allocate(size=0x4000000, flags=0x400, alloc_addr=*0xd000f980)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474048]} cellGcmSys: cellGcmMapEaIoAddress(ea=0x20200000, io=0xa100000, size=0x3f00000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474028]} cellGcmSys: cellGcmMapEaIoAddressWithFlags(ea=0x24100000, io=0xe000000, size=0x100000, flags=0x2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004745e8]} cellSysmodule: cellSysmoduleInitialize()
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473408]} cellSysmodule: cellSysmoduleLoadModule(id=0x0000: CELL_SYSMODULE_NET)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473408]} cellSysmodule: cellSysmoduleLoadModule(id=0x0014: CELL_SYSMODULE_NETCTL)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473408]} cellSysmodule: cellSysmoduleLoadModule(id=0x001f: CELL_SYSMODULE_RESC)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473408]} cellSysmodule: cellSysmoduleLoadModule(id=0x001c: CELL_SYSMODULE_USBD)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473408]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00473308]} cellSysutil: cellSysutilRegisterCallback(slot=0, func_addr=0x56ab88, userdata=0x837990)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474808]} cellSpurs: _cellSpursAttributeInitialize(attr_addr=0xd000f970, revision=2, sdkVersion=0x330000, nSpus=2, spuPriority=250, ppuPriority=1000, exitIfNoWork=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} cellSpurs: cellSpursInitializeWithAttribute(spurs_addr=0x24200400, attr_addr=0xd000f970)
-HLE: E {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x1f, eq=0x24, req=0xffffffffffff0000, spup=*0x242004c9)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00473308]} cellSysutil: cellSysutilRegisterCallback(slot=0, func=*0x56ab88, userdata=*0x837990)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474808]} cellSpurs: _cellSpursAttributeInitialize(attr=*0xd000f970, revision=2, sdkVersion=0x330000, nSpus=2, spuPriority=250, ppuPriority=1000, exitIfNoWork=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x24100400, attr=*0xd000f970)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x24100400, flags=0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f8e8, attr=*0xd000f8c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_spu: sys_spu_thread_group_create(id=*0xd000f8a8, num=2, prio=250, attr=*0xd000f818)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f7f0, group=0x1f, spu_num=0, img=*0x24101170, attr=*0xd000f7e0, arg=*0xd000f7f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f7f0, group=0x1f, spu_num=1, img=*0x24101170, attr=*0xd000f7e0, arg=*0xd000f7f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x241011b0, attr=*0xd000f8b0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x241011c8, lwmutex=*0x241011b0, attr=*0xd000f8c0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_event: sys_event_queue_create(equeue_id=*0x2410115c, attr=*0xd000f748, event_queue_key=0x0, size=42)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x1f, eq=0x24, req=0xffffffffffff0000, spup=*0xd000f738)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_event: sys_event_port_create(eport_id=*0x24101160, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_event: sys_event_port_connect_local(eport_id=0x25, equeue_id=0x24)
-HLE: W {PPU[0x26] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x1f)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x24100400, flag=1)
+HLE: W {PPU[0x27] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x1f)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004748a8]} sys_spu: sys_spu_thread_group_connect_event(id=0x1f, eq=0x24, et=2)
-HLE: W {PPU[0x26] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x1f, cause=*0x0, status=*0x0)
+HLE: W {PPU[0x27] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x1f, cause=*0x0, status=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x878140, attr=*0xd000f9d8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473ba8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x878158, lwmutex=*0x878140, attr=*0xd000f9d0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x886998, attr=*0xd000f8e8)
@@ -328,12 +344,12 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00473a28]} sys_ppu_thread: _sys_ppu_thre
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a28]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x2f)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0035dd24]} sys_event: sys_event_port_create(eport_id=*0x88d50c, port_type=1, name=0xd1ed1ed1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0035dd34]} sys_event: sys_event_port_connect_local(eport_id=0x30, equeue_id=0x2e)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004748c8]} cellSpurs: cellSpursAttachLv2EventQueue(spurs_addr=0x24200400, queue=0x2e, port_addr=0xd000fa00, isDynamic=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004748c8]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x1f, eq=0x2e, req=0x2, spup=*0xd000fa00)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474748]} cellSpurs: cellSpursAddWorkload(spurs_addr=0x24200400, wid_addr=0x89d888, pm_addr=0x4fc480, size=0xa00, data=0x89d900, priorityTable_addr=0x5a8988, minContention=0x1, maxContention=0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474868]} cellSpurs: _cellSpursWorkloadFlagReceiver(spurs_addr=0x24200400, wid=0, is_set=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004749a8]} cellSpurs: cellSpursReadyCountStore(spurs_addr=0x24200400, wid=0, value=0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474768]} cellSpurs: cellSpursWakeUp(spurs_addr=0x24200400)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748c8]} cellSpurs: cellSpursAttachLv2EventQueue(spurs=*0x24100400, queue=0x2e, port=*0xd000fa00, isDynamic=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004748c8]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x1f, eq=0x2e, req=0x2, spup=*0xd000f988)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474748]} cellSpurs: cellSpursAddWorkload(spurs=*0x24100400, wid=*0x89d888, pm=*0x4fc480, size=0xa00, data=0x89d900, priority=*0x5a8988, minCnt=0x1, maxCnt=0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474868]} cellSpurs: _cellSpursWorkloadFlagReceiver(spurs=*0x24100400, wid=0, is_set=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004749a8]} cellSpurs: cellSpursReadyCountStore(spurs=*0x24100400, wid=0, value=0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474768]} cellSpurs: cellSpursWakeUp(spurs=*0x24100400)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x879430, attr=*0xd000fa38)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473ba8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x879448, lwmutex=*0x879430, attr=*0xd000fa30)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x879460, attr=*0xd000fa38)
@@ -354,11 +370,12 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00473a28]} sys_ppu_thread: sys_ppu_threa
 HLE: W {PPU[0x3b] Thread (PhyreEngineHDDPathThread)[0x004749e8]} cellGame: cellGameBootCheck(type=*0xd004fcd0, attributes=*0xd004fcd4, size=*0xd004fcd8, dirName=*0x0)
 HLE: W {PPU[0x3b] Thread (PhyreEngineHDDPathThread)[0x004749c8]} cellGame: cellGameContentPermit(contentInfoPath=*0xd004fce8, usrdirPath=*0x8b1628)
 HLE: W {PPU[0x3b] Thread (PhyreEngineHDDPathThread)[0x004749c8]} cellGame: cellGameContentPermit(): path_set=1, contentInfo='/dev_hdd0/game/NPEB01041', usrdir='/dev_hdd0/game/NPEB01041/USRDIR'
+HLE: W {PPU[0x1] Thread (main_thread)[0x0001f27c]} sys_memory: sys_memory_allocate(size=0x200000, flags=0x400, alloc_addr=*0xd000f7f0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x87cd60, attr=*0xd000f898)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473ba8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x87cd78, lwmutex=*0x87cd60, attr=*0xd000f890)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x87cdd8, attr=*0xd000f898)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473ba8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x87cdf0, lwmutex=*0x87cdd8, attr=*0xd000f890)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474928]} cellSpurs: cellSpursGetWorkloadFlag(spurs_addr=0x24200400, flag_addr=0xd000f9c4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474928]} cellSpurs: cellSpursGetWorkloadFlag(spurs=*0x24100400, flag=**0xd000f9c4)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00474088]} cellGcmSys: cellGcmGetReportDataAddressLocation(index=0, location=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x885658, attr=*0xd000f998)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473ba8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x885670, lwmutex=*0x885658, attr=*0xd000f990)
@@ -402,151 +419,151 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00473a28]} sys_ppu_thread: sys_ppu_threa
 HLE: W {PPU[0x1] Thread (main_thread)[0x004742a8]} sys_io: cellPadInit(max_connect=7)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00474348]} sys_io: cellKbInit(max_connect=7)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00474448]} sys_io: cellMouseInit(max_connect=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0001f27c]} sys_memory: sys_memory_allocate(size=0x200000, flags=0x400, alloc_addr=*0xd000f940)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x837ae8, attr=*0xd000f988)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473ba8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x837b00, lwmutex=*0x837ae8, attr=*0xd000f980)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a88]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x89ebd0, attr=*0xd000f9e8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473ba8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x89ebe8, lwmutex=*0x89ebd0, attr=*0xd000f9e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00473288]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_ENTER_BUTTON_ASSIGN
-HLE: W {PPU[0x1] Thread (main_thread)[0x004736e8]} sceNpTrophy: sceNpTrophyCreateContext(context_addr=0x5dc1a8, commID_addr=0x837810, commSign_addr=0x83789c, options=0x0)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00473608]} sceNpTrophy TODO: sceNpTrophyCreateHandle(handle_addr=0x5dc1ac)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00473628]} sceNpTrophy: sceNpTrophyGetRequiredDiskSpace(context=0x1, handle=0x0, reqspace_addr=0xd000f9c8, options=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004735e8]} sceNpTrophy: sceNpTrophyRegisterContext(context=0x1, handle=0x0, statusCb_addr=0x557c08, arg_addr=0x0, options=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00473288]} cellSysutil: cellSysutilGetSystemParamInt(id=0x112(ID_ENTER_BUTTON_ASSIGN), value=*0xd000fa70)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00473668]} sceNpTrophy: sceNpTrophyInit(pool=*0x0, poolSize=0x0, containerId=0xffffffff, options=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004736e8]} sceNpTrophy: sceNpTrophyCreateContext(context=*0x5dc1a8, commId=*0x837810, commSign=*0x83789c, options=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00473608]} sceNpTrophy: sceNpTrophyCreateHandle(handle=*0x5dc1ac)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00473628]} sceNpTrophy: sceNpTrophyGetRequiredDiskSpace(context=0x69, handle=0x6a, reqspace*=0xd000f9c8, options=0x0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x004735e8]} sceNpTrophy: sceNpTrophyRegisterContext(context=0x69, handle=0x6a, statusCb=*0x557c08, arg=*0x0, options=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a28]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x5dc1b0, entry=0x557c10, arg=0x5dc1c0, prio=1002, stacksize=0x4000, flags=0x0, threadname=*0x494bb8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473a28]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x5dc1b0, param=*0xd000f868, arg=0x5dc1c0, unk=0x0, prio=1002, stacksize=0x4000, flags=0x0, threadname=*0x494bb8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00473a28]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x69)
-HLE: W {PPU[0x69] Thread (Get Trophy Info Thread)[0x004736c8]} sceNpTrophy: sceNpTrophyGetTrophyUnlockState(context=0x1, handle=0x0, flags_addr=0xd0063dd4, count_addr=0xd0063dd0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004735a8]} sceNp: sceNp2Init(mem_size=0x20000, mem_addr=0x817810)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00473a28]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x6b)
+HLE: E {PPU[0x6b] Thread (Get Trophy Info Thread)[0x004736c8]} sceNpTrophy: sceNpTrophyGetTrophyUnlockState(context=0x69, handle=0x6a, flags=*0xd0053dd4, count=*0xd0053dd0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004735a8]} sceNp2: sceNp2Init(poolsize=131072, poolptr=0x817810)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00473808]} sceNpTus: sceNpTusInit()
-HLE: W {PPU[0x1] Thread (main_thread)[0x00473488]} cellNetCtl: cellNetCtlInit()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0x4954c0, flags=0, fd=*0xd000f670, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0x4954c0, flags=0, fd=*0xd000f670, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = 'Assets/Creatures.ini'
-HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs error: sys_fs_open('Assets/Creatures.ini') failed: device not mounted
+HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open('Assets/Creatures.ini') failed: device not mounted
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0xd000f620, flags=0, fd=*0xd000f670, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0xd000f620, flags=0, fd=*0xd000f670, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = '/dev_hdd0/game/NPEB01041/USRDIR/Assets/Creatures.ini'
-HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x6a, sb=*0xd000f698)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x6a, ringbuf=*0xd000f678)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x6a, offset=0x0, size=0x1c66)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x6a, buf=*0x200c5ad0, size=0x1c66, rsize=*0xd000f6d8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x6a)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x6a)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x6c, sb=*0xd000f698)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x6c, ringbuf=*0xd000f678)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x6c, offset=0x0, size=0x1c66)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x6c, buf=*0x200c5ad0, size=0x1c66, rsize=*0xd000f6d8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x6c)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x6c)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0x496e40, flags=0, fd=*0xd000d020, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0x496e40, flags=0, fd=*0xd000d020, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = 'Assets/Localization/Standard_Quests.csv'
-HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs error: sys_fs_open('Assets/Localization/Standard_Quests.csv') failed: device not mounted
+HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open('Assets/Localization/Standard_Quests.csv') failed: device not mounted
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0xd000cfc0, flags=0, fd=*0xd000d020, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0xd000cfc0, flags=0, fd=*0xd000d020, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = '/dev_hdd0/game/NPEB01041/USRDIR/Assets/Localization/Standard_Quests.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x6b, sb=*0xd000d048)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x6b, ringbuf=*0xd000d028)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x6b, offset=0x0, size=0x2bfe08)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x6b, buf=*0x24600040, size=0x10000, rsize=*0xd000d088)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x6b)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x6b)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x6d, sb=*0xd000d048)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x6d, ringbuf=*0xd000d028)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x6d, offset=0x0, size=0x2bfe08)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0001f27c]} sys_memory: sys_memory_allocate(size=0x300000, flags=0x400, alloc_addr=*0xd000cfd0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x6d, buf=*0x24500040, size=0x10000, rsize=*0xd000d088)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x6d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x6d)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0x496e68, flags=0, fd=*0xd000d020, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0x496e68, flags=0, fd=*0xd000d020, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = 'Assets/Localization/Greenhill_Quests.csv'
-HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs error: sys_fs_open('Assets/Localization/Greenhill_Quests.csv') failed: device not mounted
+HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open('Assets/Localization/Greenhill_Quests.csv') failed: device not mounted
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0xd000cfc0, flags=0, fd=*0xd000d020, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0xd000cfc0, flags=0, fd=*0xd000d020, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = '/dev_hdd0/game/NPEB01041/USRDIR/Assets/Localization/Greenhill_Quests.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x6c, sb=*0xd000d048)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x6c, ringbuf=*0xd000d028)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x6c, offset=0x0, size=0x1547c)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x6c, buf=*0x200c5ae0, size=0x10000, rsize=*0xd000d088)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x6c)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x6c)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x6e, sb=*0xd000d048)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x6e, ringbuf=*0xd000d028)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x6e, offset=0x0, size=0x1547c)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x6e, buf=*0x200c5ae0, size=0x10000, rsize=*0xd000d088)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x6e)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x6e)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0x496e98, flags=0, fd=*0xd000d020, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0x496e98, flags=0, fd=*0xd000d020, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = 'Assets/Localization/Inventory.csv'
-HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs error: sys_fs_open('Assets/Localization/Inventory.csv') failed: device not mounted
+HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open('Assets/Localization/Inventory.csv') failed: device not mounted
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0xd000cfc0, flags=0, fd=*0xd000d020, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0xd000cfc0, flags=0, fd=*0xd000d020, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = '/dev_hdd0/game/NPEB01041/USRDIR/Assets/Localization/Inventory.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x6d, sb=*0xd000d048)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x6d, ringbuf=*0xd000d028)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x6d, offset=0x0, size=0x1954e)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x6d, buf=*0x200c5ae0, size=0x10000, rsize=*0xd000d088)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x6d)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x6d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x6f, sb=*0xd000d048)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x6f, ringbuf=*0xd000d028)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x6f, offset=0x0, size=0x1954e)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x6f, buf=*0x200c5ae0, size=0x10000, rsize=*0xd000d088)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x6f)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x6f)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0x496ec0, flags=0, fd=*0xd000d020, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0x496ec0, flags=0, fd=*0xd000d020, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = 'Assets/Localization/System.csv'
-HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs error: sys_fs_open('Assets/Localization/System.csv') failed: device not mounted
+HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open('Assets/Localization/System.csv') failed: device not mounted
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0xd000cfd0, flags=0, fd=*0xd000d020, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0xd000cfd0, flags=0, fd=*0xd000d020, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = '/dev_hdd0/game/NPEB01041/USRDIR/Assets/Localization/System.csv'
-HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x6e, sb=*0xd000d048)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x6e, ringbuf=*0xd000d028)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x6e, offset=0x0, size=0xf4b2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x6e, buf=*0x200c5ae0, size=0xf4b2, rsize=*0xd000d088)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x6e)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x6e)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x70, sb=*0xd000d048)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x70, ringbuf=*0xd000d028)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x70, offset=0x0, size=0xf4b2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x70, buf=*0x200c5ae0, size=0xf4b2, rsize=*0xd000d088)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x70)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x70)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0x497168, flags=0, fd=*0xd000f670, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0x497168, flags=0, fd=*0xd000f670, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = 'Assets/Music/Music.ini'
-HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs error: sys_fs_open('Assets/Music/Music.ini') failed: device not mounted
+HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open('Assets/Music/Music.ini') failed: device not mounted
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0xd000f620, flags=0, fd=*0xd000f670, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0xd000f620, flags=0, fd=*0xd000f670, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = '/dev_hdd0/game/NPEB01041/USRDIR/Assets/Music/Music.ini'
-HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x6f, sb=*0xd000f698)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x6f, ringbuf=*0xd000f678)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x6f, offset=0x0, size=0x3aa0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x6f, buf=*0x200c5ad0, size=0x3aa0, rsize=*0xd000f6d8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x6f)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x6f)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x71, sb=*0xd000f698)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x71, ringbuf=*0xd000f678)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x71, offset=0x0, size=0x3aa0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x71, buf=*0x200c5ad0, size=0x3aa0, rsize=*0xd000f6d8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x71)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x71)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0xd000f0d8, flags=0, fd=*0xd000eba0, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0xd000f0d8, flags=0, fd=*0xd000eba0, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = 'zipimport.py'
-HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs error: sys_fs_open('zipimport.py') failed: device not mounted
+HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open('zipimport.py') failed: device not mounted
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0xd000eb60, flags=0, fd=*0xd000eba0, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0xd000eb60, flags=0, fd=*0xd000eba0, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = '/dev_hdd0/game/NPEB01041/USRDIR/zipimport.py'
 G: W {PPU[0x1] Thread (main_thread)[0x004733a8]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB01041/USRDIR/zipimport.py', 0x1) failed: error 0x2
-HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs error: sys_fs_open('/dev_hdd0/game/NPEB01041/USRDIR/zipimport.py'): failed to open file (flags=0, mode=0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open('/dev_hdd0/game/NPEB01041/USRDIR/zipimport.py'): failed to open file (flags=0, mode=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0xd000f218, flags=0, fd=*0xd000ece0, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0xd000f218, flags=0, fd=*0xd000ece0, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = 'Assets/Scripts/main.py'
-HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs error: sys_fs_open('Assets/Scripts/main.py') failed: device not mounted
+HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open('Assets/Scripts/main.py') failed: device not mounted
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0xd000ec90, flags=0, fd=*0xd000ece0, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0xd000ec90, flags=0, fd=*0xd000ece0, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = '/dev_hdd0/game/NPEB01041/USRDIR/Assets/Scripts/main.py'
-HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x70, sb=*0xd000ed08)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x70, ringbuf=*0xd000ece8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x70, offset=0x0, size=0x289d)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x70, buf=*0x200e33c0, size=0x289d, rsize=*0xd000ed48)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x70)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x70)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x72, sb=*0xd000ed08)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x72, ringbuf=*0xd000ece8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x72, offset=0x0, size=0x289d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x72, buf=*0x200e33c0, size=0x289d, rsize=*0xd000ed48)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x72)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x72)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0x498508, flags=0, fd=*0xd000f760, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0x498508, flags=0, fd=*0xd000f760, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = 'Assets/Scripts/Global Script.py'
-HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs error: sys_fs_open('Assets/Scripts/Global Script.py') failed: device not mounted
+HLE: E {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open('Assets/Scripts/Global Script.py') failed: device not mounted
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} cellFs: cellFsOpen(path=*0xd000f710, flags=0, fd=*0xd000f760, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: sys_fs_open(path=*0xd000f710, flags=0, fd=*0xd000f760, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004733a8]} sys_fs: *** path = '/dev_hdd0/game/NPEB01041/USRDIR/Assets/Scripts/Global Script.py'
-HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x71, sb=*0xd000f788)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x71, ringbuf=*0xd000f768)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x71, offset=0x0, size=0xd750)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x71, buf=*0x200e33c0, size=0xd750, rsize=*0xd000f7c8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x71)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x71)
-G: E {PPU[0x1] Thread (main_thread)[0x001b5b7c]} Exception: Access violation reading location 0x4
-G: E {PPU[0x1] Thread (main_thread)[0x001b5b7c]} Information: is_alive=1, m_last_syscall=0x0 ()
+HLE: W {PPU[0x1] Thread (main_thread)[0x004733c8]} sys_fs: sys_fs_fstat(fd=0x73, sb=*0xd000f788)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004744e8]} cellFs: cellFsStReadInit(fd=0x73, ringbuf=*0xd000f768)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474528]} cellFs: cellFsStReadStart(fd=0x73, offset=0x0, size=0xd750)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474508]} cellFs: cellFsStRead(fd=0x73, buf=*0x200e33c0, size=0xd750, rsize=*0xd000f7c8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004745a8]} cellFs: cellFsStReadStop(fd=0x73)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00474568]} cellFs: cellFsStReadFinish(fd=0x73)
 G: W {PPU[0x1] Thread (main_thread)[0x001b5b7c]} Registers:
 =========
 GPR[0] = 0x161614
 GPR[1] = 0xd000f700
 GPR[2] = 0x575d68
 GPR[3] = 0x0
-GPR[4] = 0x24630850
+GPR[4] = 0x24530850
 GPR[5] = 0x0
 GPR[6] = 0x7f7f7f7f7f7f7f7f
 GPR[7] = 0xe3338200e3338
 GPR[8] = 0x10
 GPR[9] = 0x2
 GPR[10] = 0x7f8db2b79f8db2b7
-GPR[11] = 0x24604320
+GPR[11] = 0x24504320
 GPR[12] = 0x48000042
 GPR[13] = 0x8bb030
 GPR[14] = 0x0
@@ -565,9 +582,9 @@ GPR[26] = 0x0
 GPR[27] = 0x200e33c0
 GPR[28] = 0x0
 GPR[29] = 0x0
-GPR[30] = 0x24630850
-GPR[31] = 0x24630850
-FPR[0] = 2.22045E-016
+GPR[30] = 0x24530850
+GPR[31] = 0x24530850
+FPR[0] = 2.22045E-16
 FPR[1] = 0
 FPR[2] = 1
 FPR[3] = 0
@@ -599,7 +616,7 @@ FPR[28] = 0
 FPR[29] = 0
 FPR[30] = 0
 FPR[31] = 0
-VPR[0] = 0xffffffffffffffffffffffffffffffff [x: -1.#QNAN y: -1.#QNAN z: -1.#QNAN w: -1.#QNAN]
+VPR[0] = 0xffffffffffffffffffffffffffffffff [x: -nan y: -nan z: -nan w: -nan]
 VPR[1] = 0xbed413cebed413cebed413cebed413ce [x: -0.414214 y: -0.414214 z: -0.414214 w: -0.414214]
 VPR[2] = 0x3f96cbe43f96cbe43f96cbe43f96cbe4 [x: 1.1781 y: 1.1781 z: 1.1781 w: 1.1781]
 VPR[3] = 0x80000000800000008000000080000000 [x: -0 y: -0 z: -0 w: -0]
@@ -610,11 +627,11 @@ VPR[7] = 0xbed413cebed413cebed413cebed413ce [x: -0.414214 y: -0.414214 z: -0.414
 VPR[8] = 0x401a8279000000000000000000000000 [x: 2.41421 y: 0 z: 0 w: 0]
 VPR[9] = 0x00000000401a82790000000000000000 [x: 0 y: 2.41421 z: 0 w: 0]
 VPR[10] = 0x8000000080000000bf8000a7bf800000 [x: -0 y: -0 z: -1.00002 w: -1]
-VPR[11] = 0xffffffffffffffffffffffffffffffff [x: -1.#QNAN y: -1.#QNAN z: -1.#QNAN w: -1.#QNAN]
-VPR[12] = 0xffffffffffffffffffffffffffffffff [x: -1.#QNAN y: -1.#QNAN z: -1.#QNAN w: -1.#QNAN]
+VPR[11] = 0xffffffffffffffffffffffffffffffff [x: -nan y: -nan z: -nan w: -nan]
+VPR[12] = 0xffffffffffffffffffffffffffffffff [x: -nan y: -nan z: -nan w: -nan]
 VPR[13] = 0xc01a8279c01a8279c01a8279c01a8279 [x: -2.41421 y: -2.41421 z: -2.41421 w: -2.41421]
 VPR[14] = 0xbedbb51ebedbb51ebedbb51ebedbb51e [x: -0.429116 y: -0.429116 z: -0.429116 w: -0.429116]
-VPR[15] = 0x33a2216933a2216933a2216933a22169 [x: 7.54979e-008 y: 7.54979e-008 z: 7.54979e-008 w: 7.54979e-008]
+VPR[15] = 0x33a2216933a2216933a2216933a22169 [x: 7.54979e-08 y: 7.54979e-08 z: 7.54979e-08 w: 7.54979e-08]
 VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[17] = 0xbf800000bf800000bf800000bf800000 [x: -1 y: -1 z: -1 w: -1]
 VPR[18] = 0x3f8000003f8000003f8000003f800000 [x: 1 y: 1 z: 1 w: 1]
@@ -634,18 +651,1025 @@ VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 CR = 0x88000042
 LR = 0x161614
 CTR = 0x10
-XER = 0x20000000 [CA=253403070465 | OV=0 | SO=140694538682368]
+XER = 0x20000000 [CA=1 | OV=0 | SO=8589934592]
 FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
-HLE: W {PPU[0x2f] Thread (spu_printf_handler)[0x0035e6c8]} sys_event: sys_event_queue_receive(equeue_id=0x2e) aborted
-HLE: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} CallbackManager thread aborted
-HLE: ! {VBlank thread} VBlank thread aborted
-HLE: W {PPU[0x26] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x1f) aborted
-HLE: W {PPU[0x26] Thread (SpursHdlr0)[0x00000000]} cellSpurs: SPURS Handler Thread 0 aborted
-HLE: W {PPU[0x64] Thread (PhyreEngineRenderThread)[0x00473a48]} sys_lwcond: _sys_lwcond_queue_wait(lwcond_id=0x45) aborted
-HLE: W {PPU[0x39] Thread (PhyreEngineWorkerThread0)[0x00473a48]} sys_lwcond: _sys_lwcond_queue_wait(lwcond_id=0x36) aborted
-HLE: W {PPU[0x3a] Thread (PhyreEngineWorkerThread1)[0x00473a48]} sys_lwcond: _sys_lwcond_queue_wait(lwcond_id=0x36) aborted
-RSX: W {RSXThread} RSX thread aborted
-RSX: ! {RSXThread} RSX thread ended
-HLE: ! All threads stopped...
-MEM: ! Closing memory...
+G: E {PPU[0x1] Thread (main_thread)[0x001b5b7c]} Exception: Access violation reading location 0x4
+(in file ..\Utilities\Thread.cpp:1098, in function _se_translator)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+G: W {VBlank Thread} Exception: Aborted (emulation stopped)
+(in file Emu\RSX\RSXThread.cpp:2654, in function RSXThread::Task::<lambda_35da4a5bc935cd1c9a062d9f015244c2>::operator ())
+HLE: S {PPU[0x64] Thread (PhyreEngineRenderThread)[0x00473a48]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: W {PPU[0x2] Thread (Callback Thread)[0x003dee58]} Registers:
+=========
+GPR[0] = 0x1
+GPR[1] = 0xd001fd90
+GPR[2] = 0x585d58
+GPR[3] = 0x1
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x8b03a4
+GPR[10] = 0x0
+GPR[11] = 0x8c7400
+GPR[12] = 0x0
+GPR[13] = 0x8bb1f4
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000082
+LR = 0x53b000
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+HLE: S {PPU[0x39] Thread (PhyreEngineWorkerThread0)[0x00473a48]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: W {PPU[0x27] Thread (SpursHdlr0)[0x00000000]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd002be00
+GPR[2] = 0x0
+GPR[3] = 0x24100400
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x0
+GPR[12] = 0x0
+GPR[13] = 0x8bb57c
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x80001b006b6de6940000000000000000 [x: -9.68577e-42 y: 2.87604e+26 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+HLE: S {PPU[0x2f] Thread (spu_printf_handler)[0x0035e6c8]} Last syscall: 130 (sys_event_queue_receive)
+G: W {PPU[0x2] Thread (Callback Thread)[0x003dee58]} Exception: Aborted (emulation stopped)
+(in file Emu\CPU\CPUThread.cpp:261, in function CPUThread::CheckStatus)
+G: W {PPU[0x27] Thread (SpursHdlr0)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_spu.cpp:550, in function sys_spu_thread_group_join)
+HLE: S {PPU[0x3a] Thread (PhyreEngineWorkerThread1)[0x00473a48]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: W {PPU[0x26] Thread (SpursHdlr1)[0x00000000]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd0027cf8
+GPR[2] = 0x0
+GPR[3] = 0x24100400
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x0
+GPR[12] = 0x0
+GPR[13] = 0x8bb3b8
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x64] Thread (PhyreEngineRenderThread)[0x00473a48]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd004fc60
+GPR[2] = 0x575d68
+GPR[3] = 0x885270
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x885250
+GPR[10] = 0x0
+GPR[11] = 0x1
+GPR[12] = 0x0
+GPR[13] = 0x8bbc8c
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x885220
+GPR[27] = 0x885650
+GPR[28] = 0x885220
+GPR[29] = 0x885258
+GPR[30] = 0x885250
+GPR[31] = 0x885250
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000082
+LR = 0x2822c4
+CTR = 0x302b20
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x26] Thread (SpursHdlr1)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_event.cpp:175, in function sys_event_queue_receive)
+G: W {PPU[0x64] Thread (PhyreEngineRenderThread)[0x00473a48]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_lwcond.cpp:184, in function _sys_lwcond_queue_wait)
+G: W {PPU[0x2f] Thread (spu_printf_handler)[0x0035e6c8]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd002f920
+GPR[2] = 0x575d68
+GPR[3] = 0x2e
+GPR[4] = 0xd002f990
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x82
+GPR[12] = 0x0
+GPR[13] = 0x8bb740
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0xd002f990
+GPR[24] = 0x88d508
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000003060000000000000306 [x: 0 y: 1.08461e-42 z: 0 w: 1.08461e-42]
+VPR[14] = 0x00000000000000000000000001010101 [x: 0 y: 0 z: 0 w: 2.36943e-38]
+VPR[15] = 0x00000008000000100000000000000000 [x: 1.12104e-44 y: 2.24208e-44 z: 0 w: 0]
+VPR[16] = 0x0000000003f9ed600000000000000008 [x: 0 y: 1.46894e-36 z: 0 w: 1.12104e-44]
+VPR[17] = 0x00000000000000080000000800000008 [x: 0 y: 1.12104e-44 z: 1.12104e-44 w: 1.12104e-44]
+VPR[18] = 0x00000008000000000000000003f9ed78 [x: 1.12104e-44 y: 0 z: 0 w: 1.46894e-36]
+VPR[19] = 0x00000000040fa1900000000000000008 [x: 0 y: 1.68838e-36 z: 0 w: 1.12104e-44]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x39] Thread (PhyreEngineWorkerThread0)[0x00473a48]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd0037ba0
+GPR[2] = 0x575d68
+GPR[3] = 0x8793e8
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x5432c8
+GPR[10] = 0x55c6d0
+GPR[11] = 0x8793a8
+GPR[12] = 0x22000082
+GPR[13] = 0x8bb904
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x8794a0
+GPR[18] = 0x2001ff80
+GPR[19] = 0x40000
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x2001deb8
+GPR[24] = 0x8793a8
+GPR[25] = 0x0
+GPR[26] = 0x8794a0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x8793d0
+GPR[30] = 0x8793e8
+GPR[31] = 0x8793c8
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22004082
+LR = 0x282368
+CTR = 0x27e998
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x3a] Thread (PhyreEngineWorkerThread1)[0x00473a48]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd003fba0
+GPR[2] = 0x575d68
+GPR[3] = 0x8793e8
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x5432c8
+GPR[10] = 0x55c6d0
+GPR[11] = 0x8793a8
+GPR[12] = 0x22000082
+GPR[13] = 0x8bbac8
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x8794a0
+GPR[18] = 0x2005ff80
+GPR[19] = 0x40000
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x1
+GPR[23] = 0x2001dee8
+GPR[24] = 0x8793a8
+GPR[25] = 0x0
+GPR[26] = 0x8794a0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x8793d0
+GPR[30] = 0x8793e8
+GPR[31] = 0x8793c8
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22004082
+LR = 0x282368
+CTR = 0x27e998
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x2f] Thread (spu_printf_handler)[0x0035e6c8]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_event.cpp:175, in function sys_event_queue_receive)
+G: W {PPU[0x3a] Thread (PhyreEngineWorkerThread1)[0x00473a48]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_lwcond.cpp:184, in function _sys_lwcond_queue_wait)
+G: W {PPU[0x39] Thread (PhyreEngineWorkerThread0)[0x00473a48]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_lwcond.cpp:184, in function _sys_lwcond_queue_wait)
+G: W {SPU[0x21] Thread (CellSpursKernel1)[0x00000818]} Registers:
+=========
+GPR[0] = 0x00000000000000000000000000000000
+GPR[1] = 0x0003fff0000000000000000000000000
+GPR[2] = 0x00000000000000000000000000000000
+GPR[3] = 0x00000001000000000000000000000000
+GPR[4] = 0x00000000241004000000000000000000
+GPR[5] = 0x00000000001000000000000000000000
+GPR[6] = 0x00000000003689fc0000000000000000
+GPR[7] = 0x00000000000000000000000000000000
+GPR[8] = 0x00000000000000000000000000000000
+GPR[9] = 0x00000000000000000000000000000000
+GPR[10] = 0x00000000000000000000000000000000
+GPR[11] = 0x00000000000000000000000000000000
+GPR[12] = 0x00000000000000000000000000000000
+GPR[13] = 0x00000000000000000000000000000000
+GPR[14] = 0x00000000000000000000000000000000
+GPR[15] = 0x00000000000000000000000000000000
+GPR[16] = 0x00000000000000000000000000000000
+GPR[17] = 0x00000000000000000000000000000000
+GPR[18] = 0x00000000000000000000000000000000
+GPR[19] = 0x00000000000000000000000000000000
+GPR[20] = 0x00000000000000000000000000000000
+GPR[21] = 0x00000000000000000000000000000000
+GPR[22] = 0x00000000000000000000000000000000
+GPR[23] = 0x00000000000000000000000000000000
+GPR[24] = 0x00000000000000000000000000000000
+GPR[25] = 0x00000000000000000000000000000000
+GPR[26] = 0x00000000000000000000000000000000
+GPR[27] = 0x00000000000000000000000000000000
+GPR[28] = 0x00000000000000000000000000000000
+GPR[29] = 0x00000000000000000000000000000000
+GPR[30] = 0x00000000000000000000000000000000
+GPR[31] = 0x00000000000000000000000000000000
+GPR[32] = 0x00000000000000000000000000000000
+GPR[33] = 0x00000000000000000000000000000000
+GPR[34] = 0x00000000000000000000000000000000
+GPR[35] = 0x00000000000000000000000000000000
+GPR[36] = 0x00000000000000000000000000000000
+GPR[37] = 0x00000000000000000000000000000000
+GPR[38] = 0x00000000000000000000000000000000
+GPR[39] = 0x00000000000000000000000000000000
+GPR[40] = 0x00000000000000000000000000000000
+GPR[41] = 0x00000000000000000000000000000000
+GPR[42] = 0x00000000000000000000000000000000
+GPR[43] = 0x00000000000000000000000000000000
+GPR[44] = 0x00000000000000000000000000000000
+GPR[45] = 0x00000000000000000000000000000000
+GPR[46] = 0x00000000000000000000000000000000
+GPR[47] = 0x00000000000000000000000000000000
+GPR[48] = 0x00000000000000000000000000000000
+GPR[49] = 0x00000000000000000000000000000000
+GPR[50] = 0x00000000000000000000000000000000
+GPR[51] = 0x00000000000000000000000000000000
+GPR[52] = 0x00000000000000000000000000000000
+GPR[53] = 0x00000000000000000000000000000000
+GPR[54] = 0x00000000000000000000000000000000
+GPR[55] = 0x00000000000000000000000000000000
+GPR[56] = 0x00000000000000000000000000000000
+GPR[57] = 0x00000000000000000000000000000000
+GPR[58] = 0x00000000000000000000000000000000
+GPR[59] = 0x00000000000000000000000000000000
+GPR[60] = 0x00000000000000000000000000000000
+GPR[61] = 0x00000000000000000000000000000000
+GPR[62] = 0x00000000000000000000000000000000
+GPR[63] = 0x00000000000000000000000000000000
+GPR[64] = 0x00000000000000000000000000000000
+GPR[65] = 0x00000000000000000000000000000000
+GPR[66] = 0x00000000000000000000000000000000
+GPR[67] = 0x00000000000000000000000000000000
+GPR[68] = 0x00000000000000000000000000000000
+GPR[69] = 0x00000000000000000000000000000000
+GPR[70] = 0x00000000000000000000000000000000
+GPR[71] = 0x00000000000000000000000000000000
+GPR[72] = 0x00000000000000000000000000000000
+GPR[73] = 0x00000000000000000000000000000000
+GPR[74] = 0x00000000000000000000000000000000
+GPR[75] = 0x00000000000000000000000000000000
+GPR[76] = 0x00000000000000000000000000000000
+GPR[77] = 0x00000000000000000000000000000000
+GPR[78] = 0x00000000000000000000000000000000
+GPR[79] = 0x00000000000000000000000000000000
+GPR[80] = 0x00000000000000000000000000000000
+GPR[81] = 0x00000000000000000000000000000000
+GPR[82] = 0x00000000000000000000000000000000
+GPR[83] = 0x00000000000000000000000000000000
+GPR[84] = 0x00000000000000000000000000000000
+GPR[85] = 0x00000000000000000000000000000000
+GPR[86] = 0x00000000000000000000000000000000
+GPR[87] = 0x00000000000000000000000000000000
+GPR[88] = 0x00000000000000000000000000000000
+GPR[89] = 0x00000000000000000000000000000000
+GPR[90] = 0x00000000000000000000000000000000
+GPR[91] = 0x00000000000000000000000000000000
+GPR[92] = 0x00000000000000000000000000000000
+GPR[93] = 0x00000000000000000000000000000000
+GPR[94] = 0x00000000000000000000000000000000
+GPR[95] = 0x00000000000000000000000000000000
+GPR[96] = 0x00000000000000000000000000000000
+GPR[97] = 0x00000000000000000000000000000000
+GPR[98] = 0x00000000000000000000000000000000
+GPR[99] = 0x00000000000000000000000000000000
+GPR[100] = 0x00000000000000000000000000000000
+GPR[101] = 0x00000000000000000000000000000000
+GPR[102] = 0x00000000000000000000000000000000
+GPR[103] = 0x00000000000000000000000000000000
+GPR[104] = 0x00000000000000000000000000000000
+GPR[105] = 0x00000000000000000000000000000000
+GPR[106] = 0x00000000000000000000000000000000
+GPR[107] = 0x00000000000000000000000000000000
+GPR[108] = 0x00000000000000000000000000000000
+GPR[109] = 0x00000000000000000000000000000000
+GPR[110] = 0x00000000000000000000000000000000
+GPR[111] = 0x00000000000000000000000000000000
+GPR[112] = 0x00000000000000000000000000000000
+GPR[113] = 0x00000000000000000000000000000000
+GPR[114] = 0x00000000000000000000000000000000
+GPR[115] = 0x00000000000000000000000000000000
+GPR[116] = 0x00000000000000000000000000000000
+GPR[117] = 0x00000000000000000000000000000000
+GPR[118] = 0x00000000000000000000000000000000
+GPR[119] = 0x00000000000000000000000000000000
+GPR[120] = 0x00000000000000000000000000000000
+GPR[121] = 0x00000000000000000000000000000000
+GPR[122] = 0x00000000000000000000000000000000
+GPR[123] = 0x00000000000000000000000000000000
+GPR[124] = 0x00000000000000000000000000000000
+GPR[125] = 0x00000000000000000000000000000000
+GPR[126] = 0x00000000000000000000000000000000
+GPR[127] = 0x00000000000000000000000000000000
+
+G: W {SPU[0x21] Thread (CellSpursKernel1)[0x00000818]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
+G: W {SPU[0x20] Thread (CellSpursKernel0)[0x00000818]} Registers:
+=========
+GPR[0] = 0x00000000000000000000000000000000
+GPR[1] = 0x0003fff0000000000000000000000000
+GPR[2] = 0x00000000000000000000000000000000
+GPR[3] = 0x00000000000000000000000000000000
+GPR[4] = 0x00000000241004000000000000000000
+GPR[5] = 0x00000000001000000000000000000000
+GPR[6] = 0x00000000003689fc0000000000000000
+GPR[7] = 0x00000000000000000000000000000000
+GPR[8] = 0x00000000000000000000000000000000
+GPR[9] = 0x00000000000000000000000000000000
+GPR[10] = 0x00000000000000000000000000000000
+GPR[11] = 0x00000000000000000000000000000000
+GPR[12] = 0x00000000000000000000000000000000
+GPR[13] = 0x00000000000000000000000000000000
+GPR[14] = 0x00000000000000000000000000000000
+GPR[15] = 0x00000000000000000000000000000000
+GPR[16] = 0x00000000000000000000000000000000
+GPR[17] = 0x00000000000000000000000000000000
+GPR[18] = 0x00000000000000000000000000000000
+GPR[19] = 0x00000000000000000000000000000000
+GPR[20] = 0x00000000000000000000000000000000
+GPR[21] = 0x00000000000000000000000000000000
+GPR[22] = 0x00000000000000000000000000000000
+GPR[23] = 0x00000000000000000000000000000000
+GPR[24] = 0x00000000000000000000000000000000
+GPR[25] = 0x00000000000000000000000000000000
+GPR[26] = 0x00000000000000000000000000000000
+GPR[27] = 0x00000000000000000000000000000000
+GPR[28] = 0x00000000000000000000000000000000
+GPR[29] = 0x00000000000000000000000000000000
+GPR[30] = 0x00000000000000000000000000000000
+GPR[31] = 0x00000000000000000000000000000000
+GPR[32] = 0x00000000000000000000000000000000
+GPR[33] = 0x00000000000000000000000000000000
+GPR[34] = 0x00000000000000000000000000000000
+GPR[35] = 0x00000000000000000000000000000000
+GPR[36] = 0x00000000000000000000000000000000
+GPR[37] = 0x00000000000000000000000000000000
+GPR[38] = 0x00000000000000000000000000000000
+GPR[39] = 0x00000000000000000000000000000000
+GPR[40] = 0x00000000000000000000000000000000
+GPR[41] = 0x00000000000000000000000000000000
+GPR[42] = 0x00000000000000000000000000000000
+GPR[43] = 0x00000000000000000000000000000000
+GPR[44] = 0x00000000000000000000000000000000
+GPR[45] = 0x00000000000000000000000000000000
+GPR[46] = 0x00000000000000000000000000000000
+GPR[47] = 0x00000000000000000000000000000000
+GPR[48] = 0x00000000000000000000000000000000
+GPR[49] = 0x00000000000000000000000000000000
+GPR[50] = 0x00000000000000000000000000000000
+GPR[51] = 0x00000000000000000000000000000000
+GPR[52] = 0x00000000000000000000000000000000
+GPR[53] = 0x00000000000000000000000000000000
+GPR[54] = 0x00000000000000000000000000000000
+GPR[55] = 0x00000000000000000000000000000000
+GPR[56] = 0x00000000000000000000000000000000
+GPR[57] = 0x00000000000000000000000000000000
+GPR[58] = 0x00000000000000000000000000000000
+GPR[59] = 0x00000000000000000000000000000000
+GPR[60] = 0x00000000000000000000000000000000
+GPR[61] = 0x00000000000000000000000000000000
+GPR[62] = 0x00000000000000000000000000000000
+GPR[63] = 0x00000000000000000000000000000000
+GPR[64] = 0x00000000000000000000000000000000
+GPR[65] = 0x00000000000000000000000000000000
+GPR[66] = 0x00000000000000000000000000000000
+GPR[67] = 0x00000000000000000000000000000000
+GPR[68] = 0x00000000000000000000000000000000
+GPR[69] = 0x00000000000000000000000000000000
+GPR[70] = 0x00000000000000000000000000000000
+GPR[71] = 0x00000000000000000000000000000000
+GPR[72] = 0x00000000000000000000000000000000
+GPR[73] = 0x00000000000000000000000000000000
+GPR[74] = 0x00000000000000000000000000000000
+GPR[75] = 0x00000000000000000000000000000000
+GPR[76] = 0x00000000000000000000000000000000
+GPR[77] = 0x00000000000000000000000000000000
+GPR[78] = 0x00000000000000000000000000000000
+GPR[79] = 0x00000000000000000000000000000000
+GPR[80] = 0x00000000000000000000000000000000
+GPR[81] = 0x00000000000000000000000000000000
+GPR[82] = 0x00000000000000000000000000000000
+GPR[83] = 0x00000000000000000000000000000000
+GPR[84] = 0x00000000000000000000000000000000
+GPR[85] = 0x00000000000000000000000000000000
+GPR[86] = 0x00000000000000000000000000000000
+GPR[87] = 0x00000000000000000000000000000000
+GPR[88] = 0x00000000000000000000000000000000
+GPR[89] = 0x00000000000000000000000000000000
+GPR[90] = 0x00000000000000000000000000000000
+GPR[91] = 0x00000000000000000000000000000000
+GPR[92] = 0x00000000000000000000000000000000
+GPR[93] = 0x00000000000000000000000000000000
+GPR[94] = 0x00000000000000000000000000000000
+GPR[95] = 0x00000000000000000000000000000000
+GPR[96] = 0x00000000000000000000000000000000
+GPR[97] = 0x00000000000000000000000000000000
+GPR[98] = 0x00000000000000000000000000000000
+GPR[99] = 0x00000000000000000000000000000000
+GPR[100] = 0x00000000000000000000000000000000
+GPR[101] = 0x00000000000000000000000000000000
+GPR[102] = 0x00000000000000000000000000000000
+GPR[103] = 0x00000000000000000000000000000000
+GPR[104] = 0x00000000000000000000000000000000
+GPR[105] = 0x00000000000000000000000000000000
+GPR[106] = 0x00000000000000000000000000000000
+GPR[107] = 0x00000000000000000000000000000000
+GPR[108] = 0x00000000000000000000000000000000
+GPR[109] = 0x00000000000000000000000000000000
+GPR[110] = 0x00000000000000000000000000000000
+GPR[111] = 0x00000000000000000000000000000000
+GPR[112] = 0x00000000000000000000000000000000
+GPR[113] = 0x00000000000000000000000000000000
+GPR[114] = 0x00000000000000000000000000000000
+GPR[115] = 0x00000000000000000000000000000000
+GPR[116] = 0x00000000000000000000000000000000
+GPR[117] = 0x00000000000000000000000000000000
+GPR[118] = 0x00000000000000000000000000000000
+GPR[119] = 0x00000000000000000000000000000000
+GPR[120] = 0x00000000000000000000000000000000
+GPR[121] = 0x00000000000000000000000000000000
+GPR[122] = 0x00000000000000000000000000000000
+GPR[123] = 0x00000000000000000000000000000000
+GPR[124] = 0x00000000000000000000000000000000
+GPR[125] = 0x00000000000000000000000000000000
+GPR[126] = 0x00000000000000000000000000000000
+GPR[127] = 0x00000000000000000000000000000000
+
+G: W {SPU[0x20] Thread (CellSpursKernel0)[0x00000818]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
+G: ! All threads stopped...

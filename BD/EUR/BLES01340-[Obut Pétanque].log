@@ -1,588 +1,2413 @@
-HLE: ! path: /dev_hdd0/game/
-HLE: W No pause.bin found, Auto Pause will not work.
-HLE: W No pause.bin found, Auto Pause will not work.
-LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\BLES01340-[Obut Petanque]/PS3_GAME/USRDIR/BOOT.BIN'...
+LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! Stopping emulator...
+LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES01340-[Obut Petanque]/PS3_GAME/USRDIR/BOOT.BIN'...
+G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES01340-[Obut Petanque]/PS3_GAME/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: !  
 LDR: ! Mount info:
-LDR: ! /dev_hdd0/ -> ./dev_hdd0/
-LDR: ! /dev_hdd1/ -> ./dev_hdd1/
-LDR: ! /dev_flash/ -> ./dev_flash/
-LDR: ! /dev_usb000/ -> ./dev_usb000/
-LDR: ! /dev_usb/ -> ./dev_usb000/
-LDR: ! /app_home/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\BLES01340-[Obut Petanque]/PS3_GAME/
-LDR: ! /dev_bdvd/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\BLES01340-[Obut Petanque]/PS3_GAME//../
+LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
+LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
 LDR: ! /host_root/ -> 
-LDR: ! /app_home/PS3_GAME/USRDIR/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\BLES01340-[Obut Petanque]/PS3_GAME//USRDIR/
-LDR: ! /dev_flash2/ -> ./dev_flash2/
-LDR: ! /app_home/Game/PS3_GAME/USRDIR/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\BLES01340-[Obut Petanque]/PS3_GAME//USRDIR/
-LDR: ! //dev_hdd0/ -> ./dev_hdd0/
-LDR: ! / -> D:\Emulateurs\Rpcs3\dev_hdd0\game\BLES01340-[Obut Petanque]/PS3_GAME//USRDIR/
-LDR: ! /app_home//dev_bdvd/PS3_GAME/USRDIR/data/gos/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\BLES01340-[Obut Petanque]/PS3_GAME//USRDIR/
+LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
+LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
+LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES01340-[Obut Petanque]/
+LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: !  
 LDR: ! Title: Obut Pétanque
 LDR: ! Serial: BLES01340
-LDR: !  
-MEM: ! Initializing memory: m_base_addr = 0x5e0abe0000
-MEM: ! Memory initialized.
-LDR: W Unknown module 'libgem'
-LDR: ! Imported function 'cellGemUpdateStart' in 'libgem' module
-LDR: ! Imported function 'cellGemInit' in 'libgem' module
-LDR: ! Imported function 'cellGemGetTrackerHue' in 'libgem' module
-LDR: ! Imported function 'cellGemConvertVideoFinish' in 'libgem' module
-LDR: ! Imported function 'cellGemEnableMagnetometer' in 'libgem' module
-LDR: ! Imported function 'cellGemGetMemorySize' in 'libgem' module
-LDR: ! Imported function 'cellGemUpdateFinish' in 'libgem' module
-LDR: ! Imported function 'cellGemGetState' in 'libgem' module
-LDR: ! Imported function 'cellGemConvertVideoStart' in 'libgem' module
-LDR: ! Imported function 'cellGemSetYaw' in 'libgem' module
-LDR: ! Imported function 'cellGemTrackHues' in 'libgem' module
-LDR: ! Imported function 'cellGemGetImageState' in 'libgem' module
-LDR: ! Imported function 'cellGemGetInfo' in 'libgem' module
-LDR: ! Imported function 'cellGemPrepareCamera' in 'libgem' module
-LDR: ! Imported function 'cellGemCalibrate' in 'libgem' module
-LDR: ! Imported function 'cellGemEnd' in 'libgem' module
-LDR: ! Imported function 'cellGemInvalidateCalibration' in 'libgem' module
-LDR: ! Imported function 'cellAudioInit' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioPortStop' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioGetPortConfig' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioPortStart' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioPortOpen' in 'cellAudio' module
-LDR: ! Imported function 'cellCameraGetBufferInfoEx' in 'cellCamera' module
-LDR: ! Imported function 'cellCameraReadEx' in 'cellCamera' module
-LDR: ! Imported function 'cellCameraStart' in 'cellCamera' module
-LDR: ! Imported function 'cellCameraGetType' in 'cellCamera' module
-LDR: ! Imported function 'cellCameraEnd' in 'cellCamera' module
-LDR: ! Imported function 'cellCameraOpenEx' in 'cellCamera' module
-LDR: ! Imported function 'cellCameraIsAttached' in 'cellCamera' module
-LDR: ! Imported function 'cellCameraReset' in 'cellCamera' module
-LDR: ! Imported function 'cellCameraInit' in 'cellCamera' module
-LDR: ! Imported function 'cellFsRmdir' in 'sys_fs' module
-LDR: ! Imported function 'cellFsClose' in 'sys_fs' module
-LDR: ! Imported function 'cellFsOpendir' in 'sys_fs' module
-LDR: ! Imported function 'cellFsRead' in 'sys_fs' module
-LDR: ! Imported function 'cellFsReaddir' in 'sys_fs' module
-LDR: ! Imported function 'cellFsSdataOpenByFd' in 'sys_fs' module
-LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module
-LDR: ! Imported function 'cellFsStat' in 'sys_fs' module
-LDR: ! Imported function 'cellFsUnlink' in 'sys_fs' module
-LDR: ! Imported function 'cellFsFsync' in 'sys_fs' module
-LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module
-LDR: ! Imported function 'cellFsGetFreeSize' in 'sys_fs' module
-LDR: ! Imported function 'cellFsSdataOpen' in 'sys_fs' module
-LDR: ! Imported function 'cellFsMkdir' in 'sys_fs' module
-LDR: ! Imported function 'cellFsWrite' in 'sys_fs' module
-LDR: ! Imported function 'cellFsFstat' in 'sys_fs' module
-LDR: ! Imported function 'cellFsClosedir' in 'sys_fs' module
-LDR: ! Imported function 'cellGcmGetTiledPitchSize' in 'cellGcmSys' module
-LDR: ! Imported function '_cellGcmInitBody' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmAddressToOffset' in 'cellGcmSys' module
-LDR: ! Imported function '_cellGcmFunc15' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmBindTile' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmGetDefaultCommandWordSize' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmGetLastFlipTime' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmGetDefaultSegmentWordSize' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmSetDefaultFifoSize' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmBindZcull' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmMapMainMemory' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmGetControlRegister' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmUnbindZcull' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmSetTileInfo' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmUnbindTile' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmUnmapIoAddress' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmGetConfiguration' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmGetLabelAddress' in 'cellGcmSys' module
-LDR: ! Imported function 'cellPadInit' in 'sys_io' module
-LDR: ! Imported function 'cellKbClearBuf' in 'sys_io' module
-LDR: ! Imported function 'cellKbInit' in 'sys_io' module
-LDR: ! Imported function 'cellPadEnd' in 'sys_io' module
-LDR: ! Imported function 'cellPadSetPortSetting' in 'sys_io' module
-LDR: ! Imported function 'cellPadGetData' in 'sys_io' module
-LDR: ! Imported function 'cellKbSetCodeType' in 'sys_io' module
-LDR: ! Imported function 'cellPadGetInfo2' in 'sys_io' module
-LDR: ! Imported function 'cellKbEnd' in 'sys_io' module
-LDR: ! Imported function 'cellPadSetActDirect' in 'sys_io' module
-LDR: ! Imported function 'cellKbRead' in 'sys_io' module
-LDR: ! Imported function 'cellNetCtlGetInfo' in 'cellNetCtl' module
-LDR: ! Imported function 'cellNetCtlInit' in 'cellNetCtl' module
-LDR: ! Imported function 'sys_net_initialize_network_ex' in 'sys_net' module
-LDR: ! Imported function 'recvfrom' in 'sys_net' module
-LDR: ! Imported function 'listen' in 'sys_net' module
-LDR: W Unimplemented function 'socketselect' in 'sys_net' module
-LDR: ! Imported function 'connect' in 'sys_net' module
-LDR: ! Imported function 'socketclose' in 'sys_net' module
-LDR: W Unimplemented function 'inet_ntoa' in 'sys_net' module
-LDR: ! Imported function 'setsockopt' in 'sys_net' module
-LDR: ! Imported function 'sendto' in 'sys_net' module
-LDR: ! Imported function 'socket' in 'sys_net' module
-LDR: W Unimplemented function 'inet_aton' in 'sys_net' module
-LDR: ! Imported function 'bind' in 'sys_net' module
-LDR: ! Imported function 'sys_net_finalize_network' in 'sys_net' module
-LDR: ! Imported function 'accept' in 'sys_net' module
-LDR: ! Imported function 'inet_addr' in 'sys_net' module
-LDR: ! Imported function 'send' in 'sys_net' module
-LDR: ! Imported function 'recv' in 'sys_net' module
-LDR: ! Imported function 'cellPngDecDecodeData' in 'cellPngDec' module
-LDR: ! Imported function 'cellPngDecExtCreate' in 'cellPngDec' module
-LDR: ! Imported function 'cellPngDecClose' in 'cellPngDec' module
-LDR: ! Imported function 'cellPngDecDestroy' in 'cellPngDec' module
-LDR: ! Imported function 'cellPngDecReadHeader' in 'cellPngDec' module
-LDR: ! Imported function 'cellPngDecOpen' in 'cellPngDec' module
-LDR: ! Imported function 'cellPngDecSetParameter' in 'cellPngDec' module
-LDR: ! Imported function 'cellRescSetWaitFlip' in 'cellResc' module
-LDR: ! Imported function 'cellRescSetDsts' in 'cellResc' module
-LDR: ! Imported function 'cellRescSetDisplayMode' in 'cellResc' module
-LDR: ! Imported function 'cellRescSetConvertAndFlip' in 'cellResc' module
-LDR: ! Imported function 'cellRescExit' in 'cellResc' module
-LDR: ! Imported function 'cellRescSetFlipHandler' in 'cellResc' module
-LDR: ! Imported function 'cellRescInit' in 'cellResc' module
-LDR: ! Imported function 'cellRescGetBufferSize' in 'cellResc' module
-LDR: ! Imported function 'cellRescSetSrc' in 'cellResc' module
-LDR: ! Imported function 'cellRescSetBufferAddress' in 'cellResc' module
-LDR: ! Imported function 'cellRescVideoOutResolutionId2RescBufferMode' in 'cellResc' module
-LDR: ! Imported function 'cellSailGraphicsAdapterGetFrame' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerSetSoundAdapter' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerFinalize' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerSetGraphicsAdapter' in 'cellSail' module
-LDR: ! Imported function 'cellSailGraphicsAdapterInitialize' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerInitialize2' in 'cellSail' module
-LDR: ! Imported function 'cellSailDescriptorDestroyDatabase' in 'cellSail' module
-LDR: ! Imported function 'cellSailGraphicsAdapterSetPreferredFormat' in 'cellSail' module
-LDR: ! Imported function 'cellSailMemAllocatorInitialize' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerOpenStream' in 'cellSail' module
-LDR: ! Imported function 'cellSailSoundAdapterInitialize' in 'cellSail' module
-LDR: ! Imported function 'cellSailGraphicsAdapterUpdateAvSync' in 'cellSail' module
-LDR: ! Imported function 'cellSailSoundAdapterPtsToTimePosition' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerSetParameter' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerAddDescriptor' in 'cellSail' module
-LDR: ! Imported function 'cellSailSoundAdapterGetFrame' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerBoot' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerCreateDescriptor' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerStart' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerStop' in 'cellSail' module
-LDR: ! Imported function 'cellSailSoundAdapterUpdateAvSync' in 'cellSail' module
-LDR: ! Imported function 'cellSailPlayerSetRepeatMode' in 'cellSail' module
-LDR: ! Imported function 'cellSpursAttributeSetNamePrefix' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursAttributeEnableSpuPrintfIfAvailable' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursEventFlagDetachLv2EventQueue' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursCreateJobChainWithAttribute' in 'cellSpurs' module
-LDR: ! Imported function '_cellSpursJobChainAttributeInitialize' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursEventFlagWait' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursDetachLv2EventQueue' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursCreateTaskset' in 'cellSpurs' module
-LDR: ! Imported function '_cellSpursEventFlagInitialize' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursJobGuardInitialize' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursEventFlagTryWait' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursShutdownJobChain' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursEventFlagAttachLv2EventQueue' in 'cellSpurs' module
-LDR: ! Imported function '_cellSpursAttributeInitialize' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursJoinTaskset' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursJobChainAttributeSetName' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursShutdownTaskset' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursJoinJobChain' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursAttributeSetSpuThreadGroupType' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursInitializeWithAttribute' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursAttachLv2EventQueue' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursJobChainAttributeSetHaltOnError' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursCreateTask' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursFinalize' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursJobGuardNotify' in 'cellSpurs' module
-LDR: ! Imported function '_cellSpursSendSignal' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursRunJobChain' in 'cellSpurs' module
-LDR: ! Imported function 'cellSysmoduleUnloadModule' in 'cellSysmodule' module
-LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module
-LDR: ! Imported function 'cellSysmoduleInitialize' in 'cellSysmodule' module
-LDR: W Unimplemented function 'sceNpMatching2GetWorldInfoList' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2SearchRoom' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2SignalingGetConnectionStatus' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2CreateServerContext' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2LeaveRoom' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2Term2' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2GetServerInfo' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2GetEventData' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNp2Init' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2JoinRoom' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2ContextStartAsync' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2RegisterContextCallback' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2GetServerIdListLocal' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2CreateContext' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2SetDefaultRequestOptParam' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2RegisterRoomEventCallback' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2CreateJoinRoom' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2Init2' in 'sceNp2' module
-LDR: W Unimplemented function 'sceNpMatching2RegisterRoomMessageCallback' in 'sceNp2' module
-LDR: ! Imported function 'sceNpBasicSendMessageGui' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicGetFriendListEntry' in 'sceNp' module
-LDR: ! Imported function 'sceNpScoreGetRankingByNpId' in 'sceNp' module
-LDR: ! Imported function 'sceNpScoreRecordScore' in 'sceNp' module
-LDR: ! Imported function 'sceNpScoreDestroyTitleCtx' in 'sceNp' module
-LDR: ! Imported function 'sceNpLookupUserProfileWithAvatarSize' in 'sceNp' module
-LDR: ! Imported function 'sceNpScoreInit' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicSetPresence' in 'sceNp' module
-LDR: ! Imported function 'sceNpTerm' in 'sceNp' module
-LDR: ! Imported function 'sceNpManagerUnregisterCallback' in 'sceNp' module
-LDR: ! Imported function 'sceNpLookupDestroyTitleCtx' in 'sceNp' module
-LDR: ! Imported function 'sceNpLookupInit' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicRecvMessageAttachmentLoad' in 'sceNp' module
-LDR: ! Imported function 'sceNpScoreCreateTransactionCtx' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicRecvMessageCustom' in 'sceNp' module
-LDR: ! Imported function 'sceNpLookupTerm' in 'sceNp' module
-LDR: ! Imported function 'sceNpScoreTerm' in 'sceNp' module
-LDR: ! Imported function 'sceNpManagerGetStatus' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicUnregisterHandler' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicGetFriendListEntryCount' in 'sceNp' module
-LDR: ! Imported function 'sceNpScoreCreateTitleCtx' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicRegisterHandler' in 'sceNp' module
-LDR: ! Imported function 'sceNpScoreDestroyTransactionCtx' in 'sceNp' module
-LDR: ! Imported function 'sceNpLookupCreateTitleCtx' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicGetEvent' in 'sceNp' module
-LDR: ! Imported function 'sceNpManagerRegisterCallback' in 'sceNp' module
-LDR: ! Imported function 'sceNpLookupCreateTransactionCtx' in 'sceNp' module
-LDR: ! Imported function 'sceNpDrmIsAvailable2' in 'sceNp' module
-LDR: ! Imported function 'sceNpManagerGetOnlineName' in 'sceNp' module
-LDR: ! Imported function 'sceNpLookupDestroyTransactionCtx' in 'sceNp' module
-LDR: ! Imported function 'sceNpScoreGetRankingByRange' in 'sceNp' module
-LDR: ! Imported function 'sceNpManagerGetNpId' in 'sceNp' module
-LDR: ! Imported function 'sceNpTrophyRegisterContext' in 'sceNpTrophy' module
-LDR: ! Imported function 'sceNpTrophyCreateHandle' in 'sceNpTrophy' module
-LDR: ! Imported function 'sceNpTrophySetSoundLevel' in 'sceNpTrophy' module
-LDR: ! Imported function 'sceNpTrophyGetRequiredDiskSpace' in 'sceNpTrophy' module
-LDR: ! Imported function 'sceNpTrophyDestroyContext' in 'sceNpTrophy' module
-LDR: ! Imported function 'sceNpTrophyInit' in 'sceNpTrophy' module
-LDR: ! Imported function 'sceNpTrophyDestroyHandle' in 'sceNpTrophy' module
-LDR: ! Imported function 'sceNpTrophyUnlockTrophy' in 'sceNpTrophy' module
-LDR: ! Imported function 'sceNpTrophyTerm' in 'sceNpTrophy' module
-LDR: ! Imported function 'sceNpTrophyCreateContext' in 'sceNpTrophy' module
-LDR: W Unknown module 'cellScreenShotUtility'
-LDR: ! Imported function 'cellScreenShotEnable' in 'cellScreenShotUtility' module
-LDR: ! Imported function 'cellScreenShotSetParameter' in 'cellScreenShotUtility' module
-LDR: ! Imported function 'cellScreenShotDisable' in 'cellScreenShotUtility' module
-LDR: ! Imported function 'cellSysutilUnregisterCallback' in 'cellSysutil' module
-LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module
-LDR: ! Imported function 'cellSysCacheMount' in 'cellSysutil' module
-LDR: ! Imported function 'cellMsgDialogClose' in 'cellSysutil' module
-LDR: ! Imported function 'cellMsgDialogOpenErrorCode' in 'cellSysutil' module
-LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module
-LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module
-LDR: W Unimplemented function 'cellSaveDataUserAutoSave' in 'cellSysutil' module
-LDR: ! Imported function 'cellSysCacheClear' in 'cellSysutil' module
-LDR: ! Imported function 'cellMsgDialogOpen2' in 'cellSysutil' module
-LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module
-LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module
-LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module
-LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module
-LDR: W Unimplemented function 'cellSaveDataUserAutoLoad' in 'cellSysutil' module
-LDR: ! Imported function 'cellAudioOutGetNumberOfDevice' in 'cellSysutil' module
-LDR: ! Imported function 'cellAudioOutGetConfiguration' in 'cellSysutil' module
-LDR: ! Imported function 'cellAudioOutGetState' in 'cellSysutil' module
-LDR: ! Imported function 'cellUserInfoGetStat' in 'cellUserInfo' module
-LDR: ! Imported function 'cellGameContentPermit' in 'cellGame' module
-LDR: ! Imported function 'cellGameBootCheck' in 'cellGame' module
-LDR: ! Imported function 'sys_lwmutex_lock' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwmutex_unlock' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwcond_destroy' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_ppu_thread_create' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_prx_load_module' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwcond_wait' in 'sysPrxForUser' module
-LDR: ! Imported function '_sys_process_atexitspawn' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwmutex_create' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_ppu_thread_get_id' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_prx_register_library' in 'sysPrxForUser' module
-LDR: ! Imported function 'Unknown func id: 0x4f7172c9' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_initialize_tls' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_time_get_system_time' in 'sysPrxForUser' module
-LDR: ! Imported function '_sys_process_at_Exitspawn' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_prx_exitspawn_with_level' in 'sysPrxForUser' module
-LDR: W Unimplemented function 'sys_prx_load_module_on_memcontainer_by_fd' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_prx_load_module_on_memcontainer' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_ppu_thread_exit' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwmutex_destroy' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwcond_create' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_spu_image_close' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwcond_signal_all' in 'sysPrxForUser' module
-LDR: W Unimplemented function 'sys_prx_load_module_by_fd' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwcond_signal' in 'sysPrxForUser' module
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x348810, attr_addr=0x1f66e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 3
-HLE: W {PPU[1] Thread (CPUThread)[0x001acbf0]} sys_memory warning: sys_memory_get_user_memory_size(mem_info_addr=0xd000fc04)
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x348610, attr_addr=0x1f66e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 4
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x347da0, attr_addr=0x1f66e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 5
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x347dc8, attr_addr=0x1f66e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 6
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x347df0, attr_addr=0x1f66e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 7
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x347cd8, attr_addr=0x1f66e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 8
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x347d00, attr_addr=0x1f66e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 9
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x347d28, attr_addr=0x1f66e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 10
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x347d50, attr_addr=0x1f66e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 11
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x347d78, attr_addr=0x1f66e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 12
-HLE: W {PPU[1] Thread (CPUThread)[0x0019f42c]} sys_time warning: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[1] Thread (CPUThread)[0x0019f42c]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (CPUThread)[0x0019f42c]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (CPUThread)[0x001a3c7c]} sys_time warning: sys_time_get_timezone(timezone_addr=0xd000fa70, summertime_addr=0xd000fa74)
-HLE: W {PPU[1] Thread (CPUThread)[0x001a3c7c]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (CPUThread)[0x001a3c7c]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (CPUThread)[0x001a0e9c]} sys_time warning: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[1] Thread (CPUThread)[0x001a0e9c]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (CPUThread)[0x001a0e9c]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (CPUThread)[0x001a3c7c]} sys_time warning: sys_time_get_timezone(timezone_addr=0xd000fa70, summertime_addr=0xd000fa74)
-HLE: W {PPU[1] Thread (CPUThread)[0x001a3c7c]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (CPUThread)[0x001a3c7c]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (CPUThread)[0x0019f3d8]} sys_time warning: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[1] Thread (CPUThread)[0x0019f3d8]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (CPUThread)[0x0019f3d8]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (CPUThread)[0x001a0e9c]} sys_time warning: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[1] Thread (CPUThread)[0x001a0e9c]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (CPUThread)[0x001a0e9c]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x347a78, attr_addr=0xd000fb50)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [ps3HDDL] (attribute=0x12): sq_id = 13
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3094]} cellSysutil warning: cellSysutilRegisterCallback(slot=0, func_addr=0x23a990, userdata=0x0)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_NET)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_IO)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_USBD)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_GCM_SYS)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_RESC)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_FS)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_AUDIO)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SPURS)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_NP)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_SCREENSHOT)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_USERINFO)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_GAME)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_GAME_EXEC)
-HLE: W {PPU[1] Thread (CPUThread)[0x000c768c]} sys_spu warning: sys_spu_initialize(max_usable_spu=6, max_raw_spu=0)
-HLE: W {PPU[1] Thread (CPUThread)[0x003970a0]} cellSpurs warning: _cellSpursAttributeInitialize(attr_addr=0xd000f860, revision=2, sdkVersion=0x330000, nSpus=5, spuPriority=250, ppuPriority=79, exitIfNoWork=0)
-HLE: W {PPU[1] Thread (CPUThread)[0x00397010]} cellSpurs warning: cellSpursAttributeEnableSpuPrintfIfAvailable(attr_addr=0xd000f860)
-HLE: W {PPU[1] Thread (CPUThread)[0x00397004]} cellSpurs warning: cellSpursAttributeSetNamePrefix(attr_addr=0xd000f860, prefix_addr=0x1f2b9c, size=0)
-HLE: W {PPU[1] Thread (CPUThread)[0x003970dc]} cellSpurs warning: cellSpursAttributeSetSpuThreadGroupType(attr_addr=0xd000f860, type=24)
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} cellSpurs warning: cellSpursInitializeWithAttribute(spurs_addr=0x3014b280, attr_addr=0xd000f860)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 14
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 15
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 16
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 17
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 18
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 19
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 20
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 21
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 22
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 23
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 24
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 25
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 26
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 27
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 28
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 29
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_semaphore: *** semaphore created [_spuPrv] (protocol=0x2): id = 30
-HLE: E {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu TODO: Unsupported SPU Thread Group type (0x18)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu: *** SPU Thread Group created [CellSpursKernelGroup] (num=5, prio=250, type=0x18, container=0): id=31
-HLE: E {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu warning: *** New SPU Thread [CellSpursKernel0] (ep=0x0, opt=0x2, a1=0x0, a2=0x0, a3=0x0, a4=0x0): id=32
-HLE: E {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu warning: *** New SPU Thread [CellSpursKernel1] (ep=0x0, opt=0x2, a1=0x0, a2=0x0, a3=0x0, a4=0x0): id=33
-HLE: E {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu warning: *** New SPU Thread [CellSpursKernel2] (ep=0x0, opt=0x2, a1=0x0, a2=0x0, a3=0x0, a4=0x0): id=34
-HLE: E {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu warning: *** New SPU Thread [CellSpursKernel3] (ep=0x0, opt=0x2, a1=0x0, a2=0x0, a3=0x0, a4=0x0): id=35
-HLE: E {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu warning: *** New SPU Thread [CellSpursKernel4] (ep=0x0, opt=0x2, a1=0x0, a2=0x0, a3=0x0, a4=0x0): id=36
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_lwmutex: *** lwmutex created [_spuPrv] (attribute=0x22): sq_id = 37
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} sys_lwcond warning: *** lwcond created [_spuPrv] (lwmutex_addr=0x3014c030): id = 38
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} sys_event warning: *** event_queue created [_spuPrv] (protocol=0x1, type=0x1, key=0x0, size=0x2a): id = 39
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu warning: sys_spu_thread_group_connect_event_all_threads(id=31, eq_id=39, req=0xffffffffffff0000, spup_addr=0x3014b349)
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu warning: *** spup -> 16
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} sys_event warning: *** sys_event_port created: id = 40
-HLE: W {PPU[1] Thread (CPUThread)[0x003970e8]} sys_event warning: sys_event_port_connect_local(eport_id=40, equeue_id=39)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_ppu_thread: *** New PPU Thread [SpursHdlr0] (joinable, entry=0x0): id = 41
-HLE: ! {PPU[1] Thread (CPUThread)[0x003970e8]} sys_ppu_thread: *** New PPU Thread [SpursHdlr1] (joinable, entry=0x0): id = 42
-HLE: E {PPU[1] Thread (CPUThread)[0x003970e8]} sys_spu TODO: sys_spu_thread_group_connect_event(id=31, eq=39, et=0x2)
-HLE: W {PPU[1] Thread (CPUThread)[0x003a7010]} cellGame warning: cellGameBootCheck(type_addr=0x30101424, attributes_addr=0x30101428, size_addr=0x3010142c, dirName_addr=0x30101438)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_IO)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_FS)
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014c2a0, attr_addr=0xd000f7f0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [opWait] (attribute=0x12): sq_id = 43
-HLE: W {PPU[1] Thread (CPUThread)[0x003a90e8]} sys_lwcond warning: *** lwcond created [opWait] (lwmutex_addr=0x3014c2a0): id = 44
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014c2f0, attr_addr=0xd000f780)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [s_media] (attribute=0x12): sq_id = 45
-HLE: W {PPU[1] Thread (CPUThread)[0x003a7004]} cellGame warning: cellGameContentPermit(contentInfoPath_addr=0x2a39fc, usrdirPath_addr=0x2a3a7c)
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014c330, attr_addr=0xd000f800)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [media.m] (attribute=0x12): sq_id = 46
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014c3b8, attr_addr=0xd000f8a0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [ps3medi] (attribute=0x12): sq_id = 47
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: sys_rwlock_create(rw_lock_id_addr=0x3014c3ec, attr_addr=0xd000f890)
-HLE: E {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock TODO: SYS_SYNC_PRIORITY
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: *** rwlock created [] (protocol=0x2): id = 48
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014c408, attr_addr=0xd000f8a0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [media.m] (attribute=0x12): sq_id = 49
-HLE: W {PPU[1] Thread (CPUThread)[0x003a90e8]} sys_lwcond warning: *** lwcond created [media.m] (lwmutex_addr=0x3014c408): id = 50
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: sys_rwlock_create(rw_lock_id_addr=0x3014c79c, attr_addr=0xd000f890)
-HLE: E {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock TODO: SYS_SYNC_PRIORITY
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: *** rwlock created [] (protocol=0x2): id = 51
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014c7d0, attr_addr=0xd000f760)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [media.m] (attribute=0x12): sq_id = 52
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: sys_rwlock_create(rw_lock_id_addr=0x3014c854, attr_addr=0xd000f880)
-HLE: E {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock TODO: SYS_SYNC_PRIORITY
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: *** rwlock created [] (protocol=0x2): id = 53
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: sys_rwlock_create(rw_lock_id_addr=0x3014d0d4, attr_addr=0xd000f880)
-HLE: E {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock TODO: SYS_SYNC_PRIORITY
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: *** rwlock created [] (protocol=0x2): id = 54
-HLE: W {PPU[1] Thread (CPUThread)[0x003a301c]} cellSysutil warning: cellSysCacheMount(param_addr=0x2a35ac)
-HLE: W {PPU[1] Thread (CPUThread)[0x003a3064]} cellSysutil warning: cellSysCacheClear()
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014d280, attr_addr=0xd000f750)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [media.m] (attribute=0x12): sq_id = 55
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014d308, attr_addr=0xd000f7f0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [ps3medi] (attribute=0x12): sq_id = 56
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: sys_rwlock_create(rw_lock_id_addr=0x3014d33c, attr_addr=0xd000f7e0)
-HLE: E {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock TODO: SYS_SYNC_PRIORITY
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: *** rwlock created [] (protocol=0x2): id = 57
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014d358, attr_addr=0xd000f7f0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [media.m] (attribute=0x12): sq_id = 58
-HLE: W {PPU[1] Thread (CPUThread)[0x003a90e8]} sys_lwcond warning: *** lwcond created [media.m] (lwmutex_addr=0x3014d358): id = 59
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014d700, attr_addr=0xd000f6e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 60
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014d728, attr_addr=0xd000f6e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 61
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: sys_rwlock_create(rw_lock_id_addr=0x3014d74c, attr_addr=0xd000f6d0)
-HLE: E {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock TODO: SYS_SYNC_PRIORITY
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: *** rwlock created [] (protocol=0x2): id = 62
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014d768, attr_addr=0xd000f6e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 63
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014d7d0, attr_addr=0xd000f6e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 64
-HLE: W {PPU[1] Thread (CPUThread)[0x003a90e8]} sys_lwcond warning: *** lwcond created [schedul] (lwmutex_addr=0x3014d7d0): id = 65
-HLE: W {PPU[1] Thread (CPUThread)[0x003a90e8]} sys_lwcond warning: *** lwcond created [schedul] (lwmutex_addr=0x3014d7d0): id = 66
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014d828, attr_addr=0xd000f6e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 67
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x3014d878, attr_addr=0xd000f6e0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 68
-HLE: W {PPU[1] Thread (CPUThread)[0x003a90e8]} sys_lwcond warning: *** lwcond created [fios wo] (lwmutex_addr=0x3014d878): id = 69
-HLE: W {PPU[1] Thread (CPUThread)[0x003a90e8]} sys_lwcond warning: *** lwcond created [fios wo] (lwmutex_addr=0x3014d878): id = 70
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9028]} sys_ppu_thread: *** New PPU Thread [fios mediathread 2] (joinable, entry=0x2428d0): id = 71
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9028]} sys_ppu_thread: *** New PPU Thread [fios mediathread 3] (joinable, entry=0x2428d0): id = 72
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9028]} sys_ppu_thread: *** New PPU Thread [fios scheduler 1] (joinable, entry=0x2428d0): id = 73
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301625e0, attr_addr=0xd000f5f0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [media.m] (attribute=0x12): sq_id = 74
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: sys_rwlock_create(rw_lock_id_addr=0x30162664, attr_addr=0xd000f710)
-HLE: E {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock TODO: SYS_SYNC_PRIORITY
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: *** rwlock created [] (protocol=0x2): id = 75
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30162680, attr_addr=0xd000f720)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [cache_f] (attribute=0x12): sq_id = 76
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30162808, attr_addr=0xd000f7c0)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 77
-HLE: W {PPU[71] Thread (fios mediathread 2)[0x00229058]} sys_fs warning: cellFsStat(path="/dev_hdd1/cache/BLES01340/BLES01340", sb_addr=0xd009f704)
-HLE: W {PPU[71] Thread (fios mediathread 2)[0x00229058]} sys_fs warning: cellFsStat: "/dev_hdd1/cache/BLES01340/BLES01340" not found.
-HLE: W {PPU[71] Thread (fios mediathread 2)[0x00229058]} sys_fs warning: cellFsStat(path="/dev_hdd1/cache/BLES01340/BLES01340", sb_addr=0xd009f704)
-HLE: W {PPU[71] Thread (fios mediathread 2)[0x00229058]} sys_fs warning: cellFsStat: "/dev_hdd1/cache/BLES01340/BLES01340" not found.
-HLE: W {PPU[71] Thread (fios mediathread 2)[0x002290a0]} sys_fs warning: cellFsMkdir(path="/dev_hdd1/cache/BLES01340/BLES01340", mode=0x1c0)
-HLE: W {PPU[71] Thread (fios mediathread 2)[0x0022904c]} vfsLocalFile::Create('D:\Emulateurs\Rpcs3\dev_hdd1\cache\BLES01340\BLES01340\cache.idx')
-HLE: ! {PPU[71] Thread (fios mediathread 2)[0x0022904c]} sys_fs: "/dev_hdd1/cache/BLES01340/BLES01340/cache.idx" opened: fd = 78
-HLE: W {PPU[71] Thread (fios mediathread 2)[0x002290b8]} sys_fs warning: cellFsFstat(fd=78, sb_addr=0xd009f704)
-HLE: W {PPU[71] Thread (fios mediathread 2)[0x0022904c]} vfsLocalFile::Create('D:\Emulateurs\Rpcs3\dev_hdd1\cache\BLES01340\BLES01340\cache.dat')
-HLE: ! {PPU[71] Thread (fios mediathread 2)[0x0022904c]} sys_fs: "/dev_hdd1/cache/BLES01340/BLES01340/cache.dat" opened: fd = 79
-HLE: W {PPU[71] Thread (fios mediathread 2)[0x002290b8]} sys_fs warning: cellFsFstat(fd=79, sb_addr=0xd009f704)
-HLE: W {PPU[1] Thread (CPUThread)[0x00229088]} sys_fs warning: cellFsGetFreeSize(path="/dev_hdd1", block_size_addr=0xd000f1d0, block_count_addr=0xd000f1d8)
-HLE: W {PPU[71] Thread (fios mediathread 2)[0x002290b8]} sys_fs warning: cellFsFstat(fd=78, sb_addr=0xd009f704)
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30170880, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 80
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301708a8, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 81
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: sys_rwlock_create(rw_lock_id_addr=0x301708cc, attr_addr=0xd000f780)
-HLE: E {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock TODO: SYS_SYNC_PRIORITY
-HLE: W {PPU[1] Thread (CPUThread)[0x0017eee8]} sys_rwlock warning: *** rwlock created [] (protocol=0x2): id = 82
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301708e8, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 83
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30170950, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 84
-HLE: W {PPU[1] Thread (CPUThread)[0x003a90e8]} sys_lwcond warning: *** lwcond created [schedul] (lwmutex_addr=0x30170950): id = 85
-HLE: W {PPU[1] Thread (CPUThread)[0x003a90e8]} sys_lwcond warning: *** lwcond created [schedul] (lwmutex_addr=0x30170950): id = 86
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301709a8, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 87
-HLE: W {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301709f8, attr_addr=0xd000f790)
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9058]} sys_lwmutex: *** lwmutex created [schedul] (attribute=0x12): sq_id = 88
-HLE: W {PPU[1] Thread (CPUThread)[0x003a90e8]} sys_lwcond warning: *** lwcond created [fios wo] (lwmutex_addr=0x301709f8): id = 89
-HLE: W {PPU[1] Thread (CPUThread)[0x003a90e8]} sys_lwcond warning: *** lwcond created [fios wo] (lwmutex_addr=0x301709f8): id = 90
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9028]} sys_ppu_thread: *** New PPU Thread [fios mediathread 5] (joinable, entry=0x2428d0): id = 91
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9028]} sys_ppu_thread: *** New PPU Thread [fios mediathread 6] (joinable, entry=0x2428d0): id = 92
-HLE: ! {PPU[1] Thread (CPUThread)[0x003a9028]} sys_ppu_thread: *** New PPU Thread [fios scheduler 4] (joinable, entry=0x2428d0): id = 93
-HLE: W {PPU[1] Thread (CPUThread)[0x0022d004]} sys_io warning: cellPadInit(max_connect=7)
-HLE: W {PPU[1] Thread (CPUThread)[0x000c8b50]} sys_memory warning: sys_memory_container_create(cid_addr=0x265d18, yield_size=0x100000)
-HLE: W {PPU[1] Thread (CPUThread)[0x000c8b50]} sys_memory warning: *** memory_container created(addr=0x38f00000): id = 94
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_CAMERA)
-HLE: W {PPU[1] Thread (CPUThread)[0x00227064]} cellCamera warning: cellCameraInit()
-HLE: W {PPU[1] Thread (CPUThread)[0x00227028]} cellCamera warning: cellCameraGetType(dev_num=0, type_addr=0xd000fa10)
-HLE: W {PPU[1] Thread (CPUThread)[0x00399010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_GEM)
-HLE: W {PPU[1] Thread (CPUThread)[0x00223040]} cellGem warning: cellGemGetMemorySize(max_connect=4)
-HLE: W {PPU[1] Thread (CPUThread)[0x00223010]} cellGem warning: cellGemInit(attribute_addr=0xd000fa24)
-HLE: E {PPU[1] Thread (CPUThread)[0x00227040]} cellCamera TODO: cellCameraOpenEx
-HLE: E {PPU[1] Thread (CPUThread)[0x0022307c]} cellGem TODO: cellGemTrackHues
-HLE: W {PPU[1] Thread (CPUThread)[0x0022b010]} cellGcmSys warning: _cellGcmInitBody(context_addr=0x347aa8, cmdSize=0x10000, ioSize=0x100000, ioAddress=0x0)
-HLE: W {PPU[1] Thread (CPUThread)[0x0022b010]} cellGcmSys warning: *** local memory(addr=0xc0000000, size=0xf900000)
-HLE: W {PPU[1] Thread (CPUThread)[0x0022b010]} cellGcmSys warning: cellGcmInit(): 256MB io address space used
-HLE: W {PPU[1] Thread (CPUThread)[0x0022b010]} cellGcmSys warning: cellGcmMapEaIoAddress(ea=0x0, io=0x0, size=0x100000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x40000000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x40001000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x40002000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x40003000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x40004000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x40005000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x40006000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x40007000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x40008000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x40009000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x4000a000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x4000b000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x4000c000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x4000d000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x4000e000)
-MEM: E {PPU[1] Thread (CPUThread)[0x0022b010]} Page already registered (addr=0x4000f000)
+LDR: ! Elf path: /dev_bdvd/PS3_GAME/USRDIR/BOOT.BIN
+LDR: ! loader::init() failed: Broken file
+LDR: ! *** sdk version: 0x360001
+LDR: ! *** primary prio: 1000
+LDR: ! *** primary stacksize: 0x10000
+LDR: ! *** malloc pagesize: 0x100000
+LDR: ! *** ppc seg: 0x0
+LDR: E Unknown module 'libgem'
+LDR: ! Imported function 'cellGemUpdateStart' in 'libgem' module (0x1e5578)
+LDR: ! Imported function 'cellGemInit' in 'libgem' module (0x1e5598)
+LDR: ! Imported function 'cellGemGetTrackerHue' in 'libgem' module (0x1e55b8)
+LDR: ! Imported function 'cellGemConvertVideoFinish' in 'libgem' module (0x1e55d8)
+LDR: ! Imported function 'cellGemEnableMagnetometer' in 'libgem' module (0x1e55f8)
+LDR: ! Imported function 'cellGemGetMemorySize' in 'libgem' module (0x1e5618)
+LDR: ! Imported function 'cellGemUpdateFinish' in 'libgem' module (0x1e5638)
+LDR: ! Imported function 'cellGemGetState' in 'libgem' module (0x1e5658)
+LDR: ! Imported function 'cellGemConvertVideoStart' in 'libgem' module (0x1e5678)
+LDR: ! Imported function 'cellGemSetYaw' in 'libgem' module (0x1e5698)
+LDR: ! Imported function 'cellGemTrackHues' in 'libgem' module (0x1e56b8)
+LDR: ! Imported function 'cellGemGetImageState' in 'libgem' module (0x1e56d8)
+LDR: ! Imported function 'cellGemGetInfo' in 'libgem' module (0x1e56f8)
+LDR: ! Imported function 'cellGemPrepareCamera' in 'libgem' module (0x1e5718)
+LDR: ! Imported function 'cellGemCalibrate' in 'libgem' module (0x1e5738)
+LDR: ! Imported function 'cellGemEnd' in 'libgem' module (0x1e5758)
+LDR: ! Imported function 'cellGemInvalidateCalibration' in 'libgem' module (0x1e5778)
+LDR: ! Imported function 'cellAudioInit' in 'cellAudio' module (0x1e5798)
+LDR: ! Imported function 'cellAudioPortStop' in 'cellAudio' module (0x1e57b8)
+LDR: ! Imported function 'cellAudioGetPortConfig' in 'cellAudio' module (0x1e57d8)
+LDR: ! Imported function 'cellAudioPortStart' in 'cellAudio' module (0x1e57f8)
+LDR: ! Imported function 'cellAudioPortOpen' in 'cellAudio' module (0x1e5818)
+LDR: ! Imported function 'cellCameraGetBufferInfoEx' in 'cellCamera' module (0x1e5838)
+LDR: ! Imported function 'cellCameraReadEx' in 'cellCamera' module (0x1e5858)
+LDR: ! Imported function 'cellCameraStart' in 'cellCamera' module (0x1e5878)
+LDR: ! Imported function 'cellCameraGetType' in 'cellCamera' module (0x1e5898)
+LDR: ! Imported function 'cellCameraEnd' in 'cellCamera' module (0x1e58b8)
+LDR: ! Imported function 'cellCameraOpenEx' in 'cellCamera' module (0x1e58d8)
+LDR: ! Imported function 'cellCameraIsAttached' in 'cellCamera' module (0x1e58f8)
+LDR: ! Imported function 'cellCameraReset' in 'cellCamera' module (0x1e5918)
+LDR: ! Imported function 'cellCameraInit' in 'cellCamera' module (0x1e5938)
+LDR: ! Imported function 'cellFsRmdir' in 'sys_fs' module (0x1e5958)
+LDR: ! Imported function 'cellFsClose' in 'sys_fs' module (0x1e5978)
+LDR: ! Imported function 'cellFsOpendir' in 'sys_fs' module (0x1e5998)
+LDR: ! Imported function 'cellFsRead' in 'sys_fs' module (0x1e59b8)
+LDR: ! Imported function 'cellFsReaddir' in 'sys_fs' module (0x1e59d8)
+LDR: ! Imported function 'cellFsSdataOpenByFd' in 'sys_fs' module (0x1e59f8)
+LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module (0x1e5a18)
+LDR: ! Imported function 'cellFsStat' in 'sys_fs' module (0x1e5a38)
+LDR: ! Imported function 'cellFsUnlink' in 'sys_fs' module (0x1e5a58)
+LDR: ! Imported function 'cellFsFsync' in 'sys_fs' module (0x1e5a78)
+LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module (0x1e5a98)
+LDR: ! Imported function 'cellFsGetFreeSize' in 'sys_fs' module (0x1e5ab8)
+LDR: ! Imported function 'cellFsSdataOpen' in 'sys_fs' module (0x1e5ad8)
+LDR: ! Imported function 'cellFsMkdir' in 'sys_fs' module (0x1e5af8)
+LDR: ! Imported function 'cellFsWrite' in 'sys_fs' module (0x1e5b18)
+LDR: ! Imported function 'cellFsFstat' in 'sys_fs' module (0x1e5b38)
+LDR: ! Imported function 'cellFsClosedir' in 'sys_fs' module (0x1e5b58)
+LDR: ! Imported function 'cellGcmGetTiledPitchSize' in 'cellGcmSys' module (0x1e5b78)
+LDR: ! Imported function '_cellGcmInitBody' in 'cellGcmSys' module (0x1e5b98)
+LDR: ! Imported function 'cellGcmAddressToOffset' in 'cellGcmSys' module (0x1e5bb8)
+LDR: ! Imported function '_cellGcmFunc15' in 'cellGcmSys' module (0x1e5bd8)
+LDR: ! Imported function 'cellGcmBindTile' in 'cellGcmSys' module (0x1e5bf8)
+LDR: ! Imported function 'cellGcmGetDefaultCommandWordSize' in 'cellGcmSys' module (0x1e5c18)
+LDR: ! Imported function 'cellGcmGetLastFlipTime' in 'cellGcmSys' module (0x1e5c38)
+LDR: ! Imported function 'cellGcmGetDefaultSegmentWordSize' in 'cellGcmSys' module (0x1e5c58)
+LDR: ! Imported function 'cellGcmSetDefaultFifoSize' in 'cellGcmSys' module (0x1e5c78)
+LDR: ! Imported function 'cellGcmBindZcull' in 'cellGcmSys' module (0x1e5c98)
+LDR: ! Imported function 'cellGcmMapMainMemory' in 'cellGcmSys' module (0x1e5cb8)
+LDR: ! Imported function 'cellGcmGetControlRegister' in 'cellGcmSys' module (0x1e5cd8)
+LDR: ! Imported function 'cellGcmUnbindZcull' in 'cellGcmSys' module (0x1e5cf8)
+LDR: ! Imported function 'cellGcmSetTileInfo' in 'cellGcmSys' module (0x1e5d18)
+LDR: ! Imported function 'cellGcmUnbindTile' in 'cellGcmSys' module (0x1e5d38)
+LDR: ! Imported function 'cellGcmUnmapIoAddress' in 'cellGcmSys' module (0x1e5d58)
+LDR: ! Imported function 'cellGcmGetConfiguration' in 'cellGcmSys' module (0x1e5d78)
+LDR: ! Imported function 'cellGcmGetLabelAddress' in 'cellGcmSys' module (0x1e5d98)
+LDR: ! Imported function 'cellPadInit' in 'sys_io' module (0x1e5db8)
+LDR: ! Imported function 'cellKbClearBuf' in 'sys_io' module (0x1e5dd8)
+LDR: ! Imported function 'cellKbInit' in 'sys_io' module (0x1e5df8)
+LDR: ! Imported function 'cellPadEnd' in 'sys_io' module (0x1e5e18)
+LDR: ! Imported function 'cellPadSetPortSetting' in 'sys_io' module (0x1e5e38)
+LDR: ! Imported function 'cellPadGetData' in 'sys_io' module (0x1e5e58)
+LDR: ! Imported function 'cellKbSetCodeType' in 'sys_io' module (0x1e5e78)
+LDR: ! Imported function 'cellPadGetInfo2' in 'sys_io' module (0x1e5e98)
+LDR: ! Imported function 'cellKbEnd' in 'sys_io' module (0x1e5eb8)
+LDR: ! Imported function 'cellPadSetActDirect' in 'sys_io' module (0x1e5ed8)
+LDR: ! Imported function 'cellKbRead' in 'sys_io' module (0x1e5ef8)
+LDR: ! Imported function 'cellNetCtlGetInfo' in 'cellNetCtl' module (0x1e5f18)
+LDR: ! Imported function 'cellNetCtlInit' in 'cellNetCtl' module (0x1e5f38)
+LDR: ! Imported function 'sys_net_initialize_network_ex' in 'sys_net' module (0x1e5f58)
+LDR: ! Imported function 'recvfrom' in 'sys_net' module (0x1e5f78)
+LDR: ! Imported function 'listen' in 'sys_net' module (0x1e5f98)
+LDR: ! Imported function 'socketselect' in 'sys_net' module (0x1e5fb8)
+LDR: ! Imported function 'connect' in 'sys_net' module (0x1e5fd8)
+LDR: ! Imported function 'socketclose' in 'sys_net' module (0x1e5ff8)
+LDR: ! Imported function 'inet_ntoa' in 'sys_net' module (0x1e6018)
+LDR: ! Imported function 'setsockopt' in 'sys_net' module (0x1e6038)
+LDR: ! Imported function 'sendto' in 'sys_net' module (0x1e6058)
+LDR: ! Imported function 'socket' in 'sys_net' module (0x1e6078)
+LDR: ! Imported function 'inet_aton' in 'sys_net' module (0x1e6098)
+LDR: ! Imported function 'bind' in 'sys_net' module (0x1e60b8)
+LDR: ! Imported function 'sys_net_finalize_network' in 'sys_net' module (0x1e60d8)
+LDR: ! Imported function 'accept' in 'sys_net' module (0x1e60f8)
+LDR: ! Imported function 'inet_addr' in 'sys_net' module (0x1e6118)
+LDR: ! Imported function 'send' in 'sys_net' module (0x1e6138)
+LDR: ! Imported function 'recv' in 'sys_net' module (0x1e6158)
+LDR: ! Imported function 'cellPngDecDecodeData' in 'cellPngDec' module (0x1e6178)
+LDR: ! Imported function 'cellPngDecExtCreate' in 'cellPngDec' module (0x1e6198)
+LDR: ! Imported function 'cellPngDecClose' in 'cellPngDec' module (0x1e61b8)
+LDR: ! Imported function 'cellPngDecDestroy' in 'cellPngDec' module (0x1e61d8)
+LDR: ! Imported function 'cellPngDecReadHeader' in 'cellPngDec' module (0x1e61f8)
+LDR: ! Imported function 'cellPngDecOpen' in 'cellPngDec' module (0x1e6218)
+LDR: ! Imported function 'cellPngDecSetParameter' in 'cellPngDec' module (0x1e6238)
+LDR: ! Imported function 'cellRescSetWaitFlip' in 'cellResc' module (0x1e6258)
+LDR: ! Imported function 'cellRescSetDsts' in 'cellResc' module (0x1e6278)
+LDR: ! Imported function 'cellRescSetDisplayMode' in 'cellResc' module (0x1e6298)
+LDR: ! Imported function 'cellRescSetConvertAndFlip' in 'cellResc' module (0x1e62b8)
+LDR: ! Imported function 'cellRescExit' in 'cellResc' module (0x1e62d8)
+LDR: ! Imported function 'cellRescSetFlipHandler' in 'cellResc' module (0x1e62f8)
+LDR: ! Imported function 'cellRescInit' in 'cellResc' module (0x1e6318)
+LDR: ! Imported function 'cellRescGetBufferSize' in 'cellResc' module (0x1e6338)
+LDR: ! Imported function 'cellRescSetSrc' in 'cellResc' module (0x1e6358)
+LDR: ! Imported function 'cellRescSetBufferAddress' in 'cellResc' module (0x1e6378)
+LDR: ! Imported function 'cellRescVideoOutResolutionId2RescBufferMode' in 'cellResc' module (0x1e6398)
+LDR: ! Imported function 'cellSailGraphicsAdapterGetFrame' in 'cellSail' module (0x1e63b8)
+LDR: ! Imported function 'cellSailPlayerSetSoundAdapter' in 'cellSail' module (0x1e63d8)
+LDR: ! Imported function 'cellSailPlayerFinalize' in 'cellSail' module (0x1e63f8)
+LDR: ! Imported function 'cellSailPlayerSetGraphicsAdapter' in 'cellSail' module (0x1e6418)
+LDR: ! Imported function 'cellSailGraphicsAdapterInitialize' in 'cellSail' module (0x1e6438)
+LDR: ! Imported function 'cellSailPlayerInitialize2' in 'cellSail' module (0x1e6458)
+LDR: ! Imported function 'cellSailDescriptorDestroyDatabase' in 'cellSail' module (0x1e6478)
+LDR: ! Imported function 'cellSailGraphicsAdapterSetPreferredFormat' in 'cellSail' module (0x1e6498)
+LDR: ! Imported function 'cellSailMemAllocatorInitialize' in 'cellSail' module (0x1e64b8)
+LDR: ! Imported function 'cellSailPlayerOpenStream' in 'cellSail' module (0x1e64d8)
+LDR: ! Imported function 'cellSailSoundAdapterInitialize' in 'cellSail' module (0x1e64f8)
+LDR: ! Imported function 'cellSailGraphicsAdapterUpdateAvSync' in 'cellSail' module (0x1e6518)
+LDR: ! Imported function 'cellSailSoundAdapterPtsToTimePosition' in 'cellSail' module (0x1e6538)
+LDR: ! Imported function 'cellSailPlayerSetParameter' in 'cellSail' module (0x1e6558)
+LDR: ! Imported function 'cellSailPlayerAddDescriptor' in 'cellSail' module (0x1e6578)
+LDR: ! Imported function 'cellSailSoundAdapterGetFrame' in 'cellSail' module (0x1e6598)
+LDR: ! Imported function 'cellSailPlayerBoot' in 'cellSail' module (0x1e65b8)
+LDR: ! Imported function 'cellSailPlayerCreateDescriptor' in 'cellSail' module (0x1e65d8)
+LDR: ! Imported function 'cellSailPlayerStart' in 'cellSail' module (0x1e65f8)
+LDR: ! Imported function 'cellSailPlayerStop' in 'cellSail' module (0x1e6618)
+LDR: ! Imported function 'cellSailSoundAdapterUpdateAvSync' in 'cellSail' module (0x1e6638)
+LDR: ! Imported function 'cellSailPlayerSetRepeatMode' in 'cellSail' module (0x1e6658)
+LDR: ! Imported function 'cellSpursAttributeSetNamePrefix' in 'cellSpurs' module (0x1e6678)
+LDR: ! Imported function 'cellSpursAttributeEnableSpuPrintfIfAvailable' in 'cellSpurs' module (0x1e6698)
+LDR: ! Imported function 'cellSpursEventFlagDetachLv2EventQueue' in 'cellSpurs' module (0x1e66b8)
+LDR: ! Imported function 'cellSpursCreateJobChainWithAttribute' in 'cellSpurs' module (0x1e66d8)
+LDR: ! Imported function '_cellSpursJobChainAttributeInitialize' in 'cellSpurs' module (0x1e66f8)
+LDR: ! Imported function 'cellSpursEventFlagWait' in 'cellSpurs' module (0x1e6718)
+LDR: ! Imported function 'cellSpursDetachLv2EventQueue' in 'cellSpurs' module (0x1e6738)
+LDR: ! Imported function 'cellSpursCreateTaskset' in 'cellSpurs' module (0x1e6758)
+LDR: ! Imported function '_cellSpursEventFlagInitialize' in 'cellSpurs' module (0x1e6778)
+LDR: ! Imported function 'cellSpursJobGuardInitialize' in 'cellSpurs' module (0x1e6798)
+LDR: ! Imported function 'cellSpursEventFlagTryWait' in 'cellSpurs' module (0x1e67b8)
+LDR: ! Imported function 'cellSpursShutdownJobChain' in 'cellSpurs' module (0x1e67d8)
+LDR: ! Imported function 'cellSpursEventFlagAttachLv2EventQueue' in 'cellSpurs' module (0x1e67f8)
+LDR: ! Imported function '_cellSpursAttributeInitialize' in 'cellSpurs' module (0x1e6818)
+LDR: ! Imported function 'cellSpursJoinTaskset' in 'cellSpurs' module (0x1e6838)
+LDR: ! Imported function 'cellSpursJobChainAttributeSetName' in 'cellSpurs' module (0x1e6858)
+LDR: ! Imported function 'cellSpursShutdownTaskset' in 'cellSpurs' module (0x1e6878)
+LDR: ! Imported function 'cellSpursJoinJobChain' in 'cellSpurs' module (0x1e6898)
+LDR: ! Imported function 'cellSpursAttributeSetSpuThreadGroupType' in 'cellSpurs' module (0x1e68b8)
+LDR: ! Imported function 'cellSpursInitializeWithAttribute' in 'cellSpurs' module (0x1e68d8)
+LDR: ! Imported function 'cellSpursAttachLv2EventQueue' in 'cellSpurs' module (0x1e68f8)
+LDR: ! Imported function 'cellSpursJobChainAttributeSetHaltOnError' in 'cellSpurs' module (0x1e6918)
+LDR: ! Imported function 'cellSpursCreateTask' in 'cellSpurs' module (0x1e6938)
+LDR: ! Imported function 'cellSpursFinalize' in 'cellSpurs' module (0x1e6958)
+LDR: ! Imported function 'cellSpursJobGuardNotify' in 'cellSpurs' module (0x1e6978)
+LDR: ! Imported function '_cellSpursSendSignal' in 'cellSpurs' module (0x1e6998)
+LDR: ! Imported function 'cellSpursRunJobChain' in 'cellSpurs' module (0x1e69b8)
+LDR: ! Imported function 'cellSysmoduleUnloadModule' in 'cellSysmodule' module (0x1e69d8)
+LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module (0x1e69f8)
+LDR: ! Imported function 'cellSysmoduleInitialize' in 'cellSysmodule' module (0x1e6a18)
+LDR: E Unknown function 'sceNpMatching2GetWorldInfoList' in 'sceNp2' module (0x1e6a38)
+LDR: E Unknown function 'sceNpMatching2SearchRoom' in 'sceNp2' module (0x1e6a58)
+LDR: E Unknown function 'sceNpMatching2SignalingGetConnectionStatus' in 'sceNp2' module (0x1e6a78)
+LDR: E Unknown function 'sceNpMatching2CreateServerContext' in 'sceNp2' module (0x1e6a98)
+LDR: E Unknown function 'sceNpMatching2LeaveRoom' in 'sceNp2' module (0x1e6ab8)
+LDR: ! Imported function 'sceNpMatching2Term2' in 'sceNp2' module (0x1e6ad8)
+LDR: E Unknown function 'sceNpMatching2GetServerInfo' in 'sceNp2' module (0x1e6af8)
+LDR: E Unknown function 'sceNpMatching2GetEventData' in 'sceNp2' module (0x1e6b18)
+LDR: ! Imported function 'sceNp2Init' in 'sceNp2' module (0x1e6b38)
+LDR: E Unknown function 'sceNpMatching2JoinRoom' in 'sceNp2' module (0x1e6b58)
+LDR: E Unknown function 'sceNpMatching2ContextStartAsync' in 'sceNp2' module (0x1e6b78)
+LDR: E Unknown function 'sceNpMatching2RegisterContextCallback' in 'sceNp2' module (0x1e6b98)
+LDR: E Unknown function 'sceNpMatching2GetServerIdListLocal' in 'sceNp2' module (0x1e6bb8)
+LDR: E Unknown function 'sceNpMatching2CreateContext' in 'sceNp2' module (0x1e6bd8)
+LDR: E Unknown function 'sceNpMatching2SetDefaultRequestOptParam' in 'sceNp2' module (0x1e6bf8)
+LDR: E Unknown function 'sceNpMatching2RegisterRoomEventCallback' in 'sceNp2' module (0x1e6c18)
+LDR: E Unknown function 'sceNpMatching2CreateJoinRoom' in 'sceNp2' module (0x1e6c38)
+LDR: ! Imported function 'sceNpMatching2Init2' in 'sceNp2' module (0x1e6c58)
+LDR: E Unknown function 'sceNpMatching2RegisterRoomMessageCallback' in 'sceNp2' module (0x1e6c78)
+LDR: ! Imported function 'sceNpBasicSendMessageGui' in 'sceNp' module (0x1e6c98)
+LDR: ! Imported function 'sceNpBasicGetFriendListEntry' in 'sceNp' module (0x1e6cb8)
+LDR: ! Imported function 'sceNpScoreGetRankingByNpId' in 'sceNp' module (0x1e6cd8)
+LDR: ! Imported function 'sceNpScoreRecordScore' in 'sceNp' module (0x1e6cf8)
+LDR: ! Imported function 'sceNpScoreDestroyTitleCtx' in 'sceNp' module (0x1e6d18)
+LDR: ! Imported function 'sceNpLookupUserProfileWithAvatarSize' in 'sceNp' module (0x1e6d38)
+LDR: ! Imported function 'sceNpScoreInit' in 'sceNp' module (0x1e6d58)
+LDR: ! Imported function 'sceNpBasicSetPresence' in 'sceNp' module (0x1e6d78)
+LDR: ! Imported function 'sceNpTerm' in 'sceNp' module (0x1e6d98)
+LDR: ! Imported function 'sceNpManagerUnregisterCallback' in 'sceNp' module (0x1e6db8)
+LDR: ! Imported function 'sceNpLookupDestroyTitleCtx' in 'sceNp' module (0x1e6dd8)
+LDR: ! Imported function 'sceNpLookupInit' in 'sceNp' module (0x1e6df8)
+LDR: ! Imported function 'sceNpBasicRecvMessageAttachmentLoad' in 'sceNp' module (0x1e6e18)
+LDR: ! Imported function 'sceNpScoreCreateTransactionCtx' in 'sceNp' module (0x1e6e38)
+LDR: ! Imported function 'sceNpBasicRecvMessageCustom' in 'sceNp' module (0x1e6e58)
+LDR: ! Imported function 'sceNpLookupTerm' in 'sceNp' module (0x1e6e78)
+LDR: ! Imported function 'sceNpScoreTerm' in 'sceNp' module (0x1e6e98)
+LDR: ! Imported function 'sceNpManagerGetStatus' in 'sceNp' module (0x1e6eb8)
+LDR: ! Imported function 'sceNpBasicUnregisterHandler' in 'sceNp' module (0x1e6ed8)
+LDR: ! Imported function 'sceNpBasicGetFriendListEntryCount' in 'sceNp' module (0x1e6ef8)
+LDR: ! Imported function 'sceNpScoreCreateTitleCtx' in 'sceNp' module (0x1e6f18)
+LDR: ! Imported function 'sceNpBasicRegisterHandler' in 'sceNp' module (0x1e6f38)
+LDR: ! Imported function 'sceNpScoreDestroyTransactionCtx' in 'sceNp' module (0x1e6f58)
+LDR: ! Imported function 'sceNpLookupCreateTitleCtx' in 'sceNp' module (0x1e6f78)
+LDR: ! Imported function 'sceNpBasicGetEvent' in 'sceNp' module (0x1e6f98)
+LDR: ! Imported function 'sceNpManagerRegisterCallback' in 'sceNp' module (0x1e6fb8)
+LDR: ! Imported function 'sceNpLookupCreateTransactionCtx' in 'sceNp' module (0x1e6fd8)
+LDR: ! Imported function 'sceNpDrmIsAvailable2' in 'sceNp' module (0x1e6ff8)
+LDR: ! Imported function 'sceNpManagerGetOnlineName' in 'sceNp' module (0x1e7018)
+LDR: ! Imported function 'sceNpLookupDestroyTransactionCtx' in 'sceNp' module (0x1e7038)
+LDR: ! Imported function 'sceNpScoreGetRankingByRange' in 'sceNp' module (0x1e7058)
+LDR: ! Imported function 'sceNpManagerGetNpId' in 'sceNp' module (0x1e7078)
+LDR: ! Imported function 'sceNpTrophyRegisterContext' in 'sceNpTrophy' module (0x1e7098)
+LDR: ! Imported function 'sceNpTrophyCreateHandle' in 'sceNpTrophy' module (0x1e70b8)
+LDR: ! Imported function 'sceNpTrophySetSoundLevel' in 'sceNpTrophy' module (0x1e70d8)
+LDR: ! Imported function 'sceNpTrophyGetRequiredDiskSpace' in 'sceNpTrophy' module (0x1e70f8)
+LDR: ! Imported function 'sceNpTrophyDestroyContext' in 'sceNpTrophy' module (0x1e7118)
+LDR: ! Imported function 'sceNpTrophyInit' in 'sceNpTrophy' module (0x1e7138)
+LDR: ! Imported function 'sceNpTrophyDestroyHandle' in 'sceNpTrophy' module (0x1e7158)
+LDR: ! Imported function 'sceNpTrophyUnlockTrophy' in 'sceNpTrophy' module (0x1e7178)
+LDR: ! Imported function 'sceNpTrophyTerm' in 'sceNpTrophy' module (0x1e7198)
+LDR: ! Imported function 'sceNpTrophyCreateContext' in 'sceNpTrophy' module (0x1e71b8)
+LDR: ! Imported function 'cellScreenShotEnable' in 'cellScreenShotUtility' module (0x1e71d8)
+LDR: ! Imported function 'cellScreenShotSetParameter' in 'cellScreenShotUtility' module (0x1e71f8)
+LDR: ! Imported function 'cellScreenShotDisable' in 'cellScreenShotUtility' module (0x1e7218)
+LDR: ! Imported function 'cellSysutilUnregisterCallback' in 'cellSysutil' module (0x1e7238)
+LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module (0x1e7258)
+LDR: ! Imported function 'cellSysCacheMount' in 'cellSysutil' module (0x1e7278)
+LDR: ! Imported function 'cellMsgDialogClose' in 'cellSysutil' module (0x1e7298)
+LDR: ! Imported function 'cellMsgDialogOpenErrorCode' in 'cellSysutil' module (0x1e72b8)
+LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module (0x1e72d8)
+LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module (0x1e72f8)
+LDR: ! Imported function 'cellSaveDataUserAutoSave' in 'cellSysutil' module (0x1e7318)
+LDR: ! Imported function 'cellSysCacheClear' in 'cellSysutil' module (0x1e7338)
+LDR: ! Imported function 'cellMsgDialogOpen2' in 'cellSysutil' module (0x1e7358)
+LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module (0x1e7378)
+LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module (0x1e7398)
+LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module (0x1e73b8)
+LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module (0x1e73d8)
+LDR: ! Imported function 'cellSaveDataUserAutoLoad' in 'cellSysutil' module (0x1e73f8)
+LDR: ! Imported function 'cellAudioOutGetNumberOfDevice' in 'cellSysutil' module (0x1e7418)
+LDR: ! Imported function 'cellAudioOutGetConfiguration' in 'cellSysutil' module (0x1e7438)
+LDR: ! Imported function 'cellAudioOutGetState' in 'cellSysutil' module (0x1e7458)
+LDR: ! Imported function 'cellUserInfoGetStat' in 'cellUserInfo' module (0x1e7478)
+LDR: ! Imported function 'cellGameContentPermit' in 'cellGame' module (0x1e7498)
+LDR: ! Imported function 'cellGameBootCheck' in 'cellGame' module (0x1e74b8)
+LDR: ! Imported function 'sys_lwmutex_lock' in 'sysPrxForUser' module (0x1e74d8)
+LDR: ! Imported function 'sys_lwmutex_unlock' in 'sysPrxForUser' module (0x1e74f8)
+LDR: ! Imported function 'sys_lwcond_destroy' in 'sysPrxForUser' module (0x1e7518)
+LDR: ! Imported function 'sys_ppu_thread_create' in 'sysPrxForUser' module (0x1e7538)
+LDR: ! Imported function 'sys_prx_load_module' in 'sysPrxForUser' module (0x1e7558)
+LDR: ! Imported function 'sys_lwcond_wait' in 'sysPrxForUser' module (0x1e7578)
+LDR: ! Imported function '_sys_process_atexitspawn' in 'sysPrxForUser' module (0x1e7598)
+LDR: ! Imported function 'sys_lwmutex_create' in 'sysPrxForUser' module (0x1e75b8)
+LDR: ! Imported function 'sys_ppu_thread_get_id' in 'sysPrxForUser' module (0x1e75d8)
+LDR: ! Imported function 'sys_prx_register_library' in 'sysPrxForUser' module (0x1e75f8)
+LDR: ! Imported function 'sys_process_is_stack' in 'sysPrxForUser' module (0x1e7618)
+LDR: ! Imported function 'sys_initialize_tls' in 'sysPrxForUser' module (0x1e7638)
+LDR: ! Imported function 'sys_time_get_system_time' in 'sysPrxForUser' module (0x1e7658)
+LDR: ! Imported function '_sys_process_at_Exitspawn' in 'sysPrxForUser' module (0x1e7678)
+LDR: ! Imported function 'sys_prx_exitspawn_with_level' in 'sysPrxForUser' module (0x1e7698)
+LDR: E Unknown function 'sys_prx_load_module_on_memcontainer_by_fd' in 'sysPrxForUser' module (0x1e76b8)
+LDR: ! Imported function 'sys_prx_load_module_on_memcontainer' in 'sysPrxForUser' module (0x1e76d8)
+LDR: ! Imported function 'sys_ppu_thread_exit' in 'sysPrxForUser' module (0x1e76f8)
+LDR: ! Imported function 'sys_lwmutex_destroy' in 'sysPrxForUser' module (0x1e7718)
+LDR: ! Imported function 'sys_lwcond_create' in 'sysPrxForUser' module (0x1e7738)
+LDR: ! Imported function 'sys_spu_image_close' in 'sysPrxForUser' module (0x1e7758)
+LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0x1e7778)
+LDR: ! Imported function 'sys_lwcond_signal_all' in 'sysPrxForUser' module (0x1e7798)
+LDR: E Unknown function 'sys_prx_load_module_by_fd' in 'sysPrxForUser' module (0x1e77b8)
+LDR: ! Imported function 'sys_lwcond_signal' in 'sysPrxForUser' module (0x1e77d8)
+HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x38e000, user_size=0x150)
+*** TLS segment addr: 0x00244ed8
+*** TLS segment size: 0x00000004
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x348810, attr=*0x1f66e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001acbf0]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000fc04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x348610, attr=*0x1f66e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x347da0, attr=*0x1f66e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x347dc8, attr=*0x1f66e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x347df0, attr=*0x1f66e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x347cd8, attr=*0x1f66e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x347d00, attr=*0x1f66e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x347d28, attr=*0x1f66e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x347d50, attr=*0x1f66e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x347d78, attr=*0x1f66e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0019f42c]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001a0e9c]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0019f3d8]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001a0e9c]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x347a78, attr=*0xd000fb50)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001ab4dc]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd000f970)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72d8]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f940)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e73b8]} cellSysutil: cellSysutilRegisterCallback(slot=0, func=*0x23a990, userdata=*0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001ab4dc]} sys_memory: sys_memory_allocate(size=0x8200000, flags=0x400, alloc_addr=*0xd000f850)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001ab4dc]} sys_memory: sys_memory_allocate(size=0xa00000, flags=0x400, alloc_addr=*0xd000f850)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0000: CELL_SYSMODULE_NET)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0017: CELL_SYSMODULE_IO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x001c: CELL_SYSMODULE_USBD)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0010: CELL_SYSMODULE_GCM_SYS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x001f: CELL_SYSMODULE_RESC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0011: CELL_SYSMODULE_AUDIO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x000a: CELL_SYSMODULE_SPURS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x004e: CELL_SYSMODULE_SYSUTIL_SCREENSHOT)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0xf035: CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0032: CELL_SYSMODULE_SYSUTIL_USERINFO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0037: CELL_SYSMODULE_SYSUTIL_GAME_EXEC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000c768c]} sys_spu: sys_spu_initialize(max_usable_spu=6, max_raw_spu=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6818]} cellSpurs: _cellSpursAttributeInitialize(attr=*0xd000f860, revision=2, sdkVersion=0x330000, nSpus=5, spuPriority=250, ppuPriority=999, exitIfNoWork=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6698]} cellSpurs: cellSpursAttributeEnableSpuPrintfIfAvailable(attr=*0xd000f860)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6678]} cellSpurs: cellSpursAttributeSetNamePrefix(attr=*0xd000f860, prefix=*0x1f2b9c, size=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68b8]} cellSpurs: cellSpursAttributeSetSpuThreadGroupType(attr=*0xd000f860, type=24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x2004b280, attr=*0xd000f860)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x2004b280, flags=0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_semaphore: sys_semaphore_create(sem=*0xd000f7e8, attr=*0xd000f7c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: sys_spu_thread_group_create(id=*0xd000f7a8, num=5, prio=250, attr=*0xd000f718)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu TODO: Unsupported SPU Thread Group type (0x18)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f6f0, group=0x1f, spu_num=0, img=*0x2004bff0, attr=*0xd000f6e0, arg=*0xd000f6f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f6f0, group=0x1f, spu_num=1, img=*0x2004bff0, attr=*0xd000f6e0, arg=*0xd000f6f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f6f0, group=0x1f, spu_num=2, img=*0x2004bff0, attr=*0xd000f6e0, arg=*0xd000f6f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f6f0, group=0x1f, spu_num=3, img=*0x2004bff0, attr=*0xd000f6e0, arg=*0xd000f6f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f6f0, group=0x1f, spu_num=4, img=*0x2004bff0, attr=*0xd000f6e0, arg=*0xd000f6f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004c030, attr=*0xd000f7b0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2004c048, lwmutex=*0x2004c030, attr=*0xd000f7c0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_event: sys_event_queue_create(equeue_id=*0x2004bfdc, attr=*0xd000f648, event_queue_key=0x0, size=42)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x1f, eq=0x27, req=0xffffffffffff0000, spup=*0xd000f638)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_event: sys_event_port_create(eport_id=*0x2004bfe0, port_type=1, name=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_event: sys_event_port_connect_local(eport_id=0x28, equeue_id=0x27)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x2004b280, flag=1)
+HLE: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x1f)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68d8]} sys_spu: sys_spu_thread_group_connect_event(id=0x1f, eq=0x27, et=2)
+HLE: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x1f, cause=*0x0, status=*0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e74b8]} cellGame: cellGameBootCheck(type=*0x20001424, attributes=*0x20001428, size=*0x2000142c, dirName=*0x20001438)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6a18]} cellSysmodule: cellSysmoduleInitialize()
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0017: CELL_SYSMODULE_IO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004c2a0, attr=*0xd000f7f0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7738]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2004c2d0, lwmutex=*0x2004c2a0, attr=*0xd000f7e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004c2f0, attr=*0xd000f780)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7498]} cellGame: cellGameContentPermit(contentInfoPath=*0x2a39fc, usrdirPath=*0x2a3a7c)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7498]} cellGame: cellGameContentPermit(): path_set=1, contentInfo='/dev_bdvd/PS3_GAME', usrdir='/dev_bdvd/PS3_GAME/USRDIR'
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004c330, attr=*0xd000f800)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004c3b8, attr=*0xd000f8a0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0017eee8]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x2004c3ec, attr=*0xd000f890)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004c408, attr=*0xd000f8a0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7738]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2004c430, lwmutex=*0x2004c408, attr=*0xd000f890)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0017eee8]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x2004c79c, attr=*0xd000f890)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004c7d0, attr=*0xd000f760)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0017eee8]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x2004c854, attr=*0xd000f880)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0017eee8]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x2004d0d4, attr=*0xd000f880)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7278]} cellSysutil: cellSysCacheMount(param=*0x2a35ac)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e7338]} cellSysutil TODO: cellSysCacheClear()
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004d280, attr=*0xd000f750)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004d308, attr=*0xd000f7f0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0017eee8]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x2004d33c, attr=*0xd000f7e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004d358, attr=*0xd000f7f0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7738]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2004d380, lwmutex=*0x2004d358, attr=*0xd000f7e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004d700, attr=*0xd000f6e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004d728, attr=*0xd000f6e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0017eee8]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x2004d74c, attr=*0xd000f6d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004d768, attr=*0xd000f6e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004d7d0, attr=*0xd000f6e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7738]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2004d7f8, lwmutex=*0x2004d7d0, attr=*0xd000f6d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7738]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2004d810, lwmutex=*0x2004d7d0, attr=*0xd000f6d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004d828, attr=*0xd000f6e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004d878, attr=*0xd000f6e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7738]} sysPrxForUser: sys_lwcond_create(lwcond=*0x200623f0, lwmutex=*0x2004d878, attr=*0xd000f6d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7738]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20062408, lwmutex=*0x2004d878, attr=*0xd000f6d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20062448, entry=0x2428d0, arg=0x20062410, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20062418)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20062448, param=*0xd000f688, arg=0x20062410, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20062418)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x47)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20062488, entry=0x2428d0, arg=0x20062450, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20062458)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20062488, param=*0xd000f688, arg=0x20062450, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20062458)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x48)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2004d7b8, entry=0x2428d0, arg=0x2004d780, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x2004d788)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2004d7b8, param=*0xd000f688, arg=0x2004d780, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x2004d788)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x49)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200625e0, attr=*0xd000f5f0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0017eee8]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x20062664, attr=*0xd000f710)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20062680, attr=*0xd000f720)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20062808, attr=*0xd000f7c0)
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a38]} cellFs: cellFsStat(path=*0xd0033790, sb=*0xd0033704) -> sys_fs_stat()
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a38]} sys_fs: sys_fs_stat(path=*0xd0033790, sb=*0xd0033704)
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a38]} sys_fs: *** path = '/dev_hdd1/cache/BLES01340/BLES01340'
+HLE: E {PPU[0x47] Thread (fios mediathread 2)[0x001e5a38]} sys_fs: sys_fs_stat('/dev_hdd1/cache/BLES01340/BLES01340') failed: not found
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a38]} cellFs: cellFsStat(path=*0xd0033790, sb=*0xd0033704) -> sys_fs_stat()
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a38]} sys_fs: sys_fs_stat(path=*0xd0033790, sb=*0xd0033704)
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a38]} sys_fs: *** path = '/dev_hdd1/cache/BLES01340/BLES01340'
+HLE: E {PPU[0x47] Thread (fios mediathread 2)[0x001e5a38]} sys_fs: sys_fs_stat('/dev_hdd1/cache/BLES01340/BLES01340') failed: not found
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5af8]} cellFs: cellFsMkdir(path=*0xd0033790, mode=0700) -> sys_fs_mkdir()
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5af8]} sys_fs: sys_fs_mkdir(path=*0xd0033790, mode=0700)
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5af8]} sys_fs: *** path = '/dev_hdd1/cache/BLES01340/BLES01340'
+HLE: ! {PPU[0x47] Thread (fios mediathread 2)[0x001e5af8]} sys_fs: sys_fs_mkdir(): directory '/dev_hdd1/cache/BLES01340/BLES01340' created
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a18]} cellFs: cellFsOpen(path=*0xd0033790, flags=0102, fd=*0xd0033644, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a18]} sys_fs: sys_fs_open(path=*0xd0033790, flags=0102, fd=*0xd0033644, mode=0600, arg=*0x0, size=0x0)
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a18]} sys_fs: *** path = '/dev_hdd1/cache/BLES01340/BLES01340/cache.idx'
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5b38]} sys_fs: sys_fs_fstat(fd=0x4e, sb=*0xd0033704)
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a18]} cellFs: cellFsOpen(path=*0xd0033790, flags=0102, fd=*0xd0033644, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a18]} sys_fs: sys_fs_open(path=*0xd0033790, flags=0102, fd=*0xd0033644, mode=0600, arg=*0x0, size=0x0)
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5a18]} sys_fs: *** path = '/dev_hdd1/cache/BLES01340/BLES01340/cache.dat'
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5b38]} sys_fs: sys_fs_fstat(fd=0x4f, sb=*0xd0033704)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5ab8]} cellFs: cellFsGetFreeSize(path=*0x1fc948, block_size=*0xd000f1d0, block_count=*0xd000f1d8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5ab8]} cellFs: *** path = '/dev_hdd1'
+HLE: W {PPU[0x47] Thread (fios mediathread 2)[0x001e5b38]} sys_fs: sys_fs_fstat(fd=0x4e, sb=*0xd0033704)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20070880, attr=*0xd000f790)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200708a8, attr=*0xd000f790)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0017eee8]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x200708cc, attr=*0xd000f780)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200708e8, attr=*0xd000f790)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20070950, attr=*0xd000f790)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7738]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20070978, lwmutex=*0x20070950, attr=*0xd000f780)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7738]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20070990, lwmutex=*0x20070950, attr=*0xd000f780)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200709a8, attr=*0xd000f790)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200709f8, attr=*0xd000f790)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7738]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20070b50, lwmutex=*0x200709f8, attr=*0xd000f780)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7738]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20070b68, lwmutex=*0x200709f8, attr=*0xd000f780)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20070ba8, entry=0x2428d0, arg=0x20070b70, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20070b78)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20070ba8, param=*0xd000f738, arg=0x20070b70, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20070b78)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x5b)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20070be8, entry=0x2428d0, arg=0x20070bb0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20070bb8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20070be8, param=*0xd000f738, arg=0x20070bb0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20070bb8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x5c)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20070938, entry=0x2428d0, arg=0x20070900, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x20070908)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20070938, param=*0xd000f738, arg=0x20070900, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x20070908)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x5d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5db8]} sys_io: cellPadInit(max_connect=7)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000c8b50]} sys_memory: sys_memory_container_create(cid=*0x265d18, size=0x100000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0023: CELL_SYSMODULE_CAMERA)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5938]} cellCamera: cellCameraInit()
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5898]} cellCamera: cellCameraGetType(dev_num=0, type=*0xd000fa10)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e69f8]} cellSysmodule: cellSysmoduleLoadModule(id=0x005a: CELL_SYSMODULE_GEM)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5618]} cellGem: cellGemGetMemorySize(max_connect=4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001ab4dc]} sys_memory: sys_memory_allocate(size=0x500000, flags=0x400, alloc_addr=*0xd000f840)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5598]} cellGem: cellGemInit(attribute=*0xd000fa24)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e58d8]} cellCamera: cellCameraOpenEx
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e56b8]} cellGem: cellGemTrackHues
+HLE: W {PPU[0x1] Thread (main_thread)[0x001ab4dc]} sys_memory: sys_memory_allocate(size=0x300000, flags=0x400, alloc_addr=*0xd000f730)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5b98]} cellGcmSys: _cellGcmInitBody(context=*0x347aa8, cmdSize=0x10000, ioSize=0x100000, ioAddress=0x29100000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5b98]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5b98]} cellGcmSys: cellGcmInit(): 256MB io address space used
 RSX: ! {RSXThread} RSX thread started
-RSX: W {RSXThread} RSX thread aborted
-RSX: W {VBlank thread} VBlank thread aborted
-HLE: W {PPU[72] Thread (fios mediathread 3)[0x003a9040]} sys_lwcond warning: sys_lwcond_wait(id=70) aborted
-HLE: W {PPU[92] Thread (fios mediathread 6)[0x003a9040]} sys_lwcond warning: sys_lwcond_wait(id=90) aborted
-HLE: W {PPU[91] Thread (fios mediathread 5)[0x003a9040]} sys_lwcond warning: sys_lwcond_wait(id=89) aborted
-HLE: W {PPU[93] Thread (fios scheduler 4)[0x003a9040]} sys_lwcond warning: sys_lwcond_wait(id=85) aborted
-HLE: W {PPU[73] Thread (fios scheduler 1)[0x003a9040]} sys_lwcond warning: sys_lwcond_wait(id=65) aborted
-HLE: W {PPU[71] Thread (fios mediathread 2)[0x003a9040]} sys_lwcond warning: sys_lwcond_wait(id=69) aborted
-PPU: ! {PPULLVMRecompiler} PPU LLVM compiler thread exiting.
-HLE: ! All threads stopped...
-MEM: ! Closing memory...
-MEM: E Page not registered (addr=0x40000000)
-MEM: E Page not registered (addr=0x40001000)
-MEM: E Page not registered (addr=0x40002000)
-MEM: E Page not registered (addr=0x40003000)
-MEM: E Page not registered (addr=0x40004000)
-MEM: E Page not registered (addr=0x40005000)
-MEM: E Page not registered (addr=0x40006000)
-MEM: E Page not registered (addr=0x40007000)
-MEM: E Page not registered (addr=0x40008000)
-MEM: E Page not registered (addr=0x40009000)
-MEM: E Page not registered (addr=0x4000a000)
-MEM: E Page not registered (addr=0x4000b000)
-MEM: E Page not registered (addr=0x4000c000)
-MEM: E Page not registered (addr=0x4000d000)
-MEM: E Page not registered (addr=0x4000e000)
-MEM: E Page not registered (addr=0x4000f000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5cb8]} cellGcmSys: cellGcmMapMainMemory(ea=0x20100000, size=0x8000000, offset=*0xd000f930)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6318]} cellResc: cellRescInit(initConfig=*0xd000f8cc)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6298]} cellResc: cellRescSetDisplayMode(displayMode=4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6298]} cellSysutil: cellVideoOutConfigure(videoOut=0, config=*0xd000f830, option=*0x0, waitForEvent=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6298]} cellGcmSys: cellGcmSetFlipMode(mode=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6338]} cellResc: cellRescGetBufferSize(colorBuffers=*0xd000f8b0, vertexArray=*0xd000f8b4, fragmentShader=*0xd000f8b8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5d18]} cellGcmSys: cellGcmSetTileInfo(index=0, location=0, offset=65536, size=17694720, pitch=5120, comp=7, base=1, bank=1)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e5d18]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (7)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5bf8]} cellGcmSys: cellGcmBindTile(index=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6378]} cellResc: cellRescSetBufferAddress(colorBuffers=*0xc0010000, vertexArray=*0xc10f0080, fragmentShader=*0xc10f0280)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e62f8]} cellResc: cellRescSetFlipHandler(handler=*0x23a808)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5d18]} cellGcmSys: cellGcmSetTileInfo(index=1, location=0, offset=17825792, size=15073280, pitch=10240, comp=8, base=272, bank=0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e5d18]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5bf8]} cellGcmSys: cellGcmBindTile(index=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5d18]} cellGcmSys: cellGcmSetTileInfo(index=2, location=0, offset=33030144, size=15073280, pitch=10240, comp=10, base=504, bank=1)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e5d18]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (10)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5bf8]} cellGcmSys: cellGcmBindTile(index=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5c98]} cellGcmSys: cellGcmBindZcull(index=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5d18]} cellGcmSys: cellGcmSetTileInfo(index=3, location=0, offset=48234496, size=3801088, pitch=5120, comp=0, base=0, bank=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5bf8]} cellGcmSys: cellGcmBindTile(index=3)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6778]} cellSpurs: _cellSpursEventFlagInitialize(spurs=*0x2004b280, taskset=*0x0, eventFlag=*0x200a8780, flagClearMode=0, flagDirection=3)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6778]} cellSpurs: _cellSpursEventFlagInitialize(spurs=*0x2004b280, taskset=*0x0, eventFlag=*0x200a8a80, flagClearMode=0, flagDirection=3)
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e6798]} cellSpurs: cellSpursJobGuardInitialize
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e66f8]} cellSpurs: _cellSpursJobChainAttributeInitialize
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e6858]} cellSpurs: cellSpursJobChainAttributeSetName
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e6918]} cellSpurs: cellSpursJobChainAttributeSetHaltOnError
+HLE: E {PPU[0x1] Thread (main_thread)[0x001e66d8]} cellSpurs: cellSpursCreateJobChainWithAttribute
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200a9780, attr=*0xd000f9e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e73d8]} cellSysutil: cellAudioOutGetSoundAvailability(audioOut=0, type=0, fs=0x4, option=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e73d8]} cellSysutil: cellAudioOutGetSoundAvailability(audioOut=0, type=1, fs=0x4, option=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e73d8]} cellSysutil: cellAudioOutGetSoundAvailability(audioOut=0, type=6, fs=0x4, option=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e72f8]} cellSysutil: cellAudioOutConfigure(audioOut=0, config=*0xd000f740, option=*0x0, waitForEvent=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7458]} cellSysutil: cellAudioOutGetState(audioOut=0x0, deviceIndex=0x0, state=*0xd000f750)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5798]} cellAudio: cellAudioInit()
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5818]} cellAudio: cellAudioPortOpen(audioParam=*0x200a8d38, portNum=*0xd000f820)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5818]} cellAudio: *** audio port opened(nChannel=8, nBlock=8, attr=0x0, level=1.000000): port = 0
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e57d8]} cellAudio: cellAudioGetPortConfig(portNum=0, portConfig=*0x200a8d58)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e75b8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x349d00, attr=*0xd000f630)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6758]} cellSpurs: cellSpursCreateTaskset(spurs=*0x2004b280, taskset=*0x34a100, args=0x0, priority=*0xd000f828, maxContention=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6758]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd000f4e0, revision=1, sdkVersion=0x33, pm=*0x200, size=0x1e40, data=0x34a100, priority=*0xd000f828, minCnt=0x8, maxCnt=0x1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6758]} cellSpurs: cellSpursWorkloadAttributeSetName(attr=*0xd000f4e0, nameClass=*0x0, nameInstance=*0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6758]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs=*0x2004b280, wid=*0xd000f4d8, attr=*0xd000f4e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6778]} cellSpurs: _cellSpursEventFlagInitialize(spurs=*0x0, taskset=*0x34a100, eventFlag=*0x34ba80, flagClearMode=0, flagDirection=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e67f8]} cellSpurs: cellSpursEventFlagAttachLv2EventQueue(eventFlag=*0x34ba80)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e67f8]} sys_event: sys_event_queue_create(equeue_id=*0xd000f6d8, attr=*0xd000f6b8, event_queue_key=0x0, size=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e67f8]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x1f, eq=0x61, req=0xffffffffffff0000, spup=*0xd000f6a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6778]} cellSpurs: _cellSpursEventFlagInitialize(spurs=*0x0, taskset=*0x34a100, eventFlag=*0x34fb80, flagClearMode=0, flagDirection=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00185834]} sys_event: sys_event_queue_create(equeue_id=*0x349a80, attr=*0xd000f6a4, event_queue_key=0x0, size=8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x347ab8, entry=0x242ca8, arg=0x0, prio=999, stacksize=0x10000, flags=0x1, threadname=*0x1ff018)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x347ab8, param=*0xd000f628, arg=0x0, unk=0x0, prio=999, stacksize=0x10000, flags=0x1, threadname=*0x1ff018)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e7538]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x63)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001858c4]} sys_event: sys_event_port_create(eport_id=*0x349a00, port_type=1, name=0xfee1dead)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001858dc]} sys_event: sys_event_port_connect_local(eport_id=0x64, equeue_id=0x62)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68f8]} cellSpurs: cellSpursAttachLv2EventQueue(spurs=*0x2004b280, queue=0x62, port=*0xd000f6a0, isDynamic=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e68f8]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x1f, eq=0x62, req=0x2, spup=*0xd000f628)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6938]} cellSpurs: cellSpursCreateTask(taskset=*0x34a100, taskID=*0x34ba00, elf=*0x20f200, context=*0x34fc00, size=0x3d400, lsPattern=*0x1f5a78, argument=*0xd000f760)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6938]} cellSpurs: cellSpursSendWorkloadSignal(spurs=*0x2004b280, wid=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6938]} cellSpurs: cellSpursWakeUp(spurs=*0x2004b280)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5a18]} cellFs: cellFsOpen(path=*0x1ff630, flags=0, fd=*0xd000f680, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5a18]} sys_fs: sys_fs_open(path=*0x1ff630, flags=0, fd=*0xd000f680, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e5a18]} sys_fs: *** path = '/dev_flash/sys/external/flashATRAC.pic'
+HLE: W {PPU[0x1] Thread (main_thread)[0x001e6718]} cellSpurs: cellSpursEventFlagWait(eventFlag=*0x34ba80, mask=*0x266068, mode=1)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd001fe00
+GPR[2] = 0x0
+GPR[3] = 0x0
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x0
+GPR[12] = 0x0
+GPR[13] = 0x3951b0
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x80001800036531890000000000000000 [x: -8.60958e-42 y: 6.73539e-37 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\Callback.cpp:58, in function CallbackManager::Init::<lambda_46ea869b6054320987a0d5fa0b32bb88>::operator ())
+HLE: S {PPU[0x49] Thread (fios scheduler 1)[0x001e7578]} Last function: sys_lwcond_wait (0x2a6d9d51)
+HLE: S {PPU[0x5c] Thread (fios mediathread 6)[0x001e7578]} Last function: sys_lwcond_wait (0x2a6d9d51)
+HLE: S {PPU[0x47] Thread (fios mediathread 2)[0x001e7578]} Last function: sys_lwcond_wait (0x2a6d9d51)
+HLE: S {PPU[0x48] Thread (fios mediathread 3)[0x001e7578]} Last function: sys_lwcond_wait (0x2a6d9d51)
+HLE: S {PPU[0x5d] Thread (fios scheduler 4)[0x001e7578]} Last function: sys_lwcond_wait (0x2a6d9d51)
+HLE: S {PPU[0x63] Thread (spu_printf_handler)[0x00185a04]} Last syscall: 130 (sys_event_queue_receive)
+HLE: S {PPU[0x1] Thread (main_thread)[0x001e6718]} Last function: cellSpursEventFlagWait (0x373523d4)
+G: W {PPU[0x49] Thread (fios scheduler 1)[0x001e7578]} Registers:
+=========
+GPR[0] = 0x2004d7d0
+GPR[1] = 0xd004bb40
+GPR[2] = 0x24bd38
+GPR[3] = 0x2004d7f8
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x2
+GPR[7] = 0x80200
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x1f5998
+GPR[11] = 0x0
+GPR[12] = 0x0
+GPR[13] = 0x395930
+GPR[14] = 0x3e87e722906
+GPR[15] = 0xd004bc50
+GPR[16] = 0x3e87e723e27
+GPR[17] = 0x0
+GPR[18] = 0xd004bc70
+GPR[19] = 0x2004d6e0
+GPR[20] = 0x2004d8f0
+GPR[21] = 0x2004d7c0
+GPR[22] = 0x2
+GPR[23] = 0x0
+GPR[24] = 0x2004d6e0
+GPR[25] = 0x2004d6e0
+GPR[26] = 0x0
+GPR[27] = 0x2004d8ec
+GPR[28] = 0x2004d7e8
+GPR[29] = 0x0
+GPR[30] = 0x8
+GPR[31] = 0xd004bc20
+FPR[0] = 1.18576E-313
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 9.22337E+18
+FPR[13] = 3E+11
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x80000300002249ac0000000000000000 [x: -1.0762e-42 y: 3.14884e-39 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x48044042
+LR = 0x17f148
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+HLE: S {PPU[0x5b] Thread (fios mediathread 5)[0x001e7578]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: W {PPU[0x5c] Thread (fios mediathread 6)[0x001e7578]} Registers:
+=========
+GPR[0] = 0x200709f8
+GPR[1] = 0xd005bbe0
+GPR[2] = 0x24bd38
+GPR[3] = 0x20070b68
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x1f5998
+GPR[11] = 0x200709f8
+GPR[12] = 0x0
+GPR[13] = 0x395c30
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x20070a84
+GPR[20] = 0x20070a40
+GPR[21] = 0x8000000000000000
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x20070a20
+GPR[25] = 0x20070860
+GPR[26] = 0x20070860
+GPR[27] = 0x0
+GPR[28] = 0x20070b58
+GPR[29] = 0x200709e8
+GPR[30] = 0x20070860
+GPR[31] = 0x20070b00
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 9.22337E+18
+FPR[30] = 9.22337E+18
+FPR[31] = 0.08
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x80001b00020877de0000000000000000 [x: -9.68577e-42 y: 1.00261e-37 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x42000082
+LR = 0x17f148
+CTR = 0x1
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x49] Thread (fios scheduler 1)[0x001e7578]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_lwcond.cpp:184, in function _sys_lwcond_queue_wait)
+G: W {PPU[0x48] Thread (fios mediathread 3)[0x001e7578]} Registers:
+=========
+GPR[0] = 0x2004d878
+GPR[1] = 0xd003bbe0
+GPR[2] = 0x24bd38
+GPR[3] = 0x20062408
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x1f5998
+GPR[11] = 0x2004d878
+GPR[12] = 0x0
+GPR[13] = 0x3957b0
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x2004d904
+GPR[20] = 0x2004d8c0
+GPR[21] = 0x8000000000000000
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x2004d8a0
+GPR[25] = 0x2004d6e0
+GPR[26] = 0x2004d6e0
+GPR[27] = 0x0
+GPR[28] = 0x200623f8
+GPR[29] = 0x2004d868
+GPR[30] = 0x2004d6e0
+GPR[31] = 0x200623a0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 9.22337E+18
+FPR[30] = 9.22337E+18
+FPR[31] = 0.08
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x42000082
+LR = 0x17f148
+CTR = 0x1
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x5c] Thread (fios mediathread 6)[0x001e7578]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_lwcond.cpp:184, in function _sys_lwcond_queue_wait)
+G: W {PPU[0x47] Thread (fios mediathread 2)[0x001e7578]} Registers:
+=========
+GPR[0] = 0x2004d878
+GPR[1] = 0xd0033be0
+GPR[2] = 0x24bd38
+GPR[3] = 0x200623f0
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x20062360
+GPR[7] = 0x1
+GPR[8] = 0x2004d8c4
+GPR[9] = 0x0
+GPR[10] = 0x1f5998
+GPR[11] = 0x2004d878
+GPR[12] = 0x44000082
+GPR[13] = 0x395630
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x2004d904
+GPR[20] = 0x2004d8c0
+GPR[21] = 0x8000000000000000
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x2004d8a0
+GPR[25] = 0x2004d6e0
+GPR[26] = 0x2004d6e0
+GPR[27] = 0x2004d940
+GPR[28] = 0x200623e0
+GPR[29] = 0x2004d868
+GPR[30] = 0x2004d6e0
+GPR[31] = 0x20062360
+FPR[0] = 3.95253E-320
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 9.22337E+18
+FPR[30] = 9.22337E+18
+FPR[31] = 0.08
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x8000010000664a690000000000000000 [x: -3.58732e-43 y: 9.39391e-39 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x64000082
+LR = 0x17f148
+CTR = 0x174f18
+XER = 0x20000000 [CA=1 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x48] Thread (fios mediathread 3)[0x001e7578]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_lwcond.cpp:184, in function _sys_lwcond_queue_wait)
+G: W {PPU[0x47] Thread (fios mediathread 2)[0x001e7578]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_lwcond.cpp:184, in function _sys_lwcond_queue_wait)
+G: W {PPU[0x5d] Thread (fios scheduler 4)[0x001e7578]} Registers:
+=========
+GPR[0] = 0x20070950
+GPR[1] = 0xd006bb40
+GPR[2] = 0x24bd38
+GPR[3] = 0x20070978
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0xd006bc58
+GPR[7] = 0xd006bc18
+GPR[8] = 0xd006bc50
+GPR[9] = 0x0
+GPR[10] = 0x1f5998
+GPR[11] = 0x0
+GPR[12] = 0xd006bc58
+GPR[13] = 0x395db0
+GPR[14] = 0x3e87e744d17
+GPR[15] = 0xd006bc50
+GPR[16] = 0x3e87e744f3e
+GPR[17] = 0x0
+GPR[18] = 0xd006bc70
+GPR[19] = 0x20070860
+GPR[20] = 0x20070a70
+GPR[21] = 0x20070940
+GPR[22] = 0x2
+GPR[23] = 0x0
+GPR[24] = 0x20070860
+GPR[25] = 0x20070860
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x20070968
+GPR[29] = 0xffffffffffffffe0
+GPR[30] = 0x0
+GPR[31] = 0xd006bc20
+FPR[0] = 7.90505E-316
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 9.22337E+18
+FPR[13] = 0.08
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x80002000029d77690000000000000000 [x: -1.14794e-41 y: 2.31376e-37 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x42044082
+LR = 0x17f148
+CTR = 0x17600c
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x63] Thread (spu_printf_handler)[0x00185a04]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd007bd50
+GPR[2] = 0x24bd38
+GPR[3] = 0x62
+GPR[4] = 0xd007bdc0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x82
+GPR[12] = 0x0
+GPR[13] = 0x395f30
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0xd007bdc0
+GPR[29] = 0x0
+GPR[30] = 0x1ff120
+GPR[31] = 0x349a80
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[1] = 0x00020000000001790000000000000042 [x: 1.83671e-40 y: 5.2829e-43 z: 0 w: 9.24857e-44]
+VPR[2] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[3] = 0x00008020000000b50000000000000022 [x: 4.59626e-41 y: 2.53635e-43 z: 0 w: 4.76441e-44]
+VPR[4] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[5] = 0x00020000000001900000000000000049 [x: 1.83671e-40 y: 5.60519e-43 z: 0 w: 1.02295e-43]
+VPR[6] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[7] = 0x0000802000000038000000000000000b [x: 4.59626e-41 y: 7.84727e-44 z: 0 w: 1.54143e-44]
+VPR[8] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[9] = 0x00020000000001930000000000000048 [x: 1.83671e-40 y: 5.64723e-43 z: 0 w: 1.00893e-43]
+VPR[10] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[11] = 0x000080200000009d000000000000001d [x: 4.59626e-41 y: 2.20004e-43 z: 0 w: 4.06377e-44]
+VPR[12] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[13] = 0x00020000000001870000000000000047 [x: 1.83671e-40 y: 5.47908e-43 z: 0 w: 9.94922e-44]
+VPR[14] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[15] = 0x000080200000006c0000000000000015 [x: 4.59626e-41 y: 1.5134e-43 z: 0 w: 2.94273e-44]
+VPR[16] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[17] = 0x00020000000001870000000000000047 [x: 1.83671e-40 y: 5.47908e-43 z: 0 w: 9.94922e-44]
+VPR[18] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[19] = 0x000080200000006c0000000000000015 [x: 4.59626e-41 y: 1.5134e-43 z: 0 w: 2.94273e-44]
+VPR[20] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[21] = 0x00020000000001870000000000000047 [x: 1.83671e-40 y: 5.47908e-43 z: 0 w: 9.94922e-44]
+VPR[22] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[23] = 0x000080200000006c0000000000000015 [x: 4.59626e-41 y: 1.5134e-43 z: 0 w: 2.94273e-44]
+VPR[24] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[25] = 0x00020000000001870000000000000047 [x: 1.83671e-40 y: 5.47908e-43 z: 0 w: 9.94922e-44]
+VPR[26] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[27] = 0x000080200000006c0000000000000015 [x: 4.59626e-41 y: 1.5134e-43 z: 0 w: 2.94273e-44]
+VPR[28] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[29] = 0x00020000000001870000000000000047 [x: 1.83671e-40 y: 5.47908e-43 z: 0 w: 9.94922e-44]
+VPR[30] = 0x0000000f000000030000000000000000 [x: 2.10195e-44 y: 4.2039e-45 z: 0 w: 0]
+VPR[31] = 0x000080200000006c0000000000000015 [x: 4.59626e-41 y: 1.5134e-43 z: 0 w: 2.94273e-44]
+CR = 0x22000082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x5d] Thread (fios scheduler 4)[0x001e7578]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_lwcond.cpp:184, in function _sys_lwcond_queue_wait)
+G: W {PPU[0x1] Thread (main_thread)[0x001e6718]} Registers:
+=========
+GPR[0] = 0x1
+GPR[1] = 0xd000f610
+GPR[2] = 0x24bd38
+GPR[3] = 0x34ba80
+GPR[4] = 0x266068
+GPR[5] = 0x1
+GPR[6] = 0x50
+GPR[7] = 0x284a5198
+GPR[8] = 0x284a51c0
+GPR[9] = 0x34ba00
+GPR[10] = 0x2849cf80
+GPR[11] = 0x34a080
+GPR[12] = 0x284a50bc
+GPR[13] = 0x395030
+GPR[14] = 0x0
+GPR[15] = 0x226000
+GPR[16] = 0x225000
+GPR[17] = 0x0
+GPR[18] = 0x224000
+GPR[19] = 0x100000
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x34bb04
+GPR[26] = 0xd000f828
+GPR[27] = 0x2004b280
+GPR[28] = 0x200a8d78
+GPR[29] = 0x2849cf00
+GPR[30] = 0x2849cf00
+GPR[31] = 0x34a004
+FPR[0] = 4
+FPR[1] = 4
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0.5
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 9.22337E+18
+FPR[13] = 1E+07
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x000000003f8000000000000000000000 [x: 0 y: 1 z: 0 w: 0]
+VPR[5] = 0x00000000000000003f80000000000000 [x: 0 y: 0 z: 1 w: 0]
+VPR[6] = 0x0000000000000000000000003f800000 [x: 0 y: 0 z: 0 w: 1]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x3e4ccccd000000000000000000000000 [x: 0.2 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000003f80000000000000 [x: 0 y: 0 z: 1 w: 0]
+VPR[11] = 0xc0c00000c0c00000c0c00000c0c00000 [x: -6 y: -6 z: -6 w: -6]
+VPR[12] = 0x000000003f8000000000000000000000 [x: 0 y: 1 z: 0 w: 0]
+VPR[13] = 0x3f8000003f8000003f8000003f800000 [x: 1 y: 1 z: 1 w: 1]
+VPR[14] = 0x00000000000000003f80000000000000 [x: 0 y: 0 z: 1 w: 0]
+VPR[15] = 0x0000000000000000000000003f800000 [x: 0 y: 0 z: 0 w: 1]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x3e4ccccd3e4ccccd3e4ccccd3e4ccccd [x: 0.2 y: 0.2 z: 0.2 w: 0.2]
+VPR[18] = 0x40a0000040a0000040a0000040a00000 [x: 5 y: 5 z: 5 w: 5]
+VPR[19] = 0x00000000021f7b00000000003f800000 [x: 0 y: 1.17168e-37 z: 0 w: 1]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
+VPR[23] = 0x00000002013663200000000000000672 [x: 2.8026e-45 y: 3.34992e-38 z: 0 w: 2.31214e-42]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x726578696d7275730000000000000000 [x: 4.54513e+30 y: 4.68983e+27 z: 0 w: 0]
+VPR[26] = 0x000000003f8000000000000000000000 [x: 0 y: 1 z: 0 w: 0]
+VPR[27] = 0x000000000000000000000000021f8020 [x: 0 y: 0 z: 0 w: 1.17182e-37]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000070000000000000000 [x: 0 y: 9.80909e-45 z: 0 w: 0]
+VPR[30] = 0x00000000000006730000000000000008 [x: 0 y: 2.31354e-42 z: 0 w: 1.12104e-44]
+VPR[31] = 0x00000000000000000000000201366340 [x: 0 y: 0 z: 2.8026e-45 w: 3.34993e-38]
+CR = 0x22002044
+LR = 0x187be4
+CTR = 0x40
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd002be00
+GPR[2] = 0x0
+GPR[3] = 0x2004b280
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x0
+GPR[12] = 0x0
+GPR[13] = 0x3954b0
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x80000100005a6baf0000000000000000 [x: -3.58732e-43 y: 8.30382e-39 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x1] Thread (main_thread)[0x001e6718]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_event.cpp:175, in function sys_event_queue_receive)
+G: W {PPU[0x5b] Thread (fios mediathread 5)[0x001e7578]} Registers:
+=========
+GPR[0] = 0x200709f8
+GPR[1] = 0xd0053be0
+GPR[2] = 0x24bd38
+GPR[3] = 0x20070b50
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x1f5998
+GPR[11] = 0x200709f8
+GPR[12] = 0x0
+GPR[13] = 0x395ab0
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x20070a84
+GPR[20] = 0x20070a40
+GPR[21] = 0x8000000000000000
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x20070a20
+GPR[25] = 0x20070860
+GPR[26] = 0x20070860
+GPR[27] = 0x0
+GPR[28] = 0x20070b40
+GPR[29] = 0x200709e8
+GPR[30] = 0x20070860
+GPR[31] = 0x20070ac0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 9.22337E+18
+FPR[30] = 9.22337E+18
+FPR[31] = 0.08
+VPR[0] = 0x006d0020002700720065007300550072 [x: 1.00101e-38 y: 3.58174e-39 z: 9.27555e-39 w: 7.80618e-39]
+VPR[1] = 0x0030002800200065006c00750064006f [x: 4.40816e-39 y: 2.93888e-39 z: 9.9184e-39 w: 9.18371e-39]
+VPR[2] = 0x00290038006200370037006500310078 [x: 3.76533e-39 y: 8.99996e-39 z: 5.05109e-39 w: 4.50011e-39]
+VPR[3] = 0x005b005500500050007b00200045000d [x: 8.35715e-39 y: 7.34695e-39 z: 1.12958e-38 w: 6.33667e-39]
+VPR[4] = 0x0072006800540020005d003100780030 [x: 1.04694e-38 y: 7.71423e-39 z: 8.54077e-39 w: 1.10203e-38]
+VPR[5] = 0x00690061006d00280020006400610065 [x: 9.64286e-39 y: 1.00101e-38 z: 2.93888e-39 w: 8.90818e-39]
+VPR[6] = 0x006400610065007200680074005f006e [x: 9.18369e-39 y: 9.27554e-39 z: 9.55105e-39 w: 8.72453e-39]
+VPR[7] = 0x006500310030003000780030005b0029 [x: 9.27545e-39 y: 4.40817e-39 z: 1.10203e-38 w: 8.35709e-39]
+VPR[8] = 0x00730020007d005d0038006400380036 [x: 1.05611e-38 y: 1.14796e-38 z: 5.14293e-39 w: 5.14286e-39]
+VPR[9] = 0x00540020007500700073005f00730079 [x: 7.71423e-39 y: 1.07449e-38 z: 1.05612e-38 w: 1.05613e-38]
+VPR[10] = 0x0073006e00550020003a004f0044004f [x: 1.05612e-38 y: 7.80606e-39 z: 5.32657e-39 w: 6.24492e-39]
+VPR[11] = 0x0064006500740072006f007000700075 [x: 9.18369e-39 y: 1.06531e-38 z: 1.01939e-38 w: 1.02857e-38]
+VPR[12] = 0x00720068005400200055005000530020 [x: 1.04694e-38 y: 7.71423e-39 z: 7.80613e-39 w: 7.62239e-39]
+VPR[13] = 0x0075006f007200470020006400610065 [x: 1.07449e-38 y: 1.04693e-38 z: 2.93888e-39 w: 8.90818e-39]
+VPR[14] = 0x00280020006500700079007400200070 [x: 3.67346e-39 y: 9.27554e-39 z: 1.11123e-38 w: 2.93889e-39]
+VPR[15] = 0x00200045000d00290038003100780030 [x: 2.93883e-39 y: 1.19392e-39 z: 5.14286e-39 w: 1.10203e-38]
+VPR[16] = 0x003100780030005b005500500050007b [x: 4.50011e-39 y: 4.40823e-39 z: 7.80613e-39 w: 7.34701e-39]
+VPR[17] = 0x0064006100650072006800540020005d [x: 9.18369e-39 y: 9.27554e-39 z: 9.55101e-39 w: 2.93887e-39]
+VPR[18] = 0x0074005f006e00690061006d00280020 [x: 1.06531e-38 y: 1.01021e-38 z: 8.9082e-39 w: 3.67346e-39]
+VPR[19] = 0x0030005b002900640061006500720068 [x: 4.40823e-39 y: 3.7654e-39 z: 8.90818e-39 w: 1.04694e-38]
+VPR[20] = 0x00640038003600650031003000300078 [x: 9.18363e-39 y: 4.95926e-39 z: 4.50001e-39 w: 4.40827e-39]
+VPR[21] = 0x005f0073007900730020007d005d0038 [x: 8.72453e-39 y: 1.11123e-38 z: 2.93891e-39 w: 8.54078e-39]
+VPR[22] = 0x0073006e00550020003a007500700073 [x: 1.05612e-38 y: 7.80606e-39 z: 5.32662e-39 w: 1.02857e-38]
+VPR[23] = 0x0064006500740072006f007000700075 [x: 9.18369e-39 y: 1.06531e-38 z: 1.01939e-38 w: 1.02857e-38]
+VPR[24] = 0x00720068005400200055005000530020 [x: 1.04694e-38 y: 7.71423e-39 z: 7.80613e-39 w: 7.62239e-39]
+VPR[25] = 0x006900740070006f0020006400610065 [x: 9.64289e-39 y: 1.02857e-38 z: 2.93888e-39 w: 8.90818e-39]
+VPR[26] = 0x003200780030002800200073006e006f [x: 4.59194e-39 y: 4.40816e-39 z: 2.9389e-39 w: 1.01021e-38]
+VPR[27] = 0x005500500050007b00200045000d0029 [x: 7.80613e-39 y: 7.34701e-39 z: 2.93883e-39 w: 1.19392e-39]
+VPR[28] = 0x006800540020005d003100780030005b [x: 9.55101e-39 y: 2.93887e-39 z: 4.50011e-39 w: 4.40823e-39]
+VPR[29] = 0x0061006d002800200064006100650072 [x: 8.9082e-39 y: 3.67346e-39 z: 9.18369e-39 w: 9.27554e-39]
+VPR[30] = 0x00610065007200680074005f006e0069 [x: 8.90818e-39 y: 1.04694e-38 z: 1.06531e-38 w: 1.01021e-38]
+VPR[31] = 0x00310030003000780030005b00290064 [x: 4.50001e-39 y: 4.40827e-39 z: 4.40823e-39 w: 3.7654e-39]
+CR = 0x42000082
+LR = 0x17f148
+CTR = 0x2
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x63] Thread (spu_printf_handler)[0x00185a04]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_event.cpp:175, in function sys_event_queue_receive)
+G: W {PPU[0x29] Thread (SpursHdlr1)[0x00000000]} Registers:
+=========
+GPR[0] = 0x0
+GPR[1] = 0xd0027cf8
+GPR[2] = 0x0
+GPR[3] = 0x2004b280
+GPR[4] = 0x0
+GPR[5] = 0x0
+GPR[6] = 0x0
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x0
+GPR[11] = 0x0
+GPR[12] = 0x0
+GPR[13] = 0x395330
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x0
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x8000140002b969030000000000000000 [x: -7.17465e-42 y: 2.72436e-37 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000082
+LR = 0x0
+CTR = 0x0
+XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_spu.cpp:550, in function sys_spu_thread_group_join)
+G: W {PPU[0x5b] Thread (fios mediathread 5)[0x001e7578]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_lwcond.cpp:184, in function _sys_lwcond_queue_wait)
+G: W {PPU[0x29] Thread (SpursHdlr1)[0x00000000]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\lv2\sys_event.cpp:175, in function sys_event_queue_receive)
+G: W {VBlank Thread} Exception: Aborted (emulation stopped)
+(in file Emu\RSX\RSXThread.cpp:2654, in function RSXThread::Task::<lambda_35da4a5bc935cd1c9a062d9f015244c2>::operator ())
+G: W {SPU[0x23] Thread (CellSpursKernel3)[0x00000818]} Registers:
+=========
+GPR[0] = 0x00000000000000000000000000000000
+GPR[1] = 0x0003fff0000000000000000000000000
+GPR[2] = 0x00000000000000000000000000000000
+GPR[3] = 0x00000003000000000000000000000000
+GPR[4] = 0x000000002004b2800000000000000000
+GPR[5] = 0x00000000200013e00000000000000000
+GPR[6] = 0x00000000d000f7800000000000000000
+GPR[7] = 0x00000000000000000000000000000000
+GPR[8] = 0x00000000000000000000000000000000
+GPR[9] = 0x00000000000000000000000000000000
+GPR[10] = 0x00000000000000000000000000000000
+GPR[11] = 0x00000000000000000000000000000000
+GPR[12] = 0x00000000000000000000000000000000
+GPR[13] = 0x00000000000000000000000000000000
+GPR[14] = 0x00000000000000000000000000000000
+GPR[15] = 0x00000000000000000000000000000000
+GPR[16] = 0x00000000000000000000000000000000
+GPR[17] = 0x00000000000000000000000000000000
+GPR[18] = 0x00000000000000000000000000000000
+GPR[19] = 0x00000000000000000000000000000000
+GPR[20] = 0x00000000000000000000000000000000
+GPR[21] = 0x00000000000000000000000000000000
+GPR[22] = 0x00000000000000000000000000000000
+GPR[23] = 0x00000000000000000000000000000000
+GPR[24] = 0x00000000000000000000000000000000
+GPR[25] = 0x00000000000000000000000000000000
+GPR[26] = 0x00000000000000000000000000000000
+GPR[27] = 0x00000000000000000000000000000000
+GPR[28] = 0x00000000000000000000000000000000
+GPR[29] = 0x00000000000000000000000000000000
+GPR[30] = 0x00000000000000000000000000000000
+GPR[31] = 0x00000000000000000000000000000000
+GPR[32] = 0x00000000000000000000000000000000
+GPR[33] = 0x00000000000000000000000000000000
+GPR[34] = 0x00000000000000000000000000000000
+GPR[35] = 0x00000000000000000000000000000000
+GPR[36] = 0x00000000000000000000000000000000
+GPR[37] = 0x00000000000000000000000000000000
+GPR[38] = 0x00000000000000000000000000000000
+GPR[39] = 0x00000000000000000000000000000000
+GPR[40] = 0x00000000000000000000000000000000
+GPR[41] = 0x00000000000000000000000000000000
+GPR[42] = 0x00000000000000000000000000000000
+GPR[43] = 0x00000000000000000000000000000000
+GPR[44] = 0x00000000000000000000000000000000
+GPR[45] = 0x00000000000000000000000000000000
+GPR[46] = 0x00000000000000000000000000000000
+GPR[47] = 0x00000000000000000000000000000000
+GPR[48] = 0x00000000000000000000000000000000
+GPR[49] = 0x00000000000000000000000000000000
+GPR[50] = 0x00000000000000000000000000000000
+GPR[51] = 0x00000000000000000000000000000000
+GPR[52] = 0x00000000000000000000000000000000
+GPR[53] = 0x00000000000000000000000000000000
+GPR[54] = 0x00000000000000000000000000000000
+GPR[55] = 0x00000000000000000000000000000000
+GPR[56] = 0x00000000000000000000000000000000
+GPR[57] = 0x00000000000000000000000000000000
+GPR[58] = 0x00000000000000000000000000000000
+GPR[59] = 0x00000000000000000000000000000000
+GPR[60] = 0x00000000000000000000000000000000
+GPR[61] = 0x00000000000000000000000000000000
+GPR[62] = 0x00000000000000000000000000000000
+GPR[63] = 0x00000000000000000000000000000000
+GPR[64] = 0x00000000000000000000000000000000
+GPR[65] = 0x00000000000000000000000000000000
+GPR[66] = 0x00000000000000000000000000000000
+GPR[67] = 0x00000000000000000000000000000000
+GPR[68] = 0x00000000000000000000000000000000
+GPR[69] = 0x00000000000000000000000000000000
+GPR[70] = 0x00000000000000000000000000000000
+GPR[71] = 0x00000000000000000000000000000000
+GPR[72] = 0x00000000000000000000000000000000
+GPR[73] = 0x00000000000000000000000000000000
+GPR[74] = 0x00000000000000000000000000000000
+GPR[75] = 0x00000000000000000000000000000000
+GPR[76] = 0x00000000000000000000000000000000
+GPR[77] = 0x00000000000000000000000000000000
+GPR[78] = 0x00000000000000000000000000000000
+GPR[79] = 0x00000000000000000000000000000000
+GPR[80] = 0x00000000000000000000000000000000
+GPR[81] = 0x00000000000000000000000000000000
+GPR[82] = 0x00000000000000000000000000000000
+GPR[83] = 0x00000000000000000000000000000000
+GPR[84] = 0x00000000000000000000000000000000
+GPR[85] = 0x00000000000000000000000000000000
+GPR[86] = 0x00000000000000000000000000000000
+GPR[87] = 0x00000000000000000000000000000000
+GPR[88] = 0x00000000000000000000000000000000
+GPR[89] = 0x00000000000000000000000000000000
+GPR[90] = 0x00000000000000000000000000000000
+GPR[91] = 0x00000000000000000000000000000000
+GPR[92] = 0x00000000000000000000000000000000
+GPR[93] = 0x00000000000000000000000000000000
+GPR[94] = 0x00000000000000000000000000000000
+GPR[95] = 0x00000000000000000000000000000000
+GPR[96] = 0x00000000000000000000000000000000
+GPR[97] = 0x00000000000000000000000000000000
+GPR[98] = 0x00000000000000000000000000000000
+GPR[99] = 0x00000000000000000000000000000000
+GPR[100] = 0x00000000000000000000000000000000
+GPR[101] = 0x00000000000000000000000000000000
+GPR[102] = 0x00000000000000000000000000000000
+GPR[103] = 0x00000000000000000000000000000000
+GPR[104] = 0x00000000000000000000000000000000
+GPR[105] = 0x00000000000000000000000000000000
+GPR[106] = 0x00000000000000000000000000000000
+GPR[107] = 0x00000000000000000000000000000000
+GPR[108] = 0x00000000000000000000000000000000
+GPR[109] = 0x00000000000000000000000000000000
+GPR[110] = 0x00000000000000000000000000000000
+GPR[111] = 0x00000000000000000000000000000000
+GPR[112] = 0x00000000000000000000000000000000
+GPR[113] = 0x00000000000000000000000000000000
+GPR[114] = 0x00000000000000000000000000000000
+GPR[115] = 0x00000000000000000000000000000000
+GPR[116] = 0x00000000000000000000000000000000
+GPR[117] = 0x00000000000000000000000000000000
+GPR[118] = 0x00000000000000000000000000000000
+GPR[119] = 0x00000000000000000000000000000000
+GPR[120] = 0x00000000000000000000000000000000
+GPR[121] = 0x00000000000000000000000000000000
+GPR[122] = 0x00000000000000000000000000000000
+GPR[123] = 0x00000000000000000000000000000000
+GPR[124] = 0x00000000000000000000000000000000
+GPR[125] = 0x00000000000000000000000000000000
+GPR[126] = 0x00000000000000000000000000000000
+GPR[127] = 0x00000000000000000000000000000000
+
+G: W {SPU[0x23] Thread (CellSpursKernel3)[0x00000818]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
+G: W {SPU[0x21] Thread (CellSpursKernel1)[0x00000818]} Registers:
+=========
+GPR[0] = 0x00000000000000000000000000000000
+GPR[1] = 0x0003fff0000000000000000000000000
+GPR[2] = 0x00000000000000000000000000000000
+GPR[3] = 0x00000001000000000000000000000000
+GPR[4] = 0x000000002004b2800000000000000000
+GPR[5] = 0x00000000200013e00000000000000000
+GPR[6] = 0x00000000d000f7800000000000000000
+GPR[7] = 0x00000000000000000000000000000000
+GPR[8] = 0x00000000000000000000000000000000
+GPR[9] = 0x00000000000000000000000000000000
+GPR[10] = 0x00000000000000000000000000000000
+GPR[11] = 0x00000000000000000000000000000000
+GPR[12] = 0x00000000000000000000000000000000
+GPR[13] = 0x00000000000000000000000000000000
+GPR[14] = 0x00000000000000000000000000000000
+GPR[15] = 0x00000000000000000000000000000000
+GPR[16] = 0x00000000000000000000000000000000
+GPR[17] = 0x00000000000000000000000000000000
+GPR[18] = 0x00000000000000000000000000000000
+GPR[19] = 0x00000000000000000000000000000000
+GPR[20] = 0x00000000000000000000000000000000
+GPR[21] = 0x00000000000000000000000000000000
+GPR[22] = 0x00000000000000000000000000000000
+GPR[23] = 0x00000000000000000000000000000000
+GPR[24] = 0x00000000000000000000000000000000
+GPR[25] = 0x00000000000000000000000000000000
+GPR[26] = 0x00000000000000000000000000000000
+GPR[27] = 0x00000000000000000000000000000000
+GPR[28] = 0x00000000000000000000000000000000
+GPR[29] = 0x00000000000000000000000000000000
+GPR[30] = 0x00000000000000000000000000000000
+GPR[31] = 0x00000000000000000000000000000000
+GPR[32] = 0x00000000000000000000000000000000
+GPR[33] = 0x00000000000000000000000000000000
+GPR[34] = 0x00000000000000000000000000000000
+GPR[35] = 0x00000000000000000000000000000000
+GPR[36] = 0x00000000000000000000000000000000
+GPR[37] = 0x00000000000000000000000000000000
+GPR[38] = 0x00000000000000000000000000000000
+GPR[39] = 0x00000000000000000000000000000000
+GPR[40] = 0x00000000000000000000000000000000
+GPR[41] = 0x00000000000000000000000000000000
+GPR[42] = 0x00000000000000000000000000000000
+GPR[43] = 0x00000000000000000000000000000000
+GPR[44] = 0x00000000000000000000000000000000
+GPR[45] = 0x00000000000000000000000000000000
+GPR[46] = 0x00000000000000000000000000000000
+GPR[47] = 0x00000000000000000000000000000000
+GPR[48] = 0x00000000000000000000000000000000
+GPR[49] = 0x00000000000000000000000000000000
+GPR[50] = 0x00000000000000000000000000000000
+GPR[51] = 0x00000000000000000000000000000000
+GPR[52] = 0x00000000000000000000000000000000
+GPR[53] = 0x00000000000000000000000000000000
+GPR[54] = 0x00000000000000000000000000000000
+GPR[55] = 0x00000000000000000000000000000000
+GPR[56] = 0x00000000000000000000000000000000
+GPR[57] = 0x00000000000000000000000000000000
+GPR[58] = 0x00000000000000000000000000000000
+GPR[59] = 0x00000000000000000000000000000000
+GPR[60] = 0x00000000000000000000000000000000
+GPR[61] = 0x00000000000000000000000000000000
+GPR[62] = 0x00000000000000000000000000000000
+GPR[63] = 0x00000000000000000000000000000000
+GPR[64] = 0x00000000000000000000000000000000
+GPR[65] = 0x00000000000000000000000000000000
+GPR[66] = 0x00000000000000000000000000000000
+GPR[67] = 0x00000000000000000000000000000000
+GPR[68] = 0x00000000000000000000000000000000
+GPR[69] = 0x00000000000000000000000000000000
+GPR[70] = 0x00000000000000000000000000000000
+GPR[71] = 0x00000000000000000000000000000000
+GPR[72] = 0x00000000000000000000000000000000
+GPR[73] = 0x00000000000000000000000000000000
+GPR[74] = 0x00000000000000000000000000000000
+GPR[75] = 0x00000000000000000000000000000000
+GPR[76] = 0x00000000000000000000000000000000
+GPR[77] = 0x00000000000000000000000000000000
+GPR[78] = 0x00000000000000000000000000000000
+GPR[79] = 0x00000000000000000000000000000000
+GPR[80] = 0x00000000000000000000000000000000
+GPR[81] = 0x00000000000000000000000000000000
+GPR[82] = 0x00000000000000000000000000000000
+GPR[83] = 0x00000000000000000000000000000000
+GPR[84] = 0x00000000000000000000000000000000
+GPR[85] = 0x00000000000000000000000000000000
+GPR[86] = 0x00000000000000000000000000000000
+GPR[87] = 0x00000000000000000000000000000000
+GPR[88] = 0x00000000000000000000000000000000
+GPR[89] = 0x00000000000000000000000000000000
+GPR[90] = 0x00000000000000000000000000000000
+GPR[91] = 0x00000000000000000000000000000000
+GPR[92] = 0x00000000000000000000000000000000
+GPR[93] = 0x00000000000000000000000000000000
+GPR[94] = 0x00000000000000000000000000000000
+GPR[95] = 0x00000000000000000000000000000000
+GPR[96] = 0x00000000000000000000000000000000
+GPR[97] = 0x00000000000000000000000000000000
+GPR[98] = 0x00000000000000000000000000000000
+GPR[99] = 0x00000000000000000000000000000000
+GPR[100] = 0x00000000000000000000000000000000
+GPR[101] = 0x00000000000000000000000000000000
+GPR[102] = 0x00000000000000000000000000000000
+GPR[103] = 0x00000000000000000000000000000000
+GPR[104] = 0x00000000000000000000000000000000
+GPR[105] = 0x00000000000000000000000000000000
+GPR[106] = 0x00000000000000000000000000000000
+GPR[107] = 0x00000000000000000000000000000000
+GPR[108] = 0x00000000000000000000000000000000
+GPR[109] = 0x00000000000000000000000000000000
+GPR[110] = 0x00000000000000000000000000000000
+GPR[111] = 0x00000000000000000000000000000000
+GPR[112] = 0x00000000000000000000000000000000
+GPR[113] = 0x00000000000000000000000000000000
+GPR[114] = 0x00000000000000000000000000000000
+GPR[115] = 0x00000000000000000000000000000000
+GPR[116] = 0x00000000000000000000000000000000
+GPR[117] = 0x00000000000000000000000000000000
+GPR[118] = 0x00000000000000000000000000000000
+GPR[119] = 0x00000000000000000000000000000000
+GPR[120] = 0x00000000000000000000000000000000
+GPR[121] = 0x00000000000000000000000000000000
+GPR[122] = 0x00000000000000000000000000000000
+GPR[123] = 0x00000000000000000000000000000000
+GPR[124] = 0x00000000000000000000000000000000
+GPR[125] = 0x00000000000000000000000000000000
+GPR[126] = 0x00000000000000000000000000000000
+GPR[127] = 0x00000000000000000000000000000000
+
+G: W {SPU[0x21] Thread (CellSpursKernel1)[0x00000818]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
+G: W {SPU[0x24] Thread (CellSpursKernel4)[0x00000818]} Registers:
+=========
+GPR[0] = 0x00000000000000000000000000000000
+GPR[1] = 0x0003fff0000000000000000000000000
+GPR[2] = 0x00000000000000000000000000000000
+GPR[3] = 0x00000004000000000000000000000000
+GPR[4] = 0x000000002004b2800000000000000000
+GPR[5] = 0x00000000200013e00000000000000000
+GPR[6] = 0x00000000d000f7800000000000000000
+GPR[7] = 0x00000000000000000000000000000000
+GPR[8] = 0x00000000000000000000000000000000
+GPR[9] = 0x00000000000000000000000000000000
+GPR[10] = 0x00000000000000000000000000000000
+GPR[11] = 0x00000000000000000000000000000000
+GPR[12] = 0x00000000000000000000000000000000
+GPR[13] = 0x00000000000000000000000000000000
+GPR[14] = 0x00000000000000000000000000000000
+GPR[15] = 0x00000000000000000000000000000000
+GPR[16] = 0x00000000000000000000000000000000
+GPR[17] = 0x00000000000000000000000000000000
+GPR[18] = 0x00000000000000000000000000000000
+GPR[19] = 0x00000000000000000000000000000000
+GPR[20] = 0x00000000000000000000000000000000
+GPR[21] = 0x00000000000000000000000000000000
+GPR[22] = 0x00000000000000000000000000000000
+GPR[23] = 0x00000000000000000000000000000000
+GPR[24] = 0x00000000000000000000000000000000
+GPR[25] = 0x00000000000000000000000000000000
+GPR[26] = 0x00000000000000000000000000000000
+GPR[27] = 0x00000000000000000000000000000000
+GPR[28] = 0x00000000000000000000000000000000
+GPR[29] = 0x00000000000000000000000000000000
+GPR[30] = 0x00000000000000000000000000000000
+GPR[31] = 0x00000000000000000000000000000000
+GPR[32] = 0x00000000000000000000000000000000
+GPR[33] = 0x00000000000000000000000000000000
+GPR[34] = 0x00000000000000000000000000000000
+GPR[35] = 0x00000000000000000000000000000000
+GPR[36] = 0x00000000000000000000000000000000
+GPR[37] = 0x00000000000000000000000000000000
+GPR[38] = 0x00000000000000000000000000000000
+GPR[39] = 0x00000000000000000000000000000000
+GPR[40] = 0x00000000000000000000000000000000
+GPR[41] = 0x00000000000000000000000000000000
+GPR[42] = 0x00000000000000000000000000000000
+GPR[43] = 0x00000000000000000000000000000000
+GPR[44] = 0x00000000000000000000000000000000
+GPR[45] = 0x00000000000000000000000000000000
+GPR[46] = 0x00000000000000000000000000000000
+GPR[47] = 0x00000000000000000000000000000000
+GPR[48] = 0x00000000000000000000000000000000
+GPR[49] = 0x00000000000000000000000000000000
+GPR[50] = 0x00000000000000000000000000000000
+GPR[51] = 0x00000000000000000000000000000000
+GPR[52] = 0x00000000000000000000000000000000
+GPR[53] = 0x00000000000000000000000000000000
+GPR[54] = 0x00000000000000000000000000000000
+GPR[55] = 0x00000000000000000000000000000000
+GPR[56] = 0x00000000000000000000000000000000
+GPR[57] = 0x00000000000000000000000000000000
+GPR[58] = 0x00000000000000000000000000000000
+GPR[59] = 0x00000000000000000000000000000000
+GPR[60] = 0x00000000000000000000000000000000
+GPR[61] = 0x00000000000000000000000000000000
+GPR[62] = 0x00000000000000000000000000000000
+GPR[63] = 0x00000000000000000000000000000000
+GPR[64] = 0x00000000000000000000000000000000
+GPR[65] = 0x00000000000000000000000000000000
+GPR[66] = 0x00000000000000000000000000000000
+GPR[67] = 0x00000000000000000000000000000000
+GPR[68] = 0x00000000000000000000000000000000
+GPR[69] = 0x00000000000000000000000000000000
+GPR[70] = 0x00000000000000000000000000000000
+GPR[71] = 0x00000000000000000000000000000000
+GPR[72] = 0x00000000000000000000000000000000
+GPR[73] = 0x00000000000000000000000000000000
+GPR[74] = 0x00000000000000000000000000000000
+GPR[75] = 0x00000000000000000000000000000000
+GPR[76] = 0x00000000000000000000000000000000
+GPR[77] = 0x00000000000000000000000000000000
+GPR[78] = 0x00000000000000000000000000000000
+GPR[79] = 0x00000000000000000000000000000000
+GPR[80] = 0x00000000000000000000000000000000
+GPR[81] = 0x00000000000000000000000000000000
+GPR[82] = 0x00000000000000000000000000000000
+GPR[83] = 0x00000000000000000000000000000000
+GPR[84] = 0x00000000000000000000000000000000
+GPR[85] = 0x00000000000000000000000000000000
+GPR[86] = 0x00000000000000000000000000000000
+GPR[87] = 0x00000000000000000000000000000000
+GPR[88] = 0x00000000000000000000000000000000
+GPR[89] = 0x00000000000000000000000000000000
+GPR[90] = 0x00000000000000000000000000000000
+GPR[91] = 0x00000000000000000000000000000000
+GPR[92] = 0x00000000000000000000000000000000
+GPR[93] = 0x00000000000000000000000000000000
+GPR[94] = 0x00000000000000000000000000000000
+GPR[95] = 0x00000000000000000000000000000000
+GPR[96] = 0x00000000000000000000000000000000
+GPR[97] = 0x00000000000000000000000000000000
+GPR[98] = 0x00000000000000000000000000000000
+GPR[99] = 0x00000000000000000000000000000000
+GPR[100] = 0x00000000000000000000000000000000
+GPR[101] = 0x00000000000000000000000000000000
+GPR[102] = 0x00000000000000000000000000000000
+GPR[103] = 0x00000000000000000000000000000000
+GPR[104] = 0x00000000000000000000000000000000
+GPR[105] = 0x00000000000000000000000000000000
+GPR[106] = 0x00000000000000000000000000000000
+GPR[107] = 0x00000000000000000000000000000000
+GPR[108] = 0x00000000000000000000000000000000
+GPR[109] = 0x00000000000000000000000000000000
+GPR[110] = 0x00000000000000000000000000000000
+GPR[111] = 0x00000000000000000000000000000000
+GPR[112] = 0x00000000000000000000000000000000
+GPR[113] = 0x00000000000000000000000000000000
+GPR[114] = 0x00000000000000000000000000000000
+GPR[115] = 0x00000000000000000000000000000000
+GPR[116] = 0x00000000000000000000000000000000
+GPR[117] = 0x00000000000000000000000000000000
+GPR[118] = 0x00000000000000000000000000000000
+GPR[119] = 0x00000000000000000000000000000000
+GPR[120] = 0x00000000000000000000000000000000
+GPR[121] = 0x00000000000000000000000000000000
+GPR[122] = 0x00000000000000000000000000000000
+GPR[123] = 0x00000000000000000000000000000000
+GPR[124] = 0x00000000000000000000000000000000
+GPR[125] = 0x00000000000000000000000000000000
+GPR[126] = 0x00000000000000000000000000000000
+GPR[127] = 0x00000000000000000000000000000000
+
+G: W {SPU[0x20] Thread (CellSpursKernel0)[0x00000818]} Registers:
+=========
+GPR[0] = 0x00000000000000000000000000000000
+GPR[1] = 0x0003fff0000000000000000000000000
+GPR[2] = 0x00000000000000000000000000000000
+GPR[3] = 0x00000000000000000000000000000000
+GPR[4] = 0x000000002004b2800000000000000000
+GPR[5] = 0x00000000200013e00000000000000000
+GPR[6] = 0x00000000d000f7800000000000000000
+GPR[7] = 0x00000000000000000000000000000000
+GPR[8] = 0x00000000000000000000000000000000
+GPR[9] = 0x00000000000000000000000000000000
+GPR[10] = 0x00000000000000000000000000000000
+GPR[11] = 0x00000000000000000000000000000000
+GPR[12] = 0x00000000000000000000000000000000
+GPR[13] = 0x00000000000000000000000000000000
+GPR[14] = 0x00000000000000000000000000000000
+GPR[15] = 0x00000000000000000000000000000000
+GPR[16] = 0x00000000000000000000000000000000
+GPR[17] = 0x00000000000000000000000000000000
+GPR[18] = 0x00000000000000000000000000000000
+GPR[19] = 0x00000000000000000000000000000000
+GPR[20] = 0x00000000000000000000000000000000
+GPR[21] = 0x00000000000000000000000000000000
+GPR[22] = 0x00000000000000000000000000000000
+GPR[23] = 0x00000000000000000000000000000000
+GPR[24] = 0x00000000000000000000000000000000
+GPR[25] = 0x00000000000000000000000000000000
+GPR[26] = 0x00000000000000000000000000000000
+GPR[27] = 0x00000000000000000000000000000000
+GPR[28] = 0x00000000000000000000000000000000
+GPR[29] = 0x00000000000000000000000000000000
+GPR[30] = 0x00000000000000000000000000000000
+GPR[31] = 0x00000000000000000000000000000000
+GPR[32] = 0x00000000000000000000000000000000
+GPR[33] = 0x00000000000000000000000000000000
+GPR[34] = 0x00000000000000000000000000000000
+GPR[35] = 0x00000000000000000000000000000000
+GPR[36] = 0x00000000000000000000000000000000
+GPR[37] = 0x00000000000000000000000000000000
+GPR[38] = 0x00000000000000000000000000000000
+GPR[39] = 0x00000000000000000000000000000000
+GPR[40] = 0x00000000000000000000000000000000
+GPR[41] = 0x00000000000000000000000000000000
+GPR[42] = 0x00000000000000000000000000000000
+GPR[43] = 0x00000000000000000000000000000000
+GPR[44] = 0x00000000000000000000000000000000
+GPR[45] = 0x00000000000000000000000000000000
+GPR[46] = 0x00000000000000000000000000000000
+GPR[47] = 0x00000000000000000000000000000000
+GPR[48] = 0x00000000000000000000000000000000
+GPR[49] = 0x00000000000000000000000000000000
+GPR[50] = 0x00000000000000000000000000000000
+GPR[51] = 0x00000000000000000000000000000000
+GPR[52] = 0x00000000000000000000000000000000
+GPR[53] = 0x00000000000000000000000000000000
+GPR[54] = 0x00000000000000000000000000000000
+GPR[55] = 0x00000000000000000000000000000000
+GPR[56] = 0x00000000000000000000000000000000
+GPR[57] = 0x00000000000000000000000000000000
+GPR[58] = 0x00000000000000000000000000000000
+GPR[59] = 0x00000000000000000000000000000000
+GPR[60] = 0x00000000000000000000000000000000
+GPR[61] = 0x00000000000000000000000000000000
+GPR[62] = 0x00000000000000000000000000000000
+GPR[63] = 0x00000000000000000000000000000000
+GPR[64] = 0x00000000000000000000000000000000
+GPR[65] = 0x00000000000000000000000000000000
+GPR[66] = 0x00000000000000000000000000000000
+GPR[67] = 0x00000000000000000000000000000000
+GPR[68] = 0x00000000000000000000000000000000
+GPR[69] = 0x00000000000000000000000000000000
+GPR[70] = 0x00000000000000000000000000000000
+GPR[71] = 0x00000000000000000000000000000000
+GPR[72] = 0x00000000000000000000000000000000
+GPR[73] = 0x00000000000000000000000000000000
+GPR[74] = 0x00000000000000000000000000000000
+GPR[75] = 0x00000000000000000000000000000000
+GPR[76] = 0x00000000000000000000000000000000
+GPR[77] = 0x00000000000000000000000000000000
+GPR[78] = 0x00000000000000000000000000000000
+GPR[79] = 0x00000000000000000000000000000000
+GPR[80] = 0x00000000000000000000000000000000
+GPR[81] = 0x00000000000000000000000000000000
+GPR[82] = 0x00000000000000000000000000000000
+GPR[83] = 0x00000000000000000000000000000000
+GPR[84] = 0x00000000000000000000000000000000
+GPR[85] = 0x00000000000000000000000000000000
+GPR[86] = 0x00000000000000000000000000000000
+GPR[87] = 0x00000000000000000000000000000000
+GPR[88] = 0x00000000000000000000000000000000
+GPR[89] = 0x00000000000000000000000000000000
+GPR[90] = 0x00000000000000000000000000000000
+GPR[91] = 0x00000000000000000000000000000000
+GPR[92] = 0x00000000000000000000000000000000
+GPR[93] = 0x00000000000000000000000000000000
+GPR[94] = 0x00000000000000000000000000000000
+GPR[95] = 0x00000000000000000000000000000000
+GPR[96] = 0x00000000000000000000000000000000
+GPR[97] = 0x00000000000000000000000000000000
+GPR[98] = 0x00000000000000000000000000000000
+GPR[99] = 0x00000000000000000000000000000000
+GPR[100] = 0x00000000000000000000000000000000
+GPR[101] = 0x00000000000000000000000000000000
+GPR[102] = 0x00000000000000000000000000000000
+GPR[103] = 0x00000000000000000000000000000000
+GPR[104] = 0x00000000000000000000000000000000
+GPR[105] = 0x00000000000000000000000000000000
+GPR[106] = 0x00000000000000000000000000000000
+GPR[107] = 0x00000000000000000000000000000000
+GPR[108] = 0x00000000000000000000000000000000
+GPR[109] = 0x00000000000000000000000000000000
+GPR[110] = 0x00000000000000000000000000000000
+GPR[111] = 0x00000000000000000000000000000000
+GPR[112] = 0x00000000000000000000000000000000
+GPR[113] = 0x00000000000000000000000000000000
+GPR[114] = 0x00000000000000000000000000000000
+GPR[115] = 0x00000000000000000000000000000000
+GPR[116] = 0x00000000000000000000000000000000
+GPR[117] = 0x00000000000000000000000000000000
+GPR[118] = 0x00000000000000000000000000000000
+GPR[119] = 0x00000000000000000000000000000000
+GPR[120] = 0x00000000000000000000000000000000
+GPR[121] = 0x00000000000000000000000000000000
+GPR[122] = 0x00000000000000000000000000000000
+GPR[123] = 0x00000000000000000000000000000000
+GPR[124] = 0x00000000000000000000000000000000
+GPR[125] = 0x00000000000000000000000000000000
+GPR[126] = 0x00000000000000000000000000000000
+GPR[127] = 0x00000000000000000000000000000000
+
+G: W {SPU[0x22] Thread (CellSpursKernel2)[0x00000818]} Registers:
+=========
+GPR[0] = 0x00000000000000000000000000000000
+GPR[1] = 0x0003fff0000000000000000000000000
+GPR[2] = 0x00000000000000000000000000000000
+GPR[3] = 0x00000002000000000000000000000000
+GPR[4] = 0x000000002004b2800000000000000000
+GPR[5] = 0x00000000200013e00000000000000000
+GPR[6] = 0x00000000d000f7800000000000000000
+GPR[7] = 0x00000000000000000000000000000000
+GPR[8] = 0x00000000000000000000000000000000
+GPR[9] = 0x00000000000000000000000000000000
+GPR[10] = 0x00000000000000000000000000000000
+GPR[11] = 0x00000000000000000000000000000000
+GPR[12] = 0x00000000000000000000000000000000
+GPR[13] = 0x00000000000000000000000000000000
+GPR[14] = 0x00000000000000000000000000000000
+GPR[15] = 0x00000000000000000000000000000000
+GPR[16] = 0x00000000000000000000000000000000
+GPR[17] = 0x00000000000000000000000000000000
+GPR[18] = 0x00000000000000000000000000000000
+GPR[19] = 0x00000000000000000000000000000000
+GPR[20] = 0x00000000000000000000000000000000
+GPR[21] = 0x00000000000000000000000000000000
+GPR[22] = 0x00000000000000000000000000000000
+GPR[23] = 0x00000000000000000000000000000000
+GPR[24] = 0x00000000000000000000000000000000
+GPR[25] = 0x00000000000000000000000000000000
+GPR[26] = 0x00000000000000000000000000000000
+GPR[27] = 0x00000000000000000000000000000000
+GPR[28] = 0x00000000000000000000000000000000
+GPR[29] = 0x00000000000000000000000000000000
+GPR[30] = 0x00000000000000000000000000000000
+GPR[31] = 0x00000000000000000000000000000000
+GPR[32] = 0x00000000000000000000000000000000
+GPR[33] = 0x00000000000000000000000000000000
+GPR[34] = 0x00000000000000000000000000000000
+GPR[35] = 0x00000000000000000000000000000000
+GPR[36] = 0x00000000000000000000000000000000
+GPR[37] = 0x00000000000000000000000000000000
+GPR[38] = 0x00000000000000000000000000000000
+GPR[39] = 0x00000000000000000000000000000000
+GPR[40] = 0x00000000000000000000000000000000
+GPR[41] = 0x00000000000000000000000000000000
+GPR[42] = 0x00000000000000000000000000000000
+GPR[43] = 0x00000000000000000000000000000000
+GPR[44] = 0x00000000000000000000000000000000
+GPR[45] = 0x00000000000000000000000000000000
+GPR[46] = 0x00000000000000000000000000000000
+GPR[47] = 0x00000000000000000000000000000000
+GPR[48] = 0x00000000000000000000000000000000
+GPR[49] = 0x00000000000000000000000000000000
+GPR[50] = 0x00000000000000000000000000000000
+GPR[51] = 0x00000000000000000000000000000000
+GPR[52] = 0x00000000000000000000000000000000
+GPR[53] = 0x00000000000000000000000000000000
+GPR[54] = 0x00000000000000000000000000000000
+GPR[55] = 0x00000000000000000000000000000000
+GPR[56] = 0x00000000000000000000000000000000
+GPR[57] = 0x00000000000000000000000000000000
+GPR[58] = 0x00000000000000000000000000000000
+GPR[59] = 0x00000000000000000000000000000000
+GPR[60] = 0x00000000000000000000000000000000
+GPR[61] = 0x00000000000000000000000000000000
+GPR[62] = 0x00000000000000000000000000000000
+GPR[63] = 0x00000000000000000000000000000000
+GPR[64] = 0x00000000000000000000000000000000
+GPR[65] = 0x00000000000000000000000000000000
+GPR[66] = 0x00000000000000000000000000000000
+GPR[67] = 0x00000000000000000000000000000000
+GPR[68] = 0x00000000000000000000000000000000
+GPR[69] = 0x00000000000000000000000000000000
+GPR[70] = 0x00000000000000000000000000000000
+GPR[71] = 0x00000000000000000000000000000000
+GPR[72] = 0x00000000000000000000000000000000
+GPR[73] = 0x00000000000000000000000000000000
+GPR[74] = 0x00000000000000000000000000000000
+GPR[75] = 0x00000000000000000000000000000000
+GPR[76] = 0x00000000000000000000000000000000
+GPR[77] = 0x00000000000000000000000000000000
+GPR[78] = 0x00000000000000000000000000000000
+GPR[79] = 0x00000000000000000000000000000000
+GPR[80] = 0x00000000000000000000000000000000
+GPR[81] = 0x00000000000000000000000000000000
+GPR[82] = 0x00000000000000000000000000000000
+GPR[83] = 0x00000000000000000000000000000000
+GPR[84] = 0x00000000000000000000000000000000
+GPR[85] = 0x00000000000000000000000000000000
+GPR[86] = 0x00000000000000000000000000000000
+GPR[87] = 0x00000000000000000000000000000000
+GPR[88] = 0x00000000000000000000000000000000
+GPR[89] = 0x00000000000000000000000000000000
+GPR[90] = 0x00000000000000000000000000000000
+GPR[91] = 0x00000000000000000000000000000000
+GPR[92] = 0x00000000000000000000000000000000
+GPR[93] = 0x00000000000000000000000000000000
+GPR[94] = 0x00000000000000000000000000000000
+GPR[95] = 0x00000000000000000000000000000000
+GPR[96] = 0x00000000000000000000000000000000
+GPR[97] = 0x00000000000000000000000000000000
+GPR[98] = 0x00000000000000000000000000000000
+GPR[99] = 0x00000000000000000000000000000000
+GPR[100] = 0x00000000000000000000000000000000
+GPR[101] = 0x00000000000000000000000000000000
+GPR[102] = 0x00000000000000000000000000000000
+GPR[103] = 0x00000000000000000000000000000000
+GPR[104] = 0x00000000000000000000000000000000
+GPR[105] = 0x00000000000000000000000000000000
+GPR[106] = 0x00000000000000000000000000000000
+GPR[107] = 0x00000000000000000000000000000000
+GPR[108] = 0x00000000000000000000000000000000
+GPR[109] = 0x00000000000000000000000000000000
+GPR[110] = 0x00000000000000000000000000000000
+GPR[111] = 0x00000000000000000000000000000000
+GPR[112] = 0x00000000000000000000000000000000
+GPR[113] = 0x00000000000000000000000000000000
+GPR[114] = 0x00000000000000000000000000000000
+GPR[115] = 0x00000000000000000000000000000000
+GPR[116] = 0x00000000000000000000000000000000
+GPR[117] = 0x00000000000000000000000000000000
+GPR[118] = 0x00000000000000000000000000000000
+GPR[119] = 0x00000000000000000000000000000000
+GPR[120] = 0x00000000000000000000000000000000
+GPR[121] = 0x00000000000000000000000000000000
+GPR[122] = 0x00000000000000000000000000000000
+GPR[123] = 0x00000000000000000000000000000000
+GPR[124] = 0x00000000000000000000000000000000
+GPR[125] = 0x00000000000000000000000000000000
+GPR[126] = 0x00000000000000000000000000000000
+GPR[127] = 0x00000000000000000000000000000000
+
+G: W {SPU[0x24] Thread (CellSpursKernel4)[0x00000818]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
+G: W {SPU[0x20] Thread (CellSpursKernel0)[0x00000818]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
+G: W {SPU[0x22] Thread (CellSpursKernel2)[0x00000818]} Exception: Aborted (emulation stopped)
+(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
+G: ! All threads stopped...
