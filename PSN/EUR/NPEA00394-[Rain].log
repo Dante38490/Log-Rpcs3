@@ -1,8 +1,10 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! RPCS3 0.0.0.5 v0.0.0.5-2505-g91cfa6b
+G: ! 
 G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00394/USRDIR/BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00394/dev_bdvd.path', 0x1) failed: error 0x2
-LDR: !  
+LDR: ! 
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
@@ -10,10 +12,24 @@ LDR: ! /host_root/ ->
 LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
-LDR: !  
+LDR: ! 
+LDR: ! Settings:
+LDR: ! CPU: PPU Interpreter 2
+LDR: ! SPU: SPU Recompiler (ASMJIT)
+LDR: ! Renderer: DirectX 12
+LDR: ! D3D Adapter: Default
+LDR: ! Resolution: 1280x720
+LDR: ! Write Depth Buffer: No
+LDR: ! Write Color Buffers: No
+LDR: ! Read Color Buffer: No
+LDR: ! Audio Out: XAudio2
+LDR: ! Log Everything: No
+LDR: ! RSX Logging: No
+LDR: ! 
 LDR: ! Title: rain
 LDR: ! Serial: NPEA00394
 LDR: ! Elf path: /dev_hdd0/game/NPEA00394/USRDIR/BOOT.BIN
+LDR: ! 
 LDR: ! loader::init() failed: Broken file
 LDR: ! *** sdk version: 0x430001
 LDR: ! *** primary prio: 2000
@@ -168,7 +184,6 @@ LDR: ! Imported function 'cellAudioGetPortBlockTag' in 'cellAudio' module (0x960
 LDR: ! Imported function 'cellAudioRemoveNotifyEventQueue' in 'cellAudio' module (0x960148)
 LDR: ! Imported function 'cellOvisGetOverlayTableSize' in 'cellOvis' module (0x960180)
 LDR: ! Imported function 'cellOvisInitializeOverlayTable' in 'cellOvis' module (0x9601b8)
-LDR: E Unknown module 'libgem'
 LDR: ! Imported function 'cellGemUpdateStart' in 'libgem' module (0x9601f0)
 LDR: ! Imported function 'cellGemInit' in 'libgem' module (0x960228)
 LDR: ! Imported function 'cellGemGetTrackerHue' in 'libgem' module (0x960260)
@@ -258,12 +273,11 @@ LDR: ! Imported function 'cellSailSoundAdapterGetFormat' in 'cellSail' module (0
 LDR: ! Imported function 'cellSailPlayerSetRepeatMode' in 'cellSail' module (0x9614c0)
 LDR: ! Imported function 'cellSailPlayerDestroyDescriptor' in 'cellSail' module (0x9614f8)
 LDR: ! Imported function 'cellSailGraphicsAdapterGetFormat' in 'cellSail' module (0x961530)
-LDR: E Unknown module 'cellPngEnc'
-LDR: E Unknown function 'cellPngEncOpen' in 'cellPngEnc' module (0x961568)
-LDR: E Unknown function 'cellPngEncQueryAttr' in 'cellPngEnc' module (0x9615a0)
-LDR: E Unknown function 'cellPngEncGetStreamInfo' in 'cellPngEnc' module (0x9615d8)
-LDR: E Unknown function 'cellPngEncEncodePicture' in 'cellPngEnc' module (0x961610)
-LDR: E Unknown function 'cellPngEncWaitForOutput' in 'cellPngEnc' module (0x961648)
+LDR: ! Imported function 'cellPngEncOpen' in 'cellPngEnc' module (0x961568)
+LDR: ! Imported function 'cellPngEncQueryAttr' in 'cellPngEnc' module (0x9615a0)
+LDR: ! Imported function 'cellPngEncGetStreamInfo' in 'cellPngEnc' module (0x9615d8)
+LDR: ! Imported function 'cellPngEncEncodePicture' in 'cellPngEnc' module (0x961610)
+LDR: ! Imported function 'cellPngEncWaitForOutput' in 'cellPngEnc' module (0x961648)
 LDR: ! Imported function 'cellFiberPpuRunFibers' in 'cellFiber' module (0x961680)
 LDR: ! Imported function 'cellFiberPpuCreateFiber' in 'cellFiber' module (0x9616b8)
 LDR: ! Imported function 'cellFiberPpuFinalizeScheduler' in 'cellFiber' module (0x9616f0)
@@ -299,7 +313,7 @@ LDR: ! Imported function 'sys_mmapper_map_memory' in 'sysPrxForUser' module (0x9
 LDR: ! Imported function '_sys_spu_printf_finalize' in 'sysPrxForUser' module (0x961f78)
 LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0x961fb0)
 LDR: ! Imported function 'sys_prx_unload_module' in 'sysPrxForUser' module (0x961fe8)
-HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0xd38000, user_size=0x2fc)
+MEM: ! Thread Local Storage initialized (g_tls_start=0xd38000, user_size=0x2fc)
 *** TLS segment addr: 0x00c5cb38
 *** TLS segment size: 0x00000008
 HLE: W {PPU[0x1] Thread (main_thread)[0x00961b18]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xc89e78, attr=*0xd000fce0)
@@ -310,7 +324,7 @@ HLE: E {PPU[0x1] Thread (main_thread)[0x00142480]} sys_mmapper: sys_mmapper_allo
 HLE: W {PPU[0x1] Thread (main_thread)[0x00961ed0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x10000000, flags=0x400, mem_id=*0xd000fc34)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00961f40]} sys_mmapper: sys_mmapper_map_memory(addr=0x30000000, mem_id=0x6, flags=0x40000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00961b88]} sys_mmapper: sys_mmapper_free_memory(mem_id=0x5)
-G: W {PPU[0x1] Thread (main_thread)[0x00762b00]} Registers:
+G: ! {PPU[0x1] Thread (main_thread)[0x00762b00]} Registers:
 =========
 GPR[0] = 0x3
 GPR[1] = 0xd000fb10
@@ -327,10 +341,10 @@ GPR[11] = 0x100000
 GPR[12] = 0x100000
 GPR[13] = 0xd3f030
 GPR[14] = 0x0
-GPR[15] = 0xc17000
-GPR[16] = 0xc16000
+GPR[15] = 0xc18000
+GPR[16] = 0xc17000
 GPR[17] = 0x0
-GPR[18] = 0xc15000
+GPR[18] = 0xc16000
 GPR[19] = 0x100000
 GPR[20] = 0x0
 GPR[21] = 0x0
@@ -411,117 +425,13 @@ VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 CR = 0x42000084
 LR = 0x7623cc
 CTR = 0x3
-XER = 0x20000000 [CA=1 | OV=0 | SO=8589934592]
+XER = 0x20000000 [CA=1 | OV=8589934592 | SO=0]
 FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
 G: E {PPU[0x1] Thread (main_thread)[0x00762b00]} Exception: Access violation writing location 0x30000010
-(in file ..\Utilities\Thread.cpp:1098, in function _se_translator)
+(in file ..\Utilities\Thread.cpp:1122, in function _se_translator)
 G: ! Stopping emulator...
 G: ! All threads signaled...
-G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Registers:
-=========
-GPR[0] = 0x0
-GPR[1] = 0xd001fe00
-GPR[2] = 0x0
-GPR[3] = 0x0
-GPR[4] = 0x0
-GPR[5] = 0x0
-GPR[6] = 0x0
-GPR[7] = 0x0
-GPR[8] = 0x0
-GPR[9] = 0x0
-GPR[10] = 0x0
-GPR[11] = 0x0
-GPR[12] = 0x0
-GPR[13] = 0xd3f35c
-GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
-GPR[20] = 0x0
-GPR[21] = 0x0
-GPR[22] = 0x0
-GPR[23] = 0x0
-GPR[24] = 0x0
-GPR[25] = 0x0
-GPR[26] = 0x0
-GPR[27] = 0x0
-GPR[28] = 0x0
-GPR[29] = 0x0
-GPR[30] = 0x0
-GPR[31] = 0x0
-FPR[0] = 0
-FPR[1] = 0
-FPR[2] = 0
-FPR[3] = 0
-FPR[4] = 0
-FPR[5] = 0
-FPR[6] = 0
-FPR[7] = 0
-FPR[8] = 0
-FPR[9] = 0
-FPR[10] = 0
-FPR[11] = 0
-FPR[12] = 0
-FPR[13] = 0
-FPR[14] = 0
-FPR[15] = 0
-FPR[16] = 0
-FPR[17] = 0
-FPR[18] = 0
-FPR[19] = 0
-FPR[20] = 0
-FPR[21] = 0
-FPR[22] = 0
-FPR[23] = 0
-FPR[24] = 0
-FPR[25] = 0
-FPR[26] = 0
-FPR[27] = 0
-FPR[28] = 0
-FPR[29] = 0
-FPR[30] = 0
-FPR[31] = 0
-VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[23] = 0x8000100079f23ab60000000000000000 [x: -5.73972e-42 y: 1.57216e+35 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x22000082
-LR = 0x0
-CTR = 0x0
-XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
-
-G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\Callback.cpp:58, in function CallbackManager::Init::<lambda_46ea869b6054320987a0d5fa0b32bb88>::operator ())
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
 G: ! All threads stopped...
+G: ! Objects cleared...

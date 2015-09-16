@@ -1,23 +1,41 @@
-HLE: ! path: /dev_hdd0/game/
-HLE: W No pause.bin found, Auto Pause will not work.
-HLE: W No pause.bin found, Auto Pause will not work.
+LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! RPCS3 0.0.0.5 v0.0.0.5-2505-g91cfa6b
+G: ! 
+G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00016/USRDIR/BOOT.BIN'...
-LDR: !  
+G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00016/dev_bdvd.path', 0x1) failed: error 0x2
+LDR: ! 
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
 LDR: ! /host_root/ -> 
 LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
-LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00016/../
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
-LDR: !  
+LDR: ! 
+LDR: ! Settings:
+LDR: ! CPU: PPU Interpreter 2
+LDR: ! SPU: SPU Recompiler (ASMJIT)
+LDR: ! Renderer: DirectX 12
+LDR: ! D3D Adapter: Default
+LDR: ! Resolution: 1280x720
+LDR: ! Write Depth Buffer: No
+LDR: ! Write Color Buffers: No
+LDR: ! Read Color Buffer: No
+LDR: ! Audio Out: XAudio2
+LDR: ! Log Everything: No
+LDR: ! RSX Logging: No
+LDR: ! 
 LDR: ! Title: Super Rub'a'Dub™
 LDR: ! Serial: NPEA00016
-LDR: !  
+LDR: ! Elf path: /dev_hdd0/game/NPEA00016/USRDIR/BOOT.BIN
+LDR: ! 
 LDR: ! loader::init() failed: Broken file
-MEM: ! Initializing memory: g_base_addr = 0x29b2a20000, g_priv_addr = 0x2ab2a20000
-MEM: ! Memory initialized.
+LDR: ! *** sdk version: 0x220002
+LDR: ! *** primary prio: 1001
+LDR: ! *** primary stacksize: 0x100000
+LDR: ! *** malloc pagesize: 0x100000
+LDR: ! *** ppc seg: 0x0
 LDR: ! Imported function 'cellSysmoduleUnloadModule' in 'cellSysmodule' module (0x29fe44)
 LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module (0x29fe64)
 LDR: ! Imported function 'cellSysmoduleInitialize' in 'cellSysmodule' module (0x29fe84)
@@ -48,7 +66,7 @@ LDR: ! Imported function 'cellFsRead' in 'sys_fs' module (0x2a0184)
 LDR: ! Imported function 'cellFsReaddir' in 'sys_fs' module (0x2a01a4)
 LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module (0x2a01c4)
 LDR: ! Imported function 'cellFsStat' in 'sys_fs' module (0x2a01e4)
-LDR: E Unimplemented function 'cellFsAioCancel' in 'sys_fs' module (0x2a0204)
+LDR: ! Imported function 'cellFsAioCancel' in 'sys_fs' module (0x2a0204)
 LDR: ! Imported function 'cellFsAioFinish' in 'sys_fs' module (0x2a0224)
 LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module (0x2a0244)
 LDR: ! Imported function 'cellFsMkdir' in 'sys_fs' module (0x2a0264)
@@ -170,18 +188,16 @@ LDR: ! Imported function 'cellNetCtlNetStartDialogLoadAsync' in 'cellNetCtl' mod
 LDR: ! Imported function 'cellNetCtlNetStartDialogUnloadAsync' in 'cellNetCtl' module (0x2a1064)
 LDR: ! Imported function 'cellNetCtlTerm' in 'cellNetCtl' module (0x2a1084)
 LDR: ! Imported function 'cellNetCtlInit' in 'cellNetCtl' module (0x2a10a4)
-LDR: W Unknown module 'cellHttp'
-LDR: E Unimplemented function 'cellHttpCreateTransaction' in 'cellHttp' module (0x2a10c4)
-LDR: E Unimplemented function 'cellHttpInit' in 'cellHttp' module (0x2a10e4)
-LDR: E Unimplemented function 'cellHttpDestroyTransaction' in 'cellHttp' module (0x2a1104)
-LDR: E Unimplemented function 'cellHttpResponseGetContentLength' in 'cellHttp' module (0x2a1124)
-LDR: E Unimplemented function 'cellHttpCreateClient' in 'cellHttp' module (0x2a1144)
-LDR: E Unimplemented function 'cellHttpRecvResponse' in 'cellHttp' module (0x2a1164)
-LDR: E Unimplemented function 'cellHttpDestroyClient' in 'cellHttp' module (0x2a1184)
-LDR: E Unimplemented function 'cellHttpSendRequest' in 'cellHttp' module (0x2a11a4)
-LDR: E Unimplemented function 'cellHttpEnd' in 'cellHttp' module (0x2a11c4)
-LDR: W Unknown module 'cellHttpUtil'
-LDR: E Unimplemented function 'cellHttpUtilParseUri' in 'cellHttpUtil' module (0x2a11e4)
+LDR: ! Imported function 'cellHttpCreateTransaction' in 'cellHttp' module (0x2a10c4)
+LDR: ! Imported function 'cellHttpInit' in 'cellHttp' module (0x2a10e4)
+LDR: ! Imported function 'cellHttpDestroyTransaction' in 'cellHttp' module (0x2a1104)
+LDR: ! Imported function 'cellHttpResponseGetContentLength' in 'cellHttp' module (0x2a1124)
+LDR: ! Imported function 'cellHttpCreateClient' in 'cellHttp' module (0x2a1144)
+LDR: ! Imported function 'cellHttpRecvResponse' in 'cellHttp' module (0x2a1164)
+LDR: ! Imported function 'cellHttpDestroyClient' in 'cellHttp' module (0x2a1184)
+LDR: ! Imported function 'cellHttpSendRequest' in 'cellHttp' module (0x2a11a4)
+LDR: ! Imported function 'cellHttpEnd' in 'cellHttp' module (0x2a11c4)
+LDR: ! Imported function 'cellHttpUtilParseUri' in 'cellHttpUtil' module (0x2a11e4)
 LDR: ! Imported function 'sys_net_initialize_network_ex' in 'sys_net' module (0x2a1204)
 LDR: ! Imported function 'sys_net_finalize_network' in 'sys_net' module (0x2a1224)
 LDR: ! Imported function 'cellPngDecCreate' in 'cellPngDec' module (0x2a1244)
@@ -207,122 +223,743 @@ LDR: ! Imported function 'sys_lwmutex_destroy' in 'sysPrxForUser' module (0x2a15
 LDR: ! Imported function 'sys_spu_image_close' in 'sysPrxForUser' module (0x2a1544)
 LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0x2a1564)
 LDR: ! Imported function 'sys_spu_image_import' in 'sysPrxForUser' module (0x2a1584)
-HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x47a000, user_size=0x110)
+MEM: ! Thread Local Storage initialized (g_tls_start=0x47a000, user_size=0x110)
 *** TLS segment addr: 0x00357360
 *** TLS segment size: 0x00000004
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x430c78, attr_addr=0x2f1248)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 3
-HLE: W {PPU[1] Thread (main_thread)[0x0023552c]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd00ffc04)
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x430a78, attr_addr=0x2f1248)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 4
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x430200, attr_addr=0x2f1248)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 5
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x430228, attr_addr=0x2f1248)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 6
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x430250, attr_addr=0x2f1248)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 7
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x430138, attr_addr=0x2f1248)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 8
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x430160, attr_addr=0x2f1248)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 9
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x430188, attr_addr=0x2f1248)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 10
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x4301b0, attr_addr=0x2f1248)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 11
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x4301d8, attr_addr=0x2f1248)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 12
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x430dc8, attr_addr=0x35c640)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lgcmtx] (attribute=0x12): sq_id = 13
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x430d48, attr_addr=0x35c640)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [_lgcmtx] (attribute=0x12): sq_id = 14
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x418598, attr_addr=0xd00ffb34)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 15
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x4185c8, attr_addr=0xd00ffb34)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 16
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x4185f8, attr_addr=0xd00ffb34)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 17
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x418628, attr_addr=0xd00ffb34)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 18
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x418658, attr_addr=0xd00ffb34)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 19
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x418688, attr_addr=0xd00ffb34)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 20
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x4186b8, attr_addr=0xd00ffb34)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 21
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x4186e8, attr_addr=0xd00ffb34)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 22
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x418718, attr_addr=0xd00ffb34)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 23
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x42aa90, attr_addr=0xd00ffac4)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 24
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x42aac0, attr_addr=0xd00ffac4)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 25
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x418518, attr_addr=0xd00ffb30)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 26
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x418560, attr_addr=0xd00ffb30)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 27
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x40ee00, attr_addr=0xd00ffac4)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 28
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x3bc728, attr_addr=0xd00ffab4)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 29
-HLE: W {PPU[1] Thread (main_thread)[0x0004518c]} sys_memory: sys_memory_container_create(cid_addr=0x3baad8, yield_size=0x3400000)
-HLE: W {PPU[1] Thread (main_thread)[0x0004518c]} sys_memory: *** memory_container created(addr=0x20200000): id = 30
-HLE: W {PPU[1] Thread (main_thread)[0x002a0384]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x430c78, attr=*0x2f1248)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0023552c]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd00ffc04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x430a78, attr=*0x2f1248)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x430200, attr=*0x2f1248)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x430228, attr=*0x2f1248)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x430250, attr=*0x2f1248)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x430138, attr=*0x2f1248)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x430160, attr=*0x2f1248)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x430188, attr=*0x2f1248)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x4301b0, attr=*0x2f1248)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x4301d8, attr=*0x2f1248)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x430dc8, attr=*0x35c640)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x430d48, attr=*0x35c640)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00233f84]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ff9e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x418598, attr=*0xd00ffb34)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x4185c8, attr=*0xd00ffb34)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x4185f8, attr=*0xd00ffb34)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x418628, attr=*0xd00ffb34)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x418658, attr=*0xd00ffb34)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x418688, attr=*0xd00ffb34)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x4186b8, attr=*0xd00ffb34)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x4186e8, attr=*0xd00ffb34)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00233f84]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ff9e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x418718, attr=*0xd00ffb34)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x42aa90, attr=*0xd00ffac4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x42aac0, attr=*0xd00ffac4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x418518, attr=*0xd00ffb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x418560, attr=*0xd00ffb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x40ee00, attr=*0xd00ffac4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x3bc728, attr=*0xd00ffab4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0004518c]} sys_memory: sys_memory_container_create(cid=*0x3baad8, size=0x3400000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0384]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd00ffbd0)
 TTY: !! system language: 2 !!\n
-HLE: W {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x397080, attr_addr=0xd00ffb60)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a1444]} sys_lwmutex: *** lwmutex created [] (attribute=0x12): sq_id = 31
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe84]} cellSysmodule: cellSysmoduleInitialize()
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x000a: CELL_SYSMODULE_SPURS)
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0010: CELL_SYSMODULE_GCM_SYS)
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0009: CELL_SYSMODULE_RTC)
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0011: CELL_SYSMODULE_AUDIO)
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0017: CELL_SYSMODULE_IO)
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0000: CELL_SYSMODULE_NET)
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x001e: CELL_SYSMODULE_L10N)
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0001: CELL_SYSMODULE_HTTP)
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0002: CELL_SYSMODULE_HTTP_UTIL)
-HLE: W {PPU[1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0018: CELL_SYSMODULE_PNGDEC)
-HLE: W {PPU[1] Thread (main_thread)[0x002a02a4]} sys_fs: cellFsAioInit(mount_point_addr=0x20125b10)
-HLE: W {PPU[1] Thread (main_thread)[0x002a02a4]} sys_fs: cellFsAioInit(mount_point='/app_home/Game/PS3_GAME/USRDIR')
-HLE: W {PPU[1] Thread (main_thread)[0x00046060]} sys_spu: sys_spu_initialize(max_usable_spu=6, max_raw_spu=0)
-HLE: W {PPU[1] Thread (main_thread)[0x002a0404]} cellSysutil: cellSysutilRegisterCallback(slot=0, func_addr=0x33ca98, userdata=0x3baa88)
-HLE: W {PPU[1] Thread (main_thread)[0x002a0804]} cellSpurs: _cellSpursAttributeInitialize(attr_addr=0xd00ffa10, revision=2, sdkVersion=0x220002, nSpus=5, spuPriority=250, ppuPriority=1000, exitIfNoWork=1)
-HLE: W {PPU[1] Thread (main_thread)[0x002a06c4]} cellSpurs: cellSpursAttributeSetNamePrefix(attr_addr=0xd00ffa10, prefix_addr=0x2f3188, size=7)
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} cellSpurs: cellSpursInitializeWithAttribute(spurs_addr=0x20137700, attr_addr=0xd00ffa10)
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x20137700, flags=0x2)
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 32
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 33
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 34
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 35
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 36
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 37
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 38
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 39
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 40
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 41
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 42
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 43
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 44
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 45
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 46
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuWkl] (protocol=0x2): id = 47
-HLE: W {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_addr=0x23600000, attr_addr=0x23601000, initial_count=0, max_count=1)
-HLE: ! {PPU[1] Thread (main_thread)[0x002a0864]} sys_semaphore: *** semaphore created [_spuPrv] (protocol=0x2): id = 48
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x397080, attr=*0xd00ffb60)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe84]} cellSysmodule: cellSysmoduleInitialize()
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x000a: CELL_SYSMODULE_SPURS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0010: CELL_SYSMODULE_GCM_SYS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0009: CELL_SYSMODULE_RTC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0011: CELL_SYSMODULE_AUDIO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0017: CELL_SYSMODULE_IO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0000: CELL_SYSMODULE_NET)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x001e: CELL_SYSMODULE_L10N)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0001: CELL_SYSMODULE_HTTP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0002: CELL_SYSMODULE_HTTP_UTIL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fe64]} cellSysmodule: cellSysmoduleLoadModule(id=0x0018: CELL_SYSMODULE_PNGDEC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a02a4]} cellFs: cellFsAioInit(mount_point=*0x20125b10)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a02a4]} cellFs: *** mount_point = '/app_home/Game/PS3_GAME/USRDIR'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00046060]} sys_spu: sys_spu_initialize(max_usable_spu=6, max_raw_spu=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0404]} cellSysutil: cellSysutilRegisterCallback(slot=0, func=*0x33ca98, userdata=*0x3baa88)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0804]} cellSpurs: _cellSpursAttributeInitialize(attr=*0xd00ffa10, revision=2, sdkVersion=0x220002, nSpus=5, spuPriority=250, ppuPriority=1000, exitIfNoWork=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a06c4]} cellSpurs: cellSpursAttributeSetNamePrefix(attr=*0xd00ffa10, prefix=*0x2f3188, size=7)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x20137700, attr=*0xd00ffa10)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x20137700, flags=0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_semaphore: sys_semaphore_create(sem_id=*0xd00ff888, attr=*0xd00ff868, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: sys_spu_thread_group_create(id=*0xd00ff848, num=5, prio=250, attr=*0xd00ff7b8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: sys_spu_thread_initialize(thread=*0xd00ff790, group=0x31, spu_num=0, img=*0x20138470, attr=*0xd00ff780, arg=*0xd00ff798)
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: sys_spu_thread_initialize(thread=*0xd00ff790, group=0x31, spu_num=1, img=*0x20138470, attr=*0xd00ff780, arg=*0xd00ff798)
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: sys_spu_thread_initialize(thread=*0xd00ff790, group=0x31, spu_num=2, img=*0x20138470, attr=*0xd00ff780, arg=*0xd00ff798)
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: sys_spu_thread_initialize(thread=*0xd00ff790, group=0x31, spu_num=3, img=*0x20138470, attr=*0xd00ff780, arg=*0xd00ff798)
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: sys_spu_thread_initialize(thread=*0xd00ff790, group=0x31, spu_num=4, img=*0x20138470, attr=*0xd00ff780, arg=*0xd00ff798)
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x201384b0, attr=*0xd00ff850)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sysPrxForUser: sys_lwcond_create(lwcond=*0x201384c8, lwmutex=*0x201384b0, attr=*0xd00ff860)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_event: sys_event_queue_create(equeue_id=*0x2013845c, attr=*0xd00ff6e8, event_queue_key=0x0, size=42)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x31, eq=0x39, req=0xffffffffffff0000, spup=*0x201377c9)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_event: sys_event_port_create(eport_id=*0x20138460, port_type=1, name=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_event: sys_event_port_connect_local(eport_id=0x3a, equeue_id=0x39)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x20137700, flag=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} sys_spu: sys_spu_thread_group_connect_event(id=0x31, eq=0x39, et=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0864]} cellSpurs: cellSpursWakeUp(spurs=*0x20137700)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0011453c]} sys_event: sys_event_queue_create(equeue_id=*0x4183e0, attr=*0xd00ff854, event_queue_key=0x0, size=8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1404]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x4183d8, entry=0x346ad8, arg=0x0, prio=1000, stacksize=0x10000, flags=0x1, threadname=*0x301398)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1404]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x4183d8, param=*0xd00ff7d8, arg=0x0, unk=0x0, prio=1000, stacksize=0x10000, flags=0x1, threadname=*0x301398)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1404]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x3e)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001145c4]} sys_event: sys_event_port_create(eport_id=*0x4183d0, port_type=1, name=0xfee1dead)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001145dc]} sys_event: sys_event_port_connect_local(eport_id=0x3f, equeue_id=0x3d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0884]} cellSpurs: cellSpursAttachLv2EventQueue(spurs=*0x20137700, queue=0x3d, port=*0xd00ff850, isDynamic=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0884]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x31, eq=0x3d, req=0x2, spup=*0xd00ff850)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00233f84]} sys_memory: sys_memory_allocate(size=0x5f00000, flags=0x400, alloc_addr=*0xd00ff590)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a04e4]} cellGcmSys: _cellGcmInitBody(context=**0x42f750, cmdSize=0x400000, ioSize=0x5d00000, ioAddress=0x20200000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a04e4]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a04e4]} cellGcmSys: cellGcmInit(): 256MB io address space used
+RSX: ! {RSXThread} RSX thread started
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0324]} cellSysutil: cellVideoOutConfigure(videoOut=0, config=*0xd00ff7c8, option=*0x0, waitForEvent=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0564]} cellGcmSys: cellGcmSetFlipMode(mode=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a05e4]} cellGcmSys: cellGcmSetVBlankHandler(handler=*0x33e480)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile(index=13, location=0, offset=16711680, size=3801088, pitch=5120, comp=0, base=0, bank=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile(index=14, location=0, offset=20512768, size=3801088, pitch=5120, comp=0, base=0, bank=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile(index=0, location=0, offset=0, size=5570560, pitch=5120, comp=0, base=0, bank=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile(index=1, location=0, offset=5570560, size=5570560, pitch=5120, comp=0, base=0, bank=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile(index=2, location=0, offset=11141120, size=5570560, pitch=5120, comp=10, base=0, bank=0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile: bad compression mode! (10)
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0664]} cellGcmSys TODO: cellGcmSetZcull(index=0, offset=0xaa0000, width=1280, height=1088, cullStart=0x0, zFormat=0x2, aaFormat=0x0, zCullDir=0x0, zCullFormat=0x1, sFunc=0x201, sRef=0x80, sMask=0xff)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00042950]} sys_event: sys_event_queue_create(equeue_id=*0x3baa74, attr=*0xd00ff870, event_queue_key=0x0, size=64)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1404]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x3baa78, entry=0x33c820, arg=0x3baa60, prio=1001, stacksize=0x4000, flags=0x1, threadname=*0x2f2fc8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1404]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x3baa78, param=*0xd00ff7e8, arg=0x3baa60, unk=0x0, prio=1001, stacksize=0x4000, flags=0x1, threadname=*0x2f2fc8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1404]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x41)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000429bc]} sys_event: sys_event_port_create(eport_id=*0x3baa70, port_type=1, name=0x1234)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000429d8]} sys_event: sys_event_port_connect_local(eport_id=0x42, equeue_id=0x40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00233f84]} sys_memory: sys_memory_allocate(size=0x600000, flags=0x400, alloc_addr=*0xd00ff630)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0444]} cellSysutil: cellAudioOutGetSoundAvailability(audioOut=0, type=0, fs=0x4, option=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a08e4]} cellAudio: cellAudioInit()
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0964]} cellAudio: cellAudioPortOpen(audioParam=*0x389fb8, portNum=*0x389ff8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0964]} cellAudio: *** audio port opened(nChannel=8, nBlock=8, attr=0x0, level=1.000000): port = 0
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0904]} cellAudio: cellAudioGetPortConfig(portNum=0, portConfig=*0x389fd8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1444]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x436300, attr=*0xd00ff610)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0021083c]} sys_event: sys_event_queue_create(equeue_id=*0x438004, attr=*0xd00ff74c, event_queue_key=0x0, size=32)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00210864]} sys_spu: sys_spu_thread_group_create(id=*0x438108, num=1, prio=100, attr=*0xd00ff73c)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1584]} sysPrxForUser: sys_spu_image_import(img=*0x43810c, src=0x314a00, type=1)
+LDR: W {PPU[0x1] Thread (main_thread)[0x002a1584]} m_ehdr.e_type = 0x2
+HLE: W {PPU[0x1] Thread (main_thread)[0x002108f4]} sys_spu: sys_spu_thread_initialize(thread=*0x436604, group=0x45, spu_num=0, img=*0x43810c, attr=*0xd00ff730, arg=*0xd00ff760)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00210918]} sys_spu: sys_spu_thread_connect_event(id=0x46, eq=0x44, et=1, spup=42)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00210930]} sys_spu: sys_spu_thread_group_start(id=0x45)
+SPU: S {PPU[0x1] Thread (main_thread)[0x00210930]} SPU Database initialized...
+SPU: S {PPU[0x1] Thread (main_thread)[0x00210930]} SPU Recompiler (ASMJIT) created...
+SPU: S {SPU[0x46] Thread (_Multistream SPU Thread)[0x00100]} Function detected [0x00100-0x0018c] (size=0x8c)
+TTY: MULTISTREAM: SPU thread started successfully (Thread ID : 46)\n
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a01c4]} cellFs: cellFsOpen(path=*0x30b320, flags=0, fd=*0xd00ff660, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a01c4]} sys_fs: sys_fs_open(path=*0x30b320, flags=0, fd=*0xd00ff660, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a01c4]} sys_fs: *** path = '/dev_flash/sys/external/flashATRAC.pic'
+HLE: W {PPU[0x1] Thread (main_thread)[0x002103f0]} sys_spu: sys_spu_thread_write_spu_mb(id=0x46, value=0xffdd)
+SPU: S {SPU[0x46] Thread (_Multistream SPU Thread)[0x00800]} Function detected [0x00800-0x02228] (size=0x1a28)
+SPU: S {SPU[0x46] Thread (_Multistream SPU Thread)[0x09c68]} Function detected [0x09c68-0x0ab34] (size=0xecc)
+SPU: S {SPU[0x46] Thread (_Multistream SPU Thread)[0x0ab38]} Function detected [0x0ab38-0x0ab70] (size=0x38)
+SPU: S {SPU[0x46] Thread (_Multistream SPU Thread)[0x004f0]} Function detected [0x004f0-0x00800] (size=0x310)
+SPU: S {SPU[0x46] Thread (_Multistream SPU Thread)[0x00300]} Function detected [0x00300-0x004ec] (size=0x1ec)
+SPU: S {SPU[0x46] Thread (_Multistream SPU Thread)[0x0d5e8]} Function detected [0x0d5e8-0x0d640] (size=0x58)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00210444]} sys_spu: sys_spu_thread_write_spu_mb(id=0x46, value=0x26407900)
+SPU: S {SPU[0x46] Thread (_Multistream SPU Thread)[0x2e590]} Function detected [0x2e590-0x2e870] (size=0x2e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0001433c]} sys_event: sys_event_queue_create(equeue_id=*0x38a014, attr=*0x38a018, event_queue_key=0x0, size=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00014354]} sys_event: sys_event_port_create(eport_id=*0x38a010, port_type=1, name=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00014364]} sys_event: sys_event_port_connect_local(eport_id=0x48, equeue_id=0x47)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1404]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x38a008, entry=0x33b328, arg=0x47, prio=0, stacksize=0x4000, flags=0x1, threadname=*0x2f18a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1404]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x38a008, param=*0xd00ff7b8, arg=0x47, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0x2f18a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a1404]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x49)
+HLE: W {PPU[0x49] Thread (MultiStream PU Thread)[0x002a0924]} cellAudio: cellAudioPortStart(portNum=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0384]} cellSysutil: cellSysutilGetSystemParamInt(id=0x112(ID_ENTER_BUTTON_ASSIGN), value=*0xd00ff860)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029ff04]} sys_io: cellPadInit(max_connect=7)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a00a4]} sys_io: cellMouseInit(max_connect=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029ffc4]} sys_io: cellKbInit(max_connect=1)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_basicLight.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_basicLight.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_basicColourLight.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_basicColourLight.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_basicTexLight.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_basicTexLight.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bumpgloss.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bumpgloss.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_duck.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_duck.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_colduck.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_colduck.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_basicTexColourLight.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_basicTexColourLight.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_colbumpgloss.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_colbumpgloss.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_through_mode.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_through_mode.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_through_mode2.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_through_mode2.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_through_mode3.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_through_mode3.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwdwwwi0.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwdwwwi0.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwdwwwi0i1.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwdwwwi0i1.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwmwwwi0.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwmwwwi0.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwdwww.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwdwww.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bldlllnnnn.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bldlllnnnn.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bi0i1.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bi0i1.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwwww.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwwww.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_li0.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_li0.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_vi0t0.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_vi0t0.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_mi0t0.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_mi0t0.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwdlllinnn.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwdlllinnn.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwmwwwi0i1.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bwmwwwi0i1.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_generate_mesh.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_generate_mesh.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_position.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_position.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_intersection.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_intersection.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_splat.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_splat.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_projective.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_projective.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_xyz.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_xyz.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_water_surface.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_water_surface.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_blend_noise.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_blend_noise.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bubble.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_bubble.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_reflection_prepass.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_reflection_prepass.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_slosh_blend.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_slosh_blend.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_slosh_stencil.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_slosh_stencil.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_slosh_surface.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_slosh_surface.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_surface_noise.vpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/vs_surface_noise.vpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x49] Thread (MultiStream PU Thread)[0x002111fc]} sys_spu: sys_spu_thread_write_spu_mb(id=0x46, value=0x436400)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicLight.fpo'
+SPU: S {SPU[0x46] Thread (_Multistream SPU Thread)[0x09b28]} Function detected [0x09b28-0x09c64] (size=0x13c)
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicLight.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicLight.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicLight.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicLight.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicLight.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicColourLight.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicColourLight.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicTexColour.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicTexColour.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicTexLight.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicTexLight.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicTexLight.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicTexLight.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bumpgloss.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bumpgloss.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_colbumpgloss.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_colbumpgloss.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_mod2x.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_mod2x.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_through_mode.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_through_mode.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_through_mode2.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_through_mode2.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_diffuse.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_diffuse.fpo') failed: not found
+SPU: S {SPU[0x46] Thread (_Multistream SPU Thread)[0x06d50]} Function detected [0x06d50-0x0891c] (size=0x1bcc)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmdeea.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmdeea.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmdee.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmdee.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bveee.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bveee.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bvdeee.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bvdeee.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bveeee.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bveeee.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bvd.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bvd.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bvdeea.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bvdeea.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmdnga.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmdnga.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmdga.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmdga.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmdga_reflection.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmdga_reflection.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bvee.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bvee.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_utnnnn.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_utnnnn.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_pme.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_pme.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_pmde.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_pmde.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_pmdg.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_pmdg.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_undnnn.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_undnnn.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_unnnnn.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_unnnnn.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicLight.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_basicLight.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bumpgloss.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bumpgloss.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_pmdg.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_pmdg.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_ume.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_ume.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bvdmee.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bvdmee.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmddga.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmddga.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmddga_reflection.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmddga_reflection.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmddee.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmddee.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmddee_reflection.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bmddee_reflection.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_contrast.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_contrast.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_GaussianH.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_GaussianH.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_GaussianV.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_GaussianV.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_generate_mesh.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_generate_mesh.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_position.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_position.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_intersection.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_intersection.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_splat.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_splat.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_water_surface.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_water_surface.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_water_surface_glass.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_water_surface_glass.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_water_surface_replay.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_water_surface_replay.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_blend_noise.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_blend_noise.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bubble.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_bubble.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_reflection_prepass.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_reflection_prepass.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_slosh_blend.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_slosh_blend.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_slosh_stencil.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_slosh_stencil.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_slosh_surface.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_slosh_surface.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_wipe_effect.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_wipe_effect.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_pencil_effect.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_pencil_effect.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_splash.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_splash.fpo') failed: not found
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} cellFs: cellFsStat(path=*0xd012fb78, sb=*0xd012fb40) -> sys_fs_stat()
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat(path=*0xd012fb78, sb=*0xd012fb40)
+HLE: W {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: *** path = '/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_surface_noise.fpo'
+HLE: E {PPU[0x41] Thread (ResMan)[0x002a01e4]} sys_fs: sys_fs_stat('/app_home/Game/PS3_GAME/USRDIR/Shaders/fs_surface_noise.fpo') failed: not found
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0784]} cellSpurs: _cellSpursEventFlagInitialize(spurs=*0x20137700, taskset=*0x0, eventFlag=*0x3bc780, flagClearMode=0, flagDirection=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a07e4]} cellSpurs: cellSpursEventFlagAttachLv2EventQueue(eventFlag=*0x3bc780)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a07e4]} sys_event: sys_event_queue_create(equeue_id=*0xd00ff598, attr=*0xd00ff578, event_queue_key=0x0, size=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a07e4]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x31, eq=0x4a, req=0xffffffffffff0000, spup=*0xd00ff590)
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0724]} cellSpurs: _cellSpursJobChainAttributeInitialize
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0824]} cellSpurs: cellSpursJobChainAttributeSetName
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0704]} cellSpurs: cellSpursCreateJobChainWithAttribute
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a07a4]} cellSpurs: cellSpursJobGuardInitialize
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a08c4]} cellSpurs: cellSpursRunJobChain
+TTY: Failed to find vertex shader 20\n
+TTY: Failed to find pixel shader b\n
+TTY: Failed to find vertex shader 202c\n
+TTY: Failed to find pixel shader 17\n
+TTY: Failed to find vertex shader 2c\n
+TTY: Failed to find pixel shader 7\n
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile(index=10, location=1, offset=6291456, size=524288, pitch=2048, comp=0, base=0, bank=0)
+TTY: Failed to find vertex shader 8000000d\n
+TTY: Failed to find pixel shader 80000013\n
+TTY: Failed to find vertex shader 2c\n
+TTY: Failed to find pixel shader 7\n
+TTY: Failed to find vertex shader 80000002\n
+TTY: Failed to find pixel shader 80000005\n
+TTY: Failed to find vertex shader 80000003\n
+TTY: Failed to find pixel shader 80000006\n
+TTY: Failed to find vertex shader 80000004\n
+TTY: Failed to find pixel shader 1f\n
+TTY: Failed to find vertex shader 80000005\n
+TTY: Failed to find pixel shader f\n
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile(index=7, location=0, offset=25690112, size=1048576, pitch=2048, comp=0, base=0, bank=2)
+TTY: Failed to find vertex shader 80000006\n
+TTY: Failed to find pixel shader 80000007\n
+TTY: Failed to find pixel shader 80000008\n
+TTY: Failed to find pixel shader 80000009\n
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile(index=8, location=1, offset=6815744, size=5570560, pitch=5120, comp=0, base=0, bank=2)
+TTY: Failed to find vertex shader 200c\n
+TTY: Failed to find pixel shader 1f\n
+TTY: Failed to find vertex shader 80000005\n
+TTY: Failed to find pixel shader f\n
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile(index=9, location=1, offset=12386304, size=5570560, pitch=5120, comp=0, base=0, bank=2)
+TTY: Failed to find vertex shader 200c\n
+TTY: Failed to find pixel shader 1f\n
+TTY: Failed to find vertex shader 8000000a\n
+TTY: Failed to find pixel shader 8000000d\n
+TTY: Failed to find vertex shader 8000000b\n
+TTY: Failed to find pixel shader 8000000e\n
+TTY: Failed to find vertex shader 8000000c\n
+TTY: Failed to find pixel shader 8000000f\n
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile(index=4, location=0, offset=26738688, size=1048576, pitch=4096, comp=0, base=0, bank=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0644]} cellGcmSys: cellGcmSetTile(index=5, location=0, offset=27787264, size=524288, pitch=2048, comp=0, base=0, bank=0)
+TTY: Failed to find vertex shader 1f90\n
+TTY: Failed to find pixel shader 80000012\n
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a0784]} cellSpurs: _cellSpursEventFlagInitialize(spurs=*0x20137700, taskset=*0x0, eventFlag=*0x201e3000, flagClearMode=0, flagDirection=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a07e4]} cellSpurs: cellSpursEventFlagAttachLv2EventQueue(eventFlag=*0x201e3000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a07e4]} sys_event: sys_event_queue_create(equeue_id=*0xd00ff4f8, attr=*0xd00ff4d8, event_queue_key=0x0, size=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002a07e4]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x31, eq=0x4b, req=0xffffffffffff0000, spup=*0xd00ff4f0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0724]} cellSpurs: _cellSpursJobChainAttributeInitialize
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0824]} cellSpurs: cellSpursJobChainAttributeSetName
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a0704]} cellSpurs: cellSpursCreateJobChainWithAttribute
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a07a4]} cellSpurs: cellSpursJobGuardInitialize
+HLE: E {PPU[0x1] Thread (main_thread)[0x002a08c4]} cellSpurs: cellSpursRunJobChain
+TTY: Failed to find vertex shader 80000009\n
+TTY: Failed to find pixel shader 8000000c\n
+G: ! {PPU[0x1] Thread (main_thread)[0x001fa6c8]} Registers:
+=========
+GPR[0] = 0x68010
+GPR[1] = 0xd00ff7f0
+GPR[2] = 0x357750
+GPR[3] = 0x3f800000
+GPR[4] = 0xffffffffffffffe0
+GPR[5] = 0xffffffffffffffff
+GPR[6] = 0xd00ff370
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x40df24
+GPR[10] = 0x430218
+GPR[11] = 0x200039a0
+GPR[12] = 0x0
+GPR[13] = 0x481030
+GPR[14] = 0x0
+GPR[15] = 0x329000
+GPR[16] = 0x328000
+GPR[17] = 0x0
+GPR[18] = 0x327000
+GPR[19] = 0x100000
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0xd00ff900
+GPR[26] = 0x3baa88
+GPR[27] = 0x40eb24
+GPR[28] = 0x40c890
+GPR[29] = 0x201e2b80
+GPR[30] = 0x3bc890
+GPR[31] = 0x201e2b80
+FPR[0] = 1
+FPR[1] = 0.746351
+FPR[2] = 0.5
+FPR[3] = 1
+FPR[4] = 7000
+FPR[5] = 50
+FPR[6] = 300
+FPR[7] = 0.05
+FPR[8] = -0.289911
+FPR[9] = 1
+FPR[10] = 1
+FPR[11] = 0.0999749
+FPR[12] = 1.15356
+FPR[13] = 2.50663
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 1
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0xbf3504f2bf3504f2bf3504f2bf3504f2 [x: -0.707107 y: -0.707107 z: -0.707107 w: -0.707107]
+VPR[3] = 0xffffffffffffffffffffffffffffffff [x: -nan y: -nan z: -nan w: -nan]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x3f8000003f8000003f8000003f800000 [x: 1 y: 1 z: 1 w: 1]
+VPR[7] = 0xbf3504f3bf3504f3bf3504f3bf3504f3 [x: -0.707107 y: -0.707107 z: -0.707107 w: -0.707107]
+VPR[8] = 0x333bbd2e333bbd2e333bbd2e333bbd2e [x: 4.37114e-08 y: 4.37114e-08 z: 4.37114e-08 w: 4.37114e-08]
+VPR[9] = 0x000000003f80000000000000b33bbd2e [x: 0 y: 1 z: 0 w: -4.37114e-08]
+VPR[10] = 0xbf490fdbbf490fdbbf490fdbbf490fdb [x: -0.785398 y: -0.785398 z: -0.785398 w: -0.785398]
+VPR[11] = 0xb33bbd2eb33bbd2eb33bbd2eb33bbd2e [x: -4.37114e-08 y: -4.37114e-08 z: -4.37114e-08 w: -4.37114e-08]
+VPR[12] = 0x0000000000000000000000003f800000 [x: 0 y: 0 z: 0 w: 1]
+VPR[13] = 0x000000000000000000000000ffffffff [x: 0 y: 0 z: 0 w: -nan]
+VPR[14] = 0xffffffffffffffffffffffffffffffff [x: -nan y: -nan z: -nan w: -nan]
+VPR[15] = 0x3f8000003f8000003f8000003f800000 [x: 1 y: 1 z: 1 w: 1]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x1ac9ef951ac9ef951ac9ef951ac9ef95 [x: 8.35187e-23 y: 8.35187e-23 z: 8.35187e-23 w: 8.35187e-23]
+VPR[18] = 0xbef80cdcbef80cdcbef80cdcbef80cdc [x: -0.484473 y: -0.484473 z: -0.484473 w: -0.484473]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x800009001aa386220000000000000000 [x: -3.22859e-42 y: 6.76319e-23 z: 0 w: 0]
+VPR[21] = 0x00000000021351a000000000021351a0 [x: 0 y: 1.08233e-37 z: 0 w: 1.08233e-37]
+VPR[22] = 0x00000000021351a000000000021351a0 [x: 0 y: 1.08233e-37 z: 0 w: 1.08233e-37]
+VPR[23] = 0x00000000021351a000000000021351a0 [x: 0 y: 1.08233e-37 z: 0 w: 1.08233e-37]
+VPR[24] = 0x00000000021351a000000000021351a0 [x: 0 y: 1.08233e-37 z: 0 w: 1.08233e-37]
+VPR[25] = 0x00000000021351a000000000021351a0 [x: 0 y: 1.08233e-37 z: 0 w: 1.08233e-37]
+VPR[26] = 0x00000000021351a000000000021351a0 [x: 0 y: 1.08233e-37 z: 0 w: 1.08233e-37]
+VPR[27] = 0x00000000021351a000000000021351a0 [x: 0 y: 1.08233e-37 z: 0 w: 1.08233e-37]
+VPR[28] = 0x00000000021351a000000000021351a0 [x: 0 y: 1.08233e-37 z: 0 w: 1.08233e-37]
+VPR[29] = 0x80000a001aa88659000000003f800000 [x: -3.58732e-42 y: 6.97002e-23 z: 0 w: 1]
+VPR[30] = 0x00000000021350e000000000021350e0 [x: 0 y: 1.08231e-37 z: 0 w: 1.08231e-37]
+VPR[31] = 0x00000000021350e000000000021350e0 [x: 0 y: 1.08231e-37 z: 0 w: 1.08231e-37]
+CR = 0x48000082
+LR = 0x68030
+CTR = 0x0
+XER = 0x20000000 [CA=1 | OV=8589934592 | SO=0]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: E {PPU[0x1] Thread (main_thread)[0x001fa6c8]} Exception: Access violation reading location 0x3f800000
+(in file ..\Utilities\Thread.cpp:1122, in function _se_translator)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+HLE: S {PPU[0x41] Thread (ResMan)[0x000419b0]} Last syscall: 130 (sys_event_queue_receive)
+G: ! {SPU[0x35] Thread (RubadubCellSpursKernel3)[0x00000]} Thread aborted
+G: ! {SPU[0x32] Thread (RubadubCellSpursKernel0)[0x00000]} Thread aborted
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00072358]} Thread aborted
+G: ! {SPU[0x34] Thread (RubadubCellSpursKernel2)[0x00000]} Thread aborted
+G: ! {PPU[0x41] Thread (ResMan)[0x000419b0]} Thread aborted
+G: ! {SPU[0x36] Thread (RubadubCellSpursKernel4)[0x00000]} Thread aborted
+HLE: S {PPU[0x3e] Thread (spu_printf_handler)[0x00114710]} Last syscall: 130 (sys_event_queue_receive)
+G: ! {PPU[0x3c] Thread (RubadubSpursHdlr0)[0x00000000]} Thread aborted
+HLE: S {PPU[0x49] Thread (MultiStream PU Thread)[0x00211220]} Last syscall: 130 (sys_event_queue_receive)
+G: ! {PPU[0x3b] Thread (RubadubSpursHdlr1)[0x00000000]} Thread aborted
+G: ! {SPU[0x46] Thread (_Multistream SPU Thread)[0x06e8c]} Thread aborted
+G: ! {SPU[0x33] Thread (RubadubCellSpursKernel1)[0x00000]} Thread aborted
+G: ! {PPU[0x49] Thread (MultiStream PU Thread)[0x00211220]} Thread aborted
+G: ! {PPU[0x3e] Thread (spu_printf_handler)[0x00114710]} Thread aborted
+G: ! {VBlank Thread} Thread aborted
+G: ! All threads stopped...
+G: ! Objects cleared...
