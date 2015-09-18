@@ -1,8 +1,10 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! RPCS3 v0.0.0.5-2554-gdfeedf2
+G: ! 
 G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB01424/USRDIR/BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB01424/dev_bdvd.path', 0x1) failed: error 0x2
-LDR: !  
+LDR: ! 
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
@@ -10,10 +12,24 @@ LDR: ! /host_root/ ->
 LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
-LDR: !  
+LDR: ! 
+LDR: ! Settings:
+LDR: ! CPU: PPU Interpreter 2
+LDR: ! SPU: SPU Recompiler (ASMJIT)
+LDR: ! Renderer: DirectX 12
+LDR: ! D3D Adapter: Default
+LDR: ! Resolution: 1280x720
+LDR: ! Write Depth Buffer: No
+LDR: ! Write Color Buffers: No
+LDR: ! Read Color Buffer: No
+LDR: ! Audio Out: XAudio2
+LDR: ! Log Everything: No
+LDR: ! RSX Logging: No
+LDR: ! 
 LDR: ! Title: Lone Survivor
 LDR: ! Serial: NPEB01424
 LDR: ! Elf path: /dev_hdd0/game/NPEB01424/USRDIR/BOOT.BIN
+LDR: ! 
 LDR: ! loader::init() failed: Broken file
 LDR: ! *** sdk version: 0x440001
 LDR: ! *** primary prio: 1001
@@ -54,16 +70,16 @@ LDR: ! Imported function 'cellSysutilUnregisterCallback' in 'cellSysutil' module
 LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module (0x1cadd0)
 LDR: ! Imported function 'cellSaveDataFixedLoad2' in 'cellSysutil' module (0x1cadf0)
 LDR: ! Imported function 'cellSaveDataFixedSave2' in 'cellSysutil' module (0x1cae10)
-LDR: E Unknown function 'cellOskDialogUnloadAsync' in 'cellSysutil' module (0x1cae30)
+LDR: ! Imported function 'cellOskDialogUnloadAsync' in 'cellSysutil' module (0x1cae30)
 LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module (0x1cae50)
 LDR: ! Imported function 'cellMsgDialogOpen2' in 'cellSysutil' module (0x1cae70)
-LDR: E Unknown function 'cellOskDialogLoadAsync' in 'cellSysutil' module (0x1cae90)
+LDR: ! Imported function 'cellOskDialogLoadAsync' in 'cellSysutil' module (0x1cae90)
 LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module (0x1caeb0)
 LDR: ! Imported function 'cellSaveDataAutoSave2' in 'cellSysutil' module (0x1caed0)
 LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module (0x1caef0)
-LDR: E Unknown function 'cellOskDialogSetKeyLayoutOption' in 'cellSysutil' module (0x1caf10)
+LDR: ! Imported function 'cellOskDialogSetKeyLayoutOption' in 'cellSysutil' module (0x1caf10)
 LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module (0x1caf30)
-LDR: E Unknown function 'cellOskDialogSetLayoutMode' in 'cellSysutil' module (0x1caf50)
+LDR: ! Imported function 'cellOskDialogSetLayoutMode' in 'cellSysutil' module (0x1caf50)
 LDR: ! Imported function 'cellSaveDataAutoLoad2' in 'cellSysutil' module (0x1caf70)
 LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module (0x1cb350)
 LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module (0x1cb370)
@@ -80,7 +96,7 @@ LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module (0x
 LDR: ! Imported function 'cellSysmoduleInitialize' in 'cellSysmodule' module (0x1cb050)
 LDR: ! Imported function 'cellSysmoduleFinalize' in 'cellSysmodule' module (0x1cb070)
 LDR: ! Imported function 'cellRtcGetCurrentClockLocalTime' in 'cellRtc' module (0x1cb090)
-LDR: E Unknown function 'UTF32stoUTF8s' in 'cellL10n' module (0x1cb0b0)
+LDR: ! Imported function 'UTF32stoUTF8s' in 'cellL10n' module (0x1cb0b0)
 LDR: ! Imported function 'cellAudioInit' in 'cellAudio' module (0x1cb0d0)
 LDR: ! Imported function 'cellAudioPortClose' in 'cellAudio' module (0x1cb0f0)
 LDR: ! Imported function 'cellAudioPortStop' in 'cellAudio' module (0x1cb110)
@@ -166,7 +182,7 @@ LDR: ! Imported function 'sceNpTrophyUnlockTrophy' in 'sceNpTrophy' module (0x1c
 LDR: ! Imported function 'sceNpTrophyTerm' in 'sceNpTrophy' module (0x1cbbd0)
 LDR: ! Imported function 'sceNpTrophyGetTrophyUnlockState' in 'sceNpTrophy' module (0x1cbbf0)
 LDR: ! Imported function 'sceNpTrophyCreateContext' in 'sceNpTrophy' module (0x1cbc10)
-HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x2f6000, user_size=0x130)
+MEM: ! Thread Local Storage initialized (g_tls_start=0x2f6000, user_size=0x130)
 *** TLS segment addr: 0x00225a68
 *** TLS segment size: 0x00000004
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2b02c8, attr=*0x1f5450)
@@ -206,15 +222,14 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleL
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cad90]} cellGame: cellGameBootCheck(type=*0x271770, attributes=*0x271774, size=*0xd001fc54, dirName=*0x270b70)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cad70]} cellGame: cellGameDataCheck(type=2, dirName=*0x270b70, size=*0xd001fc54)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cad30]} cellGame: cellGameContentPermit(contentInfoPath=*0x270f70, usrdirPath=*0x271370)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cad30]} cellGame: cellGameContentPermit(): path_set=1, contentInfo='/dev_hdd0/game/NPEB01424', usrdir='/dev_hdd0/game/NPEB01424/USRDIR'
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cbc30]} cellGcmSys: _cellGcmInitBody(context=*0x2b0818, cmdSize=0x80000, ioSize=0x100000, ioAddress=0x20100000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cbc30]} cellGcmSys: _cellGcmInitBody(context=**0x2b0818, cmdSize=0x80000, ioSize=0x100000, ioAddress=0x20100000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cbc30]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cbc30]} cellGcmSys: cellGcmInit(): 256MB io address space used
 RSX: ! {RSXThread} RSX thread started
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x001f: CELL_SYSMODULE_RESC)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb6f0]} cellResc: cellRescInit(initConfig=*0xd001fb04)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb670]} cellResc: cellRescSetDisplayMode(displayMode=4)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb670]} cellSysutil: cellVideoOutConfigure(videoOut=0, config=*0xd001fa80, option=*0x0, waitForEvent=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb670]} cellSysutil: cellVideoOutConfigure(videoOut=0, config=*0xd001fa80, option=*0x0, waitForEvent=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb670]} cellGcmSys: cellGcmSetFlipMode(mode=2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb710]} cellResc: cellRescGetBufferSize(colorBuffers=*0xd001fb64, vertexArray=*0xd001fb68, fragmentShader=*0xd001fb6c)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb750]} cellResc: cellRescSetBufferAddress(colorBuffers=*0xc0720000, vertexArray=*0xc1830000, fragmentShader=*0xc0384280)
@@ -228,8 +243,9 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0011e3ec]} sys_mutex: sys_mutex_create(m
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x0038: CELL_SYSMODULE_SYSUTIL_NP2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x0014: CELL_SYSMODULE_NETCTL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001caff0]} cellNetCtl: cellNetCtlInit()
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0x001e: CELL_SYSMODULE_L10N)
-HLE: W {PPU[0x1] Thread (main_thread)[0x001cb990]} sceNp2: sceNp2Init(poolsize=131072, poolptr=0x271a04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb990]} sceNp2: sceNp2Init(poolsize=0x20000, poolptr=*0x271a04)
 HLE: E {PPU[0x1] Thread (main_thread)[0x001cb8f0]} sceNp: sceNpManagerRegisterCallback
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb030]} cellSysmodule: cellSysmoduleLoadModule(id=0xf035: CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cbb50]} sceNpTrophy: sceNpTrophyInit(pool=*0x0, poolSize=0x0, containerId=0xffffffff, options=0x0)
@@ -239,6 +255,142 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x001cb490]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2e200030, entry=0x223ee8, arg=0x2e20003000000000, prio=0, stacksize=0x1000, flags=0x1, threadname=*0xd001f7a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2e200030, param=*0xd001f708, arg=0x2e20003000000000, unk=0x0, prio=0, stacksize=0x1000, flags=0x1, threadname=*0xd001f7a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x001cb450]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x21)
-HLE: E {PPU[0x21] Thread (2e200030)[0x001cbb10]} sceNpTrophy: sceNpTrophyGetRequiredDiskSpace(context=0x1e, handle=0x1f, reqspace*=0x291a38, options=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb610]} cellResc: cellRescSetWaitFlip()
+HLE: E {PPU[0x21] Thread (2e200030)[0x001cbb10]} sceNpTrophy TODO: sceNpTrophyGetRequiredDiskSpace(context=0x1e, handle=0x1f, reqspace=*0x291a38, options=0x0)
 HLE: E {PPU[0x21] Thread (2e200030)[0x001cbad0]} sceNpTrophy: sceNpTrophyRegisterContext(context=0x1e, handle=0x1f, statusCb=*0x2235f0, arg=*0x0, options=0x1)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb610]} cellResc: cellRescSetWaitFlip()
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb610]} cellResc: cellRescSetWaitFlip()
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb610]} cellResc: cellRescSetWaitFlip()
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb610]} cellResc: cellRescSetWaitFlip()
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb610]} cellResc: cellRescSetWaitFlip()
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb610]} cellResc: cellRescSetWaitFlip()
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb610]} cellResc: cellRescSetWaitFlip()
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb610]} cellResc: cellRescSetWaitFlip()
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb610]} cellResc: cellRescSetWaitFlip()
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+G: ! {PPU[0x21] Thread (2e200030)[0x0011f46c]} Registers:
+=========
+GPR[0] = 0x11ed68
+GPR[1] = 0xd0033c30
+GPR[2] = 0x22ca48
+GPR[3] = 0x0
+GPR[4] = 0x0
+GPR[5] = 0x64
+GPR[6] = 0x64
+GPR[7] = 0x0
+GPR[8] = 0x229218
+GPR[9] = 0x21
+GPR[10] = 0x2e200030
+GPR[11] = 0xd0030000
+GPR[12] = 0x0
+GPR[13] = 0x2fd2f0
+GPR[14] = 0x0
+GPR[15] = 0x0
+GPR[16] = 0x0
+GPR[17] = 0x0
+GPR[18] = 0x0
+GPR[19] = 0x0
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x0
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x2e200090
+GPR[30] = 0x0
+GPR[31] = 0x0
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 0
+FPR[13] = 0
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[18] = 0x80001300669d9bc60000000000000000 [x: -6.81592e-42 y: 3.72143e+23 z: 0 w: 0]
+VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+CR = 0x22000028
+LR = 0x11ed68
+CTR = 0x83564
+XER = 0x0 [CA=0 | OV=8589934592 | SO=0]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: E {PPU[0x21] Thread (2e200030)[0x0011f46c]} Exception: Access violation reading location 0x28
+(in file ..\Utilities\Thread.cpp:1122, in function _se_translator)
+HLE: W {PPU[0x1] Thread (main_thread)[0x001cb610]} cellResc: cellRescSetWaitFlip()
+HLE: W {PPU[0x1] Thread (main_thread)[0x0011efa8]} sys_ppu_thread: sys_ppu_thread_join(thread_id=0x21, vptr=*0xd001f7f0)
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+G: ! Stopping emulator...
+G: ! All threads signaled...
+HLE: S {PPU[0x1] Thread (main_thread)[0x0011efa8]} Last syscall: 44 (sys_ppu_thread_join)
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
+G: ! {PPU[0x1] Thread (main_thread)[0x0011efa8]} Thread aborted
+G: ! {VBlank Thread} Thread aborted
+G: ! All threads stopped...
+G: ! Objects cleared...
