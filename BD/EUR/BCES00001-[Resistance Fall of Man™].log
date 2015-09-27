@@ -1,1570 +1,365 @@
-HLE: ! path: /dev_hdd0/game/
-HLE: W No pause.bin found, Auto Pause will not work.
-HLE: W No pause.bin found, Auto Pause will not work.
-LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\BCES00001-[Resistance Fall of Man]/PS3_GAME/USRDIR/BOOT.BIN'...
-LDR: !  
+LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! RPCS3 0.0.0.5 v0.0.0.5-2528-g37721d6
+G: ! 
+G: ! Stopping emulator...
+LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES00001-[Resistance Fall of Man™]/PS3_GAME/USRDIR/BOOT.BIN'...
+G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES00001-[Resistance Fall of Man™]/PS3_GAME/dev_bdvd.path', 0x1) failed: error 0x2
+LDR: ! 
 LDR: ! Mount info:
-LDR: ! /dev_hdd0/ -> ./dev_hdd0/
-LDR: ! /dev_hdd1/ -> ./dev_hdd1/
-LDR: ! /dev_flash/ -> ./dev_flash/
-LDR: ! /dev_usb000/ -> ./dev_usb000/
-LDR: ! /dev_usb/ -> ./dev_usb000/
-LDR: ! /app_home/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\BCES00001-[Resistance Fall of Man]/PS3_GAME/
-LDR: ! /dev_bdvd/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\BCES00001-[Resistance Fall of Man]/PS3_GAME//../
+LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
+LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
 LDR: ! /host_root/ -> 
-LDR: ! /app_home/PS3_GAME/USRDIR/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\BCES00001-[Resistance Fall of Man]/PS3_GAME//USRDIR/
-LDR: ! /dev_flash2/ -> ./dev_flash2/
-LDR: ! /app_home/Game/PS3_GAME/USRDIR/ -> D:\Emulateurs\Rpcs3\dev_hdd0\game\BCES00001-[Resistance Fall of Man]/PS3_GAME//USRDIR/
-LDR: ! //dev_hdd0/ -> ./dev_hdd0/
-LDR: ! / -> D:\Emulateurs\Rpcs3\dev_hdd0\game\BCES00001-[Resistance Fall of Man]/PS3_GAME//USRDIR/
-LDR: !  
+LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
+LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
+LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES00001-[Resistance Fall of Man™]/
+LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
+LDR: ! 
+LDR: ! Settings:
+LDR: ! CPU: PPU Interpreter 2
+LDR: ! SPU: SPU Recompiler (ASMJIT)
+LDR: ! Renderer: DirectX 12
+LDR: ! D3D Adapter: Default
+LDR: ! Resolution: 1280x720
+LDR: ! Write Depth Buffer: No
+LDR: ! Write Color Buffers: No
+LDR: ! Read Color Buffer: No
+LDR: ! Audio Out: XAudio2
+LDR: ! Log Everything: No
+LDR: ! RSX Logging: No
+LDR: ! 
 LDR: ! Title: Resistance: Fall of Man™
 LDR: ! Serial: BCES00001
-LDR: !  
-MEM: ! Initializing memory: m_base_addr = 0x4ccf430000
-MEM: ! Memory initialized.
-LDR: ! Imported function 'sys_lwmutex_lock' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwmutex_unlock' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_ppu_thread_create' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwmutex_create' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_ppu_thread_get_id' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_mmapper_free_memory' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_mmapper_unmap_memory' in 'sysPrxForUser' module
-LDR: ! Imported function 'Unknown func id: 0x4f7172c9' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_initialize_tls' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_time_get_system_time' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_prx_exitspawn_with_level' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwmutex_trylock' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_ppu_thread_exit' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_mmapper_allocate_memory' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_lwmutex_destroy' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_mmapper_map_memory' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module
-LDR: ! Imported function 'sys_game_process_exitspawn' in 'sysPrxForUser' module
-LDR: ! Imported function '_sys_heap_malloc' in 'sysPrxForUser' module
-LDR: ! Imported function '_sys_heap_memalign' in 'sysPrxForUser' module
-LDR: W Unimplemented function '_sys_heap_free' in 'sysPrxForUser' module
-LDR: W Unimplemented function '_sys_heap_delete_heap' in 'sysPrxForUser' module
-LDR: ! Imported function '_sys_heap_create_heap' in 'sysPrxForUser' module
-LDR: W Unimplemented function 'socketpoll' in 'sys_net' module
-LDR: ! Imported function 'sys_net_initialize_network_ex' in 'sys_net' module
-LDR: W Unimplemented function 'getsockname' in 'sys_net' module
-LDR: ! Imported function 'recvfrom' in 'sys_net' module
-LDR: ! Imported function 'listen' in 'sys_net' module
-LDR: W Unimplemented function 'socketselect' in 'sys_net' module
-LDR: W Unimplemented function 'getsockopt' in 'sys_net' module
-LDR: ! Imported function '_sys_net_errno_loc' in 'sys_net' module
-LDR: ! Imported function 'connect' in 'sys_net' module
-LDR: ! Imported function 'socketclose' in 'sys_net' module
-LDR: W Unimplemented function 'gethostbyname' in 'sys_net' module
-LDR: W Unimplemented function 'inet_ntoa' in 'sys_net' module
-LDR: ! Imported function 'setsockopt' in 'sys_net' module
-LDR: ! Imported function 'sendto' in 'sys_net' module
-LDR: ! Imported function 'socket' in 'sys_net' module
-LDR: ! Imported function 'shutdown' in 'sys_net' module
-LDR: W Unimplemented function 'inet_aton' in 'sys_net' module
-LDR: ! Imported function 'bind' in 'sys_net' module
-LDR: ! Imported function 'sys_net_finalize_network' in 'sys_net' module
-LDR: ! Imported function 'accept' in 'sys_net' module
-LDR: ! Imported function 'send' in 'sys_net' module
-LDR: ! Imported function 'recv' in 'sys_net' module
-LDR: ! Imported function 'cellFsRmdir' in 'sys_fs' module
-LDR: ! Imported function 'cellFsClose' in 'sys_fs' module
-LDR: ! Imported function 'cellFsOpendir' in 'sys_fs' module
-LDR: ! Imported function 'cellFsRead' in 'sys_fs' module
-LDR: ! Imported function 'cellFsReaddir' in 'sys_fs' module
-LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module
-LDR: ! Imported function 'cellFsStat' in 'sys_fs' module
-LDR: ! Imported function 'cellFsUnlink' in 'sys_fs' module
-LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module
-LDR: ! Imported function 'cellFsMkdir' in 'sys_fs' module
-LDR: ! Imported function 'cellFsWrite' in 'sys_fs' module
-LDR: ! Imported function 'cellFsFstat' in 'sys_fs' module
-LDR: ! Imported function 'cellFsRename' in 'sys_fs' module
-LDR: ! Imported function 'cellFsClosedir' in 'sys_fs' module
-LDR: ! Imported function 'cellPadInfoPressMode' in 'sys_io' module
-LDR: ! Imported function 'cellPadInit' in 'sys_io' module
-LDR: ! Imported function 'cellPadGetInfo' in 'sys_io' module
-LDR: ! Imported function 'cellPadEnd' in 'sys_io' module
-LDR: ! Imported function 'cellPadInfoSensorMode' in 'sys_io' module
-LDR: ! Imported function 'cellPadGetData' in 'sys_io' module
-LDR: ! Imported function 'cellPadSetSensorMode' in 'sys_io' module
-LDR: ! Imported function 'cellPadSetPressMode' in 'sys_io' module
-LDR: ! Imported function '_cellGcmInitBody' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmAddressToOffset' in 'cellGcmSys' module
-LDR: ! Imported function '_cellGcmFunc15' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmSetFlipMode' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmSetWaitFlip' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmSetDisplayBuffer' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmGetControlRegister' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmSetVBlankHandler' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmSetTile' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmSetZcull' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmSetFlip' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmGetConfiguration' in 'cellGcmSys' module
-LDR: ! Imported function 'cellGcmGetLabelAddress' in 'cellGcmSys' module
-LDR: ! Imported function 'cellSpursRequestIdleSpu' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursGetInfo' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursDetachLv2EventQueue' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursRemoveWorkload' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursWaitForWorkloadShutdown' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursAddWorkload' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursSetPriorities' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursShutdownWorkload' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursInitialize' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursAttachLv2EventQueue' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursFinalize' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursSetExceptionEventHandler' in 'cellSpurs' module
-LDR: ! Imported function 'cellSpursReadyCountStore' in 'cellSpurs' module
-LDR: ! Imported function 'cellAdecDecodeAu' in 'cellAdec' module
-LDR: ! Imported function 'cellAdecStartSeq' in 'cellAdec' module
-LDR: ! Imported function 'cellAdecQueryAttr' in 'cellAdec' module
-LDR: ! Imported function 'cellAdecClose' in 'cellAdec' module
-LDR: ! Imported function 'cellAdecGetPcm' in 'cellAdec' module
-LDR: ! Imported function 'cellAdecGetPcmItem' in 'cellAdec' module
-LDR: ! Imported function 'cellAdecOpen' in 'cellAdec' module
-LDR: ! Imported function 'cellAdecEndSeq' in 'cellAdec' module
-LDR: ! Imported function 'cellVdecClose' in 'libvdec' module
-LDR: ! Imported function 'cellVdecGetPicItem' in 'libvdec' module
-LDR: ! Imported function 'cellVdecDecodeAu' in 'libvdec' module
-LDR: ! Imported function 'cellVdecGetPicture' in 'libvdec' module
-LDR: ! Imported function 'cellVdecEndSeq' in 'libvdec' module
-LDR: ! Imported function 'cellVdecOpen' in 'libvdec' module
-LDR: ! Imported function 'cellVdecStartSeq' in 'libvdec' module
-LDR: ! Imported function 'cellVdecQueryAttr' in 'libvdec' module
-LDR: ! Imported function 'cellAudioInit' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioSetNotifyEventQueue' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioPortClose' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioSetPortLevel' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioPortStop' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioGetPortConfig' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioPortStart' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioQuit' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioPortOpen' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioRemoveNotifyEventQueue' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioGetPortTimestamp' in 'cellAudio' module
-LDR: ! Imported function 'cellAudioGetPortBlockTag' in 'cellAudio' module
-LDR: W Unimplemented function 'cellMicRead' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicIsOpen' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicIsAttached' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicRemoveNotifyEventQueue' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicReset' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicSetNotifyEventQueue' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicInit' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicClose' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicGetType' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicGetSignalState' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicEnd' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicOpen' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicStart' in 'cellMic' module
-LDR: W Unimplemented function 'cellMicStop' in 'cellMic' module
-LDR: ! Imported function 'cellSysmoduleUnloadModule' in 'cellSysmodule' module
-LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module
-LDR: ! Imported function 'cellSysmoduleInitialize' in 'cellSysmodule' module
-LDR: ! Imported function 'cellSysmoduleFinalize' in 'cellSysmodule' module
-LDR: ! Imported function 'cellNetCtlNetStartDialogLoadAsync' in 'cellNetCtl' module
-LDR: ! Imported function 'cellNetCtlAddHandler' in 'cellNetCtl' module
-LDR: ! Imported function 'cellNetCtlNetStartDialogUnloadAsync' in 'cellNetCtl' module
-LDR: ! Imported function 'cellNetCtlTerm' in 'cellNetCtl' module
-LDR: ! Imported function 'cellNetCtlGetInfo' in 'cellNetCtl' module
-LDR: ! Imported function 'cellNetCtlDelHandler' in 'cellNetCtl' module
-LDR: ! Imported function 'cellNetCtlInit' in 'cellNetCtl' module
-LDR: ! Imported function 'sceNpManagerGetTicket' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicSetPresence' in 'sceNp' module
-LDR: ! Imported function 'sceNpTerm' in 'sceNp' module
-LDR: ! Imported function 'sceNpManagerUnregisterCallback' in 'sceNp' module
-LDR: ! Imported function 'sceNpManagerGetTicketParam' in 'sceNp' module
-LDR: ! Imported function 'sceNpManagerRequestTicket' in 'sceNp' module
-LDR: ! Imported function 'sceNpManagerGetStatus' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicUnregisterHandler' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicRegisterHandler' in 'sceNp' module
-LDR: ! Imported function 'sceNpInit' in 'sceNp' module
-LDR: ! Imported function 'sceNpBasicGetEvent' in 'sceNp' module
-LDR: ! Imported function 'sceNpManagerRegisterCallback' in 'sceNp' module
-LDR: ! Imported function 'sceNpManagerGetNpId' in 'sceNp' module
-LDR: ! Imported function 'cellSysutilUnregisterCallback' in 'cellSysutil' module
-LDR: ! Imported function 'cellVideoOutConfigure' in 'cellSysutil' module
-LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module
-LDR: ! Imported function 'cellSysCacheMount' in 'cellSysutil' module
-LDR: W Unimplemented function 'cellOskDialogUnloadAsync' in 'cellSysutil' module
-LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module
-LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module
-LDR: ! Imported function 'cellMsgDialogAbort' in 'cellSysutil' module
-LDR: W Unimplemented function 'cellSysconfAbort' in 'cellSysutil' module
-LDR: W Unimplemented function 'cellOskDialogLoadAsync' in 'cellSysutil' module
-LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module
-LDR: ! Imported function 'cellSysutilGetSystemParamString' in 'cellSysutil' module
-LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module
-LDR: ! Imported function 'cellVideoOutGetResolutionAvailability' in 'cellSysutil' module
-LDR: W Unimplemented function 'cellSysconfOpen' in 'cellSysutil' module
-LDR: W Unimplemented function 'cellOskDialogAbort' in 'cellSysutil' module
-LDR: W Unimplemented function 'cellDiscGameGetBootDiscInfo' in 'cellSysutil' module
-LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module
-LDR: W Unimplemented function 'cellSaveDataAutoLoad' in 'cellSysutil' module
-LDR: ! Imported function 'cellGameDataCheckCreate2' in 'cellSysutil' module
-LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module
-LDR: ! Imported function 'cellGameDataCheckCreate' in 'cellSysutil' module
-LDR: W Unimplemented function 'cellMsgDialogOpen' in 'cellSysutil' module
-LDR: W Unimplemented function 'cellSaveDataAutoSave' in 'cellSysutil' module
-HLE: W {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x10548970, attr_addr=0x100412a8)
-HLE: ! {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex: *** lwmutex created [] (attribute=0x12): sq_id = 3
-HLE: W {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x10548988, attr_addr=0x100412a8)
-HLE: ! {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex: *** lwmutex created [] (attribute=0x12): sq_id = 4
-HLE: W {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100020, attr_addr=0x100412a8)
-HLE: ! {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex: *** lwmutex created [] (attribute=0x12): sq_id = 5
-HLE: W {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100050, attr_addr=0x100412a8)
-HLE: ! {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex: *** lwmutex created [] (attribute=0x12): sq_id = 6
-HLE: W {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100080, attr_addr=0x100412a8)
-HLE: ! {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex: *** lwmutex created [] (attribute=0x12): sq_id = 7
-HLE: W {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301000b0, attr_addr=0x100412a8)
-HLE: ! {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex: *** lwmutex created [] (attribute=0x12): sq_id = 8
-HLE: W {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x301000e0, attr_addr=0x100412a8)
-HLE: ! {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex: *** lwmutex created [] (attribute=0x12): sq_id = 9
-HLE: W {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100110, attr_addr=0x100412a8)
-HLE: ! {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex: *** lwmutex created [] (attribute=0x12): sq_id = 10
-HLE: W {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex warning: sys_lwmutex_create(lwmutex_addr=0x30100140, attr_addr=0x100412a8)
-HLE: ! {PPU[1] Thread (CPUThread)[0x00726028]} sys_lwmutex: *** lwmutex created [] (attribute=0x12): sq_id = 11
-HLE: W {PPU[1] Thread (CPUThread)[0x00014940]} sys_memory warning: sys_memory_get_user_memory_size(mem_info_addr=0xd000fcc4)
-TTY: <<<<<<<<<<< AVAILABLE USER MEMORY : 267321344 bytes >>>>>>>>>>>>>>>
-HLE: W {PPU[1] Thread (CPUThread)[0x00793010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_NET)
-HLE: W {PPU[1] Thread (CPUThread)[0x00793010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_MIC)
-HLE: W {PPU[1] Thread (CPUThread)[0x00793010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_FS)
-HLE: W {PPU[1] Thread (CPUThread)[0x00793010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_ADEC_AC3)
-HLE: W {PPU[1] Thread (CPUThread)[0x00793010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_VDEC_AVC)
-HLE: W {PPU[1] Thread (CPUThread)[0x00793010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_NETCTL)
-HLE: W {PPU[1] Thread (CPUThread)[0x00793010]} cellSysmodule warning: cellSysmoduleLoadModule(CELL_SYSMODULE_SYSUTIL_NP)
-HLE: E {PPU[1] Thread (CPUThread)[0x0072a040]} sys_fs error: "/parameters.txt" not found! flags: 0x00000000
-HLE: W {PPU[1] Thread (CPUThread)[0x0072a04c]} sys_fs warning: cellFsStat(path="/app_home/PS3_GAME/USRDIR/packed/game/game.wad", sb_addr=0xd000fa20)
-HLE: W {PPU[1] Thread (CPUThread)[0x0072a04c]} sys_fs warning: cellFsStat: "/app_home/PS3_GAME/USRDIR/packed/game/game.wad" not found.
-HLE: W {PPU[1] Thread (CPUThread)[0x0072a04c]} sys_fs warning: cellFsStat(path="/app_home/PS3_GAME/USRDIR/game.psarc", sb_addr=0xd000fa20)
-HLE: W {PPU[1] Thread (CPUThread)[0x00799040]} cellSysutil warning: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: E {PPU[1] Thread (CPUThread)[0x0072a040]} sys_fs error: "/app_home/PS3_GAME/USRDIR/parameters.txt" not found! flags: 0x00000000
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-PPU: ! {PPULLVMRecompiler} Removed 2 old versions
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c4]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-HLE: E {PPU[1] Thread (CPUThread)[0x007990c0]} TODO: cellDiscGameGetBootDiscInfo
-PPU: ! {PPULLVMRecompiler} Removed 2 old versions
-PPU: ! {PPULLVMRecompiler} PPU LLVM compiler thread exiting.
-HLE: ! All threads stopped...
-MEM: ! Closing memory...
+LDR: ! Elf path: /dev_bdvd/PS3_GAME/USRDIR/BOOT.BIN
+LDR: ! 
+LDR: ! loader::init() failed: Broken file
+LDR: ! Imported function 'sys_lwmutex_lock' in 'sysPrxForUser' module (0x72187c)
+LDR: ! Imported function 'sys_lwmutex_unlock' in 'sysPrxForUser' module (0x72189c)
+LDR: ! Imported function 'sys_ppu_thread_create' in 'sysPrxForUser' module (0x7218bc)
+LDR: ! Imported function 'sys_lwmutex_create' in 'sysPrxForUser' module (0x7218dc)
+LDR: ! Imported function 'sys_ppu_thread_get_id' in 'sysPrxForUser' module (0x7218fc)
+LDR: ! Imported function 'sys_mmapper_free_memory' in 'sysPrxForUser' module (0x72191c)
+LDR: ! Imported function 'sys_mmapper_unmap_memory' in 'sysPrxForUser' module (0x72193c)
+LDR: ! Imported function 'sys_process_is_stack' in 'sysPrxForUser' module (0x72195c)
+LDR: ! Imported function 'sys_initialize_tls' in 'sysPrxForUser' module (0x72197c)
+LDR: ! Imported function 'sys_time_get_system_time' in 'sysPrxForUser' module (0x72199c)
+LDR: ! Imported function 'sys_prx_exitspawn_with_level' in 'sysPrxForUser' module (0x7219bc)
+LDR: ! Imported function 'sys_lwmutex_trylock' in 'sysPrxForUser' module (0x7219dc)
+LDR: ! Imported function 'sys_ppu_thread_exit' in 'sysPrxForUser' module (0x7219fc)
+LDR: ! Imported function 'sys_mmapper_allocate_memory' in 'sysPrxForUser' module (0x721a1c)
+LDR: ! Imported function 'sys_lwmutex_destroy' in 'sysPrxForUser' module (0x721a3c)
+LDR: ! Imported function 'sys_mmapper_map_memory' in 'sysPrxForUser' module (0x721a5c)
+LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0x721a7c)
+LDR: ! Imported function 'sys_game_process_exitspawn' in 'sysPrxForUser' module (0x721a9c)
+LDR: ! Imported function '_sys_heap_malloc' in 'sysPrxForUser' module (0x722e7c)
+LDR: ! Imported function '_sys_heap_memalign' in 'sysPrxForUser' module (0x722e9c)
+LDR: ! Imported function '_sys_heap_free' in 'sysPrxForUser' module (0x722ebc)
+LDR: ! Imported function '_sys_heap_delete_heap' in 'sysPrxForUser' module (0x722edc)
+LDR: ! Imported function '_sys_heap_create_heap' in 'sysPrxForUser' module (0x722efc)
+LDR: ! Imported function 'socketpoll' in 'sys_net' module (0x721abc)
+LDR: ! Imported function 'sys_net_initialize_network_ex' in 'sys_net' module (0x721adc)
+LDR: ! Imported function 'getsockname' in 'sys_net' module (0x721afc)
+LDR: ! Imported function 'recvfrom' in 'sys_net' module (0x721b1c)
+LDR: ! Imported function 'listen' in 'sys_net' module (0x721b3c)
+LDR: ! Imported function 'socketselect' in 'sys_net' module (0x721b5c)
+LDR: ! Imported function 'getsockopt' in 'sys_net' module (0x721b7c)
+LDR: ! Imported function '_sys_net_errno_loc' in 'sys_net' module (0x721b9c)
+LDR: ! Imported function 'connect' in 'sys_net' module (0x721bbc)
+LDR: ! Imported function 'socketclose' in 'sys_net' module (0x721bdc)
+LDR: ! Imported function 'gethostbyname' in 'sys_net' module (0x721bfc)
+LDR: ! Imported function 'inet_ntoa' in 'sys_net' module (0x721c1c)
+LDR: ! Imported function 'setsockopt' in 'sys_net' module (0x721c3c)
+LDR: ! Imported function 'sendto' in 'sys_net' module (0x721c5c)
+LDR: ! Imported function 'socket' in 'sys_net' module (0x721c7c)
+LDR: ! Imported function 'shutdown' in 'sys_net' module (0x721c9c)
+LDR: ! Imported function 'inet_aton' in 'sys_net' module (0x721cbc)
+LDR: ! Imported function 'bind' in 'sys_net' module (0x721cdc)
+LDR: ! Imported function 'sys_net_finalize_network' in 'sys_net' module (0x721cfc)
+LDR: ! Imported function 'accept' in 'sys_net' module (0x721d1c)
+LDR: ! Imported function 'send' in 'sys_net' module (0x721d3c)
+LDR: ! Imported function 'recv' in 'sys_net' module (0x721d5c)
+LDR: ! Imported function 'cellFsRmdir' in 'sys_fs' module (0x721d7c)
+LDR: ! Imported function 'cellFsClose' in 'sys_fs' module (0x721d9c)
+LDR: ! Imported function 'cellFsOpendir' in 'sys_fs' module (0x721dbc)
+LDR: ! Imported function 'cellFsRead' in 'sys_fs' module (0x721ddc)
+LDR: ! Imported function 'cellFsReaddir' in 'sys_fs' module (0x721dfc)
+LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module (0x721e1c)
+LDR: ! Imported function 'cellFsStat' in 'sys_fs' module (0x721e3c)
+LDR: ! Imported function 'cellFsUnlink' in 'sys_fs' module (0x721e5c)
+LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module (0x721e7c)
+LDR: ! Imported function 'cellFsMkdir' in 'sys_fs' module (0x721e9c)
+LDR: ! Imported function 'cellFsWrite' in 'sys_fs' module (0x721ebc)
+LDR: ! Imported function 'cellFsFstat' in 'sys_fs' module (0x721edc)
+LDR: ! Imported function 'cellFsRename' in 'sys_fs' module (0x721efc)
+LDR: ! Imported function 'cellFsClosedir' in 'sys_fs' module (0x721f1c)
+LDR: ! Imported function 'cellPadInfoPressMode' in 'sys_io' module (0x721f3c)
+LDR: ! Imported function 'cellPadInit' in 'sys_io' module (0x721f5c)
+LDR: ! Imported function 'cellPadGetInfo' in 'sys_io' module (0x721f7c)
+LDR: ! Imported function 'cellPadEnd' in 'sys_io' module (0x721f9c)
+LDR: ! Imported function 'cellPadInfoSensorMode' in 'sys_io' module (0x721fbc)
+LDR: ! Imported function 'cellPadGetData' in 'sys_io' module (0x721fdc)
+LDR: ! Imported function 'cellPadSetSensorMode' in 'sys_io' module (0x721ffc)
+LDR: ! Imported function 'cellPadSetPressMode' in 'sys_io' module (0x72201c)
+LDR: ! Imported function '_cellGcmInitBody' in 'cellGcmSys' module (0x72203c)
+LDR: ! Imported function 'cellGcmAddressToOffset' in 'cellGcmSys' module (0x72205c)
+LDR: ! Imported function '_cellGcmFunc15' in 'cellGcmSys' module (0x72207c)
+LDR: ! Imported function 'cellGcmSetFlipMode' in 'cellGcmSys' module (0x72209c)
+LDR: ! Imported function 'cellGcmSetWaitFlip' in 'cellGcmSys' module (0x7220bc)
+LDR: ! Imported function 'cellGcmSetDisplayBuffer' in 'cellGcmSys' module (0x7220dc)
+LDR: ! Imported function 'cellGcmGetControlRegister' in 'cellGcmSys' module (0x7220fc)
+LDR: ! Imported function 'cellGcmSetVBlankHandler' in 'cellGcmSys' module (0x72211c)
+LDR: ! Imported function 'cellGcmSetTile' in 'cellGcmSys' module (0x72213c)
+LDR: ! Imported function 'cellGcmSetZcull' in 'cellGcmSys' module (0x72215c)
+LDR: ! Imported function 'cellGcmSetFlip' in 'cellGcmSys' module (0x72217c)
+LDR: ! Imported function 'cellGcmGetConfiguration' in 'cellGcmSys' module (0x72219c)
+LDR: ! Imported function 'cellGcmGetLabelAddress' in 'cellGcmSys' module (0x7221bc)
+LDR: ! Imported function 'cellSpursRequestIdleSpu' in 'cellSpurs' module (0x7221dc)
+LDR: ! Imported function 'cellSpursGetInfo' in 'cellSpurs' module (0x7221fc)
+LDR: ! Imported function 'cellSpursDetachLv2EventQueue' in 'cellSpurs' module (0x72221c)
+LDR: ! Imported function 'cellSpursRemoveWorkload' in 'cellSpurs' module (0x72223c)
+LDR: ! Imported function 'cellSpursWaitForWorkloadShutdown' in 'cellSpurs' module (0x72225c)
+LDR: ! Imported function 'cellSpursAddWorkload' in 'cellSpurs' module (0x72227c)
+LDR: ! Imported function 'cellSpursSetPriorities' in 'cellSpurs' module (0x72229c)
+LDR: ! Imported function 'cellSpursShutdownWorkload' in 'cellSpurs' module (0x7222bc)
+LDR: ! Imported function 'cellSpursInitialize' in 'cellSpurs' module (0x7222dc)
+LDR: ! Imported function 'cellSpursAttachLv2EventQueue' in 'cellSpurs' module (0x7222fc)
+LDR: ! Imported function 'cellSpursFinalize' in 'cellSpurs' module (0x72231c)
+LDR: ! Imported function 'cellSpursSetExceptionEventHandler' in 'cellSpurs' module (0x72233c)
+LDR: ! Imported function 'cellSpursReadyCountStore' in 'cellSpurs' module (0x72235c)
+LDR: ! Imported function 'cellAdecDecodeAu' in 'cellAdec' module (0x72237c)
+LDR: ! Imported function 'cellAdecStartSeq' in 'cellAdec' module (0x72239c)
+LDR: ! Imported function 'cellAdecQueryAttr' in 'cellAdec' module (0x7223bc)
+LDR: ! Imported function 'cellAdecClose' in 'cellAdec' module (0x7223dc)
+LDR: ! Imported function 'cellAdecGetPcm' in 'cellAdec' module (0x7223fc)
+LDR: ! Imported function 'cellAdecGetPcmItem' in 'cellAdec' module (0x72241c)
+LDR: ! Imported function 'cellAdecOpen' in 'cellAdec' module (0x72243c)
+LDR: ! Imported function 'cellAdecEndSeq' in 'cellAdec' module (0x72245c)
+LDR: ! Imported function 'cellVdecClose' in 'libvdec' module (0x72247c)
+LDR: ! Imported function 'cellVdecGetPicItem' in 'libvdec' module (0x72249c)
+LDR: ! Imported function 'cellVdecDecodeAu' in 'libvdec' module (0x7224bc)
+LDR: ! Imported function 'cellVdecGetPicture' in 'libvdec' module (0x7224dc)
+LDR: ! Imported function 'cellVdecEndSeq' in 'libvdec' module (0x7224fc)
+LDR: ! Imported function 'cellVdecOpen' in 'libvdec' module (0x72251c)
+LDR: ! Imported function 'cellVdecStartSeq' in 'libvdec' module (0x72253c)
+LDR: ! Imported function 'cellVdecQueryAttr' in 'libvdec' module (0x72255c)
+LDR: ! Imported function 'cellAudioInit' in 'cellAudio' module (0x72257c)
+LDR: ! Imported function 'cellAudioSetNotifyEventQueue' in 'cellAudio' module (0x72259c)
+LDR: ! Imported function 'cellAudioPortClose' in 'cellAudio' module (0x7225bc)
+LDR: ! Imported function 'cellAudioSetPortLevel' in 'cellAudio' module (0x7225dc)
+LDR: ! Imported function 'cellAudioPortStop' in 'cellAudio' module (0x7225fc)
+LDR: ! Imported function 'cellAudioGetPortConfig' in 'cellAudio' module (0x72261c)
+LDR: ! Imported function 'cellAudioPortStart' in 'cellAudio' module (0x72263c)
+LDR: ! Imported function 'cellAudioQuit' in 'cellAudio' module (0x72265c)
+LDR: ! Imported function 'cellAudioPortOpen' in 'cellAudio' module (0x72267c)
+LDR: ! Imported function 'cellAudioRemoveNotifyEventQueue' in 'cellAudio' module (0x72269c)
+LDR: ! Imported function 'cellAudioGetPortTimestamp' in 'cellAudio' module (0x722f1c)
+LDR: ! Imported function 'cellAudioGetPortBlockTag' in 'cellAudio' module (0x722f3c)
+LDR: ! Imported function 'cellMicRead' in 'cellMic' module (0x7226bc)
+LDR: ! Imported function 'cellMicIsOpen' in 'cellMic' module (0x7226dc)
+LDR: ! Imported function 'cellMicIsAttached' in 'cellMic' module (0x7226fc)
+LDR: ! Imported function 'cellMicRemoveNotifyEventQueue' in 'cellMic' module (0x72271c)
+LDR: ! Imported function 'cellMicReset' in 'cellMic' module (0x72273c)
+LDR: ! Imported function 'cellMicSetNotifyEventQueue' in 'cellMic' module (0x72275c)
+LDR: ! Imported function 'cellMicInit' in 'cellMic' module (0x72277c)
+LDR: ! Imported function 'cellMicClose' in 'cellMic' module (0x72279c)
+LDR: ! Imported function 'cellMicGetType' in 'cellMic' module (0x7227bc)
+LDR: ! Imported function 'cellMicGetSignalState' in 'cellMic' module (0x7227dc)
+LDR: ! Imported function 'cellMicEnd' in 'cellMic' module (0x7227fc)
+LDR: ! Imported function 'cellMicOpen' in 'cellMic' module (0x72281c)
+LDR: ! Imported function 'cellMicStart' in 'cellMic' module (0x72283c)
+LDR: ! Imported function 'cellMicStop' in 'cellMic' module (0x72285c)
+LDR: ! Imported function 'cellSysmoduleUnloadModule' in 'cellSysmodule' module (0x72287c)
+LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module (0x72289c)
+LDR: ! Imported function 'cellSysmoduleInitialize' in 'cellSysmodule' module (0x7228bc)
+LDR: ! Imported function 'cellSysmoduleFinalize' in 'cellSysmodule' module (0x7228dc)
+LDR: ! Imported function 'cellNetCtlNetStartDialogLoadAsync' in 'cellNetCtl' module (0x7228fc)
+LDR: ! Imported function 'cellNetCtlAddHandler' in 'cellNetCtl' module (0x72291c)
+LDR: ! Imported function 'cellNetCtlNetStartDialogUnloadAsync' in 'cellNetCtl' module (0x72293c)
+LDR: ! Imported function 'cellNetCtlTerm' in 'cellNetCtl' module (0x72295c)
+LDR: ! Imported function 'cellNetCtlGetInfo' in 'cellNetCtl' module (0x72297c)
+LDR: ! Imported function 'cellNetCtlDelHandler' in 'cellNetCtl' module (0x72299c)
+LDR: ! Imported function 'cellNetCtlInit' in 'cellNetCtl' module (0x7229bc)
+LDR: ! Imported function 'sceNpManagerGetTicket' in 'sceNp' module (0x7229dc)
+LDR: ! Imported function 'sceNpBasicSetPresence' in 'sceNp' module (0x7229fc)
+LDR: ! Imported function 'sceNpTerm' in 'sceNp' module (0x722a1c)
+LDR: ! Imported function 'sceNpManagerUnregisterCallback' in 'sceNp' module (0x722a3c)
+LDR: ! Imported function 'sceNpManagerGetTicketParam' in 'sceNp' module (0x722a5c)
+LDR: ! Imported function 'sceNpManagerRequestTicket' in 'sceNp' module (0x722a7c)
+LDR: ! Imported function 'sceNpManagerGetStatus' in 'sceNp' module (0x722a9c)
+LDR: ! Imported function 'sceNpBasicUnregisterHandler' in 'sceNp' module (0x722abc)
+LDR: ! Imported function 'sceNpBasicRegisterHandler' in 'sceNp' module (0x722adc)
+LDR: ! Imported function 'sceNpInit' in 'sceNp' module (0x722afc)
+LDR: ! Imported function 'sceNpBasicGetEvent' in 'sceNp' module (0x722b1c)
+LDR: ! Imported function 'sceNpManagerRegisterCallback' in 'sceNp' module (0x722b3c)
+LDR: ! Imported function 'sceNpManagerGetNpId' in 'sceNp' module (0x722b5c)
+LDR: ! Imported function 'cellSysutilUnregisterCallback' in 'cellSysutil' module (0x722b7c)
+LDR: ! Imported function 'cellVideoOutConfigure' in 'cellSysutil' module (0x722b9c)
+LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module (0x722bbc)
+LDR: ! Imported function 'cellSysCacheMount' in 'cellSysutil' module (0x722bdc)
+LDR: ! Imported function 'cellOskDialogUnloadAsync' in 'cellSysutil' module (0x722bfc)
+LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module (0x722c1c)
+LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module (0x722c3c)
+LDR: ! Imported function 'cellMsgDialogAbort' in 'cellSysutil' module (0x722c5c)
+LDR: ! Imported function 'cellSysconfAbort' in 'cellSysutil' module (0x722c7c)
+LDR: ! Imported function 'cellOskDialogLoadAsync' in 'cellSysutil' module (0x722c9c)
+LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module (0x722cbc)
+LDR: ! Imported function 'cellSysutilGetSystemParamString' in 'cellSysutil' module (0x722cdc)
+LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module (0x722cfc)
+LDR: ! Imported function 'cellVideoOutGetResolutionAvailability' in 'cellSysutil' module (0x722d1c)
+LDR: ! Imported function 'cellSysconfOpen' in 'cellSysutil' module (0x722d3c)
+LDR: ! Imported function 'cellOskDialogAbort' in 'cellSysutil' module (0x722d5c)
+LDR: ! Imported function 'cellDiscGameGetBootDiscInfo' in 'cellSysutil' module (0x722d7c)
+LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module (0x722d9c)
+LDR: ! Imported function 'cellSaveDataAutoLoad' in 'cellSysutil' module (0x722dbc)
+LDR: ! Imported function 'cellGameDataCheckCreate2' in 'cellSysutil' module (0x722ddc)
+LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module (0x722dfc)
+LDR: ! Imported function 'cellGameDataCheckCreate' in 'cellSysutil' module (0x722e1c)
+LDR: ! Imported function 'cellMsgDialogOpen' in 'cellSysutil' module (0x722e3c)
+LDR: ! Imported function 'cellSaveDataAutoSave' in 'cellSysutil' module (0x722e5c)
+MEM: ! Thread Local Storage initialized (g_tls_start=0x789000, user_size=0x1f0)
+*** TLS segment addr: 0x007884e8
+*** TLS segment size: 0x00000008
+HLE: W {PPU[0x1] Thread (main_thread)[0x007218dc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10548970, attr=*0x100412a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x007218dc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10548988, attr=*0x100412a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00702388]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd00ffb70)
+HLE: W {PPU[0x1] Thread (main_thread)[0x007218dc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000020, attr=*0x100412a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x007218dc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000050, attr=*0x100412a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x007218dc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000080, attr=*0x100412a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x007218dc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200000b0, attr=*0x100412a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x007218dc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x200000e0, attr=*0x100412a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x007218dc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000110, attr=*0x100412a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x007218dc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20000140, attr=*0x100412a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00014940]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd00ffcc4)
+TTY: <<<<<<<<<<< AVAILABLE USER MEMORY : 267386880 bytes >>>>>>>>>>>>>>>\n
+HLE: W {PPU[0x1] Thread (main_thread)[0x0072289c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0000: CELL_SYSMODULE_NET)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0072289c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0022: CELL_SYSMODULE_MIC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0072289c]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0072289c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0027: CELL_SYSMODULE_ADEC_AC3)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0072289c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0025: CELL_SYSMODULE_VDEC_AVC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0072289c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0014: CELL_SYSMODULE_NETCTL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0072289c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00721e1c]} cellFs: cellFsOpen(path=*0xd00ffb24, flags=0, fd=*0xd00ffae0, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0x1] Thread (main_thread)[0x00721e1c]} sys_fs: sys_fs_open(path=*0xd00ffb24, flags=0, fd=*0xd00ffae0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00721e1c]} sys_fs: *** path = '/parameters.txt'
+HLE: E {PPU[0x1] Thread (main_thread)[0x00721e1c]} sys_fs: sys_fs_open('/parameters.txt') failed: device not mounted
+HLE: W {PPU[0x1] Thread (main_thread)[0x00721e3c]} cellFs: cellFsStat(path=*0xd00ffa54, sb=*0xd00ffa20) -> sys_fs_stat()
+HLE: W {PPU[0x1] Thread (main_thread)[0x00721e3c]} sys_fs: sys_fs_stat(path=*0xd00ffa54, sb=*0xd00ffa20)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00721e3c]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/packed/game/game.wad'
+HLE: W {PPU[0x1] Thread (main_thread)[0x00722c1c]} cellSysutil: cellSysutilGetSystemParamInt(id=0x122(???), value=*0xd00ffb90)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00722c1c]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd00ffb94)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00721e1c]} cellFs: cellFsOpen(path=*0xd00ffa84, flags=0, fd=*0xd00ffa40, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0x1] Thread (main_thread)[0x00721e1c]} sys_fs: sys_fs_open(path=*0xd00ffa84, flags=0, fd=*0xd00ffa40, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00721e1c]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/parameters.txt'
+G: W {PPU[0x1] Thread (main_thread)[0x00721e1c]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES00001-[Resistance Fall of Man™]/PS3_GAME/USRDIR/parameters.txt', 0x1) failed: error 0x2
+HLE: E {PPU[0x1] Thread (main_thread)[0x00721e1c]} sys_fs: sys_fs_open('/dev_bdvd/PS3_GAME/USRDIR/parameters.txt'): failed to open file (flags=0, mode=0)
+HLE: S {PPU[0x1] Thread (main_thread)[0x00722d7c]} Last function: cellDiscGameGetBootDiscInfo (0xb72bc4e6)
+G: ! {PPU[0x1] Thread (main_thread)[0x00722d7c]} Registers:
+=========
+GPR[0] = 0x14a94
+GPR[1] = 0xd00ff960
+GPR[2] = 0x78acb8
+GPR[3] = 0x101b8fc8
+GPR[4] = 0x200
+GPR[5] = 0x200
+GPR[6] = 0x0
+GPR[7] = 0x103b4388
+GPR[8] = 0x10
+GPR[9] = 0xb
+GPR[10] = 0x103b3f88
+GPR[11] = 0x103b438c
+GPR[12] = 0x0
+GPR[13] = 0x790030
+GPR[14] = 0x0
+GPR[15] = 0x72a000
+GPR[16] = 0x729000
+GPR[17] = 0x0
+GPR[18] = 0x728000
+GPR[19] = 0x100000
+GPR[20] = 0x0
+GPR[21] = 0x0
+GPR[22] = 0x0
+GPR[23] = 0x0
+GPR[24] = 0x0
+GPR[25] = 0x72b000
+GPR[26] = 0xffffffff8002bd01
+GPR[27] = 0xffffffff8002bd03
+GPR[28] = 0xd00ffcc0
+GPR[29] = 0x1
+GPR[30] = 0x73a6f0
+GPR[31] = 0xffffffff80020000
+FPR[0] = 0
+FPR[1] = 0
+FPR[2] = 1
+FPR[3] = 0
+FPR[4] = 0.05
+FPR[5] = 0.9
+FPR[6] = 0.85
+FPR[7] = 0
+FPR[8] = 1
+FPR[9] = 1.125
+FPR[10] = 1.425
+FPR[11] = 100
+FPR[12] = 0
+FPR[13] = 100
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0xbf800000bf8000000000000000000000 [x: -1 y: -1 z: 0 w: 0]
+VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x101920d887010086ffffffffffffffff [x: 3.01992e-29 y: -9.70504e-35 z: -nan w: -nan]
+VPR[3] = 0x00000002013ed9500000000000000ab7 [x: 2.8026e-45 y: 3.50534e-38 z: 0 w: 3.84376e-42]
+VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x80001700000000000000000000000000 [x: -8.25085e-42 y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x3f8000003f8000003f8000003f800000 [x: 1 y: 1 z: 1 w: 1]
+VPR[10] = 0x3951b7173e8000003f0000003f800000 [x: 0.0002 y: 0.25 z: 0.5 w: 1]
+VPR[11] = 0x00000000000000003f80000000000000 [x: 0 y: 0 z: 1 w: 0]
+VPR[12] = 0x000000003f8000000000000000000000 [x: 0 y: 1 z: 0 w: 0]
+VPR[13] = 0x3f800000000000000000000000000000 [x: 1 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
+VPR[17] = 0x00000002013ed970ffffffff00000ab9 [x: 2.8026e-45 y: 3.50535e-38 z: -nan w: 3.84656e-42]
+VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0xffffffff000000000000000000000000 [x: -nan y: 0 z: 0 w: 0]
+VPR[20] = 0x0000000002410f70ffffffff3f800000 [x: 0 y: 1.41838e-37 z: -nan w: 1]
+VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
+VPR[24] = 0x00000002013ed988ffffffff00000aba [x: 2.8026e-45 y: 3.50536e-38 z: -nan w: 3.84797e-42]
+VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0xffffffff000000000000000000000000 [x: -nan y: 0 z: 0 w: 0]
+VPR[27] = 0x0000000002411410ffffffff3f800000 [x: 0 y: 1.41852e-37 z: -nan w: 1]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
+VPR[31] = 0x00000002013ed9a0ffffffff00000abb [x: 2.8026e-45 y: 3.50536e-38 z: -nan w: 3.84937e-42]
+CR = 0x44000042
+LR = 0x38fd4
+CTR = 0x7fffffff
+XER = 0x20000000 [CA=1 | OV=8589934592 | SO=0]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: E {PPU[0x1] Thread (main_thread)[0x00722d7c]} Exception: 
+(in file Emu\SysCalls\Modules\cellGame.cpp:683, in function cellDiscGameGetBootDiscInfo)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
+G: ! All threads stopped...
+G: ! Objects cleared...

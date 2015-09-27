@@ -1,8 +1,10 @@
-HLE: ! path: /dev_hdd0/game/
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! RPCS3 0.0.0.5 v0.0.0.5-2529-g286d296
+G: ! 
+G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES00231-[DRAGON BALL Z BURST LIMIT]/PS3_GAME/USRDIR/BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES00231-[DRAGON BALL Z BURST LIMIT]/PS3_GAME/dev_bdvd.path', 0x1) failed: error 0x2
-LDR: !  
+LDR: ! 
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
@@ -11,13 +13,30 @@ LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
 LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES00231-[DRAGON BALL Z BURST LIMIT]/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
-LDR: !  
+LDR: ! 
+LDR: ! Settings:
+LDR: ! CPU: PPU Interpreter 2
+LDR: ! SPU: SPU Recompiler (ASMJIT)
+LDR: ! Renderer: DirectX 12
+LDR: ! D3D Adapter: Default
+LDR: ! Resolution: 1280x720
+LDR: ! Write Depth Buffer: No
+LDR: ! Write Color Buffers: No
+LDR: ! Read Color Buffer: No
+LDR: ! Audio Out: XAudio2
+LDR: ! Log Everything: No
+LDR: ! RSX Logging: No
+LDR: ! 
 LDR: ! Title: DRAGON BALL Z: BURST LIMIT
 LDR: ! Serial: BLES00231
 LDR: ! Elf path: /dev_bdvd/PS3_GAME/USRDIR/BOOT.BIN
+LDR: ! 
 LDR: ! loader::init() failed: Broken file
-MEM: ! Initializing memory: g_base_addr = 0x48ba200000, g_priv_addr = 0x49ba200000
-MEM: ! Memory initialized.
+LDR: ! *** sdk version: 0x210001
+LDR: ! *** primary prio: 1001
+LDR: ! *** primary stacksize: 0x10000
+LDR: ! *** malloc pagesize: 0x100000
+LDR: ! *** ppc seg: 0x0
 LDR: ! Imported function 'cellSysmoduleUnloadModule' in 'cellSysmodule' module (0x3744a8)
 LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module (0x3744c8)
 LDR: ! Imported function '_cellSpursAttributeInitialize' in 'cellSpurs' module (0x3744e8)
@@ -126,7 +145,6 @@ LDR: ! Imported function 'cellAudioQuit' in 'cellAudio' module (0x374968)
 LDR: ! Imported function 'cellAudioPortOpen' in 'cellAudio' module (0x374988)
 LDR: ! Imported function 'cellAudioGetPortBlockTag' in 'cellAudio' module (0x3749a8)
 LDR: ! Imported function 'cellAudioRemoveNotifyEventQueue' in 'cellAudio' module (0x3749c8)
-LDR: W Unknown module 'cellSync'
 LDR: ! Imported function 'cellSyncMutexUnlock' in 'cellSync' module (0x3749e8)
 LDR: ! Imported function 'cellSyncMutexInitialize' in 'cellSync' module (0x374a08)
 LDR: ! Imported function 'cellSyncMutexTryLock' in 'cellSync' module (0x374a28)
@@ -203,7 +221,7 @@ LDR: ! Imported function 'sceNpSignalingDeactivateConnection' in 'sceNp' module 
 LDR: ! Imported function 'sceNpManagerGetNpId' in 'sceNp' module (0x375308)
 LDR: ! Imported function 'cellRtcFormatRfc3339LocalTime' in 'cellRtc' module (0x375328)
 LDR: ! Imported function 'cellRtcGetCurrentClockLocalTime' in 'cellRtc' module (0x375348)
-LDR: E Unimplemented function 'UTF16stoUTF8s' in 'cellL10n' module (0x375368)
+LDR: ! Imported function 'UTF16stoUTF8s' in 'cellL10n' module (0x375368)
 LDR: ! Imported function 'cellRescSetWaitFlip' in 'cellResc' module (0x375388)
 LDR: ! Imported function 'cellRescSetDsts' in 'cellResc' module (0x3753a8)
 LDR: ! Imported function 'cellRescResetFlipStatus' in 'cellResc' module (0x3753c8)
@@ -256,12 +274,11 @@ LDR: ! Imported function 'sys_lwmutex_destroy' in 'sysPrxForUser' module (0x3761
 LDR: ! Imported function 'sys_spu_image_close' in 'sysPrxForUser' module (0x3761e8)
 LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0x376208)
 LDR: ! Imported function 'sys_spu_image_import' in 'sysPrxForUser' module (0x376228)
-HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x220a000, user_size=0x150)
+MEM: ! Thread Local Storage initialized (g_tls_start=0x220a000, user_size=0x150)
 *** TLS segment addr: 0x00488944
 *** TLS segment size: 0x00000004
-LDR: E 'BreakPoints.dat' is broken (version=0xd890, break_count=0x0, marked_count=0x93173968, length=0x6)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21f2498, attr=*0x3af470)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0034c25c]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000fc34)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0034c25c]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000fc34)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21f2470, attr=*0x3af470)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21f1bf8, attr=*0x3af470)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21f1c20, attr=*0x3af470)
@@ -270,11 +287,12 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21f1b80, attr=*0x3af470)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21f1ba8, attr=*0x3af470)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21f1bd0, attr=*0x3af470)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00374568]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_LANG
-HLE: W {PPU[0x1] Thread (main_thread)[0x00205b80]} sys_memory: sys_memory_container_create(cid_addr=0x4df4e0, yield_size=0x1000000)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00205b80]} sys_memory: *** memory_container created(addr=0xffffffff20100000): id = 12
+HLE: W {PPU[0x1] Thread (main_thread)[0x0034abb0]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd000f9f0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374568]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000fb80)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00205b80]} sys_memory: sys_memory_container_create(cid=*0x4df4e0, size=0x1000000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003744c8]} cellSysmodule: cellSysmoduleLoadModule(id=0x0009: CELL_SYSMODULE_RTC)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375f68]} cellGcmSys: _cellGcmInitBody(context_addr=0x21f19bc, cmdSize=0x10000, ioSize=0x7e00000, ioAddress=0x21100000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0020970c]} sys_memory: sys_memory_allocate(size=0x7e00000, flags=0x400, alloc_addr=*0xd000f950)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375f68]} cellGcmSys: _cellGcmInitBody(context=**0x21f19bc, cmdSize=0x10000, ioSize=0x7e00000, ioAddress=0x20100000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00375f68]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00375f68]} cellGcmSys: cellGcmInit(): 256MB io address space used
 RSX: ! {RSXThread} RSX thread started
@@ -282,25 +300,57 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20cfe88, attr=*0xd000f8a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0002956c]} sys_spu: sys_spu_initialize(max_usable_spu=6, max_raw_spu=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00242260]} sys_spu: sys_spu_initialize(max_usable_spu=6, max_raw_spu=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} cellSpurs: cellSpursInitialize(spurs_addr=0x2126b00, nSpus=5, spuPriority=250, ppuPriority=1000, exitIfNoWork=0)
-HLE: E {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu TODO: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} cellSpurs: cellSpursInitialize(spurs=*0x2126b00, nSpus=5, spuPriority=250, ppuPriority=1000, exitIfNoWork=-256)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x2126b00, flags=0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f9e8, attr=*0xd000f9c8, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: sys_spu_thread_group_create(id=*0xd000f9a8, num=5, prio=250, attr=*0xd000f918)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f8f0, group=0x20, spu_num=0, img=*0x2127870, attr=*0xd000f8e0, arg=*0xd000f8f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f8f0, group=0x20, spu_num=1, img=*0x2127870, attr=*0xd000f8e0, arg=*0xd000f8f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f8f0, group=0x20, spu_num=2, img=*0x2127870, attr=*0xd000f8e0, arg=*0xd000f8f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f8f0, group=0x20, spu_num=3, img=*0x2127870, attr=*0xd000f8e0, arg=*0xd000f8f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f8f0, group=0x20, spu_num=4, img=*0x2127870, attr=*0xd000f8e0, arg=*0xd000f8f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21278b0, attr=*0xd000f9b0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x21278c8, lwmutex=*0x21278b0, attr=*0xd000f9c0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_event: sys_event_queue_create(equeue_id=*0x212785c, attr=*0xd000f848, event_queue_key=0x0, size=42)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x20, eq=0x28, req=0xffffffffffff0000, spup=*0x2126bc9)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_event: sys_event_port_create(eport_id=*0x2127860, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_event: sys_event_port_connect_local(eport_id=0x29, equeue_id=0x28)
-HLE: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x20)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x2126b00, flag=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003757e8]} sys_spu: sys_spu_thread_group_connect_event(id=0x20, eq=0x28, et=2)
-HLE: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x20, cause=*0x0, status=*0x0)
+HLE: W {PPU[0x2b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x20)
 HLE: W {PPU[0x1] Thread (main_thread)[0x002421d0]} sys_event: sys_event_queue_create(equeue_id=*0x2126ac0, attr=*0xd000fa30, event_queue_key=0x0, size=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375828]} cellSpurs: cellSpursAttachLv2EventQueue(spurs_addr=0x2126b00, queue=0x2c, port_addr=0x2126ad0, isDynamic=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375828]} cellSpurs: cellSpursAttachLv2EventQueue(spurs=*0x2126b00, queue=0x2c, port=*0x2126ad0, isDynamic=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00375828]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x20, eq=0x2c, req=0xffffffffffff0000, spup=*0x2126ad0)
+SPU: S {PPU[0x2b] Thread (SpursHdlr0)[0x00000000]} SPU Database initialized...
+SPU: S {PPU[0x2b] Thread (SpursHdlr0)[0x00000000]} SPU Recompiler (ASMJIT) created...
+HLE: W {PPU[0x2b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x20, cause=*0x0, status=*0x0)
+SPU: S {SPU[0x21] Thread (CellSpursKernel0)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003745a8]} cellSysutil: cellVideoOutGetNumberOfDevice(videoOut=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2127e00, attr=*0xd000f950)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2127ec0, attr=*0xd000f880)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2127ee0, attr=*0xd000f880)
-HLE: W {PPU[0x1] Thread (main_thread)[0x002349d4]} sys_semaphore: sys_semaphore_create(sem=*0x2127f18, attr=*0xd000f880, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002349d4]} sys_semaphore: sys_semaphore_create(sem_id=*0x2127f18, attr=*0xd000f880, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0022322c]} sys_mutex: sys_mutex_create(mutex_id=*0x2127f00, attr=*0xd000f7b8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00223254]} sys_cond: sys_cond_create(cond_id=*0x2127f04, mutex_id=0x31, attr=*0xd000f7a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2127f20, entry=0x46feb8, arg=0x2127f20, prio=999, stacksize=0x10000, flags=0x1, threadname=*0x3b8cc8)
@@ -308,7 +358,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thre
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x33)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2127d18, attr=*0xd000f920)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2127d68, attr=*0xd000f880)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375968]} cellGcmSys: cellGcmSetUserHandler(handler_addr=0x470d58)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375968]} cellGcmSys: cellGcmSetUserHandler(handler=*0x470d58)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2127b00, attr=*0xd000f950)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20cb858, attr=*0xd000f890)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0022322c]} sys_mutex: sys_mutex_create(mutex_id=*0x20cb890, attr=*0xd000f7c8)
@@ -323,8 +373,8 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20c75b8, attr=*0xd000f8a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20c7320, attr=*0xd000f8a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20c0218, attr=*0xd000f850)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00211530]} sys_semaphore: sys_semaphore_create(sem=*0x20c0250, attr=*0xd000f850, initial_val=0, max_val=2147483647)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00211568]} sys_semaphore: sys_semaphore_create(sem=*0x20c0258, attr=*0xd000f850, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00211530]} sys_semaphore: sys_semaphore_create(sem_id=*0x20c0250, attr=*0xd000f850, initial_val=0, max_val=2147483647)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00211568]} sys_semaphore: sys_semaphore_create(sem_id=*0x20c0258, attr=*0xd000f850, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20c0238, entry=0x46feb8, arg=0x20c0238, prio=1001, stacksize=0x2000, flags=0x1, threadname=*0x3b8540)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20c0238, param=*0xd000f718, arg=0x20c0238, unk=0x0, prio=1001, stacksize=0x2000, flags=0x1, threadname=*0x3b8540)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x44)
@@ -332,14 +382,16 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20cef60, attr=*0xd000f8b0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20cef88, attr=*0xd000f940)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2161890, attr=*0xd000f8c0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375908]} cellSysutil: cellVideoOutConfigure(videoOut=0, config_addr=0xd000f860, option_addr=0x0, waitForEvent=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375a48]} cellGcmSys: cellGcmSetVBlankHandler(handler_addr=0x470bb0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375908]} cellSysutil: cellVideoOutConfigure(videoOut=0, config=*0xd000f860, option=*0x0, waitForEvent=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375a48]} cellGcmSys: cellGcmSetVBlankHandler(handler=*0x470bb0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003759a8]} cellGcmSys: cellGcmSetFlipMode(mode=2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00375aa8]} cellGcmSys: cellGcmSetTile(index=0, location=0, offset=0, size=3801088, pitch=5120, comp=7, base=0, bank=0)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00375aa8]} cellGcmSys error: cellGcmSetTile: bad compression mode! (7)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00375aa8]} cellGcmSys: cellGcmSetTile: bad compression mode! (7)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00375aa8]} cellGcmSys: cellGcmSetTile(index=1, location=0, offset=3801088, size=3801088, pitch=5120, comp=7, base=58, bank=0)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00375aa8]} cellGcmSys error: cellGcmSetTile: bad compression mode! (7)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00375aa8]} cellGcmSys: cellGcmSetTile: bad compression mode! (7)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003745a8]} cellSysutil: cellVideoOutGetNumberOfDevice(videoOut=0)
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20cbc10, attr=*0xd000f8c4)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20cbb98, attr=*0xd000f8c4)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20cbb18, attr=*0xd000f8c4)
@@ -361,8 +413,6 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x17a34c0, attr=*0xd000fb30)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21e0e00, attr=*0xd000f630)
 HLE: W {PPU[0x1] Thread (main_thread)[0x002b5e54]} sys_mutex: sys_mutex_create(mutex_id=*0x21ed7c0, attr=*0xd000f688)
 HLE: W {PPU[0x1] Thread (main_thread)[0x002b5e88]} sys_cond: sys_cond_create(cond_id=*0x21ed7c4, mutex_id=0x5d, attr=*0xd000f670)
@@ -375,7 +425,9 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21ee4d8, attr=*0xd000f640)
 HLE: W {PPU[0x1] Thread (main_thread)[0x002b5e54]} sys_mutex: sys_mutex_create(mutex_id=*0x21ed758, attr=*0xd000f598)
 HLE: W {PPU[0x1] Thread (main_thread)[0x002b5e88]} sys_cond: sys_cond_create(cond_id=*0x21ed75c, mutex_id=0x64, attr=*0xd000f580)
+RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21ed768, attr=*0xd000f4f0)
+RSX: W {RSXThread} Creating RTT
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x21ed750, entry=0x477778, arg=0x21ed748, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3c0768)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x21ed750, param=*0xd000f508, arg=0x21ed748, unk=0x0, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3c0768)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x67)
@@ -392,8 +444,6 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccb0]} sys_mutex: sys_mutex_create(m
 HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccec]} sys_cond: sys_cond_create(cond_id=*0x21ef2a4, mutex_id=0x6d, attr=*0xd000f318)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x21ef290, entry=0x47ddc0, arg=0x21ef280, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3cb948)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x21ef290, param=*0xd000f298, arg=0x21ef280, unk=0x0, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3cb948)
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-RSX: W {RSXThread} New FBO (1280x720)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x6f)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21ef410, attr=*0xd000f350)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21ef4d0, attr=*0xd000f1c0)
@@ -440,7 +490,11 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374708]} cellFs: cellFsOpen(path=*0x1723d28, flags=0, fd=*0xd0063a80, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374708]} sys_fs: sys_fs_open(path=*0x1723d28, flags=0, fd=*0xd0063a80, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374708]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/LONG2DATA_PS3/LONG2DATA_PS3_EU.CPK'
-HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374728]} sys_fs: sys_fs_fstat(fd=0x92, sb=*0xd0063a50)
+HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374728]} sys_fs: sys_fs_fstat(fd=3, sb=*0xd0063a50)
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
+RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
+RSX: W {RSXThread} Creating RTT
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
@@ -459,37 +513,34 @@ RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16e37b0, attr=*0xd000f3c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16e37f8, attr=*0xd000f3c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccb0]} sys_mutex: sys_mutex_create(mutex_id=*0x16e374c, attr=*0xd000f530)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccec]} sys_cond: sys_cond_create(cond_id=*0x16e3754, mutex_id=0x95, attr=*0xd000f518)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccec]} sys_cond: sys_cond_create(cond_id=*0x16e3754, mutex_id=0x94, attr=*0xd000f518)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x16e3740, entry=0x47ddc0, arg=0x16e3730, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3cb948)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x16e3740, param=*0xd000f498, arg=0x16e3730, unk=0x0, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3cb948)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x97)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x96)
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16e3840, attr=*0xd000f5e0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16e39c0, attr=*0xd000f4b0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16e3a40, attr=*0xd000f540)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x9a)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x99)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x98)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0033d0bc]} sys_ppu_thread: sys_ppu_thread_join(thread_id=0x97, vptr=*0xd000f530)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0033d100]} sys_cond: sys_cond_destroy(cond_id=0x96)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0033d168]} sys_mutex: sys_mutex_destroy(mutex_id=0x95)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x94)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x97)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0033d0bc]} sys_ppu_thread: sys_ppu_thread_join(thread_id=0x96, vptr=*0xd000f530)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0033d100]} sys_cond: sys_cond_destroy(cond_id=0x95)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0033d168]} sys_mutex: sys_mutex_destroy(mutex_id=0x94)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x93)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x92)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16e37b0, attr=*0xd000f2d0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16e37f8, attr=*0xd000f2d0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccb0]} sys_mutex: sys_mutex_create(mutex_id=*0x16e374c, attr=*0xd000f440)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccec]} sys_cond: sys_cond_create(cond_id=*0x16e3754, mutex_id=0x9d, attr=*0xd000f428)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccec]} sys_cond: sys_cond_create(cond_id=*0x16e3754, mutex_id=0x9c, attr=*0xd000f428)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x16e3740, entry=0x47ddc0, arg=0x16e3730, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3cb948)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x16e3740, param=*0xd000f3a8, arg=0x16e3730, unk=0x0, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3cb948)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x9f)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x9e)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16e3840, attr=*0xd000f4f0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16e39c0, attr=*0xd000f3c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16e3a40, attr=*0xd000f450)
@@ -500,35 +551,35 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374708]} cellFs: cellFsOpen(path=*0x16e3d28, flags=0, fd=*0xd0063a80, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374708]} sys_fs: sys_fs_open(path=*0x16e3d28, flags=0, fd=*0xd0063a80, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374708]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/LONG2DATA_PS3/STREAM_JP.CPK'
-HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374728]} sys_fs: sys_fs_fstat(fd=0xa7, sb=*0xd0063a50)
+HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374728]} sys_fs: sys_fs_fstat(fd=4, sb=*0xd0063a50)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16a37b0, attr=*0xd000f3c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16a37f8, attr=*0xd000f3c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccb0]} sys_mutex: sys_mutex_create(mutex_id=*0x16a374c, attr=*0xd000f530)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccec]} sys_cond: sys_cond_create(cond_id=*0x16a3754, mutex_id=0xaa, attr=*0xd000f518)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccec]} sys_cond: sys_cond_create(cond_id=*0x16a3754, mutex_id=0xa8, attr=*0xd000f518)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x16a3740, entry=0x47ddc0, arg=0x16a3730, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3cb948)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x16a3740, param=*0xd000f498, arg=0x16a3730, unk=0x0, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3cb948)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xac)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xaa)
+RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16a3840, attr=*0xd000f5e0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16a39c0, attr=*0xd000f4b0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16a3a40, attr=*0xd000f540)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xaf)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xae)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xad)
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-HLE: W {PPU[0x1] Thread (main_thread)[0x0033d0bc]} sys_ppu_thread: sys_ppu_thread_join(thread_id=0xac, vptr=*0xd000f530)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0033d100]} sys_cond: sys_cond_destroy(cond_id=0xab)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0033d168]} sys_mutex: sys_mutex_destroy(mutex_id=0xaa)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xa9)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xa8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xac)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xab)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0033d0bc]} sys_ppu_thread: sys_ppu_thread_join(thread_id=0xaa, vptr=*0xd000f530)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0033d100]} sys_cond: sys_cond_destroy(cond_id=0xa9)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0033d168]} sys_mutex: sys_mutex_destroy(mutex_id=0xa8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xa7)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xa6)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16a37b0, attr=*0xd000f2d0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16a37f8, attr=*0xd000f2d0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccb0]} sys_mutex: sys_mutex_create(mutex_id=*0x16a374c, attr=*0xd000f440)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccec]} sys_cond: sys_cond_create(cond_id=*0x16a3754, mutex_id=0xb2, attr=*0xd000f428)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0033ccec]} sys_cond: sys_cond_create(cond_id=*0x16a3754, mutex_id=0xb0, attr=*0xd000f428)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x16a3740, entry=0x47ddc0, arg=0x16a3730, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3cb948)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x16a3740, param=*0xd000f3a8, arg=0x16a3730, unk=0x0, prio=800, stacksize=0x2000, flags=0x1, threadname=*0x3cb948)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xb4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xb2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16a3840, attr=*0xd000f4f0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16a39c0, attr=*0xd000f3c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x16a3a40, attr=*0xd000f450)
@@ -539,36 +590,36 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374708]} cellFs: cellFsOpen(path=*0x16a3d28, flags=0, fd=*0xd0063a80, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374708]} sys_fs: sys_fs_open(path=*0x16a3d28, flags=0, fd=*0xd0063a80, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374708]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/LONG2DATA_PS3/STREAM_US.CPK'
-HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374728]} sys_fs: sys_fs_fstat(fd=0xbc, sb=*0xd0063a50)
+HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x00374728]} sys_fs: sys_fs_fstat(fd=5, sb=*0xd0063a50)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 HLE: W {PPU[0x1] Thread (main_thread)[0x00374628]} cellSysutil: cellAudioOutGetSoundAvailability(audioOut=0, type=0, fs=0x4, option=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00374628]} cellSysutil: cellAudioOutGetSoundAvailability(audioOut=0, type=1, fs=0x4, option=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00374628]} cellSysutil: cellAudioOutGetSoundAvailability(audioOut=0, type=6, fs=0x4, option=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00374588]} cellSysutil: cellAudioOutConfigure(audioOut=0, config_addr=0xd000f690, option_addr=0x0, waitForEvent=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00374668]} cellSysutil: cellAudioOutGetState(audioOut=0x0, deviceIndex=0x0, state_addr=0xd000f6a0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374588]} cellSysutil: cellAudioOutConfigure(audioOut=0, config=*0xd000f690, option=*0x0, waitForEvent=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374668]} cellSysutil: cellAudioOutGetState(audioOut=0x0, deviceIndex=0x0, state=*0xd000f6a0)
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 HLE: W {PPU[0x1] Thread (main_thread)[0x00374888]} cellAudio: cellAudioInit()
 HLE: W {PPU[0x1] Thread (main_thread)[0x003761a8]} sysPrxForUser: _sys_heap_create_heap(name=*0x3cb620, arg2=0x20000, arg3=0x110000, arg4=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003760a8]} sysPrxForUser: _sys_heap_memalign(heap=0xbd, align=0x10, size=0x1080)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x45d640, attr=*0x45d658)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003760a8]} sysPrxForUser: _sys_heap_memalign(heap=0xbd, align=0x10, size=0x8280)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0031e104]} sys_mutex: sys_mutex_create(mutex_id=*0x45d3e0, attr=*0x45d3e8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0031e128]} sys_cond: sys_cond_create(cond_id=*0x45d3c0, mutex_id=0xbf, attr=*0x45d3c8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0031e1b4]} sys_mutex: sys_mutex_create(mutex_id=*0x45d430, attr=*0x45d438)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0031e1d8]} sys_cond: sys_cond_create(cond_id=*0x45d414, mutex_id=0xc1, attr=*0x45d418)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0031e25c]} sys_mutex: sys_mutex_create(mutex_id=*0x45d688, attr=*0x45d690)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0031e280]} sys_cond: sys_cond_create(cond_id=*0x45d668, mutex_id=0xc3, attr=*0x45d670)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x45d3b0, entry=0x47ce00, arg=0x21f0850, prio=402, stacksize=0x4000, flags=0x0, threadname=*0x3cb608)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x45d3b0, param=*0xd000f508, arg=0x21f0850, unk=0x0, prio=402, stacksize=0x4000, flags=0x0, threadname=*0x3cb608)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xc5)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003760a8]} sysPrxForUser: _sys_heap_memalign(heap=0xba, align=0x10, size=0x1080)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x259a640, attr=*0x259a658)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003760a8]} sysPrxForUser: _sys_heap_memalign(heap=0xba, align=0x10, size=0x8280)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0031e104]} sys_mutex: sys_mutex_create(mutex_id=*0x259a3e0, attr=*0x259a3e8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0031e128]} sys_cond: sys_cond_create(cond_id=*0x259a3c0, mutex_id=0xbc, attr=*0x259a3c8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0031e1b4]} sys_mutex: sys_mutex_create(mutex_id=*0x259a430, attr=*0x259a438)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0031e1d8]} sys_cond: sys_cond_create(cond_id=*0x259a414, mutex_id=0xbe, attr=*0x259a418)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0031e25c]} sys_mutex: sys_mutex_create(mutex_id=*0x259a688, attr=*0x259a690)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0031e280]} sys_cond: sys_cond_create(cond_id=*0x259a668, mutex_id=0xc0, attr=*0x259a670)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x259a3b0, entry=0x47ce00, arg=0x21f0850, prio=402, stacksize=0x4000, flags=0x0, threadname=*0x3cb608)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x259a3b0, param=*0xd000f508, arg=0x21f0850, unk=0x0, prio=402, stacksize=0x4000, flags=0x0, threadname=*0x3cb608)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xc2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21f0888, attr=*0x21f08a8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21f0860, attr=*0x21f08b8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x21f08c8, entry=0x47cec0, arg=0x0, prio=400, stacksize=0x8000, flags=0x0, threadname=*0x3cb640)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x21f08c8, param=*0xd000f5b8, arg=0x0, unk=0x0, prio=400, stacksize=0x8000, flags=0x0, threadname=*0x3cb640)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xc8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xc5)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21f03b0, attr=*0x21f08d4)
-HLE: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x003204b4]} sys_event: sys_event_queue_create(equeue_id=*0x21f08a4, attr=*0x21f1950, event_queue_key=0x8000cafe02460300, size=2)
+HLE: W {PPU[0xc5] Thread (_cellsurMixerMain)[0x003204b4]} sys_event: sys_event_queue_create(equeue_id=*0x21f08a4, attr=*0x21f1950, event_queue_key=0x8000cafe02460300, size=2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00374988]} cellAudio: cellAudioPortOpen(audioParam=*0x21f08e8, portNum=*0x21f0858)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00374988]} cellAudio: *** audio port opened(nChannel=8, nBlock=8, attr=0x0, level=1.000000): port = 0
 HLE: W {PPU[0x1] Thread (main_thread)[0x00374928]} cellAudio: cellAudioGetPortConfig(portNum=0, portConfig=*0x21f0908)
@@ -578,29 +629,134 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x002ea0a0]} sys_spu: sys_spu_thread_group_create(id=*0x13fc4ec, num=1, prio=100, attr=*0xd000f51c)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376228]} sysPrxForUser: sys_spu_image_import(img=*0x13fc4f0, src=0x409100, type=1)
 LDR: W {PPU[0x1] Thread (main_thread)[0x00376228]} m_ehdr.e_type = 0x2
-HLE: W {PPU[0x1] Thread (main_thread)[0x002ea134]} sys_spu: sys_spu_thread_initialize(thread=*0x13fc500, group=0xcc, spu_num=0, img=*0x13fc4f0, attr=*0xd000f510, arg=*0xd000f530)
-HLE: E {PPU[0x1] Thread (main_thread)[0x002ea134]} sys_spu TODO: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002ea134]} sys_spu: sys_spu_thread_initialize(thread=*0x13fc500, group=0xc9, spu_num=0, img=*0x13fc4f0, attr=*0xd000f510, arg=*0xd000f530)
+HLE: E {PPU[0x1] Thread (main_thread)[0x002ea134]} sys_spu: Unsupported SPU Thread options (0x2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x002f5190]} sys_event: sys_event_port_create(eport_id=*0x1517da0, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x002f51c8]} sys_event: sys_event_queue_create(equeue_id=*0x1517d9c, attr=*0xd000f400, event_queue_key=0x0, size=3)
-HLE: W {PPU[0x1] Thread (main_thread)[0x002f51e0]} sys_event: sys_event_port_connect_local(eport_id=0xce, equeue_id=0xcf)
-HLE: W {PPU[0x1] Thread (main_thread)[0x002f5240]} sys_spu: sys_spu_thread_bind_queue(id=0xcd, spuq=0xcf, spuq_num=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002f51e0]} sys_event: sys_event_port_connect_local(eport_id=0xcb, equeue_id=0xcc)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002f5240]} sys_spu: sys_spu_thread_bind_queue(id=0xca, spuq=0xcc, spuq_num=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x002f5190]} sys_event: sys_event_port_create(eport_id=*0x1517db4, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x002f51c8]} sys_event: sys_event_queue_create(equeue_id=*0x1517db0, attr=*0xd000f400, event_queue_key=0x0, size=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x002f51e0]} sys_event: sys_event_port_connect_local(eport_id=0xd0, equeue_id=0xd1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x002f5240]} sys_spu: sys_spu_thread_bind_queue(id=0xcd, spuq=0xd1, spuq_num=0x1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002f51e0]} sys_event: sys_event_port_connect_local(eport_id=0xcd, equeue_id=0xce)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002f5240]} sys_spu: sys_spu_thread_bind_queue(id=0xca, spuq=0xce, spuq_num=0x1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x002f52d8]} sys_event: sys_event_queue_create(equeue_id=*0x1517dc4, attr=*0xd000f400, event_queue_key=0x0, size=3)
-HLE: W {PPU[0x1] Thread (main_thread)[0x002f52fc]} sys_spu: sys_spu_thread_connect_event(id=0xcd, eq=0xd2, et=1, spup=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x002e9aac]} sys_spu: sys_spu_thread_group_start(id=0xcc)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002f52fc]} sys_spu: sys_spu_thread_connect_event(id=0xca, eq=0xcf, et=1, spup=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x002e9aac]} sys_spu: sys_spu_thread_group_start(id=0xc9)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x00100]} Function detected [0x00100-0x00194] (size=0x94)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x154d8]} Function detected [0x154d8-0x154e8] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x154a0]} Function detected [0x154a0-0x154d4] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x134d0]} Function detected [0x134d0-0x134e0] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x13498]} Function detected [0x13498-0x134cc] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x117d8]} Function detected [0x117d8-0x117e8] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x117a0]} Function detected [0x117a0-0x117d4] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0fe80]} Function detected [0x0fe80-0x0fe90] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0fe48]} Function detected [0x0fe48-0x0fe7c] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f1f8]} Function detected [0x0f1f8-0x0f208] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f1c0]} Function detected [0x0f1c0-0x0f1f4] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0e428]} Function detected [0x0e428-0x0e438] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0e3f0]} Function detected [0x0e3f0-0x0e424] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x07850]} Function detected [0x07850-0x07860] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x07818]} Function detected [0x07818-0x0784c] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x06be8]} Function detected [0x06be8-0x06bf8] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x06bb0]} Function detected [0x06bb0-0x06be4] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x06678]} Function detected [0x06678-0x06688] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x06640]} Function detected [0x06640-0x06674] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x045d8]} Function detected [0x045d8-0x045e8] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x045a0]} Function detected [0x045a0-0x045d4] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x04178]} Function detected [0x04178-0x04188] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x04140]} Function detected [0x04140-0x04174] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x01568]} Function detected [0x01568-0x01578] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x01530]} Function detected [0x01530-0x01564] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x00580]} Function detected [0x00580-0x00590] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x00548]} Function detected [0x00548-0x0057c] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x00330]} Function detected [0x00330-0x00388] (size=0x58)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x001b0]} Function detected [0x001b0-0x00330] (size=0x180)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x18330]} Function detected [0x18330-0x1835c] (size=0x2c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x1d458]} Function detected [0x1d458-0x1d45c] (size=0x4)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x1d448]} Function detected [0x1d448-0x1d454] (size=0xc)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x19d60]} Function detected [0x19d60-0x1a0a4] (size=0x344)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x18378]} Function detected [0x18378-0x18384] (size=0xc)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x18450]} Function detected [0x18450-0x184d8] (size=0x88)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x18388]} Function detected [0x18388-0x183b4] (size=0x2c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x183b8]} Function detected [0x183b8-0x18420] (size=0x68)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x00b38]} Function detected [0x00b38-0x00c90] (size=0x158)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x17cc0]} Function detected [0x17cc0-0x17e1c] (size=0x15c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x192e0]} Function detected [0x192e0-0x19328] (size=0x48)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x19d08]} Function detected [0x19d08-0x19d20] (size=0x18)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x19328]} Function detected [0x19328-0x19cd4] (size=0x9ac)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x18578]} Function detected [0x18578-0x185c4] (size=0x4c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x18548]} Function detected [0x18548-0x18574] (size=0x2c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x00498]} Function detected [0x00498-0x00540] (size=0xa8)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x00c90]} Function detected [0x00c90-0x01074] (size=0x3e4)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x1d460]} Function detected [0x1d460-0x1d5a0] (size=0x140)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x00608]} Function detected [0x00608-0x006f4] (size=0xec)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x1ecc0]} Function detected [0x1ecc0-0x1ed7c] (size=0xbc)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x06688]} Function detected [0x06688-0x06834] (size=0x1ac)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x06588]} Function detected [0x06588-0x06640] (size=0xb8)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x17fa8]} Function detected [0x17fa8-0x17fb0] (size=0x8)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x17ef8]} Function detected [0x17ef8-0x17fa4] (size=0xac)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x18160]} Function detected [0x18160-0x181fc] (size=0x9c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x18118]} Function detected [0x18118-0x1815c] (size=0x44)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x18010]} Function detected [0x18010-0x18028] (size=0x18)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f4a8]} Function detected [0x0f4a8-0x0f5d4] (size=0x12c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f3d8]} Function detected [0x0f3d8-0x0f440] (size=0x68)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x01320]} Function detected [0x01320-0x013b8] (size=0x98)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x019b8]} Function detected [0x019b8-0x01b68] (size=0x1b0)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f228]} Function detected [0x0f228-0x0f3d8] (size=0x1b0)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0fd08]} Function detected [0x0fd08-0x0fde4] (size=0xdc)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f060]} Function detected [0x0f060-0x0f0e8] (size=0x88)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0edf0]} Function detected [0x0edf0-0x0ef80] (size=0x190)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0fd00]} Function detected [0x0fd00-0x0fd08] (size=0x8)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0ec18]} Function detected [0x0ec18-0x0ec20] (size=0x8)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0ec20]} Function detected [0x0ec20-0x0ec28] (size=0x8)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0ec28]} Function detected [0x0ec28-0x0ec5c] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x015a8]} Function detected [0x015a8-0x016f4] (size=0x14c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0eb70]} Function detected [0x0eb70-0x0ebd8] (size=0x68)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f7d8]} Function detected [0x0f7d8-0x0f80c] (size=0x34)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f6c8]} Function detected [0x0f6c8-0x0f7d4] (size=0x10c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f680]} Function detected [0x0f680-0x0f6c4] (size=0x44)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x030e0]} Function detected [0x030e0-0x031ec] (size=0x10c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0eae8]} Function detected [0x0eae8-0x0eb70] (size=0x88)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x02d80]} Function detected [0x02d80-0x02e0c] (size=0x8c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x1ce40]} Function detected [0x1ce40-0x1d120] (size=0x2e0)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x1cc70]} Function detected [0x1cc70-0x1ce3c] (size=0x1cc)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x1bd10]} Function detected [0x1bd10-0x1bd70] (size=0x60)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x17e78]} Function detected [0x17e78-0x17eb4] (size=0x3c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x18070]} Function detected [0x18070-0x18088] (size=0x18)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x17eb8]} Function detected [0x17eb8-0x17ef4] (size=0x3c)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x18088]} Function detected [0x18088-0x180a0] (size=0x18)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x1bd70]} Function detected [0x1bd70-0x1bf3c] (size=0x1cc)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x011f8]} Function detected [0x011f8-0x01278] (size=0x80)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x153b8]} Function detected [0x153b8-0x1549c] (size=0xe4)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x15200]} Function detected [0x15200-0x153b8] (size=0x1b8)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x04368]} Function detected [0x04368-0x043f0] (size=0x88)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x13728]} Function detected [0x13728-0x13c88] (size=0x560)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x05e50]} Function detected [0x05e50-0x05f04] (size=0xb4)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x17e20]} Function detected [0x17e20-0x17e30] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x049d0]} Function detected [0x049d0-0x04e20] (size=0x450)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x06b58]} Function detected [0x06b58-0x06bb0] (size=0x58)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x06aa8]} Function detected [0x06aa8-0x06b00] (size=0x58)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x05a60]} Function detected [0x05a60-0x05d60] (size=0x300)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x21500]} Function detected [0x21500-0x21550] (size=0x50)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x04270]} Function detected [0x04270-0x04364] (size=0xf4)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x03da8]} Function detected [0x03da8-0x03e1c] (size=0x74)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x03ee0]} Function detected [0x03ee0-0x03f74] (size=0x94)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x00710]} Function detected [0x00710-0x00820] (size=0x110)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x02b08]} Function detected [0x02b08-0x02d10] (size=0x208)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f218]} Function detected [0x0f218-0x0f228] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x1d5a0]} Function detected [0x1d5a0-0x1d784] (size=0x1e4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0034abb0]} sys_memory: sys_memory_allocate(size=0x200000, flags=0x400, alloc_addr=*0xd000f6e0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21ede18, attr=*0xd000f5f0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21e02c0, attr=*0xd000f610)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd50]} sys_mutex: sys_mutex_create(mutex_id=*0x21e0280, attr=*0xd000f5e8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd88]} sys_cond: sys_cond_create(cond_id=*0x21e0284, mutex_id=0xd5, attr=*0xd000f5d0)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f858]} Function detected [0x0f858-0x0f938] (size=0xe0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd88]} sys_cond: sys_cond_create(cond_id=*0x21e0284, mutex_id=0xd2, attr=*0xd000f5d0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd50]} sys_mutex: sys_mutex_create(mutex_id=*0x21e0294, attr=*0xd000f5e8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd88]} sys_cond: sys_cond_create(cond_id=*0x21e0298, mutex_id=0xd7, attr=*0xd000f5d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd88]} sys_cond: sys_cond_create(cond_id=*0x21e0298, mutex_id=0xd4, attr=*0xd000f5d0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd50]} sys_mutex: sys_mutex_create(mutex_id=*0x21e02a8, attr=*0xd000f5e8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd88]} sys_cond: sys_cond_create(cond_id=*0x21e02ac, mutex_id=0xd9, attr=*0xd000f5d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd88]} sys_cond: sys_cond_create(cond_id=*0x21e02ac, mutex_id=0xd6, attr=*0xd000f5d0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd50]} sys_mutex: sys_mutex_create(mutex_id=*0x21e026c, attr=*0xd000f5e8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd88]} sys_cond: sys_cond_create(cond_id=*0x21e0270, mutex_id=0xdb, attr=*0xd000f5d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0029fd88]} sys_cond: sys_cond_create(cond_id=*0x21e0270, mutex_id=0xd8, attr=*0xd000f5d0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21ee358, attr=*0xd000f540)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21ee378, attr=*0xd000f540)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21ee398, attr=*0xd000f540)
@@ -612,47 +768,60 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21e0330, attr=*0xd000f530)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x21e0320, entry=0x476ab0, arg=0x21e02e0, prio=100, stacksize=0x2000, flags=0x1, threadname=*0x21e02e0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x21e0320, param=*0xd000f548, arg=0x21e02e0, unk=0x0, prio=100, stacksize=0x2000, flags=0x1, threadname=*0x21e02e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xe6)
-TTY: [CRI ADX] ADX created the thread : name=cri_adxm_vv_proc, id=230(0xe6), priority=100(0x64)\n
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xe3)
+TTY: [CRI ADX] ADX created the thread : name=cri_adxm_vv_proc, id=227(0xe3), priority=100(0x64)\n
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21e03a0, attr=*0xd000f530)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x21e0390, entry=0x476ab0, arg=0x21e0350, prio=500, stacksize=0x2000, flags=0x1, threadname=*0x21e0350)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x21e0390, param=*0xd000f548, arg=0x21e0350, unk=0x0, prio=500, stacksize=0x2000, flags=0x1, threadname=*0x21e0350)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xe8)
-TTY: [CRI ADX] ADX created the thread : name=cri_adxm_vsync_proc, id=232(0xe8), priority=500(0x1f4)\n
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xe5)
+TTY: [CRI ADX] ADX created the thread : name=cri_adxm_vsync_proc, id=229(0xe5), priority=500(0x1f4)\n
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21e0410, attr=*0xd000f530)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x21e0400, entry=0x476ab0, arg=0x21e03c0, prio=600, stacksize=0x2000, flags=0x1, threadname=*0x21e03c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x21e0400, param=*0xd000f548, arg=0x21e03c0, unk=0x0, prio=600, stacksize=0x2000, flags=0x1, threadname=*0x21e03c0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xea)
-TTY: [CRI ADX] ADX created the thread : name=cri_adxm_fs_proc, id=234(0xea), priority=600(0x258)\n
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xe7)
+TTY: [CRI ADX] ADX created the thread : name=cri_adxm_fs_proc, id=231(0xe7), priority=600(0x258)\n
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21e0480, attr=*0xd000f530)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x21e0470, entry=0x476ab0, arg=0x21e0430, prio=1500, stacksize=0x2000, flags=0x1, threadname=*0x21e0430)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x21e0470, param=*0xd000f548, arg=0x21e0430, unk=0x0, prio=1500, stacksize=0x2000, flags=0x1, threadname=*0x21e0430)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xec)
-TTY: [CRI ADX] ADX created the thread : name=cri_adxm_idle_proc, id=236(0xec), priority=1500(0x5dc)\n
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0ebd8]} Function detected [0x0ebd8-0x0ebec] (size=0x14)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xe9)
+TTY: [CRI ADX] ADX created the thread : name=cri_adxm_idle_proc, id=233(0xe9), priority=1500(0x5dc)\n
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21ede60, attr=*0xd000f5b0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x290124a8, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29024878, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29036c48, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29049018, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2905b3e8, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2906d7b8, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2907fb88, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29091f58, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x290a4328, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x290b66f8, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x290c8ac8, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x290dae98, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x290ed268, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x290ff638, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29111a08, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29123dd8, attr=*0xd000f3e0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29123df8, attr=*0xd000f4d0)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x01120]} Function detected [0x01120-0x01160] (size=0x40)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x01160]} Function detected [0x01160-0x011c4] (size=0x64)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27f124a8, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27f24878, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27f36c48, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27f49018, attr=*0xd000f3e0)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x027a8]} Function detected [0x027a8-0x02b04] (size=0x35c)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27f5b3e8, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27f6d7b8, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27f7fb88, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27f91f58, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27fa4328, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27fb66f8, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27fc8ac8, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27fdae98, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27fed268, attr=*0xd000f3e0)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x01278]} Function detected [0x01278-0x012b8] (size=0x40)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x27fff638, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x28011a08, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x28023dd8, attr=*0xd000f3e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x28023df8, attr=*0xd000f4d0)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x011c8]} Function detected [0x011c8-0x011f8] (size=0x30)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f938]} Function detected [0x0f938-0x0fa18] (size=0xe0)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x0f208]} Function detected [0x0f208-0x0f218] (size=0x10)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x1d788]} Function detected [0x1d788-0x1d8b8] (size=0x130)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x04570]} Function detected [0x04570-0x045a0] (size=0x30)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x04e20]} Function detected [0x04e20-0x05530] (size=0x710)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x21590]} Function detected [0x21590-0x21604] (size=0x74)
+SPU: S {SPU[0xca] Thread (CriSr thread)[0x13eb8]} Function detected [0x13eb8-0x15200] (size=0x1348)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x175e3f0, attr=*0xd000f280)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x175e730, attr=*0xd000f040)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x100)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xff)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xfd)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xfc)
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x4fc6a8, attr=*0xd000f3a0)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
@@ -662,11 +831,8 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x175e730, attr=*0xd000f040)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x103)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x102)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x100)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0xff)
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x588bb8, attr=*0xd000f3a0)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
@@ -676,77 +842,69 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x175e730, attr=*0xd000f040)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x106)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x105)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x103)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x102)
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x5baa08, attr=*0xd000f3a0)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-HLE: W {PPU[0xea] Thread (cri_adxm_fs_proc)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21e1b08, attr=*0xd0093670)
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
+RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
+HLE: W {PPU[0xe7] Thread (cri_adxm_fs_proc)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21e1b08, attr=*0xd008b670)
 HLE: W {PPU[0x60] Thread (cri_dlg)[0x00374708]} cellFs: cellFsOpen(path=*0x21e16c8, flags=0, fd=*0x21e1b30, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x60] Thread (cri_dlg)[0x00374708]} sys_fs: sys_fs_open(path=*0x21e16c8, flags=0, fd=*0x21e1b30, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x60] Thread (cri_dlg)[0x00374708]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/LONG2DATA_PS3/SOUND/ADX/BGM.AFS'
+HLE: W {PPU[0x60] Thread (cri_dlg)[0x00374728]} sys_fs: sys_fs_fstat(fd=6, sb=*0xd0053cb0)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-HLE: W {PPU[0x60] Thread (cri_dlg)[0x00374728]} sys_fs: sys_fs_fstat(fd=0x109, sb=*0xd0053cb0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x105)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x108)
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-HLE: W {PPU[0xea] Thread (cri_adxm_fs_proc)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21e1b08, attr=*0xd0093670)
+HLE: W {PPU[0xe7] Thread (cri_adxm_fs_proc)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21e1b08, attr=*0xd008b670)
 HLE: W {PPU[0x60] Thread (cri_dlg)[0x00374708]} cellFs: cellFsOpen(path=*0x21e16c8, flags=0, fd=*0x21e1b30, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0x60] Thread (cri_dlg)[0x00374708]} sys_fs: sys_fs_open(path=*0x21e16c8, flags=0, fd=*0x21e1b30, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0x60] Thread (cri_dlg)[0x00374708]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/LONG2DATA_PS3/SFD/MOVIE.AFS'
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-HLE: W {PPU[0x60] Thread (cri_dlg)[0x00374728]} sys_fs: sys_fs_fstat(fd=0x10b, sb=*0xd0053cb0)
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x10a)
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
+HLE: W {PPU[0x60] Thread (cri_dlg)[0x00374728]} sys_fs: sys_fs_fstat(fd=6, sb=*0xd0053cb0)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x106)
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
+RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
+RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
+HLE: W {PPU[0x1] Thread (main_thread)[0x0034abb0]} sys_memory: sys_memory_allocate(size=0x200000, flags=0x400, alloc_addr=*0xd000f680)
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
+RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
+HLE: W {PPU[0x1] Thread (main_thread)[0x00205c14]} sys_memory: sys_memory_allocate_from_container(size=0x1000000, cid=0xc, flags=0x400, alloc_addr=*0x1f183f0)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2114188, attr=*0xd000f6d0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0022ad48]} sys_semaphore: sys_semaphore_create(sem=*0x21141c0, attr=*0xd000f6d0, initial_val=0, max_val=2147483647)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0022ad48]} sys_semaphore: sys_semaphore_create(sem_id=*0x21141c0, attr=*0xd000f6d0, initial_val=0, max_val=2147483647)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x21141a8, entry=0x46feb8, arg=0x21141a8, prio=1000, stacksize=0x2000, flags=0x1, threadname=*0x3b8c78)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x21141a8, param=*0xd000f598, arg=0x21141a8, unk=0x0, prio=1000, stacksize=0x2000, flags=0x1, threadname=*0x3b8c78)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x10e)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00376008]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x109)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2112208, attr=*0xd000f6f0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x003744c8]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00224244]} sys_semaphore: sys_semaphore_create(sem=*0xd000f780, attr=*0xd000f790, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00224294]} sys_semaphore: sys_semaphore_destroy(sem=0x110)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
+HLE: W {PPU[0x1] Thread (main_thread)[0x00224244]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f780, attr=*0xd000f790, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00224294]} sys_semaphore: sys_semaphore_destroy(sem_id=0x10b)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
@@ -758,194 +916,115 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_cr
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x10d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003761c8]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x10c)
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-HLE: W {PPU[0x1] Thread (main_thread)[0x003744e8]} cellSpurs: _cellSpursAttributeInitialize(attr_addr=0xd000f938, revision=2, sdkVersion=0x210001, nSpus=2, spuPriority=16, ppuPriority=0, exitIfNoWork=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} cellSpurs: cellSpursInitializeWithAttribute(spurs_addr=0x20010080, attr_addr=0xd000f938)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00374508]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00374508]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x124, eq=0x129, req=0xffffffffffff0000, spup=*0x20010149)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_event: sys_event_port_connect_local(eport_id=0x12a, equeue_id=0x129)
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
-HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_spu: sys_spu_thread_group_connect_event(id=0x124, eq=0x129, et=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x003744e8]} cellSpurs: _cellSpursAttributeInitialize(attr=*0xd000f938, revision=2, sdkVersion=0x210001, nSpus=2, spuPriority=16, ppuPriority=0, exitIfNoWork=257)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x20010080, attr=*0xd000f938)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x20010080, flags=0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f868, attr=*0xd000f848, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_spu: sys_spu_thread_group_create(id=*0xd000f828, num=2, prio=16, attr=*0xd000f798)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f770, group=0x11f, spu_num=0, img=*0x20010df0, attr=*0xd000f760, arg=*0xd000f778)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00374508]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f770, group=0x11f, spu_num=1, img=*0x20010df0, attr=*0xd000f760, arg=*0xd000f778)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00374508]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20010e30, attr=*0xd000f830)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20010e48, lwmutex=*0x20010e30, attr=*0xd000f840)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_event: sys_event_queue_create(equeue_id=*0x20010ddc, attr=*0xd000f6c8, event_queue_key=0x0, size=42)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x11f, eq=0x124, req=0xffffffffffff0000, spup=*0x20010149)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_event: sys_event_port_create(eport_id=*0x20010de0, port_type=1, name=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_event: sys_event_port_connect_local(eport_id=0x125, equeue_id=0x124)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x20010080, flag=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} sys_spu: sys_spu_thread_group_connect_event(id=0x11f, eq=0x124, et=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00374508]} cellSpurs: cellSpursWakeUp(spurs=*0x20010080)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00376048]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004ff80, attr=*0xd000f760)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375648]} cellSpurs: cellSpursCreateTaskset(spurs_addr=0x20010080, taskset_addr=0x20050300, args=0x0, priority_addr=0x488c40, maxContention=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375648]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr_addr=0x28f06000, revision=1, sdkVersion=0x33, pm_addr=0x200, size=0x1e40, data=0x20050300, priorityTable_addr=0x488c40, minContention=0x8, maxContention=0x1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375648]} cellSpurs: cellSpursWorkloadAttributeSetName(attr_addr=0x28f06000, nameClass_addr=0x0, nameInstance_addr=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375648]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs_addr=0x20010080, wid_addr=0x28f07000, attr_addr=0x28f06000)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00375528]} cellSpurs error: _cellSpursLFQueueInitialize
-HLE: E {PPU[0x1] Thread (main_thread)[0x003755a8]} cellSpurs error: cellSpursLFQueueAttachLv2EventQueue
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375848]} cellSpurs: cellSpursCreateTask(taskset_addr=0x20050300, taskID_addr=0x2004ff20, elf_addr_addr=0x3d6780, context_addr_addr=0x20051c00, context_size=250880, lsPattern_addr=0x3abfd8, argument_addr=0xd000f7f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375848]} cellSpurs: cellSpursSendWorkloadSignal(spurs=0x20010080, workloadId=0x0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00375848]} cellSpurs: cellSpursWakeUp(spurs_addr=0x20010080)
-HLE: W {PPU[0x12b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x124)
-HLE: W {PPU[0x12b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x124, cause=*0x0, status=*0x0)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22d1h): unsupported opcode found (4183780C00741B418B400C0FC8FFC80F)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-HLE: ! {Audio Thread} cellAudio: 6.245000 ms adjusted
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-MEM: W {PPU[0xc8] Thread (_cellsurMixerMain)[0x00375fe8]} decode_x64_reg_op(00007ff6922b22bch): unsupported opcode found (4139007410B809000180488B5C244848)
-HLE: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x20) aborted
-HLE: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} cellSpurs: SPURS Handler Thread 0 aborted
-HLE: W {PPU[0x60] Thread (cri_dlg)[0x002b6144]} sys_cond: sys_cond_wait(id=0x5e) aborted
-HLE: W {PPU[0x44] Thread (NU::Draw::Geometry::RequestManager)[0x00211620]} sys_semaphore: sys_semaphore_wait(66) aborted
-HLE: W {PPU[0x33] Thread (NU::System::VSync)[0x00234648]} sys_semaphore: sys_semaphore_wait(48) aborted
-HLE: W {PPU[0xec] Thread (cri_adxm_idle_proc)[0x0029f8e0]} sys_cond: sys_cond_wait(id=0xda) aborted
-HLE: W {PPU[0x81] Thread (CriDelegatePs3ppu)[0x0033c8e8]} sys_cond: sys_cond_wait(id=0x80) aborted
-RSX: W {RSXThread} RSX thread aborted
-HLE: ! {VBlank thread} VBlank thread aborted
-RSX: ! {RSXThread} RSX thread ended
-HLE: W {PPU[0xe6] Thread (cri_adxm_vv_proc)[0x0029f354]} sys_timer: sys_timer_usleep(sleep_time=0x3ef5) aborted
-HLE: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} CallbackManager thread aborted
-HLE: W {PPU[0xc5] Thread (_sys_mixerSurBusReq)[0x0031d3c4]} sys_cond: sys_cond_wait(id=0xc0) aborted
-HLE: W {PPU[0xea] Thread (cri_adxm_fs_proc)[0x0029f8e0]} sys_cond: sys_cond_wait(id=0xd8) aborted
-HLE: W {PPU[0x9f] Thread (CriDelegatePs3ppu)[0x0033c8e8]} sys_cond: sys_cond_wait(id=0x9e) aborted
-HLE: W {PPU[0x12b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x124) aborted
-HLE: W {PPU[0x12b] Thread (SpursHdlr0)[0x00000000]} cellSpurs: SPURS Handler Thread 0 aborted
-HLE: W {PPU[0x67] Thread (cri_dlg)[0x002b6144]} sys_cond: sys_cond_wait(id=0x65) aborted
-HLE: W {PPU[0x75] Thread (CriDelegatePs3ppu)[0x0033c8e8]} sys_cond: sys_cond_wait(id=0x74) aborted
-HLE: W {PPU[0x3a] Thread (NU::Draw::RequestManager)[0x0022341c]} sys_cond: sys_cond_wait(id=0x39) aborted
-HLE: W {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x0033c8e8]} sys_cond: sys_cond_wait(id=0x7a) aborted
-HLE: W {PPU[0x8a] Thread (CriDelegatePs3ppu)[0x0033c8e8]} sys_cond: sys_cond_wait(id=0x89) aborted
-HLE: W {PPU[0x6f] Thread (CriDelegatePs3ppu)[0x0033c8e8]} sys_cond: sys_cond_wait(id=0x6e) aborted
-HLE: W {PPU[0x10e] Thread (NU::File::RequestManager)[0x0022aeb4]} sys_semaphore: sys_semaphore_wait(269) aborted
-HLE: W {PPU[0xb4] Thread (CriDelegatePs3ppu)[0x0033c8e8]} sys_cond: sys_cond_wait(id=0xb3) aborted
-HLE: W {PPU[0xe8] Thread (cri_adxm_vsync_proc)[0x0029f8e0]} sys_cond: sys_cond_wait(id=0xd6) aborted
-HLE: ! {Internal Audio Thread} Internal Audio Thread aborted
-HLE: ! {Audio Thread} Audio Thread aborted
-HLE: ! All threads stopped...
-MEM: ! Closing memory...
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375648]} cellSpurs: cellSpursCreateTaskset(spurs=*0x20010080, taskset=*0x20050300, args=0x0, priority=*0x488c40, maxContention=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375648]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd000f580, revision=1, sdkVersion=0x33, pm=*0x200, size=0x1e40, data=0x20050300, priority=*0x488c40, minCnt=0x8, maxCnt=0x1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375648]} cellSpurs: cellSpursWorkloadAttributeSetName(attr=*0xd000f580, nameClass=*0x0, nameInstance=*0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375648]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs=*0x20010080, wid=*0xd000f578, attr=*0xd000f580)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00375528]} cellSpurs TODO: _cellSpursLFQueueInitialize(pTasksetOrSpurs=*0x20050300, pQueue=*0x20050180, buffer=*0x20050200, size=0x10, depth=0x1, direction=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375528]} cellSync: cellSyncLFQueueInitialize(queue=*0x20050180, buffer=*0x20050200, size=0x10, depth=0x1, direction=2, eaSignal=*0x20050300)
+HLE: E {PPU[0x1] Thread (main_thread)[0x003755a8]} cellSpurs: cellSpursLFQueueAttachLv2EventQueue
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375848]} cellSpurs: cellSpursCreateTask(taskset=*0x20050300, taskID=*0x2004ff20, elf=*0x3d6780, context=*0x20051c00, size=0x3d400, lsPattern=*0x3abfd8, argument=*0xd000f7f0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375848]} cellSpurs: cellSpursSendWorkloadSignal(spurs=*0x20010080, wid=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00375848]} cellSpurs: cellSpursWakeUp(spurs=*0x20010080)
+HLE: W {PPU[0x127] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x11f)
+HLE: W {PPU[0x127] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x11f, cause=*0x0, status=*0x0)
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
+RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
+G: ! Stopping emulator...
+G: ! All threads signaled...
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
+G: ! {PPU[0x2a] Thread (SpursHdlr1)[0x00000000]} Thread aborted
+HLE: S {PPU[0x33] Thread (NU::System::VSync)[0x00234648]} Last syscall: 92 (sys_semaphore_wait)
+HLE: S {PPU[0x3a] Thread (NU::Draw::RequestManager)[0x0022341c]} Last syscall: 107 (sys_cond_wait)
+G: ! {PPU[0x33] Thread (NU::System::VSync)[0x00234648]} Thread aborted
+G: ! {PPU[0x3a] Thread (NU::Draw::RequestManager)[0x0022341c]} Thread aborted
+HLE: S {PPU[0x44] Thread (NU::Draw::Geometry::RequestManager)[0x00211620]} Last syscall: 92 (sys_semaphore_wait)
+HLE: S {PPU[0x60] Thread (cri_dlg)[0x002b6144]} Last syscall: 107 (sys_cond_wait)
+HLE: S {PPU[0x67] Thread (cri_dlg)[0x002b6144]} Last syscall: 107 (sys_cond_wait)
+G: ! {PPU[0x44] Thread (NU::Draw::Geometry::RequestManager)[0x00211620]} Thread aborted
+HLE: S {PPU[0x6f] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Last syscall: 107 (sys_cond_wait)
+G: ! {PPU[0x67] Thread (cri_dlg)[0x002b6144]} Thread aborted
+G: ! {PPU[0x6f] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Thread aborted
+G: ! {PPU[0x60] Thread (cri_dlg)[0x002b6144]} Thread aborted
+HLE: S {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Last syscall: 107 (sys_cond_wait)
+HLE: S {PPU[0x81] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Last syscall: 107 (sys_cond_wait)
+HLE: S {PPU[0x8a] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Last syscall: 107 (sys_cond_wait)
+HLE: S {PPU[0x75] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Last syscall: 107 (sys_cond_wait)
+G: ! {PPU[0x81] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Thread aborted
+G: ! {PPU[0x7b] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Thread aborted
+G: ! {PPU[0x8a] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Thread aborted
+G: ! {SPU[0xca] Thread (CriSr thread)[0x1d860]} Thread aborted
+G: ! {PPU[0x75] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Thread aborted
+HLE: S {PPU[0xb2] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Last syscall: 107 (sys_cond_wait)
+HLE: S {PPU[0xc2] Thread (_sys_mixerSurBusReq)[0x0031d3c4]} Last syscall: 107 (sys_cond_wait)
+HLE: S {PPU[0xc5] Thread (_cellsurMixerMain)[0x0032075c]} Last syscall: 130 (sys_event_queue_receive)
+HLE: S {PPU[0x9e] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Last syscall: 107 (sys_cond_wait)
+G: ! {PPU[0xb2] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Thread aborted
+G: ! {PPU[0xc2] Thread (_sys_mixerSurBusReq)[0x0031d3c4]} Thread aborted
+HLE: S {PPU[0xe7] Thread (cri_adxm_fs_proc)[0x0029f8e0]} Last syscall: 107 (sys_cond_wait)
+G: ! {PPU[0xc5] Thread (_cellsurMixerMain)[0x0032075c]} Thread aborted
+HLE: S {PPU[0x109] Thread (NU::File::RequestManager)[0x0022aeb4]} Last syscall: 92 (sys_semaphore_wait)
+HLE: S {PPU[0xe9] Thread (cri_adxm_idle_proc)[0x0029f8e0]} Last syscall: 107 (sys_cond_wait)
+G: ! {PPU[0xe7] Thread (cri_adxm_fs_proc)[0x0029f8e0]} Thread aborted
+G: ! {PPU[0x109] Thread (NU::File::RequestManager)[0x0022aeb4]} Thread aborted
+G: ! {PPU[0x9e] Thread (CriDelegatePs3ppu)[0x0033c8e8]} Thread aborted
+G: ! {PPU[0x126] Thread (SpursHdlr1)[0x00000000]} Thread aborted
+G: ! {PPU[0xe9] Thread (cri_adxm_idle_proc)[0x0029f8e0]} Thread aborted
+HLE: S {PPU[0xe5] Thread (cri_adxm_vsync_proc)[0x0029f8e0]} Last syscall: 107 (sys_cond_wait)
+G: ! {PPU[0xe5] Thread (cri_adxm_vsync_proc)[0x0029f8e0]} Thread aborted
+G: ! {PPU[0x2b] Thread (SpursHdlr0)[0x00000000]} Thread aborted
+G: ! {PPU[0x127] Thread (SpursHdlr0)[0x00000000]} Thread aborted
+G: ! {VBlank Thread} Thread aborted
+HLE: S {PPU[0xe3] Thread (cri_adxm_vv_proc)[0x0029f354]} Last syscall: 141 (sys_timer_usleep)
+G: ! {PPU[0x1] Thread (main_thread)[0x002546b8]} Thread aborted
+G: ! {PPU[0xe3] Thread (cri_adxm_vv_proc)[0x0029f354]} Thread aborted
+G: ! {SPU[0x22] Thread (CellSpursKernel1)[0x00818]} Thread aborted
+G: ! {SPU[0x23] Thread (CellSpursKernel2)[0x00818]} Thread aborted
+G: ! {SPU[0x25] Thread (CellSpursKernel4)[0x00818]} Thread aborted
+G: ! {SPU[0x24] Thread (CellSpursKernel3)[0x00818]} Thread aborted
+G: ! {SPU[0x21] Thread (CellSpursKernel0)[0x00818]} Thread aborted
+G: ! {SPU[0x120] Thread (CellSpursKernel0)[0x00818]} Thread aborted
+G: ! {SPU[0x121] Thread (CellSpursKernel1)[0x00818]} Thread aborted
+G: ! All threads stopped...
+G: ! Objects cleared...

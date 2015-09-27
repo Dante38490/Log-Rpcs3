@@ -1,8 +1,10 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! RPCS3 0.0.0.5 v0.0.0.5-2533-g467bea3
+G: ! 
 G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01277-[God of War Collection Volume II]/PS3_GAME/USRDIR/BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01277-[God of War Collection Volume II]/PS3_GAME/dev_bdvd.path', 0x1) failed: error 0x2
-LDR: !  
+LDR: ! 
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
@@ -11,17 +13,30 @@ LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
 LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01277-[God of War Collection Volume II]/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
-LDR: !  
+LDR: ! 
+LDR: ! Settings:
+LDR: ! CPU: PPU Interpreter 2
+LDR: ! SPU: SPU Recompiler (ASMJIT)
+LDR: ! Renderer: DirectX 12
+LDR: ! D3D Adapter: Default
+LDR: ! Resolution: 1280x720
+LDR: ! Write Depth Buffer: No
+LDR: ! Write Color Buffers: No
+LDR: ! Read Color Buffer: No
+LDR: ! Audio Out: XAudio2
+LDR: ! Log Everything: No
+LDR: ! RSX Logging: No
+LDR: ! 
 LDR: ! Title: God of War® Collection: Volume II
 LDR: ! Serial: BCES01277
 LDR: ! Elf path: /dev_bdvd/PS3_GAME/USRDIR/BOOT.BIN
+LDR: ! 
 LDR: ! loader::init() failed: Broken file
 LDR: ! *** sdk version: 0x360001
 LDR: ! *** primary prio: 1001
 LDR: ! *** primary stacksize: 0x70
 LDR: ! *** malloc pagesize: 0x100000
 LDR: ! *** ppc seg: 0x0
-LDR: E Unknown module 'cellSysutilAvconfExt'
 LDR: ! Imported function 'cellVideoOutGetScreenSize' in 'cellSysutilAvconfExt' module (0x456040)
 LDR: ! Imported function 'cellAudioCreateNotifyEventQueue' in 'cellAudio' module (0x456060)
 LDR: ! Imported function 'cellAudioSetNotifyEventQueue' in 'cellAudio' module (0x456080)
@@ -211,139 +226,31 @@ LDR: ! Imported function 'sys_lwmutex_destroy' in 'sysPrxForUser' module (0x4577
 LDR: ! Imported function 'sys_lwcond_create' in 'sysPrxForUser' module (0x457780)
 LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0x4577a0)
 LDR: ! Imported function 'sys_lwcond_signal' in 'sysPrxForUser' module (0x4577c0)
-HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0xf92000, user_size=0xe8)
+MEM: ! Thread Local Storage initialized (g_tls_start=0xf93000, user_size=0xe8)
 *** TLS segment addr: 0x0060803c
 *** TLS segment size: 0x00000000
-G: W {PPU[0x1] Thread (main_thread)[0x00012158]} Registers:
+G: ! {PPU[0x1] Thread (main_thread)[0x00012158]} Registers:
 =========
 GPR[0] = 0x12148
 GPR[1] = 0xd0000000
 GPR[2] = 0x60f488
 GPR[3] = 0x1
-GPR[4] = 0xf90000
-GPR[5] = 0xf8f000
+GPR[4] = 0xf91000
+GPR[5] = 0xf90000
 GPR[6] = 0x0
 GPR[7] = 0x0
 GPR[8] = 0x0
 GPR[9] = 0x0
 GPR[10] = 0x0
-GPR[11] = 0xf8e000
+GPR[11] = 0xf8f000
 GPR[12] = 0x100000
-GPR[13] = 0xf99030
+GPR[13] = 0xf9a030
 GPR[14] = 0x1
-GPR[15] = 0xf90000
-GPR[16] = 0xf8f000
+GPR[15] = 0xf91000
+GPR[16] = 0xf90000
 GPR[17] = 0x0
-GPR[18] = 0xf8e000
+GPR[18] = 0xf8f000
 GPR[19] = 0x100000
-GPR[20] = 0x0
-GPR[21] = 0x0
-GPR[22] = 0x0
-GPR[23] = 0x0
-GPR[24] = 0x0
-GPR[25] = 0x0
-GPR[26] = 0x0
-GPR[27] = 0x0
-GPR[28] = 0x0
-GPR[29] = 0x0
-GPR[30] = 0x0
-GPR[31] = 0x0
-FPR[0] = 0
-FPR[1] = 0
-FPR[2] = 0
-FPR[3] = 0
-FPR[4] = 0
-FPR[5] = 0
-FPR[6] = 0
-FPR[7] = 0
-FPR[8] = 0
-FPR[9] = 0
-FPR[10] = 0
-FPR[11] = 0
-FPR[12] = 0
-FPR[13] = 0
-FPR[14] = 0
-FPR[15] = 0
-FPR[16] = 0
-FPR[17] = 0
-FPR[18] = 0
-FPR[19] = 0
-FPR[20] = 0
-FPR[21] = 0
-FPR[22] = 0
-FPR[23] = 0
-FPR[24] = 0
-FPR[25] = 0
-FPR[26] = 0
-FPR[27] = 0
-FPR[28] = 0
-FPR[29] = 0
-FPR[30] = 0
-FPR[31] = 0
-VPR[0] = 0x80040001000002200000002005000000 [x: -3.67343e-40 y: 7.62306e-43 z: 4.48416e-44 w: 6.01853e-36]
-VPR[1] = 0x00000014000000000000006c0000005c [x: 2.8026e-44 y: 0 z: 1.5134e-43 w: 1.28919e-43]
-VPR[2] = 0x00000007001400000000000300480002 [x: 9.80909e-45 y: 1.83671e-39 z: 4.2039e-45 w: 6.61216e-39]
-VPR[3] = 0x001400000000000a0500000000000101 [x: 1.83671e-39 y: 1.4013e-44 z: 6.01853e-36 w: 3.60134e-43]
-VPR[4] = 0x00000012050000000000010100000003 [x: 2.52234e-44 y: 6.01853e-36 z: 3.60134e-43 w: 4.2039e-45]
-VPR[5] = 0x05000000000002010000000700180000 [x: 6.01853e-36 y: 7.18866e-43 z: 9.80909e-45 w: 2.20405e-39]
-VPR[6] = 0x05000000000002010000022000000020 [x: 6.01853e-36 y: 7.18866e-43 z: 7.62306e-43 w: 4.48416e-44]
-VPR[7] = 0x05000000000002010000022000000020 [x: 6.01853e-36 y: 7.18866e-43 z: 7.62306e-43 w: 4.48416e-44]
-VPR[8] = 0x00000090800400010000022000000020 [x: 2.01787e-43 y: -3.67343e-40 z: 7.62306e-43 w: 4.48416e-44]
-VPR[9] = 0x007c00020000001400000000000000a0 [x: 1.13876e-38 y: 2.8026e-44 z: 0 w: 2.24208e-43]
-VPR[10] = 0x000002010000001f0018000000000005 [x: 7.18866e-43 y: 4.34403e-44 z: 2.20405e-39 w: 7.00649e-45]
-VPR[11] = 0x00140000000002200000002005000000 [x: 1.83671e-39 y: 7.62306e-43 z: 4.48416e-44 w: 6.01853e-36]
-VPR[12] = 0x0000000001000000000001010000000b [x: 0 y: 2.35099e-38 z: 3.60134e-43 w: 1.54143e-44]
-VPR[13] = 0x05000000000002010000001f00180000 [x: 6.01853e-36 y: 7.18866e-43 z: 4.34403e-44 w: 2.20405e-39]
-VPR[14] = 0x0000001f001800000000023200000020 [x: 4.34403e-44 y: 2.20405e-39 z: 7.8753e-43 w: 4.48416e-44]
-VPR[15] = 0x0000022f000000200500000000000201 [x: 7.83326e-43 y: 4.48416e-44 z: 6.01853e-36 w: 7.18866e-43]
-VPR[16] = 0x0f000000000002010000000b00180000 [x: 6.31089e-30 y: 7.18866e-43 z: 1.54143e-44 w: 2.20405e-39]
-VPR[17] = 0x05000000000002010000000100000002 [x: 6.01853e-36 y: 7.18866e-43 z: 1.4013e-45 w: 2.8026e-45]
-VPR[18] = 0x05000000000002010000022000000020 [x: 6.01853e-36 y: 7.18866e-43 z: 7.62306e-43 w: 4.48416e-44]
-VPR[19] = 0x0000008c800400010000022000000020 [x: 1.96182e-43 y: -3.67343e-40 z: 7.62306e-43 w: 4.48416e-44]
-VPR[20] = 0x0078000200000014000000000000009c [x: 1.10203e-38 y: 2.8026e-44 z: 0 w: 2.18603e-43]
-VPR[21] = 0x00000101000000070014000000000005 [x: 3.60134e-43 y: 9.80909e-45 z: 1.83671e-39 w: 7.00649e-45]
-VPR[22] = 0x00000003001400000000000001000000 [x: 4.2039e-45 y: 1.83671e-39 z: 0 w: 2.35099e-38]
-VPR[23] = 0x00180000000000070500000000000101 [x: 2.20405e-39 y: 9.80909e-45 z: 6.01853e-36 w: 3.60134e-43]
-VPR[24] = 0x00000020050000000000020100000007 [x: 4.48416e-44 y: 6.01853e-36 z: 7.18866e-43 w: 9.80909e-45]
-VPR[25] = 0x00000201000000070018000000000232 [x: 7.18866e-43 y: 9.80909e-45 z: 2.20405e-39 w: 7.8753e-43]
-VPR[26] = 0x001800000000022f0000002005000000 [x: 2.20405e-39 y: 7.83326e-43 z: 4.48416e-44 w: 6.01853e-36]
-VPR[27] = 0x000000020f0000000000020100000003 [x: 2.8026e-45 y: 6.31089e-30 z: 7.18866e-43 w: 4.2039e-45]
-VPR[28] = 0x00000020050000000000020100000001 [x: 4.48416e-44 y: 6.01853e-36 z: 7.18866e-43 w: 1.4013e-45]
-VPR[29] = 0x00000020050000000000020100000220 [x: 4.48416e-44 y: 6.01853e-36 z: 7.18866e-43 w: 7.62306e-43]
-VPR[30] = 0x000000b4000000a48004000100000220 [x: 2.52234e-43 y: 2.29813e-43 z: -3.67343e-40 w: 7.62306e-43]
-VPR[31] = 0x00000006009000020000001400000000 [x: 8.40779e-45 y: 1.32243e-38 z: 2.8026e-44 w: 0]
-CR = 0x22000082
-LR = 0xf8e058
-CTR = 0x12148
-XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
-
-G: E {PPU[0x1] Thread (main_thread)[0x00012158]} Exception: Access violation writing location 0xcfffff90
-(in file ..\Utilities\Thread.cpp:1098, in function _se_translator)
-G: ! Stopping emulator...
-G: ! All threads signaled...
-G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Registers:
-=========
-GPR[0] = 0x0
-GPR[1] = 0xd0010e00
-GPR[2] = 0x0
-GPR[3] = 0x0
-GPR[4] = 0x0
-GPR[5] = 0x0
-GPR[6] = 0x0
-GPR[7] = 0x0
-GPR[8] = 0x0
-GPR[9] = 0x0
-GPR[10] = 0x0
-GPR[11] = 0x0
-GPR[12] = 0x0
-GPR[13] = 0xf99148
-GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
 GPR[20] = 0x0
 GPR[21] = 0x0
 GPR[22] = 0x0
@@ -390,42 +297,46 @@ FPR[30] = 0
 FPR[31] = 0
 VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000023faa80ffffd7613f800000 [x: 0 y: 1.40814e-37 z: -nan w: 1]
 VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
+VPR[6] = 0x00000002013ed9700000000000000ab8 [x: 2.8026e-45 y: 3.50535e-38 z: 0 w: 3.84516e-42]
 VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[8] = 0xfecdbdbf000000000000000000000000 [x: -1.36738e+38 y: 0 z: 0 w: 0]
+VPR[9] = 0x00000000023faa00ffffffff3f800000 [x: 0 y: 1.40813e-37 z: -nan w: 1]
 VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[12] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
+VPR[13] = 0x00000002013ed9806989a5a700000ab9 [x: 2.8026e-45 y: 3.50535e-38 z: 2.08006e+25 w: 3.84656e-42]
 VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x0625516c000000000000000000000000 [x: 3.10929e-35 y: 0 z: 0 w: 0]
+VPR[16] = 0x00000000023fa640000000003f800000 [x: 0 y: 1.40802e-37 z: 0 w: 1]
 VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
+VPR[20] = 0x00000002013ed9984939261200000aba [x: 2.8026e-45 y: 3.50536e-38 z: 758369 w: 3.84797e-42]
 VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[22] = 0xffffffff000000000000000000000000 [x: -nan y: 0 z: 0 w: 0]
+VPR[23] = 0x00000000023fa90074a1c1c53f800000 [x: 0 y: 1.4081e-37 z: 1.02526e+32 w: 1]
 VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[26] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
+VPR[27] = 0x00000002013ed9b0ffa2510e00000abb [x: 2.8026e-45 y: 3.50537e-38 z: -nan w: 3.84937e-42]
 VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[30] = 0x00000000023fa820000000003f800000 [x: 0 y: 1.40807e-37 z: 0 w: 1]
 VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 CR = 0x22000082
-LR = 0x0
-CTR = 0x0
-XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+LR = 0xf8f058
+CTR = 0x12148
+XER = 0x0 [CA=0 | OV=8589934592 | SO=0]
 FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
-G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\Callback.cpp:58, in function CallbackManager::Init::<lambda_46ea869b6054320987a0d5fa0b32bb88>::operator ())
+G: E {PPU[0x1] Thread (main_thread)[0x00012158]} Exception: Access violation writing location 0xcfffff90
+(in file ..\Utilities\Thread.cpp:1122, in function _se_translator)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
 G: ! All threads stopped...
+G: ! Objects cleared...
