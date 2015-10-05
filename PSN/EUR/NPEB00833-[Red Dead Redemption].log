@@ -1,5 +1,5 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-G: ! RPCS3 v0.0.0.5-2554-gdfeedf2
+G: ! RPCS3 v0.0.0.6-3686-2f211e4
 G: ! 
 G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00833/USRDIR/BOOT.BIN'...
@@ -16,8 +16,7 @@ LDR: !
 LDR: ! Settings:
 LDR: ! CPU: PPU Interpreter 2
 LDR: ! SPU: SPU Recompiler (ASMJIT)
-LDR: ! Renderer: DirectX 12
-LDR: ! D3D Adapter: Default
+LDR: ! Renderer: OpenGL
 LDR: ! Resolution: 1280x720
 LDR: ! Write Depth Buffer: No
 LDR: ! Write Color Buffers: No
@@ -259,14 +258,18 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_spu: sys_spu_thread_group
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_event: sys_event_port_create(eport_id=*0xaa1e0, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_event: sys_event_port_connect_local(eport_id=0x26, equeue_id=0x25)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0xa9480, flag=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_spu: sys_spu_thread_group_connect_event(id=0x1d, eq=0x25, et=2)
 HLE: W {PPU[0x28] Thread (PrimarySpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x1d)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_spu: sys_spu_thread_group_connect_event(id=0x1d, eq=0x25, et=2)
+SPU: S {PPU[0x28] Thread (PrimarySpursHdlr0)[0x00000000]} SPU Database initialized...
+SPU: S {PPU[0x28] Thread (PrimarySpursHdlr0)[0x00000000]} SPU Recompiler (ASMJIT) created...
+HLE: W {PPU[0x28] Thread (PrimarySpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x1d, cause=*0x0, status=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000287cc]} cellSpurs: _cellSpursAttributeInitialize(attr=*0xab680, revision=2, sdkVersion=0x300000, nSpus=1, spuPriority=201, ppuPriority=2016, exitIfNoWork=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0002859c]} cellSpurs: cellSpursAttributeSetNamePrefix(attr=*0xab680, prefix=*0x29e18, size=9)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0xaa680, attr=*0xab680)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0xaa680, flags=0x2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003fa28, attr=*0xd003fa08, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003fa28, attr=*0xd003fa08, initial_val=0, max_val=1)
+SPU: S {SPU[0x1e] Thread (PrimaryCellSpursKernel0)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003fa28, attr=*0xd003fa08, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003fa28, attr=*0xd003fa08, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003fa28, attr=*0xd003fa08, initial_val=0, max_val=1)
@@ -280,15 +283,11 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_semaphore: sys_semaphore_
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003fa28, attr=*0xd003fa08, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003fa28, attr=*0xd003fa08, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003fa28, attr=*0xd003fa08, initial_val=0, max_val=1)
-SPU: S {PPU[0x28] Thread (PrimarySpursHdlr0)[0x00000000]} SPU Database initialized...
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003fa28, attr=*0xd003fa08, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003fa28, attr=*0xd003fa08, initial_val=0, max_val=1)
-SPU: S {PPU[0x28] Thread (PrimarySpursHdlr0)[0x00000000]} SPU Recompiler (ASMJIT) created...
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_spu: sys_spu_thread_group_create(id=*0xd003f9e8, num=1, prio=201, attr=*0xd003f958)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_spu: sys_spu_thread_initialize(thread=*0xd003f930, group=0x3a, spu_num=0, img=*0xab3f0, attr=*0xd003f920, arg=*0xd003f938)
-HLE: W {PPU[0x28] Thread (PrimarySpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x1d, cause=*0x0, status=*0x0)
 HLE: E {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_spu: Unsupported SPU Thread options (0x2)
-SPU: S {SPU[0x1e] Thread (PrimaryCellSpursKernel0)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xab430, attr=*0xd003f9f0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sysPrxForUser: sys_lwcond_create(lwcond=*0xab448, lwmutex=*0xab430, attr=*0xd003fa00)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_event: sys_event_queue_create(equeue_id=*0xab3dc, attr=*0xd003f888, event_queue_key=0x0, size=42)
@@ -296,10 +295,10 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_spu: sys_spu_thread_group
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_event: sys_event_port_create(eport_id=*0xab3e0, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_event: sys_event_port_connect_local(eport_id=0x3f, equeue_id=0x3e)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0xaa680, flag=1)
-HLE: W {PPU[0x41] Thread (SecondarySpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x3a)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000288ac]} sys_spu: sys_spu_thread_group_connect_event(id=0x3a, eq=0x3e, et=2)
-HLE: W {PPU[0x41] Thread (SecondarySpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x3a, cause=*0x0, status=*0x0)
+HLE: W {PPU[0x41] Thread (SecondarySpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x3a)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000108cc]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb48)
+HLE: W {PPU[0x41] Thread (SecondarySpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x3a, cause=*0x0, status=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000108e8]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb48)
 TTY: [STARTUP] 0k consumed by modules, 0k consumed by SPURS, 0k consumed by exception handling.\n
 TTY: [STARTUP] Restricting 260096k heap to 65536k+1024k+131072k=194560k.\n
@@ -422,8 +421,8 @@ FPR[28] = 0
 FPR[29] = 0
 FPR[30] = 0
 FPR[31] = 0
-VPR[0] = 0x00000002013ee6480000000000000ac0 [x: 2.8026e-45 y: 3.50627e-38 z: 0 w: 3.85637e-42]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[0] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[1] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
 VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[3] = 0x0000000000000000000000003f800000 [x: 0 y: 0 z: 0 w: 1]
 VPR[4] = 0xffffffff00000000ffffffffffffffff [x: -nan y: 0 z: -nan w: -nan]
@@ -434,26 +433,26 @@ VPR[8] = 0x00000000ffffffff0000000000000000 [x: 0 y: -nan z: 0 w: 0]
 VPR[9] = 0xffffffffffffffffffffffffffffffff [x: -nan y: -nan z: -nan w: -nan]
 VPR[10] = 0x0000000000000000ffffffff00000000 [x: 0 y: 0 z: -nan w: 0]
 VPR[11] = 0x7f8000007f8000007f8000007f800000 [x: inf y: inf z: inf w: inf]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
-VPR[14] = 0x00000002013ee6800000000000000ac2 [x: 2.8026e-45 y: 3.50629e-38 z: 0 w: 3.85918e-42]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x0000000002b148c0000000003f800000 [x: 0 y: 2.60496e-37 z: 0 w: 1]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
-VPR[21] = 0x00000002013ee6a00000000000000ac3 [x: 2.8026e-45 y: 3.5063e-38 z: 0 w: 3.86058e-42]
-VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x0000000002b14720000000003f800000 [x: 0 y: 2.60486e-37 z: 0 w: 1]
-VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
-VPR[28] = 0x00000002013ee6c00000000000000ac4 [x: 2.8026e-45 y: 3.5063e-38 z: 0 w: 3.86198e-42]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x0000000002b14380000000003f800000 [x: 0 y: 2.60466e-37 z: 0 w: 1]
+VPR[12] = 0x0000000002e0af400000000002e0af40 [x: 0 y: 3.30144e-37 z: 0 w: 3.30144e-37]
+VPR[13] = 0x0000000002e0afc00000000002e0afc0 [x: 0 y: 3.30147e-37 z: 0 w: 3.30147e-37]
+VPR[14] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[15] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[16] = 0x0000000002e0b5200000000002e0b520 [x: 0 y: 3.30178e-37 z: 0 w: 3.30178e-37]
+VPR[17] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[18] = 0x0000000002e0a9000000000002e0a900 [x: 0 y: 3.30108e-37 z: 0 w: 3.30108e-37]
+VPR[19] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[20] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[21] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[22] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[23] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[24] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[25] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[26] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[27] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[28] = 0x0000000002e0ac000000000002e0ac00 [x: 0 y: 3.30126e-37 z: 0 w: 3.30126e-37]
+VPR[29] = 0x0000000002e0af000000000002e0af00 [x: 0 y: 3.30143e-37 z: 0 w: 3.30143e-37]
+VPR[30] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
+VPR[31] = 0x0000000002e0ad400000000002e0ad40 [x: 0 y: 3.30133e-37 z: 0 w: 3.30133e-37]
 CR = 0x24000024
 LR = 0x26e48
 CTR = 0x0
@@ -467,13 +466,14 @@ G: ! All threads signaled...
 G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
 G: ! {PPU[0x27] Thread (PrimarySpursHdlr1)[0x00000000]} Thread aborted
 G: ! {PPU[0x40] Thread (SecondarySpursHdlr1)[0x00000000]} Thread aborted
-G: ! {PPU[0x28] Thread (PrimarySpursHdlr0)[0x00000000]} Thread aborted
 G: ! {PPU[0x41] Thread (SecondarySpursHdlr0)[0x00000000]} Thread aborted
-G: ! {SPU[0x21] Thread (PrimaryCellSpursKernel3)[0x00818]} Thread aborted
-G: ! {SPU[0x22] Thread (PrimaryCellSpursKernel4)[0x00818]} Thread aborted
-G: ! {SPU[0x3b] Thread (SecondaryCellSpursKernel0)[0x00818]} Thread aborted
+G: ! {PPU[0x28] Thread (PrimarySpursHdlr0)[0x00000000]} Thread aborted
 G: ! {SPU[0x1e] Thread (PrimaryCellSpursKernel0)[0x00818]} Thread aborted
-G: ! {SPU[0x1f] Thread (PrimaryCellSpursKernel1)[0x00818]} Thread aborted
+G: ! {SPU[0x22] Thread (PrimaryCellSpursKernel4)[0x00818]} Thread aborted
 G: ! {SPU[0x20] Thread (PrimaryCellSpursKernel2)[0x00818]} Thread aborted
+G: ! {SPU[0x1f] Thread (PrimaryCellSpursKernel1)[0x00818]} Thread aborted
+G: ! {SPU[0x21] Thread (PrimaryCellSpursKernel3)[0x00818]} Thread aborted
+G: ! {SPU[0x3b] Thread (SecondaryCellSpursKernel0)[0x00818]} Thread aborted
 G: ! All threads stopped...
 G: ! Objects cleared...
+G: ! Stopping emulator...

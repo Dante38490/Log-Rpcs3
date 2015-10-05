@@ -1,5 +1,5 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-G: ! RPCS3 0.0.0.5 v0.0.0.5-2505-g91cfa6b
+G: ! RPCS3 v0.0.0.6-3687-d511153
 G: ! 
 G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00831/USRDIR/BOOT.BIN'...
@@ -17,7 +17,7 @@ LDR: ! Settings:
 LDR: ! CPU: PPU Interpreter 2
 LDR: ! SPU: SPU Recompiler (ASMJIT)
 LDR: ! Renderer: DirectX 12
-LDR: ! D3D Adapter: Default
+LDR: ! D3D Adapter: WARP
 LDR: ! Resolution: 1280x720
 LDR: ! Write Depth Buffer: No
 LDR: ! Write Color Buffers: No
@@ -331,8 +331,8 @@ HLE: W {PPU[0x19] Thread (GameThread)[0x006930d8]} sys_memory: sys_memory_alloca
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf6ec]} cellGcmSys: _cellGcmInitBody(context=**0x958550, cmdSize=0x10000, ioSize=0x100000, ioAddress=0x2a100000)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf6ec]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf6ec]} cellGcmSys: cellGcmInit(): 256MB io address space used
-HLE: W {PPU[0x19] Thread (GameThread)[0x007cf7ec]} cellGcmSys: cellGcmSetDebugOutputLevel(level=2)
 RSX: ! {RSXThread} RSX thread started
+HLE: W {PPU[0x19] Thread (GameThread)[0x007cf7ec]} cellGcmSys: cellGcmSetDebugOutputLevel(level=2)
 HLE: E {PPU[0x19] Thread (GameThread)[0x007cfa8c]} cellGcmSys: cellGcmSetGraphicsHandler
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 HLE: W {PPU[0x19] Thread (GameThread)[0x005782e8]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0x951584)
@@ -379,18 +379,11 @@ HLE: W {PPU[0x19] Thread (GameThread)[0x007cf9ac]} cellGcmSys: cellGcmGetReportD
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf9ac]} cellGcmSys: cellGcmGetReportDataAddressLocation(index=4993, location=1)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf9ac]} cellGcmSys: cellGcmGetReportDataLocation(index=4994, location=1)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf9ac]} cellGcmSys: cellGcmGetReportDataAddressLocation(index=4994, location=1)
-HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb6c]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
-HLE: W {PPU[0x19] Thread (GameThread)[0x007ce9ec]} cellGame: cellGameBootCheck(type=*0xd005fab0, attributes=*0xd005fab4, size=*0xd005fab8, dirName=*0xd005fac8)
-HLE: W {PPU[0x19] Thread (GameThread)[0x007ce9ac]} cellGame: cellGameContentPermit(contentInfoPath=*0xd005fae8, usrdirPath=*0x8f7d38)
-HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb4c]} cellSysmodule: cellSysmoduleUnloadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
-HLE: W {PPU[0x19] Thread (GameThread)[0x005512b4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd005fc00)
-TTY: Total: 256   Available: 92\n
-HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb6c]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
 RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_INPUT_MASK: 0xf0d
+HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb6c]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
 RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=32, h=1, pitch=64, offset=0x4080, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-HLE: W {PPU[0x19] Thread (GameThread)[0x0068ef30]} sys_fs: sys_fs_open(path=*0x25100cb0, flags=0, fd=*0xd005f8a0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x19] Thread (GameThread)[0x007ce9ec]} cellGame: cellGameBootCheck(type=*0xd005fab0, attributes=*0xd005fab4, size=*0xd005fab8, dirName=*0xd005fac8)
 RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=16, h=1, pitch=64, offset=0x40c0, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-HLE: W {PPU[0x19] Thread (GameThread)[0x0068ef30]} sys_fs: *** path = '/dev_hdd0/game/NPEB00831/USRDIR/Content/localisationParams.ini'
 RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=16, h=1, pitch=64, offset=0x4180, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
 RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=32, h=1, pitch=64, offset=0x4280, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
 RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=16, h=1, pitch=64, offset=0x42c0, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
@@ -398,6 +391,13 @@ RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=16, h=1, pitch=64, offset=0x4380, inX
 RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=16, h=1, pitch=64, offset=0x4400, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+HLE: W {PPU[0x19] Thread (GameThread)[0x007ce9ac]} cellGame: cellGameContentPermit(contentInfoPath=*0xd005fae8, usrdirPath=*0x8f7d38)
+HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb4c]} cellSysmodule: cellSysmoduleUnloadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
+HLE: W {PPU[0x19] Thread (GameThread)[0x005512b4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd005fc00)
+TTY: Total: 256   Available: 92\n
+HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb6c]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
+HLE: W {PPU[0x19] Thread (GameThread)[0x0068ef30]} sys_fs: sys_fs_open(path=*0x25100cb0, flags=0, fd=*0xd005f8a0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0x19] Thread (GameThread)[0x0068ef30]} sys_fs: *** path = '/dev_hdd0/game/NPEB00831/USRDIR/Content/localisationParams.ini'
 RSX: W {RSXThread} TODO: NV4097_SET_CONTEXT_DMA_REPORT: 0xbad68000
 RSX: W {RSXThread} NV4097_GET_REPORT: Unimplemented type 2
 RSX: W {RSXThread} NV4097_GET_REPORT: Unimplemented type 3
@@ -425,7 +425,7 @@ HLE: W {PPU[0x19] Thread (GameThread)[0x007d01ac]} cellAudio: cellAudioInit()
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf26c]} cellAudio: cellAudioPortOpen(audioParam=*0x251007a0, portNum=*0x251007e0)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf26c]} cellAudio: *** audio port opened(nChannel=8, nBlock=8, attr=0x0, level=1.000000): port = 0
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf1cc]} cellAudio: cellAudioGetPortConfig(portNum=0, portConfig=*0x251007c0)
-HLE: W {PPU[0x19] Thread (GameThread)[0x007cf0ec]} cellSpurs: cellSpursInitialize(spurs=*0x952300, nSpus=1, spuPriority=250, ppuPriority=1000, exitIfNoWork=2863872)
+HLE: W {PPU[0x19] Thread (GameThread)[0x007cf0ec]} cellSpurs: cellSpursInitialize(spurs=*0x952300, nSpus=1, spuPriority=250, ppuPriority=1000, exitIfNoWork=2882560)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf0ec]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x952300, flags=0x2)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf0ec]} sys_semaphore: sys_semaphore_create(sem_id=*0xd005f778, attr=*0xd005f758, initial_val=0, max_val=1)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf0ec]} sys_semaphore: sys_semaphore_create(sem_id=*0xd005f778, attr=*0xd005f758, initial_val=0, max_val=1)
@@ -454,8 +454,8 @@ HLE: W {PPU[0x19] Thread (GameThread)[0x007cf0ec]} sys_spu: sys_spu_thread_group
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf0ec]} sys_event: sys_event_port_create(eport_id=*0x953060, port_type=1, name=0x0)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf0ec]} sys_event: sys_event_port_connect_local(eport_id=0x39, equeue_id=0x38)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf0ec]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x952300, flag=1)
-HLE: W {PPU[0x19] Thread (GameThread)[0x007cf0ec]} sys_spu: sys_spu_thread_group_connect_event(id=0x34, eq=0x38, et=2)
 HLE: W {PPU[0x3b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x34)
+HLE: W {PPU[0x19] Thread (GameThread)[0x007cf0ec]} sys_spu: sys_spu_thread_group_connect_event(id=0x34, eq=0x38, et=2)
 HLE: W {PPU[0x3b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x34, cause=*0x0, status=*0x0)
 SPU: S {SPU[0x35] Thread (CellSpursKernel0)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007d066c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x95b280, attr=*0xd005f6f0)
@@ -486,8 +486,8 @@ HLE: W {PPU[0x19] Thread (GameThread)[0x007d062c]} sysPrxForUser: sys_ppu_thread
 HLE: W {PPU[0x19] Thread (GameThread)[0x007d062c]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x251007e8, param=*0xd005f878, arg=0x0, unk=0x0, prio=999, stacksize=0x10000, flags=0x1, threadname=*0x879fc0)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007d062c]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x41)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007d052c]} sys_io: cellPadInit(max_connect=4)
-HLE: W {PPU[0x41] Thread (audiomain)[0x007cf20c]} cellAudio: cellAudioPortStart(portNum=0)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb6c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0033: CELL_SYSMODULE_SYSUTIL_SAVEDATA)
+HLE: W {PPU[0x41] Thread (audiomain)[0x007cf20c]} cellAudio: cellAudioPortStart(portNum=0)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb6c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0032: CELL_SYSMODULE_SYSUTIL_USERINFO)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb6c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0009: CELL_SYSMODULE_RTC)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb6c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
@@ -1167,6 +1167,12 @@ RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=16, h=1, pitch=64, offset=0x51f700, i
 RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=32, h=4, pitch=64, offset=0x51f880, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+RSX: W {RSXThread} Creating RTT
+RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
+RSX: W {RSXThread} Creating RTT
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf7cc]} cellGcmSys: cellGcmSetFlipMode(mode=2)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf9ac]} cellGcmSys: cellGcmGetReportDataLocation(index=4991, location=1)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf9ac]} cellGcmSys: cellGcmGetReportDataAddressLocation(index=4991, location=1)
@@ -1176,9 +1182,6 @@ HLE: W {PPU[0x19] Thread (GameThread)[0x007cf9ac]} cellGcmSys: cellGcmGetReportD
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf9ac]} cellGcmSys: cellGcmGetReportDataAddressLocation(index=4993, location=1)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf9ac]} cellGcmSys: cellGcmGetReportDataLocation(index=4994, location=1)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf9ac]} cellGcmSys: cellGcmGetReportDataAddressLocation(index=4994, location=1)
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} Creating RTT
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb6c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0012: CELL_SYSMODULE_PAMF)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb6c]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cfb6c]} cellSysmodule: cellSysmoduleLoadModule(id=0x001d: CELL_SYSMODULE_SAIL)
@@ -1193,36 +1196,29 @@ HLE: W {PPU[0x19] Thread (GameThread)[0x007cf30c]} sys_fs: sys_fs_readdir(fd=3, 
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf30c]} sys_fs: sys_fs_readdir(fd=3, dir=*0xd005f0d8, nread=*0xd005f0a0)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf30c]} sys_fs: sys_fs_readdir(fd=3, dir=*0xd005f0d8, nread=*0xd005f0a0)
 HLE: W {PPU[0x19] Thread (GameThread)[0x007cf30c]} sys_fs: sys_fs_readdir(fd=3, dir=*0xd005f0d8, nread=*0xd005f0a0)
+RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
+RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 HLE: W {PPU[0x19] Thread (GameThread)[0x007d066c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x203dd610, attr=*0x7d4ea8)
-HLE: W {PPU[0x19] Thread (GameThread)[0x007cf26c]} cellAudio: cellAudioPortOpen(audioParam=*0xd005f0b8, portNum=*0x251c52d8)
-HLE: W {PPU[0x19] Thread (GameThread)[0x007cf26c]} cellAudio: *** audio port opened(nChannel=8, nBlock=8, attr=0x0, level=1.000000): port = 1
-HLE: W {PPU[0x19] Thread (GameThread)[0x007cf1cc]} cellAudio: cellAudioGetPortConfig(portNum=1, portConfig=*0x251c52e0)
-HLE: W {PPU[0x19] Thread (GameThread)[0x007cf20c]} cellAudio: cellAudioPortStart(portNum=1)
-HLE: W {PPU[0x19] Thread (GameThread)[0x00615754]} sys_event: sys_event_queue_create(equeue_id=*0x251c52bc, attr=*0xd005f0a8, event_queue_key=0x0, size=32)
-HLE: W {PPU[0x19] Thread (GameThread)[0x00615778]} sys_event: sys_event_port_create(eport_id=*0x251c52c0, port_type=1, name=0x0)
-HLE: W {PPU[0x19] Thread (GameThread)[0x00615798]} sys_event: sys_event_port_connect_local(eport_id=0x53, equeue_id=0x52)
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} Creating RTT
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_INPUT_MASK: 0x109
+HLE: W {PPU[0x19] Thread (GameThread)[0x007cf26c]} cellAudio: cellAudioPortOpen(audioParam=*0xd005f0b8, portNum=*0x251c52d8)
 RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_OUTPUT_MASK: 0x4001
 RSX: W {RSXThread} TODO: NV4097_SET_TEX_COORD_CONTROL(texMask2D=1, texMaskCentroid=0)
 RSX: W {RSXThread} TODO: NV4097_SET_ZMIN_MAX_CONTROL: cullNearFarEnable=1, zclampEnable=0, cullIgnoreW=0
+HLE: W {PPU[0x19] Thread (GameThread)[0x007cf26c]} cellAudio: *** audio port opened(nChannel=8, nBlock=8, attr=0x0, level=1.000000): port = 1
 RSX: W {RSXThread} TODO: NV4097_SET_ZMIN_MAX_CONTROL: cullNearFarEnable=1, zclampEnable=0, cullIgnoreW=0
+HLE: W {PPU[0x19] Thread (GameThread)[0x007cf1cc]} cellAudio: cellAudioGetPortConfig(portNum=1, portConfig=*0x251c52e0)
 RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0001
+HLE: W {PPU[0x19] Thread (GameThread)[0x007cf20c]} cellAudio: cellAudioPortStart(portNum=1)
 RSX: W {RSXThread} TODO: NV4097_SET_REDUCE_DST_COLOR: 0x1
+HLE: W {PPU[0x19] Thread (GameThread)[0x00615754]} sys_event: sys_event_queue_create(equeue_id=*0x251c52bc, attr=*0xd005f0a8, event_queue_key=0x0, size=32)
 RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_OUTPUT_MASK: 0x4001
+HLE: W {PPU[0x19] Thread (GameThread)[0x00615778]} sys_event: sys_event_port_create(eport_id=*0x251c52c0, port_type=1, name=0x0)
 RSX: W {RSXThread} TODO: NV4097_SET_POINT_PARAMS_ENABLE: 0x1
+HLE: W {PPU[0x19] Thread (GameThread)[0x00615798]} sys_event: sys_event_port_connect_local(eport_id=0x53, equeue_id=0x52)
 RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_OUTPUT_MASK: 0x4001
 RSX: W {RSXThread} TODO: NV4097_SET_VERTEX_ATTRIB_OUTPUT_MASK: 0x4001
 RSX: W {RSXThread} TODO: NV4097_SET_FREQUENCY_DIVIDER_OPERATION: 0
 RSX: W {RSXThread} VP not found in buffer!
-RSX: W {RSXThread} FP not found in buffer!
-RSX: W {RSXThread} Add program :
-RSX: W {RSXThread} *** vp id = 0
-RSX: W {RSXThread} *** fp id = 1
 HLE: W {PPU[0x4e] Thread (SNKTrophy_Init_Thread)[0x007d062c]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x251d73a0, entry=0x8bc7b0, arg=0x251d6e10, prio=2003, stacksize=0x1000, flags=0x1, threadname=*0x7ed040)
 HLE: W {PPU[0x4e] Thread (SNKTrophy_Init_Thread)[0x007d062c]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x251d73a0, param=*0xd0093d48, arg=0x251d6e10, unk=0x0, prio=2003, stacksize=0x1000, flags=0x1, threadname=*0x7ed040)
 HLE: W {PPU[0x4e] Thread (SNKTrophy_Init_Thread)[0x007d062c]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x54)
@@ -1302,34 +1298,34 @@ FPR[29] = 0
 FPR[30] = 0
 FPR[31] = 0
 VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x2d45010000000000f033100000000000 [x: 1.11984e-11 y: 0 z: -2.21669e+29 w: 0]
 VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[3] = 0x0000000000474e502e313130504f5254 [x: 0 y: 6.54841e-39 z: 4.02888e-11 w: 1.39131e+10]
 VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[5] = 0x2d45010000000000f033100000000000 [x: 1.11984e-11 y: 0 z: -2.21669e+29 w: 0]
 VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[7] = 0x0000000000474e502e313130504f5254 [x: 0 y: 6.54841e-39 z: 4.02888e-11 w: 1.39131e+10]
 VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[9] = 0x2d45010000000000f033100000000000 [x: 1.11984e-11 y: 0 z: -2.21669e+29 w: 0]
 VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[11] = 0x0000000000474e502e313130504f5254 [x: 0 y: 6.54841e-39 z: 4.02888e-11 w: 1.39131e+10]
 VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[13] = 0x2d45010000000000f033100000000000 [x: 1.11984e-11 y: 0 z: -2.21669e+29 w: 0]
 VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[15] = 0x0000000000474e502e313130504f5254 [x: 0 y: 6.54841e-39 z: 4.02888e-11 w: 1.39131e+10]
 VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x2d45010000000000f033100000000000 [x: 1.11984e-11 y: 0 z: -2.21669e+29 w: 0]
 VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[19] = 0x00251e1640000040006800540020005d [x: 3.40871e-39 y: 2.00002 z: 9.55101e-39 w: 2.93887e-39]
+VPR[20] = 0x000000000d31c9b00000000004377d40 [x: 0 y: 5.47851e-31 z: 0 w: 2.15691e-36]
 VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[27] = 0x00000000010000006000000006000000 [x: 0 y: 2.35099e-38 z: 3.68935e+19 w: 2.40741e-35]
+VPR[28] = 0x00000000000000000000000001000000 [x: 0 y: 0 z: 0 w: 2.35099e-38]
 VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
@@ -1341,3 +1337,29 @@ FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0
 
 G: E {PPU[0x54] Thread (SNKTrophy_Details_Init_Thread)[0x007cef0c]} Exception: Access violation writing location 0x8
 (in file ..\Utilities\Thread.cpp:1122, in function _se_translator)
+RSX: W {RSXThread} FP not found in buffer!
+RSX: W {RSXThread} Add program :
+RSX: W {RSXThread} *** vp id = 0
+RSX: W {RSXThread} *** fp id = 1
+G: ! Stopping emulator...
+G: ! {PPU[0x19] Thread (GameThread)[0x0058a334]} Thread aborted
+G: ! {PPU[0x4b] Thread (audio-dispatch)[0x0079613c]} Thread aborted
+G: ! All threads signaled...
+HLE: S {PPU[0x1] Thread (main_thread)[0x00550254]} Last syscall: 44 (sys_ppu_thread_join)
+G: ! {PPU[0x2] Thread (Callback Thread)[0x005d1394]} Thread aborted
+HLE: S {PPU[0x41] Thread (audiomain)[0x007d02cc]} Last function: cellSpursEventFlagWait (0x373523d4)
+G: ! {PPU[0x3a] Thread (SpursHdlr1)[0x00000000]} Thread aborted
+G: ! {PPU[0x1] Thread (main_thread)[0x00550254]} Thread aborted
+HLE: S {PPU[0x3f] Thread (spu_printf_handler)[0x00667668]} Last syscall: 130 (sys_event_queue_receive)
+G: ! {PPU[0x41] Thread (audiomain)[0x007d02cc]} Thread aborted
+G: ! {RawSPU[0] Thread (0x1d)[0x00288]} Thread aborted
+G: ! {PPU[0x3f] Thread (spu_printf_handler)[0x00667668]} Thread aborted
+HLE: S {PPU[0x57] Thread (SNKTrophy_Event_Thread)[0x00159a98]} Last syscall: 130 (sys_event_queue_receive)
+G: ! {PPU[0x57] Thread (SNKTrophy_Event_Thread)[0x00159a98]} Thread aborted
+G: ! {PPU[0x3b] Thread (SpursHdlr0)[0x00000000]} Thread aborted
+G: ! {VBlank Thread} Thread aborted
+G: E {RSXThread} Exception: Invalid location (offset=0x0, location=0xff)
+(in file Emu\RSX\RSXThread.cpp:54, in function GetAddress)
+G: ! {SPU[0x35] Thread (CellSpursKernel0)[0x00818]} Thread aborted
+G: ! All threads stopped...
+G: ! Objects cleared...

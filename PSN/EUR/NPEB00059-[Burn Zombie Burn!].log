@@ -1,8 +1,10 @@
-HLE: ! path: /dev_hdd0/game/
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! RPCS3 v0.0.0.6-3687-d511153
+G: ! 
+G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00059/USRDIR/BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00059/dev_bdvd.path', 0x1) failed: error 0x2
-LDR: !  
+LDR: ! 
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
@@ -10,15 +12,32 @@ LDR: ! /host_root/ ->
 LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
-LDR: !  
+LDR: ! 
+LDR: ! Settings:
+LDR: ! CPU: PPU Interpreter 2
+LDR: ! SPU: SPU Recompiler (ASMJIT)
+LDR: ! Renderer: DirectX 12
+LDR: ! D3D Adapter: WARP
+LDR: ! Resolution: 1280x720
+LDR: ! Write Depth Buffer: No
+LDR: ! Write Color Buffers: No
+LDR: ! Read Color Buffer: No
+LDR: ! Audio Out: XAudio2
+LDR: ! Log Everything: No
+LDR: ! RSX Logging: No
+LDR: ! 
 LDR: ! Title: Burn Zombie Burn!
 LDR: ! Serial: NPEB00059
 LDR: ! Elf path: /dev_hdd0/game/NPEB00059/USRDIR/BOOT.BIN
+LDR: ! 
 LDR: ! loader::init() failed: Broken file
-MEM: ! Initializing memory: g_base_addr = 0x333ab20000, g_priv_addr = 0x343ab20000
-MEM: ! Memory initialized.
-LDR: E Unimplemented function 'UTF16stoUTF8s' in 'cellL10n' module (0x42302c)
-LDR: E Unimplemented function 'UTF8stoUTF16s' in 'cellL10n' module (0x42304c)
+LDR: ! *** sdk version: 0x240001
+LDR: ! *** primary prio: 1001
+LDR: ! *** primary stacksize: 0x10000
+LDR: ! *** malloc pagesize: 0x100000
+LDR: ! *** ppc seg: 0x0
+LDR: ! Imported function 'UTF16stoUTF8s' in 'cellL10n' module (0x42302c)
+LDR: ! Imported function 'UTF8stoUTF16s' in 'cellL10n' module (0x42304c)
 LDR: ! Imported function 'cellFsClose' in 'sys_fs' module (0x42306c)
 LDR: ! Imported function 'cellFsRead' in 'sys_fs' module (0x42308c)
 LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module (0x4230ac)
@@ -172,12 +191,11 @@ LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0x42430c)
 LDR: ! Imported function 'sys_lwcond_signal_all' in 'sysPrxForUser' module (0x42432c)
 LDR: ! Imported function 'sys_spu_image_import' in 'sysPrxForUser' module (0x42434c)
 LDR: ! Imported function 'sys_lwcond_signal' in 'sysPrxForUser' module (0x42436c)
-HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0xe38000, user_size=0x110)
+MEM: ! Thread Local Storage initialized (g_tls_start=0xe38000, user_size=0x110)
 *** TLS segment addr: 0x00500d3c
 *** TLS segment size: 0x00000004
-LDR: E 'BreakPoints.dat' is broken (version=0xdee0, break_count=0x0, marked_count=0x93173968, length=0x6)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xddb408, attr=*0x42a2c8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00285468]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000fc04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00285468]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000fc04)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xddb210, attr=*0x42a2c8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xdda998, attr=*0x42a2c8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xdda9c0, attr=*0x42a2c8)
@@ -187,8 +205,9 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xdda920, attr=*0x42a2c8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xdda948, attr=*0x42a2c8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xdda970, attr=*0x42a2c8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00171054]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000fcb0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004235ec]} cellSysutil: cellSysutilRegisterCallback(slot=1, func_addr=0x4de928, userdata=0x5af280)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00171054]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000fcb0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004235ec]} cellSysutil: cellSysutilRegisterCallback(slot=1, func=*0x4de928, userdata=*0x5af280)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00283eac]} sys_memory: sys_memory_allocate(size=0x1d00000, flags=0x400, alloc_addr=*0xd000f990)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f37e8]} sys_mutex: sys_mutex_create(mutex_id=*0xd1a0c0, attr=*0xd000fbb0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0042414c]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0xd1a0b8, entry=0x4dd7d8, arg=0xd19f30, prio=1002, stacksize=0x28000, flags=0x0, threadname=*0x434570)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0042414c]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0xd1a0b8, param=*0xd000f748, arg=0xd19f30, unk=0x0, prio=1002, stacksize=0x28000, flags=0x0, threadname=*0x434570)
@@ -197,65 +216,8 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0042316c]} cellSysmodule: cellSysmoduleL
 HLE: W {PPU[0x1] Thread (main_thread)[0x004235cc]} cellGame: cellHddGameCheck(version=0, dirName=*0x436f70, errDialog=1, funcStat=*0x4e2610, container=-1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
 HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} cellFs: cellFsStat(path=*0xd1a5a8, sb=*0xd000f6f0) -> sys_fs_stat()
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat(path=*0xd1a5a8, sb=*0xd000f6f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = ''
-HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: sys_fs_stat('') failed: not mounted
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f5fa0]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000f668)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004230cc]} sys_fs: *** path = '/dev_hdd0/game/NPEB00059/USRDIR'
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f5fa0]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000f668)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0042318c]} cellSysmodule: cellSysmoduleInitialize()
 HLE: W {PPU[0x1] Thread (main_thread)[0x0042316c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0000: CELL_SYSMODULE_NET)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0042316c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0014: CELL_SYSMODULE_NETCTL)
@@ -265,22 +227,53 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0042316c]} cellSysmodule: cellSysmoduleL
 HLE: W {PPU[0x1] Thread (main_thread)[0x0042316c]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0042316c]} cellSysmodule: cellSysmoduleLoadModule(id=0x001e: CELL_SYSMODULE_L10N)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000f600c]} sys_spu: sys_spu_initialize(max_usable_spu=6, max_raw_spu=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} cellSpurs: cellSpursInitialize(spurs_addr=0x5bda00, nSpus=5, spuPriority=250, ppuPriority=1000, exitIfNoWork=1)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu TODO: Unsupported SPU Thread options (0x2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu TODO: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} cellSpurs: cellSpursInitialize(spurs=*0x5bda00, nSpus=5, spuPriority=250, ppuPriority=1000, exitIfNoWork=-255)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x5bda00, flags=0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f5b8, attr=*0xd000f598, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: sys_spu_thread_group_create(id=*0xd000f578, num=5, prio=250, attr=*0xd000f4e8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f4c0, group=0x20, spu_num=0, img=*0x5be770, attr=*0xd000f4b0, arg=*0xd000f4c8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f4c0, group=0x20, spu_num=1, img=*0x5be770, attr=*0xd000f4b0, arg=*0xd000f4c8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f4c0, group=0x20, spu_num=2, img=*0x5be770, attr=*0xd000f4b0, arg=*0xd000f4c8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f4c0, group=0x20, spu_num=3, img=*0x5be770, attr=*0xd000f4b0, arg=*0xd000f4c8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f4c0, group=0x20, spu_num=4, img=*0x5be770, attr=*0xd000f4b0, arg=*0xd000f4c8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x5be7b0, attr=*0xd000f580)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sysPrxForUser: sys_lwcond_create(lwcond=*0x5be7c8, lwmutex=*0x5be7b0, attr=*0xd000f590)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_event: sys_event_queue_create(equeue_id=*0x5be75c, attr=*0xd000f418, event_queue_key=0x0, size=42)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x20, eq=0x28, req=0xffffffffffff0000, spup=*0x5bdac9)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_event: sys_event_port_create(eport_id=*0x5be760, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_event: sys_event_port_connect_local(eport_id=0x29, equeue_id=0x28)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x5bda00, flag=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} sys_spu: sys_spu_thread_group_connect_event(id=0x20, eq=0x28, et=2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00423e8c]} cellSpurs: cellSpursWakeUp(spurs=*0x5bda00)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21c219b0, attr=*0xd0047938)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004242ec]} sysPrxForUser: sys_lwcond_create(lwcond=*0x21c219c8, lwmutex=*0x21c219b0, attr=*0xd0047930)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21c24250, attr=*0xd00479c8)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004242ec]} sysPrxForUser: sys_lwcond_create(lwcond=*0x21c24268, lwmutex=*0x21c24250, attr=*0xd00479c0)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21c242c0, attr=*0xd0047898)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004242ec]} sysPrxForUser: sys_lwcond_create(lwcond=*0x21c242d8, lwmutex=*0x21c242c0, attr=*0xd0047890)
-HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x00423fcc]} cellNetCtl TODO: cellNetCtlGetInfo(code=0x10, info_addr=0xd00478e0)
+HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x00423fcc]} cellNetCtl TODO: cellNetCtlGetInfo(code=0x10 (INFO_IP_ADDRESS), info=*0xd00478e0)
+HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x00423fcc]} cellNetCtl: cellNetCtlGetInfo(IP_ADDRESS): GetAdaptersAddresses buffer overflow.
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042412c]} sys_lwcond: _sys_lwcond_destroy(lwcond_id=0x2f)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004242cc]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x2e)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00366f88]} sys_event: sys_event_queue_create(equeue_id=*0xde0ff0, attr=*0xd0047b54, event_queue_key=0x0, size=8)
@@ -289,102 +282,122 @@ HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042414c]} sys_ppu_thread: _sys_ppu_th
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042414c]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x33)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00367010]} sys_event: sys_event_port_create(eport_id=*0xde0ff4, port_type=1, name=0xd1ed1ed1)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00367020]} sys_event: sys_event_port_connect_local(eport_id=0x34, equeue_id=0x32)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423eac]} cellSpurs: cellSpursAttachLv2EventQueue(spurs_addr=0x5bda00, queue=0x32, port_addr=0xd0047b50, isDynamic=0)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423eac]} cellSpurs: cellSpursAttachLv2EventQueue(spurs=*0x5bda00, queue=0x32, port=*0xd0047b50, isDynamic=0)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423eac]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x20, eq=0x32, req=0x2, spup=*0xd0047b50)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423dcc]} cellSpurs: cellSpursAddWorkload(spurs_addr=0x5bda00, wid_addr=0xdf130c, pm_addr=0x4a6480, size=0x880, data=0xdf1380, priorityTable_addr=0x518fe0, minContention=0x1, maxContention=0x4)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423f4c]} cellSpurs: cellSpursReadyCountStore(spurs_addr=0x5bda00, wid=0, value=0x4)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423dec]} cellSpurs: cellSpursWakeUp(spurs_addr=0x5bda00)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f5ee4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000f668)
-HLE: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x20)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042384c]} cellGcmSys: _cellGcmInitBody(context_addr=0xddb460, cmdSize=0xf0000, ioSize=0x100000, ioAddress=0x20100000)
-HLE: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x20, cause=*0x0, status=*0x0)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423dcc]} cellSpurs: cellSpursAddWorkload(spurs=*0x5bda00, wid=*0xdf130c, pm=*0x4a6480, size=0x880, data=0xdf1380, priority=*0x518fe0, minCnt=0x1, maxCnt=0x4)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423f4c]} cellSpurs: cellSpursReadyCountStore(spurs=*0x5bda00, wid=0, value=0x4)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423dec]} cellSpurs: cellSpursWakeUp(spurs=*0x5bda00)
+HLE: W {PPU[0x2b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x20)
+SPU: S {PPU[0x2b] Thread (SpursHdlr0)[0x00000000]} SPU Database initialized...
+SPU: S {PPU[0x2b] Thread (SpursHdlr0)[0x00000000]} SPU Recompiler (ASMJIT) created...
+HLE: W {PPU[0x2b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x20, cause=*0x0, status=*0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f5ee4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000f668)
+SPU: S {SPU[0x21] Thread (CellSpursKernel0)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042384c]} cellGcmSys: _cellGcmInitBody(context=**0xddb460, cmdSize=0xf0000, ioSize=0x100000, ioAddress=0x20100000)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042384c]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042384c]} cellGcmSys: cellGcmInit(): 256MB io address space used
 RSX: ! {RSXThread} RSX thread started
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423a0c]} cellGcmSys: cellGcmSetVBlankHandler(handler_addr=0x4dcbb8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423a0c]} cellGcmSys: cellGcmSetVBlankHandler(handler=*0x4dcbb8)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004238ec]} cellGcmSys: cellGcmSetFlipMode(mode=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0042350c]} cellSysutil: cellVideoOutConfigure(videoOut=0, config_addr=0xd000f680, option_addr=0x0, waitForEvent=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0042350c]} cellSysutil: cellVideoOutConfigure(videoOut=0, config=*0xd000f680, option=*0x0, waitForEvent=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00423a6c]} cellGcmSys: cellGcmSetTile(index=0, location=0, offset=0, size=7864320, pitch=5120, comp=7, base=0, bank=0)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00423a6c]} cellGcmSys error: cellGcmSetTile: bad compression mode! (7)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00423a6c]} cellGcmSys: cellGcmSetTile: bad compression mode! (7)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00423a6c]} cellGcmSys: cellGcmSetTile(index=1, location=0, offset=7864320, size=3932160, pitch=5120, comp=10, base=120, bank=2)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00423a6c]} cellGcmSys error: cellGcmSetTile: bad compression mode! (10)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00423a6c]} cellGcmSys: cellGcmSetTile: bad compression mode! (10)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00423a8c]} cellGcmSys TODO: cellGcmSetZcull(index=0, offset=0x780000, width=1280, height=768, cullStart=0x0, zFormat=0x2, aaFormat=0x0, zCullDir=0x0, zCullFormat=0x1, sFunc=0x201, sRef=0x80, sMask=0xff)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f6440]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000f668)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0042398c]} cellGcmSys: cellGcmMapMainMemory(ea=0x21f00000,size=0x800000,offset_addr=0xd000f590)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f64a4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000f668)
-HLE: W {PPU[0x1] Thread (main_thread)[0x000f6938]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000f668)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21c344e0, attr=*0xd0047a18)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004242ec]} sysPrxForUser: sys_lwcond_create(lwcond=*0x21c344f8, lwmutex=*0x21c344e0, attr=*0xd0047a10)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x21c34550, attr=*0xd0047aa8)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004242ec]} sysPrxForUser: sys_lwcond_create(lwcond=*0x21c34568, lwmutex=*0x21c34550, attr=*0xd0047aa0)
-HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x00423fcc]} cellNetCtl TODO: cellNetCtlGetInfo(code=0x10, info_addr=0xd00479c0)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} cellFs: cellFsOpen(path=*0xd0047470, flags=0, fd=*0xd0047330, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open(path=*0xd0047470, flags=0, fd=*0xd0047330, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: *** path = '/ASSETS/GAMEDATA/UI/FONT/GOODDOG.FNT'
-HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs error: sys_fs_open('/ASSETS/GAMEDATA/UI/FONT/GOODDOG.FNT') failed: device not mounted
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} cellFs: cellFsOpen(path=*0xd00472f0, flags=0, fd=*0xd0047330, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open(path=*0xd00472f0, flags=0, fd=*0xd0047330, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: *** path = '/host_root/ASSETS/GAMEDATA/UI/FONT/GOODDOG.FNT'
-G: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} fs::file::open('ASSETS/GAMEDATA/UI/FONT/GOODDOG.FNT', 0x1) failed: error 0x3
-HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs error: sys_fs_open('/host_root/ASSETS/GAMEDATA/UI/FONT/GOODDOG.FNT'): failed to open file (flags=0, mode=0)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} cellFs: cellFsOpen(path=*0xd00466b0, flags=0, fd=*0xd00466f0, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open(path=*0xd00466b0, flags=0, fd=*0xd00466f0, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: *** path = '/app_home/ASSETS/GAMEDATA/UI/FONT/FONT.PSSG.GZ'
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042312c]} sys_fs: sys_fs_fstat(fd=0x39, sb=*0xd0046738)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c0c]} cellFs: cellFsStReadInit(fd=0x39, ringbuf=*0xd0046718)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c4c]} cellFs: cellFsStReadStart(fd=0x39, offset=0x0, size=0xc02)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=0x39, buf=*0x21c36158, size=0x8000, rsize=*0xd00467e8)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423cac]} cellFs: cellFsStReadStop(fd=0x39)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c6c]} cellFs: cellFsStReadFinish(fd=0x39)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f6440]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000f668)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00283eac]} sys_memory: sys_memory_allocate(size=0xa00000, flags=0x400, alloc_addr=*0xd000f3b0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0042398c]} cellGcmSys: cellGcmMapMainMemory(ea=0x21d00000, size=0x800000, offset=*0xd000f590)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f64a4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000f668)
+HLE: W {PPU[0x1] Thread (main_thread)[0x000f6938]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000f668)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x22533da0, attr=*0xd0047a18)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004242ec]} sysPrxForUser: sys_lwcond_create(lwcond=*0x22533db8, lwmutex=*0x22533da0, attr=*0xd0047a10)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004241ac]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x22534220, attr=*0xd0047aa8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004242ec]} sysPrxForUser: sys_lwcond_create(lwcond=*0x22534238, lwmutex=*0x22534220, attr=*0xd0047aa0)
+HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x00423fcc]} cellNetCtl TODO: cellNetCtlGetInfo(code=0x10 (INFO_IP_ADDRESS), info=*0xd00479c0)
+HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x00423fcc]} cellNetCtl: cellNetCtlGetInfo(IP_ADDRESS): GetAdaptersAddresses buffer overflow.
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} cellFs: cellFsOpen(path=*0xd0047450, flags=0, fd=*0xd0047310, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open(path=*0xd0047450, flags=0, fd=*0xd0047310, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: *** path = '/dev_hdd0/game/NPEB00059/USRDIR/ASSETS/GAMEDATA/UI/FONT/GOODDOG.FNT'
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042312c]} sys_fs: sys_fs_fstat(fd=3, sb=*0xd0047358)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c0c]} cellFs: cellFsStReadInit(fd=3, ringbuf=*0xd0047338)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c4c]} cellFs: cellFsStReadStart(fd=3, offset=0x0, size=0x8ba5)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=3, buf=*0x22535e68, size=0x8000, rsize=*0xd00474b8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=3, buf=*0x22535e68, size=0x8000, rsize=*0xd00474c8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=3, buf=*0x22535e68, size=0x8000, rsize=*0xd00474b8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=3, buf=*0x22535e68, size=0x8000, rsize=*0xd00474c8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=3, buf=*0x22535e68, size=0x8000, rsize=*0xd00474b8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=3, buf=*0x22535e68, size=0x8000, rsize=*0xd00474c8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=3, buf=*0x22535e68, size=0x8000, rsize=*0xd00474b8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=3, buf=*0x22535e68, size=0x8000, rsize=*0xd00474c8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=3, buf=*0x22535e68, size=0x8000, rsize=*0xd00474b8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423cac]} cellFs: cellFsStReadStop(fd=3)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c6c]} cellFs: cellFsStReadFinish(fd=3)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} cellFs: cellFsOpen(path=*0xd00467f0, flags=0, fd=*0xd00466b0, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open(path=*0xd00467f0, flags=0, fd=*0xd00466b0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: *** path = '/dev_hdd0/game/NPEB00059/USRDIR/ASSETS/GAMEDATA/UI/FONT/FONT.PSSG.GZ'
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042312c]} sys_fs: sys_fs_fstat(fd=3, sb=*0xd00466f8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c0c]} cellFs: cellFsStReadInit(fd=3, ringbuf=*0xd00466d8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c4c]} cellFs: cellFsStReadStart(fd=3, offset=0x0, size=0xc02)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=3, buf=*0x22535e68, size=0x8000, rsize=*0xd00467c8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423cac]} cellFs: cellFsStReadStop(fd=3)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c6c]} cellFs: cellFsStReadFinish(fd=3)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} cellFs: cellFsOpen(path=*0xd0046680, flags=0, fd=*0xd00466c0, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open(path=*0xd0046680, flags=0, fd=*0xd00466c0, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: *** path = '/app_home/ASSETS/GAMEDATA/UI/FONT/FONT.PSSG.GZ'
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042312c]} sys_fs: sys_fs_fstat(fd=0x3a, sb=*0xd0046708)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c0c]} cellFs: cellFsStReadInit(fd=0x3a, ringbuf=*0xd00466e8)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c4c]} cellFs: cellFsStReadStart(fd=0x3a, offset=0x0, size=0xc02)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=0x3a, buf=*0x21c36158, size=0x8000, rsize=*0xd00467b8)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423cac]} cellFs: cellFsStReadStop(fd=0x3a)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c6c]} cellFs: cellFsStReadFinish(fd=0x3a)
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} cellFs: cellFsOpen(path=*0xd0046660, flags=0, fd=*0xd00466a0, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open(path=*0xd0046660, flags=0, fd=*0xd00466a0, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x0042312c]} sys_fs: sys_fs_fstat(fd=3, sb=*0xd0046708)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c0c]} cellFs: cellFsStReadInit(fd=3, ringbuf=*0xd00466e8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c4c]} cellFs: cellFsStReadStart(fd=3, offset=0x0, size=0xc02)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c2c]} cellFs: cellFsStRead(fd=3, buf=*0x22535e68, size=0x8000, rsize=*0xd00467b8)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423cac]} cellFs: cellFsStReadStop(fd=3)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x00423c6c]} cellFs: cellFsStReadFinish(fd=3)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} cellFs: cellFsOpen(path=*0xd0046640, flags=0, fd=*0xd0046680, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open(path=*0xd0046640, flags=0, fd=*0xd0046680, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: *** path = '/app_home/e:ASSETS/GAMEDATA/UI/FONT/FONT.PSSG.GZ'
 G: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00059/USRDIR/e:ASSETS/GAMEDATA/UI/FONT/FONT.PSSG.GZ', 0x1) failed: error 0x7b
-HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs error: sys_fs_open('/app_home/e:ASSETS/GAMEDATA/UI/FONT/FONT.PSSG.GZ'): failed to open file (flags=0, mode=0)
-MEM: W {PPU[0xe] Thread (BZB IO Thread)[0x0016f0cc]} decode_x64_reg_op(00007ff6922c06ach): unsupported opcode found (0FB60C03488B5C24308BC248C1E81583)
-G: E {PPU[0xe] Thread (BZB IO Thread)[0x0016f0cc]} Exception: Access violation reading location 0x0
-G: E {PPU[0xe] Thread (BZB IO Thread)[0x0016f0cc]} Information: is_alive=1, m_last_syscall=0x0 ()
-G: W {PPU[0xe] Thread (BZB IO Thread)[0x0016f0cc]} Registers:
+HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open('/app_home/e:ASSETS/GAMEDATA/UI/FONT/FONT.PSSG.GZ'): failed to open file (flags=0, mode=0)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} cellFs: cellFsOpen(path=*0xd0046c90, flags=0, fd=*0xd0046b50, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open(path=*0xd0046c90, flags=0, fd=*0xd0046b50, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: *** path = '/dev_hdd0/game/NPEB00059/USRDIR/>'
+G: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEB00059/USRDIR/>', 0x1) failed: error 0x7b
+HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open('/dev_hdd0/game/NPEB00059/USRDIR/>'): failed to open file (flags=0, mode=0)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} cellFs: cellFsOpen(path=*0xd0046b10, flags=0, fd=*0xd0046b50, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open(path=*0xd0046b10, flags=0, fd=*0xd0046b50, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: *** path = '/host_root/dev_hdd0/game/NPEB00059/USRDIR/>'
+G: W {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} fs::file::open('dev_hdd0/game/NPEB00059/USRDIR/>', 0x1) failed: error 0x7b
+HLE: E {PPU[0xe] Thread (BZB IO Thread)[0x004230ac]} sys_fs: sys_fs_open('/host_root/dev_hdd0/game/NPEB00059/USRDIR/>'): failed to open file (flags=0, mode=0)
+G: ! {PPU[0xe] Thread (BZB IO Thread)[0x0016f174]} Registers:
 =========
-GPR[0] = 0x16f0c8
+GPR[0] = 0x16f16c
 GPR[1] = 0xd00470c0
 GPR[2] = 0x4ff1b8
 GPR[3] = 0x0
-GPR[4] = 0x0
-GPR[5] = 0xd0046b10
-GPR[6] = 0xd0046b40
+GPR[4] = 0xd0047138
+GPR[5] = 0x0
+GPR[6] = 0xd0046f80
 GPR[7] = 0x1
-GPR[8] = 0xddb2d4
-GPR[9] = 0x21c24300
-GPR[10] = 0x0
-GPR[11] = 0xddc5ac
+GPR[8] = 0x22535e58
+GPR[9] = 0x0
+GPR[10] = 0x1ca1d8
+GPR[11] = 0xd0047000
 GPR[12] = 0x24000082
 GPR[13] = 0xe3f2b0
 GPR[14] = 0x0
 GPR[15] = 0x0
 GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x588a60
-GPR[20] = 0x0
-GPR[21] = 0x5909fc
-GPR[22] = 0x598228
+GPR[17] = 0xd0047600
+GPR[18] = 0xd0047610
+GPR[19] = 0xd0047600
+GPR[20] = 0xd0047603
+GPR[21] = 0xd0047602
+GPR[22] = 0xd0047601
 GPR[23] = 0xd0047130
 GPR[24] = 0xd1f280
 GPR[25] = 0x0
-GPR[26] = 0x0
-GPR[27] = 0x5af280
+GPR[26] = 0x22533dd0
+GPR[27] = 0x0
 GPR[28] = 0x5909fc
-GPR[29] = 0x0
+GPR[29] = 0x22533dd0
 GPR[30] = 0xd0047138
 GPR[31] = 0x0
 FPR[0] = 1
@@ -400,7 +413,7 @@ FPR[9] = 0
 FPR[10] = 0
 FPR[11] = 0
 FPR[12] = 0
-FPR[13] = 4.2504E-313
+FPR[13] = 2.5305E-313
 FPR[14] = 0
 FPR[15] = 0
 FPR[16] = 0
@@ -425,7 +438,7 @@ VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[6] = 0x80001b0037cb7e600000000000000000 [x: -9.68577e-42 y: 2.42583e-05 z: 0 w: 0]
 VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
@@ -451,18 +464,27 @@ VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x44000022
-LR = 0x16f0c8
+CR = 0x24000082
+LR = 0x16f16c
 CTR = 0x311890
-XER = 0x0 [CA=231928233984 | OV=0 | SO=140694538682368]
+XER = 0x0 [CA=0 | OV=8589934592 | SO=0]
 FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
-HLE: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x20) aborted
-RSX: W {RSXThread} RSX thread aborted
-HLE: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} CallbackManager thread aborted
-RSX: ! {RSXThread} RSX thread ended
-HLE: W {PPU[0x2a] Thread (SpursHdlr0)[0x00000000]} cellSpurs: SPURS Handler Thread 0 aborted
-HLE: W {PPU[0x33] Thread (spu_printf_handler)[0x003679e8]} sys_event: sys_event_queue_receive(equeue_id=0x32) aborted
-HLE: ! {VBlank thread} VBlank thread aborted
-HLE: ! All threads stopped...
-MEM: ! Closing memory...
+G: E {PPU[0xe] Thread (BZB IO Thread)[0x0016f174]} Exception: Access violation reading location 0x94
+(in file ..\Utilities\Thread.cpp:1122, in function _se_translator)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+G: ! {PPU[0x1] Thread (main_thread)[0x000f5a00]} Thread aborted
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00016440]} Thread aborted
+G: ! {PPU[0x2a] Thread (SpursHdlr1)[0x00000000]} Thread aborted
+HLE: S {PPU[0x33] Thread (spu_printf_handler)[0x003679e8]} Last syscall: 130 (sys_event_queue_receive)
+G: ! {PPU[0x33] Thread (spu_printf_handler)[0x003679e8]} Thread aborted
+G: ! {VBlank Thread} Thread aborted
+G: ! {PPU[0x2b] Thread (SpursHdlr0)[0x00000000]} Thread aborted
+G: ! {SPU[0x21] Thread (CellSpursKernel0)[0x00818]} Thread aborted
+G: ! {SPU[0x25] Thread (CellSpursKernel4)[0x00818]} Thread aborted
+G: ! {SPU[0x22] Thread (CellSpursKernel1)[0x00818]} Thread aborted
+G: ! {SPU[0x24] Thread (CellSpursKernel3)[0x00818]} Thread aborted
+G: ! {SPU[0x23] Thread (CellSpursKernel2)[0x00818]} Thread aborted
+G: ! All threads stopped...
+G: ! Objects cleared...

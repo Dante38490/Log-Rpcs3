@@ -1,5 +1,5 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-G: ! RPCS3 v0.0.0.5-2539-g316959f
+G: ! RPCS3 v0.0.0.6-3686-2f211e4
 G: ! 
 G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES00707-[WET]/PS3_GAME/USRDIR/BOOT.BIN'...
@@ -18,7 +18,7 @@ LDR: ! Settings:
 LDR: ! CPU: PPU Interpreter 2
 LDR: ! SPU: SPU Recompiler (ASMJIT)
 LDR: ! Renderer: DirectX 12
-LDR: ! D3D Adapter: Default
+LDR: ! D3D Adapter: WARP
 LDR: ! Resolution: 1280x720
 LDR: ! Write Depth Buffer: No
 LDR: ! Write Color Buffers: No
@@ -442,8 +442,8 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x011dba2c]} cellSpurs: _cellSpursAttribut
 HLE: W {PPU[0x1] Thread (main_thread)[0x011db63c]} cellSpurs: cellSpursAttributeSetNamePrefix(attr=*0xd007f180, prefix=*0x13629d0, size=13)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x20147e00, attr=*0xd007f180)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x20147e00, flags=0x2)
-SPU: S {SPU[0x49] Thread (A2M MPAL CellSpursKernel0)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007e018, attr=*0xd007dff8, initial_val=0, max_val=1)
+SPU: S {SPU[0x49] Thread (A2M MPAL CellSpursKernel0)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007e018, attr=*0xd007dff8, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007e018, attr=*0xd007dff8, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007e018, attr=*0xd007dff8, initial_val=0, max_val=1)
@@ -470,10 +470,10 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} sys_spu: sys_spu_thread_group
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} sys_event: sys_event_port_create(eport_id=*0x20148b60, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} sys_event: sys_event_port_connect_local(eport_id=0x69, equeue_id=0x68)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x20147e00, flag=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} sys_spu: sys_spu_thread_group_connect_event(id=0x64, eq=0x68, et=2)
 HLE: W {PPU[0x6b] Thread (A2M MStream )[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x64)
-HLE: W {PPU[0x1] Thread (main_thread)[0x011db984]} cellSpurs: cellSpursWakeUp(spurs=*0x20147e00)
+HLE: W {PPU[0x1] Thread (main_thread)[0x011dbad4]} sys_spu: sys_spu_thread_group_connect_event(id=0x64, eq=0x68, et=2)
 HLE: W {PPU[0x6b] Thread (A2M MStream )[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x64, cause=*0x0, status=*0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x011db984]} cellSpurs: cellSpursWakeUp(spurs=*0x20147e00)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dc89c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x201201a8, attr=*0xd007f1e0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dc89c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x201201d8, attr=*0xd007f1e0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dc89c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x201440f8, attr=*0xd007f1e0)
@@ -496,8 +496,8 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x011db214]} cellSysutil: cellSysutilRegis
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dc89c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20176b10, attr=*0xd007ef38)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dcc1c]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20176b28, lwmutex=*0x20176b10, attr=*0xd007ef30)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dafe4]} cellSysutil: cellSysCacheMount(param=*0xd007f204)
-HLE: W {PPU[0x73] Thread (CommandQueueConsumerThread)[0x011db39c]} cellGame: cellGameDataCheckCreate2(version=0x0, dirName=*0x20176b58, errDialog=0x1, funcStat=*0x14f17b0, container=-1)
 G: W {PPU[0x1] Thread (main_thread)[0x011dafe4]} Error creating directory 'D:/Emulateurs/Rpcs3/dev_hdd1/cache': 0xb7
+HLE: W {PPU[0x73] Thread (CommandQueueConsumerThread)[0x011db39c]} cellGame: cellGameDataCheckCreate2(version=0x0, dirName=*0x20176b58, errDialog=0x1, funcStat=*0x14f17b0, container=-1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00d0dc88]} sys_fs: sys_fs_stat(path=*0xd007f4f8, sb=*0xd007f3e0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00d0dc88]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/engine.ini'
 HLE: W {PPU[0x1] Thread (main_thread)[0x011d9d4c]} cellSysmodule: cellSysmoduleIsLoaded(id=0x000e: CELL_SYSMODULE_FS)
@@ -506,42 +506,47 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x011d9fec]} cellFs: cellFsOpen(path=*0xd0
 HLE: W {PPU[0x1] Thread (main_thread)[0x011d9fec]} sys_fs: sys_fs_open(path=*0xd007ee40, flags=0, fd=*0xd007f0d4, mode=0, arg=*0xd007edc8, size=0x8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x011d9fec]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/engine.sdat'
 HLE: W {PPU[0x1] Thread (main_thread)[0x011dc89c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x1856eb0, attr=*0xd007f380)
-G: ! {PPU[0x1] Thread (main_thread)[0x00d041c8]} Registers:
+HLE: W {PPU[0x1] Thread (main_thread)[0x011da174]} sys_net: sys_net_initialize_network_ex(param=*0xd007f5b0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x011da334]} sys_net: sys_net::sys_net_set_resolver_configurations
+HLE: W {PPU[0x1] Thread (main_thread)[0x011da59c]} sys_net: inet_addr(cp=*0x20128430)
+HLE: E {PPU[0x1] Thread (main_thread)[0x011da2fc]} sys_net: sys_net::gethostbyname
+HLE: E {PPU[0x1] Thread (main_thread)[0x011da52c]} sys_net: sys_net::_sys_net_h_errno_loc
+G: ! {PPU[0x1] Thread (main_thread)[0x00a37b44]} Registers:
 =========
-GPR[0] = 0x100
-GPR[1] = 0xd007f490
+GPR[0] = 0x1
+GPR[1] = 0xd007f530
 GPR[2] = 0x15089e8
 GPR[3] = 0x0
-GPR[4] = 0x0
-GPR[5] = 0x0
-GPR[6] = 0x7f7f7f7f7f7f7f7f
-GPR[7] = 0xd007f3f0
-GPR[8] = 0x10
+GPR[4] = 0x20128430
+GPR[5] = 0x7d05
+GPR[6] = 0x40
+GPR[7] = 0x2017edc0
+GPR[8] = 0x7f7f7f7f7f7f7f7f
 GPR[9] = 0x1454350
 GPR[10] = 0x7f7f7f7f7f7f7f7f
 GPR[11] = 0x14b2138
-GPR[12] = 0xc
+GPR[12] = 0x2017ee00
 GPR[13] = 0x1935030
 GPR[14] = 0x0
 GPR[15] = 0x1446000
-GPR[16] = 0x1540000
-GPR[17] = 0xd007f5d0
-GPR[18] = 0xd007f5b4
-GPR[19] = 0x1540000
-GPR[20] = 0x1540000
-GPR[21] = 0x1540000
-GPR[22] = 0x1540000
-GPR[23] = 0x1540000
-GPR[24] = 0x1540000
-GPR[25] = 0xd007f9e0
-GPR[26] = 0xd007f9e0
-GPR[27] = 0x0
-GPR[28] = 0x133ea40
-GPR[29] = 0xd007f9f0
-GPR[30] = 0x0
-GPR[31] = 0xd007f9f0
-FPR[0] = 5
-FPR[1] = 30
+GPR[16] = 0x1446000
+GPR[17] = 0x1
+GPR[18] = 0xd007f9e0
+GPR[19] = 0xd007f9e0
+GPR[20] = 0x201292e0
+GPR[21] = 0x18c0000
+GPR[22] = 0xd007f9e0
+GPR[23] = 0xd007f9e0
+GPR[24] = 0x201292e0
+GPR[25] = 0x18ba3c8
+GPR[26] = 0x201292e4
+GPR[27] = 0x2
+GPR[28] = 0x7d05
+GPR[29] = 0x0
+GPR[30] = 0x20128430
+GPR[31] = 0xd007f644
+FPR[0] = 1.04858E+06
+FPR[1] = 3.10839E-317
 FPR[2] = 0
 FPR[3] = 0
 FPR[4] = 0
@@ -574,11 +579,11 @@ FPR[30] = 0
 FPR[31] = 0
 VPR[0] = 0x3f800000000000000000000000000000 [x: 1 y: 0 z: 0 w: 0]
 VPR[1] = 0x000000003f8000000000000000000000 [x: 0 y: 1 z: 0 w: 0]
-VPR[2] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[3] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[4] = 0x0000000002a7b6f00000000002a7b6f0 [x: 0 y: 2.46434e-37 z: 0 w: 2.46434e-37]
-VPR[5] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[6] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
+VPR[2] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[3] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[4] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[5] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[6] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
 VPR[7] = 0x3f8000003f8000003f80000000000000 [x: 1 y: 1 z: 1 w: 0]
 VPR[8] = 0x0000000000000000000000003f800000 [x: 0 y: 0 z: 0 w: 1]
 VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
@@ -586,50 +591,50 @@ VPR[10] = 0x3f800000000000000000000000000000 [x: 1 y: 0 z: 0 w: 0]
 VPR[11] = 0x0000000000000000000000003f800000 [x: 0 y: 0 z: 0 w: 1]
 VPR[12] = 0x000000003f8000000000000000000000 [x: 0 y: 1 z: 0 w: 0]
 VPR[13] = 0x00000000000000003f80000000000000 [x: 0 y: 0 z: 1 w: 0]
-VPR[14] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[15] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[16] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[17] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[18] = 0x0000000002a7b8700000000002a7b210 [x: 0 y: 2.46443e-37 z: 0 w: 2.46406e-37]
-VPR[19] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[20] = 0x0000000002a7b3b00000000002a7b3b0 [x: 0 y: 2.46416e-37 z: 0 w: 2.46416e-37]
-VPR[21] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[22] = 0x0000000002a7b7d00000000002a7b7d0 [x: 0 y: 2.46439e-37 z: 0 w: 2.46439e-37]
-VPR[23] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[24] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[25] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[26] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[27] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[28] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[29] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[30] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-VPR[31] = 0x0000000002a7a9300000000002a7a930 [x: 0 y: 2.46356e-37 z: 0 w: 2.46356e-37]
-CR = 0x24002044
-LR = 0xa5c170
-CTR = 0x10
+VPR[14] = 0x0000000002d6e9000000000002d6e900 [x: 0 y: 3.15782e-37 z: 0 w: 3.15782e-37]
+VPR[15] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[16] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[17] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[18] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[19] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[20] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[21] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[22] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[23] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[24] = 0x0000000002d6eee00000000002d6eee0 [x: 0 y: 3.15816e-37 z: 0 w: 3.15816e-37]
+VPR[25] = 0x0000000002d6eb600000000002d6eb60 [x: 0 y: 3.15796e-37 z: 0 w: 3.15796e-37]
+VPR[26] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[27] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[28] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[29] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[30] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+VPR[31] = 0x0000000002d6ea000000000002d6ea00 [x: 0 y: 3.15788e-37 z: 0 w: 3.15788e-37]
+CR = 0x44002042
+LR = 0xa37b44
+CTR = 0xd21b80
 XER = 0x0 [CA=0 | OV=8589934592 | SO=0]
 FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
-G: E {PPU[0x1] Thread (main_thread)[0x00d041c8]} Exception: Access violation reading location 0x0
+G: E {PPU[0x1] Thread (main_thread)[0x00a37b44]} Exception: Access violation reading location 0x0
 (in file ..\Utilities\Thread.cpp:1122, in function _se_translator)
 G: ! Stopping emulator...
 G: ! All threads signaled...
-HLE: S {PPU[0x36] Thread (_SPU_printf_server)[0x00d0d568]} Last syscall: 130 (sys_event_queue_receive)
-G: ! {PPU[0x75] Thread (SysUtilCallbackPollingThrea)[0x00a50400]} Thread aborted
 G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
+G: ! {PPU[0x75] Thread (SysUtilCallbackPollingThrea)[0x00a50400]} Thread aborted
+HLE: S {PPU[0x36] Thread (_SPU_printf_server)[0x00d0d568]} Last syscall: 130 (sys_event_queue_receive)
 G: ! {PPU[0x36] Thread (_SPU_printf_server)[0x00d0d568]} Thread aborted
 G: ! {PPU[0x51] Thread (A2M MPAL )[0x00000000]} Thread aborted
-HLE: S {PPU[0x73] Thread (CommandQueueConsumerThread)[0x011dc82c]} Last function: sys_lwcond_wait (0x2a6d9d51)
 G: ! {PPU[0x6a] Thread (A2M MStream )[0x00000000]} Thread aborted
+HLE: S {PPU[0x73] Thread (CommandQueueConsumerThread)[0x011dc82c]} Last function: sys_lwcond_wait (0x2a6d9d51)
 HLE: S {PPU[0x74] Thread (CommandQueueConsumerThread)[0x011dc82c]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: ! {PPU[0x52] Thread (A2M MPAL )[0x00000000]} Thread aborted
 G: ! {PPU[0x73] Thread (CommandQueueConsumerThread)[0x011dc82c]} Thread aborted
 G: ! {PPU[0x74] Thread (CommandQueueConsumerThread)[0x011dc82c]} Thread aborted
-G: ! {PPU[0x52] Thread (A2M MPAL )[0x00000000]} Thread aborted
 G: ! {PPU[0x6b] Thread (A2M MStream )[0x00000000]} Thread aborted
+G: ! {SPU[0x4b] Thread (A2M MPAL CellSpursKernel2)[0x00818]} Thread aborted
 G: ! {SPU[0x49] Thread (A2M MPAL CellSpursKernel0)[0x00818]} Thread aborted
+G: ! {SPU[0x4a] Thread (A2M MPAL CellSpursKernel1)[0x00818]} Thread aborted
 G: ! {SPU[0x65] Thread (A2M MStream CellSpursKernel0)[0x00818]} Thread aborted
 G: ! {SPU[0x4c] Thread (A2M MPAL CellSpursKernel3)[0x00818]} Thread aborted
-G: ! {SPU[0x4a] Thread (A2M MPAL CellSpursKernel1)[0x00818]} Thread aborted
-G: ! {SPU[0x4b] Thread (A2M MPAL CellSpursKernel2)[0x00818]} Thread aborted
 G: ! All threads stopped...
 G: ! Objects cleared...

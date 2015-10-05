@@ -1,5 +1,5 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-G: ! RPCS3 v0.0.0.5-2539-g316959f
+G: ! RPCS3 v0.0.0.6-3686-2f211e4
 G: ! 
 G: ! Stopping emulator...
 LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES01002-[Tony Hawk SHRED]/PS3_GAME/USRDIR/BOOT.BIN'...
@@ -18,7 +18,7 @@ LDR: ! Settings:
 LDR: ! CPU: PPU Interpreter 2
 LDR: ! SPU: SPU Recompiler (ASMJIT)
 LDR: ! Renderer: DirectX 12
-LDR: ! D3D Adapter: Default
+LDR: ! D3D Adapter: WARP
 LDR: ! Resolution: 1280x720
 LDR: ! Write Depth Buffer: No
 LDR: ! Write Color Buffers: No
@@ -459,38 +459,8 @@ HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc3998]} sys_fs: sys_fs_fstat(fd=3, 
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc5478]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x209f3828, attr=*0xd007f3a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3998]} sys_fs: sys_fs_fstat(fd=3, sb=*0xd007f2b0)
 HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc5478]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29b4bdd0, attr=*0xd00afac0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} cellFs: cellFsOpen(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/script/startup.lua'
-G: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES01002-[Tony Hawk SHRED]/PS3_GAME/USRDIR/script/startup.lua', 0x1) failed: error 0x3
-HLE: E {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open('/dev_bdvd/PS3_GAME/USRDIR/script/startup.lua'): failed to open file (flags=0, mode=0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} cellFs: cellFsOpen(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/rme/script/startup.lua'
-G: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES01002-[Tony Hawk SHRED]/PS3_GAME/USRDIR/rme/script/startup.lua', 0x1) failed: error 0x3
-HLE: E {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open('/dev_bdvd/PS3_GAME/USRDIR/rme/script/startup.lua'): failed to open file (flags=0, mode=0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} cellFs: cellFsOpen(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: *** path = '/dev_bdvd/script/startup.lua'
-G: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES01002-[Tony Hawk SHRED]/script/startup.lua', 0x1) failed: error 0x3
-HLE: E {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open('/dev_bdvd/script/startup.lua'): failed to open file (flags=0, mode=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc5598]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x70)
 HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc5478]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29b4bdd0, attr=*0xd00afac0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} cellFs: cellFsOpen(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/script/disc_startup.lua'
-G: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES01002-[Tony Hawk SHRED]/PS3_GAME/USRDIR/script/disc_startup.lua', 0x1) failed: error 0x3
-HLE: E {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open('/dev_bdvd/PS3_GAME/USRDIR/script/disc_startup.lua'): failed to open file (flags=0, mode=0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} cellFs: cellFsOpen(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/rme/script/disc_startup.lua'
-G: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES01002-[Tony Hawk SHRED]/PS3_GAME/USRDIR/rme/script/disc_startup.lua', 0x1) failed: error 0x3
-HLE: E {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open('/dev_bdvd/PS3_GAME/USRDIR/rme/script/disc_startup.lua'): failed to open file (flags=0, mode=0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} cellFs: cellFsOpen(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, arg=*0x0, size=0x0) -> sys_fs_open()
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, mode=0, arg=*0x0, size=0x0)
-HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: *** path = '/dev_bdvd/script/disc_startup.lua'
-G: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BLES01002-[Tony Hawk SHRED]/script/disc_startup.lua', 0x1) failed: error 0x3
-HLE: E {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: sys_fs_open('/dev_bdvd/script/disc_startup.lua'): failed to open file (flags=0, mode=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc5598]} sys_lwmutex: _sys_lwmutex_destroy(lwmutex_id=0x71)
 HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc5478]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29b4bdd0, attr=*0xd00afac0)
 HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} cellFs: cellFsOpen(path=*0xd00ad300, flags=0, fd=*0xd00ad2b8, arg=*0x0, size=0x0) -> sys_fs_open()
@@ -554,18 +524,20 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_spu: sys_spu_thread_group
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_event: sys_event_port_create(eport_id=*0x29d617e0, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_event: sys_event_port_connect_local(eport_id=0x8e, equeue_id=0x8d)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x29d60a80, flag=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_spu: sys_spu_thread_group_connect_event(id=0x85, eq=0x8d, et=2)
 HLE: W {PPU[0x90] Thread (RMEJobsSpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x85)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_spu: sys_spu_thread_group_connect_event(id=0x85, eq=0x8d, et=2)
+SPU: S {PPU[0x90] Thread (RMEJobsSpursHdlr0)[0x00000000]} SPU Database initialized...
+SPU: S {PPU[0x90] Thread (RMEJobsSpursHdlr0)[0x00000000]} SPU Recompiler (ASMJIT) created...
+HLE: W {PPU[0x90] Thread (RMEJobsSpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x85, cause=*0x0, status=*0x0)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00dc3cb8]} cellSpurs: _cellSpursJobChainAttributeInitialize
 HLE: E {PPU[0x1] Thread (main_thread)[0x00dc3e18]} cellSpurs: cellSpursJobChainAttributeSetName
 HLE: E {PPU[0x1] Thread (main_thread)[0x00dc3c98]} cellSpurs: cellSpursCreateJobChainWithAttribute
+SPU: S {SPU[0x86] Thread (RMEJobsCellSpursKernel0)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00dc3f98]} cellSpurs: cellSpursRunJobChain
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3dd8]} cellSpurs: _cellSpursAttributeInitialize(attr=*0xd007f768, revision=2, sdkVersion=0x330000, nSpus=1, spuPriority=200, ppuPriority=981, exitIfNoWork=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3c18]} cellSpurs: cellSpursAttributeSetNamePrefix(attr=*0xd007f768, prefix=*0xdf93c4, size=9)
-SPU: S {PPU[0x90] Thread (RMEJobsSpursHdlr0)[0x00000000]} SPU Database initialized...
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3e98]} cellSpurs: cellSpursAttributeSetSpuThreadGroupType(attr=*0xd007f768, type=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x29d65c80, attr=*0xd007f768)
-SPU: S {PPU[0x90] Thread (RMEJobsSpursHdlr0)[0x00000000]} SPU Recompiler (ASMJIT) created...
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x29d65c80, flags=0x2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007f4e8, attr=*0xd007f4c8, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007f4e8, attr=*0xd007f4c8, initial_val=0, max_val=1)
@@ -586,9 +558,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_semaphore: sys_semaphore_
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007f4e8, attr=*0xd007f4c8, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_spu: sys_spu_thread_group_create(id=*0xd007f4a8, num=1, prio=200, attr=*0xd007f418)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_spu: sys_spu_thread_initialize(thread=*0xd007f3f0, group=0xa2, spu_num=0, img=*0x29d669f0, attr=*0xd007f3e0, arg=*0xd007f3f8)
-HLE: W {PPU[0x90] Thread (RMEJobsSpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x85, cause=*0x0, status=*0x0)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_spu: Unsupported SPU Thread options (0x2)
-SPU: S {SPU[0x87] Thread (RMEJobsCellSpursKernel1)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29d66a30, attr=*0xd007f4b0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x29d66a48, lwmutex=*0x29d66a30, attr=*0xd007f4c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3eb8]} sys_event: sys_event_queue_create(equeue_id=*0x29d669dc, attr=*0xd007f348, event_queue_key=0x0, size=42)
@@ -636,7 +606,7 @@ HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc38b8]} sys_fs: *** path = '/dev_bd
 HLE: W {PPU[0x6d] Thread (RME File I/O)[0x00dc3998]} sys_fs: sys_fs_fstat(fd=4, sb=*0xd00af190)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc5478]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x23cfcac8, attr=*0xd007f3a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3998]} sys_fs: sys_fs_fstat(fd=4, sb=*0xd007f2b0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00dc5478]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29997c18, attr=*0xd007f680)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00dc5478]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x29997c98, attr=*0xd007f680)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3d38]} cellSpurs: _cellSpursEventFlagInitialize(spurs=*0x29d65c80, taskset=*0x0, eventFlag=*0x29dad600, flagClearMode=0, flagDirection=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3db8]} cellSpurs: cellSpursEventFlagAttachLv2EventQueue(eventFlag=*0x29dad600)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3db8]} sys_event: sys_event_queue_create(equeue_id=*0xd007f5a8, attr=*0xd007f588, event_queue_key=0x0, size=1)
@@ -645,24 +615,23 @@ HLE: E {PPU[0x1] Thread (main_thread)[0x00dc4ed8]} cellSpurs: _cellSpursLFQueueP
 HLE: W {PPU[0x1] Thread (main_thread)[0x00dc3cd8]} cellSpurs: cellSpursEventFlagWait(eventFlag=*0x29dad600, mask=*0x29dad680, mode=1)
 G: ! Stopping emulator...
 G: ! All threads signaled...
-HLE: S {PPU[0x1] Thread (main_thread)[0x00dc3cd8]} Last function: cellSpursEventFlagWait (0x373523d4)
-HLE: S {PPU[0x6d] Thread (RME File I/O)[0x00dc5438]} Last function: sys_lwcond_wait (0x2a6d9d51)
 G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
+HLE: S {PPU[0x1] Thread (main_thread)[0x00dc3cd8]} Last function: cellSpursEventFlagWait (0x373523d4)
 HLE: S {PPU[0x73] Thread (JobThread0)[0x00dc5438]} Last function: sys_lwcond_wait (0x2a6d9d51)
 G: ! {PPU[0x1] Thread (main_thread)[0x00dc3cd8]} Thread aborted
-G: ! {PPU[0x6d] Thread (RME File I/O)[0x00dc5438]} Thread aborted
+HLE: S {PPU[0x6d] Thread (RME File I/O)[0x00dc5438]} Last function: sys_lwcond_wait (0x2a6d9d51)
 G: ! {PPU[0x73] Thread (JobThread0)[0x00dc5438]} Thread aborted
-G: ! {PPU[0x8f] Thread (RMEJobsSpursHdlr1)[0x00000000]} Thread aborted
+G: ! {PPU[0x6d] Thread (RME File I/O)[0x00dc5438]} Thread aborted
 G: ! {PPU[0xa8] Thread (HavokBinkSpursHdlr1)[0x00000000]} Thread aborted
-G: ! {PPU[0x90] Thread (RMEJobsSpursHdlr0)[0x00000000]} Thread aborted
-G: ! {PPU[0xa9] Thread (HavokBinkSpursHdlr0)[0x00000000]} Thread aborted
+G: ! {PPU[0x8f] Thread (RMEJobsSpursHdlr1)[0x00000000]} Thread aborted
 G: ! {VBlank Thread} Thread aborted
+G: ! {PPU[0xa9] Thread (HavokBinkSpursHdlr0)[0x00000000]} Thread aborted
+G: ! {PPU[0x90] Thread (RMEJobsSpursHdlr0)[0x00000000]} Thread aborted
 G: ! {SPU[0xa3] Thread (HavokBinkCellSpursKernel0)[0x00818]} Thread aborted
-G: ! {SPU[0x88] Thread (RMEJobsCellSpursKernel2)[0x00818]} Thread aborted
 G: ! {SPU[0x87] Thread (RMEJobsCellSpursKernel1)[0x00818]} Thread aborted
-G: ! {SPU[0x86] Thread (RMEJobsCellSpursKernel0)[0x00818]} Thread aborted
-G: ! {SPU[0x8a] Thread (RMEJobsCellSpursKernel4)[0x00818]} Thread aborted
 G: ! {SPU[0x89] Thread (RMEJobsCellSpursKernel3)[0x00818]} Thread aborted
+G: ! {SPU[0x88] Thread (RMEJobsCellSpursKernel2)[0x00818]} Thread aborted
+G: ! {SPU[0x8a] Thread (RMEJobsCellSpursKernel4)[0x00818]} Thread aborted
+G: ! {SPU[0x86] Thread (RMEJobsCellSpursKernel0)[0x00818]} Thread aborted
 G: ! All threads stopped...
 G: ! Objects cleared...
-G: ! Stopping emulator...
