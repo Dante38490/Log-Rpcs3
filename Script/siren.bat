@@ -2,14 +2,13 @@ make_npdata -d Main_Archive/Archives/01/A01_text_1.dds.edat edat/Archives/01/A01
 make_npdata -d Main_Archive/Archives/01/A01_text_2.dds.edat edat/Archives/01/A01_text_2.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
 make_npdata -d Main_Archive/Archives/01/A01_text_3.dds.edat edat/Archives/01/A01_text_3.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
 make_npdata -d Main_Archive/Archives/01/A01_text_4.dds.edat edat/Archives/01/A01_text_4.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
-make_npdata -d Main_Archive/Archives/01/A01_text_4.dds.edat edat/Archives/01/A01_text_5.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
 make_npdata -d Main_Archive/Archives/01/A01_text_5.dds.edat edat/Archives/01/A01_text_5.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
 make_npdata -d Main_Archive/Archives/01/A01_text_6.dds.edat edat/Archives/01/A01_text_6.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
 make_npdata -d Main_Archive/Archives/01/A01_text_7.dds.edat edat/Archives/01/A01_text_7.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
 make_npdata -d Main_Archive/Archives/01/A01_text_8.dds.edat edat/Archives/01/A01_text_8.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
 make_npdata -d Main_Archive/Archives/01/A01_texture_1.dds.edat edat/Archives/01/A01_texture_1.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
 make_npdata -d Main_Archive/Archives/01/A01_texture_2.dds.edat edat/Archives/01/A01_texture_2.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
-make_npdata -d Main_Archive/Archives/01/A01_texture_3.dds.edat edat/Archives/01/A01_texture_3.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap	
+make_npdata -d Main_Archive/Archives/01/A01_texture_3.dds.edat edat/Archives/01/A01_texture_3.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
 make_npdata -d Main_Archive/Archives/01/A01_texture_4.dds.edat edat/Archives/01/A01_texture_4.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
 make_npdata -d Main_Archive/Archives/01/A01_texture_5.dds.edat edat/Archives/01/A01_texture_5.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
 make_npdata -d Main_Archive/Archives/01/A01_texture_6.dds.edat edat/Archives/01/A01_texture_6.dds.edat 0 EP9000-NPEA00095_00-SIRENBCUK0000001.rap
