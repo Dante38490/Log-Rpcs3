@@ -1,8 +1,9 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-G: ! Stopping emulator...
-LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00252/USRDIR/BOOT.BIN'...
+G: ! RPCS3 v0.0.0.6-3827-a6beb0e
+G: ! 
+LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00252\USRDIR\BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00252/dev_bdvd.path', 0x1) failed: error 0x2
-LDR: !  
+LDR: ! 
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
@@ -10,10 +11,120 @@ LDR: ! /host_root/ ->
 LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
-LDR: !  
+LDR: ! 
+LDR: ! 
 LDR: ! Title: inFamous
 LDR: ! Serial: NPEA00252
+LDR: ! Used configuration: 'rpcs3.new.ini'
+LDR: ! 
+LDR: ! [gui]
+MainFrameAui=layout2|name~Pane_0;caption~Game List;state~4196348;dir~5;layer~0;row~0;pos~0;prop~100000;bestw~283;besth~279;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~-1;floaty~-1;floatw~-1;floath~-1|name~Pane_1;caption~Log;state~4196348;dir~4;layer~0;row~1;pos~1;prop~99647;bestw~600;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~52;floaty~489;floatw~616;floath~339|name~Pane_2;caption~Debugger;state~4196348;dir~4;layer~0;row~1;pos~0;prop~100353;bestw~400;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~47;floaty~117;floatw~416;floath~339|dock_size(5,0,0)~265|dock_size(4,0,1)~400|
+
+[system]
+Emulation dir path=
+Language=2
+Use path below as EmulationDir=false
+
+[rsx/opengl]
+Write Color Buffers=false
+Write Depth Buffer=false
+Read Color Buffers=false
+Read Depth Buffer=false
+
+[gui/size]
+width=963
+height=626
+
+[gui/position]
+horizontal=-5
+vertical=145
+
+[core]
+PPU Decoder=interpreter2
+Load liblv2.sprx=false
+Hook static functions=false
+SPU Decoder=recompiler_asmjit
+
+[rsx]
+VSync=true
+Aspect ratio=16x9
+Renderer=DX12
+Resolution=1280x720
+Frame limit=Auto
+Log shader programs=false
+3D Monitor=false
+
+[core/llvm]
+Compiled blocks exclusion=false
+Excluded block range min=200
+Excluded block range max=250
+Compilation threshold=1000
+
+[audio]
+Audio Out=XAudio2
+Dump to file=false
+Convert to 16 bit=false
+
+[io]
+Pad Handler=windows
+Camera=connected
+Camera type=PlayStationEye
+Mouse Handler=null
+Keyboard Handler=null
+
+[rsx/d3d12]
+D3D Adaptater=0
+Debug Output=false
+Debug overlay=true
+
+[io/pad]
+Circle=76
+Left Analog Stick Left=314
+Left Analog Stick Down=317
+Left Analog Stick Right=316
+R2=69
+Right=68
+Triangle=73
+Right Analog Stick Right=312
+Down=83
+Right Analog Stick Down=367
+Left Analog Stick Up=315
+Up=90
+Right Analog Stick Up=366
+Left=81
+Right Analog Stick Left=313
+Start=13
+Select=32
+Square=74
+Cross=75
+R1=51
+R3=67
+L1=49
+L2=65
+L3=87
+
+[misc]
+Exit RPCS3 when process finishes=false
+Always start after boot=true
+Use default configuration=true
+
+[misc/log]
+RSX Logging=false
+Log Level=Errors
+Log everything=false
+Save TTY output to file=false
+
+[misc/net]
+Connection status=Connecting
+Network adapter=0
+
+[misc/debug]
+Auto Pause at System Call=false
+Auto Pause at Function Call=false
+
+
 LDR: ! Elf path: /dev_hdd0/game/NPEA00252/USRDIR/BOOT.BIN
+LDR: ! 
 LDR: ! loader::init() failed: Broken file
 LDR: ! *** sdk version: 0x250001
 LDR: ! *** primary prio: 250
@@ -66,7 +177,7 @@ LDR: ! Imported function 'cellFsUnlink' in 'sys_fs' module (0x55d724)
 LDR: ! Imported function 'cellFsFsync' in 'sys_fs' module (0x55d744)
 LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module (0x55d764)
 LDR: ! Imported function 'cellFsMkdir' in 'sys_fs' module (0x55d784)
-LDR: E Unknown function 'cellFsUtime' in 'sys_fs' module (0x55d7a4)
+LDR: ! Imported function 'cellFsUtime' in 'sys_fs' module (0x55d7a4)
 LDR: ! Imported function 'cellFsWrite' in 'sys_fs' module (0x55d7c4)
 LDR: ! Imported function 'cellFsFstat' in 'sys_fs' module (0x55d7e4)
 LDR: ! Imported function 'cellFsRename' in 'sys_fs' module (0x55d804)
@@ -132,7 +243,7 @@ LDR: ! Imported function 'cellSaveDataListLoad2' in 'cellSysutil' module (0x55df
 LDR: ! Imported function 'cellVideoOutGetDeviceInfo' in 'cellSysutil' module (0x55df24)
 LDR: ! Imported function 'cellMsgDialogClose' in 'cellSysutil' module (0x55df44)
 LDR: ! Imported function 'cellSaveDataListAutoLoad' in 'cellSysutil' module (0x55df64)
-LDR: E Unknown function 'cellGameUnregisterDiscChangeCallback' in 'cellSysutil' module (0x55df84)
+LDR: ! Imported function 'cellGameUnregisterDiscChangeCallback' in 'cellSysutil' module (0x55df84)
 LDR: ! Imported function 'cellSaveDataListSave2' in 'cellSysutil' module (0x55dfa4)
 LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module (0x55dfc4)
 LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module (0x55dfe4)
@@ -146,7 +257,7 @@ LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module (
 LDR: ! Imported function 'cellVideoOutGetResolutionAvailability' in 'cellSysutil' module (0x55e0e4)
 LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module (0x55e104)
 LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module (0x55e124)
-LDR: E Unknown function 'cellGameRegisterDiscChangeCallback' in 'cellSysutil' module (0x55e144)
+LDR: ! Imported function 'cellGameRegisterDiscChangeCallback' in 'cellSysutil' module (0x55e144)
 LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module (0x55eae4)
 LDR: ! Imported function 'cellAudioOutGetNumberOfDevice' in 'cellSysutil' module (0x55eb04)
 LDR: ! Imported function 'cellAudioOutGetState' in 'cellSysutil' module (0x55eb24)
@@ -218,7 +329,7 @@ LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0x55e964)
 LDR: ! Imported function 'sys_lwcond_signal_all' in 'sysPrxForUser' module (0x55e984)
 LDR: ! Imported function 'sys_spu_image_import' in 'sysPrxForUser' module (0x55e9a4)
 LDR: ! Imported function 'sys_lwcond_signal' in 'sysPrxForUser' module (0x55e9c4)
-HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x9f0000, user_size=0x200)
+MEM: ! Thread Local Storage initialized (g_tls_start=0x9f1000, user_size=0x200)
 *** TLS segment addr: 0x00785fc4
 *** TLS segment size: 0x00000004
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055e7c4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x9b6500, attr=*0x5a0a78)
@@ -287,79 +398,81 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x002d0964]} sys_spu: sys_spu_initialize(m
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d464]} cellSpurs: _cellSpursAttributeInitialize(attr=*0xd003f790, revision=2, sdkVersion=0x250001, nSpus=5, spuPriority=128, ppuPriority=249, exitIfNoWork=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x7cf280, attr=*0xd003f790)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x7cf280, flags=0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_group_create(id=*0xd003f6c8, num=5, prio=128, attr=*0xd003f638)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0xd003f610, group=0x3a, spu_num=0, img=*0x7cfff0, attr=*0xd003f600, arg=*0xd003f618)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_group_create(id=*0x7cffb0, num=5, prio=128, attr=*0xd003f640)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0x7cffb4, group=0x3a, spu_num=0, img=*0x7cfff0, attr=*0xd003f608, arg=*0xd003f618)
 HLE: E {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0xd003f610, group=0x3a, spu_num=1, img=*0x7cfff0, attr=*0xd003f600, arg=*0xd003f618)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0x7cffb8, group=0x3a, spu_num=1, img=*0x7cfff0, attr=*0xd003f608, arg=*0xd003f618)
 HLE: E {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0xd003f610, group=0x3a, spu_num=2, img=*0x7cfff0, attr=*0xd003f600, arg=*0xd003f618)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0x7cffbc, group=0x3a, spu_num=2, img=*0x7cfff0, attr=*0xd003f608, arg=*0xd003f618)
 HLE: E {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0xd003f610, group=0x3a, spu_num=3, img=*0x7cfff0, attr=*0xd003f600, arg=*0xd003f618)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0x7cffc0, group=0x3a, spu_num=3, img=*0x7cfff0, attr=*0xd003f608, arg=*0xd003f618)
 HLE: E {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0xd003f610, group=0x3a, spu_num=4, img=*0x7cfff0, attr=*0xd003f600, arg=*0xd003f618)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0x7cffc4, group=0x3a, spu_num=4, img=*0x7cfff0, attr=*0xd003f608, arg=*0xd003f618)
 HLE: E {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x7d0030, attr=*0xd003f6d0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sysPrxForUser: sys_lwcond_create(lwcond=*0x7d0048, lwmutex=*0x7d0030, attr=*0xd003f6e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x7d0030, attr=*0xd003f568)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sysPrxForUser: sys_lwcond_create(lwcond=*0x7d0048, lwmutex=*0x7d0030, attr=*0xd003f570)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_event: sys_event_queue_create(equeue_id=*0x7cffdc, attr=*0xd003f568, event_queue_key=0x0, size=42)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x3a, eq=0x42, req=0xffffffffffff0000, spup=*0xd003f558)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x3a, eq=0x42, req=0xffffffffffff0000, spup=*0x7cf349)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_event: sys_event_port_create(eport_id=*0x7cffe0, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_event: sys_event_port_connect_local(eport_id=0x43, equeue_id=0x42)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x7cf280, flag=1)
 HLE: W {PPU[0x45] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x3a)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_group_connect_event(id=0x3a, eq=0x42, et=2)
+SPU: S {PPU[0x45] Thread (SpursHdlr0)[0x00000000]} SPU Database initialized...
+SPU: S {PPU[0x45] Thread (SpursHdlr0)[0x00000000]} SPU Recompiler (ASMJIT) created...
 HLE: W {PPU[0x45] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x3a, cause=*0x0, status=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0041db30]} sys_event: sys_event_queue_create(equeue_id=*0x7d0380, attr=*0xd003f6c4, event_queue_key=0x0, size=127)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055e764]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x7d0388, entry=0x783430, arg=0x7d0380, prio=249, stacksize=0x10000, flags=0x1, threadname=*0x5ee8c0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055e764]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x7d0388, param=*0xd003f648, arg=0x7d0380, unk=0x0, prio=249, stacksize=0x10000, flags=0x1, threadname=*0x5ee8c0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055e764]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x7d0388, param=*0xd003f640, arg=0x7d0380, unk=0x0, prio=249, stacksize=0x10000, flags=0x1, threadname=*0x5ee8c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055e764]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x47)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0041db74]} sys_event: sys_event_port_create(eport_id=*0x7d0394, port_type=1, name=0xd0a77)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0041db84]} sys_event: sys_event_port_connect_local(eport_id=0x48, equeue_id=0x46)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d504]} cellSpurs: cellSpursAttachLv2EventQueue(spurs=*0x7cf280, queue=0x46, port=*0xd003f6c0, isDynamic=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d504]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x3a, eq=0x46, req=0x2, spup=*0xd003f648)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d464]} cellSpurs: _cellSpursAttributeInitialize(attr=*0xd003f990, revision=2, sdkVersion=0x250001, nSpus=1, spuPriority=255, ppuPriority=249, exitIfNoWork=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d504]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x3a, eq=0x46, req=0x2, spup=*0xd003f6c0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d464]} cellSpurs: _cellSpursAttributeInitialize(attr=*0xd003f990, revision=2, sdkVersion=0x250001, nSpus=1, spuPriority=255, ppuPriority=249, exitIfNoWork=1701996544)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x7d0500, attr=*0xd003f990)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x7d0500, flags=0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem=*0xd003f708, attr=*0xd003f6e8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_group_create(id=*0xd003f6c8, num=1, prio=255, attr=*0xd003f638)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0xd003f610, group=0x5a, spu_num=0, img=*0x7d1270, attr=*0xd003f600, arg=*0xd003f618)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f708, attr=*0xd003f6e0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_group_create(id=*0x7d1230, num=1, prio=255, attr=*0xd003f640)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_initialize(thread=*0x7d1234, group=0x5a, spu_num=0, img=*0x7d1270, attr=*0xd003f608, arg=*0xd003f618)
 HLE: E {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x7d12b0, attr=*0xd003f6d0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sysPrxForUser: sys_lwcond_create(lwcond=*0x7d12c8, lwmutex=*0x7d12b0, attr=*0xd003f6e0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x7d12b0, attr=*0xd003f568)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sysPrxForUser: sys_lwcond_create(lwcond=*0x7d12c8, lwmutex=*0x7d12b0, attr=*0xd003f570)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_event: sys_event_queue_create(equeue_id=*0x7d125c, attr=*0xd003f568, event_queue_key=0x0, size=42)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x5a, eq=0x5e, req=0xffffffffffff0000, spup=*0xd003f558)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x5a, eq=0x5e, req=0xffffffffffff0000, spup=*0x7d05c9)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_event: sys_event_port_create(eport_id=*0x7d1260, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_event: sys_event_port_connect_local(eport_id=0x5f, equeue_id=0x5e)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x7d0500, flag=1)
@@ -368,14 +481,14 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0055d4e4]} sys_spu: sys_spu_thread_group
 HLE: W {PPU[0x61] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x5a, cause=*0x0, status=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0041db30]} sys_event: sys_event_queue_create(equeue_id=*0x7d03a8, attr=*0xd003f6c4, event_queue_key=0x0, size=127)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055e764]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x7d03b0, entry=0x783430, arg=0x7d03a8, prio=249, stacksize=0x10000, flags=0x1, threadname=*0x5ee8c0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055e764]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x7d03b0, param=*0xd003f648, arg=0x7d03a8, unk=0x0, prio=249, stacksize=0x10000, flags=0x1, threadname=*0x5ee8c0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055e764]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x7d03b0, param=*0xd003f640, arg=0x7d03a8, unk=0x0, prio=249, stacksize=0x10000, flags=0x1, threadname=*0x5ee8c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055e764]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x63)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0041db74]} sys_event: sys_event_port_create(eport_id=*0x7d03bc, port_type=1, name=0xd0a77)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0041db84]} sys_event: sys_event_port_connect_local(eport_id=0x64, equeue_id=0x62)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d504]} cellSpurs: cellSpursAttachLv2EventQueue(spurs=*0x7d0500, queue=0x62, port=*0xd003f6c0, isDynamic=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d504]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x5a, eq=0x62, req=0x2, spup=*0xd003f648)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d504]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x5a, eq=0x62, req=0x2, spup=*0xd003f6c0)
 HLE: E {PPU[0x1] Thread (main_thread)[0x0055d2c4]} cellSpurs: cellSpursGetInfo
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055d5a4]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd003f3e8, revision=1, sdkVersion=0x220002, pm=*0x69e400, size=0x2d80, data=0x204e9300, priority=*0x915de8, minCnt=0x1, maxCnt=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0055d5a4]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd003f3e8, revision=1, sdkVersion=0x220002, pm=*0x69e400, size=0x2d80, data=0x204e9300, priority=*0x915de8, minCnt=0x1, maxCnt=0x5)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d324]} cellSpurs: cellSpursWorkloadAttributeSetName(attr=*0xd003f3e8, nameClass=*0x5eea28, nameInstance=*0x915e00)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055d524]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs=*0x7cf280, wid=*0x915df8, attr=*0xd003f3e8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x0055d2a4]} cellSpurs: cellSpursRequestIdleSpu
@@ -389,7 +502,6 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0055e164]} cellGame: cellGameGetParamStr
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055e164]} cellGame: cellGameGetParamString(id=0, buf=*0xd003f908, bufsize=128)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055e164]} cellGame: cellGameGetParamString(id=106, buf=*0xd003f8a8, bufsize=6)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055e1a4]} cellGame: cellGameContentPermit(contentInfoPath=*0xd003fa88, usrdirPath=*0xd003fa08)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0055e1a4]} cellGame: cellGameContentPermit(): path_set=1, contentInfo='/dev_hdd0/game/NPEA00252', usrdir='/dev_hdd0/game/NPEA00252/USRDIR'
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055dfc4]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd003f89c)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055dfc4]} cellSysutil: cellSysutilGetSystemParamInt(id=0x112(ID_ENTER_BUTTON_ASSIGN), value=*0xd003f898)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055dfc4]} cellSysutil: cellSysutilGetSystemParamInt(id=0x114(ID_DATE_FORMAT), value=*0x7bcdb8)
@@ -400,8 +512,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x000bfa98]} sys_memory: sys_memory_alloca
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055e024]} cellSysutil: cellVideoOutGetNumberOfDevice(videoOut=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055df24]} cellSysutil: cellVideoOutGetDeviceInfo(videoOut=0, deviceIndex=0, info=*0xd003f7d8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0055e0e4]} cellSysutil: cellVideoOutGetResolutionAvailability(videoOut=0, resolutionId=0x1, aspect=0, option=0)
-MEM: W {PPU[0x1] Thread (main_thread)[0x0011626c]} decode_x64_reg_op(00000002007f3e73h): unsupported opcode found (0FB60C018BC248C1E81583E01F49898C)
-G: W {PPU[0x1] Thread (main_thread)[0x0011626c]} Registers:
+G: ! {PPU[0x1] Thread (main_thread)[0x0011626c]} Registers:
 =========
 GPR[0] = 0x2
 GPR[1] = 0xd003f700
@@ -416,7 +527,7 @@ GPR[9] = 0x1e00
 GPR[10] = 0xd003f788
 GPR[11] = 0x780
 GPR[12] = 0x22000082
-GPR[13] = 0x9f7030
+GPR[13] = 0x9f8030
 GPR[14] = 0x0
 GPR[15] = 0x0
 GPR[16] = 0xd003f7b8
@@ -469,10 +580,10 @@ FPR[30] = 0
 FPR[31] = 0
 VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[1] = 0x3f800000000000000000000000000000 [x: 1 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x0000000000000000726578696d727573 [x: 0 y: 0 z: 4.54513e+30 w: 4.68983e+27]
-VPR[4] = 0x00000000021b3b80000000003f800000 [x: 0 y: 1.14047e-37 z: 0 w: 1]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x000000000000000000000000560f12be [x: 0 y: 0 z: 0 w: 3.93277e+13]
+VPR[3] = 0x00000000000000006564336361626900 [x: 0 y: 0 z: 6.7353e+22 w: 2.61033e+20]
+VPR[4] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[5] = 0x00000000560f12bf00000000000098fe [x: 0 y: 3.93277e+13 z: 0 w: 5.48833e-41]
 VPR[6] = 0x3c23d70a3c23d70a3c23d70a3c23d70a [x: 0.01 y: 0.01 z: 0.01 w: 0.01]
 VPR[7] = 0x38d1b71738d1b71738d1b71738d1b717 [x: 0.0001 y: 0.0001 z: 0.0001 w: 0.0001]
 VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
@@ -481,1574 +592,49 @@ VPR[10] = 0x38d1b71738d1b71738d1b71738d1b717 [x: 0.0001 y: 0.0001 z: 0.0001 w: 0
 VPR[11] = 0x3f8000003f8000003f8000003f800000 [x: 1 y: 1 z: 1 w: 1]
 VPR[12] = 0x000000003f8000003f8000003f800000 [x: 0 y: 1 z: 1 w: 1]
 VPR[13] = 0xff7fffffff7fffffff7fffffff7fffff [x: -3.40282e+38 y: -3.40282e+38 z: -3.40282e+38 w: -3.40282e+38]
-VPR[14] = 0x00000000000000070000000000000000 [x: 0 y: 9.80909e-45 z: 0 w: 0]
-VPR[15] = 0x00000000000006710000000000000008 [x: 0 y: 2.31074e-42 z: 0 w: 1.12104e-44]
-VPR[16] = 0x00000000000000000000000201366300 [x: 0 y: 0 z: 2.8026e-45 w: 3.34991e-38]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x0000000000000000726578696d727573 [x: 0 y: 0 z: 4.54513e+30 w: 4.68983e+27]
-VPR[19] = 0x00000000021b3c00000000003f800000 [x: 0 y: 1.14048e-37 z: 0 w: 1]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x00000000560f12bf0000000000006ca3 [x: 0 y: 3.93277e+13 z: 0 w: 3.89715e-41]
+VPR[15] = 0x00000000560f12bf00000000560f12fe [x: 0 y: 3.93277e+13 z: 0 w: 3.93279e+13]
+VPR[16] = 0x32636564616269000000000000000000 [x: 1.32362e-08 y: 2.61033e+20 z: 0 w: 0]
+VPR[17] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[18] = 0x0000000000002b0d0000000000000062 [x: 0 y: 1.54437e-41 z: 0 w: 1.37327e-43]
+VPR[19] = 0x00000000560f12fe00000000560f12bf [x: 0 y: 3.93279e+13 z: 0 w: 3.93277e+13]
+VPR[20] = 0x000000000000000000000000560f12bf [x: 0 y: 0 z: 0 w: 3.93277e+13]
 VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
-VPR[23] = 0x00000002013663200000000000000672 [x: 2.8026e-45 y: 3.34992e-38 z: 0 w: 2.31214e-42]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x726578696d7275730000000000000000 [x: 4.54513e+30 y: 4.68983e+27 z: 0 w: 0]
-VPR[26] = 0x000000003f8000000000000000000000 [x: 0 y: 1 z: 0 w: 0]
-VPR[27] = 0x000000000000000000000000021b4340 [x: 0 y: 0 z: 0 w: 1.14069e-37]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000070000000000000000 [x: 0 y: 9.80909e-45 z: 0 w: 0]
-VPR[30] = 0x00000000000006730000000000000008 [x: 0 y: 2.31354e-42 z: 0 w: 1.12104e-44]
-VPR[31] = 0x00000000000000000000000201366340 [x: 0 y: 0 z: 2.8026e-45 w: 3.34993e-38]
+VPR[22] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[23] = 0x00000000560f12bf0000000000002bba [x: 0 y: 3.93277e+13 z: 0 w: 1.56861e-41]
+VPR[24] = 0x00000000560f12bf00000000560f12fe [x: 0 y: 3.93277e+13 z: 0 w: 3.93279e+13]
+VPR[25] = 0x0000787270732e636564787461626900 [x: 4.32076e-41 y: 3.01044e+29 z: 6.74326e+22 w: 2.61033e+20]
+VPR[26] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[27] = 0x0000000000017ed60000000000000062 [x: 0 y: 1.37336e-40 z: 0 w: 1.37327e-43]
+VPR[28] = 0x00000000560f12fe00000000560f12bf [x: 0 y: 3.93279e+13 z: 0 w: 3.93277e+13]
+VPR[29] = 0x656478746162690000000000560f12bf [x: 6.74326e+22 y: 2.61033e+20 z: 0 w: 3.93277e+13]
+VPR[30] = 0x000000000000000000787270732e3263 [x: 0 y: 0 z: 1.10613e-38 w: 1.38013e+31]
+VPR[31] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
 CR = 0x22000042
 LR = 0x116244
 CTR = 0x0
-XER = 0x20000000 [CA=1 | OV=0 | SO=8589934592]
+XER = 0x20000000 [CA=1 | OV=8589934592 | SO=0]
 FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
 G: E {PPU[0x1] Thread (main_thread)[0x0011626c]} Exception: Access violation reading location 0x0
-(in file ..\Utilities\Thread.cpp:1098, in function _se_translator)
+(in file ..\Utilities\Thread.cpp:1122, in function _se_translator)
 G: ! Stopping emulator...
 G: ! All threads signaled...
-G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Registers:
-=========
-GPR[0] = 0x0
-GPR[1] = 0xd004fe00
-GPR[2] = 0x0
-GPR[3] = 0x0
-GPR[4] = 0x0
-GPR[5] = 0x0
-GPR[6] = 0x0
-GPR[7] = 0x0
-GPR[8] = 0x0
-GPR[9] = 0x0
-GPR[10] = 0x0
-GPR[11] = 0x0
-GPR[12] = 0x0
-GPR[13] = 0x9f7260
-GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
-GPR[20] = 0x0
-GPR[21] = 0x0
-GPR[22] = 0x0
-GPR[23] = 0x0
-GPR[24] = 0x0
-GPR[25] = 0x0
-GPR[26] = 0x0
-GPR[27] = 0x0
-GPR[28] = 0x0
-GPR[29] = 0x0
-GPR[30] = 0x0
-GPR[31] = 0x0
-FPR[0] = 0
-FPR[1] = 0
-FPR[2] = 0
-FPR[3] = 0
-FPR[4] = 0
-FPR[5] = 0
-FPR[6] = 0
-FPR[7] = 0
-FPR[8] = 0
-FPR[9] = 0
-FPR[10] = 0
-FPR[11] = 0
-FPR[12] = 0
-FPR[13] = 0
-FPR[14] = 0
-FPR[15] = 0
-FPR[16] = 0
-FPR[17] = 0
-FPR[18] = 0
-FPR[19] = 0
-FPR[20] = 0
-FPR[21] = 0
-FPR[22] = 0
-FPR[23] = 0
-FPR[24] = 0
-FPR[25] = 0
-FPR[26] = 0
-FPR[27] = 0
-FPR[28] = 0
-FPR[29] = 0
-FPR[30] = 0
-FPR[31] = 0
-VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x80001900033cbb0d0000000000000000 [x: -8.96831e-42 y: 5.5463e-37 z: 0 w: 0]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x22000082
-LR = 0x0
-CTR = 0x0
-XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
-
-G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\Callback.cpp:58, in function CallbackManager::Init::<lambda_46ea869b6054320987a0d5fa0b32bb88>::operator ())
-HLE: S {PPU[0x63] Thread (Job Manager Event Handler)[0x0041d998]} Last syscall: 130 (sys_event_queue_receive)
+G: ! {SPU[0x3b] Thread (CellSpursKernel0)[0x00818]} Thread aborted
+G: ! {SPU[0x3d] Thread (CellSpursKernel2)[0x00818]} Thread aborted
+G: ! {SPU[0x3e] Thread (CellSpursKernel3)[0x00818]} Thread aborted
+G: ! {SPU[0x3c] Thread (CellSpursKernel1)[0x00818]} Thread aborted
+G: ! {PPU[0x44] Thread (SpursHdlr1)[0x00000000]} Thread aborted
+G: ! {SPU[0x3f] Thread (CellSpursKernel4)[0x00818]} Thread aborted
 HLE: S {PPU[0x47] Thread (Job Manager Event Handler)[0x0041d998]} Last syscall: 130 (sys_event_queue_receive)
-G: W {PPU[0x63] Thread (Job Manager Event Handler)[0x0041d998]} Registers:
-=========
-GPR[0] = 0x0
-GPR[1] = 0xd0087c30
-GPR[2] = 0x78c0c0
-GPR[3] = 0x62
-GPR[4] = 0xd0087ca0
-GPR[5] = 0x0
-GPR[6] = 0x0
-GPR[7] = 0x0
-GPR[8] = 0x0
-GPR[9] = 0x0
-GPR[10] = 0x0
-GPR[11] = 0x82
-GPR[12] = 0x0
-GPR[13] = 0x9f7f80
-GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
-GPR[20] = 0x0
-GPR[21] = 0x0
-GPR[22] = 0x0
-GPR[23] = 0x0
-GPR[24] = 0xd0087cc0
-GPR[25] = 0x783438
-GPR[26] = 0xd0087ca0
-GPR[27] = 0x0
-GPR[28] = 0x0
-GPR[29] = 0x0
-GPR[30] = 0x7d03a8
-GPR[31] = 0x0
-FPR[0] = 0
-FPR[1] = 0
-FPR[2] = 0
-FPR[3] = 0
-FPR[4] = 0
-FPR[5] = 0
-FPR[6] = 0
-FPR[7] = 0
-FPR[8] = 0
-FPR[9] = 0
-FPR[10] = 0
-FPR[11] = 0
-FPR[12] = 0
-FPR[13] = 0
-FPR[14] = 0
-FPR[15] = 0
-FPR[16] = 0
-FPR[17] = 0
-FPR[18] = 0
-FPR[19] = 0
-FPR[20] = 0
-FPR[21] = 0
-FPR[22] = 0
-FPR[23] = 0
-FPR[24] = 0
-FPR[25] = 0
-FPR[26] = 0
-FPR[27] = 0
-FPR[28] = 0
-FPR[29] = 0
-FPR[30] = 0
-FPR[31] = 0
-VPR[0] = 0x0000000000000000000000000af15cc0 [x: 0 y: 0 z: 0 w: 2.32423e-32]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x80001100013b62450000000000000000 [x: -6.09845e-42 y: 3.4417e-38 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000020 [x: 0 y: 0 z: 0 w: 4.48416e-44]
-VPR[6] = 0x000000000af05a68000000000af05a20 [x: 0 y: 2.31452e-32 z: 0 w: 2.31451e-32]
-VPR[7] = 0x000000000af05af8000000000af05ab0 [x: 0 y: 2.31454e-32 z: 0 w: 2.31453e-32]
-VPR[8] = 0x0000000000000000000000000af05b40 [x: 0 y: 0 z: 0 w: 2.31455e-32]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x80001200014562730000000000000000 [x: -6.45718e-42 y: 3.62538e-38 z: 0 w: 0]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x22000082
-LR = 0x0
-CTR = 0x0
-XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
-
-G: W {PPU[0x44] Thread (SpursHdlr1)[0x00000000]} Registers:
-=========
-GPR[0] = 0x0
-GPR[1] = 0xd0057cf8
-GPR[2] = 0x0
-GPR[3] = 0x7cf280
-GPR[4] = 0x0
-GPR[5] = 0x0
-GPR[6] = 0x0
-GPR[7] = 0x0
-GPR[8] = 0x0
-GPR[9] = 0x0
-GPR[10] = 0x0
-GPR[11] = 0x0
-GPR[12] = 0x0
-GPR[13] = 0x9f7490
-GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
-GPR[20] = 0x0
-GPR[21] = 0x0
-GPR[22] = 0x0
-GPR[23] = 0x0
-GPR[24] = 0x0
-GPR[25] = 0x0
-GPR[26] = 0x0
-GPR[27] = 0x0
-GPR[28] = 0x0
-GPR[29] = 0x0
-GPR[30] = 0x0
-GPR[31] = 0x0
-FPR[0] = 0
-FPR[1] = 0
-FPR[2] = 0
-FPR[3] = 0
-FPR[4] = 0
-FPR[5] = 0
-FPR[6] = 0
-FPR[7] = 0
-FPR[8] = 0
-FPR[9] = 0
-FPR[10] = 0
-FPR[11] = 0
-FPR[12] = 0
-FPR[13] = 0
-FPR[14] = 0
-FPR[15] = 0
-FPR[16] = 0
-FPR[17] = 0
-FPR[18] = 0
-FPR[19] = 0
-FPR[20] = 0
-FPR[21] = 0
-FPR[22] = 0
-FPR[23] = 0
-FPR[24] = 0
-FPR[25] = 0
-FPR[26] = 0
-FPR[27] = 0
-FPR[28] = 0
-FPR[29] = 0
-FPR[30] = 0
-FPR[31] = 0
-VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x22000082
-LR = 0x0
-CTR = 0x0
-XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
-
-G: W {PPU[0x63] Thread (Job Manager Event Handler)[0x0041d998]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\lv2\sys_event.cpp:175, in function sys_event_queue_receive)
-G: W {PPU[0x45] Thread (SpursHdlr0)[0x00000000]} Registers:
-=========
-GPR[0] = 0x0
-GPR[1] = 0xd005be00
-GPR[2] = 0x0
-GPR[3] = 0x7cf280
-GPR[4] = 0x0
-GPR[5] = 0x0
-GPR[6] = 0x0
-GPR[7] = 0x0
-GPR[8] = 0x0
-GPR[9] = 0x0
-GPR[10] = 0x0
-GPR[11] = 0x0
-GPR[12] = 0x0
-GPR[13] = 0x9f76c0
-GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
-GPR[20] = 0x0
-GPR[21] = 0x0
-GPR[22] = 0x0
-GPR[23] = 0x0
-GPR[24] = 0x0
-GPR[25] = 0x0
-GPR[26] = 0x0
-GPR[27] = 0x0
-GPR[28] = 0x0
-GPR[29] = 0x0
-GPR[30] = 0x0
-GPR[31] = 0x0
-FPR[0] = 0
-FPR[1] = 0
-FPR[2] = 0
-FPR[3] = 0
-FPR[4] = 0
-FPR[5] = 0
-FPR[6] = 0
-FPR[7] = 0
-FPR[8] = 0
-FPR[9] = 0
-FPR[10] = 0
-FPR[11] = 0
-FPR[12] = 0
-FPR[13] = 0
-FPR[14] = 0
-FPR[15] = 0
-FPR[16] = 0
-FPR[17] = 0
-FPR[18] = 0
-FPR[19] = 0
-FPR[20] = 0
-FPR[21] = 0
-FPR[22] = 0
-FPR[23] = 0
-FPR[24] = 0
-FPR[25] = 0
-FPR[26] = 0
-FPR[27] = 0
-FPR[28] = 0
-FPR[29] = 0
-FPR[30] = 0
-FPR[31] = 0
-VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x22000082
-LR = 0x0
-CTR = 0x0
-XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
-
-G: W {PPU[0x44] Thread (SpursHdlr1)[0x00000000]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\lv2\sys_event.cpp:175, in function sys_event_queue_receive)
-G: W {PPU[0x45] Thread (SpursHdlr0)[0x00000000]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\lv2\sys_spu.cpp:550, in function sys_spu_thread_group_join)
-G: W {PPU[0x60] Thread (SpursHdlr1)[0x00000000]} Registers:
-=========
-GPR[0] = 0x0
-GPR[1] = 0xd0073cf8
-GPR[2] = 0x0
-GPR[3] = 0x7d0500
-GPR[4] = 0x0
-GPR[5] = 0x0
-GPR[6] = 0x0
-GPR[7] = 0x0
-GPR[8] = 0x0
-GPR[9] = 0x0
-GPR[10] = 0x0
-GPR[11] = 0x0
-GPR[12] = 0x0
-GPR[13] = 0x9f7b20
-GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
-GPR[20] = 0x0
-GPR[21] = 0x0
-GPR[22] = 0x0
-GPR[23] = 0x0
-GPR[24] = 0x0
-GPR[25] = 0x0
-GPR[26] = 0x0
-GPR[27] = 0x0
-GPR[28] = 0x0
-GPR[29] = 0x0
-GPR[30] = 0x0
-GPR[31] = 0x0
-FPR[0] = 0
-FPR[1] = 0
-FPR[2] = 0
-FPR[3] = 0
-FPR[4] = 0
-FPR[5] = 0
-FPR[6] = 0
-FPR[7] = 0
-FPR[8] = 0
-FPR[9] = 0
-FPR[10] = 0
-FPR[11] = 0
-FPR[12] = 0
-FPR[13] = 0
-FPR[14] = 0
-FPR[15] = 0
-FPR[16] = 0
-FPR[17] = 0
-FPR[18] = 0
-FPR[19] = 0
-FPR[20] = 0
-FPR[21] = 0
-FPR[22] = 0
-FPR[23] = 0
-FPR[24] = 0
-FPR[25] = 0
-FPR[26] = 0
-FPR[27] = 0
-FPR[28] = 0
-FPR[29] = 0
-FPR[30] = 0
-FPR[31] = 0
-VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x800004000041657f0000000000000000 [x: -1.43493e-42 y: 6.00572e-39 z: 0 w: 0]
-VPR[5] = 0x00000000000000020000000000000020 [x: 0 y: 2.8026e-45 z: 0 w: 4.48416e-44]
-VPR[6] = 0x000000000af113c8000000000af11378 [x: 0 y: 2.32149e-32 z: 0 w: 2.32148e-32]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x800005000053656d0000000000000000 [x: -1.79366e-42 y: 7.65873e-39 z: 0 w: 0]
-VPR[23] = 0x0084381f000000040000000000000000 [x: 1.21424e-38 y: 5.60519e-45 z: 0 w: 0]
-VPR[24] = 0x00000000002700f000000000002700f0 [x: 0 y: 3.58192e-39 z: 0 w: 3.58192e-39]
-VPR[25] = 0x000000000a6d0060000000000a6d0060 [x: 0 y: 1.14112e-32 z: 0 w: 1.14112e-32]
-VPR[26] = 0x0000000000793000000000000af0c000 [x: 0 y: 1.11293e-38 z: 0 w: 2.31834e-32]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x22000082
-LR = 0x0
-CTR = 0x0
-XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
-
-G: W {PPU[0x47] Thread (Job Manager Event Handler)[0x0041d998]} Registers:
-=========
-GPR[0] = 0x0
-GPR[1] = 0xd006bc30
-GPR[2] = 0x78c0c0
-GPR[3] = 0x46
-GPR[4] = 0xd006bca0
-GPR[5] = 0x0
-GPR[6] = 0x0
-GPR[7] = 0x0
-GPR[8] = 0x0
-GPR[9] = 0x0
-GPR[10] = 0x0
-GPR[11] = 0x82
-GPR[12] = 0x0
-GPR[13] = 0x9f78f0
-GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
-GPR[20] = 0x0
-GPR[21] = 0x0
-GPR[22] = 0x0
-GPR[23] = 0x0
-GPR[24] = 0xd006bcc0
-GPR[25] = 0x783438
-GPR[26] = 0xd006bca0
-GPR[27] = 0x0
-GPR[28] = 0x0
-GPR[29] = 0x0
-GPR[30] = 0x7d0380
-GPR[31] = 0x0
-FPR[0] = 0
-FPR[1] = 0
-FPR[2] = 0
-FPR[3] = 0
-FPR[4] = 0
-FPR[5] = 0
-FPR[6] = 0
-FPR[7] = 0
-FPR[8] = 0
-FPR[9] = 0
-FPR[10] = 0
-FPR[11] = 0
-FPR[12] = 0
-FPR[13] = 0
-FPR[14] = 0
-FPR[15] = 0
-FPR[16] = 0
-FPR[17] = 0
-FPR[18] = 0
-FPR[19] = 0
-FPR[20] = 0
-FPR[21] = 0
-FPR[22] = 0
-FPR[23] = 0
-FPR[24] = 0
-FPR[25] = 0
-FPR[26] = 0
-FPR[27] = 0
-FPR[28] = 0
-FPR[29] = 0
-FPR[30] = 0
-FPR[31] = 0
-VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x22000082
-LR = 0x0
-CTR = 0x0
-XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
-
-G: W {PPU[0x61] Thread (SpursHdlr0)[0x00000000]} Registers:
-=========
-GPR[0] = 0x0
-GPR[1] = 0xd0077e00
-GPR[2] = 0x0
-GPR[3] = 0x7d0500
-GPR[4] = 0x0
-GPR[5] = 0x0
-GPR[6] = 0x0
-GPR[7] = 0x0
-GPR[8] = 0x0
-GPR[9] = 0x0
-GPR[10] = 0x0
-GPR[11] = 0x0
-GPR[12] = 0x0
-GPR[13] = 0x9f7d50
-GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
-GPR[20] = 0x0
-GPR[21] = 0x0
-GPR[22] = 0x0
-GPR[23] = 0x0
-GPR[24] = 0x0
-GPR[25] = 0x0
-GPR[26] = 0x0
-GPR[27] = 0x0
-GPR[28] = 0x0
-GPR[29] = 0x0
-GPR[30] = 0x0
-GPR[31] = 0x0
-FPR[0] = 0
-FPR[1] = 0
-FPR[2] = 0
-FPR[3] = 0
-FPR[4] = 0
-FPR[5] = 0
-FPR[6] = 0
-FPR[7] = 0
-FPR[8] = 0
-FPR[9] = 0
-FPR[10] = 0
-FPR[11] = 0
-FPR[12] = 0
-FPR[13] = 0
-FPR[14] = 0
-FPR[15] = 0
-FPR[16] = 0
-FPR[17] = 0
-FPR[18] = 0
-FPR[19] = 0
-FPR[20] = 0
-FPR[21] = 0
-FPR[22] = 0
-FPR[23] = 0
-FPR[24] = 0
-FPR[25] = 0
-FPR[26] = 0
-FPR[27] = 0
-FPR[28] = 0
-FPR[29] = 0
-FPR[30] = 0
-FPR[31] = 0
-VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x80000b0000c762f10000000000000000 [x: -3.94606e-42 y: 1.83108e-38 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x80000c0000d162ef0000000000000000 [x: -4.30479e-42 y: 1.92291e-38 z: 0 w: 0]
-CR = 0x22000082
-LR = 0x0
-CTR = 0x0
-XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
-
-G: W {PPU[0x60] Thread (SpursHdlr1)[0x00000000]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\lv2\sys_event.cpp:175, in function sys_event_queue_receive)
-G: W {PPU[0x47] Thread (Job Manager Event Handler)[0x0041d998]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\lv2\sys_event.cpp:175, in function sys_event_queue_receive)
-G: W {PPU[0x61] Thread (SpursHdlr0)[0x00000000]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\lv2\sys_spu.cpp:550, in function sys_spu_thread_group_join)
-G: W {SPU[0x3f] Thread (CellSpursKernel4)[0x00000818]} Registers:
-=========
-GPR[0] = 0x00000000000000000000000000000000
-GPR[1] = 0x0003fff0000000000000000000000000
-GPR[2] = 0x00000000000000000000000000000000
-GPR[3] = 0x00000004000000000000000000000000
-GPR[4] = 0x00000000007cf2800000000000000000
-GPR[5] = 0x000000000075f9500000000000000000
-GPR[6] = 0x00000000d003f7100000000000000000
-GPR[7] = 0x00000000000000000000000000000000
-GPR[8] = 0x00000000000000000000000000000000
-GPR[9] = 0x00000000000000000000000000000000
-GPR[10] = 0x00000000000000000000000000000000
-GPR[11] = 0x00000000000000000000000000000000
-GPR[12] = 0x00000000000000000000000000000000
-GPR[13] = 0x00000000000000000000000000000000
-GPR[14] = 0x00000000000000000000000000000000
-GPR[15] = 0x00000000000000000000000000000000
-GPR[16] = 0x00000000000000000000000000000000
-GPR[17] = 0x00000000000000000000000000000000
-GPR[18] = 0x00000000000000000000000000000000
-GPR[19] = 0x00000000000000000000000000000000
-GPR[20] = 0x00000000000000000000000000000000
-GPR[21] = 0x00000000000000000000000000000000
-GPR[22] = 0x00000000000000000000000000000000
-GPR[23] = 0x00000000000000000000000000000000
-GPR[24] = 0x00000000000000000000000000000000
-GPR[25] = 0x00000000000000000000000000000000
-GPR[26] = 0x00000000000000000000000000000000
-GPR[27] = 0x00000000000000000000000000000000
-GPR[28] = 0x00000000000000000000000000000000
-GPR[29] = 0x00000000000000000000000000000000
-GPR[30] = 0x00000000000000000000000000000000
-GPR[31] = 0x00000000000000000000000000000000
-GPR[32] = 0x00000000000000000000000000000000
-GPR[33] = 0x00000000000000000000000000000000
-GPR[34] = 0x00000000000000000000000000000000
-GPR[35] = 0x00000000000000000000000000000000
-GPR[36] = 0x00000000000000000000000000000000
-GPR[37] = 0x00000000000000000000000000000000
-GPR[38] = 0x00000000000000000000000000000000
-GPR[39] = 0x00000000000000000000000000000000
-GPR[40] = 0x00000000000000000000000000000000
-GPR[41] = 0x00000000000000000000000000000000
-GPR[42] = 0x00000000000000000000000000000000
-GPR[43] = 0x00000000000000000000000000000000
-GPR[44] = 0x00000000000000000000000000000000
-GPR[45] = 0x00000000000000000000000000000000
-GPR[46] = 0x00000000000000000000000000000000
-GPR[47] = 0x00000000000000000000000000000000
-GPR[48] = 0x00000000000000000000000000000000
-GPR[49] = 0x00000000000000000000000000000000
-GPR[50] = 0x00000000000000000000000000000000
-GPR[51] = 0x00000000000000000000000000000000
-GPR[52] = 0x00000000000000000000000000000000
-GPR[53] = 0x00000000000000000000000000000000
-GPR[54] = 0x00000000000000000000000000000000
-GPR[55] = 0x00000000000000000000000000000000
-GPR[56] = 0x00000000000000000000000000000000
-GPR[57] = 0x00000000000000000000000000000000
-GPR[58] = 0x00000000000000000000000000000000
-GPR[59] = 0x00000000000000000000000000000000
-GPR[60] = 0x00000000000000000000000000000000
-GPR[61] = 0x00000000000000000000000000000000
-GPR[62] = 0x00000000000000000000000000000000
-GPR[63] = 0x00000000000000000000000000000000
-GPR[64] = 0x00000000000000000000000000000000
-GPR[65] = 0x00000000000000000000000000000000
-GPR[66] = 0x00000000000000000000000000000000
-GPR[67] = 0x00000000000000000000000000000000
-GPR[68] = 0x00000000000000000000000000000000
-GPR[69] = 0x00000000000000000000000000000000
-GPR[70] = 0x00000000000000000000000000000000
-GPR[71] = 0x00000000000000000000000000000000
-GPR[72] = 0x00000000000000000000000000000000
-GPR[73] = 0x00000000000000000000000000000000
-GPR[74] = 0x00000000000000000000000000000000
-GPR[75] = 0x00000000000000000000000000000000
-GPR[76] = 0x00000000000000000000000000000000
-GPR[77] = 0x00000000000000000000000000000000
-GPR[78] = 0x00000000000000000000000000000000
-GPR[79] = 0x00000000000000000000000000000000
-GPR[80] = 0x00000000000000000000000000000000
-GPR[81] = 0x00000000000000000000000000000000
-GPR[82] = 0x00000000000000000000000000000000
-GPR[83] = 0x00000000000000000000000000000000
-GPR[84] = 0x00000000000000000000000000000000
-GPR[85] = 0x00000000000000000000000000000000
-GPR[86] = 0x00000000000000000000000000000000
-GPR[87] = 0x00000000000000000000000000000000
-GPR[88] = 0x00000000000000000000000000000000
-GPR[89] = 0x00000000000000000000000000000000
-GPR[90] = 0x00000000000000000000000000000000
-GPR[91] = 0x00000000000000000000000000000000
-GPR[92] = 0x00000000000000000000000000000000
-GPR[93] = 0x00000000000000000000000000000000
-GPR[94] = 0x00000000000000000000000000000000
-GPR[95] = 0x00000000000000000000000000000000
-GPR[96] = 0x00000000000000000000000000000000
-GPR[97] = 0x00000000000000000000000000000000
-GPR[98] = 0x00000000000000000000000000000000
-GPR[99] = 0x00000000000000000000000000000000
-GPR[100] = 0x00000000000000000000000000000000
-GPR[101] = 0x00000000000000000000000000000000
-GPR[102] = 0x00000000000000000000000000000000
-GPR[103] = 0x00000000000000000000000000000000
-GPR[104] = 0x00000000000000000000000000000000
-GPR[105] = 0x00000000000000000000000000000000
-GPR[106] = 0x00000000000000000000000000000000
-GPR[107] = 0x00000000000000000000000000000000
-GPR[108] = 0x00000000000000000000000000000000
-GPR[109] = 0x00000000000000000000000000000000
-GPR[110] = 0x00000000000000000000000000000000
-GPR[111] = 0x00000000000000000000000000000000
-GPR[112] = 0x00000000000000000000000000000000
-GPR[113] = 0x00000000000000000000000000000000
-GPR[114] = 0x00000000000000000000000000000000
-GPR[115] = 0x00000000000000000000000000000000
-GPR[116] = 0x00000000000000000000000000000000
-GPR[117] = 0x00000000000000000000000000000000
-GPR[118] = 0x00000000000000000000000000000000
-GPR[119] = 0x00000000000000000000000000000000
-GPR[120] = 0x00000000000000000000000000000000
-GPR[121] = 0x00000000000000000000000000000000
-GPR[122] = 0x00000000000000000000000000000000
-GPR[123] = 0x00000000000000000000000000000000
-GPR[124] = 0x00000000000000000000000000000000
-GPR[125] = 0x00000000000000000000000000000000
-GPR[126] = 0x00000000000000000000000000000000
-GPR[127] = 0x00000000000000000000000000000000
-
-G: W {SPU[0x3f] Thread (CellSpursKernel4)[0x00000818]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
-G: W {SPU[0x3c] Thread (CellSpursKernel1)[0x00000818]} Registers:
-=========
-GPR[0] = 0x00000000000000000000000000000000
-GPR[1] = 0x0003fff0000000000000000000000000
-GPR[2] = 0x00000000000000000000000000000000
-GPR[3] = 0x00000001000000000000000000000000
-GPR[4] = 0x00000000007cf2800000000000000000
-GPR[5] = 0x000000000075f9500000000000000000
-GPR[6] = 0x00000000d003f7100000000000000000
-GPR[7] = 0x00000000000000000000000000000000
-GPR[8] = 0x00000000000000000000000000000000
-GPR[9] = 0x00000000000000000000000000000000
-GPR[10] = 0x00000000000000000000000000000000
-GPR[11] = 0x00000000000000000000000000000000
-GPR[12] = 0x00000000000000000000000000000000
-GPR[13] = 0x00000000000000000000000000000000
-GPR[14] = 0x00000000000000000000000000000000
-GPR[15] = 0x00000000000000000000000000000000
-GPR[16] = 0x00000000000000000000000000000000
-GPR[17] = 0x00000000000000000000000000000000
-GPR[18] = 0x00000000000000000000000000000000
-GPR[19] = 0x00000000000000000000000000000000
-GPR[20] = 0x00000000000000000000000000000000
-GPR[21] = 0x00000000000000000000000000000000
-GPR[22] = 0x00000000000000000000000000000000
-GPR[23] = 0x00000000000000000000000000000000
-GPR[24] = 0x00000000000000000000000000000000
-GPR[25] = 0x00000000000000000000000000000000
-GPR[26] = 0x00000000000000000000000000000000
-GPR[27] = 0x00000000000000000000000000000000
-GPR[28] = 0x00000000000000000000000000000000
-GPR[29] = 0x00000000000000000000000000000000
-GPR[30] = 0x00000000000000000000000000000000
-GPR[31] = 0x00000000000000000000000000000000
-GPR[32] = 0x00000000000000000000000000000000
-GPR[33] = 0x00000000000000000000000000000000
-GPR[34] = 0x00000000000000000000000000000000
-GPR[35] = 0x00000000000000000000000000000000
-GPR[36] = 0x00000000000000000000000000000000
-GPR[37] = 0x00000000000000000000000000000000
-GPR[38] = 0x00000000000000000000000000000000
-GPR[39] = 0x00000000000000000000000000000000
-GPR[40] = 0x00000000000000000000000000000000
-GPR[41] = 0x00000000000000000000000000000000
-GPR[42] = 0x00000000000000000000000000000000
-GPR[43] = 0x00000000000000000000000000000000
-GPR[44] = 0x00000000000000000000000000000000
-GPR[45] = 0x00000000000000000000000000000000
-GPR[46] = 0x00000000000000000000000000000000
-GPR[47] = 0x00000000000000000000000000000000
-GPR[48] = 0x00000000000000000000000000000000
-GPR[49] = 0x00000000000000000000000000000000
-GPR[50] = 0x00000000000000000000000000000000
-GPR[51] = 0x00000000000000000000000000000000
-GPR[52] = 0x00000000000000000000000000000000
-GPR[53] = 0x00000000000000000000000000000000
-GPR[54] = 0x00000000000000000000000000000000
-GPR[55] = 0x00000000000000000000000000000000
-GPR[56] = 0x00000000000000000000000000000000
-GPR[57] = 0x00000000000000000000000000000000
-GPR[58] = 0x00000000000000000000000000000000
-GPR[59] = 0x00000000000000000000000000000000
-GPR[60] = 0x00000000000000000000000000000000
-GPR[61] = 0x00000000000000000000000000000000
-GPR[62] = 0x00000000000000000000000000000000
-GPR[63] = 0x00000000000000000000000000000000
-GPR[64] = 0x00000000000000000000000000000000
-GPR[65] = 0x00000000000000000000000000000000
-GPR[66] = 0x00000000000000000000000000000000
-GPR[67] = 0x00000000000000000000000000000000
-GPR[68] = 0x00000000000000000000000000000000
-GPR[69] = 0x00000000000000000000000000000000
-GPR[70] = 0x00000000000000000000000000000000
-GPR[71] = 0x00000000000000000000000000000000
-GPR[72] = 0x00000000000000000000000000000000
-GPR[73] = 0x00000000000000000000000000000000
-GPR[74] = 0x00000000000000000000000000000000
-GPR[75] = 0x00000000000000000000000000000000
-GPR[76] = 0x00000000000000000000000000000000
-GPR[77] = 0x00000000000000000000000000000000
-GPR[78] = 0x00000000000000000000000000000000
-GPR[79] = 0x00000000000000000000000000000000
-GPR[80] = 0x00000000000000000000000000000000
-GPR[81] = 0x00000000000000000000000000000000
-GPR[82] = 0x00000000000000000000000000000000
-GPR[83] = 0x00000000000000000000000000000000
-GPR[84] = 0x00000000000000000000000000000000
-GPR[85] = 0x00000000000000000000000000000000
-GPR[86] = 0x00000000000000000000000000000000
-GPR[87] = 0x00000000000000000000000000000000
-GPR[88] = 0x00000000000000000000000000000000
-GPR[89] = 0x00000000000000000000000000000000
-GPR[90] = 0x00000000000000000000000000000000
-GPR[91] = 0x00000000000000000000000000000000
-GPR[92] = 0x00000000000000000000000000000000
-GPR[93] = 0x00000000000000000000000000000000
-GPR[94] = 0x00000000000000000000000000000000
-GPR[95] = 0x00000000000000000000000000000000
-GPR[96] = 0x00000000000000000000000000000000
-GPR[97] = 0x00000000000000000000000000000000
-GPR[98] = 0x00000000000000000000000000000000
-GPR[99] = 0x00000000000000000000000000000000
-GPR[100] = 0x00000000000000000000000000000000
-GPR[101] = 0x00000000000000000000000000000000
-GPR[102] = 0x00000000000000000000000000000000
-GPR[103] = 0x00000000000000000000000000000000
-GPR[104] = 0x00000000000000000000000000000000
-GPR[105] = 0x00000000000000000000000000000000
-GPR[106] = 0x00000000000000000000000000000000
-GPR[107] = 0x00000000000000000000000000000000
-GPR[108] = 0x00000000000000000000000000000000
-GPR[109] = 0x00000000000000000000000000000000
-GPR[110] = 0x00000000000000000000000000000000
-GPR[111] = 0x00000000000000000000000000000000
-GPR[112] = 0x00000000000000000000000000000000
-GPR[113] = 0x00000000000000000000000000000000
-GPR[114] = 0x00000000000000000000000000000000
-GPR[115] = 0x00000000000000000000000000000000
-GPR[116] = 0x00000000000000000000000000000000
-GPR[117] = 0x00000000000000000000000000000000
-GPR[118] = 0x00000000000000000000000000000000
-GPR[119] = 0x00000000000000000000000000000000
-GPR[120] = 0x00000000000000000000000000000000
-GPR[121] = 0x00000000000000000000000000000000
-GPR[122] = 0x00000000000000000000000000000000
-GPR[123] = 0x00000000000000000000000000000000
-GPR[124] = 0x00000000000000000000000000000000
-GPR[125] = 0x00000000000000000000000000000000
-GPR[126] = 0x00000000000000000000000000000000
-GPR[127] = 0x00000000000000000000000000000000
-
-G: W {SPU[0x3c] Thread (CellSpursKernel1)[0x00000818]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
-G: W {SPU[0x3d] Thread (CellSpursKernel2)[0x00000818]} Registers:
-=========
-GPR[0] = 0x00000000000000000000000000000000
-GPR[1] = 0x0003fff0000000000000000000000000
-GPR[2] = 0x00000000000000000000000000000000
-GPR[3] = 0x00000002000000000000000000000000
-GPR[4] = 0x00000000007cf2800000000000000000
-GPR[5] = 0x000000000075f9500000000000000000
-GPR[6] = 0x00000000d003f7100000000000000000
-GPR[7] = 0x00000000000000000000000000000000
-GPR[8] = 0x00000000000000000000000000000000
-GPR[9] = 0x00000000000000000000000000000000
-GPR[10] = 0x00000000000000000000000000000000
-GPR[11] = 0x00000000000000000000000000000000
-GPR[12] = 0x00000000000000000000000000000000
-GPR[13] = 0x00000000000000000000000000000000
-GPR[14] = 0x00000000000000000000000000000000
-GPR[15] = 0x00000000000000000000000000000000
-GPR[16] = 0x00000000000000000000000000000000
-GPR[17] = 0x00000000000000000000000000000000
-GPR[18] = 0x00000000000000000000000000000000
-GPR[19] = 0x00000000000000000000000000000000
-GPR[20] = 0x00000000000000000000000000000000
-GPR[21] = 0x00000000000000000000000000000000
-GPR[22] = 0x00000000000000000000000000000000
-GPR[23] = 0x00000000000000000000000000000000
-GPR[24] = 0x00000000000000000000000000000000
-GPR[25] = 0x00000000000000000000000000000000
-GPR[26] = 0x00000000000000000000000000000000
-GPR[27] = 0x00000000000000000000000000000000
-GPR[28] = 0x00000000000000000000000000000000
-GPR[29] = 0x00000000000000000000000000000000
-GPR[30] = 0x00000000000000000000000000000000
-GPR[31] = 0x00000000000000000000000000000000
-GPR[32] = 0x00000000000000000000000000000000
-GPR[33] = 0x00000000000000000000000000000000
-GPR[34] = 0x00000000000000000000000000000000
-GPR[35] = 0x00000000000000000000000000000000
-GPR[36] = 0x00000000000000000000000000000000
-GPR[37] = 0x00000000000000000000000000000000
-GPR[38] = 0x00000000000000000000000000000000
-GPR[39] = 0x00000000000000000000000000000000
-GPR[40] = 0x00000000000000000000000000000000
-GPR[41] = 0x00000000000000000000000000000000
-GPR[42] = 0x00000000000000000000000000000000
-GPR[43] = 0x00000000000000000000000000000000
-GPR[44] = 0x00000000000000000000000000000000
-GPR[45] = 0x00000000000000000000000000000000
-GPR[46] = 0x00000000000000000000000000000000
-GPR[47] = 0x00000000000000000000000000000000
-GPR[48] = 0x00000000000000000000000000000000
-GPR[49] = 0x00000000000000000000000000000000
-GPR[50] = 0x00000000000000000000000000000000
-GPR[51] = 0x00000000000000000000000000000000
-GPR[52] = 0x00000000000000000000000000000000
-GPR[53] = 0x00000000000000000000000000000000
-GPR[54] = 0x00000000000000000000000000000000
-GPR[55] = 0x00000000000000000000000000000000
-GPR[56] = 0x00000000000000000000000000000000
-GPR[57] = 0x00000000000000000000000000000000
-GPR[58] = 0x00000000000000000000000000000000
-GPR[59] = 0x00000000000000000000000000000000
-GPR[60] = 0x00000000000000000000000000000000
-GPR[61] = 0x00000000000000000000000000000000
-GPR[62] = 0x00000000000000000000000000000000
-GPR[63] = 0x00000000000000000000000000000000
-GPR[64] = 0x00000000000000000000000000000000
-GPR[65] = 0x00000000000000000000000000000000
-GPR[66] = 0x00000000000000000000000000000000
-GPR[67] = 0x00000000000000000000000000000000
-GPR[68] = 0x00000000000000000000000000000000
-GPR[69] = 0x00000000000000000000000000000000
-GPR[70] = 0x00000000000000000000000000000000
-GPR[71] = 0x00000000000000000000000000000000
-GPR[72] = 0x00000000000000000000000000000000
-GPR[73] = 0x00000000000000000000000000000000
-GPR[74] = 0x00000000000000000000000000000000
-GPR[75] = 0x00000000000000000000000000000000
-GPR[76] = 0x00000000000000000000000000000000
-GPR[77] = 0x00000000000000000000000000000000
-GPR[78] = 0x00000000000000000000000000000000
-GPR[79] = 0x00000000000000000000000000000000
-GPR[80] = 0x00000000000000000000000000000000
-GPR[81] = 0x00000000000000000000000000000000
-GPR[82] = 0x00000000000000000000000000000000
-GPR[83] = 0x00000000000000000000000000000000
-GPR[84] = 0x00000000000000000000000000000000
-GPR[85] = 0x00000000000000000000000000000000
-GPR[86] = 0x00000000000000000000000000000000
-GPR[87] = 0x00000000000000000000000000000000
-GPR[88] = 0x00000000000000000000000000000000
-GPR[89] = 0x00000000000000000000000000000000
-GPR[90] = 0x00000000000000000000000000000000
-GPR[91] = 0x00000000000000000000000000000000
-GPR[92] = 0x00000000000000000000000000000000
-GPR[93] = 0x00000000000000000000000000000000
-GPR[94] = 0x00000000000000000000000000000000
-GPR[95] = 0x00000000000000000000000000000000
-GPR[96] = 0x00000000000000000000000000000000
-GPR[97] = 0x00000000000000000000000000000000
-GPR[98] = 0x00000000000000000000000000000000
-GPR[99] = 0x00000000000000000000000000000000
-GPR[100] = 0x00000000000000000000000000000000
-GPR[101] = 0x00000000000000000000000000000000
-GPR[102] = 0x00000000000000000000000000000000
-GPR[103] = 0x00000000000000000000000000000000
-GPR[104] = 0x00000000000000000000000000000000
-GPR[105] = 0x00000000000000000000000000000000
-GPR[106] = 0x00000000000000000000000000000000
-GPR[107] = 0x00000000000000000000000000000000
-GPR[108] = 0x00000000000000000000000000000000
-GPR[109] = 0x00000000000000000000000000000000
-GPR[110] = 0x00000000000000000000000000000000
-GPR[111] = 0x00000000000000000000000000000000
-GPR[112] = 0x00000000000000000000000000000000
-GPR[113] = 0x00000000000000000000000000000000
-GPR[114] = 0x00000000000000000000000000000000
-GPR[115] = 0x00000000000000000000000000000000
-GPR[116] = 0x00000000000000000000000000000000
-GPR[117] = 0x00000000000000000000000000000000
-GPR[118] = 0x00000000000000000000000000000000
-GPR[119] = 0x00000000000000000000000000000000
-GPR[120] = 0x00000000000000000000000000000000
-GPR[121] = 0x00000000000000000000000000000000
-GPR[122] = 0x00000000000000000000000000000000
-GPR[123] = 0x00000000000000000000000000000000
-GPR[124] = 0x00000000000000000000000000000000
-GPR[125] = 0x00000000000000000000000000000000
-GPR[126] = 0x00000000000000000000000000000000
-GPR[127] = 0x00000000000000000000000000000000
-
-G: W {SPU[0x3d] Thread (CellSpursKernel2)[0x00000818]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
-G: W {SPU[0x3e] Thread (CellSpursKernel3)[0x00000818]} Registers:
-=========
-GPR[0] = 0x00000000000000000000000000000000
-GPR[1] = 0x0003fff0000000000000000000000000
-GPR[2] = 0x00000000000000000000000000000000
-GPR[3] = 0x00000003000000000000000000000000
-GPR[4] = 0x00000000007cf2800000000000000000
-GPR[5] = 0x000000000075f9500000000000000000
-GPR[6] = 0x00000000d003f7100000000000000000
-GPR[7] = 0x00000000000000000000000000000000
-GPR[8] = 0x00000000000000000000000000000000
-GPR[9] = 0x00000000000000000000000000000000
-GPR[10] = 0x00000000000000000000000000000000
-GPR[11] = 0x00000000000000000000000000000000
-GPR[12] = 0x00000000000000000000000000000000
-GPR[13] = 0x00000000000000000000000000000000
-GPR[14] = 0x00000000000000000000000000000000
-GPR[15] = 0x00000000000000000000000000000000
-GPR[16] = 0x00000000000000000000000000000000
-GPR[17] = 0x00000000000000000000000000000000
-GPR[18] = 0x00000000000000000000000000000000
-GPR[19] = 0x00000000000000000000000000000000
-GPR[20] = 0x00000000000000000000000000000000
-GPR[21] = 0x00000000000000000000000000000000
-GPR[22] = 0x00000000000000000000000000000000
-GPR[23] = 0x00000000000000000000000000000000
-GPR[24] = 0x00000000000000000000000000000000
-GPR[25] = 0x00000000000000000000000000000000
-GPR[26] = 0x00000000000000000000000000000000
-GPR[27] = 0x00000000000000000000000000000000
-GPR[28] = 0x00000000000000000000000000000000
-GPR[29] = 0x00000000000000000000000000000000
-GPR[30] = 0x00000000000000000000000000000000
-GPR[31] = 0x00000000000000000000000000000000
-GPR[32] = 0x00000000000000000000000000000000
-GPR[33] = 0x00000000000000000000000000000000
-GPR[34] = 0x00000000000000000000000000000000
-GPR[35] = 0x00000000000000000000000000000000
-GPR[36] = 0x00000000000000000000000000000000
-GPR[37] = 0x00000000000000000000000000000000
-GPR[38] = 0x00000000000000000000000000000000
-GPR[39] = 0x00000000000000000000000000000000
-GPR[40] = 0x00000000000000000000000000000000
-GPR[41] = 0x00000000000000000000000000000000
-GPR[42] = 0x00000000000000000000000000000000
-GPR[43] = 0x00000000000000000000000000000000
-GPR[44] = 0x00000000000000000000000000000000
-GPR[45] = 0x00000000000000000000000000000000
-GPR[46] = 0x00000000000000000000000000000000
-GPR[47] = 0x00000000000000000000000000000000
-GPR[48] = 0x00000000000000000000000000000000
-GPR[49] = 0x00000000000000000000000000000000
-GPR[50] = 0x00000000000000000000000000000000
-GPR[51] = 0x00000000000000000000000000000000
-GPR[52] = 0x00000000000000000000000000000000
-GPR[53] = 0x00000000000000000000000000000000
-GPR[54] = 0x00000000000000000000000000000000
-GPR[55] = 0x00000000000000000000000000000000
-GPR[56] = 0x00000000000000000000000000000000
-GPR[57] = 0x00000000000000000000000000000000
-GPR[58] = 0x00000000000000000000000000000000
-GPR[59] = 0x00000000000000000000000000000000
-GPR[60] = 0x00000000000000000000000000000000
-GPR[61] = 0x00000000000000000000000000000000
-GPR[62] = 0x00000000000000000000000000000000
-GPR[63] = 0x00000000000000000000000000000000
-GPR[64] = 0x00000000000000000000000000000000
-GPR[65] = 0x00000000000000000000000000000000
-GPR[66] = 0x00000000000000000000000000000000
-GPR[67] = 0x00000000000000000000000000000000
-GPR[68] = 0x00000000000000000000000000000000
-GPR[69] = 0x00000000000000000000000000000000
-GPR[70] = 0x00000000000000000000000000000000
-GPR[71] = 0x00000000000000000000000000000000
-GPR[72] = 0x00000000000000000000000000000000
-GPR[73] = 0x00000000000000000000000000000000
-GPR[74] = 0x00000000000000000000000000000000
-GPR[75] = 0x00000000000000000000000000000000
-GPR[76] = 0x00000000000000000000000000000000
-GPR[77] = 0x00000000000000000000000000000000
-GPR[78] = 0x00000000000000000000000000000000
-GPR[79] = 0x00000000000000000000000000000000
-GPR[80] = 0x00000000000000000000000000000000
-GPR[81] = 0x00000000000000000000000000000000
-GPR[82] = 0x00000000000000000000000000000000
-GPR[83] = 0x00000000000000000000000000000000
-GPR[84] = 0x00000000000000000000000000000000
-GPR[85] = 0x00000000000000000000000000000000
-GPR[86] = 0x00000000000000000000000000000000
-GPR[87] = 0x00000000000000000000000000000000
-GPR[88] = 0x00000000000000000000000000000000
-GPR[89] = 0x00000000000000000000000000000000
-GPR[90] = 0x00000000000000000000000000000000
-GPR[91] = 0x00000000000000000000000000000000
-GPR[92] = 0x00000000000000000000000000000000
-GPR[93] = 0x00000000000000000000000000000000
-GPR[94] = 0x00000000000000000000000000000000
-GPR[95] = 0x00000000000000000000000000000000
-GPR[96] = 0x00000000000000000000000000000000
-GPR[97] = 0x00000000000000000000000000000000
-GPR[98] = 0x00000000000000000000000000000000
-GPR[99] = 0x00000000000000000000000000000000
-GPR[100] = 0x00000000000000000000000000000000
-GPR[101] = 0x00000000000000000000000000000000
-GPR[102] = 0x00000000000000000000000000000000
-GPR[103] = 0x00000000000000000000000000000000
-GPR[104] = 0x00000000000000000000000000000000
-GPR[105] = 0x00000000000000000000000000000000
-GPR[106] = 0x00000000000000000000000000000000
-GPR[107] = 0x00000000000000000000000000000000
-GPR[108] = 0x00000000000000000000000000000000
-GPR[109] = 0x00000000000000000000000000000000
-GPR[110] = 0x00000000000000000000000000000000
-GPR[111] = 0x00000000000000000000000000000000
-GPR[112] = 0x00000000000000000000000000000000
-GPR[113] = 0x00000000000000000000000000000000
-GPR[114] = 0x00000000000000000000000000000000
-GPR[115] = 0x00000000000000000000000000000000
-GPR[116] = 0x00000000000000000000000000000000
-GPR[117] = 0x00000000000000000000000000000000
-GPR[118] = 0x00000000000000000000000000000000
-GPR[119] = 0x00000000000000000000000000000000
-GPR[120] = 0x00000000000000000000000000000000
-GPR[121] = 0x00000000000000000000000000000000
-GPR[122] = 0x00000000000000000000000000000000
-GPR[123] = 0x00000000000000000000000000000000
-GPR[124] = 0x00000000000000000000000000000000
-GPR[125] = 0x00000000000000000000000000000000
-GPR[126] = 0x00000000000000000000000000000000
-GPR[127] = 0x00000000000000000000000000000000
-
-G: W {SPU[0x3b] Thread (CellSpursKernel0)[0x00000818]} Registers:
-=========
-GPR[0] = 0x00000000000000000000000000000000
-GPR[1] = 0x0003fff0000000000000000000000000
-GPR[2] = 0x00000000000000000000000000000000
-GPR[3] = 0x00000000000000000000000000000000
-GPR[4] = 0x00000000007cf2800000000000000000
-GPR[5] = 0x000000000075f9500000000000000000
-GPR[6] = 0x00000000d003f7100000000000000000
-GPR[7] = 0x00000000000000000000000000000000
-GPR[8] = 0x00000000000000000000000000000000
-GPR[9] = 0x00000000000000000000000000000000
-GPR[10] = 0x00000000000000000000000000000000
-GPR[11] = 0x00000000000000000000000000000000
-GPR[12] = 0x00000000000000000000000000000000
-GPR[13] = 0x00000000000000000000000000000000
-GPR[14] = 0x00000000000000000000000000000000
-GPR[15] = 0x00000000000000000000000000000000
-GPR[16] = 0x00000000000000000000000000000000
-GPR[17] = 0x00000000000000000000000000000000
-GPR[18] = 0x00000000000000000000000000000000
-GPR[19] = 0x00000000000000000000000000000000
-GPR[20] = 0x00000000000000000000000000000000
-GPR[21] = 0x00000000000000000000000000000000
-GPR[22] = 0x00000000000000000000000000000000
-GPR[23] = 0x00000000000000000000000000000000
-GPR[24] = 0x00000000000000000000000000000000
-GPR[25] = 0x00000000000000000000000000000000
-GPR[26] = 0x00000000000000000000000000000000
-GPR[27] = 0x00000000000000000000000000000000
-GPR[28] = 0x00000000000000000000000000000000
-GPR[29] = 0x00000000000000000000000000000000
-GPR[30] = 0x00000000000000000000000000000000
-GPR[31] = 0x00000000000000000000000000000000
-GPR[32] = 0x00000000000000000000000000000000
-GPR[33] = 0x00000000000000000000000000000000
-GPR[34] = 0x00000000000000000000000000000000
-GPR[35] = 0x00000000000000000000000000000000
-GPR[36] = 0x00000000000000000000000000000000
-GPR[37] = 0x00000000000000000000000000000000
-GPR[38] = 0x00000000000000000000000000000000
-GPR[39] = 0x00000000000000000000000000000000
-GPR[40] = 0x00000000000000000000000000000000
-GPR[41] = 0x00000000000000000000000000000000
-GPR[42] = 0x00000000000000000000000000000000
-GPR[43] = 0x00000000000000000000000000000000
-GPR[44] = 0x00000000000000000000000000000000
-GPR[45] = 0x00000000000000000000000000000000
-GPR[46] = 0x00000000000000000000000000000000
-GPR[47] = 0x00000000000000000000000000000000
-GPR[48] = 0x00000000000000000000000000000000
-GPR[49] = 0x00000000000000000000000000000000
-GPR[50] = 0x00000000000000000000000000000000
-GPR[51] = 0x00000000000000000000000000000000
-GPR[52] = 0x00000000000000000000000000000000
-GPR[53] = 0x00000000000000000000000000000000
-GPR[54] = 0x00000000000000000000000000000000
-GPR[55] = 0x00000000000000000000000000000000
-GPR[56] = 0x00000000000000000000000000000000
-GPR[57] = 0x00000000000000000000000000000000
-GPR[58] = 0x00000000000000000000000000000000
-GPR[59] = 0x00000000000000000000000000000000
-GPR[60] = 0x00000000000000000000000000000000
-GPR[61] = 0x00000000000000000000000000000000
-GPR[62] = 0x00000000000000000000000000000000
-GPR[63] = 0x00000000000000000000000000000000
-GPR[64] = 0x00000000000000000000000000000000
-GPR[65] = 0x00000000000000000000000000000000
-GPR[66] = 0x00000000000000000000000000000000
-GPR[67] = 0x00000000000000000000000000000000
-GPR[68] = 0x00000000000000000000000000000000
-GPR[69] = 0x00000000000000000000000000000000
-GPR[70] = 0x00000000000000000000000000000000
-GPR[71] = 0x00000000000000000000000000000000
-GPR[72] = 0x00000000000000000000000000000000
-GPR[73] = 0x00000000000000000000000000000000
-GPR[74] = 0x00000000000000000000000000000000
-GPR[75] = 0x00000000000000000000000000000000
-GPR[76] = 0x00000000000000000000000000000000
-GPR[77] = 0x00000000000000000000000000000000
-GPR[78] = 0x00000000000000000000000000000000
-GPR[79] = 0x00000000000000000000000000000000
-GPR[80] = 0x00000000000000000000000000000000
-GPR[81] = 0x00000000000000000000000000000000
-GPR[82] = 0x00000000000000000000000000000000
-GPR[83] = 0x00000000000000000000000000000000
-GPR[84] = 0x00000000000000000000000000000000
-GPR[85] = 0x00000000000000000000000000000000
-GPR[86] = 0x00000000000000000000000000000000
-GPR[87] = 0x00000000000000000000000000000000
-GPR[88] = 0x00000000000000000000000000000000
-GPR[89] = 0x00000000000000000000000000000000
-GPR[90] = 0x00000000000000000000000000000000
-GPR[91] = 0x00000000000000000000000000000000
-GPR[92] = 0x00000000000000000000000000000000
-GPR[93] = 0x00000000000000000000000000000000
-GPR[94] = 0x00000000000000000000000000000000
-GPR[95] = 0x00000000000000000000000000000000
-GPR[96] = 0x00000000000000000000000000000000
-GPR[97] = 0x00000000000000000000000000000000
-GPR[98] = 0x00000000000000000000000000000000
-GPR[99] = 0x00000000000000000000000000000000
-GPR[100] = 0x00000000000000000000000000000000
-GPR[101] = 0x00000000000000000000000000000000
-GPR[102] = 0x00000000000000000000000000000000
-GPR[103] = 0x00000000000000000000000000000000
-GPR[104] = 0x00000000000000000000000000000000
-GPR[105] = 0x00000000000000000000000000000000
-GPR[106] = 0x00000000000000000000000000000000
-GPR[107] = 0x00000000000000000000000000000000
-GPR[108] = 0x00000000000000000000000000000000
-GPR[109] = 0x00000000000000000000000000000000
-GPR[110] = 0x00000000000000000000000000000000
-GPR[111] = 0x00000000000000000000000000000000
-GPR[112] = 0x00000000000000000000000000000000
-GPR[113] = 0x00000000000000000000000000000000
-GPR[114] = 0x00000000000000000000000000000000
-GPR[115] = 0x00000000000000000000000000000000
-GPR[116] = 0x00000000000000000000000000000000
-GPR[117] = 0x00000000000000000000000000000000
-GPR[118] = 0x00000000000000000000000000000000
-GPR[119] = 0x00000000000000000000000000000000
-GPR[120] = 0x00000000000000000000000000000000
-GPR[121] = 0x00000000000000000000000000000000
-GPR[122] = 0x00000000000000000000000000000000
-GPR[123] = 0x00000000000000000000000000000000
-GPR[124] = 0x00000000000000000000000000000000
-GPR[125] = 0x00000000000000000000000000000000
-GPR[126] = 0x00000000000000000000000000000000
-GPR[127] = 0x00000000000000000000000000000000
-
-G: W {SPU[0x3e] Thread (CellSpursKernel3)[0x00000818]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
-G: W {SPU[0x3b] Thread (CellSpursKernel0)[0x00000818]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
-G: W {SPU[0x5b] Thread (CellSpursKernel0)[0x00000818]} Registers:
-=========
-GPR[0] = 0x00000000000000000000000000000000
-GPR[1] = 0x0003fff0000000000000000000000000
-GPR[2] = 0x00000000000000000000000000000000
-GPR[3] = 0x00000000000000000000000000000000
-GPR[4] = 0x00000000007d05000000000000000000
-GPR[5] = 0x000000000075f9500000000000000000
-GPR[6] = 0x00000000d003f7100000000000000000
-GPR[7] = 0x00000000000000000000000000000000
-GPR[8] = 0x00000000000000000000000000000000
-GPR[9] = 0x00000000000000000000000000000000
-GPR[10] = 0x00000000000000000000000000000000
-GPR[11] = 0x00000000000000000000000000000000
-GPR[12] = 0x00000000000000000000000000000000
-GPR[13] = 0x00000000000000000000000000000000
-GPR[14] = 0x00000000000000000000000000000000
-GPR[15] = 0x00000000000000000000000000000000
-GPR[16] = 0x00000000000000000000000000000000
-GPR[17] = 0x00000000000000000000000000000000
-GPR[18] = 0x00000000000000000000000000000000
-GPR[19] = 0x00000000000000000000000000000000
-GPR[20] = 0x00000000000000000000000000000000
-GPR[21] = 0x00000000000000000000000000000000
-GPR[22] = 0x00000000000000000000000000000000
-GPR[23] = 0x00000000000000000000000000000000
-GPR[24] = 0x00000000000000000000000000000000
-GPR[25] = 0x00000000000000000000000000000000
-GPR[26] = 0x00000000000000000000000000000000
-GPR[27] = 0x00000000000000000000000000000000
-GPR[28] = 0x00000000000000000000000000000000
-GPR[29] = 0x00000000000000000000000000000000
-GPR[30] = 0x00000000000000000000000000000000
-GPR[31] = 0x00000000000000000000000000000000
-GPR[32] = 0x00000000000000000000000000000000
-GPR[33] = 0x00000000000000000000000000000000
-GPR[34] = 0x00000000000000000000000000000000
-GPR[35] = 0x00000000000000000000000000000000
-GPR[36] = 0x00000000000000000000000000000000
-GPR[37] = 0x00000000000000000000000000000000
-GPR[38] = 0x00000000000000000000000000000000
-GPR[39] = 0x00000000000000000000000000000000
-GPR[40] = 0x00000000000000000000000000000000
-GPR[41] = 0x00000000000000000000000000000000
-GPR[42] = 0x00000000000000000000000000000000
-GPR[43] = 0x00000000000000000000000000000000
-GPR[44] = 0x00000000000000000000000000000000
-GPR[45] = 0x00000000000000000000000000000000
-GPR[46] = 0x00000000000000000000000000000000
-GPR[47] = 0x00000000000000000000000000000000
-GPR[48] = 0x00000000000000000000000000000000
-GPR[49] = 0x00000000000000000000000000000000
-GPR[50] = 0x00000000000000000000000000000000
-GPR[51] = 0x00000000000000000000000000000000
-GPR[52] = 0x00000000000000000000000000000000
-GPR[53] = 0x00000000000000000000000000000000
-GPR[54] = 0x00000000000000000000000000000000
-GPR[55] = 0x00000000000000000000000000000000
-GPR[56] = 0x00000000000000000000000000000000
-GPR[57] = 0x00000000000000000000000000000000
-GPR[58] = 0x00000000000000000000000000000000
-GPR[59] = 0x00000000000000000000000000000000
-GPR[60] = 0x00000000000000000000000000000000
-GPR[61] = 0x00000000000000000000000000000000
-GPR[62] = 0x00000000000000000000000000000000
-GPR[63] = 0x00000000000000000000000000000000
-GPR[64] = 0x00000000000000000000000000000000
-GPR[65] = 0x00000000000000000000000000000000
-GPR[66] = 0x00000000000000000000000000000000
-GPR[67] = 0x00000000000000000000000000000000
-GPR[68] = 0x00000000000000000000000000000000
-GPR[69] = 0x00000000000000000000000000000000
-GPR[70] = 0x00000000000000000000000000000000
-GPR[71] = 0x00000000000000000000000000000000
-GPR[72] = 0x00000000000000000000000000000000
-GPR[73] = 0x00000000000000000000000000000000
-GPR[74] = 0x00000000000000000000000000000000
-GPR[75] = 0x00000000000000000000000000000000
-GPR[76] = 0x00000000000000000000000000000000
-GPR[77] = 0x00000000000000000000000000000000
-GPR[78] = 0x00000000000000000000000000000000
-GPR[79] = 0x00000000000000000000000000000000
-GPR[80] = 0x00000000000000000000000000000000
-GPR[81] = 0x00000000000000000000000000000000
-GPR[82] = 0x00000000000000000000000000000000
-GPR[83] = 0x00000000000000000000000000000000
-GPR[84] = 0x00000000000000000000000000000000
-GPR[85] = 0x00000000000000000000000000000000
-GPR[86] = 0x00000000000000000000000000000000
-GPR[87] = 0x00000000000000000000000000000000
-GPR[88] = 0x00000000000000000000000000000000
-GPR[89] = 0x00000000000000000000000000000000
-GPR[90] = 0x00000000000000000000000000000000
-GPR[91] = 0x00000000000000000000000000000000
-GPR[92] = 0x00000000000000000000000000000000
-GPR[93] = 0x00000000000000000000000000000000
-GPR[94] = 0x00000000000000000000000000000000
-GPR[95] = 0x00000000000000000000000000000000
-GPR[96] = 0x00000000000000000000000000000000
-GPR[97] = 0x00000000000000000000000000000000
-GPR[98] = 0x00000000000000000000000000000000
-GPR[99] = 0x00000000000000000000000000000000
-GPR[100] = 0x00000000000000000000000000000000
-GPR[101] = 0x00000000000000000000000000000000
-GPR[102] = 0x00000000000000000000000000000000
-GPR[103] = 0x00000000000000000000000000000000
-GPR[104] = 0x00000000000000000000000000000000
-GPR[105] = 0x00000000000000000000000000000000
-GPR[106] = 0x00000000000000000000000000000000
-GPR[107] = 0x00000000000000000000000000000000
-GPR[108] = 0x00000000000000000000000000000000
-GPR[109] = 0x00000000000000000000000000000000
-GPR[110] = 0x00000000000000000000000000000000
-GPR[111] = 0x00000000000000000000000000000000
-GPR[112] = 0x00000000000000000000000000000000
-GPR[113] = 0x00000000000000000000000000000000
-GPR[114] = 0x00000000000000000000000000000000
-GPR[115] = 0x00000000000000000000000000000000
-GPR[116] = 0x00000000000000000000000000000000
-GPR[117] = 0x00000000000000000000000000000000
-GPR[118] = 0x00000000000000000000000000000000
-GPR[119] = 0x00000000000000000000000000000000
-GPR[120] = 0x00000000000000000000000000000000
-GPR[121] = 0x00000000000000000000000000000000
-GPR[122] = 0x00000000000000000000000000000000
-GPR[123] = 0x00000000000000000000000000000000
-GPR[124] = 0x00000000000000000000000000000000
-GPR[125] = 0x00000000000000000000000000000000
-GPR[126] = 0x00000000000000000000000000000000
-GPR[127] = 0x00000000000000000000000000000000
-
-G: W {SPU[0x5b] Thread (CellSpursKernel0)[0x00000818]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\Modules\cellSpursSpu.cpp:533, in function spursKernelEntry)
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
+HLE: S {PPU[0x63] Thread (Job Manager Event Handler)[0x0041d998]} Last syscall: 130 (sys_event_queue_receive)
+G: ! {PPU[0x60] Thread (SpursHdlr1)[0x00000000]} Thread aborted
+G: ! {PPU[0x47] Thread (Job Manager Event Handler)[0x0041d998]} Thread aborted
+G: ! {SPU[0x5b] Thread (CellSpursKernel0)[0x00818]} Thread aborted
+G: ! {PPU[0x61] Thread (SpursHdlr0)[0x00000000]} Thread aborted
+G: ! {PPU[0x63] Thread (Job Manager Event Handler)[0x0041d998]} Thread aborted
+G: ! {PPU[0x45] Thread (SpursHdlr0)[0x00000000]} Thread aborted
 G: ! All threads stopped...
+G: ! Objects cleared...
+G: ! Stopping emulator...

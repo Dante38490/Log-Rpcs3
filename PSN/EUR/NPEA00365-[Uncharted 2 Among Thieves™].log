@@ -1,65 +1,175 @@
-HLE: ! path: /dev_hdd0/game/
-HLE: W No pause.bin found, Auto Pause will not work.
-HLE: W No pause.bin found, Auto Pause will not work.
-LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00365/USRDIR/BOOT.BIN'...
-LDR: !  
+LDR: E PSFLoader::Load() failed: unknown magic (0x0)
+G: ! RPCS3 v0.0.0.6-3827-a6beb0e
+G: ! 
+LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00365\USRDIR\BOOT.BIN'...
+G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00365/dev_bdvd.path', 0x1) failed: error 0x2
+LDR: ! 
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
 LDR: ! /host_root/ -> 
 LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
-LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00365/../
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
-LDR: !  
+LDR: ! 
+LDR: ! 
 LDR: ! Title: Uncharted 2: Among Thieves™
 1.10
 LDR: ! Serial: NPEA00365
-LDR: !  
+LDR: ! Used configuration: 'rpcs3.new.ini'
+LDR: ! 
+LDR: ! [gui]
+MainFrameAui=layout2|name~Pane_0;caption~Game List;state~4196348;dir~5;layer~0;row~0;pos~0;prop~100000;bestw~283;besth~279;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~-1;floaty~-1;floatw~-1;floath~-1|name~Pane_1;caption~Log;state~4196348;dir~4;layer~0;row~1;pos~1;prop~99647;bestw~600;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~52;floaty~489;floatw~616;floath~339|name~Pane_2;caption~Debugger;state~4196348;dir~4;layer~0;row~1;pos~0;prop~100353;bestw~400;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~47;floaty~117;floatw~416;floath~339|dock_size(5,0,0)~265|dock_size(4,0,1)~400|
+
+[system]
+Emulation dir path=
+Language=2
+Use path below as EmulationDir=false
+
+[rsx/opengl]
+Write Color Buffers=false
+Write Depth Buffer=false
+Read Color Buffers=false
+Read Depth Buffer=false
+
+[gui/size]
+width=963
+height=626
+
+[gui/position]
+horizontal=-29
+vertical=334
+
+[core]
+PPU Decoder=interpreter2
+Load liblv2.sprx=false
+Hook static functions=false
+SPU Decoder=recompiler_asmjit
+
+[rsx]
+VSync=true
+Aspect ratio=16x9
+Renderer=DX12
+Resolution=1280x720
+Frame limit=Auto
+Log shader programs=false
+3D Monitor=false
+
+[core/llvm]
+Compiled blocks exclusion=false
+Excluded block range min=200
+Excluded block range max=250
+Compilation threshold=1000
+
+[audio]
+Audio Out=XAudio2
+Dump to file=false
+Convert to 16 bit=false
+
+[io]
+Pad Handler=windows
+Camera=connected
+Camera type=PlayStationEye
+Mouse Handler=null
+Keyboard Handler=null
+
+[rsx/d3d12]
+D3D Adaptater=0
+Debug Output=false
+Debug overlay=true
+
+[io/pad]
+Circle=76
+Left Analog Stick Left=314
+Left Analog Stick Down=317
+Left Analog Stick Right=316
+R2=69
+Right=68
+Triangle=73
+Right Analog Stick Right=312
+Down=83
+Right Analog Stick Down=367
+Left Analog Stick Up=315
+Up=90
+Right Analog Stick Up=366
+Left=81
+Right Analog Stick Left=313
+Start=13
+Select=32
+Square=74
+Cross=75
+R1=51
+R3=67
+L1=49
+L2=65
+L3=87
+
+[misc]
+Exit RPCS3 when process finishes=false
+Always start after boot=true
+Use default configuration=true
+
+[misc/log]
+RSX Logging=false
+Log Level=Errors
+Log everything=false
+Save TTY output to file=false
+
+[misc/net]
+Connection status=Connecting
+Network adapter=0
+
+[misc/debug]
+Auto Pause at System Call=false
+Auto Pause at Function Call=false
+
+
+LDR: ! Elf path: /dev_hdd0/game/NPEA00365/USRDIR/BOOT.BIN
+LDR: ! 
 LDR: ! loader::init() failed: Broken file
-MEM: ! Initializing memory: g_base_addr = 0x3d68f20000, g_priv_addr = 0x3e68f20000
-MEM: ! Memory initialized.
-LDR: W Unknown module 'cellHttpUtil'
-LDR: E Unimplemented function 'cellHttpUtilParseUri' in 'cellHttpUtil' module (0xadfbe4)
-LDR: E Unimplemented function 'cellHttpUtilBase64Encoder' in 'cellHttpUtil' module (0xadfc04)
-LDR: E Unimplemented function 'cellHttpUtilEscapeUri' in 'cellHttpUtil' module (0xadfc24)
-LDR: W Unknown module 'cellHttp'
-LDR: E Unimplemented function 'cellHttpCreateTransaction' in 'cellHttp' module (0xadfc44)
-LDR: E Unimplemented function 'cellHttpResponseGetStatusCode' in 'cellHttp' module (0xadfc64)
-LDR: E Unimplemented function 'cellHttpClientSetSslCallback' in 'cellHttp' module (0xadfc84)
-LDR: E Unimplemented function 'cellHttpClientSetRecvTimeout' in 'cellHttp' module (0xadfca4)
-LDR: E Unimplemented function 'cellHttpInit' in 'cellHttp' module (0xadfcc4)
-LDR: E Unimplemented function 'cellHttpDestroyTransaction' in 'cellHttp' module (0xadfce4)
-LDR: E Unimplemented function 'cellHttpRequestGetAllHeaders' in 'cellHttp' module (0xadfd04)
-LDR: E Unimplemented function 'cellHttpResponseGetContentLength' in 'cellHttp' module (0xadfd24)
-LDR: E Unimplemented function 'cellHttpCreateClient' in 'cellHttp' module (0xadfd44)
-LDR: E Unimplemented function 'cellHttpsInit' in 'cellHttp' module (0xadfd64)
-LDR: E Unimplemented function 'cellHttpRecvResponse' in 'cellHttp' module (0xadfd84)
-LDR: E Unimplemented function 'cellHttpClientSetAuthenticationCacheStatus' in 'cellHttp' module (0xadfda4)
-LDR: E Unimplemented function 'cellHttpClientSetSendTimeout' in 'cellHttp' module (0xadfdc4)
-LDR: E Unimplemented function 'cellHttpDestroyClient' in 'cellHttp' module (0xadfde4)
-LDR: E Unimplemented function 'cellHttpTransactionCloseConnection' in 'cellHttp' module (0xadfe04)
-LDR: E Unimplemented function 'cellHttpSendRequest' in 'cellHttp' module (0xadfe24)
-LDR: E Unimplemented function 'cellHttpRequestSetContentLength' in 'cellHttp' module (0xadfe44)
-LDR: E Unimplemented function 'cellHttpResponseGetAllHeaders' in 'cellHttp' module (0xadfe64)
-LDR: E Unimplemented function 'cellHttpEnd' in 'cellHttp' module (0xadfe84)
-LDR: E Unimplemented function 'cellHttpClientSetConnTimeout' in 'cellHttp' module (0xadfea4)
-LDR: E Unimplemented function 'cellHttpsEnd' in 'cellHttp' module (0xadfec4)
-LDR: E Unimplemented function 'cellHttpRequestAddHeader' in 'cellHttp' module (0xadfee4)
-LDR: W Unknown module 'cellSsl'
-LDR: E Unimplemented function 'cellSslCertGetNameEntryInfo' in 'cellSsl' module (0xadff04)
-LDR: E Unimplemented function 'cellSslCertGetRsaPublicKeyExponent' in 'cellSsl' module (0xadff24)
-LDR: E Unimplemented function 'cellSslEnd' in 'cellSsl' module (0xadff44)
-LDR: E Unimplemented function 'cellSslCertGetNotAfter' in 'cellSsl' module (0xadff64)
-LDR: E Unimplemented function 'cellSslCertGetNotBefore' in 'cellSsl' module (0xadff84)
-LDR: E Unimplemented function 'cellSslCertGetSubjectName' in 'cellSsl' module (0xadffa4)
-LDR: E Unimplemented function 'cellSslCertGetMd5Fingerprint' in 'cellSsl' module (0xadffc4)
-LDR: E Unimplemented function 'cellSslCertGetNameEntryCount' in 'cellSsl' module (0xadffe4)
-LDR: E Unimplemented function 'cellSslCertGetSerialNumber' in 'cellSsl' module (0xae0004)
-LDR: E Unimplemented function 'cellSslCertGetRsaPublicKeyModulus' in 'cellSsl' module (0xae0024)
-LDR: E Unimplemented function 'cellSslCertGetIssuerName' in 'cellSsl' module (0xae0044)
-LDR: E Unimplemented function 'cellSslCertGetPublicKey' in 'cellSsl' module (0xae0064)
-LDR: E Unimplemented function 'cellSslInit' in 'cellSsl' module (0xae0084)
+LDR: ! *** sdk version: 0x280001
+LDR: ! *** primary prio: 1001
+LDR: ! *** primary stacksize: 0x40000
+LDR: ! *** malloc pagesize: 0x100000
+LDR: ! *** ppc seg: 0x0
+LDR: ! Imported function 'cellHttpUtilParseUri' in 'cellHttpUtil' module (0xadfbe4)
+LDR: ! Imported function 'cellHttpUtilBase64Encoder' in 'cellHttpUtil' module (0xadfc04)
+LDR: ! Imported function 'cellHttpUtilEscapeUri' in 'cellHttpUtil' module (0xadfc24)
+LDR: ! Imported function 'cellHttpCreateTransaction' in 'cellHttp' module (0xadfc44)
+LDR: ! Imported function 'cellHttpResponseGetStatusCode' in 'cellHttp' module (0xadfc64)
+LDR: ! Imported function 'cellHttpClientSetSslCallback' in 'cellHttp' module (0xadfc84)
+LDR: ! Imported function 'cellHttpClientSetRecvTimeout' in 'cellHttp' module (0xadfca4)
+LDR: ! Imported function 'cellHttpInit' in 'cellHttp' module (0xadfcc4)
+LDR: ! Imported function 'cellHttpDestroyTransaction' in 'cellHttp' module (0xadfce4)
+LDR: ! Imported function 'cellHttpRequestGetAllHeaders' in 'cellHttp' module (0xadfd04)
+LDR: ! Imported function 'cellHttpResponseGetContentLength' in 'cellHttp' module (0xadfd24)
+LDR: ! Imported function 'cellHttpCreateClient' in 'cellHttp' module (0xadfd44)
+LDR: ! Imported function 'cellHttpsInit' in 'cellHttp' module (0xadfd64)
+LDR: ! Imported function 'cellHttpRecvResponse' in 'cellHttp' module (0xadfd84)
+LDR: ! Imported function 'cellHttpClientSetAuthenticationCacheStatus' in 'cellHttp' module (0xadfda4)
+LDR: ! Imported function 'cellHttpClientSetSendTimeout' in 'cellHttp' module (0xadfdc4)
+LDR: ! Imported function 'cellHttpDestroyClient' in 'cellHttp' module (0xadfde4)
+LDR: ! Imported function 'cellHttpTransactionCloseConnection' in 'cellHttp' module (0xadfe04)
+LDR: ! Imported function 'cellHttpSendRequest' in 'cellHttp' module (0xadfe24)
+LDR: ! Imported function 'cellHttpRequestSetContentLength' in 'cellHttp' module (0xadfe44)
+LDR: ! Imported function 'cellHttpResponseGetAllHeaders' in 'cellHttp' module (0xadfe64)
+LDR: ! Imported function 'cellHttpEnd' in 'cellHttp' module (0xadfe84)
+LDR: ! Imported function 'cellHttpClientSetConnTimeout' in 'cellHttp' module (0xadfea4)
+LDR: ! Imported function 'cellHttpsEnd' in 'cellHttp' module (0xadfec4)
+LDR: ! Imported function 'cellHttpRequestAddHeader' in 'cellHttp' module (0xadfee4)
+LDR: ! Imported function 'cellSslCertGetNameEntryInfo' in 'cellSsl' module (0xadff04)
+LDR: ! Imported function 'cellSslCertGetRsaPublicKeyExponent' in 'cellSsl' module (0xadff24)
+LDR: ! Imported function 'cellSslEnd' in 'cellSsl' module (0xadff44)
+LDR: ! Imported function 'cellSslCertGetNotAfter' in 'cellSsl' module (0xadff64)
+LDR: ! Imported function 'cellSslCertGetNotBefore' in 'cellSsl' module (0xadff84)
+LDR: ! Imported function 'cellSslCertGetSubjectName' in 'cellSsl' module (0xadffa4)
+LDR: ! Imported function 'cellSslCertGetMd5Fingerprint' in 'cellSsl' module (0xadffc4)
+LDR: ! Imported function 'cellSslCertGetNameEntryCount' in 'cellSsl' module (0xadffe4)
+LDR: ! Imported function 'cellSslCertGetSerialNumber' in 'cellSsl' module (0xae0004)
+LDR: ! Imported function 'cellSslCertGetRsaPublicKeyModulus' in 'cellSsl' module (0xae0024)
+LDR: ! Imported function 'cellSslCertGetIssuerName' in 'cellSsl' module (0xae0044)
+LDR: ! Imported function 'cellSslCertGetPublicKey' in 'cellSsl' module (0xae0064)
+LDR: ! Imported function 'cellSslInit' in 'cellSsl' module (0xae0084)
 LDR: ! Imported function 'cellSyncMutexUnlock' in 'cellSync' module (0xae00a4)
 LDR: ! Imported function 'cellSyncMutexInitialize' in 'cellSync' module (0xae00c4)
 LDR: ! Imported function 'cellSyncMutexTryLock' in 'cellSync' module (0xae00e4)
@@ -164,15 +274,15 @@ LDR: ! Imported function 'cellNetCtlGetState' in 'cellNetCtl' module (0xae0d24)
 LDR: ! Imported function 'cellNetCtlInit' in 'cellNetCtl' module (0xae0d44)
 LDR: ! Imported function 'cellVideoOutConfigure' in 'cellSysutil' module (0xae0d64)
 LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module (0xae0d84)
-LDR: E Unimplemented function 'cellOskDialogGetInputText' in 'cellSysutil' module (0xae0da4)
+LDR: ! Imported function 'cellOskDialogGetInputText' in 'cellSysutil' module (0xae0da4)
 LDR: ! Imported function 'cellSaveDataListLoad2' in 'cellSysutil' module (0xae0dc4)
 LDR: ! Imported function 'cellSysCacheMount' in 'cellSysutil' module (0xae0de4)
 LDR: ! Imported function 'cellVideoOutGetDeviceInfo' in 'cellSysutil' module (0xae0e04)
 LDR: ! Imported function 'cellSaveDataListAutoLoad' in 'cellSysutil' module (0xae0e24)
-LDR: E Unimplemented function 'cellGameUnregisterDiscChangeCallback' in 'cellSysutil' module (0xae0e44)
+LDR: ! Imported function 'cellGameUnregisterDiscChangeCallback' in 'cellSysutil' module (0xae0e44)
 LDR: ! Imported function 'cellSaveDataListSave2' in 'cellSysutil' module (0xae0e64)
-LDR: E Unimplemented function 'cellOskDialogGetSize' in 'cellSysutil' module (0xae0e84)
-LDR: E Unimplemented function 'cellOskDialogUnloadAsync' in 'cellSysutil' module (0xae0ea4)
+LDR: ! Imported function 'cellOskDialogGetSize' in 'cellSysutil' module (0xae0e84)
+LDR: ! Imported function 'cellOskDialogUnloadAsync' in 'cellSysutil' module (0xae0ea4)
 LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module (0xae0ec4)
 LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module (0xae0ee4)
 LDR: ! Imported function 'cellSaveDataListAutoSave' in 'cellSysutil' module (0xae0f04)
@@ -181,50 +291,48 @@ LDR: ! Imported function 'cellSysCacheClear' in 'cellSysutil' module (0xae0f44)
 LDR: ! Imported function 'cellVideoOutGetNumberOfDevice' in 'cellSysutil' module (0xae0f64)
 LDR: ! Imported function 'cellMsgDialogOpen2' in 'cellSysutil' module (0xae0f84)
 LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module (0xae0fa4)
-LDR: E Unimplemented function 'cellOskDialogAddSupportLanguage' in 'cellSysutil' module (0xae0fc4)
-LDR: E Unimplemented function 'cellOskDialogLoadAsync' in 'cellSysutil' module (0xae0fe4)
+LDR: ! Imported function 'cellOskDialogAddSupportLanguage' in 'cellSysutil' module (0xae0fc4)
+LDR: ! Imported function 'cellOskDialogLoadAsync' in 'cellSysutil' module (0xae0fe4)
 LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module (0xae1004)
 LDR: ! Imported function 'cellSysutilGetSystemParamString' in 'cellSysutil' module (0xae1024)
 LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module (0xae1044)
 LDR: ! Imported function 'cellVideoOutGetResolutionAvailability' in 'cellSysutil' module (0xae1064)
-LDR: E Unimplemented function 'cellOskDialogSetKeyLayoutOption' in 'cellSysutil' module (0xae1084)
-LDR: E Unimplemented function 'cellOskDialogAbort' in 'cellSysutil' module (0xae10a4)
+LDR: ! Imported function 'cellOskDialogSetKeyLayoutOption' in 'cellSysutil' module (0xae1084)
+LDR: ! Imported function 'cellOskDialogAbort' in 'cellSysutil' module (0xae10a4)
 LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module (0xae10c4)
-LDR: E Unimplemented function 'cellOskDialogSetInitialKeyLayout' in 'cellSysutil' module (0xae10e4)
+LDR: ! Imported function 'cellOskDialogSetInitialKeyLayout' in 'cellSysutil' module (0xae10e4)
 LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module (0xae1104)
 LDR: ! Imported function 'cellAudioOutGetNumberOfDevice' in 'cellSysutil' module (0xae1124)
-LDR: E Unimplemented function 'cellOskDialogSetLayoutMode' in 'cellSysutil' module (0xae1144)
+LDR: ! Imported function 'cellOskDialogSetLayoutMode' in 'cellSysutil' module (0xae1144)
 LDR: ! Imported function 'cellAudioOutGetState' in 'cellSysutil' module (0xae1164)
-LDR: W Unknown module 'cellVoice'
-LDR: E Unimplemented function 'cellVoiceStart' in 'cellVoice' module (0xae1184)
-LDR: E Unimplemented function 'cellVoiceCreatePort' in 'cellVoice' module (0xae11a4)
-LDR: E Unimplemented function 'cellVoiceReadFromOPort' in 'cellVoice' module (0xae11c4)
-LDR: E Unimplemented function 'cellVoiceWriteToIPort' in 'cellVoice' module (0xae11e4)
-LDR: E Unimplemented function 'cellVoiceGetMuteFlag' in 'cellVoice' module (0xae1204)
-LDR: E Unimplemented function 'cellVoiceGetPortInfo' in 'cellVoice' module (0xae1224)
-LDR: E Unimplemented function 'cellVoiceGetVolume' in 'cellVoice' module (0xae1244)
-LDR: E Unimplemented function 'cellVoiceSetPortAttr' in 'cellVoice' module (0xae1264)
-LDR: E Unimplemented function 'cellVoiceDeletePort' in 'cellVoice' module (0xae1284)
-LDR: E Unimplemented function 'cellVoiceConnectIPortToOPort' in 'cellVoice' module (0xae12a4)
-LDR: E Unimplemented function 'cellVoiceInit' in 'cellVoice' module (0xae12c4)
-LDR: E Unimplemented function 'cellVoiceStop' in 'cellVoice' module (0xae12e4)
-LDR: E Unimplemented function 'cellVoiceSetMuteFlagAll' in 'cellVoice' module (0xae1304)
-LDR: E Unimplemented function 'cellVoiceSetVolume' in 'cellVoice' module (0xae1324)
-LDR: E Unimplemented function 'cellVoiceSetMuteFlag' in 'cellVoice' module (0xae1344)
-LDR: E Unimplemented function 'cellVoiceEnd' in 'cellVoice' module (0xae1364)
-LDR: E Unimplemented function 'cellVoiceGetPortAttr' in 'cellVoice' module (0xae1384)
-LDR: W Unknown module 'cellUsbd'
-LDR: E Unimplemented function 'cellUsbdInterruptTransfer' in 'cellUsbd' module (0xae13a4)
-LDR: E Unimplemented function 'cellUsbdOpenPipe' in 'cellUsbd' module (0xae13c4)
-LDR: E Unimplemented function 'cellUsbdScanStaticDescriptor' in 'cellUsbd' module (0xae13e4)
-LDR: E Unimplemented function 'cellUsbdEnd' in 'cellUsbd' module (0xae1404)
-LDR: E Unimplemented function 'cellUsbdSetThreadPriority2' in 'cellUsbd' module (0xae1424)
-LDR: E Unimplemented function 'cellUsbdGetPrivateData' in 'cellUsbd' module (0xae1444)
-LDR: E Unimplemented function 'cellUsbdSetPrivateData' in 'cellUsbd' module (0xae1464)
-LDR: E Unimplemented function 'cellUsbdRegisterExtraLdd' in 'cellUsbd' module (0xae1484)
-LDR: E Unimplemented function 'cellUsbdUnregisterExtraLdd' in 'cellUsbd' module (0xae14a4)
-LDR: E Unimplemented function 'cellUsbdControlTransfer' in 'cellUsbd' module (0xae14c4)
-LDR: E Unimplemented function 'cellUsbdInit' in 'cellUsbd' module (0xae14e4)
+LDR: ! Imported function 'cellVoiceStart' in 'cellVoice' module (0xae1184)
+LDR: ! Imported function 'cellVoiceCreatePort' in 'cellVoice' module (0xae11a4)
+LDR: ! Imported function 'cellVoiceReadFromOPort' in 'cellVoice' module (0xae11c4)
+LDR: ! Imported function 'cellVoiceWriteToIPort' in 'cellVoice' module (0xae11e4)
+LDR: ! Imported function 'cellVoiceGetMuteFlag' in 'cellVoice' module (0xae1204)
+LDR: ! Imported function 'cellVoiceGetPortInfo' in 'cellVoice' module (0xae1224)
+LDR: ! Imported function 'cellVoiceGetVolume' in 'cellVoice' module (0xae1244)
+LDR: ! Imported function 'cellVoiceSetPortAttr' in 'cellVoice' module (0xae1264)
+LDR: ! Imported function 'cellVoiceDeletePort' in 'cellVoice' module (0xae1284)
+LDR: ! Imported function 'cellVoiceConnectIPortToOPort' in 'cellVoice' module (0xae12a4)
+LDR: ! Imported function 'cellVoiceInit' in 'cellVoice' module (0xae12c4)
+LDR: ! Imported function 'cellVoiceStop' in 'cellVoice' module (0xae12e4)
+LDR: ! Imported function 'cellVoiceSetMuteFlagAll' in 'cellVoice' module (0xae1304)
+LDR: ! Imported function 'cellVoiceSetVolume' in 'cellVoice' module (0xae1324)
+LDR: ! Imported function 'cellVoiceSetMuteFlag' in 'cellVoice' module (0xae1344)
+LDR: ! Imported function 'cellVoiceEnd' in 'cellVoice' module (0xae1364)
+LDR: ! Imported function 'cellVoiceGetPortAttr' in 'cellVoice' module (0xae1384)
+LDR: ! Imported function 'cellUsbdInterruptTransfer' in 'cellUsbd' module (0xae13a4)
+LDR: ! Imported function 'cellUsbdOpenPipe' in 'cellUsbd' module (0xae13c4)
+LDR: ! Imported function 'cellUsbdScanStaticDescriptor' in 'cellUsbd' module (0xae13e4)
+LDR: ! Imported function 'cellUsbdEnd' in 'cellUsbd' module (0xae1404)
+LDR: ! Imported function 'cellUsbdSetThreadPriority2' in 'cellUsbd' module (0xae1424)
+LDR: ! Imported function 'cellUsbdGetPrivateData' in 'cellUsbd' module (0xae1444)
+LDR: ! Imported function 'cellUsbdSetPrivateData' in 'cellUsbd' module (0xae1464)
+LDR: ! Imported function 'cellUsbdRegisterExtraLdd' in 'cellUsbd' module (0xae1484)
+LDR: ! Imported function 'cellUsbdUnregisterExtraLdd' in 'cellUsbd' module (0xae14a4)
+LDR: ! Imported function 'cellUsbdControlTransfer' in 'cellUsbd' module (0xae14c4)
+LDR: ! Imported function 'cellUsbdInit' in 'cellUsbd' module (0xae14e4)
 LDR: ! Imported function 'cellFsReadWithOffset' in 'sys_fs' module (0xae1504)
 LDR: ! Imported function 'cellFsRmdir' in 'sys_fs' module (0xae1524)
 LDR: ! Imported function 'cellFsClose' in 'sys_fs' module (0xae1544)
@@ -234,14 +342,14 @@ LDR: ! Imported function 'cellFsReaddir' in 'sys_fs' module (0xae15a4)
 LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module (0xae15c4)
 LDR: ! Imported function 'cellFsStat' in 'sys_fs' module (0xae15e4)
 LDR: ! Imported function 'cellFsUnlink' in 'sys_fs' module (0xae1604)
-LDR: E Unimplemented function 'cellFsWriteWithOffset' in 'sys_fs' module (0xae1624)
+LDR: ! Imported function 'cellFsWriteWithOffset' in 'sys_fs' module (0xae1624)
 LDR: ! Imported function 'cellFsFsync' in 'sys_fs' module (0xae1644)
 LDR: ! Imported function 'cellFsChmod' in 'sys_fs' module (0xae1664)
 LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module (0xae1684)
 LDR: ! Imported function 'cellFsGetFreeSize' in 'sys_fs' module (0xae16a4)
 LDR: ! Imported function 'cellFsSdataOpen' in 'sys_fs' module (0xae16c4)
 LDR: ! Imported function 'cellFsMkdir' in 'sys_fs' module (0xae16e4)
-LDR: E Unimplemented function 'cellFsUtime' in 'sys_fs' module (0xae1704)
+LDR: ! Imported function 'cellFsUtime' in 'sys_fs' module (0xae1704)
 LDR: ! Imported function 'cellFsWrite' in 'sys_fs' module (0xae1724)
 LDR: ! Imported function 'cellFsFstat' in 'sys_fs' module (0xae1744)
 LDR: ! Imported function 'cellFsRename' in 'sys_fs' module (0xae1764)
@@ -339,38 +447,37 @@ LDR: ! Imported function 'sceNpDrmIsAvailable2' in 'sceNp' module (0xae22c4)
 LDR: ! Imported function 'sceNpLookupDestroyTransactionCtx' in 'sceNp' module (0xae22e4)
 LDR: ! Imported function 'sceNpBasicGetFriendPresenceByNpId' in 'sceNp' module (0xae2304)
 LDR: ! Imported function 'sceNpManagerGetNpId' in 'sceNp' module (0xae2324)
-LDR: W Unknown module 'sceNp2'
-LDR: E Unimplemented function 'sceNpMatching2DestroyContext' in 'sceNp2' module (0xae2344)
-LDR: E Unimplemented function 'sceNpMatching2GetWorldInfoList' in 'sceNp2' module (0xae2364)
-LDR: E Unimplemented function 'sceNpMatching2SearchRoom' in 'sceNp2' module (0xae2384)
-LDR: E Unimplemented function 'sceNpMatching2CreateServerContext' in 'sceNp2' module (0xae23a4)
-LDR: E Unimplemented function 'sceNpMatching2LeaveRoom' in 'sceNp2' module (0xae23c4)
-LDR: E Unimplemented function 'sceNpMatching2SetRoomDataExternal' in 'sceNp2' module (0xae23e4)
-LDR: E Unimplemented function 'sceNpMatching2Term2' in 'sceNp2' module (0xae2404)
-LDR: E Unimplemented function 'sceNpMatching2GetRoomMemberDataExternalList' in 'sceNp2' module (0xae2424)
-LDR: E Unimplemented function 'sceNpMatching2GetServerInfo' in 'sceNp2' module (0xae2444)
-LDR: E Unimplemented function 'sceNpMatching2GetEventData' in 'sceNp2' module (0xae2464)
+LDR: ! Imported function 'sceNpMatching2DestroyContext' in 'sceNp2' module (0xae2344)
+LDR: ! Imported function 'sceNpMatching2GetWorldInfoList' in 'sceNp2' module (0xae2364)
+LDR: ! Imported function 'sceNpMatching2SearchRoom' in 'sceNp2' module (0xae2384)
+LDR: ! Imported function 'sceNpMatching2CreateServerContext' in 'sceNp2' module (0xae23a4)
+LDR: ! Imported function 'sceNpMatching2LeaveRoom' in 'sceNp2' module (0xae23c4)
+LDR: ! Imported function 'sceNpMatching2SetRoomDataExternal' in 'sceNp2' module (0xae23e4)
+LDR: ! Imported function 'sceNpMatching2Term2' in 'sceNp2' module (0xae2404)
+LDR: ! Imported function 'sceNpMatching2GetRoomMemberDataExternalList' in 'sceNp2' module (0xae2424)
+LDR: ! Imported function 'sceNpMatching2GetServerInfo' in 'sceNp2' module (0xae2444)
+LDR: ! Imported function 'sceNpMatching2GetEventData' in 'sceNp2' module (0xae2464)
 LDR: ! Imported function 'sceNp2Init' in 'sceNp2' module (0xae2484)
-LDR: E Unimplemented function 'sceNpMatching2AbortContextStart' in 'sceNp2' module (0xae24a4)
-LDR: E Unimplemented function 'sceNpMatching2JoinRoom' in 'sceNp2' module (0xae24c4)
-LDR: E Unimplemented function 'sceNpMatching2KickoutRoomMember' in 'sceNp2' module (0xae24e4)
-LDR: E Unimplemented function 'sceNpMatching2ContextStartAsync' in 'sceNp2' module (0xae2504)
-LDR: E Unimplemented function 'sceNpMatching2RegisterContextCallback' in 'sceNp2' module (0xae2524)
-LDR: E Unimplemented function 'sceNpMatching2SetRoomDataInternal' in 'sceNp2' module (0xae2544)
-LDR: E Unimplemented function 'sceNpMatching2SignalingGetPingInfo' in 'sceNp2' module (0xae2564)
-LDR: E Unimplemented function 'sceNpMatching2GetServerIdListLocal' in 'sceNp2' module (0xae2584)
-LDR: E Unimplemented function 'sceNpMatching2GrantRoomOwner' in 'sceNp2' module (0xae25a4)
-LDR: E Unimplemented function 'sceNpMatching2CreateContext' in 'sceNp2' module (0xae25c4)
-LDR: E Unimplemented function 'sceNpMatching2ClearEventData' in 'sceNp2' module (0xae25e4)
+LDR: ! Imported function 'sceNpMatching2AbortContextStart' in 'sceNp2' module (0xae24a4)
+LDR: ! Imported function 'sceNpMatching2JoinRoom' in 'sceNp2' module (0xae24c4)
+LDR: ! Imported function 'sceNpMatching2KickoutRoomMember' in 'sceNp2' module (0xae24e4)
+LDR: ! Imported function 'sceNpMatching2ContextStartAsync' in 'sceNp2' module (0xae2504)
+LDR: ! Imported function 'sceNpMatching2RegisterContextCallback' in 'sceNp2' module (0xae2524)
+LDR: ! Imported function 'sceNpMatching2SetRoomDataInternal' in 'sceNp2' module (0xae2544)
+LDR: ! Imported function 'sceNpMatching2SignalingGetPingInfo' in 'sceNp2' module (0xae2564)
+LDR: ! Imported function 'sceNpMatching2GetServerIdListLocal' in 'sceNp2' module (0xae2584)
+LDR: ! Imported function 'sceNpMatching2GrantRoomOwner' in 'sceNp2' module (0xae25a4)
+LDR: ! Imported function 'sceNpMatching2CreateContext' in 'sceNp2' module (0xae25c4)
+LDR: ! Imported function 'sceNpMatching2ClearEventData' in 'sceNp2' module (0xae25e4)
 LDR: ! Imported function 'sceNp2Term' in 'sceNp2' module (0xae2604)
-LDR: E Unimplemented function 'sceNpMatching2SetRoomMemberDataInternal' in 'sceNp2' module (0xae2624)
-LDR: E Unimplemented function 'sceNpMatching2DeleteServerContext' in 'sceNp2' module (0xae2644)
-LDR: E Unimplemented function 'sceNpMatching2SetDefaultRequestOptParam' in 'sceNp2' module (0xae2664)
-LDR: E Unimplemented function 'sceNpMatching2RegisterRoomEventCallback' in 'sceNp2' module (0xae2684)
-LDR: E Unimplemented function 'sceNpMatching2CreateJoinRoom' in 'sceNp2' module (0xae26a4)
-LDR: E Unimplemented function 'sceNpMatching2ContextStop' in 'sceNp2' module (0xae26c4)
-LDR: E Unimplemented function 'sceNpMatching2Init2' in 'sceNp2' module (0xae26e4)
-LDR: E Unimplemented function 'sceNpMatching2RegisterRoomMessageCallback' in 'sceNp2' module (0xae2704)
+LDR: ! Imported function 'sceNpMatching2SetRoomMemberDataInternal' in 'sceNp2' module (0xae2624)
+LDR: ! Imported function 'sceNpMatching2DeleteServerContext' in 'sceNp2' module (0xae2644)
+LDR: ! Imported function 'sceNpMatching2SetDefaultRequestOptParam' in 'sceNp2' module (0xae2664)
+LDR: ! Imported function 'sceNpMatching2RegisterRoomEventCallback' in 'sceNp2' module (0xae2684)
+LDR: ! Imported function 'sceNpMatching2CreateJoinRoom' in 'sceNp2' module (0xae26a4)
+LDR: ! Imported function 'sceNpMatching2ContextStop' in 'sceNp2' module (0xae26c4)
+LDR: ! Imported function 'sceNpMatching2Init2' in 'sceNp2' module (0xae26e4)
+LDR: ! Imported function 'sceNpMatching2RegisterRoomMessageCallback' in 'sceNp2' module (0xae2704)
 LDR: ! Imported function 'cellRtcGetCurrentClockLocalTime' in 'cellRtc' module (0xae2724)
 LDR: ! Imported function 'cellRtcFormatRfc2822' in 'cellRtc' module (0xae2744)
 LDR: ! Imported function 'cellRtcSetTick' in 'cellRtc' module (0xae2764)
@@ -403,12 +510,11 @@ LDR: ! Imported function 'cellVdecEndSeq' in 'libvdec' module (0xae2aa4)
 LDR: ! Imported function 'cellVdecStartSeq' in 'libvdec' module (0xae2ac4)
 LDR: ! Imported function 'cellVdecQueryAttrEx' in 'libvdec' module (0xae2ae4)
 LDR: ! Imported function 'cellVdecSetFrameRate' in 'libvdec' module (0xae2b04)
-LDR: W Unknown module 'cellRec'
-LDR: E Unimplemented function 'cellRecOpen' in 'cellRec' module (0xae2b24)
-LDR: E Unimplemented function 'cellRecClose' in 'cellRec' module (0xae2b44)
-LDR: E Unimplemented function 'cellRecStop' in 'cellRec' module (0xae2b64)
-LDR: E Unimplemented function 'cellRecStart' in 'cellRec' module (0xae2b84)
-LDR: E Unimplemented function 'cellRecQueryMemSize' in 'cellRec' module (0xae2ba4)
+LDR: ! Imported function 'cellRecOpen' in 'cellRec' module (0xae2b24)
+LDR: ! Imported function 'cellRecClose' in 'cellRec' module (0xae2b44)
+LDR: ! Imported function 'cellRecStop' in 'cellRec' module (0xae2b64)
+LDR: ! Imported function 'cellRecStart' in 'cellRec' module (0xae2b84)
+LDR: ! Imported function 'cellRecQueryMemSize' in 'cellRec' module (0xae2ba4)
 LDR: ! Imported function 'sceNpTrophyRegisterContext' in 'sceNpTrophy' module (0xae2bc4)
 LDR: ! Imported function 'sceNpTrophyCreateHandle' in 'sceNpTrophy' module (0xae2be4)
 LDR: ! Imported function 'sceNpTrophySetSoundLevel' in 'sceNpTrophy' module (0xae2c04)
@@ -442,24 +548,21 @@ LDR: ! Imported function 'cellJpgDecCreate' in 'cellJpgDec' module (0xae2f64)
 LDR: ! Imported function 'cellJpgDecDecodeData' in 'cellJpgDec' module (0xae2f84)
 LDR: ! Imported function 'cellJpgDecDestroy' in 'cellJpgDec' module (0xae2fa4)
 LDR: ! Imported function 'cellJpgDecSetParameter' in 'cellJpgDec' module (0xae2fc4)
-LDR: E Unimplemented function 'UCS2stoUTF8s' in 'cellL10n' module (0xae2fe4)
-LDR: E Unimplemented function 'UTF8stoUCS2s' in 'cellL10n' module (0xae3004)
-LDR: W Unknown module 'cellPhotoUtility'
-LDR: E Unimplemented function 'cellPhotoExportInitialize2' in 'cellPhotoUtility' module (0xae3024)
-LDR: E Unimplemented function 'cellPhotoExportFromFile' in 'cellPhotoUtility' module (0xae3044)
-LDR: E Unimplemented function 'cellPhotoExportFinalize' in 'cellPhotoUtility' module (0xae3064)
-LDR: W Unknown module 'cellJpgEnc'
-LDR: E Unimplemented function 'cellJpgEncQueryAttr' in 'cellJpgEnc' module (0xae3084)
-LDR: E Unimplemented function 'cellJpgEncWaitForInput' in 'cellJpgEnc' module (0xae30a4)
-LDR: E Unimplemented function 'cellJpgEncGetStreamInfo' in 'cellJpgEnc' module (0xae30c4)
-LDR: E Unimplemented function 'cellJpgEncEncodePicture2' in 'cellJpgEnc' module (0xae30e4)
-LDR: E Unimplemented function 'cellJpgEncClose' in 'cellJpgEnc' module (0xae3104)
-LDR: E Unimplemented function 'cellJpgEncWaitForOutput' in 'cellJpgEnc' module (0xae3124)
-LDR: E Unimplemented function 'cellJpgEncOpen' in 'cellJpgEnc' module (0xae3144)
-LDR: W Unknown module 'cellSysutilNpEula'
-LDR: E Unimplemented function 'Unknown func id: 0x59d1629a' in 'cellSysutilNpEula' module (0xae3164)
-LDR: E Unimplemented function 'Unknown func id: 0x6599500d' in 'cellSysutilNpEula' module (0xae3184)
-LDR: W Unknown module 'sceNpUtil'
+LDR: ! Imported function 'UCS2stoUTF8s' in 'cellL10n' module (0xae2fe4)
+LDR: ! Imported function 'UTF8stoUCS2s' in 'cellL10n' module (0xae3004)
+LDR: ! Imported function 'cellPhotoExportInitialize2' in 'cellPhotoUtility' module (0xae3024)
+LDR: ! Imported function 'cellPhotoExportFromFile' in 'cellPhotoUtility' module (0xae3044)
+LDR: ! Imported function 'cellPhotoExportFinalize' in 'cellPhotoUtility' module (0xae3064)
+LDR: ! Imported function 'cellJpgEncQueryAttr' in 'cellJpgEnc' module (0xae3084)
+LDR: ! Imported function 'cellJpgEncWaitForInput' in 'cellJpgEnc' module (0xae30a4)
+LDR: ! Imported function 'cellJpgEncGetStreamInfo' in 'cellJpgEnc' module (0xae30c4)
+LDR: ! Imported function 'cellJpgEncEncodePicture2' in 'cellJpgEnc' module (0xae30e4)
+LDR: ! Imported function 'cellJpgEncClose' in 'cellJpgEnc' module (0xae3104)
+LDR: ! Imported function 'cellJpgEncWaitForOutput' in 'cellJpgEnc' module (0xae3124)
+LDR: ! Imported function 'cellJpgEncOpen' in 'cellJpgEnc' module (0xae3144)
+LDR: E Unknown module 'cellSysutilNpEula'
+LDR: E Unknown function '0x59D1629A' in 'cellSysutilNpEula' module (0xae3164)
+LDR: E Unknown function '0x6599500D' in 'cellSysutilNpEula' module (0xae3184)
 LDR: ! Imported function 'sceNpUtilBandwidthTestShutdown' in 'sceNpUtil' module (0xae31a4)
 LDR: ! Imported function 'sceNpUtilBandwidthTestInitStart' in 'sceNpUtil' module (0xae31c4)
 LDR: ! Imported function 'sceNpUtilBandwidthTestGetStatus' in 'sceNpUtil' module (0xae31e4)
@@ -495,59 +598,30 @@ LDR: ! Imported function 'sys_mmapper_map_memory' in 'sysPrxForUser' module (0xa
 LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0xae35a4)
 LDR: ! Imported function 'sys_lwcond_signal_all' in 'sysPrxForUser' module (0xae35c4)
 LDR: ! Imported function 'sys_lwcond_signal' in 'sysPrxForUser' module (0xae35e4)
-HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x10d4000, user_size=0x164)
+MEM: ! Thread Local Storage initialized (g_tls_start=0x10d6000, user_size=0x164)
 *** TLS segment addr: 0x00e12ef8
 *** TLS segment size: 0x00000008
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d2b30, attr_addr=0xb92000)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 3
-HLE: W {PPU[1] Thread (main_thread)[0x00ace360]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fc04)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d2938, attr_addr=0xb92000)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 4
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d20c8, attr_addr=0xb92000)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 5
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d20f0, attr_addr=0xb92000)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 6
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d2118, attr_addr=0xb92000)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 7
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d2000, attr_addr=0xb92000)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 8
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d2028, attr_addr=0xb92000)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 9
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d2050, attr_addr=0xb92000)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 10
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d2078, attr_addr=0xb92000)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 11
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d20a0, attr_addr=0xb92000)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lc_mtx] (attribute=0x12): sq_id = 12
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d2c78, attr_addr=0xe1cb98)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lgcmtx] (attribute=0x12): sq_id = 13
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d2bf8, attr_addr=0xe1cb98)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lgcmtx] (attribute=0x12): sq_id = 14
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10d2c38, attr_addr=0xe1cba8)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [_lgcmtx] (attribute=0x22): sq_id = 15
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x10a0e30, attr_addr=0xd003fbc0)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [] (attribute=0x22): sq_id = 16
-HLE: W {PPU[1] Thread (main_thread)[0x008fd6a0]} sys_mutex: *** mutex created [FileSv] (protocol=0x1, recursive=false): id = 17
-HLE: W {PPU[1] Thread (main_thread)[0x00abe340]} sys_time: sys_time_get_timezone(timezone_addr=0xd003fb20, summertime_addr=0xd003fb24)
-HLE: W {PPU[1] Thread (main_thread)[0x00abe340]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (main_thread)[0x00abe340]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (main_thread)[0x00ac50ac]} sys_time: sys_time_get_timezone(timezone_addr=0xd003fa70, summertime_addr=0xd003fa74)
-HLE: W {PPU[1] Thread (main_thread)[0x00ac50ac]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (main_thread)[0x00ac50ac]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (main_thread)[0x00abfdb0]} sys_time: sys_time_get_timezone(timezone_addr=0xd003fb20, summertime_addr=0xd003fb24)
-HLE: W {PPU[1] Thread (main_thread)[0x00abfdb0]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (main_thread)[0x00abfdb0]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (main_thread)[0x00ac50ac]} sys_time: sys_time_get_timezone(timezone_addr=0xd003fa70, summertime_addr=0xd003fa74)
-HLE: W {PPU[1] Thread (main_thread)[0x00ac50ac]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (main_thread)[0x00ac50ac]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (main_thread)[0x00abe2ec]} sys_time: sys_time_get_timezone(timezone_addr=0xd003fb20, summertime_addr=0xd003fb24)
-HLE: W {PPU[1] Thread (main_thread)[0x00abe2ec]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (main_thread)[0x00abe2ec]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (main_thread)[0x00abfdb0]} sys_time: sys_time_get_timezone(timezone_addr=0xd003fb20, summertime_addr=0xd003fb24)
-HLE: W {PPU[1] Thread (main_thread)[0x00abfdb0]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[1] Thread (main_thread)[0x00abfdb0]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: sys_lwmutex_create(lwmutex_addr=0x1028880, attr_addr=0xd003fb40)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae32e4]} sys_lwmutex: *** lwmutex created [ps3HDDL] (attribute=0x12): sq_id = 18
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d2b30, attr=*0xb92000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ace360]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fc04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d2938, attr=*0xb92000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d20c8, attr=*0xb92000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d20f0, attr=*0xb92000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d2118, attr=*0xb92000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d2000, attr=*0xb92000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d2028, attr=*0xb92000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d2050, attr=*0xb92000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d2078, attr=*0xb92000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d20a0, attr=*0xb92000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d2c78, attr=*0xe1cb98)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d2bf8, attr=*0xe1cb98)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10d2c38, attr=*0xe1cba8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x10a0e30, attr=*0xd003fbc0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x008fd6a0]} sys_mutex: sys_mutex_create(mutex_id=*0x1028920, attr=*0xd003fba8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00abe340]} sys_time: sys_time_get_timezone(timezone=*0xd003fb20, summertime=*0xd003fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00abfdb0]} sys_time: sys_time_get_timezone(timezone=*0xd003fb20, summertime=*0xd003fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00abe2ec]} sys_time: sys_time_get_timezone(timezone=*0xd003fb20, summertime=*0xd003fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00abfdb0]} sys_time: sys_time_get_timezone(timezone=*0xd003fb20, summertime=*0xd003fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae32e4]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x1028880, attr=*0xd003fb40)
 TTY: \n
 TTY init: stdout ############################################################\n
 TTY: \n
@@ -580,17 +654,15 @@ TTY: \n
 TTY init: user 12 ###########################################################\n
 TTY: \n
 TTY init: user 13 ###########################################################\n
-HLE: W {PPU[1] Thread (main_thread)[0x004ef938]} sys_event: sys_event_queue_create(equeue_id_addr=0xf3ea5c, attr_addr=0xd003fb40, event_queue_key=0x0, size=16)
-HLE: W {PPU[1] Thread (main_thread)[0x004ef938]} sys_event: *** event_queue created [TWITTER] (protocol=0x2, type=0x1, key=0x0, size=0x10): id = 19
-HLE: W {PPU[1] Thread (main_thread)[0x004ef954]} sys_event: sys_event_port_create(eport_id_addr=0xf3ea60, port_type=0x1, name=0x76543210)
-HLE: W {PPU[1] Thread (main_thread)[0x004ef954]} sys_event: *** sys_event_port created: id = 20, name=0x76543210
-HLE: W {PPU[1] Thread (main_thread)[0x004ef964]} sys_event: sys_event_port_connect_local(eport_id=20, equeue_id=19)
-HLE: ! {PPU[1] Thread (main_thread)[0x00ae3264]} sys_ppu_thread: *** New PPU Thread [Twitter Thread] (joinable, entry=0xdf28c8): id = 21
-HLE: W {PPU[1] Thread (main_thread)[0x00173c10]} sys_event: sys_event_queue_create(equeue_id_addr=0xebd5b0, attr_addr=0xd003fbc0, event_queue_key=0x0, size=127)
-HLE: W {PPU[1] Thread (main_thread)[0x00173c10]} sys_event: *** event_queue created [] (protocol=0x1, type=0x1, key=0x0, size=0x7f): id = 22
-HLE: W {PPU[1] Thread (main_thread)[0x00173c44]} sys_event: sys_event_port_create(eport_id_addr=0xebd5b4, port_type=0x1, name=0x0)
-HLE: W {PPU[1] Thread (main_thread)[0x00173c44]} sys_event: *** sys_event_port created: id = 23, name=0x100000017
-HLE: W {PPU[1] Thread (main_thread)[0x00173c6c]} sys_event: sys_event_port_connect_local(eport_id=23, equeue_id=22)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004ef938]} sys_event: sys_event_queue_create(equeue_id=*0xf3ea5c, attr=*0xd003fb40, event_queue_key=0x0, size=16)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004ef954]} sys_event: sys_event_port_create(eport_id=*0xf3ea60, port_type=1, name=0x76543210)
+HLE: W {PPU[0x1] Thread (main_thread)[0x004ef964]} sys_event: sys_event_port_connect_local(eport_id=0x14, equeue_id=0x13)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae3264]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0xf3e380, entry=0xdf28c8, arg=0x0, prio=2500, stacksize=0x8000, flags=0x1, threadname=*0xb46dd0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae3264]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0xf3e380, param=*0xd003fac0, arg=0x0, unk=0x0, prio=2500, stacksize=0x8000, flags=0x1, threadname=*0xb46dd0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae3264]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x15)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00173c10]} sys_event: sys_event_queue_create(equeue_id=*0xebd5b0, attr=*0xd003fbc0, event_queue_key=0x0, size=127)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00173c44]} sys_event: sys_event_port_create(eport_id=*0xebd5b4, port_type=1, name=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00173c6c]} sys_event: sys_event_port_connect_local(eport_id=0x17, equeue_id=0x16)
 TTY: -
 TTY: -
 TTY: -
@@ -696,9 +768,9 @@ TTY: e
 TTY: r
 TTY: '
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000a: CELL_SYSMODULE_SPURS)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000a: CELL_SYSMODULE_SPURS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -729,9 +801,9 @@ TTY: r
 TTY: s
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0017: CELL_SYSMODULE_IO)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0017: CELL_SYSMODULE_IO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -759,9 +831,9 @@ TTY: I
 TTY: O
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000d: CELL_SYSMODULE_SYNC)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000d: CELL_SYSMODULE_SYNC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -791,9 +863,9 @@ TTY: n
 TTY: c
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0011: CELL_SYSMODULE_AUDIO)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0011: CELL_SYSMODULE_AUDIO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -824,9 +896,9 @@ TTY: i
 TTY: o
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x001c: CELL_SYSMODULE_USBD)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x001c: CELL_SYSMODULE_USBD)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -856,9 +928,9 @@ TTY: B
 TTY: D
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -886,9 +958,9 @@ TTY: F
 TTY: S
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0000: CELL_SYSMODULE_NET)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0000: CELL_SYSMODULE_NET)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -917,9 +989,9 @@ TTY: E
 TTY: T
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0014: CELL_SYSMODULE_NETCTL)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0014: CELL_SYSMODULE_NETCTL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -951,9 +1023,9 @@ TTY: T
 TTY: L
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0015: CELL_SYSMODULE_SYSUTIL)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0015: CELL_SYSMODULE_SYSUTIL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -986,9 +1058,9 @@ TTY: I
 TTY: L
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0009: CELL_SYSMODULE_RTC)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0009: CELL_SYSMODULE_RTC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1017,9 +1089,9 @@ TTY: T
 TTY: C
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0001: CELL_SYSMODULE_HTTP)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0001: CELL_SYSMODULE_HTTP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1049,9 +1121,9 @@ TTY: T
 TTY: P
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0002: CELL_SYSMODULE_HTTP_UTIL)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0002: CELL_SYSMODULE_HTTP_UTIL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1086,9 +1158,9 @@ TTY: I
 TTY: L
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0004: CELL_SYSMODULE_HTTPS)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0004: CELL_SYSMODULE_HTTPS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1119,9 +1191,9 @@ TTY: P
 TTY: S
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0035: CELL_SYSMODULE_SYSUTIL_REC)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0035: CELL_SYSMODULE_SYSUTIL_REC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1150,9 +1222,9 @@ TTY: E
 TTY: C
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0xf035: CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0xf035: CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1184,9 +1256,9 @@ TTY: H
 TTY: Y
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1216,9 +1288,9 @@ TTY: M
 TTY: E
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0024: CELL_SYSMODULE_VDEC_MPEG2)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0024: CELL_SYSMODULE_VDEC_MPEG2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1249,9 +1321,9 @@ TTY: G
 TTY: 2
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x003c: CELL_SYSMODULE_VDEC_DIVX)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x003c: CELL_SYSMODULE_VDEC_DIVX)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1281,9 +1353,9 @@ TTY: V
 TTY: X
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1311,9 +1383,9 @@ TTY: N
 TTY: P
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0038: CELL_SYSMODULE_SYSUTIL_NP2)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0038: CELL_SYSMODULE_SYSUTIL_NP2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1342,9 +1414,9 @@ TTY: P
 TTY: 2
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0045: CELL_SYSMODULE_SYSUTIL_NP_TUS)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0045: CELL_SYSMODULE_SYSUTIL_NP_TUS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1373,27 +1445,27 @@ TTY: U
 TTY: S
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x000a: CELL_SYSMODULE_SPURS)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0017: CELL_SYSMODULE_IO)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x000d: CELL_SYSMODULE_SYNC)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0011: CELL_SYSMODULE_AUDIO)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x001c: CELL_SYSMODULE_USBD)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x000e: CELL_SYSMODULE_FS)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0000: CELL_SYSMODULE_NET)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0014: CELL_SYSMODULE_NETCTL)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0015: CELL_SYSMODULE_SYSUTIL)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0009: CELL_SYSMODULE_RTC)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0001: CELL_SYSMODULE_HTTP)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0002: CELL_SYSMODULE_HTTP_UTIL)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0004: CELL_SYSMODULE_HTTPS)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0035: CELL_SYSMODULE_SYSUTIL_REC)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0xf035: CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0024: CELL_SYSMODULE_VDEC_MPEG2)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x003c: CELL_SYSMODULE_VDEC_DIVX)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0038: CELL_SYSMODULE_SYSUTIL_NP2)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0045: CELL_SYSMODULE_SYSUTIL_NP_TUS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x000a: CELL_SYSMODULE_SPURS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0017: CELL_SYSMODULE_IO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x000d: CELL_SYSMODULE_SYNC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0011: CELL_SYSMODULE_AUDIO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x001c: CELL_SYSMODULE_USBD)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x000e: CELL_SYSMODULE_FS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0000: CELL_SYSMODULE_NET)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0014: CELL_SYSMODULE_NETCTL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0015: CELL_SYSMODULE_SYSUTIL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0009: CELL_SYSMODULE_RTC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0001: CELL_SYSMODULE_HTTP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0002: CELL_SYSMODULE_HTTP_UTIL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0004: CELL_SYSMODULE_HTTPS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0035: CELL_SYSMODULE_SYSUTIL_REC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0xf035: CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0024: CELL_SYSMODULE_VDEC_MPEG2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x003c: CELL_SYSMODULE_VDEC_DIVX)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0038: CELL_SYSMODULE_SYSUTIL_NP2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a64]} cellSysmodule: cellSysmoduleUnloadModule(id=0x0045: CELL_SYSMODULE_SYSUTIL_NP_TUS)
 TTY: R
 TTY: e
 TTY: q
@@ -1561,9 +1633,9 @@ TTY: e
 TTY: r
 TTY: '
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000a: CELL_SYSMODULE_SPURS)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000a: CELL_SYSMODULE_SPURS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1594,9 +1666,9 @@ TTY: r
 TTY: s
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0017: CELL_SYSMODULE_IO)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0017: CELL_SYSMODULE_IO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1624,9 +1696,9 @@ TTY: I
 TTY: O
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000d: CELL_SYSMODULE_SYNC)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000d: CELL_SYSMODULE_SYNC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1656,9 +1728,9 @@ TTY: n
 TTY: c
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0011: CELL_SYSMODULE_AUDIO)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0011: CELL_SYSMODULE_AUDIO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1689,9 +1761,9 @@ TTY: i
 TTY: o
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x001c: CELL_SYSMODULE_USBD)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x001c: CELL_SYSMODULE_USBD)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1721,9 +1793,9 @@ TTY: B
 TTY: D
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1751,9 +1823,9 @@ TTY: F
 TTY: S
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0000: CELL_SYSMODULE_NET)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0000: CELL_SYSMODULE_NET)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1782,9 +1854,9 @@ TTY: E
 TTY: T
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0014: CELL_SYSMODULE_NETCTL)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0014: CELL_SYSMODULE_NETCTL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1816,9 +1888,9 @@ TTY: T
 TTY: L
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0015: CELL_SYSMODULE_SYSUTIL)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0015: CELL_SYSMODULE_SYSUTIL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1851,9 +1923,9 @@ TTY: I
 TTY: L
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0009: CELL_SYSMODULE_RTC)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0009: CELL_SYSMODULE_RTC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1882,9 +1954,9 @@ TTY: T
 TTY: C
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0001: CELL_SYSMODULE_HTTP)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0001: CELL_SYSMODULE_HTTP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1914,9 +1986,9 @@ TTY: T
 TTY: P
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0002: CELL_SYSMODULE_HTTP_UTIL)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0002: CELL_SYSMODULE_HTTP_UTIL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1951,9 +2023,9 @@ TTY: I
 TTY: L
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0004: CELL_SYSMODULE_HTTPS)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0004: CELL_SYSMODULE_HTTPS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -1984,9 +2056,9 @@ TTY: P
 TTY: S
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0035: CELL_SYSMODULE_SYSUTIL_REC)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0035: CELL_SYSMODULE_SYSUTIL_REC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -2015,9 +2087,9 @@ TTY: E
 TTY: C
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0xf035: CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0xf035: CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -2049,9 +2121,9 @@ TTY: H
 TTY: Y
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -2081,9 +2153,9 @@ TTY: M
 TTY: E
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -2111,9 +2183,9 @@ TTY: N
 TTY: P
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0038: CELL_SYSMODULE_SYSUTIL_NP2)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0038: CELL_SYSMODULE_SYSUTIL_NP2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -2142,9 +2214,9 @@ TTY: P
 TTY: 2
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0045: CELL_SYSMODULE_SYSUTIL_NP_TUS)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0045: CELL_SYSMODULE_SYSUTIL_NP_TUS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -2173,9 +2245,9 @@ TTY: U
 TTY: S
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0044: CELL_SYSMODULE_SYSUTIL_NP_COMMERCE2)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0044: CELL_SYSMODULE_SYSUTIL_NP_COMMERCE2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -2210,9 +2282,9 @@ TTY: E
 TTY: 2
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0018: CELL_SYSMODULE_PNGDEC)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0018: CELL_SYSMODULE_PNGDEC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -2249,9 +2321,9 @@ TTY: e
 TTY: r
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000f: CELL_SYSMODULE_JPGDEC)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x000f: CELL_SYSMODULE_JPGDEC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -2288,9 +2360,9 @@ TTY: e
 TTY: r
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0022: CELL_SYSMODULE_MIC)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0022: CELL_SYSMODULE_MIC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -2319,9 +2391,9 @@ TTY: i
 TTY: c
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0046: CELL_SYSMODULE_VOICE)
-HLE: W {PPU[1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0x0046: CELL_SYSMODULE_VOICE)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911db4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb38)
 TTY:  
 TTY:  
 TTY:  
@@ -2352,12 +2424,9 @@ TTY: c
 TTY: e
 TTY: )
 TTY: \n
-HLE: W {PPU[1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd003fb30)
-HLE: W {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0xf044: UNKNOWN MODULE)
-HLE: E {PPU[1] Thread (main_thread)[0x00ae1a84]} cellSysmodule error: cellSysmoduleLoadModule() failed: unknown module (id=0xf044)
-G: E {PPU[1] Thread (main_thread)[0x00911e48]} Exception: Trap! (tw 0x1f, r1, r1)
-G: E {PPU[1] Thread (main_thread)[0x00911e48]} Information: is_alive=1, m_last_syscall=0x0 ()
-G: W {PPU[1] Thread (main_thread)[0x00911e48]} Registers:
+HLE: W {PPU[0x1] Thread (main_thread)[0x00911e30]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003fb30)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00ae1a84]} cellSysmodule: cellSysmoduleLoadModule(id=0xf044: UNKNOWN MODULE)
+G: ! {PPU[0x1] Thread (main_thread)[0x00911e48]} Registers:
 =========
 GPR[0] = 0xf044
 GPR[1] = 0xd003fac0
@@ -2372,13 +2441,13 @@ GPR[9] = 0xffff
 GPR[10] = 0x10d20e0
 GPR[11] = 0x160
 GPR[12] = 0x0
-GPR[13] = 0x10db030
+GPR[13] = 0x10dd030
 GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
+GPR[15] = 0x10d4000
+GPR[16] = 0x10d3000
 GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
+GPR[18] = 0xd5f000
+GPR[19] = 0x100000
 GPR[20] = 0x0
 GPR[21] = 0x1097e00
 GPR[22] = 0xafc408
@@ -2424,45 +2493,50 @@ FPR[29] = 0
 FPR[30] = 0
 FPR[31] = 0
 VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000001000000010000000100000001 [x: 1.4013e-045 y: 1.4013e-045 z: 1.4013e-045 w: 1.4013e-045]
+VPR[1] = 0x00000001000000010000000100000001 [x: 1.4013e-45 y: 1.4013e-45 z: 1.4013e-45 w: 1.4013e-45]
 VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[3] = 0xc040000040400000c0000000bf800000 [x: -3 y: 3 z: -2 w: -1]
 VPR[4] = 0x00000000000000003f80000000000000 [x: 0 y: 0 z: 1 w: 0]
 VPR[5] = 0x3f800000000000000000000000000000 [x: 1 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000ffffffff0000000000000000 [x: 0 y: -1.#QNAN z: 0 w: 0]
-VPR[9] = 0xffffffff000000000000000000000000 [x: -1.#QNAN y: 0 z: 0 w: 0]
+VPR[6] = 0x00000000560f12bf00000000000098fe [x: 0 y: 3.93277e+13 z: 0 w: 5.48833e-41]
+VPR[7] = 0x00000000560f12bf00000000560f12fe [x: 0 y: 3.93277e+13 z: 0 w: 3.93279e+13]
+VPR[8] = 0x00000000ffffffff0000000000000000 [x: 0 y: -nan z: 0 w: 0]
+VPR[9] = 0xffffffff000000000000000000000000 [x: -nan y: 0 z: 0 w: 0]
 VPR[10] = 0x3f800000000000000000000000000000 [x: 1 y: 0 z: 0 w: 0]
 VPR[11] = 0x40000000400000004000000040000000 [x: 2 y: 2 z: 2 w: 2]
-VPR[12] = 0x00000000ffffffff0000000000000000 [x: 0 y: -1.#QNAN z: 0 w: 0]
+VPR[12] = 0x00000000ffffffff0000000000000000 [x: 0 y: -nan z: 0 w: 0]
 VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[15] = 0x00000000560f12bf0000000000006ca3 [x: 0 y: 3.93277e+13 z: 0 w: 3.89715e-41]
+VPR[16] = 0x00000000560f12bf00000000560f12fe [x: 0 y: 3.93277e+13 z: 0 w: 3.93279e+13]
+VPR[17] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[18] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[19] = 0x0000000000002b0d0000000000000062 [x: 0 y: 1.54437e-41 z: 0 w: 1.37327e-43]
+VPR[20] = 0x00000000560f12fe00000000560f12bf [x: 0 y: 3.93279e+13 z: 0 w: 3.93277e+13]
+VPR[21] = 0x000000000000000000000000560f12bf [x: 0 y: 0 z: 0 w: 3.93277e+13]
 VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[23] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[24] = 0x00000000560f12bf0000000000002bba [x: 0 y: 3.93277e+13 z: 0 w: 1.56861e-41]
+VPR[25] = 0x00000000560f12bf00000000560f12fe [x: 0 y: 3.93277e+13 z: 0 w: 3.93279e+13]
+VPR[26] = 0x0000787270732e636564787461626900 [x: 4.32076e-41 y: 3.01044e+29 z: 6.74326e+22 w: 2.61033e+20]
+VPR[27] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[28] = 0x0000000000017ed60000000000000062 [x: 0 y: 1.37336e-40 z: 0 w: 1.37327e-43]
+VPR[29] = 0x00000000560f12fe00000000560f12bf [x: 0 y: 3.93279e+13 z: 0 w: 3.93277e+13]
+VPR[30] = 0x656478746162690000000000560f12bf [x: 6.74326e+22 y: 2.61033e+20 z: 0 w: 3.93277e+13]
+VPR[31] = 0x000000000000000000787270732e3263 [x: 0 y: 0 z: 1.10613e-38 w: 1.38013e+31]
 CR = 0x48004088
 LR = 0x911e3c
 CTR = 0x0
-XER = 0x20000000 [CA=270582939649 | OV=0 | SO=140694538682368]
-FPSCR = 0x82002000 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=2 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=1 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=1]
+XER = 0x20000000 [CA=1 | OV=8589934592 | SO=0]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
-HLE: ! {PPU[2] Thread (Callback Thread)[0x00000000]} CallbackManager thread aborted
-HLE: W {PPU[21] Thread (Twitter Thread)[0x004f08a0]} sys_event: sys_event_queue_receive(equeue=19) aborted
-PPU: ! {PPU Recompilation Engine} PPU LLVM Recompilation thread exiting.
-HLE: ! All threads stopped...
-MEM: ! Closing memory...
+G: E {PPU[0x1] Thread (main_thread)[0x00911e48]} Exception: 
+(in file Emu\Cell\PPUInterpreter.cpp:1700, in function ppu_interpreter::TW)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+HLE: S {PPU[0x15] Thread (Twitter Thread)[0x004f08a0]} Last syscall: 130 (sys_event_queue_receive)
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
+G: ! {PPU[0x15] Thread (Twitter Thread)[0x004f08a0]} Thread aborted
+G: ! All threads stopped...
+G: ! Objects cleared...
+G: ! Stopping emulator...

@@ -1,9 +1,8 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-G: ! RPCS3 0.0.0.5 v0.0.0.5-2533-g467bea3
+G: ! RPCS3 v0.0.0.6-3827-a6beb0e
 G: ! 
-G: ! Stopping emulator...
-LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01273-[Start The Party! Save the World]/PS3_GAME/USRDIR/BOOT.BIN'...
-G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01273-[Start The Party! Save the World]/PS3_GAME/dev_bdvd.path', 0x1) failed: error 0x2
+LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\BCES01273-[Start The Party!™ Save the World]\PS3_GAME\USRDIR\BOOT.BIN'...
+G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01273-[Start The Party!™ Save the World]/PS3_GAME/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: ! 
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
@@ -11,24 +10,120 @@ LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
 LDR: ! /host_root/ -> 
 LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
-LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01273-[Start The Party! Save the World]/
+LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01273-[Start The Party!™ Save the World]/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! 
-LDR: ! Settings:
-LDR: ! CPU: PPU Interpreter 2
-LDR: ! SPU: SPU Recompiler (ASMJIT)
-LDR: ! Renderer: DirectX 12
-LDR: ! D3D Adapter: Default
-LDR: ! Resolution: 1280x720
-LDR: ! Write Depth Buffer: No
-LDR: ! Write Color Buffers: No
-LDR: ! Read Color Buffer: No
-LDR: ! Audio Out: XAudio2
-LDR: ! Log Everything: No
-LDR: ! RSX Logging: No
 LDR: ! 
 LDR: ! Title: Start The Party!™ Save the World
 LDR: ! Serial: BCES01273
+LDR: ! Used configuration: 'rpcs3.new.ini'
+LDR: ! 
+LDR: ! [gui]
+MainFrameAui=layout2|name~Pane_0;caption~Game List;state~4196348;dir~5;layer~0;row~0;pos~0;prop~100000;bestw~283;besth~279;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~-1;floaty~-1;floatw~-1;floath~-1|name~Pane_1;caption~Log;state~4196348;dir~4;layer~0;row~1;pos~1;prop~99647;bestw~600;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~52;floaty~489;floatw~616;floath~339|name~Pane_2;caption~Debugger;state~4196348;dir~4;layer~0;row~1;pos~0;prop~100353;bestw~400;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~47;floaty~117;floatw~416;floath~339|dock_size(5,0,0)~265|dock_size(4,0,1)~400|
+
+[system]
+Emulation dir path=
+Language=2
+Use path below as EmulationDir=false
+
+[rsx/opengl]
+Write Color Buffers=false
+Write Depth Buffer=false
+Read Color Buffers=false
+Read Depth Buffer=false
+
+[gui/size]
+width=987
+height=629
+
+[gui/position]
+horizontal=5
+vertical=397
+
+[core]
+PPU Decoder=interpreter2
+Load liblv2.sprx=false
+Hook static functions=false
+SPU Decoder=recompiler_asmjit
+
+[rsx]
+VSync=true
+Aspect ratio=16x9
+Renderer=DX12
+Resolution=1280x720
+Frame limit=Auto
+Log shader programs=false
+3D Monitor=false
+
+[core/llvm]
+Compiled blocks exclusion=false
+Excluded block range min=200
+Excluded block range max=250
+Compilation threshold=1000
+
+[audio]
+Audio Out=XAudio2
+Dump to file=false
+Convert to 16 bit=false
+
+[io]
+Pad Handler=windows
+Camera=connected
+Camera type=PlayStationEye
+Mouse Handler=null
+Keyboard Handler=null
+
+[rsx/d3d12]
+D3D Adaptater=0
+Debug Output=false
+Debug overlay=true
+
+[io/pad]
+Circle=76
+Left Analog Stick Left=314
+Left Analog Stick Down=317
+Left Analog Stick Right=316
+R2=69
+Right=68
+Triangle=73
+Right Analog Stick Right=312
+Down=83
+Right Analog Stick Down=367
+Left Analog Stick Up=315
+Up=90
+Right Analog Stick Up=366
+Left=81
+Right Analog Stick Left=313
+Start=13
+Select=32
+Square=74
+Cross=75
+R1=51
+R3=67
+L1=49
+L2=65
+L3=87
+
+[misc]
+Exit RPCS3 when process finishes=false
+Always start after boot=true
+Use default configuration=true
+
+[misc/log]
+RSX Logging=false
+Log Level=Errors
+Log everything=false
+Save TTY output to file=false
+
+[misc/net]
+Connection status=Connecting
+Network adapter=0
+
+[misc/debug]
+Auto Pause at System Call=false
+Auto Pause at Function Call=false
+
+
 LDR: ! Elf path: /dev_bdvd/PS3_GAME/USRDIR/BOOT.BIN
 LDR: ! 
 LDR: ! loader::init() failed: Broken file
@@ -388,38 +483,38 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00518f68]} sys_semaphore: sys_semaphore_create(sem_id=*0x208693d4, attr=*0xd000f840, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x204335d0, attr=*0xd000f900)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0036997c]} sys_semaphore: sys_semaphore_create(sem_id=*0x20433668, attr=*0xd000f910, initial_val=0, max_val=2049)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} cellSpurs: cellSpursInitialize(spurs=*0x2268480, nSpus=5, spuPriority=200, ppuPriority=1000, exitIfNoWork=2864384)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} cellSpurs: cellSpursInitialize(spurs=*0x2268480, nSpus=5, spuPriority=200, ppuPriority=1000, exitIfNoWork=-805242624)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x2268480, flags=0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f778, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_group_create(id=*0xd000f758, num=5, prio=200, attr=*0xd000f6c8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f6a0, group=0x4f, spu_num=0, img=*0x22691f0, attr=*0xd000f690, arg=*0xd000f6a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f798, attr=*0xd000f770, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_group_create(id=*0x22691b0, num=5, prio=200, attr=*0xd000f6d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_initialize(thread=*0x22691b4, group=0x4f, spu_num=0, img=*0x22691f0, attr=*0xd000f698, arg=*0xd000f6a8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f6a0, group=0x4f, spu_num=1, img=*0x22691f0, attr=*0xd000f690, arg=*0xd000f6a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_initialize(thread=*0x22691b8, group=0x4f, spu_num=1, img=*0x22691f0, attr=*0xd000f698, arg=*0xd000f6a8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f6a0, group=0x4f, spu_num=2, img=*0x22691f0, attr=*0xd000f690, arg=*0xd000f6a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_initialize(thread=*0x22691bc, group=0x4f, spu_num=2, img=*0x22691f0, attr=*0xd000f698, arg=*0xd000f6a8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f6a0, group=0x4f, spu_num=3, img=*0x22691f0, attr=*0xd000f690, arg=*0xd000f6a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_initialize(thread=*0x22691c0, group=0x4f, spu_num=3, img=*0x22691f0, attr=*0xd000f698, arg=*0xd000f6a8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f6a0, group=0x4f, spu_num=4, img=*0x22691f0, attr=*0xd000f690, arg=*0xd000f6a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_initialize(thread=*0x22691c4, group=0x4f, spu_num=4, img=*0x22691f0, attr=*0xd000f698, arg=*0xd000f6a8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2269230, attr=*0xd000f760)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2269248, lwmutex=*0x2269230, attr=*0xd000f770)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2269230, attr=*0xd000f5f8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2269248, lwmutex=*0x2269230, attr=*0xd000f600)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_event: sys_event_queue_create(equeue_id=*0x22691dc, attr=*0xd000f5f8, event_queue_key=0x0, size=42)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x4f, eq=0x57, req=0xffffffffffff0000, spup=*0x2268549)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618dfc]} sys_event: sys_event_port_create(eport_id=*0x22691e0, port_type=1, name=0x0)
@@ -435,7 +530,6 @@ HLE: E {PPU[0x1] Thread (main_thread)[0x01618bbc]} cellSpurs: cellSpursCreateJob
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618cbc]} cellSpurs: cellSpursJobGuardInitialize
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618efc]} cellSpurs: cellSpursRunJobChain
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618bdc]} cellSpurs: _cellSpursJobChainAttributeInitialize
-SPU: S {SPU[0x52] Thread (CellSpursKernel2)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618bbc]} cellSpurs: cellSpursCreateJobChainWithAttribute
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618cbc]} cellSpurs: cellSpursJobGuardInitialize
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618efc]} cellSpurs: cellSpursRunJobChain
@@ -477,7 +571,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0036bcb4]} sys_event: sys_event_port_con
 HLE: W {PPU[0x1] Thread (main_thread)[0x007da5c0]} sys_mutex: sys_mutex_create(mutex_id=*0xd000f710, attr=*0xd000f718)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x225a02c0, attr=*0xd000f6f0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x225a0260, entry=0x1d41c50, arg=0x225a026000000000, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f700)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225a0260, param=*0xd000f668, arg=0x225a026000000000, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f700)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225a0260, param=*0xd000f660, arg=0x225a026000000000, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f700)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x5f)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00369ec8]} sys_event: sys_event_queue_create(equeue_id=*0x2268400, attr=*0xd000f7e0, event_queue_key=0x92311294, size=127)
 HLE: E {PPU[0x5f] Thread (225a0260)[0x005a2f9c]} sys_ppu_thread TODO: sys_ppu_thread_rename(thread_id=0x5f, name=*0x20701870)
@@ -486,13 +580,13 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x01618e1c]} sys_spu: sys_spu_thread_group
 HLE: W {PPU[0x1] Thread (main_thread)[0x007da5c0]} sys_mutex: sys_mutex_create(mutex_id=*0xd000f650, attr=*0xd000f658)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x225a03b0, attr=*0xd000f630)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x225a0350, entry=0x1d41c50, arg=0x225a035000000000, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f640)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225a0350, param=*0xd000f5a8, arg=0x225a035000000000, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f640)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225a0350, param=*0xd000f5a0, arg=0x225a035000000000, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f640)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x63)
 HLE: E {PPU[0x63] Thread (225a0350)[0x005a2f9c]} sys_ppu_thread TODO: sys_ppu_thread_rename(thread_id=0x63, name=*0x206506b0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x007da5c0]} sys_mutex: sys_mutex_create(mutex_id=*0xd000f650, attr=*0xd000f658)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x225a04a0, attr=*0xd000f630)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x225a0440, entry=0x1d41c50, arg=0x225a044000000000, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f640)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225a0440, param=*0xd000f5a8, arg=0x225a044000000000, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f640)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225a0440, param=*0xd000f5a0, arg=0x225a044000000000, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f640)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x66)
 HLE: E {PPU[0x66] Thread (225a0440)[0x005a2f9c]} sys_ppu_thread TODO: sys_ppu_thread_rename(thread_id=0x66, name=*0x206506f0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x204e6c70, attr=*0xd000f930)
@@ -513,7 +607,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x007da5c0]} sys_mutex: sys_mutex_create(mutex_id=*0xd000f7d0, attr=*0xd000f7d8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x225a0670, attr=*0xd000f7b0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x225a0610, entry=0x1d41c50, arg=0x225a061000000000, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f7c0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225a0610, param=*0xd000f728, arg=0x225a061000000000, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f7c0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225a0610, param=*0xd000f720, arg=0x225a061000000000, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f7c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x76)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01619f9c]} cellSysmodule: cellSysmoduleInitialize()
 HLE: E {PPU[0x76] Thread (225a0610)[0x005a2f9c]} sys_ppu_thread TODO: sys_ppu_thread_rename(thread_id=0x76, name=*0x20701f30)
@@ -528,8 +622,8 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00809c4c]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x201006dc, attr=*0xd000f3b0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x201006f8, attr=*0xd000f3c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a59c]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20100720, lwmutex=*0x201006f8, attr=*0xd000f3b0)
-HLE: E {PPU[0x76] Thread (225a0610)[0x0161909c]} cellSysutil TODO: cellSysCacheClear()
 HLE: W {PPU[0x1] Thread (main_thread)[0x00809c4c]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x20100b0c, attr=*0xd000f3b0)
+HLE: E {PPU[0x76] Thread (225a0610)[0x0161909c]} cellSysutil TODO: cellSysCacheClear()
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20100c20, attr=*0xd000f380)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20100c48, attr=*0xd000f380)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00809c4c]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x20100c6c, attr=*0xd000f370)
@@ -542,13 +636,13 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a59c]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20115c90, lwmutex=*0x20100d98, attr=*0xd000f370)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a59c]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20115ca8, lwmutex=*0x20100d98, attr=*0xd000f370)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20115ce8, entry=0x1d42bf0, arg=0x20115cb0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20115cb8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20115ce8, param=*0xd000f328, arg=0x20115cb0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20115cb8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20115ce8, param=*0xd000f320, arg=0x20115cb0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20115cb8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x8b)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20115d28, entry=0x1d42bf0, arg=0x20115cf0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20115cf8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20115d28, param=*0xd000f328, arg=0x20115cf0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20115cf8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20115d28, param=*0xd000f320, arg=0x20115cf0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20115cf8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x8c)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20100cd8, entry=0x1d42bf0, arg=0x20100ca0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x20100ca8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20100cd8, param=*0xd000f328, arg=0x20100ca0, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x20100ca8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20100cd8, param=*0xd000f320, arg=0x20100ca0, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x20100ca8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x8d)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20116120, attr=*0xd000f320)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x201161a8, attr=*0xd000f3c0)
@@ -567,20 +661,20 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a59c]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2012b790, lwmutex=*0x20116898, attr=*0xd000f370)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a59c]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2012b7a8, lwmutex=*0x20116898, attr=*0xd000f370)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2012b7e8, entry=0x1d42bf0, arg=0x2012b7b0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x2012b7b8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2012b7e8, param=*0xd000f328, arg=0x2012b7b0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x2012b7b8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2012b7e8, param=*0xd000f320, arg=0x2012b7b0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x2012b7b8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x9e)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2012b828, entry=0x1d42bf0, arg=0x2012b7f0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x2012b7f8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2012b828, param=*0xd000f328, arg=0x2012b7f0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x2012b7f8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2012b828, param=*0xd000f320, arg=0x2012b7f0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x2012b7f8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x9f)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x201167d8, entry=0x1d42bf0, arg=0x201167a0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x201167a8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201167d8, param=*0xd000f328, arg=0x201167a0, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x201167a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201167d8, param=*0xd000f320, arg=0x201167a0, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x201167a8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xa0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618b7c]} cellSpurs: _cellSpursTasksetAttributeInitialize(attribute=*0xd000f7f0, revision=1, skd_version=0x330000, args=0x0, priority=*0xd000f6e0, max_contention=8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618c9c]} cellSpurs: cellSpursTasksetAttributeSetName(attr=*0xd000f7f0, name=*0x175e5b0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618e3c]} cellSpurs: cellSpursCreateTasksetWithAttribute(spurs=*0x2268480, taskset=*0x225a1780, attr=*0xd000f7f0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618e3c]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd000f470, revision=1, sdkVersion=0x33, pm=*0x200, size=0x1e40, data=0x225a1780, priority=*0xd000f800, minCnt=0x8, maxCnt=0x8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618e3c]} cellSpurs: cellSpursWorkloadAttributeSetName(attr=*0xd000f470, nameClass=*0x0, nameInstance=*0x175e5b0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618e3c]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs=*0x2268480, wid=*0xd000f468, attr=*0xd000f470)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618e3c]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd000f468, revision=1, sdkVersion=0x33, pm=*0x200, size=0x1e40, data=0x225a1780, priority=*0xd000f800, minCnt=0x8, maxCnt=0x8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618e3c]} cellSpurs: cellSpursWorkloadAttributeSetName(attr=*0xd000f468, nameClass=*0x0, nameInstance=*0x175e5b0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618e3c]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs=*0x2268480, wid=*0xd000f460, attr=*0xd000f468)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618c7c]} cellSpurs: _cellSpursEventFlagInitialize(spurs=*0x2268480, taskset=*0x0, eventFlag=*0x225a3080, flagClearMode=0, flagDirection=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618d1c]} cellSpurs: cellSpursEventFlagAttachLv2EventQueue(eventFlag=*0x225a3080)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618d1c]} sys_event: sys_event_queue_create(equeue_id=*0xd000f668, attr=*0xd000f648, event_queue_key=0x0, size=1)
@@ -599,7 +693,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161875c]} cellGcmSys: _cellGcmInitBody(context=**0x2272d80, cmdSize=0x100000, ioSize=0xf300000, ioAddress=0x20000000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161875c]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161875c]} cellGcmSys: cellGcmInit(): 256MB io address space used
-RSX: ! {RSXThread} RSX thread started
+RSX: ! {rsx::thread} RSX thread started
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x204353d0, attr=*0xd000f1f0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x204355d0, attr=*0xd000f1f0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x204357d0, attr=*0xd000f1f0)
@@ -623,8 +717,6 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161897c]} cellGcmSys: cellGcmSetTileInf
 HLE: W {PPU[0x1] Thread (main_thread)[0x016187dc]} cellGcmSys: cellGcmBindTile(index=2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161897c]} cellGcmSys: cellGcmSetTileInfo(index=3, location=0, offset=18874368, size=7536640, pitch=10240, comp=7, base=230, bank=0)
 HLE: E {PPU[0x1] Thread (main_thread)[0x0161897c]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (7)
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 HLE: W {PPU[0x1] Thread (main_thread)[0x016187dc]} cellGcmSys: cellGcmBindTile(index=3)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161897c]} cellGcmSys: cellGcmSetTileInfo(index=4, location=0, offset=26411008, size=3801088, pitch=5120, comp=0, base=0, bank=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x016187dc]} cellGcmSys: cellGcmBindTile(index=4)
@@ -635,13 +727,13 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00235d38]} sys_semaphore: sys_semaphore_
 HLE: W {PPU[0x1] Thread (main_thread)[0x007da5c0]} sys_mutex: sys_mutex_create(mutex_id=*0xd000f7d0, attr=*0xd000f7d8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x225e7c40, attr=*0xd000f7b0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x225e7be0, entry=0x1d41c50, arg=0x225e7be000000000, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f7c0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225e7be0, param=*0xd000f728, arg=0x225e7be000000000, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f7c0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225e7be0, param=*0xd000f720, arg=0x225e7be000000000, unk=0x0, prio=0, stacksize=0x4000, flags=0x1, threadname=*0xd000f7c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xb2)
 HLE: E {PPU[0xb2] Thread (225e7be0)[0x005a2f9c]} sys_ppu_thread TODO: sys_ppu_thread_rename(thread_id=0xb2, name=*0x207028d0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x007da5c0]} sys_mutex: sys_mutex_create(mutex_id=*0xd000f860, attr=*0xd000f868)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x225e7cc0, attr=*0xd000f840)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x225e7c60, entry=0x1d41c50, arg=0x225e7c6000000000, prio=0, stacksize=0x20000, flags=0x1, threadname=*0xd000f850)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225e7c60, param=*0xd000f7b8, arg=0x225e7c6000000000, unk=0x0, prio=0, stacksize=0x20000, flags=0x1, threadname=*0xd000f850)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x225e7c60, param=*0xd000f7b0, arg=0x225e7c6000000000, unk=0x0, prio=0, stacksize=0x20000, flags=0x1, threadname=*0xd000f850)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xb5)
 HLE: E {PPU[0xb5] Thread (225e7c60)[0x005a2f9c]} sys_ppu_thread TODO: sys_ppu_thread_rename(thread_id=0xb5, name=*0x207b49e0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2012d420, attr=*0xd000f4b0)
@@ -672,16 +764,16 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161a59c]} sysPrxForUser: sys_lwcond_cre
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a59c]} sysPrxForUser: sys_lwcond_create(lwcond=*0x201439e8, lwmutex=*0x2012ea98, attr=*0xd000f500)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a59c]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20143a00, lwmutex=*0x2012ea98, attr=*0xd000f500)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20143a40, entry=0x1d42bf0, arg=0x20143a08, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20143a10)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20143a40, param=*0xd000f4b8, arg=0x20143a08, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20143a10)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20143a40, param=*0xd000f4b0, arg=0x20143a08, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20143a10)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xd1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20143a80, entry=0x1d42bf0, arg=0x20143a48, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20143a50)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20143a80, param=*0xd000f4b8, arg=0x20143a48, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20143a50)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20143a80, param=*0xd000f4b0, arg=0x20143a48, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20143a50)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xd2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20143ac0, entry=0x1d42bf0, arg=0x20143a88, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20143a90)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20143ac0, param=*0xd000f4b8, arg=0x20143a88, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20143a90)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20143ac0, param=*0xd000f4b0, arg=0x20143a88, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20143a90)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xd3)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2012e9d8, entry=0x1d42bf0, arg=0x2012e9a0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x2012e9a8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2012e9d8, param=*0xd000f4b8, arg=0x2012e9a0, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x2012e9a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2012e9d8, param=*0xd000f4b0, arg=0x2012e9a0, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x2012e9a8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xd4)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20144000, attr=*0xd000f8a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20144200, attr=*0xd000f910)
@@ -721,7 +813,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161a59c]} sysPrxForUser: sys_lwcond_cre
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x24be9b68, attr=*0xd000f6a8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a59c]} sysPrxForUser: sys_lwcond_create(lwcond=*0x24be9b88, lwmutex=*0x24be9b68, attr=*0xd000f6a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x24be9b60, entry=0x1d135d8, arg=0x24be9b58, prio=1000, stacksize=0x4000, flags=0x1, threadname=*0x1761860)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x24be9b60, param=*0xd000f628, arg=0x24be9b58, unk=0x0, prio=1000, stacksize=0x4000, flags=0x1, threadname=*0x1761860)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x24be9b60, param=*0xd000f620, arg=0x24be9b58, unk=0x0, prio=1000, stacksize=0x4000, flags=0x1, threadname=*0x1761860)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xfa)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x24c49ba8, attr=*0xd000f8a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x24c49ec8, attr=*0xd000f8a0)
@@ -738,7 +830,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x24c4eed8, attr=*0xd000f760)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00263714]} sys_semaphore: sys_semaphore_create(sem_id=*0x24c4ea58, attr=*0xd000f7f0, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2243e80, entry=0x1d0e9c8, arg=0x24c4ea30, prio=1600, stacksize=0x4000, flags=0x1, threadname=*0x1761748)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2243e80, param=*0xd000f778, arg=0x24c4ea30, unk=0x0, prio=1600, stacksize=0x4000, flags=0x1, threadname=*0x1761748)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2243e80, param=*0xd000f770, arg=0x24c4ea30, unk=0x0, prio=1600, stacksize=0x4000, flags=0x1, threadname=*0x1761748)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x109)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x24c4f130, attr=*0xd000f8a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0024f5fc]} sys_event_flag: sys_event_flag_create(id=*0x24c4f148, attr=*0xd000f7f0, init=0x0)
@@ -753,28 +845,28 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x01618d3c]} cellSpurs: _cellSpursAttribut
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618b5c]} cellSpurs: cellSpursAttributeSetNamePrefix(attr=*0xd000f580, prefix=*0x1761850, size=2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x24dd2600, attr=*0xd000f580)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x24dd2600, flags=0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a8, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_spu: sys_spu_thread_group_create(id=*0xd000f288, num=1, prio=200, attr=*0xd000f1f8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_spu: sys_spu_thread_initialize(thread=*0xd000f1d0, group=0x11f, spu_num=0, img=*0x24dd3370, attr=*0xd000f1c0, arg=*0xd000f1d8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f2c8, attr=*0xd000f2a0, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_spu: sys_spu_thread_group_create(id=*0x24dd3330, num=1, prio=200, attr=*0xd000f200)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_spu: sys_spu_thread_initialize(thread=*0x24dd3334, group=0x11f, spu_num=0, img=*0x24dd3370, attr=*0xd000f1c8, arg=*0xd000f1d8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x24dd33b0, attr=*0xd000f290)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sysPrxForUser: sys_lwcond_create(lwcond=*0x24dd33c8, lwmutex=*0x24dd33b0, attr=*0xd000f2a0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x24dd33b0, attr=*0xd000f128)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sysPrxForUser: sys_lwcond_create(lwcond=*0x24dd33c8, lwmutex=*0x24dd33b0, attr=*0xd000f130)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_event: sys_event_queue_create(equeue_id=*0x24dd335c, attr=*0xd000f128, event_queue_key=0x0, size=42)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x11f, eq=0x123, req=0xffffffffffff0000, spup=*0x24dd26c9)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618ddc]} sys_event: sys_event_port_create(eport_id=*0x24dd3360, port_type=1, name=0x0)
@@ -795,14 +887,13 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x002476a0]} sys_event_flag: sys_event_flag_create(id=*0x24c50ae0, attr=*0xd000f7f0, init=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0024f4c4]} sys_semaphore: sys_semaphore_create(sem_id=*0x24c50ad8, attr=*0xd000f740, initial_val=0, max_val=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2243e70, entry=0x1d0df18, arg=0x24c50ad8, prio=1000, stacksize=0x4000, flags=0x1, threadname=*0x1761730)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2243e70, param=*0xd000f6c8, arg=0x24c50ad8, unk=0x0, prio=1000, stacksize=0x4000, flags=0x1, threadname=*0x1761730)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2243e70, param=*0xd000f6c0, arg=0x24c50ad8, unk=0x0, prio=1000, stacksize=0x4000, flags=0x1, threadname=*0x1761730)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x12b)
-HLE: W {PPU[0x12b] Thread (AK::EventManager)[0x016196fc]} cellAudio: cellAudioPortStart(portNum=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x002dfb1c]} sys_semaphore: sys_semaphore_create(sem_id=*0x225ae18, attr=*0xd000f810, initial_val=0, max_val=1)
+HLE: W {PPU[0x12b] Thread (AK::EventManager)[0x016196fc]} cellAudio: cellAudioPortStart(portNum=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x016191bc]} cellSysutil: cellAudioOutGetConfiguration(audioOut=0, config=*0xd000f9dc, option=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20144680, attr=*0xd000f900)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x22924b0, attr=*0xd000f6a0)
-HLE: E {PPU[0x12b] Thread (AK::EventManager)[0x01618ebc]} cellSpurs: cellSpursJobGuardNotify
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2293078, attr=*0xd000f820)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2293330, attr=*0xd000f830)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2294660, attr=*0xd000f8c0)
@@ -811,10 +902,11 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x25515700, attr=*0xd000f8d0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00e11eec]} sys_event: sys_event_queue_create(equeue_id=*0x255156d4, attr=*0xd000f780, event_queue_key=0x0, size=10)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x255156d8, entry=0x1d5c068, arg=0x255156c0, prio=80, stacksize=0x10000, flags=0x1, threadname=*0x178da90)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x255156d8, param=*0xd000f6f8, arg=0x255156c0, unk=0x0, prio=80, stacksize=0x10000, flags=0x1, threadname=*0x178da90)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x255156d8, param=*0xd000f6f0, arg=0x255156c0, unk=0x0, prio=80, stacksize=0x10000, flags=0x1, threadname=*0x178da90)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x136)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618e1c]} cellSpurs: cellSpursAttachLv2EventQueue(spurs=*0x2268480, queue=0x135, port=*0xd000f770, isDynamic=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618e1c]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x4f, eq=0x135, req=0xffffffffffff0000, spup=*0xd000f770)
+HLE: E {PPU[0x12b] Thread (AK::EventManager)[0x01618ebc]} cellSpurs: cellSpursJobGuardNotify
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618e5c]} cellSpurs: cellSpursGetNumSpuThread(spurs=*0x2268480, nThreads=*0xd000fa34)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00e35940]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x2295b80, flags=0x2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00e35988]} sys_event: sys_event_queue_create(equeue_id=*0xd000f694, attr=*0xd000f6a4, event_queue_key=0x0, size=50)
@@ -824,9 +916,9 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x01618e1c]} cellSpurs: cellSpursAttachLv2
 HLE: W {PPU[0x1] Thread (main_thread)[0x01618e1c]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x4f, eq=0x137, req=0xffffffffffff0000, spup=*0xd000f690)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01619f3c]} cellSpurs: _cellSpursTasksetAttribute2Initialize(attribute=*0xd000f6b0, revision=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x01619e7c]} cellSpurs: cellSpursCreateTaskset2(spurs=*0x2268480, taskset=*0x255b9700, attr=*0xd000f6b0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01619e7c]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd000f030, revision=1, sdkVersion=0x33, pm=*0x200, size=0x1e40, data=0x255b9700, priority=*0xd000f6c0, minCnt=0x8, maxCnt=0x5)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01619e7c]} cellSpurs: cellSpursWorkloadAttributeSetName(attr=*0xd000f030, nameClass=*0x0, nameInstance=*0x178e310)
-HLE: W {PPU[0x1] Thread (main_thread)[0x01619e7c]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs=*0x2268480, wid=*0xd000f028, attr=*0xd000f030)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01619e7c]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd000f020, revision=1, sdkVersion=0x33, pm=*0x200, size=0x1e40, data=0x255b9700, priority=*0xd000f6c0, minCnt=0x8, maxCnt=0x5)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01619e7c]} cellSpurs: cellSpursWorkloadAttributeSetName(attr=*0xd000f020, nameClass=*0x0, nameInstance=*0x178e310)
+HLE: W {PPU[0x1] Thread (main_thread)[0x01619e7c]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs=*0x2268480, wid=*0xd000f018, attr=*0xd000f020)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x255217d0, attr=*0xd000f924)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00e35940]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x2295c00, flags=0x2)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00e35988]} sys_event: sys_event_queue_create(equeue_id=*0xd000f644, attr=*0xd000f654, event_queue_key=0x0, size=50)
@@ -886,13 +978,13 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x001b02b4]} sys_memory: sys_memory_contai
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a33c]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20148980, attr=*0xd000fa20)
 HLE: W {PPU[0x1] Thread (main_thread)[0x016193bc]} cellGem: cellGemInit(attribute=*0xd000fa78)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20148958, entry=0x1d03798, arg=0x20148950, prio=1535, stacksize=0x4000, flags=0x1, threadname=*0x175ea38)
-HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20148958, param=*0xd000f9d8, arg=0x20148950, unk=0x0, prio=1535, stacksize=0x4000, flags=0x1, threadname=*0x175ea38)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20148958, param=*0xd000f9d0, arg=0x20148950, unk=0x0, prio=1535, stacksize=0x4000, flags=0x1, threadname=*0x175ea38)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x164)
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x0018a50c]} sys_event: sys_event_queue_create(equeue_id=*0xd00f3cf4, attr=*0xd00f3d04, event_queue_key=0xabcdefab, size=10)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161935c]} cellCamera: cellCameraSetNotifyEventQueue2
 HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x01618a7c]} cellFs: cellFsOpen(path=*0xd00a7370, flags=0, fd=*0xd00a7224, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x01618a7c]} sys_fs: sys_fs_open(path=*0xd00a7370, flags=0, fd=*0xd00a7224, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x01618a7c]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/scenes/initialload.psarc'
+HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x0018a50c]} sys_event: sys_event_queue_create(equeue_id=*0xd00f3cf4, attr=*0xd00f3d04, event_queue_key=0xabcdefab, size=10)
+HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161935c]} cellCamera: cellCameraSetNotifyEventQueue2
 HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x01619dfc]} sys_fs: sys_fs_fstat(fd=3, sb=*0xd00a72e4)
 HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x01619d7c]} cellFs: cellFsStat(path=*0xd00a7360, sb=*0xd00a72d4) -> sys_fs_stat()
 HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x01619d7c]} sys_fs: sys_fs_stat(path=*0xd00a7360, sb=*0xd00a72d4)
@@ -904,7 +996,7 @@ HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x00af8938]} sys_time: sys_time_ge
 HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x00af6b64]} sys_time: sys_time_get_timezone(timezone=*0xd00a7170, summertime=*0xd00a7174)
 HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x00af8938]} sys_time: sys_time_get_timezone(timezone=*0xd00a70c0, summertime=*0xd00a70c4)
 HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x0161a2bc]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2012db18, entry=0x1d42bf0, arg=0x2012dae0, prio=257, stacksize=0x10000, flags=0x1, threadname=*0x2012dae8)
-HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2012db18, param=*0xd00a7738, arg=0x2012dae0, unk=0x0, prio=257, stacksize=0x10000, flags=0x1, threadname=*0x2012dae8)
+HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x0161a2bc]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2012db18, param=*0xd00a7730, arg=0x2012dae0, unk=0x0, prio=257, stacksize=0x10000, flags=0x1, threadname=*0x2012dae8)
 HLE: W {PPU[0xd1] Thread (fios mediathread 9)[0x0161a2bc]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x166)
 HLE: W {PPU[0x166] Thread (decompressor 7)[0x01618c1c]} cellSpurs: cellSpursEventFlagClear(eventFlag=*0x225a3080, bits=0x1)
 HLE: E {PPU[0x166] Thread (decompressor 7)[0x01619edc]} cellSpurs: _cellSpursLFQueuePushBody
@@ -1693,510 +1785,64 @@ HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGem
 HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
 HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
 HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
-HLE: W {PPU[0x164] Thread (MotionControllerThread)[0x016192fc]} cellCamera: cellCameraIsAttached(dev_num=0)
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161923c]} cellCamera: cellCameraReadEx
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161939c]} cellGem: cellGemUpdateStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161941c]} cellGem: cellGemUpdateFinish
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161945c]} cellGem: cellGemGetState
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161957c]} cellGem: cellGemPrepareVideoConvert
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x0161947c]} cellGem: cellGemConvertVideoStart
-HLE: E {PPU[0x164] Thread (MotionControllerThread)[0x016193dc]} cellGem: cellGemConvertVideoFinish
 G: ! Stopping emulator...
 G: ! All threads signaled...
-G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
-G: ! {PPU[0x1] Thread (main_thread)[0x001e22a8]} Thread aborted
+RSX: W {rsx::thread} RSX thread aborted
+RSX: ! {rsx::thread} RSX thread ended
 HLE: S {PPU[0x5f] Thread (225a0260)[0x0036c9a0]} Last syscall: 130 (sys_event_queue_receive)
-G: ! {PPU[0x59] Thread (SpursHdlr1)[0x00000000]} Thread aborted
 HLE: S {PPU[0x63] Thread (225a0350)[0x00369b98]} Last syscall: 130 (sys_event_queue_receive)
 HLE: S {PPU[0x66] Thread (225a0440)[0x00369b98]} Last syscall: 130 (sys_event_queue_receive)
-G: ! {PPU[0x5f] Thread (225a0260)[0x0036c9a0]} Thread aborted
 HLE: S {PPU[0x8b] Thread (fios mediathread 2)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
-G: ! {PPU[0x63] Thread (225a0350)[0x00369b98]} Thread aborted
-G: ! {PPU[0x66] Thread (225a0440)[0x00369b98]} Thread aborted
-HLE: S {PPU[0x8d] Thread (fios scheduler 1)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
-G: ! {PPU[0x8b] Thread (fios mediathread 2)[0x0161a2fc]} Thread aborted
 HLE: S {PPU[0x8c] Thread (fios mediathread 3)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
-HLE: S {PPU[0x9f] Thread (fios mediathread 6)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
-G: ! {PPU[0x8d] Thread (fios scheduler 1)[0x0161a2fc]} Thread aborted
-HLE: S {PPU[0x9e] Thread (fios mediathread 5)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
-HLE: S {PPU[0xa0] Thread (fios scheduler 4)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
-G: ! {PPU[0x9f] Thread (fios mediathread 6)[0x0161a2fc]} Thread aborted
-G: ! {PPU[0x8c] Thread (fios mediathread 3)[0x0161a2fc]} Thread aborted
-G: ! {PPU[0x9e] Thread (fios mediathread 5)[0x0161a2fc]} Thread aborted
-G: ! {PPU[0xa0] Thread (fios scheduler 4)[0x0161a2fc]} Thread aborted
-G: ! {VBlank Thread} Thread aborted
-G: ! {SPU[0x54] Thread (CellSpursKernel4)[0x00818]} Thread aborted
-G: ! {SPU[0x53] Thread (CellSpursKernel3)[0x00818]} Thread aborted
-G: ! {SPU[0x50] Thread (CellSpursKernel0)[0x00818]} Thread aborted
-G: ! {SPU[0x51] Thread (CellSpursKernel1)[0x00818]} Thread aborted
 G: ! {SPU[0x52] Thread (CellSpursKernel2)[0x00818]} Thread aborted
+G: ! {SPU[0x51] Thread (CellSpursKernel1)[0x00818]} Thread aborted
+HLE: S {PPU[0x8d] Thread (fios scheduler 1)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: ! {PPU[0x8c] Thread (fios mediathread 3)[0x0161a2fc]} Thread aborted
+G: ! {SPU[0x53] Thread (CellSpursKernel3)[0x00818]} Thread aborted
+HLE: S {PPU[0x9e] Thread (fios mediathread 5)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: ! {PPU[0x8d] Thread (fios scheduler 1)[0x0161a2fc]} Thread aborted
+HLE: S {PPU[0x9f] Thread (fios mediathread 6)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: ! {SPU[0x54] Thread (CellSpursKernel4)[0x00818]} Thread aborted
+HLE: S {PPU[0xa0] Thread (fios scheduler 4)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: ! {PPU[0x9e] Thread (fios mediathread 5)[0x0161a2fc]} Thread aborted
 HLE: S {PPU[0xb2] Thread (225e7be0)[0x00235d7c]} Last syscall: 92 (sys_semaphore_wait)
+G: ! {PPU[0x9f] Thread (fios mediathread 6)[0x0161a2fc]} Thread aborted
 HLE: S {PPU[0xb5] Thread (225e7c60)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
-G: ! {PPU[0xb2] Thread (225e7be0)[0x00235d7c]} Thread aborted
+G: ! {PPU[0x63] Thread (225a0350)[0x00369b98]} Thread aborted
 HLE: S {PPU[0x136] Thread (hkSpuUtil Helper)[0x00e11234]} Last syscall: 130 (sys_event_queue_receive)
-G: ! {PPU[0xb5] Thread (225e7c60)[0x0161a2fc]} Thread aborted
+G: ! {PPU[0x66] Thread (225a0440)[0x00369b98]} Thread aborted
+G: ! {PPU[0x8b] Thread (fios mediathread 2)[0x0161a2fc]} Thread aborted
 HLE: S {PPU[0xd1] Thread (fios mediathread 9)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
 G: ! {PPU[0x136] Thread (hkSpuUtil Helper)[0x00e11234]} Thread aborted
+G: ! {PPU[0x1] Thread (main_thread)[0x001e22b4]} Thread aborted
 HLE: S {PPU[0xd2] Thread (fios mediathread 10)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
-G: ! {PPU[0xd1] Thread (fios mediathread 9)[0x0161a2fc]} Thread aborted
-HLE: S {PPU[0xd3] Thread (fios mediathread 11)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
-HLE: S {PPU[0xd4] Thread (fios scheduler 8)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
-G: ! {PPU[0xd3] Thread (fios mediathread 11)[0x0161a2fc]} Thread aborted
-HLE: S {PPU[0x164] Thread (MotionControllerThread)[0x0018a750]} Last syscall: 130 (sys_event_queue_receive)
-HLE: S {PPU[0x166] Thread (decompressor 7)[0x01618bfc]} Last function: cellSpursEventFlagWait (0x373523d4)
+G: ! {PPU[0x164] Thread (MotionControllerThread)[0x0018a850]} Thread aborted
+G: ! {PPU[0x59] Thread (SpursHdlr1)[0x00000000]} Thread aborted
+G: ! {VBlank Thread} Thread aborted
+G: ! {PPU[0x5f] Thread (225a0260)[0x0036c9a0]} Thread aborted
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
+G: ! {PPU[0xb2] Thread (225e7be0)[0x00235d7c]} Thread aborted
+G: ! {PPU[0xa0] Thread (fios scheduler 4)[0x0161a2fc]} Thread aborted
 G: ! {PPU[0xd2] Thread (fios mediathread 10)[0x0161a2fc]} Thread aborted
-G: ! {PPU[0x164] Thread (MotionControllerThread)[0x0018a750]} Thread aborted
-G: ! {PPU[0xd4] Thread (fios scheduler 8)[0x0161a2fc]} Thread aborted
-HLE: S {PPU[0xfa] Thread (AK::IOThread)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: ! {PPU[0xb5] Thread (225e7c60)[0x0161a2fc]} Thread aborted
+HLE: S {PPU[0xd3] Thread (fios mediathread 11)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: ! {SPU[0x120] Thread (AkCellSpursKernel0)[0x00818]} Thread aborted
+G: ! {PPU[0xd1] Thread (fios mediathread 9)[0x0161a2fc]} Thread aborted
+G: ! {SPU[0x50] Thread (CellSpursKernel0)[0x00818]} Thread aborted
+G: ! {PPU[0xd3] Thread (fios mediathread 11)[0x0161a2fc]} Thread aborted
+HLE: S {PPU[0x166] Thread (decompressor 7)[0x01618bfc]} Last function: cellSpursEventFlagWait (0x373523d4)
 G: ! {PPU[0x166] Thread (decompressor 7)[0x01618bfc]} Thread aborted
+HLE: S {PPU[0xfa] Thread (AK::IOThread)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
+HLE: S {PPU[0xd4] Thread (fios scheduler 8)[0x0161a2fc]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: ! {PPU[0xfa] Thread (AK::IOThread)[0x0161a2fc]} Thread aborted
 HLE: S {PPU[0x109] Thread (AK::BankManager)[0x0026ac9c]} Last syscall: 92 (sys_semaphore_wait)
 HLE: S {PPU[0x12b] Thread (AK::EventManager)[0x002a5884]} Last syscall: 130 (sys_event_queue_receive)
-G: ! {PPU[0xfa] Thread (AK::IOThread)[0x0161a2fc]} Thread aborted
 G: ! {PPU[0x109] Thread (AK::BankManager)[0x0026ac9c]} Thread aborted
-G: ! {PPU[0x125] Thread (AkSpursHdlr1)[0x00000000]} Thread aborted
+G: ! {PPU[0xd4] Thread (fios scheduler 8)[0x0161a2fc]} Thread aborted
 G: ! {PPU[0x12b] Thread (AK::EventManager)[0x002a5884]} Thread aborted
-G: ! {PPU[0x126] Thread (AkSpursHdlr0)[0x00000000]} Thread aborted
 G: ! {PPU[0x5a] Thread (SpursHdlr0)[0x00000000]} Thread aborted
-G: ! {SPU[0x120] Thread (AkCellSpursKernel0)[0x00818]} Thread aborted
+G: ! {PPU[0x126] Thread (AkSpursHdlr0)[0x00000000]} Thread aborted
+G: ! {PPU[0x125] Thread (AkSpursHdlr1)[0x00000000]} Thread aborted
 G: ! All threads stopped...
 G: ! Objects cleared...
+G: ! Stopping emulator...

@@ -1,9 +1,7 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-G: ! RPCS3 0.0.0.5 v0.0.0.5-2528-g37721d6
+G: ! RPCS3 v0.0.0.6-3827-a6beb0e
 G: ! 
-G: ! Stopping emulator...
-LDR: ! Decrypting 'D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES00008-[Warhawk™]/PS3_GAME/USRDIR/EBOOT.BIN'...
-LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES00008-[Warhawk™]/PS3_GAME/USRDIR/BOOT.BIN'...
+LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\BCES00008-[Warhawk™]\PS3_GAME\USRDIR\BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES00008-[Warhawk™]/PS3_GAME/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: ! 
 LDR: ! Mount info:
@@ -15,22 +13,118 @@ LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
 LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES00008-[Warhawk™]/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! 
-LDR: ! Settings:
-LDR: ! CPU: PPU Interpreter 2
-LDR: ! SPU: SPU Recompiler (ASMJIT)
-LDR: ! Renderer: DirectX 12
-LDR: ! D3D Adapter: Default
-LDR: ! Resolution: 1280x720
-LDR: ! Write Depth Buffer: No
-LDR: ! Write Color Buffers: No
-LDR: ! Read Color Buffer: No
-LDR: ! Audio Out: XAudio2
-LDR: ! Log Everything: No
-LDR: ! RSX Logging: No
 LDR: ! 
 LDR: ! Title: Warhawk™
 
 LDR: ! Serial: BCES00008
+LDR: ! Used configuration: 'rpcs3.new.ini'
+LDR: ! 
+LDR: ! [gui]
+MainFrameAui=layout2|name~Pane_0;caption~Game List;state~4196348;dir~5;layer~0;row~0;pos~0;prop~100000;bestw~283;besth~279;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~-1;floaty~-1;floatw~-1;floath~-1|name~Pane_1;caption~Log;state~4196348;dir~4;layer~0;row~1;pos~1;prop~100000;bestw~600;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~52;floaty~489;floatw~616;floath~339|name~Pane_2;caption~Debugger;state~4196348;dir~4;layer~0;row~1;pos~0;prop~100000;bestw~400;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~47;floaty~117;floatw~416;floath~339|dock_size(5,0,0)~265|dock_size(4,0,1)~400|
+
+[system]
+Emulation dir path=
+Language=2
+Use path below as EmulationDir=false
+
+[rsx/opengl]
+Write Color Buffers=false
+Write Depth Buffer=false
+Read Color Buffers=false
+Read Depth Buffer=false
+
+[gui/size]
+width=988
+height=629
+
+[gui/position]
+horizontal=5
+vertical=397
+
+[core]
+PPU Decoder=recompiler_llvm
+Load liblv2.sprx=false
+Hook static functions=false
+SPU Decoder=recompiler_asmjit
+
+[rsx]
+VSync=true
+Aspect ratio=16x9
+Renderer=DX12
+Resolution=1280x720
+Frame limit=Auto
+Log shader programs=false
+3D Monitor=false
+
+[core/llvm]
+Compiled blocks exclusion=false
+Excluded block range min=200
+Excluded block range max=250
+Compilation threshold=1000
+
+[audio]
+Audio Out=XAudio2
+Dump to file=false
+Convert to 16 bit=false
+
+[io]
+Pad Handler=windows
+Camera=connected
+Camera type=PlayStationEye
+Mouse Handler=null
+Keyboard Handler=null
+
+[rsx/d3d12]
+D3D Adaptater=0
+Debug Output=false
+Debug overlay=true
+
+[io/pad]
+Circle=76
+Left Analog Stick Left=314
+Left Analog Stick Down=317
+Left Analog Stick Right=316
+R2=69
+Right=68
+Triangle=73
+Right Analog Stick Right=312
+Down=83
+Right Analog Stick Down=367
+Left Analog Stick Up=315
+Up=90
+Right Analog Stick Up=366
+Left=81
+Right Analog Stick Left=313
+Start=13
+Select=32
+Square=74
+Cross=75
+R1=51
+R3=67
+L1=49
+L2=65
+L3=87
+
+[misc]
+Exit RPCS3 when process finishes=false
+Always start after boot=true
+Use default configuration=true
+
+[misc/log]
+RSX Logging=false
+Log Level=Errors
+Log everything=false
+Save TTY output to file=false
+
+[misc/net]
+Connection status=Connecting
+Network adapter=0
+
+[misc/debug]
+Auto Pause at System Call=false
+Auto Pause at Function Call=false
+
+
 LDR: ! Elf path: /dev_bdvd/PS3_GAME/USRDIR/BOOT.BIN
 LDR: ! 
 LDR: ! loader::init() failed: Broken file
@@ -471,7 +565,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x006d5c1c]} cellSysutil: cellSysutilGetSy
 HLE: W {PPU[0x1] Thread (main_thread)[0x004bdf9c]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd000f690)
 HLE: W {PPU[0x1] Thread (main_thread)[0x000223cc]} sys_mutex: sys_mutex_create(mutex_id=*0x97ad54, attr=*0xd000fa00)
 HLE: W {PPU[0x1] Thread (main_thread)[0x006d5d3c]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x97ad58, entry=0x7c2f60, arg=0x97a8d0, prio=2000, stacksize=0x4000, flags=0x0, threadname=*0x6ed528)
-HLE: W {PPU[0x1] Thread (main_thread)[0x006d5d3c]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x97ad58, param=*0xd000f9b8, arg=0x97a8d0, unk=0x0, prio=2000, stacksize=0x4000, flags=0x0, threadname=*0x6ed528)
+HLE: W {PPU[0x1] Thread (main_thread)[0x006d5d3c]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x97ad58, param=*0xd000f9b0, arg=0x97a8d0, unk=0x0, prio=2000, stacksize=0x4000, flags=0x0, threadname=*0x6ed528)
 HLE: W {PPU[0x1] Thread (main_thread)[0x006d5d3c]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x15)
 HLE: W {PPU[0x1] Thread (main_thread)[0x006d5c1c]} cellSysutil: cellSysutilGetSystemParamInt(id=0x112(ID_ENTER_BUTTON_ASSIGN), value=*0xd000f940)
 HLE: W {PPU[0x1] Thread (main_thread)[0x006d5c1c]} cellSysutil: cellSysutilGetSystemParamInt(id=0x112(ID_ENTER_BUTTON_ASSIGN), value=*0xd000f900)
@@ -2059,47 +2153,49 @@ FPR[30] = 0
 FPR[31] = 0
 VPR[0] = 0x0000000000000000000000003f800000 [x: 0 y: 0 z: 0 w: 1]
 VPR[1] = 0x000000003f8000000000000000000000 [x: 0 y: 1 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
-VPR[5] = 0x00000002013eda180e97f25800000ac1 [x: 2.8026e-45 y: 3.5054e-38 z: 3.74577e-30 w: 3.85777e-42]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00030050000000000000000000000000 [x: 2.75619e-40 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000029a7510000000083f800000 [x: 0 y: 2.26955e-37 z: 1.12104e-44 w: 1]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[3] = 0x00000000033d53e000000000033d53e0 [x: 0 y: 5.56384e-37 z: 0 w: 5.56384e-37]
+VPR[4] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[5] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[6] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[7] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[8] = 0x00000000033d4ba000000000033d4ba0 [x: 0 y: 5.56289e-37 z: 0 w: 5.56289e-37]
+VPR[9] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[10] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
 VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[12] = 0x3f800000000000000000000000000000 [x: 1 y: 0 z: 0 w: 0]
 VPR[13] = 0x00000000000000003f80000000000000 [x: 0 y: 0 z: 1 w: 0]
-VPR[14] = 0x24ceba7e000000000000000000000000 [x: 8.96542e-17 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000029a74d0000000f63f800000 [x: 0 y: 2.26953e-37 z: 3.44719e-43 w: 1]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
-VPR[19] = 0x00000002013eda50353b2a1200000ac3 [x: 2.8026e-45 y: 3.50541e-38 z: 6.97241e-07 w: 3.86058e-42]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x63f3b892000000000000000000000000 [x: 8.99172e+21 y: 0 z: 0 w: 0]
-VPR[22] = 0x00000000029a7910d0459a883f800000 [x: 0 y: 2.26978e-37 z: -1.3261e+10 w: 1]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
-VPR[26] = 0x001172551b00001bfdf99812ab9a5e42 [x: 1.60222e-39 y: 1.05879e-22 z: -4.14709e+37 w: -1.09685e-12]
-VPR[27] = 0x00000000023b4fe0000000000299fa70 [x: 0 y: 1.37615e-37 z: 0 w: 2.26251e-37]
-VPR[28] = 0x00000000ffffffffa602087c00000000 [x: 0 y: -nan z: -4.51143e-16 w: 0]
-VPR[29] = 0x00000000ffffffff91ff21f800000000 [x: 0 y: -nan z: -4.02528e-28 w: 0]
-VPR[30] = 0x00000000ffffffff800001f800000000 [x: 0 y: -nan z: -7.06254e-43 w: 0]
-VPR[31] = 0x00000000ffffffff781b607c00000000 [x: 0 y: -nan z: 1.26057e+34 w: 0]
+VPR[14] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[15] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[16] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[17] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[18] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[19] = 0x00000000033d4d8000000000033d4d80 [x: 0 y: 5.56311e-37 z: 0 w: 5.56311e-37]
+VPR[20] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[21] = 0x00000000033d506000000000033d5060 [x: 0 y: 5.56344e-37 z: 0 w: 5.56344e-37]
+VPR[22] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[23] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[24] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[25] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[26] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[27] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[28] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[29] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[30] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
+VPR[31] = 0x00000000033d486000000000033d4860 [x: 0 y: 5.56252e-37 z: 0 w: 5.56252e-37]
 CR = 0x42008024
 LR = 0x409500
 CTR = 0x855498
 XER = 0x0 [CA=0 | OV=8589934592 | SO=0]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+FPSCR = 0xa2204000 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=4 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=1 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=1 | ZX=0 | UX=0 | OX=0 | VX=1 | FEX=0 | FX=1]
 
-G: E {PPU[0x1] Thread (main_thread)[0x0049ff38]} Exception: 
-(in file Emu\Cell\PPUInterpreter.cpp:1700, in function ppu_interpreter::TW)
+G: E {PPU[0x1] Thread (main_thread)[0x0049ff38]} Exception: Trap! (tw 0x1f, r0, r0)
+(in file G:\GIT\rpcs3 Zangetsu\rpcs3\Emu/Cell/PPUInterpreter.h:2409, in function PPUInterpreter::TW)
 G: ! Stopping emulator...
 G: ! All threads signaled...
-G: ! {PPU[0x15] Thread (Players Met)[0x00022378]} Thread aborted
 G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
+G: ! {PPU[0x15] Thread (Players Met)[0x00022378]} Thread aborted
+PPU: ! {PPU Recompilation Engine} PPU LLVM Recompilation thread exiting.
 G: ! All threads stopped...
 G: ! Objects cleared...
+G: ! Stopping emulator...

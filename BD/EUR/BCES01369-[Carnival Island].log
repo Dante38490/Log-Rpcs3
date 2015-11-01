@@ -1,8 +1,7 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-G: ! RPCS3 0.0.0.5 v0.0.0.5-2533-g467bea3
+G: ! RPCS3 v0.0.0.6-3827-a6beb0e
 G: ! 
-G: ! Stopping emulator...
-LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01369-[Carnival Island]/PS3_GAME/USRDIR/BOOT.BIN'...
+LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\BCES01369-[Carnival Island]\PS3_GAME\USRDIR\BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01369-[Carnival Island]/PS3_GAME/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: ! 
 LDR: ! Mount info:
@@ -14,21 +13,117 @@ LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
 LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01369-[Carnival Island]/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! 
-LDR: ! Settings:
-LDR: ! CPU: PPU Interpreter 2
-LDR: ! SPU: SPU Recompiler (ASMJIT)
-LDR: ! Renderer: DirectX 12
-LDR: ! D3D Adapter: Default
-LDR: ! Resolution: 1280x720
-LDR: ! Write Depth Buffer: No
-LDR: ! Write Color Buffers: No
-LDR: ! Read Color Buffer: No
-LDR: ! Audio Out: XAudio2
-LDR: ! Log Everything: No
-LDR: ! RSX Logging: No
 LDR: ! 
 LDR: ! Title: Carnival Island (EU)
 LDR: ! Serial: BCES01369
+LDR: ! Used configuration: 'rpcs3.new.ini'
+LDR: ! 
+LDR: ! [gui]
+MainFrameAui=layout2|name~Pane_0;caption~Game List;state~4196348;dir~5;layer~0;row~0;pos~0;prop~100000;bestw~283;besth~279;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~-1;floaty~-1;floatw~-1;floath~-1|name~Pane_1;caption~Log;state~4196348;dir~4;layer~0;row~1;pos~1;prop~99647;bestw~600;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~52;floaty~489;floatw~616;floath~339|name~Pane_2;caption~Debugger;state~4196348;dir~4;layer~0;row~1;pos~0;prop~100353;bestw~400;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~47;floaty~117;floatw~416;floath~339|dock_size(5,0,0)~265|dock_size(4,0,1)~400|
+
+[system]
+Emulation dir path=
+Language=2
+Use path below as EmulationDir=false
+
+[rsx/opengl]
+Write Color Buffers=false
+Write Depth Buffer=false
+Read Color Buffers=false
+Read Depth Buffer=false
+
+[gui/size]
+width=987
+height=628
+
+[gui/position]
+horizontal=5
+vertical=397
+
+[core]
+PPU Decoder=interpreter2
+Load liblv2.sprx=false
+Hook static functions=false
+SPU Decoder=recompiler_asmjit
+
+[rsx]
+VSync=true
+Aspect ratio=16x9
+Renderer=DX12
+Resolution=1280x720
+Frame limit=Auto
+Log shader programs=false
+3D Monitor=false
+
+[core/llvm]
+Compiled blocks exclusion=false
+Excluded block range min=200
+Excluded block range max=250
+Compilation threshold=1000
+
+[audio]
+Audio Out=XAudio2
+Dump to file=false
+Convert to 16 bit=false
+
+[io]
+Pad Handler=windows
+Camera=connected
+Camera type=PlayStationEye
+Mouse Handler=null
+Keyboard Handler=null
+
+[rsx/d3d12]
+D3D Adaptater=0
+Debug Output=false
+Debug overlay=true
+
+[io/pad]
+Circle=76
+Left Analog Stick Left=314
+Left Analog Stick Down=317
+Left Analog Stick Right=316
+R2=69
+Right=68
+Triangle=73
+Right Analog Stick Right=312
+Down=83
+Right Analog Stick Down=367
+Left Analog Stick Up=315
+Up=90
+Right Analog Stick Up=366
+Left=81
+Right Analog Stick Left=313
+Start=13
+Select=32
+Square=74
+Cross=75
+R1=51
+R3=67
+L1=49
+L2=65
+L3=87
+
+[misc]
+Exit RPCS3 when process finishes=false
+Always start after boot=true
+Use default configuration=true
+
+[misc/log]
+RSX Logging=false
+Log Level=Errors
+Log everything=false
+Save TTY output to file=false
+
+[misc/net]
+Connection status=Connecting
+Network adapter=0
+
+[misc/debug]
+Auto Pause at System Call=false
+Auto Pause at Function Call=false
+
+
 LDR: ! Elf path: /dev_bdvd/PS3_GAME/USRDIR/BOOT.BIN
 LDR: ! 
 LDR: ! loader::init() failed: Broken file
@@ -363,36 +458,36 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f538]} cellSpurs: _cellSpursAttribut
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1eff8]} cellSpurs: cellSpursAttributeSetNamePrefix(attr=*0xd007f008, prefix=*0xa214a4, size=6)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x2004d280, attr=*0xd007f008)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x2004d280, flags=0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef68, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_group_create(id=*0xd007ef48, num=5, prio=250, attr=*0xd007eeb8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_initialize(thread=*0xd007ee90, group=0x26, spu_num=0, img=*0x2004dff0, attr=*0xd007ee80, arg=*0xd007ee98)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_semaphore: sys_semaphore_create(sem_id=*0xd007ef88, attr=*0xd007ef60, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_group_create(id=*0x2004dfb0, num=5, prio=250, attr=*0xd007eec0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_initialize(thread=*0x2004dfb4, group=0x26, spu_num=0, img=*0x2004dff0, attr=*0xd007ee88, arg=*0xd007ee98)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_initialize(thread=*0xd007ee90, group=0x26, spu_num=1, img=*0x2004dff0, attr=*0xd007ee80, arg=*0xd007ee98)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_initialize(thread=*0x2004dfb8, group=0x26, spu_num=1, img=*0x2004dff0, attr=*0xd007ee88, arg=*0xd007ee98)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_initialize(thread=*0xd007ee90, group=0x26, spu_num=2, img=*0x2004dff0, attr=*0xd007ee80, arg=*0xd007ee98)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_initialize(thread=*0x2004dfbc, group=0x26, spu_num=2, img=*0x2004dff0, attr=*0xd007ee88, arg=*0xd007ee98)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_initialize(thread=*0xd007ee90, group=0x26, spu_num=3, img=*0x2004dff0, attr=*0xd007ee80, arg=*0xd007ee98)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_initialize(thread=*0x2004dfc0, group=0x26, spu_num=3, img=*0x2004dff0, attr=*0xd007ee88, arg=*0xd007ee98)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_initialize(thread=*0xd007ee90, group=0x26, spu_num=4, img=*0x2004dff0, attr=*0xd007ee80, arg=*0xd007ee98)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_initialize(thread=*0x2004dfc4, group=0x26, spu_num=4, img=*0x2004dff0, attr=*0xd007ee88, arg=*0xd007ee98)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004e030, attr=*0xd007ef50)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2004e048, lwmutex=*0x2004e030, attr=*0xd007ef60)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x2004e030, attr=*0xd007ede8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sysPrxForUser: sys_lwcond_create(lwcond=*0x2004e048, lwmutex=*0x2004e030, attr=*0xd007edf0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_event: sys_event_queue_create(equeue_id=*0x2004dfdc, attr=*0xd007ede8, event_queue_key=0x0, size=42)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x26, eq=0x2e, req=0xffffffffffff0000, spup=*0x2004d349)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f650]} sys_event: sys_event_port_create(eport_id=*0x2004dfe0, port_type=1, name=0x0)
@@ -621,16 +716,16 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x005ec0c4]} sys_event: sys_event_queue_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x005ec0e0]} sys_event: sys_event_port_create(eport_id=*0x1495884, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x005ec0f8]} sys_event: sys_event_port_connect_local(eport_id=0x40, equeue_id=0x3f)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x1495888, entry=0xcd7b68, arg=0x0, prio=999, stacksize=0x10000, flags=0x1, threadname=*0xaa46c0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x1495888, param=*0xd007db68, arg=0x0, unk=0x0, prio=999, stacksize=0x10000, flags=0x1, threadname=*0xaa46c0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x1495888, param=*0xd007db60, arg=0x0, unk=0x0, prio=999, stacksize=0x10000, flags=0x1, threadname=*0xaa46c0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x41)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f688]} cellSpurs: cellSpursAttachLv2EventQueue(spurs=*0x2004d280, queue=0x3f, port=*0xd007dd10, isDynamic=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f688]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x26, eq=0x3f, req=0xffffffffffff0000, spup=*0xd007dd10)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f068]} cellSpurs: _cellSpursTasksetAttributeInitialize(attribute=*0xd007dd28, revision=1, skd_version=0x330000, args=0x1100d00800, priority=*0xd007e348, max_contention=3)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f3b0]} cellSpurs: cellSpursTasksetAttributeSetName(attr=*0xd007dd28, name=*0xa9c170)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: cellSpursCreateTasksetWithAttribute(spurs=*0x2004d280, taskset=*0x147b380, attr=*0xd007dd28)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd007da70, revision=1, sdkVersion=0x33, pm=*0x200, size=0x1e40, data=0x147b380, priority=*0xd007dd38, minCnt=0x8, maxCnt=0x3)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: cellSpursWorkloadAttributeSetName(attr=*0xd007da70, nameClass=*0x0, nameInstance=*0xa9c170)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs=*0x2004d280, wid=*0xd007da68, attr=*0xd007da70)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd007da68, revision=1, sdkVersion=0x33, pm=*0x200, size=0x1e40, data=0x147b380, priority=*0xd007dd38, minCnt=0x8, maxCnt=0x3)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: cellSpursWorkloadAttributeSetName(attr=*0xd007da68, nameClass=*0x0, nameInstance=*0xa9c170)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs=*0x2004d280, wid=*0xd007da60, attr=*0xd007da68)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f340]} cellSpurs: _cellSpursEventFlagInitialize(spurs=*0x2004d280, taskset=*0x0, eventFlag=*0x1480e00, flagClearMode=0, flagDirection=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f490]} cellSpurs: cellSpursEventFlagAttachLv2EventQueue(eventFlag=*0x1480e00)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f490]} sys_event: sys_event_queue_create(equeue_id=*0xd007dc68, attr=*0xd007dc48, event_queue_key=0x0, size=1)
@@ -673,7 +768,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00a1eea8]} cellGcmSys: cellGcmInitDefaul
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1cd30]} cellGcmSys: _cellGcmInitBody(context=**0x141d6d4, cmdSize=0xfc000, ioSize=0x2900000, ioAddress=0x20200000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1cd30]} cellGcmSys: *** local memory(addr=0xc0000000, size=0xf900000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1cd30]} cellGcmSys: cellGcmInit(): 256MB io address space used
-RSX: ! {RSXThread} RSX thread started
+RSX: ! {rsx::thread} RSX thread started
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1e700]} cellSysutil: cellVideoOutGetResolutionAvailability(videoOut=0, resolutionId=0x2, aspect=0, option=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1e620]} cellSysutil: cellVideoOutGetConfiguration(videoOut=0, config=*0xd007eaac, option=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1e5e8]} cellSysutil: cellVideoOutConfigure(videoOut=0, config=*0xd007eaac, option=*0x0, waitForEvent=0)
@@ -684,23 +779,16 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00a1ee70]} cellGcmSys: cellGcmSetTileInf
 HLE: E {PPU[0x1] Thread (main_thread)[0x00a1ee70]} cellGcmSys: cellGcmSetTileInfo: bad compression mode! (10)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1ebd0]} cellGcmSys: cellGcmBindTile(index=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1ed20]} cellGcmSys: cellGcmBindZcull(index=0)
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1ec40]} cellGcmSys: cellGcmSetSecondVFrequency(level=2)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00a1ec40]} cellGcmSys TODO: Unimplemented display frequency: Scanout
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1ed58]} cellGcmSys: cellGcmSetFlipHandler(handler=*0xcc8f38)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1ee00]} cellGcmSys: cellGcmSetVBlankHandler(handler=*0xcc8f30)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1ec08]} cellGcmSys: cellGcmSetFlipMode(mode=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x008ed310]} sys_memory: sys_memory_allocate(size=0x300000, flags=0x400, alloc_addr=*0xd007d830)
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} Creating RTT
+RSX: W {rsx::thread} Creating RTT
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1ec78]} cellGcmSys: cellGcmMapEaIoAddress(ea=0x22c00000, io=0xe000000, size=0x100000)
-RSX: W {RSXThread} TODO: NV4097_SET_CONTEXT_DMA_REPORT: 0xbad68000
-RSX: W {RSXThread} TODO: NV4097_SET_WINDOW_OFFSET: x=0, y=0
-RSX: W {RSXThread} TODO: NV4097_SET_COLOR_MASK_MRT: 0xfff0
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
-RSX: W {RSXThread} TODO: NV4097_SET_ANTI_ALIASING_CONTROL: 0xffff0000
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x143c818, entry=0xcc8f10, arg=0x143c818, prio=3000, stacksize=0x4000, flags=0x0, threadname=*0xa463bc)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x143c818, param=*0xd007ec68, arg=0x143c818, unk=0x0, prio=3000, stacksize=0x4000, flags=0x0, threadname=*0xa463bc)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x143c818, param=*0xd007ec60, arg=0x143c818, unk=0x0, prio=3000, stacksize=0x4000, flags=0x0, threadname=*0xa463bc)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x60)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1e268]} sys_io: cellPadInit(max_connect=7)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1e310]} sys_io: cellKbInit(max_connect=7)
@@ -745,13 +833,13 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00a200d0]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a203a8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20170480, lwmutex=*0x2015b908, attr=*0xd007e690)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a203a8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20170498, lwmutex=*0x2015b908, attr=*0xd007e690)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x201704d8, entry=0xcc7c68, arg=0x201704a0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201704a8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201704d8, param=*0xd007e648, arg=0x201704a0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201704a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201704d8, param=*0xd007e640, arg=0x201704a0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201704a8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x7a)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20170518, entry=0xcc7c68, arg=0x201704e0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201704e8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20170518, param=*0xd007e648, arg=0x201704e0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201704e8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20170518, param=*0xd007e640, arg=0x201704e0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201704e8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x7b)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x2015b848, entry=0xcc7c68, arg=0x2015b810, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x2015b818)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2015b848, param=*0xd007e648, arg=0x2015b810, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x2015b818)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x2015b848, param=*0xd007e640, arg=0x2015b810, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x2015b818)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x7c)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a200d0]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20170670, attr=*0xd007e670)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0022942c]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x201706f4, attr=*0xd007e790)
@@ -773,13 +861,13 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00a200d0]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a203a8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20186240, lwmutex=*0x201716c8, attr=*0xd007e690)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a203a8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x20186258, lwmutex=*0x201716c8, attr=*0xd007e690)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20186298, entry=0xcc7c68, arg=0x20186260, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20186268)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20186298, param=*0xd007e648, arg=0x20186260, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20186268)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20186298, param=*0xd007e640, arg=0x20186260, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x20186268)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x90)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x201862d8, entry=0xcc7c68, arg=0x201862a0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201862a8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201862d8, param=*0xd007e648, arg=0x201862a0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201862a8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201862d8, param=*0xd007e640, arg=0x201862a0, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201862a8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x91)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x20171608, entry=0xcc7c68, arg=0x201715d0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x201715d8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20171608, param=*0xd007e648, arg=0x201715d0, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x201715d8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x20171608, param=*0xd007e640, arg=0x201715d0, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x201715d8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x92)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a200d0]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x20186430, attr=*0xd007e5b0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0022942c]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x201864b4, attr=*0xd007e6d0)
@@ -802,9 +890,9 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00a200d0]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f068]} cellSpurs: _cellSpursTasksetAttributeInitialize(attribute=*0xd007e940, revision=1, skd_version=0x330000, args=0x0, priority=*0xd007e910, max_contention=8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f3b0]} cellSpurs: cellSpursTasksetAttributeSetName(attr=*0xd007e940, name=*0xa8c660)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: cellSpursCreateTasksetWithAttribute(spurs=*0x2004d280, taskset=*0x201c7100, attr=*0xd007e940)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd007e690, revision=1, sdkVersion=0x33, pm=*0x200, size=0x1e40, data=0x201c7100, priority=*0xd007e950, minCnt=0x8, maxCnt=0x8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: cellSpursWorkloadAttributeSetName(attr=*0xd007e690, nameClass=*0x0, nameInstance=*0xa8c660)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs=*0x2004d280, wid=*0xd007e688, attr=*0xd007e690)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: _cellSpursWorkloadAttributeInitialize(attr=*0xd007e688, revision=1, sdkVersion=0x33, pm=*0x200, size=0x1e40, data=0x201c7100, priority=*0xd007e950, minCnt=0x8, maxCnt=0x8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: cellSpursWorkloadAttributeSetName(attr=*0xd007e688, nameClass=*0x0, nameInstance=*0xa8c660)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f730]} cellSpurs: cellSpursAddWorkloadWithAttribute(spurs=*0x2004d280, wid=*0xd007e680, attr=*0xd007e688)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f340]} cellSpurs: _cellSpursEventFlagInitialize(spurs=*0x2004d280, taskset=*0x0, eventFlag=*0x201c8a00, flagClearMode=0, flagDirection=1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f490]} cellSpurs: cellSpursEventFlagAttachLv2EventQueue(eventFlag=*0x201c8a00)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1f490]} sys_event: sys_event_queue_create(equeue_id=*0xd007e888, attr=*0xd007e868, event_queue_key=0x0, size=1)
@@ -826,7 +914,6 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00a200d0]} sysPrxForUser: sys_lwmutex_cr
 SPU: S {PPU[0x31] Thread (VisionSpursHdlr0)[0x00000000]} SPU Database initialized...
 SPU: S {PPU[0x31] Thread (VisionSpursHdlr0)[0x00000000]} SPU Recompiler (ASMJIT) created...
 HLE: W {PPU[0x31] Thread (VisionSpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x26, cause=*0x0, status=*0x0)
-SPU: S {SPU[0x27] Thread (VisionCellSpursKernel0)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a200d0]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x201b3b10, attr=*0xd007e6a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a200d0]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x201b3b38, attr=*0xd007e6a0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0022942c]} sys_rwlock: sys_rwlock_create(rw_lock_id=*0x201b3b5c, attr=*0xd007e690)
@@ -840,16 +927,16 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00a203a8]} sysPrxForUser: sys_lwcond_cre
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a203a8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x201b3e38, lwmutex=*0x201b3c88, attr=*0xd007e690)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a203a8]} sysPrxForUser: sys_lwcond_create(lwcond=*0x201b3e50, lwmutex=*0x201b3c88, attr=*0xd007e690)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x201b3e90, entry=0xcc7c68, arg=0x201b3e58, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201b3e60)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201b3e90, param=*0xd007e648, arg=0x201b3e58, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201b3e60)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201b3e90, param=*0xd007e640, arg=0x201b3e58, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201b3e60)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xae)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x201b3ed0, entry=0xcc7c68, arg=0x201b3e98, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201b3ea0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201b3ed0, param=*0xd007e648, arg=0x201b3e98, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201b3ea0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201b3ed0, param=*0xd007e640, arg=0x201b3e98, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201b3ea0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xaf)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x201b3f10, entry=0xcc7c68, arg=0x201b3ed8, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201b3ee0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201b3f10, param=*0xd007e648, arg=0x201b3ed8, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201b3ee0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201b3f10, param=*0xd007e640, arg=0x201b3ed8, unk=0x0, prio=99, stacksize=0x8000, flags=0x1, threadname=*0x201b3ee0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xb0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x201b3bc8, entry=0xcc7c68, arg=0x201b3b90, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x201b3b98)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201b3bc8, param=*0xd007e648, arg=0x201b3b90, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x201b3b98)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x201b3bc8, param=*0xd007e640, arg=0x201b3b90, unk=0x0, prio=100, stacksize=0x10000, flags=0x1, threadname=*0x201b3b98)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1fff0]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0xb1)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1d008]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a1cb00]} cellGame: cellGameBootCheck(type=*0xd007eb44, attributes=*0xd007eb48, size=*0xd007eb4c, dirName=*0xd007eba0)
@@ -863,387 +950,177 @@ HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} cellFs: cellFsStat(pa
 HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat(path=*0x2015b20e, sb=*0xd00f6510)
 HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: *** path = '/'
 HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat('/') failed: not mounted
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} cellFs: cellFsStat(path=*0xd00f6cd0, sb=*0xd00f6c44) -> sys_fs_stat()
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat(path=*0xd00f6cd0, sb=*0xd00f6c44)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/Data/Archives.psarc'
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008dca04]} sys_time: sys_time_get_timezone(timezone=*0xd00f6ae0, summertime=*0xd00f6ae4)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008de5b8]} sys_time: sys_time_get_timezone(timezone=*0xd00f6a30, summertime=*0xd00f6a34)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008dca04]} sys_time: sys_time_get_timezone(timezone=*0xd00f6ae0, summertime=*0xd00f6ae4)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008de5b8]} sys_time: sys_time_get_timezone(timezone=*0xd00f6a30, summertime=*0xd00f6a34)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008dca04]} sys_time: sys_time_get_timezone(timezone=*0xd00f6ae0, summertime=*0xd00f6ae4)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008de5b8]} sys_time: sys_time_get_timezone(timezone=*0xd00f6a30, summertime=*0xd00f6a34)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} cellFs: cellFsStat(path=*0xd00f67f0, sb=*0xd00f6764) -> sys_fs_stat()
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat(path=*0xd00f67f0, sb=*0xd00f6764)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: *** path = '/data/dev_bdvd/PS3_GAME/USRDIR/Data/Archives.psarc'
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat('/data/dev_bdvd/PS3_GAME/USRDIR/Data/Archives.psarc') failed: not mounted
 HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5c0]} cellFs: cellFsOpen(path=*0xd00f6cd0, flags=0, fd=*0xd00f6b84, arg=*0x0, size=0x0) -> sys_fs_open()
 HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5c0]} sys_fs: sys_fs_open(path=*0xd00f6cd0, flags=0, fd=*0xd00f6b84, mode=0, arg=*0x0, size=0x0)
 HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5c0]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/Data/Archives.psarc'
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c668]} sys_fs: sys_fs_fstat(fd=5, sb=*0xd00f6c44)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} cellFs: cellFsStat(path=*0xd00f67e0, sb=*0xd00f6754) -> sys_fs_stat()
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat(path=*0xd00f67e0, sb=*0xd00f6754)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: *** path = '/data/dev_bdvd/PS3_GAME/USRDIR/Data/Archives.psarc'
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat('/data/dev_bdvd/PS3_GAME/USRDIR/Data/Archives.psarc') failed: not mounted
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} cellFs: cellFsStat(path=*0xd00f6cc0, sb=*0xd00f6c34) -> sys_fs_stat()
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat(path=*0xd00f6cc0, sb=*0xd00f6c34)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/Data/Archives.psarc'
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008dca04]} sys_time: sys_time_get_timezone(timezone=*0xd00f6ad0, summertime=*0xd00f6ad4)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008de5b8]} sys_time: sys_time_get_timezone(timezone=*0xd00f6a20, summertime=*0xd00f6a24)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008dca04]} sys_time: sys_time_get_timezone(timezone=*0xd00f6ad0, summertime=*0xd00f6ad4)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008de5b8]} sys_time: sys_time_get_timezone(timezone=*0xd00f6a20, summertime=*0xd00f6a24)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008dca04]} sys_time: sys_time_get_timezone(timezone=*0xd00f6ad0, summertime=*0xd00f6ad4)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x008de5b8]} sys_time: sys_time_get_timezone(timezone=*0xd00f6a20, summertime=*0xd00f6a24)
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1f228]} cellSpurs: cellSpursEventFlagClear(eventFlag=*0x201c8a00, bits=0x1)
-HLE: E {PPU[0xae] Thread (fios mediathread 8)[0x00a1fea0]} cellSpurs: _cellSpursLFQueuePushBody
-HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1f1b8]} cellSpurs: cellSpursEventFlagWait(eventFlag=*0x201c8a00, mask=*0xd00f7850, mode=1)
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x205000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
-RSX: W {RSXThread} NV3089_IMAGE_IN_SIZE: w=1024, h=1024, pitch=5120, offset=0x206000, inX=0.000000, inY=0.000000, scaleX=1.000000, scaleY=1.000000
+G: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5c0]} fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES01369-[Carnival Island]/PS3_GAME/USRDIR/Data/Archives.psarc', 0x1) failed: error 0x2
+HLE: E {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5c0]} sys_fs: sys_fs_open('/dev_bdvd/PS3_GAME/USRDIR/Data/Archives.psarc'): failed to open file (flags=0, mode=0)
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} cellFs: cellFsStat(path=*0xd00f6a80, sb=*0xd00f69f4) -> sys_fs_stat()
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat(path=*0xd00f6a80, sb=*0xd00f69f4)
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: *** path = '/data/dev_bdvd/PS3_GAME/USRDIR/Data/Archives/GlobalSys.ddsarc'
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat('/data/dev_bdvd/PS3_GAME/USRDIR/Data/Archives/GlobalSys.ddsarc') failed: not mounted
+HLE: W {PPU[0xb0] Thread (fios mediathread 10)[0x00a1c5f8]} cellFs: cellFsStat(path=*0xd0106a80, sb=*0xd01069f4) -> sys_fs_stat()
+HLE: W {PPU[0xb0] Thread (fios mediathread 10)[0x00a1c5f8]} sys_fs: sys_fs_stat(path=*0xd0106a80, sb=*0xd01069f4)
+HLE: W {PPU[0xb0] Thread (fios mediathread 10)[0x00a1c5f8]} sys_fs: *** path = '/data/dev_bdvd/PS3_GAME/USRDIR/Data/Archives/Logos_eufrench.ddsarc'
+HLE: W {PPU[0xb0] Thread (fios mediathread 10)[0x00a1c5f8]} sys_fs: sys_fs_stat('/data/dev_bdvd/PS3_GAME/USRDIR/Data/Archives/Logos_eufrench.ddsarc') failed: not mounted
+RSX: E {rsx::thread} NV3089_IMAGE_IN_SIZE: src = 0x205000, dst = 0x3c0000
+RSX: W {rsx::thread} NV3089_IMAGE_IN_SIZE: SIZE=0x04000400, pitch=0x1400, offset=0x205000, scaleX=1.000000, scaleY=1.000000, CLIP_SIZE=0x02d00400, OUT_SIZE=0x04000400
+RSX: E {rsx::thread} NV3089_IMAGE_IN_SIZE: src = 0x206000, dst = 0x3c1000
+RSX: W {rsx::thread} NV3089_IMAGE_IN_SIZE: SIZE=0x04000400, pitch=0x1400, offset=0x206000, scaleX=1.000000, scaleY=1.000000, CLIP_SIZE=0x02d00100, OUT_SIZE=0x04000400
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} cellFs: cellFsStat(path=*0x2015b20e, sb=*0xd00f67a0) -> sys_fs_stat()
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat(path=*0x2015b20e, sb=*0xd00f67a0)
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: *** path = '/'
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5f8]} sys_fs: sys_fs_stat('/') failed: not mounted
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5c0]} cellFs: cellFsOpen(path=*0xd00f6f60, flags=0, fd=*0xd00f6e14, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5c0]} sys_fs: sys_fs_open(path=*0xd00f6f60, flags=0, fd=*0xd00f6e14, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c5c0]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/Data/Archives/GlobalSys.ddsarc'
+HLE: W {PPU[0xae] Thread (fios mediathread 8)[0x00a1c668]} sys_fs: sys_fs_fstat(fd=5, sb=*0xd00f6ed4)
+HLE: W {PPU[0xb0] Thread (fios mediathread 10)[0x00a1c5f8]} cellFs: cellFsStat(path=*0x2015b20e, sb=*0xd01067a0) -> sys_fs_stat()
+HLE: W {PPU[0xb0] Thread (fios mediathread 10)[0x00a1c5f8]} sys_fs: sys_fs_stat(path=*0x2015b20e, sb=*0xd01067a0)
+HLE: W {PPU[0xb0] Thread (fios mediathread 10)[0x00a1c5f8]} sys_fs: *** path = '/'
+HLE: W {PPU[0xb0] Thread (fios mediathread 10)[0x00a1c5f8]} sys_fs: sys_fs_stat('/') failed: not mounted
+HLE: W {PPU[0xb0] Thread (fios mediathread 10)[0x00a1c5c0]} cellFs: cellFsOpen(path=*0xd0106f60, flags=0, fd=*0xd0106e14, arg=*0x0, size=0x0) -> sys_fs_open()
+HLE: W {PPU[0xb0] Thread (fios mediathread 10)[0x00a1c5c0]} sys_fs: sys_fs_open(path=*0xd0106f60, flags=0, fd=*0xd0106e14, mode=0, arg=*0x0, size=0x0)
+HLE: W {PPU[0xb0] Thread (fios mediathread 10)[0x00a1c5c0]} sys_fs: *** path = '/dev_bdvd/PS3_GAME/USRDIR/Data/Archives/Logos_eufrench.ddsarc'
+G: ! {PPU[0xb1] Thread (fios scheduler 7)[0x00215fa4]} Registers:
+=========
+GPR[0] = 0x215f88
+GPR[1] = 0xd0117890
+GPR[2] = 0xceae88
+GPR[3] = 0x0
+GPR[4] = 0x141d684
+GPR[5] = 0x201c9208
+GPR[6] = 0x201c9208
+GPR[7] = 0x201c91c8
+GPR[8] = 0x201c91b0
+GPR[9] = 0x201b3cf8
+GPR[10] = 0x201b3cf8
+GPR[11] = 0x201c9258
+GPR[12] = 0x201c9208
+GPR[13] = 0x14f9100
+GPR[14] = 0x26c9c416463
+GPR[15] = 0xd0117c50
+GPR[16] = 0x26c9c32c606
+GPR[17] = 0x0
+GPR[18] = 0xd0117c70
+GPR[19] = 0x201b3af0
+GPR[20] = 0x201b3d00
+GPR[21] = 0x201b3bd0
+GPR[22] = 0x3
+GPR[23] = 0x2015ae80
+GPR[24] = 0x0
+GPR[25] = 0x201a2a68
+GPR[26] = 0x0
+GPR[27] = 0x0
+GPR[28] = 0x0
+GPR[29] = 0x201a2a68
+GPR[30] = 0x201b3af0
+GPR[31] = 0xd0117900
+FPR[0] = 1.18576E-313
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 0
+FPR[5] = 0
+FPR[6] = 0
+FPR[7] = 0
+FPR[8] = 0
+FPR[9] = 0
+FPR[10] = 0
+FPR[11] = 0
+FPR[12] = 9.22337E+18
+FPR[13] = 3E+11
+FPR[14] = 0
+FPR[15] = 0
+FPR[16] = 0
+FPR[17] = 0
+FPR[18] = 0
+FPR[19] = 0
+FPR[20] = 0
+FPR[21] = 0
+FPR[22] = 0
+FPR[23] = 0
+FPR[24] = 0
+FPR[25] = 0
+FPR[26] = 0
+FPR[27] = 0
+FPR[28] = 0
+FPR[29] = 0
+FPR[30] = 0
+FPR[31] = 0
+VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x0044004f00540020007300690076004f [x: 6.24492e-39 y: 7.71423e-39 z: 1.05612e-38 w: 1.08367e-38]
+VPR[2] = 0x004f006c006c006500630020003a004f [x: 7.25516e-39 y: 9.91838e-39 z: 9.09176e-39 w: 5.32657e-39]
+VPR[3] = 0x0076004f007400650047007300690076 [x: 1.08367e-38 y: 1.06531e-38 z: 6.52048e-39 w: 9.64289e-39]
+VPR[4] = 0x00620061005400790061006c00720065 [x: 9.00001e-39 y: 7.71435e-39 z: 8.90819e-39 w: 1.04694e-38]
+VPR[5] = 0x006500280065007a006900530065006c [x: 9.27544e-39 y: 9.27556e-39 z: 9.64284e-39 w: 9.27554e-39]
+VPR[6] = 0x0039006200780030002a003d0066006c [x: 5.23476e-39 y: 1.10203e-38 z: 3.85718e-39 w: 9.36737e-39]
+VPR[7] = 0x00200045000d00290030003000660034 [x: 2.93883e-39 y: 1.19392e-39 z: 4.40817e-39 w: 9.36729e-39]
+VPR[8] = 0x003100780030005b005500500050007b [x: 4.50011e-39 y: 4.40823e-39 z: 7.80613e-39 w: 7.34701e-39]
+VPR[9] = 0x0064006100650072006800540020005d [x: 9.18369e-39 y: 9.27554e-39 z: 9.55101e-39 w: 2.93887e-39]
+VPR[10] = 0x0074005f006e00690061006d00280020 [x: 1.06531e-38 y: 1.01021e-38 z: 8.9082e-39 w: 3.67346e-39]
+VPR[11] = 0x0030005b002900640061006500720068 [x: 4.40823e-39 y: 3.7654e-39 z: 8.90818e-39 w: 1.04694e-38]
+VPR[12] = 0x00370063006600310061003000300078 [x: 5.05109e-39 y: 9.36729e-39 z: 8.90811e-39 w: 4.40827e-39]
+VPR[13] = 0x006c006c006500630020007d005d0030 [x: 9.91838e-39 y: 9.27552e-39 z: 2.93891e-39 w: 8.54077e-39]
+VPR[14] = 0x0044004f00540020007300690076004f [x: 6.24492e-39 y: 7.71423e-39 z: 1.05612e-38 w: 1.08367e-38]
+VPR[15] = 0x004f006c006c006500630020003a004f [x: 7.25516e-39 y: 9.91838e-39 z: 9.09176e-39 w: 5.32657e-39]
+VPR[16] = 0x0076004f007400650047007300690076 [x: 1.08367e-38 y: 1.06531e-38 z: 6.52048e-39 w: 9.64289e-39]
+VPR[17] = 0x00620061005400790061006c00720065 [x: 9.00001e-39 y: 7.71435e-39 z: 8.90819e-39 w: 1.04694e-38]
+VPR[18] = 0x006500280065007a006900530065006c [x: 9.27544e-39 y: 9.27556e-39 z: 9.64284e-39 w: 9.27554e-39]
+VPR[19] = 0x0035006200780030002a003d0066006c [x: 4.86742e-39 y: 1.10203e-38 z: 3.85718e-39 w: 9.36737e-39]
+VPR[20] = 0x00200045000d00290030003800370061 [x: 2.93883e-39 y: 1.19392e-39 z: 4.40818e-39 w: 5.05109e-39]
+VPR[21] = 0x003100780030005b005500500050007b [x: 4.50011e-39 y: 4.40823e-39 z: 7.80613e-39 w: 7.34701e-39]
+VPR[22] = 0x0064006100650072006800540020005d [x: 9.18369e-39 y: 9.27554e-39 z: 9.55101e-39 w: 2.93887e-39]
+VPR[23] = 0x0074005f006e00690061006d00280020 [x: 1.06531e-38 y: 1.01021e-38 z: 8.9082e-39 w: 3.67346e-39]
+VPR[24] = 0x0030005b002900640061006500720068 [x: 4.40823e-39 y: 3.7654e-39 z: 8.90818e-39 w: 1.04694e-38]
+VPR[25] = 0x00370063006600310061003000300078 [x: 5.05109e-39 y: 9.36729e-39 z: 8.90811e-39 w: 4.40827e-39]
+VPR[26] = 0x006c006c006500630020007d005d0030 [x: 9.91838e-39 y: 9.27552e-39 z: 2.93891e-39 w: 8.54077e-39]
+VPR[27] = 0x0044004f00540020007300690076004f [x: 6.24492e-39 y: 7.71423e-39 z: 1.05612e-38 w: 1.08367e-38]
+VPR[28] = 0x004f006c006c006500630020003a004f [x: 7.25516e-39 y: 9.91838e-39 z: 9.09176e-39 w: 5.32657e-39]
+VPR[29] = 0x0076004f007400650047007300690076 [x: 1.08367e-38 y: 1.06531e-38 z: 6.52048e-39 w: 9.64289e-39]
+VPR[30] = 0x00620061005400790061006c00720065 [x: 9.00001e-39 y: 7.71435e-39 z: 8.90819e-39 w: 1.04694e-38]
+VPR[31] = 0x006500280065007a006900530065006c [x: 9.27544e-39 y: 9.27556e-39 z: 9.64284e-39 w: 9.27554e-39]
+CR = 0x64044042
+LR = 0x215f88
+CTR = 0x215ed0
+XER = 0x0 [CA=0 | OV=8589934592 | SO=0]
+FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
+
+G: E {PPU[0xb1] Thread (fios scheduler 7)[0x00215fa4]} Exception: Access violation reading location 0x48
+(in file ..\Utilities\Thread.cpp:1122, in function _se_translator)
 G: ! Stopping emulator...
 G: ! All threads signaled...
+G: ! {PPU[0xb0] Thread (fios mediathread 10)[0x00237f00]} Thread aborted
+G: ! {PPU[0x1] Thread (main_thread)[0x00278014]} Thread aborted
 HLE: S {PPU[0x41] Thread (CellMemoryManager)[0x005ece74]} Last syscall: 130 (sys_event_queue_receive)
-G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
+G: ! {SPU[0x2b] Thread (VisionCellSpursKernel4)[0x00818]} Thread aborted
 G: ! {PPU[0x41] Thread (CellMemoryManager)[0x005ece74]} Thread aborted
-HLE: S {PPU[0x7a] Thread (fios mediathread 2)[0x00a20060]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: ! {SPU[0x29] Thread (VisionCellSpursKernel2)[0x00818]} Thread aborted
 G: ! {PPU[0x30] Thread (VisionSpursHdlr1)[0x00000000]} Thread aborted
-G: ! {PPU[0x7a] Thread (fios mediathread 2)[0x00a20060]} Thread aborted
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00944a50]} Thread aborted
+G: ! {SPU[0x28] Thread (VisionCellSpursKernel1)[0x00818]} Thread aborted
+HLE: S {PPU[0x7a] Thread (fios mediathread 2)[0x00a20060]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: ! {SPU[0x27] Thread (VisionCellSpursKernel0)[0x00818]} Thread aborted
+G: ! {PPU[0x60] Thread (VSuspendedRendering_cl)[0x00278938]} Thread aborted
 HLE: S {PPU[0x7b] Thread (fios mediathread 3)[0x00a20060]} Last function: sys_lwcond_wait (0x2a6d9d51)
+G: ! {PPU[0xae] Thread (fios mediathread 8)[0x008d1154]} Thread aborted
+G: ! {PPU[0x7a] Thread (fios mediathread 2)[0x00a20060]} Thread aborted
 HLE: S {PPU[0x7c] Thread (fios scheduler 1)[0x00a20060]} Last function: sys_lwcond_wait (0x2a6d9d51)
-HLE: S {PPU[0x90] Thread (fios mediathread 5)[0x00a20060]} Last function: sys_lwcond_wait (0x2a6d9d51)
-HLE: S {PPU[0x91] Thread (fios mediathread 6)[0x00a20060]} Last function: sys_lwcond_wait (0x2a6d9d51)
 G: ! {PPU[0x7b] Thread (fios mediathread 3)[0x00a20060]} Thread aborted
 G: ! {PPU[0x7c] Thread (fios scheduler 1)[0x00a20060]} Thread aborted
-G: ! {PPU[0x60] Thread (VSuspendedRendering_cl)[0x0021ab40]} Thread aborted
-G: ! {VBlank Thread} Thread aborted
+HLE: S {PPU[0x90] Thread (fios mediathread 5)[0x00a20060]} Last function: sys_lwcond_wait (0x2a6d9d51)
+HLE: S {PPU[0x91] Thread (fios mediathread 6)[0x00a20060]} Last function: sys_lwcond_wait (0x2a6d9d51)
 G: ! {PPU[0x90] Thread (fios mediathread 5)[0x00a20060]} Thread aborted
-G: ! {PPU[0x91] Thread (fios mediathread 6)[0x00a20060]} Thread aborted
-G: ! {PPU[0x1] Thread (main_thread)[0x00278014]} Thread aborted
-HLE: S {PPU[0xae] Thread (fios mediathread 8)[0x00a1f1b8]} Last function: cellSpursEventFlagWait (0x373523d4)
 HLE: S {PPU[0x92] Thread (fios scheduler 4)[0x00a20060]} Last function: sys_lwcond_wait (0x2a6d9d51)
-G: ! {PPU[0xae] Thread (fios mediathread 8)[0x00a1f1b8]} Thread aborted
+G: ! {PPU[0x91] Thread (fios mediathread 6)[0x00a20060]} Thread aborted
+HLE: S {PPU[0xaf] Thread (fios mediathread 9)[0x00a20060]} Last function: sys_lwcond_wait (0x2a6d9d51)
 G: ! {PPU[0x92] Thread (fios scheduler 4)[0x00a20060]} Thread aborted
-HLE: S {PPU[0xaf] Thread (fios mediathread 9)[0x00a1ff48]} Last function: sys_lwmutex_lock (0x1573dc3f)
-HLE: S {PPU[0xb0] Thread (fios mediathread 10)[0x00a1ff48]} Last function: sys_lwmutex_lock (0x1573dc3f)
-G: ! {PPU[0xaf] Thread (fios mediathread 9)[0x00a1ff48]} Thread aborted
-HLE: S {PPU[0xb1] Thread (fios scheduler 7)[0x00a20060]} Last function: sys_lwcond_wait (0x2a6d9d51)
-G: ! {PPU[0xb0] Thread (fios mediathread 10)[0x00a1ff48]} Thread aborted
-G: ! {PPU[0xb1] Thread (fios scheduler 7)[0x00a20060]} Thread aborted
-G: ! {PPU[0x31] Thread (VisionSpursHdlr0)[0x00000000]} Thread aborted
-G: ! {SPU[0x28] Thread (VisionCellSpursKernel1)[0x00818]} Thread aborted
-G: ! {SPU[0x27] Thread (VisionCellSpursKernel0)[0x00818]} Thread aborted
-G: ! {SPU[0x2b] Thread (VisionCellSpursKernel4)[0x00818]} Thread aborted
-G: ! {SPU[0x29] Thread (VisionCellSpursKernel2)[0x00818]} Thread aborted
 G: ! {SPU[0x2a] Thread (VisionCellSpursKernel3)[0x00818]} Thread aborted
+G: ! {PPU[0xaf] Thread (fios mediathread 9)[0x00a20060]} Thread aborted
+G: ! {PPU[0x31] Thread (VisionSpursHdlr0)[0x00000000]} Thread aborted
+RSX: W {rsx::thread} RSX thread aborted
+RSX: ! {rsx::thread} RSX thread ended
+G: ! {VBlank Thread} Thread aborted
 G: ! All threads stopped...
 G: ! Objects cleared...
+G: ! Stopping emulator...

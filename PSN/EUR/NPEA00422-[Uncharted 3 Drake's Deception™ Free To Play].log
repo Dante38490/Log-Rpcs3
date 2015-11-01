@@ -1,8 +1,9 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-G: ! Stopping emulator...
-LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00422/USRDIR/BOOT.BIN'...
+G: ! RPCS3 v0.0.0.6-3827-a6beb0e
+G: ! 
+LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00422\USRDIR\BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00422/dev_bdvd.path', 0x1) failed: error 0x2
-LDR: !  
+LDR: ! 
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
@@ -10,28 +11,135 @@ LDR: ! /host_root/ ->
 LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
-LDR: !  
+LDR: ! 
+LDR: ! 
 LDR: ! Title: Uncharted 3: Drake's Deceptionâ„¢ Free To Play 1.19
 LDR: ! Serial: NPEA00422
+LDR: ! Used configuration: 'rpcs3.new.ini'
+LDR: ! 
+LDR: ! [gui]
+MainFrameAui=layout2|name~Pane_0;caption~Game List;state~4196348;dir~5;layer~0;row~0;pos~0;prop~100000;bestw~283;besth~279;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~-1;floaty~-1;floatw~-1;floath~-1|name~Pane_1;caption~Log;state~4196348;dir~4;layer~0;row~1;pos~1;prop~99647;bestw~600;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~52;floaty~489;floatw~616;floath~339|name~Pane_2;caption~Debugger;state~4196348;dir~4;layer~0;row~1;pos~0;prop~100353;bestw~400;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~47;floaty~117;floatw~416;floath~339|dock_size(5,0,0)~265|dock_size(4,0,1)~400|
+
+[system]
+Emulation dir path=
+Language=2
+Use path below as EmulationDir=false
+
+[rsx/opengl]
+Write Color Buffers=false
+Write Depth Buffer=false
+Read Color Buffers=false
+Read Depth Buffer=false
+
+[gui/size]
+width=963
+height=626
+
+[gui/position]
+horizontal=42
+vertical=327
+
+[core]
+PPU Decoder=interpreter2
+Load liblv2.sprx=false
+Hook static functions=false
+SPU Decoder=recompiler_asmjit
+
+[rsx]
+VSync=true
+Aspect ratio=16x9
+Renderer=DX12
+Resolution=1280x720
+Frame limit=Auto
+Log shader programs=false
+3D Monitor=false
+
+[core/llvm]
+Compiled blocks exclusion=false
+Excluded block range min=200
+Excluded block range max=250
+Compilation threshold=1000
+
+[audio]
+Audio Out=XAudio2
+Dump to file=false
+Convert to 16 bit=false
+
+[io]
+Pad Handler=windows
+Camera=connected
+Camera type=PlayStationEye
+Mouse Handler=null
+Keyboard Handler=null
+
+[rsx/d3d12]
+D3D Adaptater=0
+Debug Output=false
+Debug overlay=true
+
+[io/pad]
+Circle=76
+Left Analog Stick Left=314
+Left Analog Stick Down=317
+Left Analog Stick Right=316
+R2=69
+Right=68
+Triangle=73
+Right Analog Stick Right=312
+Down=83
+Right Analog Stick Down=367
+Left Analog Stick Up=315
+Up=90
+Right Analog Stick Up=366
+Left=81
+Right Analog Stick Left=313
+Start=13
+Select=32
+Square=74
+Cross=75
+R1=51
+R3=67
+L1=49
+L2=65
+L3=87
+
+[misc]
+Exit RPCS3 when process finishes=false
+Always start after boot=true
+Use default configuration=true
+
+[misc/log]
+RSX Logging=false
+Log Level=Errors
+Log everything=false
+Save TTY output to file=false
+
+[misc/net]
+Connection status=Connecting
+Network adapter=0
+
+[misc/debug]
+Auto Pause at System Call=false
+Auto Pause at Function Call=false
+
+
 LDR: ! Elf path: /dev_hdd0/game/NPEA00422/USRDIR/BOOT.BIN
+LDR: ! 
 LDR: ! loader::init() failed: Broken file
 LDR: ! *** sdk version: 0x360001
 LDR: ! *** primary prio: 1001
 LDR: ! *** primary stacksize: 0x40000
 LDR: ! *** malloc pagesize: 0x100000
 LDR: ! *** ppc seg: 0x0
-LDR: E Unknown module 'cellHttp'
-LDR: E Unknown function 'cellHttpInit' in 'cellHttp' module (0xd935b4)
-LDR: E Unknown function 'cellHttpsInit' in 'cellHttp' module (0xd935d4)
-LDR: E Unknown function 'cellHttpEndCookie' in 'cellHttp' module (0xd935f4)
-LDR: E Unknown function 'cellHttpInitCookie' in 'cellHttp' module (0xd93614)
-LDR: E Unknown function 'cellHttpEnd' in 'cellHttp' module (0xd93634)
-LDR: E Unknown function 'cellHttpsEnd' in 'cellHttp' module (0xd93654)
-LDR: E Unknown module 'cellSsl'
-LDR: E Unknown function 'cellSslEnd' in 'cellSsl' module (0xd93674)
-LDR: E Unknown function 'cellSslCertificateLoader' in 'cellSsl' module (0xd93694)
-LDR: E Unknown function 'cellSslInit' in 'cellSsl' module (0xd936b4)
-LDR: E Unknown module 'cellSync'
+LDR: ! Imported function 'cellHttpInit' in 'cellHttp' module (0xd935b4)
+LDR: ! Imported function 'cellHttpsInit' in 'cellHttp' module (0xd935d4)
+LDR: ! Imported function 'cellHttpEndCookie' in 'cellHttp' module (0xd935f4)
+LDR: ! Imported function 'cellHttpInitCookie' in 'cellHttp' module (0xd93614)
+LDR: ! Imported function 'cellHttpEnd' in 'cellHttp' module (0xd93634)
+LDR: ! Imported function 'cellHttpsEnd' in 'cellHttp' module (0xd93654)
+LDR: ! Imported function 'cellSslEnd' in 'cellSsl' module (0xd93674)
+LDR: ! Imported function 'cellSslCertificateLoader' in 'cellSsl' module (0xd93694)
+LDR: ! Imported function 'cellSslInit' in 'cellSsl' module (0xd936b4)
 LDR: ! Imported function 'cellSyncMutexUnlock' in 'cellSync' module (0xd936d4)
 LDR: ! Imported function 'cellSyncMutexInitialize' in 'cellSync' module (0xd936f4)
 LDR: ! Imported function 'cellSyncMutexTryLock' in 'cellSync' module (0xd93714)
@@ -143,15 +251,15 @@ LDR: ! Imported function 'cellNetCtlGetState' in 'cellNetCtl' module (0xd94434)
 LDR: ! Imported function 'cellNetCtlInit' in 'cellNetCtl' module (0xd94454)
 LDR: ! Imported function 'cellVideoOutConfigure' in 'cellSysutil' module (0xd94474)
 LDR: ! Imported function 'cellSysutilCheckCallback' in 'cellSysutil' module (0xd94494)
-LDR: E Unknown function 'cellOskDialogGetInputText' in 'cellSysutil' module (0xd944b4)
+LDR: ! Imported function 'cellOskDialogGetInputText' in 'cellSysutil' module (0xd944b4)
 LDR: ! Imported function 'cellSaveDataListLoad2' in 'cellSysutil' module (0xd944d4)
 LDR: ! Imported function 'cellSysCacheMount' in 'cellSysutil' module (0xd944f4)
 LDR: ! Imported function 'cellVideoOutGetDeviceInfo' in 'cellSysutil' module (0xd94514)
 LDR: ! Imported function 'cellSaveDataListAutoLoad' in 'cellSysutil' module (0xd94534)
-LDR: E Unknown function 'cellGameUnregisterDiscChangeCallback' in 'cellSysutil' module (0xd94554)
+LDR: ! Imported function 'cellGameUnregisterDiscChangeCallback' in 'cellSysutil' module (0xd94554)
 LDR: ! Imported function 'cellSaveDataListSave2' in 'cellSysutil' module (0xd94574)
-LDR: E Unknown function 'cellOskDialogGetSize' in 'cellSysutil' module (0xd94594)
-LDR: E Unknown function 'cellOskDialogUnloadAsync' in 'cellSysutil' module (0xd945b4)
+LDR: ! Imported function 'cellOskDialogGetSize' in 'cellSysutil' module (0xd94594)
+LDR: ! Imported function 'cellOskDialogUnloadAsync' in 'cellSysutil' module (0xd945b4)
 LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module (0xd945d4)
 LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module (0xd945f4)
 LDR: ! Imported function 'cellSaveDataListAutoSave' in 'cellSysutil' module (0xd94614)
@@ -160,20 +268,20 @@ LDR: ! Imported function 'cellSysCacheClear' in 'cellSysutil' module (0xd94654)
 LDR: ! Imported function 'cellVideoOutGetNumberOfDevice' in 'cellSysutil' module (0xd94674)
 LDR: ! Imported function 'cellMsgDialogOpen2' in 'cellSysutil' module (0xd94694)
 LDR: ! Imported function 'cellAudioOutGetDeviceInfo' in 'cellSysutil' module (0xd946b4)
-LDR: E Unknown function 'cellOskDialogAddSupportLanguage' in 'cellSysutil' module (0xd946d4)
-LDR: E Unknown function 'cellOskDialogLoadAsync' in 'cellSysutil' module (0xd946f4)
+LDR: ! Imported function 'cellOskDialogAddSupportLanguage' in 'cellSysutil' module (0xd946d4)
+LDR: ! Imported function 'cellOskDialogLoadAsync' in 'cellSysutil' module (0xd946f4)
 LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module (0xd94714)
 LDR: ! Imported function 'cellSysutilGetSystemParamString' in 'cellSysutil' module (0xd94734)
 LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module (0xd94754)
 LDR: ! Imported function 'cellVideoOutGetResolutionAvailability' in 'cellSysutil' module (0xd94774)
-LDR: E Unknown function 'cellOskDialogSetKeyLayoutOption' in 'cellSysutil' module (0xd94794)
-LDR: E Unknown function 'cellOskDialogAbort' in 'cellSysutil' module (0xd947b4)
+LDR: ! Imported function 'cellOskDialogSetKeyLayoutOption' in 'cellSysutil' module (0xd94794)
+LDR: ! Imported function 'cellOskDialogAbort' in 'cellSysutil' module (0xd947b4)
 LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module (0xd947d4)
-LDR: E Unknown function 'cellOskDialogSetInitialKeyLayout' in 'cellSysutil' module (0xd947f4)
+LDR: ! Imported function 'cellOskDialogSetInitialKeyLayout' in 'cellSysutil' module (0xd947f4)
 LDR: ! Imported function 'cellAudioOutSetCopyControl' in 'cellSysutil' module (0xd94814)
 LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module (0xd94834)
 LDR: ! Imported function 'cellAudioOutGetNumberOfDevice' in 'cellSysutil' module (0xd94854)
-LDR: E Unknown function 'cellOskDialogSetLayoutMode' in 'cellSysutil' module (0xd94874)
+LDR: ! Imported function 'cellOskDialogSetLayoutMode' in 'cellSysutil' module (0xd94874)
 LDR: ! Imported function 'cellVoiceStart' in 'cellVoice' module (0xd94894)
 LDR: ! Imported function 'cellVoiceCreatePort' in 'cellVoice' module (0xd948b4)
 LDR: ! Imported function 'cellVoiceReadFromOPort' in 'cellVoice' module (0xd948d4)
@@ -202,7 +310,7 @@ LDR: ! Imported function 'cellFsRead' in 'sys_fs' module (0xd94b94)
 LDR: ! Imported function 'cellFsReaddir' in 'sys_fs' module (0xd94bb4)
 LDR: ! Imported function 'cellFsSdataOpenByFd' in 'sys_fs' module (0xd94bd4)
 LDR: ! Imported function 'cellFsOpen' in 'sys_fs' module (0xd94bf4)
-LDR: E Unknown function 'cellFsAllocateFileAreaWithoutZeroFill' in 'sys_fs' module (0xd94c14)
+LDR: ! Imported function 'cellFsAllocateFileAreaWithoutZeroFill' in 'sys_fs' module (0xd94c14)
 LDR: ! Imported function 'cellFsStat' in 'sys_fs' module (0xd94c34)
 LDR: ! Imported function 'cellFsAioCancel' in 'sys_fs' module (0xd94c54)
 LDR: ! Imported function 'cellFsUnlink' in 'sys_fs' module (0xd94c74)
@@ -214,7 +322,7 @@ LDR: ! Imported function 'cellFsLseek' in 'sys_fs' module (0xd94d14)
 LDR: ! Imported function 'cellFsGetFreeSize' in 'sys_fs' module (0xd94d34)
 LDR: ! Imported function 'cellFsSdataOpen' in 'sys_fs' module (0xd94d54)
 LDR: ! Imported function 'cellFsMkdir' in 'sys_fs' module (0xd94d74)
-LDR: E Unknown function 'cellFsUtime' in 'sys_fs' module (0xd94d94)
+LDR: ! Imported function 'cellFsUtime' in 'sys_fs' module (0xd94d94)
 LDR: ! Imported function 'cellFsAioRead' in 'sys_fs' module (0xd94db4)
 LDR: ! Imported function 'cellFsTruncate' in 'sys_fs' module (0xd94dd4)
 LDR: ! Imported function 'cellFsAioInit' in 'sys_fs' module (0xd94df4)
@@ -308,9 +416,9 @@ LDR: ! Imported function 'sceNpDrmIsAvailable2' in 'sceNp' module (0xd958d4)
 LDR: ! Imported function 'sceNpLookupDestroyTransactionCtx' in 'sceNp' module (0xd958f4)
 LDR: ! Imported function 'sceNpBasicGetFriendPresenceByNpId' in 'sceNp' module (0xd95914)
 LDR: ! Imported function 'sceNpManagerGetNpId' in 'sceNp' module (0xd95934)
-LDR: E Unknown function 'sceNpMatching2GetEventData' in 'sceNp2' module (0xd95954)
+LDR: ! Imported function 'sceNpMatching2GetEventData' in 'sceNp2' module (0xd95954)
 LDR: ! Imported function 'sceNp2Init' in 'sceNp2' module (0xd95974)
-LDR: E Unknown function 'sceNpMatching2ClearEventData' in 'sceNp2' module (0xd95994)
+LDR: ! Imported function 'sceNpMatching2ClearEventData' in 'sceNp2' module (0xd95994)
 LDR: ! Imported function 'sceNp2Term' in 'sceNp2' module (0xd959b4)
 LDR: ! Imported function 'cellRtcTickAddTicks' in 'cellRtc' module (0xd959d4)
 LDR: ! Imported function 'cellRtcGetCurrentClockLocalTime' in 'cellRtc' module (0xd959f4)
@@ -380,12 +488,11 @@ LDR: ! Imported function 'cellAdecClose' in 'cellAdec' module (0xd961d4)
 LDR: ! Imported function 'cellAdecOpenEx' in 'cellAdec' module (0xd961f4)
 LDR: ! Imported function 'cellAdecGetPcm' in 'cellAdec' module (0xd96214)
 LDR: ! Imported function 'cellAdecGetPcmItem' in 'cellAdec' module (0xd96234)
-LDR: E Unknown module 'cellRec'
-LDR: E Unknown function 'cellRecOpen' in 'cellRec' module (0xd96254)
-LDR: E Unknown function 'cellRecClose' in 'cellRec' module (0xd96274)
-LDR: E Unknown function 'cellRecStop' in 'cellRec' module (0xd96294)
-LDR: E Unknown function 'cellRecStart' in 'cellRec' module (0xd962b4)
-LDR: E Unknown function 'cellRecQueryMemSize' in 'cellRec' module (0xd962d4)
+LDR: ! Imported function 'cellRecOpen' in 'cellRec' module (0xd96254)
+LDR: ! Imported function 'cellRecClose' in 'cellRec' module (0xd96274)
+LDR: ! Imported function 'cellRecStop' in 'cellRec' module (0xd96294)
+LDR: ! Imported function 'cellRecStart' in 'cellRec' module (0xd962b4)
+LDR: ! Imported function 'cellRecQueryMemSize' in 'cellRec' module (0xd962d4)
 LDR: ! Imported function 'sceNpTrophyRegisterContext' in 'sceNpTrophy' module (0xd962f4)
 LDR: ! Imported function 'sceNpTrophyCreateHandle' in 'sceNpTrophy' module (0xd96314)
 LDR: ! Imported function 'sceNpTrophySetSoundLevel' in 'sceNpTrophy' module (0xd96334)
@@ -404,7 +511,6 @@ LDR: ! Imported function 'cellPngDecDestroy' in 'cellPngDec' module (0xd964b4)
 LDR: ! Imported function 'cellPngDecReadHeader' in 'cellPngDec' module (0xd964d4)
 LDR: ! Imported function 'cellPngDecOpen' in 'cellPngDec' module (0xd964f4)
 LDR: ! Imported function 'cellPngDecSetParameter' in 'cellPngDec' module (0xd96514)
-LDR: E Unknown module 'cellSysutilAvconfExt'
 LDR: ! Imported function 'cellVideoOutSetGamma' in 'cellSysutilAvconfExt' module (0xd96534)
 LDR: ! Imported function 'cellVideoOutGetScreenSize' in 'cellSysutilAvconfExt' module (0xd96554)
 LDR: ! Imported function 'cellJpgDecReadHeader' in 'cellJpgDec' module (0xd96574)
@@ -414,42 +520,36 @@ LDR: ! Imported function 'cellJpgDecCreate' in 'cellJpgDec' module (0xd965d4)
 LDR: ! Imported function 'cellJpgDecDecodeData' in 'cellJpgDec' module (0xd965f4)
 LDR: ! Imported function 'cellJpgDecDestroy' in 'cellJpgDec' module (0xd96614)
 LDR: ! Imported function 'cellJpgDecSetParameter' in 'cellJpgDec' module (0xd96634)
-LDR: E Unknown function '0x2C0F3548' in 'sceNpSns' module (0xd96654)
-LDR: E Unknown function '0x6E42C0DD' in 'sceNpSns' module (0xd96674)
-LDR: E Unknown function '0x702DC876' in 'sceNpSns' module (0xd96694)
-LDR: E Unknown function '0x8FD1D549' in 'sceNpSns' module (0xd966b4)
-LDR: E Unknown function '0xC05545FD' in 'sceNpSns' module (0xd966d4)
-LDR: E Unknown function 'UCS2stoUTF8s' in 'cellL10n' module (0xd966f4)
-LDR: E Unknown function 'UTF8stoUCS2s' in 'cellL10n' module (0xd96714)
-LDR: E Unknown module 'cellPhotoUtility'
-LDR: E Unknown function 'cellPhotoExportInitialize2' in 'cellPhotoUtility' module (0xd96734)
-LDR: E Unknown function 'cellPhotoExportFromFile' in 'cellPhotoUtility' module (0xd96754)
-LDR: E Unknown function 'cellPhotoExportFinalize' in 'cellPhotoUtility' module (0xd96774)
-LDR: E Unknown module 'cellJpgEnc'
-LDR: E Unknown function 'cellJpgEncQueryAttr' in 'cellJpgEnc' module (0xd96794)
-LDR: E Unknown function 'cellJpgEncWaitForInput' in 'cellJpgEnc' module (0xd967b4)
-LDR: E Unknown function 'cellJpgEncGetStreamInfo' in 'cellJpgEnc' module (0xd967d4)
-LDR: E Unknown function 'cellJpgEncOpenEx' in 'cellJpgEnc' module (0xd967f4)
-LDR: E Unknown function 'cellJpgEncClose' in 'cellJpgEnc' module (0xd96814)
-LDR: E Unknown function 'cellJpgEncWaitForOutput' in 'cellJpgEnc' module (0xd96834)
-LDR: E Unknown function 'cellJpgEncOpen' in 'cellJpgEnc' module (0xd96854)
-LDR: E Unknown function 'cellJpgEncEncodePicture' in 'cellJpgEnc' module (0xd96874)
-LDR: E Unknown module 'cellPngEnc'
-LDR: E Unknown function 'cellPngEncClose' in 'cellPngEnc' module (0xd96894)
-LDR: E Unknown function 'cellPngEncQueryAttr' in 'cellPngEnc' module (0xd968b4)
-LDR: E Unknown function 'cellPngEncGetStreamInfo' in 'cellPngEnc' module (0xd968d4)
-LDR: E Unknown function 'cellPngEncEncodePicture' in 'cellPngEnc' module (0xd968f4)
-LDR: E Unknown function 'cellPngEncWaitForInput' in 'cellPngEnc' module (0xd96914)
-LDR: E Unknown function 'cellPngEncWaitForOutput' in 'cellPngEnc' module (0xd96934)
-LDR: E Unknown function 'cellPngEncOpenEx' in 'cellPngEnc' module (0xd96954)
-LDR: E Unknown module 'cellVideoExportUtility'
-LDR: E Unknown function 'cellVideoExportProgress' in 'cellVideoExportUtility' module (0xd96974)
-LDR: E Unknown function 'cellVideoExportInitialize2' in 'cellVideoExportUtility' module (0xd96994)
-LDR: E Unknown function '0x78946D1F' in 'cellVideoExportUtility' module (0xd969b4)
-LDR: E Unknown function 'cellVideoExportFinalize' in 'cellVideoExportUtility' module (0xd969d4)
-LDR: E Unknown module 'cellVideoUpload'
-LDR: E Unknown function 'cellVideoUploadInitialize' in 'cellVideoUpload' module (0xd969f4)
-LDR: E Unknown module 'sceNpUtil'
+LDR: ! Imported function 'sceNpSnsFbInit' in 'sceNpSns' module (0xd96654)
+LDR: ! Imported function 'sceNpSnsFbDestroyHandle' in 'sceNpSns' module (0xd96674)
+LDR: ! Imported function 'sceNpSnsFbGetAccessToken' in 'sceNpSns' module (0xd96694)
+LDR: ! Imported function 'sceNpSnsFbCreateHandle' in 'sceNpSns' module (0xd966b4)
+LDR: ! Imported function 'sceNpSnsFbTerm' in 'sceNpSns' module (0xd966d4)
+LDR: ! Imported function 'UCS2stoUTF8s' in 'cellL10n' module (0xd966f4)
+LDR: ! Imported function 'UTF8stoUCS2s' in 'cellL10n' module (0xd96714)
+LDR: ! Imported function 'cellPhotoExportInitialize2' in 'cellPhotoUtility' module (0xd96734)
+LDR: ! Imported function 'cellPhotoExportFromFile' in 'cellPhotoUtility' module (0xd96754)
+LDR: ! Imported function 'cellPhotoExportFinalize' in 'cellPhotoUtility' module (0xd96774)
+LDR: ! Imported function 'cellJpgEncQueryAttr' in 'cellJpgEnc' module (0xd96794)
+LDR: ! Imported function 'cellJpgEncWaitForInput' in 'cellJpgEnc' module (0xd967b4)
+LDR: ! Imported function 'cellJpgEncGetStreamInfo' in 'cellJpgEnc' module (0xd967d4)
+LDR: ! Imported function 'cellJpgEncOpenEx' in 'cellJpgEnc' module (0xd967f4)
+LDR: ! Imported function 'cellJpgEncClose' in 'cellJpgEnc' module (0xd96814)
+LDR: ! Imported function 'cellJpgEncWaitForOutput' in 'cellJpgEnc' module (0xd96834)
+LDR: ! Imported function 'cellJpgEncOpen' in 'cellJpgEnc' module (0xd96854)
+LDR: ! Imported function 'cellJpgEncEncodePicture' in 'cellJpgEnc' module (0xd96874)
+LDR: ! Imported function 'cellPngEncClose' in 'cellPngEnc' module (0xd96894)
+LDR: ! Imported function 'cellPngEncQueryAttr' in 'cellPngEnc' module (0xd968b4)
+LDR: ! Imported function 'cellPngEncGetStreamInfo' in 'cellPngEnc' module (0xd968d4)
+LDR: ! Imported function 'cellPngEncEncodePicture' in 'cellPngEnc' module (0xd968f4)
+LDR: ! Imported function 'cellPngEncWaitForInput' in 'cellPngEnc' module (0xd96914)
+LDR: ! Imported function 'cellPngEncWaitForOutput' in 'cellPngEnc' module (0xd96934)
+LDR: ! Imported function 'cellPngEncOpenEx' in 'cellPngEnc' module (0xd96954)
+LDR: ! Imported function 'cellVideoExportProgress' in 'cellVideoExportUtility' module (0xd96974)
+LDR: ! Imported function 'cellVideoExportInitialize2' in 'cellVideoExportUtility' module (0xd96994)
+LDR: ! Imported function 'cellVideoExportFromFileWithCopy' in 'cellVideoExportUtility' module (0xd969b4)
+LDR: ! Imported function 'cellVideoExportFinalize' in 'cellVideoExportUtility' module (0xd969d4)
+LDR: ! Imported function 'cellVideoUploadInitialize' in 'cellVideoUpload' module (0xd969f4)
 LDR: ! Imported function 'sceNpUtilBandwidthTestShutdown' in 'sceNpUtil' module (0xd96a14)
 LDR: ! Imported function 'sceNpUtilBandwidthTestInitStart' in 'sceNpUtil' module (0xd96a34)
 LDR: ! Imported function 'sceNpUtilBandwidthTestGetStatus' in 'sceNpUtil' module (0xd96a54)
@@ -473,7 +573,7 @@ LDR: ! Imported function 'sys_time_get_system_time' in 'sysPrxForUser' module (0
 LDR: ! Imported function 'sys_prx_get_module_info' in 'sysPrxForUser' module (0xd96c94)
 LDR: ! Imported function '_sys_process_at_Exitspawn' in 'sysPrxForUser' module (0xd96cb4)
 LDR: ! Imported function 'sys_prx_exitspawn_with_level' in 'sysPrxForUser' module (0xd96cd4)
-LDR: E Unknown function 'sys_prx_load_module_on_memcontainer_by_fd' in 'sysPrxForUser' module (0xd96cf4)
+LDR: ! Imported function 'sys_prx_load_module_on_memcontainer_by_fd' in 'sysPrxForUser' module (0xd96cf4)
 LDR: ! Imported function 'sys_prx_get_module_list' in 'sysPrxForUser' module (0xd96d14)
 LDR: ! Imported function 'sys_prx_load_module_on_memcontainer' in 'sysPrxForUser' module (0xd96d34)
 LDR: ! Imported function 'sys_lwmutex_trylock' in 'sysPrxForUser' module (0xd96d54)
@@ -484,9 +584,9 @@ LDR: ! Imported function 'sys_lwcond_create' in 'sysPrxForUser' module (0xd96dd4
 LDR: ! Imported function 'sys_mmapper_map_memory' in 'sysPrxForUser' module (0xd96df4)
 LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0xd96e14)
 LDR: ! Imported function 'sys_lwcond_signal_all' in 'sysPrxForUser' module (0xd96e34)
-LDR: E Unknown function 'sys_prx_load_module_by_fd' in 'sysPrxForUser' module (0xd96e54)
+LDR: ! Imported function 'sys_prx_load_module_by_fd' in 'sysPrxForUser' module (0xd96e54)
 LDR: ! Imported function 'sys_lwcond_signal' in 'sysPrxForUser' module (0xd96e74)
-HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x1451000, user_size=0x164)
+MEM: ! Thread Local Storage initialized (g_tls_start=0x1452000, user_size=0x164)
 *** TLS segment addr: 0x011ce248
 *** TLS segment size: 0x00000008
 HLE: W {PPU[0x1] Thread (main_thread)[0x00d96b74]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x144dd00, attr=*0xe44950)
@@ -550,57 +650,57 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0089218c]} sys_mutex: sys_mutex_create(m
 HLE: W {PPU[0x1] Thread (main_thread)[0x0009e3d0]} sys_event: sys_event_queue_create(equeue_id=*0x120ba20, attr=*0xd003fbc0, event_queue_key=0x0, size=127)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0009e404]} sys_event: sys_event_port_create(eport_id=*0x120ba24, port_type=1, name=0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0009e42c]} sys_event: sys_event_port_connect_local(eport_id=0x19, equeue_id=0x18)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96d14]} sys_prx TODO: sys_prx_get_module_list()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96d14]} sys_prx TODO: sys_prx_get_module_list(flags=0, pInfo=*0xd003ee10)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=2144128204, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=2144128204, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=1065353216, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=2144128204, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=2144128204, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=-805048304, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=19440736, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=-805048144, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=5682696, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=1065353216, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=14422808, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=19433664, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=17829176, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=14424000, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=11, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=-805046332, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=0, flags=0, info=*0xd003ee28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=1, flags=0, info=*0xd003ee28)
 HLE: W {PPU[0x1] Thread (main_thread)[0x0072373c]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003f6b0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00723768]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd003f6b0)
 TTY: L
@@ -631,8 +731,8 @@ TTY: R
 TTY: X
 TTY: s
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96d14]} sys_prx TODO: sys_prx_get_module_list()
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96d14]} sys_prx TODO: sys_prx_get_module_list(flags=0, pInfo=*0xd003f6b8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336432, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -858,7 +958,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336440, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -1084,7 +1184,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336448, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -1310,7 +1410,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18334392, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -1536,7 +1636,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335256, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -1762,7 +1862,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336408, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -1988,7 +2088,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336400, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -2214,7 +2314,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335528, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -2440,7 +2540,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336376, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -2666,7 +2766,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336384, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -2892,7 +2992,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335536, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -3118,7 +3218,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335544, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -3344,7 +3444,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336392, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -3570,7 +3670,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336352, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -3796,7 +3896,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18334496, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -4022,7 +4122,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18334920, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -4248,7 +4348,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335120, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -4474,7 +4574,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336304, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -4700,7 +4800,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335040, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -4926,7 +5026,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335232, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -5152,7 +5252,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335240, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -5378,7 +5478,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18334912, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -5604,7 +5704,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335112, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -5830,7 +5930,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18334904, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -6056,7 +6156,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335168, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -6282,7 +6382,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335176, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -6508,7 +6608,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335728, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -6734,7 +6834,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336600, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -6960,7 +7060,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336608, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -7186,7 +7286,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18334896, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -7412,7 +7512,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335408, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -7638,7 +7738,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336312, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -7864,7 +7964,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336328, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -8090,7 +8190,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336336, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -8316,7 +8416,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335664, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -8542,7 +8642,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336344, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -8768,7 +8868,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335752, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -8994,7 +9094,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335840, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -9220,7 +9320,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18334640, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -9446,7 +9546,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336320, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -9672,7 +9772,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335744, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -9898,7 +9998,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335632, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -10124,7 +10224,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335640, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -10350,7 +10450,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335648, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -10576,7 +10676,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335656, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -10802,7 +10902,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18334488, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -11028,7 +11128,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335736, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -11254,7 +11354,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18334400, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -11480,7 +11580,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18336456, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -11706,7 +11806,7 @@ TTY: \x17
 TTY: Ä
 TTY: ]
 TTY: \n
-HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info()
+HLE: E {PPU[0x1] Thread (main_thread)[0x00d96c94]} sys_prx TODO: sys_prx_get_module_info(id=18335552, flags=0, info=*0xd003f6d0)
 TTY:  
 TTY:  
 TTY:  
@@ -17637,8 +17737,7 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00d94754]} cellSysutil: cellSysutilRegis
 HLE: W {PPU[0x1] Thread (main_thread)[0x00d94674]} cellSysutil: cellVideoOutGetNumberOfDevice(videoOut=0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00d94514]} cellSysutil: cellVideoOutGetDeviceInfo(videoOut=0, deviceIndex=0, info=*0xd003f7e8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00d94774]} cellSysutil: cellVideoOutGetResolutionAvailability(videoOut=0, resolutionId=0x1, aspect=0, option=0)
-MEM: W {PPU[0x1] Thread (main_thread)[0x00728820]} decode_x64_reg_op(00000002007f3e73h): unsupported opcode found (0FB60C018BC248C1E81583E01F49898C)
-G: W {PPU[0x1] Thread (main_thread)[0x00728820]} Registers:
+G: ! {PPU[0x1] Thread (main_thread)[0x00728820]} Registers:
 =========
 GPR[0] = 0x2
 GPR[1] = 0xd003f750
@@ -17653,7 +17752,7 @@ GPR[9] = 0x0
 GPR[10] = 0x12c007c
 GPR[11] = 0xe12144
 GPR[12] = 0x8
-GPR[13] = 0x1458030
+GPR[13] = 0x1459030
 GPR[14] = 0x0
 GPR[15] = 0x0
 GPR[16] = 0x0
@@ -17718,119 +17817,11 @@ VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[12] = 0x000000003d7df3b63d072b023d7df3b6 [x: 0 y: 0.062 z: 0.033 w: 0.062]
 VPR[13] = 0x3f8000003f8000003f8000003f800000 [x: 1 y: 1 z: 1 w: 1]
-VPR[14] = 0x00000000000006750000000000000008 [x: 0 y: 2.31635e-42 z: 0 w: 1.12104e-44]
+VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[15] = 0x33a2216933a2216933a2216933a22169 [x: 7.54979e-08 y: 7.54979e-08 z: 7.54979e-08 w: 7.54979e-08]
 VPR[16] = 0x3d2aa0363d2aa0363d2aa0363d2aa036 [x: 0.0416567 y: 0.0416567 z: 0.0416567 w: 0.0416567]
 VPR[17] = 0x3e9c35ae3e9c35ae3e9c35ae3e9c35ae [x: 0.305097 y: 0.305097 z: 0.305097 w: 0.305097]
 VPR[18] = 0x3f800000000000000000000000000000 [x: 1 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
-VPR[22] = 0x00000002013663980000000000000676 [x: 2.8026e-45 y: 3.34996e-38 z: 0 w: 2.31775e-42]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x726578696d7275730000000000000000 [x: 4.54513e+30 y: 4.68983e+27 z: 0 w: 0]
-VPR[25] = 0x000000003f8000000000000000000000 [x: 0 y: 1 z: 0 w: 0]
-VPR[26] = 0x0000000000000000000000000212d7d0 [x: 0 y: 0 z: 0 w: 1.07883e-37]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000070000000000000000 [x: 0 y: 9.80909e-45 z: 0 w: 0]
-VPR[29] = 0x00000000000006770000000000000008 [x: 0 y: 2.31915e-42 z: 0 w: 1.12104e-44]
-VPR[30] = 0x000000000000000000000002013663b0 [x: 0 y: 0 z: 2.8026e-45 w: 3.34996e-38]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x44000022
-LR = 0x728744
-CTR = 0x11
-XER = 0x20000000 [CA=1 | OV=0 | SO=8589934592]
-FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
-
-G: E {PPU[0x1] Thread (main_thread)[0x00728820]} Exception: Access violation reading location 0x0
-(in file ..\Utilities\Thread.cpp:1098, in function _se_translator)
-G: ! Stopping emulator...
-G: ! All threads signaled...
-G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Registers:
-=========
-GPR[0] = 0x0
-GPR[1] = 0xd004fe00
-GPR[2] = 0x0
-GPR[3] = 0x0
-GPR[4] = 0x0
-GPR[5] = 0x0
-GPR[6] = 0x0
-GPR[7] = 0x0
-GPR[8] = 0x0
-GPR[9] = 0x0
-GPR[10] = 0x0
-GPR[11] = 0x0
-GPR[12] = 0x0
-GPR[13] = 0x14581c4
-GPR[14] = 0x0
-GPR[15] = 0x0
-GPR[16] = 0x0
-GPR[17] = 0x0
-GPR[18] = 0x0
-GPR[19] = 0x0
-GPR[20] = 0x0
-GPR[21] = 0x0
-GPR[22] = 0x0
-GPR[23] = 0x0
-GPR[24] = 0x0
-GPR[25] = 0x0
-GPR[26] = 0x0
-GPR[27] = 0x0
-GPR[28] = 0x0
-GPR[29] = 0x0
-GPR[30] = 0x0
-GPR[31] = 0x0
-FPR[0] = 0
-FPR[1] = 0
-FPR[2] = 0
-FPR[3] = 0
-FPR[4] = 0
-FPR[5] = 0
-FPR[6] = 0
-FPR[7] = 0
-FPR[8] = 0
-FPR[9] = 0
-FPR[10] = 0
-FPR[11] = 0
-FPR[12] = 0
-FPR[13] = 0
-FPR[14] = 0
-FPR[15] = 0
-FPR[16] = 0
-FPR[17] = 0
-FPR[18] = 0
-FPR[19] = 0
-FPR[20] = 0
-FPR[21] = 0
-FPR[22] = 0
-FPR[23] = 0
-FPR[24] = 0
-FPR[25] = 0
-FPR[26] = 0
-FPR[27] = 0
-FPR[28] = 0
-FPR[29] = 0
-FPR[30] = 0
-FPR[31] = 0
-VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x80000a002b87521a0000000000000000 [x: -3.58732e-42 y: 9.61511e-13 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
@@ -17844,12 +17835,17 @@ VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x22000082
-LR = 0x0
-CTR = 0x0
-XER = 0x0 [CA=0 | OV=0 | SO=8589934592]
+CR = 0x44000022
+LR = 0x728744
+CTR = 0x11
+XER = 0x20000000 [CA=1 | OV=8589934592 | SO=0]
 FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
-G: W {PPU[0x2] Thread (Callback Thread)[0x00000000]} Exception: Aborted (emulation stopped)
-(in file Emu\SysCalls\Callback.cpp:58, in function CallbackManager::Init::<lambda_46ea869b6054320987a0d5fa0b32bb88>::operator ())
+G: E {PPU[0x1] Thread (main_thread)[0x00728820]} Exception: Access violation reading location 0x0
+(in file ..\Utilities\Thread.cpp:1122, in function _se_translator)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
 G: ! All threads stopped...
+G: ! Objects cleared...
+G: ! Stopping emulator...

@@ -1,8 +1,9 @@
-HLE: ! path: /dev_hdd0/game/
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00356/USRDIR/BOOT.BIN'...
+G: ! RPCS3 v0.0.0.6-3827-a6beb0e
+G: ! 
+LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00356\USRDIR\BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00356/dev_bdvd.path', 0x1) failed: error 0x2
-LDR: !  
+LDR: ! 
 LDR: ! Mount info:
 LDR: ! /dev_usb000/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! /dev_flash/ -> D:/Emulateurs/Rpcs3/dev_flash/
@@ -10,57 +11,167 @@ LDR: ! /host_root/ ->
 LDR: ! /dev_hdd0/ -> D:/Emulateurs/Rpcs3/dev_hdd0/
 LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
-LDR: !  
+LDR: ! 
+LDR: ! 
 LDR: ! Title: Ratchet & Clank™: All 4 One (Digital version)
 LDR: ! Serial: NPEA00356
+LDR: ! Used configuration: 'rpcs3.new.ini'
+LDR: ! 
+LDR: ! [gui]
+MainFrameAui=layout2|name~Pane_0;caption~Game List;state~4196348;dir~5;layer~0;row~0;pos~0;prop~100000;bestw~283;besth~279;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~-1;floaty~-1;floatw~-1;floath~-1|name~Pane_1;caption~Log;state~4196348;dir~4;layer~0;row~1;pos~1;prop~99647;bestw~600;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~52;floaty~489;floatw~616;floath~339|name~Pane_2;caption~Debugger;state~4196348;dir~4;layer~0;row~1;pos~0;prop~100353;bestw~400;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~47;floaty~117;floatw~416;floath~339|dock_size(5,0,0)~265|dock_size(4,0,1)~400|
+
+[system]
+Emulation dir path=
+Language=2
+Use path below as EmulationDir=false
+
+[rsx/opengl]
+Write Color Buffers=false
+Write Depth Buffer=false
+Read Color Buffers=false
+Read Depth Buffer=false
+
+[gui/size]
+width=963
+height=626
+
+[gui/position]
+horizontal=-29
+vertical=334
+
+[core]
+PPU Decoder=interpreter2
+Load liblv2.sprx=false
+Hook static functions=false
+SPU Decoder=recompiler_asmjit
+
+[rsx]
+VSync=true
+Aspect ratio=16x9
+Renderer=DX12
+Resolution=1280x720
+Frame limit=Auto
+Log shader programs=false
+3D Monitor=false
+
+[core/llvm]
+Compiled blocks exclusion=false
+Excluded block range min=200
+Excluded block range max=250
+Compilation threshold=1000
+
+[audio]
+Audio Out=XAudio2
+Dump to file=false
+Convert to 16 bit=false
+
+[io]
+Pad Handler=windows
+Camera=connected
+Camera type=PlayStationEye
+Mouse Handler=null
+Keyboard Handler=null
+
+[rsx/d3d12]
+D3D Adaptater=0
+Debug Output=false
+Debug overlay=true
+
+[io/pad]
+Circle=76
+Left Analog Stick Left=314
+Left Analog Stick Down=317
+Left Analog Stick Right=316
+R2=69
+Right=68
+Triangle=73
+Right Analog Stick Right=312
+Down=83
+Right Analog Stick Down=367
+Left Analog Stick Up=315
+Up=90
+Right Analog Stick Up=366
+Left=81
+Right Analog Stick Left=313
+Start=13
+Select=32
+Square=74
+Cross=75
+R1=51
+R3=67
+L1=49
+L2=65
+L3=87
+
+[misc]
+Exit RPCS3 when process finishes=false
+Always start after boot=true
+Use default configuration=true
+
+[misc/log]
+RSX Logging=false
+Log Level=Errors
+Log everything=false
+Save TTY output to file=false
+
+[misc/net]
+Connection status=Connecting
+Network adapter=0
+
+[misc/debug]
+Auto Pause at System Call=false
+Auto Pause at Function Call=false
+
+
 LDR: ! Elf path: /dev_hdd0/game/NPEA00356/USRDIR/BOOT.BIN
+LDR: ! 
 LDR: ! loader::init() failed: Broken file
-MEM: ! Initializing memory: g_base_addr = 0x578cec0000, g_priv_addr = 0x588cec0000
-MEM: ! Memory initialized.
-LDR: W Unknown module 'cellHttp'
-LDR: E Unimplemented function 'cellHttpCreateTransaction' in 'cellHttp' module (0xbce140)
-LDR: E Unimplemented function 'cellHttpResponseGetStatusCode' in 'cellHttp' module (0xbce178)
-LDR: E Unimplemented function 'cellHttpClientSetSslCallback' in 'cellHttp' module (0xbce1b0)
-LDR: E Unimplemented function 'cellHttpClientCloseAllConnections' in 'cellHttp' module (0xbce1e8)
-LDR: E Unimplemented function 'cellHttpClientSetAutoRedirect' in 'cellHttp' module (0xbce220)
-LDR: E Unimplemented function 'cellHttpClientSetRecvTimeout' in 'cellHttp' module (0xbce258)
-LDR: E Unimplemented function 'cellHttpInit' in 'cellHttp' module (0xbce290)
-LDR: E Unimplemented function 'cellHttpClientSetPipeline' in 'cellHttp' module (0xbce2c8)
-LDR: E Unimplemented function 'cellHttpDestroyTransaction' in 'cellHttp' module (0xbce300)
-LDR: E Unimplemented function 'cellHttpClientSetVersion' in 'cellHttp' module (0xbce338)
-LDR: E Unimplemented function 'cellHttpClientSetCookieStatus' in 'cellHttp' module (0xbce370)
-LDR: E Unimplemented function 'cellHttpResponseGetContentLength' in 'cellHttp' module (0xbce3a8)
-LDR: E Unimplemented function 'cellHttpCreateClient' in 'cellHttp' module (0xbce3e0)
-LDR: E Unimplemented function 'cellHttpsInit' in 'cellHttp' module (0xbce418)
-LDR: E Unimplemented function 'cellHttpClientSetKeepAlive' in 'cellHttp' module (0xbce450)
-LDR: E Unimplemented function 'cellHttpRecvResponse' in 'cellHttp' module (0xbce488)
-LDR: E Unimplemented function 'cellHttpClientSetSendTimeout' in 'cellHttp' module (0xbce4c0)
-LDR: E Unimplemented function 'cellHttpClientSetAutoAuthentication' in 'cellHttp' module (0xbce4f8)
-LDR: E Unimplemented function 'cellHttpClientSetHeader' in 'cellHttp' module (0xbce530)
-LDR: E Unimplemented function 'cellHttpSendRequest' in 'cellHttp' module (0xbce568)
-LDR: E Unimplemented function 'cellHttpClientPollConnections' in 'cellHttp' module (0xbce5a0)
-LDR: E Unimplemented function 'cellHttpClientSetResponseBufferMax' in 'cellHttp' module (0xbce5d8)
-LDR: E Unimplemented function 'cellHttpRequestSetContentLength' in 'cellHttp' module (0xbce610)
-LDR: E Unimplemented function 'cellHttpClientSetUserAgent' in 'cellHttp' module (0xbce648)
-LDR: E Unimplemented function 'cellHttpEnd' in 'cellHttp' module (0xbce680)
-LDR: E Unimplemented function 'cellHttpClientSetConnTimeout' in 'cellHttp' module (0xbce6b8)
-LDR: E Unimplemented function 'cellHttpClientSetProxy' in 'cellHttp' module (0xbce6f0)
-LDR: E Unimplemented function 'cellHttpsEnd' in 'cellHttp' module (0xbce728)
-LDR: W Unknown module 'cellHttpUtil'
-LDR: E Unimplemented function 'cellHttpUtilParseUri' in 'cellHttpUtil' module (0xbce760)
-LDR: E Unimplemented function 'cellHttpUtilEscapeUri' in 'cellHttpUtil' module (0xbce798)
-LDR: W Unknown module 'cellSsl'
-LDR: E Unimplemented function 'cellSslCertGetNameEntryInfo' in 'cellSsl' module (0xbce7d0)
-LDR: E Unimplemented function 'cellSslCertGetRsaPublicKeyExponent' in 'cellSsl' module (0xbce808)
-LDR: E Unimplemented function 'cellSslEnd' in 'cellSsl' module (0xbce840)
-LDR: E Unimplemented function 'cellSslCertGetSubjectName' in 'cellSsl' module (0xbce878)
-LDR: E Unimplemented function 'cellSslCertificateLoader' in 'cellSsl' module (0xbce8b0)
-LDR: E Unimplemented function 'cellSslCertGetNameEntryCount' in 'cellSsl' module (0xbce8e8)
-LDR: E Unimplemented function 'cellSslCertGetSerialNumber' in 'cellSsl' module (0xbce920)
-LDR: E Unimplemented function 'cellSslCertGetRsaPublicKeyModulus' in 'cellSsl' module (0xbce958)
-LDR: E Unimplemented function 'cellSslCertGetIssuerName' in 'cellSsl' module (0xbce990)
-LDR: E Unimplemented function 'cellSslCertGetPublicKey' in 'cellSsl' module (0xbce9c8)
-LDR: E Unimplemented function 'cellSslInit' in 'cellSsl' module (0xbcea00)
+LDR: ! *** sdk version: 0x360001
+LDR: ! *** primary prio: 1001
+LDR: ! *** primary stacksize: 0x10000
+LDR: ! *** malloc pagesize: 0x100000
+LDR: ! *** ppc seg: 0x0
+LDR: ! Imported function 'cellHttpCreateTransaction' in 'cellHttp' module (0xbce140)
+LDR: ! Imported function 'cellHttpResponseGetStatusCode' in 'cellHttp' module (0xbce178)
+LDR: ! Imported function 'cellHttpClientSetSslCallback' in 'cellHttp' module (0xbce1b0)
+LDR: ! Imported function 'cellHttpClientCloseAllConnections' in 'cellHttp' module (0xbce1e8)
+LDR: ! Imported function 'cellHttpClientSetAutoRedirect' in 'cellHttp' module (0xbce220)
+LDR: ! Imported function 'cellHttpClientSetRecvTimeout' in 'cellHttp' module (0xbce258)
+LDR: ! Imported function 'cellHttpInit' in 'cellHttp' module (0xbce290)
+LDR: ! Imported function 'cellHttpClientSetPipeline' in 'cellHttp' module (0xbce2c8)
+LDR: ! Imported function 'cellHttpDestroyTransaction' in 'cellHttp' module (0xbce300)
+LDR: ! Imported function 'cellHttpClientSetVersion' in 'cellHttp' module (0xbce338)
+LDR: ! Imported function 'cellHttpClientSetCookieStatus' in 'cellHttp' module (0xbce370)
+LDR: ! Imported function 'cellHttpResponseGetContentLength' in 'cellHttp' module (0xbce3a8)
+LDR: ! Imported function 'cellHttpCreateClient' in 'cellHttp' module (0xbce3e0)
+LDR: ! Imported function 'cellHttpsInit' in 'cellHttp' module (0xbce418)
+LDR: ! Imported function 'cellHttpClientSetKeepAlive' in 'cellHttp' module (0xbce450)
+LDR: ! Imported function 'cellHttpRecvResponse' in 'cellHttp' module (0xbce488)
+LDR: ! Imported function 'cellHttpClientSetSendTimeout' in 'cellHttp' module (0xbce4c0)
+LDR: ! Imported function 'cellHttpClientSetAutoAuthentication' in 'cellHttp' module (0xbce4f8)
+LDR: ! Imported function 'cellHttpClientSetHeader' in 'cellHttp' module (0xbce530)
+LDR: ! Imported function 'cellHttpSendRequest' in 'cellHttp' module (0xbce568)
+LDR: ! Imported function 'cellHttpClientPollConnections' in 'cellHttp' module (0xbce5a0)
+LDR: ! Imported function 'cellHttpClientSetResponseBufferMax' in 'cellHttp' module (0xbce5d8)
+LDR: ! Imported function 'cellHttpRequestSetContentLength' in 'cellHttp' module (0xbce610)
+LDR: ! Imported function 'cellHttpClientSetUserAgent' in 'cellHttp' module (0xbce648)
+LDR: ! Imported function 'cellHttpEnd' in 'cellHttp' module (0xbce680)
+LDR: ! Imported function 'cellHttpClientSetConnTimeout' in 'cellHttp' module (0xbce6b8)
+LDR: ! Imported function 'cellHttpClientSetProxy' in 'cellHttp' module (0xbce6f0)
+LDR: ! Imported function 'cellHttpsEnd' in 'cellHttp' module (0xbce728)
+LDR: ! Imported function 'cellHttpUtilParseUri' in 'cellHttpUtil' module (0xbce760)
+LDR: ! Imported function 'cellHttpUtilEscapeUri' in 'cellHttpUtil' module (0xbce798)
+LDR: ! Imported function 'cellSslCertGetNameEntryInfo' in 'cellSsl' module (0xbce7d0)
+LDR: ! Imported function 'cellSslCertGetRsaPublicKeyExponent' in 'cellSsl' module (0xbce808)
+LDR: ! Imported function 'cellSslEnd' in 'cellSsl' module (0xbce840)
+LDR: ! Imported function 'cellSslCertGetSubjectName' in 'cellSsl' module (0xbce878)
+LDR: ! Imported function 'cellSslCertificateLoader' in 'cellSsl' module (0xbce8b0)
+LDR: ! Imported function 'cellSslCertGetNameEntryCount' in 'cellSsl' module (0xbce8e8)
+LDR: ! Imported function 'cellSslCertGetSerialNumber' in 'cellSsl' module (0xbce920)
+LDR: ! Imported function 'cellSslCertGetRsaPublicKeyModulus' in 'cellSsl' module (0xbce958)
+LDR: ! Imported function 'cellSslCertGetIssuerName' in 'cellSsl' module (0xbce990)
+LDR: ! Imported function 'cellSslCertGetPublicKey' in 'cellSsl' module (0xbce9c8)
+LDR: ! Imported function 'cellSslInit' in 'cellSsl' module (0xbcea00)
 LDR: ! Imported function 'sys_net_initialize_network_ex' in 'sys_net' module (0xbcea38)
 LDR: ! Imported function 'recvfrom' in 'sys_net' module (0xbcea70)
 LDR: ! Imported function 'listen' in 'sys_net' module (0xbceaa8)
@@ -180,19 +291,19 @@ LDR: ! Imported function 'cellSysmoduleUnloadModule' in 'cellSysmodule' module (
 LDR: ! Imported function 'cellSysmoduleLoadModule' in 'cellSysmodule' module (0xbcfdb0)
 LDR: ! Imported function 'cellSysmoduleInitialize' in 'cellSysmodule' module (0xbcfde8)
 LDR: ! Imported function 'cellSysmoduleFinalize' in 'cellSysmodule' module (0xbcfe20)
-LDR: E Unimplemented function '0x1A267F98' in 'cellSysmodule' module (0xbd1ef0)
-LDR: E Unimplemented function '0xFD0E1CAC' in 'cellSysmodule' module (0xbd1f28)
+LDR: E Unknown function '0x1A267F98' in 'cellSysmodule' module (0xbd1ef0)
+LDR: E Unknown function '0xFD0E1CAC' in 'cellSysmodule' module (0xbd1f28)
 LDR: ! Imported function 'cellNetCtlNetStartDialogLoadAsync' in 'cellNetCtl' module (0xbcfe58)
 LDR: ! Imported function 'cellNetCtlNetStartDialogUnloadAsync' in 'cellNetCtl' module (0xbcfe90)
 LDR: ! Imported function 'cellNetCtlTerm' in 'cellNetCtl' module (0xbcfec8)
-LDR: E Unimplemented function 'cellGameUpdateTerm' in 'cellNetCtl' module (0xbcff00)
+LDR: ! Imported function 'cellGameUpdateTerm' in 'cellNetCtl' module (0xbcff00)
 LDR: ! Imported function 'cellNetCtlGetInfo' in 'cellNetCtl' module (0xbcff38)
 LDR: ! Imported function 'cellNetCtlGetState' in 'cellNetCtl' module (0xbcff70)
-LDR: E Unimplemented function 'cellGameUpdateInit' in 'cellNetCtl' module (0xbcffa8)
-LDR: E Unimplemented function 'cellGameUpdateCheckStartWithoutDialogAsync' in 'cellNetCtl' module (0xbcffe0)
+LDR: ! Imported function 'cellGameUpdateInit' in 'cellNetCtl' module (0xbcffa8)
+LDR: ! Imported function 'cellGameUpdateCheckStartWithoutDialogAsync' in 'cellNetCtl' module (0xbcffe0)
 LDR: ! Imported function 'cellNetCtlInit' in 'cellNetCtl' module (0xbd0018)
-LDR: E Unimplemented function 'cellGameUpdateCheckStartAsync' in 'cellNetCtl' module (0xbd0050)
-LDR: E Unimplemented function 'cellGameUpdateCheckFinishAsync' in 'cellNetCtl' module (0xbd0088)
+LDR: ! Imported function 'cellGameUpdateCheckStartAsync' in 'cellNetCtl' module (0xbd0050)
+LDR: ! Imported function 'cellGameUpdateCheckFinishAsync' in 'cellNetCtl' module (0xbd0088)
 LDR: ! Imported function 'sceNpManagerSubSignout' in 'sceNp' module (0xbd00c0)
 LDR: ! Imported function 'sceNpBasicSendMessageGui' in 'sceNp' module (0xbd00f8)
 LDR: ! Imported function 'sceNpManagerGetTicket' in 'sceNp' module (0xbd0130)
@@ -240,20 +351,20 @@ LDR: ! Imported function 'cellSaveDataListAutoLoad' in 'cellSysutil' module (0xb
 LDR: ! Imported function 'cellSaveDataUserListAutoLoad' in 'cellSysutil' module (0xbd0a60)
 LDR: ! Imported function 'cellSaveDataListSave2' in 'cellSysutil' module (0xbd0a98)
 LDR: ! Imported function 'cellSaveDataUserListLoad' in 'cellSysutil' module (0xbd0ad0)
-LDR: E Unimplemented function 'cellOskDialogUnloadAsync' in 'cellSysutil' module (0xbd0b08)
+LDR: ! Imported function 'cellOskDialogUnloadAsync' in 'cellSysutil' module (0xbd0b08)
 LDR: ! Imported function 'cellSysutilGetSystemParamInt' in 'cellSysutil' module (0xbd0b40)
 LDR: ! Imported function 'cellAudioOutConfigure' in 'cellSysutil' module (0xbd0b78)
 LDR: ! Imported function 'cellSaveDataListAutoSave' in 'cellSysutil' module (0xbd0bb0)
 LDR: ! Imported function 'cellSysCacheClear' in 'cellSysutil' module (0xbd0be8)
 LDR: ! Imported function 'cellMsgDialogOpen2' in 'cellSysutil' module (0xbd0c20)
-LDR: E Unimplemented function 'cellOskDialogLoadAsync' in 'cellSysutil' module (0xbd0c58)
+LDR: ! Imported function 'cellOskDialogLoadAsync' in 'cellSysutil' module (0xbd0c58)
 LDR: ! Imported function 'cellVideoOutGetState' in 'cellSysutil' module (0xbd0c90)
 LDR: ! Imported function 'cellMsgDialogProgressBarInc' in 'cellSysutil' module (0xbd0cc8)
 LDR: ! Imported function 'cellMsgDialogProgressBarSetMsg' in 'cellSysutil' module (0xbd0d00)
 LDR: ! Imported function 'cellSysutilRegisterCallback' in 'cellSysutil' module (0xbd0d38)
 LDR: ! Imported function 'cellVideoOutGetResolutionAvailability' in 'cellSysutil' module (0xbd0d70)
-LDR: E Unimplemented function 'cellOskDialogSetKeyLayoutOption' in 'cellSysutil' module (0xbd0da8)
-LDR: E Unimplemented function 'cellOskDialogAbort' in 'cellSysutil' module (0xbd0de0)
+LDR: ! Imported function 'cellOskDialogSetKeyLayoutOption' in 'cellSysutil' module (0xbd0da8)
+LDR: ! Imported function 'cellOskDialogAbort' in 'cellSysutil' module (0xbd0de0)
 LDR: ! Imported function 'cellAudioOutGetSoundAvailability' in 'cellSysutil' module (0xbd0e18)
 LDR: ! Imported function 'cellVideoOutGetResolution' in 'cellSysutil' module (0xbd0e50)
 LDR: ! Imported function 'cellSaveDataDelete2' in 'cellSysutil' module (0xbd0e88)
@@ -279,66 +390,62 @@ LDR: ! Imported function 'sceNpTrophyDestroyHandle' in 'sceNpTrophy' module (0xb
 LDR: ! Imported function 'sceNpTrophyUnlockTrophy' in 'sceNpTrophy' module (0xbd12e8)
 LDR: ! Imported function 'sceNpTrophyCreateContext' in 'sceNpTrophy' module (0xbd1320)
 LDR: ! Imported function 'sceNpTrophyGetTrophyInfo' in 'sceNpTrophy' module (0xbd1358)
-LDR: W Unknown module 'cellSysutilAvconfExt'
 LDR: ! Imported function 'cellVideoOutGetScreenSize' in 'cellSysutilAvconfExt' module (0xbd1390)
-LDR: W Unknown module 'sceNp2'
-LDR: E Unimplemented function 'sceNpMatching2DestroyContext' in 'sceNp2' module (0xbd13c8)
-LDR: E Unimplemented function 'sceNpMatching2GetWorldInfoList' in 'sceNp2' module (0xbd1400)
-LDR: E Unimplemented function 'sceNpMatching2SearchRoom' in 'sceNp2' module (0xbd1438)
-LDR: E Unimplemented function 'sceNpMatching2LeaveRoom' in 'sceNp2' module (0xbd1470)
-LDR: E Unimplemented function 'sceNpMatching2SetRoomDataExternal' in 'sceNp2' module (0xbd14a8)
-LDR: E Unimplemented function 'sceNpMatching2Term2' in 'sceNp2' module (0xbd14e0)
-LDR: E Unimplemented function 'sceNpMatching2GetServerInfo' in 'sceNp2' module (0xbd1518)
-LDR: E Unimplemented function 'sceNpMatching2GetEventData' in 'sceNp2' module (0xbd1550)
+LDR: ! Imported function 'sceNpMatching2DestroyContext' in 'sceNp2' module (0xbd13c8)
+LDR: ! Imported function 'sceNpMatching2GetWorldInfoList' in 'sceNp2' module (0xbd1400)
+LDR: ! Imported function 'sceNpMatching2SearchRoom' in 'sceNp2' module (0xbd1438)
+LDR: ! Imported function 'sceNpMatching2LeaveRoom' in 'sceNp2' module (0xbd1470)
+LDR: ! Imported function 'sceNpMatching2SetRoomDataExternal' in 'sceNp2' module (0xbd14a8)
+LDR: ! Imported function 'sceNpMatching2Term2' in 'sceNp2' module (0xbd14e0)
+LDR: ! Imported function 'sceNpMatching2GetServerInfo' in 'sceNp2' module (0xbd1518)
+LDR: ! Imported function 'sceNpMatching2GetEventData' in 'sceNp2' module (0xbd1550)
 LDR: ! Imported function 'sceNp2Init' in 'sceNp2' module (0xbd1588)
-LDR: E Unimplemented function 'sceNpMatching2JoinRoom' in 'sceNp2' module (0xbd15c0)
-LDR: E Unimplemented function 'sceNpMatching2KickoutRoomMember' in 'sceNp2' module (0xbd15f8)
-LDR: E Unimplemented function 'sceNpMatching2ContextStartAsync' in 'sceNp2' module (0xbd1630)
-LDR: E Unimplemented function 'sceNpMatching2RegisterContextCallback' in 'sceNp2' module (0xbd1668)
-LDR: E Unimplemented function 'sceNpMatching2SetRoomDataInternal' in 'sceNp2' module (0xbd16a0)
-LDR: E Unimplemented function 'sceNpMatching2GetServerIdListLocal' in 'sceNp2' module (0xbd16d8)
-LDR: E Unimplemented function 'sceNpMatching2CreateContext' in 'sceNp2' module (0xbd1710)
-LDR: E Unimplemented function 'sceNpMatching2ClearEventData' in 'sceNp2' module (0xbd1748)
+LDR: ! Imported function 'sceNpMatching2JoinRoom' in 'sceNp2' module (0xbd15c0)
+LDR: ! Imported function 'sceNpMatching2KickoutRoomMember' in 'sceNp2' module (0xbd15f8)
+LDR: ! Imported function 'sceNpMatching2ContextStartAsync' in 'sceNp2' module (0xbd1630)
+LDR: ! Imported function 'sceNpMatching2RegisterContextCallback' in 'sceNp2' module (0xbd1668)
+LDR: ! Imported function 'sceNpMatching2SetRoomDataInternal' in 'sceNp2' module (0xbd16a0)
+LDR: ! Imported function 'sceNpMatching2GetServerIdListLocal' in 'sceNp2' module (0xbd16d8)
+LDR: ! Imported function 'sceNpMatching2CreateContext' in 'sceNp2' module (0xbd1710)
+LDR: ! Imported function 'sceNpMatching2ClearEventData' in 'sceNp2' module (0xbd1748)
 LDR: ! Imported function 'sceNp2Term' in 'sceNp2' module (0xbd1780)
-LDR: E Unimplemented function 'sceNpMatching2GetUserInfoList' in 'sceNp2' module (0xbd17b8)
-LDR: E Unimplemented function 'sceNpMatching2SetDefaultRequestOptParam' in 'sceNp2' module (0xbd17f0)
-LDR: E Unimplemented function 'sceNpMatching2RegisterRoomEventCallback' in 'sceNp2' module (0xbd1828)
-LDR: E Unimplemented function 'sceNpMatching2GetRoomDataExternalList' in 'sceNp2' module (0xbd1860)
-LDR: E Unimplemented function 'sceNpMatching2CreateJoinRoom' in 'sceNp2' module (0xbd1898)
-LDR: E Unimplemented function 'sceNpMatching2ContextStop' in 'sceNp2' module (0xbd18d0)
-LDR: E Unimplemented function 'sceNpMatching2Init2' in 'sceNp2' module (0xbd1908)
-LDR: E Unimplemented function 'sceNpMatching2RegisterRoomMessageCallback' in 'sceNp2' module (0xbd1940)
-LDR: W Unknown module 'cellRudp'
-LDR: E Unimplemented function 'cellRudpGetSizeReadable' in 'cellRudp' module (0xbd1978)
-LDR: E Unimplemented function 'cellRudpSetOption' in 'cellRudp' module (0xbd19b0)
-LDR: E Unimplemented function 'cellRudpWrite' in 'cellRudp' module (0xbd19e8)
-LDR: E Unimplemented function 'cellRudpTerminate' in 'cellRudp' module (0xbd1a20)
-LDR: E Unimplemented function 'cellRudpGetRemoteInfo' in 'cellRudp' module (0xbd1a58)
-LDR: E Unimplemented function 'cellRudpInit' in 'cellRudp' module (0xbd1a90)
-LDR: E Unimplemented function 'cellRudpEnableInternalIOThread' in 'cellRudp' module (0xbd1ac8)
-LDR: E Unimplemented function 'cellRudpGetContextStatus' in 'cellRudp' module (0xbd1b00)
-LDR: E Unimplemented function 'cellRudpCreateContext' in 'cellRudp' module (0xbd1b38)
-LDR: E Unimplemented function 'cellRudpSetEventHandler' in 'cellRudp' module (0xbd1b70)
-LDR: E Unimplemented function 'cellRudpRead' in 'cellRudp' module (0xbd1ba8)
-LDR: E Unimplemented function 'cellRudpGetSizeWritable' in 'cellRudp' module (0xbd1be0)
-LDR: E Unimplemented function 'cellRudpEnd' in 'cellRudp' module (0xbd1c18)
-LDR: E Unimplemented function 'cellRudpInitiate' in 'cellRudp' module (0xbd1c50)
-LDR: E Unimplemented function 'cellRudpBind' in 'cellRudp' module (0xbd1c88)
-LDR: W Unknown module 'cellSysutilAvc2'
-LDR: E Unimplemented function 'cellSysutilAvc2StopStreaming' in 'cellSysutilAvc2' module (0xbd1cc0)
-LDR: E Unimplemented function 'cellSysutilAvc2LoadAsync' in 'cellSysutilAvc2' module (0xbd1cf8)
-LDR: E Unimplemented function 'cellSysutilAvc2SetPlayerVoiceMuting' in 'cellSysutilAvc2' module (0xbd1d30)
-LDR: E Unimplemented function 'cellSysutilAvc2Unload' in 'cellSysutilAvc2' module (0xbd1d68)
-LDR: E Unimplemented function 'cellSysutilAvc2GetPlayerVoiceMuting' in 'cellSysutilAvc2' module (0xbd1da0)
-LDR: E Unimplemented function 'cellSysutilAvc2JoinChatRequest' in 'cellSysutilAvc2' module (0xbd1dd8)
-LDR: E Unimplemented function 'cellSysutilAvc2StartStreaming' in 'cellSysutilAvc2' module (0xbd1e10)
-LDR: E Unimplemented function 'cellSysutilAvc2InitParam' in 'cellSysutilAvc2' module (0xbd1e48)
-LDR: E Unimplemented function 'cellSysutilAvc2LeaveChatRequest' in 'cellSysutilAvc2' module (0xbd1e80)
-LDR: E Unimplemented function 'cellSysutilAvc2SetAttribute' in 'cellSysutilAvc2' module (0xbd1eb8)
-LDR: W Unknown module 'cellSysutilNpEula'
-LDR: E Unimplemented function '0x59D1629A' in 'cellSysutilNpEula' module (0xbd1f60)
-LDR: E Unimplemented function '0x5EC05AD8' in 'cellSysutilNpEula' module (0xbd1f98)
-LDR: E Unimplemented function '0x6599500D' in 'cellSysutilNpEula' module (0xbd1fd0)
+LDR: ! Imported function 'sceNpMatching2GetUserInfoList' in 'sceNp2' module (0xbd17b8)
+LDR: ! Imported function 'sceNpMatching2SetDefaultRequestOptParam' in 'sceNp2' module (0xbd17f0)
+LDR: ! Imported function 'sceNpMatching2RegisterRoomEventCallback' in 'sceNp2' module (0xbd1828)
+LDR: ! Imported function 'sceNpMatching2GetRoomDataExternalList' in 'sceNp2' module (0xbd1860)
+LDR: ! Imported function 'sceNpMatching2CreateJoinRoom' in 'sceNp2' module (0xbd1898)
+LDR: ! Imported function 'sceNpMatching2ContextStop' in 'sceNp2' module (0xbd18d0)
+LDR: ! Imported function 'sceNpMatching2Init2' in 'sceNp2' module (0xbd1908)
+LDR: ! Imported function 'sceNpMatching2RegisterRoomMessageCallback' in 'sceNp2' module (0xbd1940)
+LDR: ! Imported function 'cellRudpGetSizeReadable' in 'cellRudp' module (0xbd1978)
+LDR: ! Imported function 'cellRudpSetOption' in 'cellRudp' module (0xbd19b0)
+LDR: ! Imported function 'cellRudpWrite' in 'cellRudp' module (0xbd19e8)
+LDR: ! Imported function 'cellRudpTerminate' in 'cellRudp' module (0xbd1a20)
+LDR: ! Imported function 'cellRudpGetRemoteInfo' in 'cellRudp' module (0xbd1a58)
+LDR: ! Imported function 'cellRudpInit' in 'cellRudp' module (0xbd1a90)
+LDR: ! Imported function 'cellRudpEnableInternalIOThread' in 'cellRudp' module (0xbd1ac8)
+LDR: ! Imported function 'cellRudpGetContextStatus' in 'cellRudp' module (0xbd1b00)
+LDR: ! Imported function 'cellRudpCreateContext' in 'cellRudp' module (0xbd1b38)
+LDR: ! Imported function 'cellRudpSetEventHandler' in 'cellRudp' module (0xbd1b70)
+LDR: ! Imported function 'cellRudpRead' in 'cellRudp' module (0xbd1ba8)
+LDR: ! Imported function 'cellRudpGetSizeWritable' in 'cellRudp' module (0xbd1be0)
+LDR: ! Imported function 'cellRudpEnd' in 'cellRudp' module (0xbd1c18)
+LDR: ! Imported function 'cellRudpInitiate' in 'cellRudp' module (0xbd1c50)
+LDR: ! Imported function 'cellRudpBind' in 'cellRudp' module (0xbd1c88)
+LDR: ! Imported function 'cellSysutilAvc2StopStreaming' in 'cellSysutilAvc2' module (0xbd1cc0)
+LDR: ! Imported function 'cellSysutilAvc2LoadAsync' in 'cellSysutilAvc2' module (0xbd1cf8)
+LDR: ! Imported function 'cellSysutilAvc2SetPlayerVoiceMuting' in 'cellSysutilAvc2' module (0xbd1d30)
+LDR: ! Imported function 'cellSysutilAvc2Unload' in 'cellSysutilAvc2' module (0xbd1d68)
+LDR: ! Imported function 'cellSysutilAvc2GetPlayerVoiceMuting' in 'cellSysutilAvc2' module (0xbd1da0)
+LDR: ! Imported function 'cellSysutilAvc2JoinChatRequest' in 'cellSysutilAvc2' module (0xbd1dd8)
+LDR: ! Imported function 'cellSysutilAvc2StartStreaming' in 'cellSysutilAvc2' module (0xbd1e10)
+LDR: ! Imported function 'cellSysutilAvc2InitParam' in 'cellSysutilAvc2' module (0xbd1e48)
+LDR: ! Imported function 'cellSysutilAvc2LeaveChatRequest' in 'cellSysutilAvc2' module (0xbd1e80)
+LDR: ! Imported function 'cellSysutilAvc2SetAttribute' in 'cellSysutilAvc2' module (0xbd1eb8)
+LDR: E Unknown module 'cellSysutilNpEula'
+LDR: E Unknown function '0x59D1629A' in 'cellSysutilNpEula' module (0xbd1f60)
+LDR: E Unknown function '0x5EC05AD8' in 'cellSysutilNpEula' module (0xbd1f98)
+LDR: E Unknown function '0x6599500D' in 'cellSysutilNpEula' module (0xbd1fd0)
 LDR: ! Imported function 'cellRtcGetCurrentTick' in 'cellRtc' module (0xbd2238)
 LDR: ! Imported function 'cellRtcConvertUtcToLocalTime' in 'cellRtc' module (0xbd2270)
 LDR: ! Imported function 'sys_lwmutex_lock' in 'sysPrxForUser' module (0xbd2660)
@@ -368,12 +475,11 @@ LDR: ! Imported function 'sys_mmapper_map_memory' in 'sysPrxForUser' module (0xb
 LDR: ! Imported function 'sys_process_exit' in 'sysPrxForUser' module (0xbd2ba0)
 LDR: ! Imported function 'sys_lwcond_signal_all' in 'sysPrxForUser' module (0xbd2bd8)
 LDR: ! Imported function 'sys_lwcond_signal' in 'sysPrxForUser' module (0xbd2c10)
-HLE: ! sysPrxForUser: Thread Local Storage initialized (g_tls_start=0x11ad000, user_size=0x1f8)
+MEM: ! Thread Local Storage initialized (g_tls_start=0x11ad000, user_size=0x1f8)
 *** TLS segment addr: 0x00dfa0e0
 *** TLS segment size: 0x00000008
-LDR: E 'BreakPoints.dat' is broken (version=0xdcd0, break_count=0x0, marked_count=0x93173968, length=0x6)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x106e288, attr=*0xc22960)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a69770]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000fc04)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a69770]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000fc04)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x106e088, attr=*0xc22960)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x106d810, attr=*0xc22960)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x106d838, attr=*0xc22960)
@@ -383,77 +489,637 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_cr
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x106d798, attr=*0xc22960)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x106d7c0, attr=*0xc22960)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x106d7e8, attr=*0xc22960)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00726674]} sys_memory: sys_memory_get_user_memory_size(mem_info_addr=0xd000fbc0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x007266e4]} sys_mmapper: sys_mmapper_allocate_address(size=0x10000000, flags=0xf, alignment=0x10000000, alloc_addr=0xeb81d4)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id_addr=0xeb79d4)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(start_addr=0x0, mem_id=0xd, flags=0x40000)
-HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper error: sys_mmapper_map_memory failed!
+HLE: W {PPU[0x1] Thread (main_thread)[0x00726674]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000fbc0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x007266e4]} sys_mmapper: sys_mmapper_allocate_address(size=0x10000000, flags=0xf, alignment=0x10000000, alloc_addr=*0xeb81d4)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb79d4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30000000, mem_id=0xd, flags=0x40000)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x106e3d0, attr=*0xeefd98)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x106e390, attr=*0xeefda8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5b484]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5b484]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5b484]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a62664]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fa70, summertime_addr=0xd000fa74)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a62664]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a62664]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5cfe4]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5cfe4]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5cfe4]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a62664]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fa70, summertime_addr=0xd000fa74)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a62664]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a62664]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5b428]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5b428]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5b428]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5cfe4]} sys_time: sys_time_get_timezone(timezone_addr=0xd000fb20, summertime_addr=0xd000fb24)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5cfe4]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_TIMEZONE
-HLE: W {PPU[0x1] Thread (main_thread)[0x00a5cfe4]} cellSysutil: cellSysutilGetSystemParamInt: CELL_SYSUTIL_SYSTEMPARAM_ID_SUMMERTIME
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a5b484]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a5cfe4]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a5b428]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a5cfe4]} sys_time: sys_time_get_timezone(timezone=*0xd000fb20, summertime=*0xd000fb24)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x1064ad8, attr=*0xd000fb50)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xeebfa0, attr=*0xd000fbb0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xef0d38, attr=*0xd000fbb0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00bd27e8]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0xef0d10, attr=*0xd000fbd0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00a68704]} sys_memory: sys_memory_allocate(size=0x100000, flags=0x400, alloc_addr=*0xd000f890)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00809c44]} sys_mutex: sys_mutex_create(mutex_id=*0xd000f9f0, attr=*0xd000f9f8)
-G: E {PPU[0x1] Thread (main_thread)[0x000b0d0c]} Exception: Access violation writing location 0x2a2a
-G: E {PPU[0x1] Thread (main_thread)[0x000b0d0c]} Information: is_alive=1, m_last_syscall=0x0 ()
-G: W {PPU[0x1] Thread (main_thread)[0x000b0d0c]} Registers:
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x0000: CELL_SYSMODULE_NET)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x0003: CELL_SYSMODULE_SSL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x0001: CELL_SYSMODULE_HTTP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x0002: CELL_SYSMODULE_HTTP_UTIL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x0004: CELL_SYSMODULE_HTTPS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x0015: CELL_SYSMODULE_SYSUTIL)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x003e: CELL_SYSMODULE_SYSUTIL_GAME)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x0032: CELL_SYSMODULE_SYSUTIL_USERINFO)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x0022: CELL_SYSMODULE_MIC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x0031: CELL_SYSMODULE_AVCONF_EXT)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x0016: CELL_SYSMODULE_SYSUTIL_NP)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0x0009: CELL_SYSMODULE_RTC)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfdb0]} cellSysmodule: cellSysmoduleLoadModule(id=0xf035: CELL_SYSMODULE_SYSUTIL_NP_TROPHY)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd1ef0]} Unimplemented function: 0x1A267F98 -> CELL_OK
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd0d38]} cellSysutil: cellSysutilRegisterCallback(slot=0, func=*0xddf598, userdata=*0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2708]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0xfd8818, entry=0xdec518, arg=0xfd9570, prio=99, stacksize=0x10000, flags=0x1, threadname=*0xc11ba0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2708]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0xfd8818, param=*0xd000f790, arg=0xfd9570, unk=0x0, prio=99, stacksize=0x10000, flags=0x1, threadname=*0xc11ba0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2708]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x15)
+HLE: W {PPU[0x15] Thread (BootCheckThread())[0x00bd1048]} cellGame: cellGameBootCheck(type=*0xfd9574, attributes=*0xfd9578, size=*0xd002fde4, dirName=*0xfd95a0)
+HLE: W {PPU[0x15] Thread (BootCheckThread())[0x00bd0fa0]} cellGame: cellGameGetParamInt(id=102, value=*0xd002fde0)
+HLE: W {PPU[0x15] Thread (BootCheckThread())[0x00bd0ec0]} cellGame: cellGameGetParamString(id=10, buf=*0xfd9739, bufsize=10)
+HLE: W {PPU[0x15] Thread (BootCheckThread())[0x00bd0f30]} cellGame: cellGameContentPermit(contentInfoPath=*0xfd9620, usrdirPath=*0xfd96a0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x0074731c]} sys_ppu_thread: sys_ppu_thread_join(thread_id=0x15, vptr=*0xd000f810)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd0b40]} cellSysutil: cellSysutilGetSystemParamInt(id=0x111(ID_LANG), value=*0xd000f780)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcef78]} cellFs: cellFsStat(path=*0xd000f660, sb=*0xd000ee28) -> sys_fs_stat()
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcef78]} sys_fs: sys_fs_stat(path=*0xd000f660, sb=*0xd000ee28)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcef78]} sys_fs: *** path = '/dev_hdd0/game/Ratchet &/USRDIR/parameters.txt'
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bcef78]} sys_fs: sys_fs_stat('/dev_hdd0/game/Ratchet &/USRDIR/parameters.txt') failed: not found
+HLE: W {PPU[0x1] Thread (main_thread)[0x007430a8]} sys_spu: sys_spu_initialize(max_usable_spu=6, max_raw_spu=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x007430c4]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000f6c0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb79d8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30100000, mem_id=0x16, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb79dc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30200000, mem_id=0x17, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb79e0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30300000, mem_id=0x18, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb79e4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30400000, mem_id=0x19, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb79e8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30500000, mem_id=0x1a, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb79ec)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30600000, mem_id=0x1b, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb79f0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30700000, mem_id=0x1c, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb79f4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30800000, mem_id=0x1d, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb79f8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30900000, mem_id=0x1e, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb79fc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30a00000, mem_id=0x1f, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a00)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30b00000, mem_id=0x20, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a04)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30c00000, mem_id=0x21, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a08)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30d00000, mem_id=0x22, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a0c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30e00000, mem_id=0x23, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a10)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x30f00000, mem_id=0x24, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a14)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31000000, mem_id=0x25, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a18)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31100000, mem_id=0x26, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a1c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31200000, mem_id=0x27, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a20)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31300000, mem_id=0x28, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a24)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31400000, mem_id=0x29, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31500000, mem_id=0x2a, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a2c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31600000, mem_id=0x2b, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a30)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31700000, mem_id=0x2c, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a34)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31800000, mem_id=0x2d, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a38)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31900000, mem_id=0x2e, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a3c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31a00000, mem_id=0x2f, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a40)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31b00000, mem_id=0x30, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a44)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31c00000, mem_id=0x31, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a48)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31d00000, mem_id=0x32, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a4c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31e00000, mem_id=0x33, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a50)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x31f00000, mem_id=0x34, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a54)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32000000, mem_id=0x35, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a58)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32100000, mem_id=0x36, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a5c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32200000, mem_id=0x37, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a60)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32300000, mem_id=0x38, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a64)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32400000, mem_id=0x39, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a68)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32500000, mem_id=0x3a, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a6c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32600000, mem_id=0x3b, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a70)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32700000, mem_id=0x3c, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a74)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32800000, mem_id=0x3d, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a78)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32900000, mem_id=0x3e, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a7c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32a00000, mem_id=0x3f, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a80)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32b00000, mem_id=0x40, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a84)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32c00000, mem_id=0x41, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a88)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32d00000, mem_id=0x42, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a8c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32e00000, mem_id=0x43, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a90)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x32f00000, mem_id=0x44, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a94)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33000000, mem_id=0x45, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a98)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33100000, mem_id=0x46, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7a9c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33200000, mem_id=0x47, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7aa0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33300000, mem_id=0x48, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7aa4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33400000, mem_id=0x49, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7aa8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33500000, mem_id=0x4a, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7aac)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33600000, mem_id=0x4b, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ab0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33700000, mem_id=0x4c, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ab4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33800000, mem_id=0x4d, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ab8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33900000, mem_id=0x4e, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7abc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33a00000, mem_id=0x4f, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ac0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33b00000, mem_id=0x50, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ac4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33c00000, mem_id=0x51, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ac8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33d00000, mem_id=0x52, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7acc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33e00000, mem_id=0x53, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ad0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x33f00000, mem_id=0x54, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ad4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34000000, mem_id=0x55, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ad8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34100000, mem_id=0x56, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7adc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34200000, mem_id=0x57, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ae0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34300000, mem_id=0x58, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ae4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34400000, mem_id=0x59, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ae8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34500000, mem_id=0x5a, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7aec)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34600000, mem_id=0x5b, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7af0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34700000, mem_id=0x5c, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7af4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34800000, mem_id=0x5d, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7af8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34900000, mem_id=0x5e, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7afc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34a00000, mem_id=0x5f, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b00)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34b00000, mem_id=0x60, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b04)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34c00000, mem_id=0x61, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b08)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34d00000, mem_id=0x62, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b0c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34e00000, mem_id=0x63, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b10)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x34f00000, mem_id=0x64, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b14)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35000000, mem_id=0x65, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b18)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35100000, mem_id=0x66, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b1c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35200000, mem_id=0x67, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b20)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35300000, mem_id=0x68, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b24)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35400000, mem_id=0x69, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35500000, mem_id=0x6a, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b2c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35600000, mem_id=0x6b, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b30)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35700000, mem_id=0x6c, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b34)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35800000, mem_id=0x6d, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b38)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35900000, mem_id=0x6e, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b3c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35a00000, mem_id=0x6f, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b40)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35b00000, mem_id=0x70, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b44)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35c00000, mem_id=0x71, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b48)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35d00000, mem_id=0x72, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b4c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35e00000, mem_id=0x73, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b50)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x35f00000, mem_id=0x74, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b54)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36000000, mem_id=0x75, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b58)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36100000, mem_id=0x76, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b5c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36200000, mem_id=0x77, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b60)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36300000, mem_id=0x78, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b64)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36400000, mem_id=0x79, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b68)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36500000, mem_id=0x7a, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b6c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36600000, mem_id=0x7b, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b70)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36700000, mem_id=0x7c, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b74)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36800000, mem_id=0x7d, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b78)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36900000, mem_id=0x7e, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b7c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36a00000, mem_id=0x7f, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b80)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36b00000, mem_id=0x80, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b84)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36c00000, mem_id=0x81, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b88)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36d00000, mem_id=0x82, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b8c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36e00000, mem_id=0x83, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b90)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x36f00000, mem_id=0x84, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b94)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37000000, mem_id=0x85, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b98)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37100000, mem_id=0x86, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7b9c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37200000, mem_id=0x87, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ba0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37300000, mem_id=0x88, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ba4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37400000, mem_id=0x89, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ba8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37500000, mem_id=0x8a, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bac)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37600000, mem_id=0x8b, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bb0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37700000, mem_id=0x8c, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bb4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37800000, mem_id=0x8d, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bb8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37900000, mem_id=0x8e, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bbc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37a00000, mem_id=0x8f, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bc0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37b00000, mem_id=0x90, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bc4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37c00000, mem_id=0x91, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bc8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37d00000, mem_id=0x92, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bcc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37e00000, mem_id=0x93, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bd0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x37f00000, mem_id=0x94, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bd4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38000000, mem_id=0x95, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bd8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38100000, mem_id=0x96, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bdc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38200000, mem_id=0x97, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7be0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38300000, mem_id=0x98, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7be4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38400000, mem_id=0x99, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7be8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38500000, mem_id=0x9a, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bec)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38600000, mem_id=0x9b, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bf0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38700000, mem_id=0x9c, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bf4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38800000, mem_id=0x9d, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bf8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38900000, mem_id=0x9e, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7bfc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38a00000, mem_id=0x9f, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c00)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38b00000, mem_id=0xa0, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c04)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38c00000, mem_id=0xa1, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c08)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38d00000, mem_id=0xa2, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c0c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38e00000, mem_id=0xa3, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c10)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x38f00000, mem_id=0xa4, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c14)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39000000, mem_id=0xa5, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c18)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39100000, mem_id=0xa6, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c1c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39200000, mem_id=0xa7, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c20)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39300000, mem_id=0xa8, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c24)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39400000, mem_id=0xa9, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39500000, mem_id=0xaa, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c2c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39600000, mem_id=0xab, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c30)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39700000, mem_id=0xac, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c34)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39800000, mem_id=0xad, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c38)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39900000, mem_id=0xae, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c3c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39a00000, mem_id=0xaf, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c40)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39b00000, mem_id=0xb0, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c44)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39c00000, mem_id=0xb1, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c48)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39d00000, mem_id=0xb2, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c4c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39e00000, mem_id=0xb3, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c50)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x39f00000, mem_id=0xb4, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c54)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3a000000, mem_id=0xb5, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c58)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3a100000, mem_id=0xb6, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c5c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3a200000, mem_id=0xb7, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c60)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3a300000, mem_id=0xb8, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c64)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3a400000, mem_id=0xb9, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c68)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3a500000, mem_id=0xba, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c6c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3a600000, mem_id=0xbb, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c70)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3a700000, mem_id=0xbc, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c74)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3a800000, mem_id=0xbd, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c78)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3a900000, mem_id=0xbe, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c7c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3aa00000, mem_id=0xbf, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c80)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ab00000, mem_id=0xc0, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c84)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ac00000, mem_id=0xc1, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c88)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ad00000, mem_id=0xc2, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c8c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ae00000, mem_id=0xc3, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c90)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3af00000, mem_id=0xc4, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c94)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3b000000, mem_id=0xc5, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c98)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3b100000, mem_id=0xc6, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7c9c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3b200000, mem_id=0xc7, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ca0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3b300000, mem_id=0xc8, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ca4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3b400000, mem_id=0xc9, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ca8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3b500000, mem_id=0xca, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cac)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3b600000, mem_id=0xcb, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cb0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3b700000, mem_id=0xcc, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cb4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3b800000, mem_id=0xcd, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cb8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3b900000, mem_id=0xce, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cbc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ba00000, mem_id=0xcf, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cc0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3bb00000, mem_id=0xd0, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cc4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3bc00000, mem_id=0xd1, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cc8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3bd00000, mem_id=0xd2, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ccc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3be00000, mem_id=0xd3, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cd0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3bf00000, mem_id=0xd4, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cd4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3c000000, mem_id=0xd5, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cd8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3c100000, mem_id=0xd6, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cdc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3c200000, mem_id=0xd7, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ce0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3c300000, mem_id=0xd8, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ce4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3c400000, mem_id=0xd9, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7ce8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3c500000, mem_id=0xda, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cec)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3c600000, mem_id=0xdb, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cf0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3c700000, mem_id=0xdc, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cf4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3c800000, mem_id=0xdd, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cf8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3c900000, mem_id=0xde, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7cfc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ca00000, mem_id=0xdf, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d00)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3cb00000, mem_id=0xe0, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d04)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3cc00000, mem_id=0xe1, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d08)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3cd00000, mem_id=0xe2, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d0c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ce00000, mem_id=0xe3, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d10)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3cf00000, mem_id=0xe4, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d14)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3d000000, mem_id=0xe5, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d18)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3d100000, mem_id=0xe6, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d1c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3d200000, mem_id=0xe7, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d20)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3d300000, mem_id=0xe8, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d24)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3d400000, mem_id=0xe9, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d28)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3d500000, mem_id=0xea, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d2c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3d600000, mem_id=0xeb, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d30)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3d700000, mem_id=0xec, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d34)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3d800000, mem_id=0xed, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d38)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3d900000, mem_id=0xee, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d3c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3da00000, mem_id=0xef, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d40)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3db00000, mem_id=0xf0, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d44)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3dc00000, mem_id=0xf1, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d48)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3dd00000, mem_id=0xf2, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d4c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3de00000, mem_id=0xf3, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d50)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3df00000, mem_id=0xf4, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d54)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3e000000, mem_id=0xf5, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d58)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3e100000, mem_id=0xf6, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d5c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3e200000, mem_id=0xf7, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d60)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3e300000, mem_id=0xf8, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d64)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3e400000, mem_id=0xf9, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d68)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3e500000, mem_id=0xfa, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d6c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3e600000, mem_id=0xfb, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d70)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3e700000, mem_id=0xfc, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d74)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3e800000, mem_id=0xfd, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d78)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3e900000, mem_id=0xfe, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d7c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ea00000, mem_id=0xff, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d80)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3eb00000, mem_id=0x100, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d84)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ec00000, mem_id=0x101, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d88)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ed00000, mem_id=0x102, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d8c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ee00000, mem_id=0x103, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d90)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3ef00000, mem_id=0x104, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d94)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3f000000, mem_id=0x105, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d98)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3f100000, mem_id=0x106, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7d9c)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3f200000, mem_id=0x107, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7da0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3f300000, mem_id=0x108, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7da4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3f400000, mem_id=0x109, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7da8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3f500000, mem_id=0x10a, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7dac)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3f600000, mem_id=0x10b, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7db0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3f700000, mem_id=0x10c, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7db4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3f800000, mem_id=0x10d, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7db8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3f900000, mem_id=0x10e, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7dbc)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3fa00000, mem_id=0x10f, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7dc0)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3fb00000, mem_id=0x110, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7dc4)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3fc00000, mem_id=0x111, flags=0x40000)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bd2ac0]} sys_mmapper: sys_mmapper_allocate_memory(size=0x100000, flags=0x400, mem_id=*0xeb7dc8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bd2b68]} sys_mmapper: sys_mmapper_map_memory(addr=0x3fd00000, mem_id=0x112, flags=0x40000)
+HLE: E {PPU[0x1] Thread (main_thread)[0x007432ac]} sys_mmapper: sys_mmapper_free_address(addr=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00743308]} sys_memory: sys_memory_get_user_memory_size(mem_info=*0xd000f6c8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfaa0]} cellSpurs: _cellSpursAttributeInitialize(attr=*0xd000f410, revision=2, sdkVersion=0x330000, nSpus=1, spuPriority=99, ppuPriority=0, exitIfNoWork=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb48]} cellSpurs: cellSpursAttributeSetSpuThreadGroupType(attr=*0xd000f410, type=0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} cellSpurs: cellSpursInitializeWithAttribute(spurs=*0x104e680, attr=*0xd000f410)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x104e680, flags=0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_semaphore: sys_semaphore_create(sem_id=*0xd000f398, attr=*0xd000f370, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_spu: sys_spu_thread_group_create(id=*0x104f3b0, num=1, prio=99, attr=*0xd000f2d0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_spu: sys_spu_thread_initialize(thread=*0x104f3b4, group=0x124, spu_num=0, img=*0x104f3f0, attr=*0xd000f298, arg=*0xd000f2a8)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_spu: Unsupported SPU Thread options (0x2)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x104f430, attr=*0xd000f1f8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sysPrxForUser: sys_lwcond_create(lwcond=*0x104f448, lwmutex=*0x104f430, attr=*0xd000f200)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_event: sys_event_queue_create(equeue_id=*0x104f3dc, attr=*0xd000f1f8, event_queue_key=0x0, size=42)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x124, eq=0x128, req=0xffffffffffff0000, spup=*0x104e749)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_event: sys_event_port_create(eport_id=*0x104f3e0, port_type=1, name=0x0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_event: sys_event_port_connect_local(eport_id=0x129, equeue_id=0x128)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} cellSpurs: cellSpursEnableExceptionEventHandler(spurs=*0x104e680, flag=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00bcfb80]} sys_spu: sys_spu_thread_group_connect_event(id=0x124, eq=0x128, et=2)
+HLE: E {PPU[0x1] Thread (main_thread)[0x00bcf838]} cellSpurs: cellSpursGetInfo
+HLE: W {PPU[0x12b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_start(id=0x124)
+TTY: Assertion failed at ../../../../job/src/ppu/jobapi/jobarraycontainer.cpp(245): (spursInfo.nSpus > 0) && ( spursInfo.nSpus <= 8 )\n
+SPU: S {PPU[0x12b] Thread (SpursHdlr0)[0x00000000]} SPU Database initialized...
+SPU: S {PPU[0x12b] Thread (SpursHdlr0)[0x00000000]} SPU Recompiler (ASMJIT) created...
+G: ! {PPU[0x1] Thread (main_thread)[0x0080ddc8]} Registers:
 =========
-GPR[0] = 0xb0cfc
-GPR[1] = 0xd000fc00
-GPR[2] = 0x7eda6000
-GPR[3] = 0xf267d0
-GPR[4] = 0xa2550
-GPR[5] = 0xf20000
-GPR[6] = 0x3
-GPR[7] = 0x44
-GPR[8] = 0x3
-GPR[9] = 0xdd4378
-GPR[10] = 0xcaa0000
-GPR[11] = 0xdd4378
-GPR[12] = 0xffffffffed52709c
+GPR[0] = 0x80ddc4
+GPR[1] = 0xd000f1d0
+GPR[2] = 0xdfd988
+GPR[3] = 0x81
+GPR[4] = 0x20000020
+GPR[5] = 0xffffffffffffffff
+GPR[6] = 0xd000ed30
+GPR[7] = 0x0
+GPR[8] = 0x0
+GPR[9] = 0x0
+GPR[10] = 0x106d828
+GPR[11] = 0xd000f1d0
+GPR[12] = 0x0
 GPR[13] = 0x11b4030
 GPR[14] = 0x0
-GPR[15] = 0xdb6000
-GPR[16] = 0xdb5000
+GPR[15] = 0xdb7000
+GPR[16] = 0xdb6000
 GPR[17] = 0x0
-GPR[18] = 0xdb4000
-GPR[19] = 0xdbf86d
+GPR[18] = 0xdb5000
+GPR[19] = 0x100000
 GPR[20] = 0x0
 GPR[21] = 0x0
 GPR[22] = 0x0
 GPR[23] = 0x0
-GPR[24] = 0x0
-GPR[25] = 0x0
-GPR[26] = 0xdb5000
-GPR[27] = 0xdb6000
-GPR[28] = 0x1
-GPR[29] = 0xdb5000
+GPR[24] = 0x3f4
+GPR[25] = 0xeb79d4
+GPR[26] = 0x0
+GPR[27] = 0xfd5300
+GPR[28] = 0x0
+GPR[29] = 0xc11648
 GPR[30] = 0x0
-GPR[31] = 0xdc0060
+GPR[31] = 0xd000f1d0
 FPR[0] = 1
-FPR[1] = -1.#QNAN
-FPR[2] = -1.70598E+038
-FPR[3] = -1.#QNAN
-FPR[4] = -1.#QNAN
+FPR[1] = 0
+FPR[2] = 0
+FPR[3] = 0
+FPR[4] = 1
 FPR[5] = 0
 FPR[6] = 1
 FPR[7] = 0
@@ -462,7 +1128,7 @@ FPR[9] = 0
 FPR[10] = 0
 FPR[11] = 1
 FPR[12] = 0
-FPR[13] = 8E+007
+FPR[13] = 8E+07
 FPR[14] = 0
 FPR[15] = 0
 FPR[16] = 0
@@ -482,43 +1148,52 @@ FPR[29] = 0
 FPR[30] = 0
 FPR[31] = 0
 VPR[0] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[5] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[12] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[13] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[14] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[1] = 0x000000005319f1e40000000000000000 [x: 0 y: 6.61188e+11 z: 0 w: 0]
+VPR[2] = 0x000000005635801d000000005635801d [x: 0 y: 4.98905e+13 z: 0 w: 4.98905e+13]
+VPR[3] = 0x00006369702e43415254416873616c00 [x: 3.56616e-41 y: 2.15727e+29 z: 2.27908e+11 w: 1.78598e+31]
+VPR[4] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[5] = 0x000000000000893b0000000000000062 [x: 0 y: 4.9229e-41 z: 0 w: 1.37327e-43]
+VPR[6] = 0x00000000560f12fe00000000560f12be [x: 0 y: 3.93279e+13 z: 0 w: 3.93277e+13]
+VPR[7] = 0x33504d6873616c0000000000560f12be [x: 4.84992e-08 y: 1.78598e+31 z: 0 w: 3.93277e+13]
+VPR[8] = 0x0000000000000000000000006369702e [x: 0 y: 0 z: 0 w: 4.30617e+21]
+VPR[9] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[10] = 0x00000000560f12bf000000000001103f [x: 0 y: 3.93277e+13 z: 0 w: 9.76635e-41]
+VPR[11] = 0x00000000560f12bf00000000560f12fe [x: 0 y: 3.93277e+13 z: 0 w: 3.93279e+13]
+VPR[12] = 0x0000787270732e636e65636161626900 [x: 4.32076e-41 y: 3.01044e+29 z: 1.77481e+28 w: 2.61033e+20]
+VPR[13] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[14] = 0x000000000002c00c0000000000000062 [x: 0 y: 2.52564e-40 z: 0 w: 1.37327e-43]
+VPR[15] = 0x00000000560f12fe00000000560f12be [x: 0 y: 3.93279e+13 z: 0 w: 3.93277e+13]
+VPR[16] = 0x000000000000000000000000560f12be [x: 0 y: 0 z: 0 w: 3.93277e+13]
 VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[19] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[22] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[26] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-CR = 0x22000084
-LR = 0x5cb55c
-CTR = 0xb0cfc
-XER = 0x0 [CA=382252089344 | OV=0 | SO=140694538682368]
+VPR[18] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[19] = 0x00000000560f12bf000000000002d35b [x: 0 y: 3.93277e+13 z: 0 w: 2.59491e-40]
+VPR[20] = 0x00000000560f12bf00000000560f12fe [x: 0 y: 3.93277e+13 z: 0 w: 3.93279e+13]
+VPR[21] = 0x0000787270732e636564336361626900 [x: 4.32076e-41 y: 3.01044e+29 z: 6.7353e+22 w: 2.61033e+20]
+VPR[22] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[23] = 0x000000000001628b0000000000000062 [x: 0 y: 1.27186e-40 z: 0 w: 1.37327e-43]
+VPR[24] = 0x00000000560f12fe00000000560f12be [x: 0 y: 3.93279e+13 z: 0 w: 3.93277e+13]
+VPR[25] = 0x656433636162690000000000560f12be [x: 6.7353e+22 y: 2.61033e+20 z: 0 w: 3.93277e+13]
+VPR[26] = 0x000000000000000000787270732e3263 [x: 0 y: 0 z: 1.10613e-38 w: 1.38013e+31]
+VPR[27] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[28] = 0x00000000560f12be00000000000166ae [x: 0 y: 3.93277e+13 z: 0 w: 1.2867e-40]
+VPR[29] = 0x00000000560f12be00000000560f12fe [x: 0 y: 3.93277e+13 z: 0 w: 3.93279e+13]
+VPR[30] = 0x00000000787270732e63656461626900 [x: 0 y: 1.9669e+34 z: 5.17039e-11 w: 2.61033e+20]
+VPR[31] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+CR = 0x48000082
+LR = 0x80ddc4
+CTR = 0x0
+XER = 0x20000000 [CA=1 | OV=8589934592 | SO=0]
 FPSCR = 0x0 [RN=0 | NI=0 | XE=0 | ZE=0 | UE=0 | OE=0 | VE=0 | VXCVI=0 | VXSQRT=0 | VXSOFT=0 | FPRF=0 | FI=0 | FR=0 | VXVC=0 | VXIMZ=0 | VXZDZ=0 | VXIDI=0 | VXISI=0 | VXSNAN=0 | XX=0 | ZX=0 | UX=0 | OX=0 | VX=0 | FEX=0 | FX=0]
 
-HLE: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} CallbackManager thread aborted
-HLE: ! All threads stopped...
-MEM: ! Closing memory...
+G: E {PPU[0x1] Thread (main_thread)[0x0080ddc8]} Exception: 
+(in file Emu\Cell\PPUInterpreter.cpp:1700, in function ppu_interpreter::TW)
+HLE: W {PPU[0x12b] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x124, cause=*0x0, status=*0x0)
+G: ! Stopping emulator...
+G: ! All threads signaled...
+G: ! {SPU[0x125] Thread (CellSpursKernel0)[0x00818]} Thread aborted
+G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
+G: ! {PPU[0x12a] Thread (SpursHdlr1)[0x00000000]} Thread aborted
+G: ! {PPU[0x12b] Thread (SpursHdlr0)[0x00000000]} Thread aborted
+G: ! All threads stopped...
+G: ! Objects cleared...
+G: ! Stopping emulator...

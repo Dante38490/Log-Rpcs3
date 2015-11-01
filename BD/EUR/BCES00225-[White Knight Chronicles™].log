@@ -1,8 +1,7 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-G: ! RPCS3 0.0.0.5 v0.0.0.5-2531-g69bde39
+G: ! RPCS3 v0.0.0.6-3827-a6beb0e
 G: ! 
-G: ! Stopping emulator...
-LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES00225-[White Knight Chronicles™]/PS3_GAME/USRDIR/BOOT.BIN'...
+LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\BCES00225-[White Knight Chronicles™]\PS3_GAME\USRDIR\BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES00225-[White Knight Chronicles™]/PS3_GAME/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: ! 
 LDR: ! Mount info:
@@ -14,21 +13,117 @@ LDR: ! /dev_hdd1/ -> D:/Emulateurs/Rpcs3/dev_hdd1/
 LDR: ! /dev_bdvd/ -> D:/Emulateurs/Rpcs3/dev_hdd0/game/BCES00225-[White Knight Chronicles™]/
 LDR: ! /dev_usb/ -> D:/Emulateurs/Rpcs3/dev_usb000/
 LDR: ! 
-LDR: ! Settings:
-LDR: ! CPU: PPU Interpreter 2
-LDR: ! SPU: SPU Recompiler (ASMJIT)
-LDR: ! Renderer: DirectX 12
-LDR: ! D3D Adapter: Default
-LDR: ! Resolution: 1280x720
-LDR: ! Write Depth Buffer: No
-LDR: ! Write Color Buffers: No
-LDR: ! Read Color Buffer: No
-LDR: ! Audio Out: XAudio2
-LDR: ! Log Everything: No
-LDR: ! RSX Logging: No
 LDR: ! 
 LDR: ! Title: White Knight Chronicles™
 LDR: ! Serial: BCES00225
+LDR: ! Used configuration: 'rpcs3.new.ini'
+LDR: ! 
+LDR: ! [gui]
+MainFrameAui=layout2|name~Pane_0;caption~Game List;state~4196348;dir~5;layer~0;row~0;pos~0;prop~100000;bestw~283;besth~279;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~-1;floaty~-1;floatw~-1;floath~-1|name~Pane_1;caption~Log;state~4196348;dir~4;layer~0;row~1;pos~1;prop~99647;bestw~600;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~52;floaty~489;floatw~616;floath~339|name~Pane_2;caption~Debugger;state~4196348;dir~4;layer~0;row~1;pos~0;prop~100353;bestw~400;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~47;floaty~117;floatw~416;floath~339|dock_size(5,0,0)~265|dock_size(4,0,1)~400|
+
+[system]
+Emulation dir path=
+Language=2
+Use path below as EmulationDir=false
+
+[rsx/opengl]
+Write Color Buffers=false
+Write Depth Buffer=false
+Read Color Buffers=false
+Read Depth Buffer=false
+
+[gui/size]
+width=988
+height=629
+
+[gui/position]
+horizontal=5
+vertical=397
+
+[core]
+PPU Decoder=interpreter2
+Load liblv2.sprx=false
+Hook static functions=false
+SPU Decoder=recompiler_asmjit
+
+[rsx]
+VSync=true
+Aspect ratio=16x9
+Renderer=DX12
+Resolution=1280x720
+Frame limit=Auto
+Log shader programs=false
+3D Monitor=false
+
+[core/llvm]
+Compiled blocks exclusion=false
+Excluded block range min=200
+Excluded block range max=250
+Compilation threshold=1000
+
+[audio]
+Audio Out=XAudio2
+Dump to file=false
+Convert to 16 bit=false
+
+[io]
+Pad Handler=windows
+Camera=connected
+Camera type=PlayStationEye
+Mouse Handler=null
+Keyboard Handler=null
+
+[rsx/d3d12]
+D3D Adaptater=0
+Debug Output=false
+Debug overlay=true
+
+[io/pad]
+Circle=76
+Left Analog Stick Left=314
+Left Analog Stick Down=317
+Left Analog Stick Right=316
+R2=69
+Right=68
+Triangle=73
+Right Analog Stick Right=312
+Down=83
+Right Analog Stick Down=367
+Left Analog Stick Up=315
+Up=90
+Right Analog Stick Up=366
+Left=81
+Right Analog Stick Left=313
+Start=13
+Select=32
+Square=74
+Cross=75
+R1=51
+R3=67
+L1=49
+L2=65
+L3=87
+
+[misc]
+Exit RPCS3 when process finishes=false
+Always start after boot=true
+Use default configuration=true
+
+[misc/log]
+RSX Logging=false
+Log Level=Errors
+Log everything=false
+Save TTY output to file=false
+
+[misc/net]
+Connection status=Connecting
+Network adapter=0
+
+[misc/debug]
+Auto Pause at System Call=false
+Auto Pause at Function Call=false
+
+
 LDR: ! Elf path: /dev_bdvd/PS3_GAME/USRDIR/BOOT.BIN
 LDR: ! 
 LDR: ! loader::init() failed: Broken file
@@ -497,36 +592,36 @@ HLE: W {PPU[0x1] Thread (main_thread)[0x0002cafc]} sys_memory: sys_memory_alloca
 HLE: E {PPU[0x1] Thread (main_thread)[0x000352b4]} sys_vm: sys_vm_memory_map(vsize=0x10000000, psize=0x100000, cid=0xffffffff, flags=0x200, policy=0x1, addr=*0x11fee2c)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00eb76b8]} cellSysmodule: cellSysmoduleLoadModule(id=0x000e: CELL_SYSMODULE_FS)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a03528]} sys_spu: sys_spu_initialize(max_usable_spu=4, max_raw_spu=0)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} cellSpurs: cellSpursInitialize(spurs=*0x240d7400, nSpus=4, spuPriority=250, ppuPriority=991, exitIfNoWork=-256)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} cellSpurs: cellSpursInitialize(spurs=*0x240d7400, nSpus=4, spuPriority=250, ppuPriority=991, exitIfNoWork=4483072)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_process: sys_process_is_spu_lock_line_reservation_address(addr=0x240d7400, flags=0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f598, initial_val=0, max_val=1)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: sys_spu_thread_group_create(id=*0xd003f578, num=4, prio=250, attr=*0xd003f4e8)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: sys_spu_thread_initialize(thread=*0xd003f4c0, group=0x33, spu_num=0, img=*0x240d8170, attr=*0xd003f4b0, arg=*0xd003f4c8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_semaphore: sys_semaphore_create(sem_id=*0xd003f5b8, attr=*0xd003f590, initial_val=0, max_val=1)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: sys_spu_thread_group_create(id=*0x240d8130, num=4, prio=250, attr=*0xd003f4f0)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: sys_spu_thread_initialize(thread=*0x240d8134, group=0x33, spu_num=0, img=*0x240d8170, attr=*0xd003f4b8, arg=*0xd003f4c8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: sys_spu_thread_initialize(thread=*0xd003f4c0, group=0x33, spu_num=1, img=*0x240d8170, attr=*0xd003f4b0, arg=*0xd003f4c8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: sys_spu_thread_initialize(thread=*0x240d8138, group=0x33, spu_num=1, img=*0x240d8170, attr=*0xd003f4b8, arg=*0xd003f4c8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: sys_spu_thread_initialize(thread=*0xd003f4c0, group=0x33, spu_num=2, img=*0x240d8170, attr=*0xd003f4b0, arg=*0xd003f4c8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: sys_spu_thread_initialize(thread=*0x240d813c, group=0x33, spu_num=2, img=*0x240d8170, attr=*0xd003f4b8, arg=*0xd003f4c8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: sys_spu_thread_initialize(thread=*0xd003f4c0, group=0x33, spu_num=3, img=*0x240d8170, attr=*0xd003f4b0, arg=*0xd003f4c8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: sys_spu_thread_initialize(thread=*0x240d8140, group=0x33, spu_num=3, img=*0x240d8170, attr=*0xd003f4b8, arg=*0xd003f4c8)
 HLE: E {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: Unsupported SPU Thread options (0x2)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x240d81b0, attr=*0xd003f580)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sysPrxForUser: sys_lwcond_create(lwcond=*0x240d81c8, lwmutex=*0x240d81b0, attr=*0xd003f590)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sysPrxForUser: sys_lwmutex_create(lwmutex=*0x240d81b0, attr=*0xd003f418)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sysPrxForUser: sys_lwcond_create(lwcond=*0x240d81c8, lwmutex=*0x240d81b0, attr=*0xd003f420)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_event: sys_event_queue_create(equeue_id=*0x240d815c, attr=*0xd003f418, event_queue_key=0x0, size=42)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_spu: sys_spu_thread_group_connect_event_all_threads(id=0x33, eq=0x3a, req=0xffffffffffff0000, spup=*0x240d74c9)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00eb9098]} sys_event: sys_event_port_create(eport_id=*0x240d8160, port_type=1, name=0x0)
@@ -539,8 +634,7 @@ SPU: S {PPU[0x3d] Thread (SpursHdlr0)[0x00000000]} SPU Recompiler (ASMJIT) creat
 HLE: W {PPU[0x3d] Thread (SpursHdlr0)[0x00000000]} sys_spu: sys_spu_thread_group_join(id=0x33, cause=*0x0, status=*0x0)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a02c14]} sys_event: sys_event_queue_create(equeue_id=*0x1312b64, attr=*0xd003f604, event_queue_key=0x0, size=8)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00eba6f8]} sysPrxForUser: sys_ppu_thread_create(thread_id=*0x1312b68, entry=0x11a5890, arg=0x1312b60, prio=998, stacksize=0x10000, flags=0x1, threadname=*0x1041c90)
-HLE: W {PPU[0x1] Thread (main_thread)[0x00eba6f8]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x1312b68, param=*0xd003f588, arg=0x1312b60, unk=0x0, prio=998, stacksize=0x10000, flags=0x1, threadname=*0x1041c90)
-SPU: S {SPU[0x34] Thread (CellSpursKernel0)[0x00818]} Function detected [0x00818-0x00820] (size=0x8)
+HLE: W {PPU[0x1] Thread (main_thread)[0x00eba6f8]} sys_ppu_thread: _sys_ppu_thread_create(thread_id=*0x1312b68, param=*0xd003f580, arg=0x1312b60, unk=0x0, prio=998, stacksize=0x10000, flags=0x1, threadname=*0x1041c90)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00eba6f8]} sys_ppu_thread: sys_ppu_thread_start(thread_id=0x3f)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a02c9c]} sys_event: sys_event_port_create(eport_id=*0x1312b70, port_type=1, name=0xfee1dead)
 HLE: W {PPU[0x1] Thread (main_thread)[0x00a02cb4]} sys_event: sys_event_port_connect_local(eport_id=0x40, equeue_id=0x3e)
@@ -618,36 +712,36 @@ FPR[30] = 0
 FPR[31] = 0
 VPR[0] = 0x0000000000000000000000003f000000 [x: 0 y: 0 z: 0 w: 0.5]
 VPR[1] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[2] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[4] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
-VPR[5] = 0x00000002013eda289ed9e69a00000ac1 [x: 2.8026e-45 y: 3.5054e-38 z: -2.30711e-20 w: 3.85777e-42]
-VPR[6] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[7] = 0xd20d6bb4000000000000000000000000 [x: -1.51849e+11 y: 0 z: 0 w: 0]
-VPR[8] = 0x00000000023d2c708bce7e103f800000 [x: 0 y: 1.38983e-37 z: -7.9538e-32 w: 1]
-VPR[9] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[2] = 0x00000000560f12bf000000000000e895 [x: 0 y: 3.93277e+13 z: 0 w: 8.34347e-41]
+VPR[3] = 0x00000000560f12bf00000000560f12fe [x: 0 y: 3.93277e+13 z: 0 w: 3.93279e+13]
+VPR[4] = 0x0000787270732e63656463766d626900 [x: 4.32076e-41 y: 3.01044e+29 z: 6.74084e+22 w: 4.37941e+27]
+VPR[5] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[6] = 0x00000000001109050000000000000062 [x: 0 y: 1.56444e-39 z: 0 w: 1.37327e-43]
+VPR[7] = 0x00000000560f12fe00000000560f12bf [x: 0 y: 3.93279e+13 z: 0 w: 3.93277e+13]
+VPR[8] = 0x732e74656e62690000000000560f12bf [x: 1.38217e+31 y: 1.75176e+28 z: 0 w: 3.93277e+13]
+VPR[9] = 0x00000000000000000000000000787270 [x: 0 y: 0 z: 0 w: 1.10613e-38]
 VPR[10] = 0xc120000000000000c000000000000000 [x: -10 y: 0 z: -2 w: 0]
 VPR[11] = 0x4120000000000000c000000000000000 [x: 10 y: 0 z: -2 w: 0]
 VPR[12] = 0x0000000000000000c1c8000000000000 [x: 0 y: 0 z: -25 w: 0]
 VPR[13] = 0xc170000000000000c120000000000000 [x: -15 y: 0 z: -10 w: 0]
-VPR[14] = 0x062c4f77000000000000000000000000 [x: 3.2408e-35 y: 0 z: 0 w: 0]
-VPR[15] = 0x00000000023d2a90a101a2d63f800000 [x: 0 y: 1.38977e-37 z: -4.39224e-19 w: 1]
-VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[17] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[18] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
-VPR[19] = 0x00000002013eda605bd0006100000ac3 [x: 2.8026e-45 y: 3.50542e-38 z: 1.17094e+17 w: 3.86058e-42]
-VPR[20] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[21] = 0x7784024a000000000000000000000000 [x: 5.35492e+33 y: 0 z: 0 w: 0]
-VPR[22] = 0x00000000023d30506c0a03be3f800000 [x: 0 y: 1.38994e-37 z: 6.67398e+26 w: 1]
-VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[25] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
-VPR[26] = 0x00000002013eda804017ef4b00000ac4 [x: 2.8026e-45 y: 3.50543e-38 z: 2.37398 w: 3.86198e-42]
-VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[28] = 0xdb6bbb60000000000000000000000000 [x: -6.63526e+16 y: 0 z: 0 w: 0]
-VPR[29] = 0x00000000023d2b702a0dc00a3f800000 [x: 0 y: 1.3898e-37 z: 1.25899e-13 w: 1]
-VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
-VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[14] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[15] = 0x00000000000044c70000000000000062 [x: 0 y: 2.46727e-41 z: 0 w: 1.37327e-43]
+VPR[16] = 0x00000000560f12fe00000000560f12be [x: 0 y: 3.93279e+13 z: 0 w: 3.93277e+13]
+VPR[17] = 0x2e666d617062690000000000560f12be [x: 5.23931e-11 y: 2.80282e+29 z: 0 w: 3.93277e+13]
+VPR[18] = 0x00000000000000000000000078727073 [x: 0 y: 0 z: 0 w: 1.9669e+34]
+VPR[19] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[20] = 0x00000000560f12be0000000000002cc1 [x: 0 y: 3.93277e+13 z: 0 w: 1.60547e-41]
+VPR[21] = 0x00000000560f12be00000000560f12fe [x: 0 y: 3.93277e+13 z: 0 w: 3.93279e+13]
+VPR[22] = 0x0000787270732e636564676e70626900 [x: 4.32076e-41 y: 3.01044e+29 z: 6.7413e+22 w: 2.80282e+29]
+VPR[23] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[24] = 0x0000000000029ece0000000000000062 [x: 0 y: 2.40639e-40 z: 0 w: 1.37327e-43]
+VPR[25] = 0x00000000560f12fe00000000560f12bf [x: 0 y: 3.93279e+13 z: 0 w: 3.93277e+13]
+VPR[26] = 0x6e65676e7062690000000000560f12bf [x: 1.77493e+28 y: 2.80282e+29 z: 0 w: 3.93277e+13]
+VPR[27] = 0x00000000000000000000787270732e63 [x: 0 y: 0 z: 4.32076e-41 w: 3.01044e+29]
+VPR[28] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[29] = 0x00000000560f12bf0000000000026860 [x: 0 y: 3.93277e+13 z: 0 w: 2.21114e-40]
+VPR[30] = 0x00000000560f12bf00000000560f12fe [x: 0 y: 3.93277e+13 z: 0 w: 3.93279e+13]
+VPR[31] = 0x00000000787270732e63736572626900 [x: 0 y: 1.9669e+34 z: 5.17163e-11 w: 4.48452e+30]
 CR = 0x24000024
 LR = 0xa546d4
 CTR = 0x0
@@ -659,13 +753,14 @@ G: E {PPU[0x1] Thread (main_thread)[0x00eb9c58]} Exception: LLE function not set
 G: ! Stopping emulator...
 G: ! All threads signaled...
 G: ! {PPU[0x2] Thread (Callback Thread)[0x00000000]} Thread aborted
-G: ! {PPU[0x3c] Thread (SpursHdlr1)[0x00000000]} Thread aborted
-G: ! {SPU[0x35] Thread (CellSpursKernel1)[0x00818]} Thread aborted
 G: ! {SPU[0x37] Thread (CellSpursKernel3)[0x00818]} Thread aborted
-HLE: S {PPU[0x3f] Thread (spu_printf_handler)[0x00a02de8]} Last syscall: 130 (sys_event_queue_receive)
-G: ! {SPU[0x34] Thread (CellSpursKernel0)[0x00818]} Thread aborted
 G: ! {SPU[0x36] Thread (CellSpursKernel2)[0x00818]} Thread aborted
+HLE: S {PPU[0x3f] Thread (spu_printf_handler)[0x00a02de8]} Last syscall: 130 (sys_event_queue_receive)
+G: ! {SPU[0x35] Thread (CellSpursKernel1)[0x00818]} Thread aborted
 G: ! {PPU[0x3d] Thread (SpursHdlr0)[0x00000000]} Thread aborted
+G: ! {SPU[0x34] Thread (CellSpursKernel0)[0x00818]} Thread aborted
+G: ! {PPU[0x3c] Thread (SpursHdlr1)[0x00000000]} Thread aborted
 G: ! {PPU[0x3f] Thread (spu_printf_handler)[0x00a02de8]} Thread aborted
 G: ! All threads stopped...
 G: ! Objects cleared...
+G: ! Stopping emulator...
