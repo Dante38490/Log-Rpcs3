@@ -1,7 +1,8 @@
 LDR: E PSFLoader::Load() failed: unknown magic (0x0)
-G: ! RPCS3 v0.0.0.6-3827-a6beb0e
+G: ! RPCS3 v0.0.0.6-3865-5fbbc79
 G: ! 
-LDR: ! Loading 'D:\Emulateurs\Rpcs3\dev_hdd0\game\NPEA00435\USRDIR\BOOT.BIN'...
+G: ! Stopping emulator...
+LDR: ! Loading 'D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00435/USRDIR/BOOT.BIN'...
 G: W fs::file::open('D:/Emulateurs/Rpcs3/dev_hdd0/game/NPEA00435/dev_bdvd.path', 0x1) failed: error 0x2
 LDR: ! 
 LDR: ! Mount info:
@@ -17,42 +18,27 @@ LDR: ! Title: The Last of Us™
 LDR: ! Serial: NPEA00435
 LDR: ! Used configuration: 'rpcs3.new.ini'
 LDR: ! 
-LDR: ! [gui]
-MainFrameAui=layout2|name~Pane_0;caption~Game List;state~4196348;dir~5;layer~0;row~0;pos~0;prop~100000;bestw~283;besth~279;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~-1;floaty~-1;floatw~-1;floath~-1|name~Pane_1;caption~Log;state~4196348;dir~4;layer~0;row~1;pos~1;prop~99647;bestw~600;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~52;floaty~489;floatw~616;floath~339|name~Pane_2;caption~Debugger;state~4196348;dir~4;layer~0;row~1;pos~0;prop~100353;bestw~400;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~47;floaty~117;floatw~416;floath~339|dock_size(5,0,0)~265|dock_size(4,0,1)~400|
+LDR: ! [lle]
 
-[system]
-Emulation dir path=
-Language=2
-Use path below as EmulationDir=false
-
-[rsx/opengl]
-Write Color Buffers=false
-Write Depth Buffer=false
-Read Color Buffers=false
-Read Depth Buffer=false
-
-[gui/size]
-width=963
-height=626
-
-[gui/position]
-horizontal=42
-vertical=327
+[gui]
+size=970x875
+position=52:51
+main_frame_aui=layout2|name~Pane_0;caption~PS3 software;state~4196348;dir~5;layer~0;row~0;pos~0;prop~100000;bestw~283;besth~279;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~-1;floaty~-1;floatw~-1;floath~-1|name~Pane_1;caption~Log;state~4196348;dir~4;layer~0;row~1;pos~1;prop~100000;bestw~600;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~-152;floaty~780;floatw~616;floath~339|name~Pane_2;caption~Debugger;state~4196348;dir~4;layer~0;row~1;pos~0;prop~100000;bestw~400;besth~300;minw~-1;minh~-1;maxw~-1;maxh~-1;floatx~198;floaty~117;floatw~416;floath~339|dock_size(5,0,0)~265|dock_size(4,0,1)~405|
 
 [core]
-PPU Decoder=interpreter2
+PPU decoder=interpreter2
 Load liblv2.sprx=false
 Hook static functions=false
-SPU Decoder=recompiler_asmjit
+SPU decoder=recompiler_asmjit
 
 [rsx]
+Log shader programs=false
+Rendering API=DX12
+Resolution=1280x720
 VSync=true
 Aspect ratio=16x9
-Renderer=DX12
-Resolution=1280x720
 Frame limit=Auto
-Log shader programs=false
-3D Monitor=false
+3D monitor=false
 
 [core/llvm]
 Compiled blocks exclusion=false
@@ -60,39 +46,50 @@ Excluded block range min=200
 Excluded block range max=250
 Compilation threshold=1000
 
-[audio]
-Audio Out=XAudio2
-Dump to file=false
-Convert to 16 bit=false
+[system]
+Emulation dir path=
+Language=2
+Use path below as EmulationDir=false
 
-[io]
-Pad Handler=windows
-Camera=connected
-Camera type=PlayStationEye
-Mouse Handler=null
-Keyboard Handler=null
+[rsx/opengl]
+Write color buffers=false
+Write depth buffer=false
+Read color buffers=false
+Read depth buffer=false
 
 [rsx/d3d12]
-D3D Adaptater=0
-Debug Output=false
-Debug overlay=true
+DirectX 12 primary adapter=0
+Debug output=false
+Debug overlay=false
+
+[io]
+Camera=connected
+Camera type=PlayStationEye
+Controller handler=windows
+Mouse handler=null
+Keyboard handler=null
+
+[audio]
+Audio out=OpenAL
+Convert to 16-bit=false
+Dump to file=false
 
 [io/pad]
 Circle=76
-Left Analog Stick Left=314
-Left Analog Stick Down=317
-Left Analog Stick Right=316
+Left analog stick Left=314
+Left analog stick Lown=317
+Left analog stick Right=316
 R2=69
 Right=68
 Triangle=73
-Right Analog Stick Right=312
+Right analog stick Right=330
 Down=83
-Right Analog Stick Down=367
-Left Analog Stick Up=315
+Right analog stick Down=326
+Left analog stick Up=315
 Up=90
-Right Analog Stick Up=366
+Right analog stick Up=332
 Left=81
-Right Analog Stick Left=313
+Right analog stick Left=328
 Start=13
 Select=32
 Square=74
@@ -109,8 +106,8 @@ Always start after boot=true
 Use default configuration=true
 
 [misc/log]
-RSX Logging=false
-Log Level=Errors
+RSX logging=false
+Log level=Errors
 Log everything=false
 Save TTY output to file=false
 
@@ -119,8 +116,35 @@ Connection status=Connecting
 Network adapter=0
 
 [misc/debug]
-Auto Pause at System Call=false
-Auto Pause at Function Call=false
+Automatically pause at system call=false
+Automatically pause at function call=false
+
+[vfs]
+count=0
+hdd_count=0
+
+[game_viewer]
+_position=0
+_width=90
+_shown=true
+Name_position=1
+Name_shown=true
+Name_width=160
+Path_width=160
+Serial_position=2
+Serial_width=85
+Serial_shown=true
+Min. FW_position=3
+Min. FW_width=60
+Min. FW_shown=true
+Soft. Version_position=4
+Soft. Version_width=80
+Soft. Version_shown=true
+Soft. type_position=5
+Soft. type_width=75
+Path_position=6
+Soft. type_shown=true
+Path_shown=true
 
 
 LDR: ! Elf path: /dev_hdd0/game/NPEA00435/USRDIR/BOOT.BIN
@@ -12521,35 +12545,35 @@ FPR[31] = 0
 VPR[0] = 0x00000000bf8000000000000000000000 [x: 0 y: -1 z: 0 w: 0]
 VPR[1] = 0x3f99999a3f8000003f99999a3f800000 [x: 1.2 y: 1 z: 1.2 w: 1]
 VPR[2] = 0x3f8000003f8000003f8000003f800000 [x: 1 y: 1 z: 1 w: 1]
-VPR[3] = 0x00000000023938900000000002393890 [x: 0 y: 1.36079e-37 z: 0 w: 1.36079e-37]
-VPR[4] = 0x00000000023938900000000002393890 [x: 0 y: 1.36079e-37 z: 0 w: 1.36079e-37]
-VPR[5] = 0x00000000023938900000000002393890 [x: 0 y: 1.36079e-37 z: 0 w: 1.36079e-37]
-VPR[6] = 0x00000000023938900000000002393890 [x: 0 y: 1.36079e-37 z: 0 w: 1.36079e-37]
-VPR[7] = 0x00000000023938900000000002393890 [x: 0 y: 1.36079e-37 z: 0 w: 1.36079e-37]
-VPR[8] = 0x00000000023938900000000002393890 [x: 0 y: 1.36079e-37 z: 0 w: 1.36079e-37]
-VPR[9] = 0x00000000023938900000000002393890 [x: 0 y: 1.36079e-37 z: 0 w: 1.36079e-37]
+VPR[3] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[4] = 0x0000000000000062000000000000000f [x: 0 y: 1.37327e-43 z: 0 w: 2.10195e-44]
+VPR[5] = 0x000000005643423e00000000000098fe [x: 0 y: 5.36723e+13 z: 0 w: 5.48833e-41]
+VPR[6] = 0x00000000564340ee000000005643423e [x: 0 y: 5.36709e+13 z: 0 w: 5.36723e+13]
+VPR[7] = 0x0000787270732e636564337461626900 [x: 4.32076e-41 y: 3.01044e+29 z: 6.7353e+22 w: 2.61033e+20]
+VPR[8] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[9] = 0x0000000000006f940000000000000062 [x: 0 y: 4.00267e-41 z: 0 w: 1.37327e-43]
 VPR[10] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[11] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 VPR[12] = 0x3f99999a3f99999a3f99999a3f800000 [x: 1.2 y: 1.2 z: 1.2 w: 1]
 VPR[13] = 0xbf80000000000000bf80000000000000 [x: -1 y: 0 z: -1 w: 0]
-VPR[14] = 0x00000000023932d000000000023932d0 [x: 0 y: 1.36062e-37 z: 0 w: 1.36062e-37]
-VPR[15] = 0x00000000023932d000000000023932d0 [x: 0 y: 1.36062e-37 z: 0 w: 1.36062e-37]
-VPR[16] = 0x00000000023932d000000000023932d0 [x: 0 y: 1.36062e-37 z: 0 w: 1.36062e-37]
-VPR[17] = 0x00000000023932d000000000023932d0 [x: 0 y: 1.36062e-37 z: 0 w: 1.36062e-37]
-VPR[18] = 0x00000000023932d000000000023932d0 [x: 0 y: 1.36062e-37 z: 0 w: 1.36062e-37]
-VPR[19] = 0x00000000023932d000000000023932d0 [x: 0 y: 1.36062e-37 z: 0 w: 1.36062e-37]
-VPR[20] = 0x800034000357e62b0000000000000000 [x: -1.86541e-41 y: 6.3447e-37 z: 0 w: 0]
-VPR[21] = 0x00000000023934500000000002393450 [x: 0 y: 1.36067e-37 z: 0 w: 1.36067e-37]
-VPR[22] = 0x00000000023934500000000002393450 [x: 0 y: 1.36067e-37 z: 0 w: 1.36067e-37]
-VPR[23] = 0x00000000023934500000000002393450 [x: 0 y: 1.36067e-37 z: 0 w: 1.36067e-37]
-VPR[24] = 0x00000000023934500000000002393450 [x: 0 y: 1.36067e-37 z: 0 w: 1.36067e-37]
-VPR[25] = 0x00000000023934500000000002393450 [x: 0 y: 1.36067e-37 z: 0 w: 1.36067e-37]
-VPR[26] = 0x00000000023934500000000002393450 [x: 0 y: 1.36067e-37 z: 0 w: 1.36067e-37]
-VPR[27] = 0x00000000023934500000000002393450 [x: 0 y: 1.36067e-37 z: 0 w: 1.36067e-37]
-VPR[28] = 0x00000000023934500000000002393450 [x: 0 y: 1.36067e-37 z: 0 w: 1.36067e-37]
-VPR[29] = 0x80003500036ee6220000000000000000 [x: -1.90128e-41 y: 7.02061e-37 z: 0 w: 0]
-VPR[30] = 0x0000000002393d700000000002393d70 [x: 0 y: 1.36093e-37 z: 0 w: 1.36093e-37]
-VPR[31] = 0x0000000002393d700000000002393d70 [x: 0 y: 1.36093e-37 z: 0 w: 1.36093e-37]
+VPR[14] = 0x000000005643423e0000000000006ca3 [x: 0 y: 5.36723e+13 z: 0 w: 3.89715e-41]
+VPR[15] = 0x00000000564340ee000000005643423e [x: 0 y: 5.36709e+13 z: 0 w: 5.36723e+13]
+VPR[16] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[17] = 0x000000000000000f0000000000000000 [x: 0 y: 2.10195e-44 z: 0 w: 0]
+VPR[18] = 0x0000000000002b0d0000000000000062 [x: 0 y: 1.54437e-41 z: 0 w: 1.37327e-43]
+VPR[19] = 0x000000005643423e000000005643423e [x: 0 y: 5.36723e+13 z: 0 w: 5.36723e+13]
+VPR[20] = 0x000350924000004000000000564340ee [x: 3.0441e-40 y: 2.00002 z: 0 w: 5.36709e+13]
+VPR[21] = 0x00000000028ef8d000000000028ecdf0 [x: 0 y: 2.10078e-37 z: 0 w: 2.09832e-37]
+VPR[22] = 0x000000000237e160000000003f800000 [x: 0 y: 1.35094e-37 z: 0 w: 1]
+VPR[23] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[24] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[25] = 0x00000000000000080000000000000007 [x: 0 y: 1.12104e-44 z: 0 w: 9.80909e-45]
+VPR[26] = 0x000000020163ce600000000000000ac4 [x: 2.8026e-45 y: 4.18414e-38 z: 0 w: 3.86198e-42]
+VPR[27] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[28] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[29] = 0x000000000237dd80000000003f800000 [x: 0 y: 1.35083e-37 z: 0 w: 1]
+VPR[30] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
+VPR[31] = 0x00000000000000000000000000000000 [x: 0 y: 0 z: 0 w: 0]
 CR = 0x84000022
 LR = 0xa55684
 CTR = 0x11
