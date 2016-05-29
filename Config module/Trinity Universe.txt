@@ -1,0 +1,279 @@
+Title: Trinity Universe
+Serial: BLES00971
+
+  Load libraries:
+-libfont.sprx
+-libfontFT.sprx
+-libfreetype.sprx
+-libfreetypeTT.sprx
+-libl10n.sprx
+-libsre.sprx
+  
+  
+·! LDR: ** Imported module 'cellSysutil' (0x0, 0x0)
+·! LDR: **** cellSysutil import: [cellSysutilUnregisterCallback] -> 0x444e54
+·! LDR: **** cellSysutil import: [cellVideoOutConfigure] -> 0x444e74
+·! LDR: **** cellSysutil import: [cellSysutilCheckCallback] -> 0x444e94
+·! LDR: **** cellSysutil import: [cellSaveDataListLoad2] -> 0x444eb4
+·! LDR: **** cellSysutil import: [cellSysCacheMount] -> 0x444ed4
+·! LDR: **** cellSysutil import: [cellMsgDialogClose] -> 0x444ef4
+·! LDR: **** cellSysutil import: [cellSaveDataListAutoLoad] -> 0x444f14
+·! LDR: **** cellSysutil import: [cellSysutilEnableBgmPlayback] -> 0x444f34
+·! LDR: **** cellSysutil import: [cellSaveDataListSave2] -> 0x444f54
+·! LDR: **** cellSysutil import: [cellMsgDialogOpenErrorCode] -> 0x444f74
+·! LDR: **** cellSysutil import: [cellSysutilGetSystemParamInt] -> 0x444f94
+·! LDR: **** cellSysutil import: [cellAudioOutConfigure] -> 0x444fb4
+·! LDR: **** cellSysutil import: [cellWebBrowserConfigSetTabCount2] -> 0x444fd4
+·! LDR: **** cellSysutil import: [cellMsgDialogAbort] -> 0x444ff4
+·! LDR: **** cellSysutil import: [cellWebBrowserEstimate2] -> 0x445014
+·! LDR: **** cellSysutil import: [cellSysCacheClear] -> 0x445034
+·! LDR: **** cellSysutil import: [cellWebBrowserInitialize] -> 0x445054
+·! LDR: **** cellSysutil import: [cellMsgDialogOpen2] -> 0x445074
+·! LDR: **** cellSysutil import: [cellWebBrowserConfig2] -> 0x445094
+·! LDR: **** cellSysutil import: [cellVideoOutGetState] -> 0x4450b4
+·! LDR: **** cellSysutil import: [cellSaveDataAutoSave2] -> 0x4450d4
+·! LDR: **** cellSysutil import: [cellWebBrowserShutdown] -> 0x4450f4
+·! LDR: **** cellSysutil import: [cellSysutilRegisterCallback] -> 0x445114
+·! LDR: **** cellSysutil import: [cellSysutilGetBgmPlaybackStatus] -> 0x445134
+·! LDR: **** cellSysutil import: [cellWebBrowserCreate2] -> 0x445154
+·! LDR: **** cellSysutil import: [cellWebBrowserConfigSetUnknownMIMETypeHook2] -> 0x445174
+·! LDR: **** cellSysutil import: [cellSysutilDisableBgmPlayback] -> 0x445194
+·! LDR: **** cellSysutil import: [cellWebBrowserConfigSetFunction2] -> 0x4451b4
+·! LDR: **** cellSysutil import: [cellVideoOutGetResolution] -> 0x4451d4
+·! LDR: **** cellSysutil import: [cellWebBrowserDestroy2] -> 0x4451f4
+·! LDR: **** cellSysutil import: [cellSaveDataAutoLoad2] -> 0x445214
+·! LDR: **** cellSysutil import: [cellWebBrowserConfigSetHeapSize2] -> 0x445234
+
+·! LDR: ** Imported module 'sys_net' (0x0, 0x0)
+·! LDR: **** sys_net import: [sys_net::sys_net_finalize_network] -> 0x445254
+
+·! LDR: ** Imported module 'cellGcmSys' (0x0, 0x0)
+·! LDR: **** cellGcmSys import: [cellGcmGetTiledPitchSize] -> 0x445274
+·! LDR: **** cellGcmSys import: [cellGcmSetUserHandler] -> 0x445294
+·! LDR: **** cellGcmSys import: [cellGcmSetPrepareFlip] -> 0x4452b4
+·! LDR: **** cellGcmSys import: [_cellGcmInitBody] -> 0x4452d4
+·! LDR: **** cellGcmSys import: [_cellGcmSetFlipCommand] -> 0x4452f4
+·! LDR: **** cellGcmSys import: [cellGcmAddressToOffset] -> 0x445314
+·! LDR: **** cellGcmSys import: [cellGcmGetOffsetTable] -> 0x445334
+·! LDR: **** cellGcmSys import: [_cellGcmFunc15] -> 0x445354
+·! LDR: **** cellGcmSys import: [cellGcmBindTile] -> 0x445374
+·! LDR: **** cellGcmSys import: [cellGcmSetFlipMode] -> 0x445394
+·! LDR: **** cellGcmSys import: [cellGcmGetDefaultCommandWordSize] -> 0x4453b4
+·! LDR: **** cellGcmSys import: [cellGcmMapEaIoAddressWithFlags] -> 0x4453d4
+·! LDR: **** cellGcmSys import: [cellGcmMapEaIoAddress] -> 0x4453f4
+·! LDR: **** cellGcmSys import: [cellGcmGetFlipStatus] -> 0x445414
+·! LDR: **** cellGcmSys import: [cellGcmGetReportDataAddressLocation] -> 0x445434
+·! LDR: **** cellGcmSys import: [cellGcmGetDefaultSegmentWordSize] -> 0x445454
+·! LDR: **** cellGcmSys import: [cellGcmSetDefaultFifoSize] -> 0x445474
+·! LDR: **** cellGcmSys import: [cellGcmBindZcull] -> 0x445494
+·! LDR: **** cellGcmSys import: [cellGcmSetDisplayBuffer] -> 0x4454b4
+·! LDR: **** cellGcmSys import: [cellGcmGetControlRegister] -> 0x4454d4
+·! LDR: **** cellGcmSys import: [cellGcmUnbindZcull] -> 0x4454f4
+·! LDR: **** cellGcmSys import: [cellGcmSetVBlankHandler] -> 0x445514
+·! LDR: **** cellGcmSys import: [cellGcmSetFlipImmediate] -> 0x445534
+·! LDR: **** cellGcmSys import: [cellGcmResetFlipStatus] -> 0x445554
+·! LDR: **** cellGcmSys import: [cellGcmSetTileInfo] -> 0x445574
+·! LDR: **** cellGcmSys import: [_cellGcmSetFlipCommandWithWaitLabel] -> 0x445594
+·! LDR: **** cellGcmSys import: [cellGcmUnbindTile] -> 0x4455b4
+·! LDR: **** cellGcmSys import: [cellGcmGetConfiguration] -> 0x4455d4
+·! LDR: **** cellGcmSys import: [cellGcmUnmapEaIoAddress] -> 0x4455f4
+·! LDR: **** cellGcmSys import: [cellGcmGetLabelAddress] -> 0x445614
+
+·! LDR: ** Imported module 'sys_io' (0x0, 0x0)
+·! LDR: **** sys_io import: [cellPadClearBuf] -> 0x445634
+·! LDR: **** sys_io import: [cellPadInit] -> 0x445654
+·! LDR: **** sys_io import: [cellKbClearBuf] -> 0x445674
+·! LDR: **** sys_io import: [cellKbGetInfo] -> 0x445694
+·! LDR: **** sys_io import: [cellMouseGetData] -> 0x4456b4
+·! LDR: **** sys_io import: [cellMouseClearBuf] -> 0x4456d4
+·! LDR: **** sys_io import: [cellKbInit] -> 0x4456f4
+·! LDR: **** sys_io import: [cellPadEnd] -> 0x445714
+·! LDR: **** sys_io import: [cellPadSetPortSetting] -> 0x445734
+·! LDR: **** sys_io import: [cellMouseGetInfo] -> 0x445754
+·! LDR: **** sys_io import: [cellPadGetData] -> 0x445774
+·! LDR: **** sys_io import: [cellKbSetCodeType] -> 0x445794
+·! LDR: **** sys_io import: [cellPadGetInfo2] -> 0x4457b4
+·! LDR: **** sys_io import: [cellKbEnd] -> 0x4457d4
+·! LDR: **** sys_io import: [cellMouseInit] -> 0x4457f4
+·! LDR: **** sys_io import: [cellKbSetReadMode] -> 0x445814
+·! LDR: **** sys_io import: [cellMouseEnd] -> 0x445834
+·! LDR: **** sys_io import: [cellPadSetActDirect] -> 0x445854
+·! LDR: **** sys_io import: [cellKbRead] -> 0x445874
+
+·! LDR: ** Imported module 'sys_fs' (0x0, 0x0)
+·! LDR: **** sys_fs import: [cellFsStReadInit] -> 0x445894
+·! LDR: **** sys_fs import: [cellFsStRead] -> 0x4458b4
+·! LDR: **** sys_fs import: [cellFsClose] -> 0x4458d4
+·! LDR: **** sys_fs import: [cellFsRead] -> 0x4458f4
+·! LDR: **** sys_fs import: [cellFsOpen] -> 0x445914
+·! LDR: **** sys_fs import: [cellFsStat] -> 0x445934
+·! LDR: **** sys_fs import: [cellFsUnlink] -> 0x445954
+·! LDR: **** sys_fs import: [cellFsStReadStart] -> 0x445974
+·! LDR: **** sys_fs import: [cellFsLseek] -> 0x445994
+·! LDR: **** sys_fs import: [cellFsGetFreeSize] -> 0x4459b4
+·! LDR: **** sys_fs import: [cellFsMkdir] -> 0x4459d4
+·! LDR: **** sys_fs import: [cellFsStReadFinish] -> 0x4459f4
+·! LDR: **** sys_fs import: [cellFsWrite] -> 0x445a14
+·! LDR: **** sys_fs import: [cellFsFstat] -> 0x445a34
+·! LDR: **** sys_fs import: [cellFsStReadStop] -> 0x445a54
+·! LDR: **** sys_fs import: [cellFsFtruncate] -> 0x446674
+·! LDR: **** sys_fs import: [cellFsOpendir] -> 0x446694
+·! LDR: **** sys_fs import: [cellFsReaddir] -> 0x4466b4
+·! LDR: **** sys_fs import: [cellFsFsync] -> 0x4466d4
+·! LDR: **** sys_fs import: [cellFsSdataOpen] -> 0x4466f4
+·! LDR: **** sys_fs import: [cellFsRename] -> 0x446714
+·! LDR: **** sys_fs import: [cellFsClosedir] -> 0x446734
+
+·! LDR: ** Imported module 'cellSysmodule' (0x0, 0x0)
+·! LDR: **** cellSysmodule import: [cellSysmoduleUnloadModule] -> 0x445a74
+·! LDR: **** cellSysmodule import: [cellSysmoduleLoadModule] -> 0x445a94
+·! LDR: **** cellSysmodule import: [cellSysmoduleIsLoaded] -> 0x445ab4
+·! LDR: **** cellSysmodule import: [cellSysmoduleInitialize] -> 0x445ad4
+·! LDR: **** cellSysmodule import: [cellSysmoduleFinalize] -> 0x445af4
+
+·! LDR: ** Imported module 'cellSpurs' (0x0, 0x0)
+·! LDR: **** cellSpurs import: [cellSpursDetachLv2EventQueue] -> 0x445b14
+·! LDR: **** cellSpurs import: [cellSpursRemoveWorkload] -> 0x445b34
+·! LDR: **** cellSpurs import: [cellSpursWaitForWorkloadShutdown] -> 0x445b54
+·! LDR: **** cellSpurs import: [cellSpursAddWorkload] -> 0x445b74
+·! LDR: **** cellSpurs import: [cellSpursWakeUp] -> 0x445b94
+·! LDR: **** cellSpurs import: [cellSpursShutdownWorkload] -> 0x445bb4
+·! LDR: **** cellSpurs import: [_cellSpursWorkloadFlagReceiver] -> 0x445bd4
+·! LDR: **** cellSpurs import: [cellSpursInitialize] -> 0x445bf4
+·! LDR: **** cellSpurs import: [cellSpursAttachLv2EventQueue] -> 0x445c14
+·! LDR: **** cellSpurs import: [cellSpursGetWorkloadFlag] -> 0x445c34
+·! LDR: **** cellSpurs import: [cellSpursFinalize] -> 0x445c54
+·! LDR: **** cellSpurs import: [cellSpursReadyCountStore] -> 0x445c74
+
+·! LDR: ** Imported module 'cellNetCtl' (0x0, 0x0)
+·! LDR: **** cellNetCtl import: [cellNetCtlNetStartDialogLoadAsync] -> 0x445c94
+·! LDR: **** cellNetCtl import: [cellNetCtlNetStartDialogUnloadAsync] -> 0x445cb4
+·! LDR: **** cellNetCtl import: [cellNetCtlTerm] -> 0x445cd4
+·! LDR: **** cellNetCtl import: [cellNetCtlGetInfo] -> 0x445cf4
+·! LDR: **** cellNetCtl import: [cellNetCtlGetState] -> 0x445d14
+·! LDR: **** cellNetCtl import: [cellNetCtlInit] -> 0x445d34
+
+·! LDR: ** Imported module 'cellFontFT' (0x0, 0x0)
+·! LDR: **** cellFontFT import: [cellFontInitLibraryFreeTypeWithRevision] -> 0x445d54
+
+·! LDR: ** Imported module 'cellFont' (0x0, 0x0)
+·! LDR: **** cellFont import: [cellFontCreateRenderer] -> 0x445d74
+·! LDR: **** cellFont import: [cellFontGetKerning] -> 0x445d94
+·! LDR: **** cellFont import: [cellFontOpenFontsetOnMemory] -> 0x445db4
+·! LDR: **** cellFont import: [cellFontGetHorizontalLayout] -> 0x445dd4
+·! LDR: **** cellFont import: [cellFontDestroyRenderer] -> 0x445df4
+·! LDR: **** cellFont import: [cellFontSetScalePixel] -> 0x445e14
+·! LDR: **** cellFont import: [cellFontGetRenderCharGlyphMetrics] -> 0x445e34
+·! LDR: **** cellFont import: [cellFontEndLibrary] -> 0x445e54
+·! LDR: **** cellFont import: [cellFontBindRenderer] -> 0x445e74
+·! LDR: **** cellFont import: [cellFontSetupRenderEffectSlant] -> 0x445e94
+·! LDR: **** cellFont import: [cellFontEnd] -> 0x445eb4
+·! LDR: **** cellFont import: [cellFontRenderCharGlyphImage] -> 0x445ed4
+·! LDR: **** cellFont import: [cellFontRenderSurfaceInit] -> 0x445ef4
+·! LDR: **** cellFont import: [cellFontGetFontIdCode] -> 0x445f14
+·! LDR: **** cellFont import: [cellFontOpenFontMemory] -> 0x445f34
+·! LDR: **** cellFont import: [cellFontCloseFont] -> 0x445f54
+·! LDR: **** cellFont import: [cellFontGetRenderEffectSlant] -> 0x445f74
+·! LDR: **** cellFont import: [cellFontInitializeWithRevision] -> 0x445f94
+·! LDR: **** cellFont import: [cellFontUnbindRenderer] -> 0x445fb4
+
+·! LDR: ** Imported module 'cellGame' (0x0, 0x0)
+·! LDR: **** cellGame import: [cellGameContentPermit] -> 0x445fd4
+·! LDR: **** cellGame import: [cellGameThemeInstallFromBuffer] -> 0x445ff4
+·! LDR: **** cellGame import: [cellGamePatchCheck] -> 0x446014
+·! LDR: **** cellGame import: [cellGameDataCheck] -> 0x446034
+·! LDR: **** cellGame import: [cellGameBootCheck] -> 0x446054
+
+·! LDR: ** Imported module 'cellAudio' (0x0, 0x0)
+·! LDR: **** cellAudio import: [cellAudioInit] -> 0x446074
+·! LDR: **** cellAudio import: [cellAudioQuit] -> 0x446094
+·! LDR: **** cellAudio import: [cellAudioSetNotifyEventQueue] -> 0x446554
+·! LDR: **** cellAudio import: [cellAudioGetPortTimestamp] -> 0x446574
+·! LDR: **** cellAudio import: [cellAudioPortClose] -> 0x446594
+·! LDR: **** cellAudio import: [cellAudioPortStop] -> 0x4465b4
+·! LDR: **** cellAudio import: [cellAudioGetPortConfig] -> 0x4465d4
+·! LDR: **** cellAudio import: [cellAudioPortStart] -> 0x4465f4
+·! LDR: **** cellAudio import: [cellAudioPortOpen] -> 0x446614
+·! LDR: **** cellAudio import: [cellAudioGetPortBlockTag] -> 0x446634
+·! LDR: **** cellAudio import: [cellAudioRemoveNotifyEventQueue] -> 0x446654
+
+·! LDR: ** Imported module 'cellL10n' (0x0, 0x0)
+·! LDR: **** cellL10n import: [EUCKRstoUTF8s] -> 0x4460b4
+·! LDR: **** cellL10n import: [SJISstoUTF8s] -> 0x4460d4
+·! LDR: **** cellL10n import: [UTF8stoSJISs] -> 0x4460f4
+
+·! LDR: ** Imported module 'sceNp' (0x0, 0x0)
+·! LDR: **** sceNp import: [sceNpScoreGetRankingByNpId] -> 0x446114
+·! LDR: **** sceNp import: [sceNpScoreRecordScore] -> 0x446134
+·! LDR: **** sceNp import: [sceNpScoreDestroyTitleCtx] -> 0x446154
+·! LDR: **** sceNp import: [sceNpScoreInit] -> 0x446174
+·! LDR: **** sceNp import: [sceNpBasicSetPresence] -> 0x446194
+·! LDR: **** sceNp import: [sceNpTerm] -> 0x4461b4
+·! LDR: **** sceNp import: [sceNpManagerUnregisterCallback] -> 0x4461d4
+·! LDR: **** sceNp import: [sceNpLookupDestroyTitleCtx] -> 0x4461f4
+·! LDR: **** sceNp import: [sceNpManagerGetContentRatingFlag] -> 0x446214
+·! LDR: **** sceNp import: [sceNpScoreCreateTransactionCtx] -> 0x446234
+·! LDR: **** sceNp import: [sceNpLookupTerm] -> 0x446254
+·! LDR: **** sceNp import: [sceNpScoreTerm] -> 0x446274
+·! LDR: **** sceNp import: [sceNpManagerGetStatus] -> 0x446294
+·! LDR: **** sceNp import: [sceNpDrmIsAvailable] -> 0x4462b4
+·! LDR: **** sceNp import: [sceNpScoreCreateTitleCtx] -> 0x4462d4
+·! LDR: **** sceNp import: [sceNpInit] -> 0x4462f4
+·! LDR: **** sceNp import: [sceNpScoreDestroyTransactionCtx] -> 0x446314
+·! LDR: **** sceNp import: [sceNpLookupCreateTitleCtx] -> 0x446334
+·! LDR: **** sceNp import: [sceNpManagerRegisterCallback] -> 0x446354
+·! LDR: **** sceNp import: [sceNpLookupCreateTransactionCtx] -> 0x446374
+·! LDR: **** sceNp import: [sceNpScoreGetBoardInfo] -> 0x446394
+·! LDR: **** sceNp import: [sceNpLookupDestroyTransactionCtx] -> 0x4463b4
+·! LDR: **** sceNp import: [sceNpScoreGetRankingByRange] -> 0x4463d4
+·! LDR: **** sceNp import: [sceNpManagerGetNpId] -> 0x4463f4
+
+·! LDR: ** Imported module 'cellSaveData' (0x0, 0x0)
+·! LDR: **** cellSaveData import: [cellSaveDataListDelete] -> 0x446414
+
+·! LDR: ** Imported module 'sceNpTrophy' (0x0, 0x0)
+·! LDR: **** sceNpTrophy import: [sceNpTrophyRegisterContext] -> 0x446434
+·! LDR: **** sceNpTrophy import: [sceNpTrophyCreateHandle] -> 0x446454
+·! LDR: **** sceNpTrophy import: [sceNpTrophyDestroyContext] -> 0x446474
+·! LDR: **** sceNpTrophy import: [sceNpTrophyInit] -> 0x446494
+·! LDR: **** sceNpTrophy import: [sceNpTrophyAbortHandle] -> 0x4464b4
+·! LDR: **** sceNpTrophy import: [sceNpTrophyDestroyHandle] -> 0x4464d4
+·! LDR: **** sceNpTrophy import: [sceNpTrophyUnlockTrophy] -> 0x4464f4
+·! LDR: **** sceNpTrophy import: [sceNpTrophyTerm] -> 0x446514
+·! LDR: **** sceNpTrophy import: [sceNpTrophyCreateContext] -> 0x446534
+
+·! LDR: ** Imported module 'cellSync' (0x0, 0x0)
+·! LDR: **** cellSync import: [cellSyncBarrierInitialize] -> 0x446754
+·! LDR: **** cellSync import: [cellSyncBarrierTryWait] -> 0x446774
+·! LDR: **** cellSync import: [cellSyncMutexUnlock] -> 0x446794
+·! LDR: **** cellSync import: [cellSyncMutexInitialize] -> 0x4467b4
+·! LDR: **** cellSync import: [cellSyncMutexTryLock] -> 0x4467d4
+
+·! LDR: ** Imported module 'sysPrxForUser' (0x0, 0x0)
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_lock] -> 0x4467f4
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_unlock] -> 0x446814
+·! LDR: **** sysPrxForUser import: [sys_lwcond_destroy] -> 0x446834
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_create] -> 0x446854
+·! LDR: **** sysPrxForUser import: [sys_lwcond_wait] -> 0x446874
+·! LDR: **** sysPrxForUser import: [_sys_process_atexitspawn] -> 0x446894
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_create] -> 0x4468b4
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_get_id] -> 0x4468d4
+·! LDR: **** sysPrxForUser import: [_sys_heap_malloc] -> 0x4468f4
+·! LDR: **** sysPrxForUser import: [sys_prx_register_library] -> 0x446914
+·! LDR: **** sysPrxForUser import: [_sys_heap_memalign] -> 0x446934
+·! LDR: **** sysPrxForUser import: [sys_initialize_tls] -> 0x446954
+·! LDR: **** sysPrxForUser import: [sys_time_get_system_time] -> 0x446974
+·! LDR: **** sysPrxForUser import: [_sys_heap_free] -> 0x446994
+·! LDR: **** sysPrxForUser import: [_sys_process_at_Exitspawn] -> 0x4469b4
+·! LDR: **** sysPrxForUser import: [sys_prx_exitspawn_with_level] -> 0x4469d4
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_trylock] -> 0x4469f4
+·! LDR: **** sysPrxForUser import: [_sys_heap_delete_heap] -> 0x446a14
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_exit] -> 0x446a34
+·! LDR: **** sysPrxForUser import: [_sys_heap_create_heap] -> 0x446a54
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_destroy] -> 0x446a74
+·! LDR: **** sysPrxForUser import: [sys_lwcond_create] -> 0x446a94
+·! LDR: **** sysPrxForUser import: [sys_spu_image_close] -> 0x446ab4
+·! LDR: **** sysPrxForUser import: [sys_process_exit] -> 0x446ad4
+·! LDR: **** sysPrxForUser import: [sys_lwcond_signal_all] -> 0x446af4
+·! LDR: **** sysPrxForUser import: [sys_spu_image_import] -> 0x446b14
+·! LDR: **** sysPrxForUser import: [sys_lwcond_signal] -> 0x446b34

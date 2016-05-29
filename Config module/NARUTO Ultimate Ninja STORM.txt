@@ -1,0 +1,257 @@
+Title: NARUTO: Ultimate Ninja STORM
+Serial: BLES00371
+
+  Load libraries:
+    - libdmux.sprx
+    - libdmuxpamf.sprx
+    - libpamf.sprx
+    - libresc.sprx
+    - libsail.sprx
+    - libsmvd2.sprx
+    - libsre.sprx
+    - libvdec.sprx
+
+·! LDR: ** Imported module 'sys_io' (0x0, 0x0)
+·! LDR: **** sys_io import: [cellPadInit] -> 0x8c104c
+·! LDR: **** sys_io import: [cellKbGetConfiguration] -> 0x8c106c
+·! LDR: **** sys_io import: [cellKbClearBuf] -> 0x8c108c
+·! LDR: **** sys_io import: [cellKbGetInfo] -> 0x8c10ac
+·! LDR: **** sys_io import: [cellMouseGetData] -> 0x8c10cc
+·! LDR: **** sys_io import: [cellKbSetLEDStatus] -> 0x8c10ec
+·! LDR: **** sys_io import: [cellKbInit] -> 0x8c110c
+·! LDR: **** sys_io import: [cellKbCnvRawCode] -> 0x8c112c
+·! LDR: **** sys_io import: [cellPadEnd] -> 0x8c114c
+·! LDR: **** sys_io import: [cellPadSetPortSetting] -> 0x8c116c
+·! LDR: **** sys_io import: [cellMouseGetInfo] -> 0x8c118c
+·! LDR: **** sys_io import: [cellPadGetData] -> 0x8c11ac
+·! LDR: **** sys_io import: [cellKbSetCodeType] -> 0x8c11cc
+·! LDR: **** sys_io import: [cellPadGetInfo2] -> 0x8c11ec
+·! LDR: **** sys_io import: [cellKbEnd] -> 0x8c120c
+·! LDR: **** sys_io import: [cellMouseInit] -> 0x8c122c
+·! LDR: **** sys_io import: [cellKbSetReadMode] -> 0x8c124c
+·! LDR: **** sys_io import: [cellMouseEnd] -> 0x8c126c
+·! LDR: **** sys_io import: [cellPadSetActDirect] -> 0x8c128c
+·! LDR: **** sys_io import: [cellKbRead] -> 0x8c12ac
+
+·! LDR: ** Imported module 'sys_fs' (0x0, 0x0)
+·! LDR: **** sys_fs import: [cellFsClose] -> 0x8c12cc
+·! LDR: **** sys_fs import: [cellFsRead] -> 0x8c12ec
+·! LDR: **** sys_fs import: [cellFsOpen] -> 0x8c130c
+·! LDR: **** sys_fs import: [cellFsStat] -> 0x8c132c
+·! LDR: **** sys_fs import: [cellFsLseek] -> 0x8c134c
+·! LDR: **** sys_fs import: [cellFsUtime] -> 0x8c136c
+·! LDR: **** sys_fs import: [cellFsFstat] -> 0x8c138c
+·! LDR: **** sys_fs import: [cellFsRmdir] -> 0x8c244c
+·! LDR: **** sys_fs import: [cellFsOpendir] -> 0x8c246c
+·! LDR: **** sys_fs import: [cellFsReaddir] -> 0x8c248c
+·! LDR: **** sys_fs import: [cellFsUnlink] -> 0x8c24ac
+·! LDR: **** sys_fs import: [cellFsMkdir] -> 0x8c24cc
+·! LDR: **** sys_fs import: [cellFsWrite] -> 0x8c24ec
+·! LDR: **** sys_fs import: [cellFsClosedir] -> 0x8c250c
+
+·! LDR: ** Imported module 'cellGcmSys' (0x0, 0x0)
+·! LDR: **** cellGcmSys import: [cellGcmGetTiledPitchSize] -> 0x8c13ac
+·! LDR: **** cellGcmSys import: [cellGcmSetUserHandler] -> 0x8c13cc
+·! LDR: **** cellGcmSys import: [_cellGcmInitBody] -> 0x8c13ec
+·! LDR: **** cellGcmSys import: [_cellGcmSetFlipCommand] -> 0x8c140c
+·! LDR: **** cellGcmSys import: [cellGcmAddressToOffset] -> 0x8c142c
+·! LDR: **** cellGcmSys import: [_cellGcmFunc15] -> 0x8c144c
+·! LDR: **** cellGcmSys import: [cellGcmSetFlipMode] -> 0x8c146c
+·! LDR: **** cellGcmSys import: [cellGcmGetFlipStatus] -> 0x8c148c
+·! LDR: **** cellGcmSys import: [cellGcmGetReport] -> 0x8c14ac
+·! LDR: **** cellGcmSys import: [cellGcmMapMainMemory] -> 0x8c14cc
+·! LDR: **** cellGcmSys import: [cellGcmSetDisplayBuffer] -> 0x8c14ec
+·! LDR: **** cellGcmSys import: [cellGcmGetControlRegister] -> 0x8c150c
+·! LDR: **** cellGcmSys import: [cellGcmSetVBlankHandler] -> 0x8c152c
+·! LDR: **** cellGcmSys import: [cellGcmResetFlipStatus] -> 0x8c154c
+·! LDR: **** cellGcmSys import: [cellGcmSetInvalidateTile] -> 0x8c156c
+·! LDR: **** cellGcmSys import: [cellGcmSetTile] -> 0x8c158c
+·! LDR: **** cellGcmSys import: [cellGcmSetZcull] -> 0x8c15ac
+·! LDR: **** cellGcmSys import: [cellGcmGetConfiguration] -> 0x8c15cc
+·! LDR: **** cellGcmSys import: [cellGcmUnmapEaIoAddress] -> 0x8c15ec
+·! LDR: **** cellGcmSys import: [cellGcmGetLabelAddress] -> 0x8c160c
+
+·! LDR: ** Imported module 'cellSpurs' (0x0, 0x0)
+·! LDR: **** cellSpurs import: [cellSpursJobGuardReset] -> 0x8c162c
+·! LDR: **** cellSpurs import: [cellSpursAttributeSetNamePrefix] -> 0x8c164c
+·! LDR: **** cellSpurs import: [cellSpursEventFlagDetachLv2EventQueue] -> 0x8c166c
+·! LDR: **** cellSpurs import: [cellSpursCreateJobChainWithAttribute] -> 0x8c168c
+·! LDR: **** cellSpurs import: [_cellSpursJobChainAttributeInitialize] -> 0x8c16ac
+·! LDR: **** cellSpurs import: [cellSpursEventFlagWait] -> 0x8c16cc
+·! LDR: **** cellSpurs import: [cellSpursDetachLv2EventQueue] -> 0x8c16ec
+·! LDR: **** cellSpurs import: [_cellSpursEventFlagInitialize] -> 0x8c170c
+·! LDR: **** cellSpurs import: [cellSpursCreateJobChain] -> 0x8c172c
+·! LDR: **** cellSpurs import: [cellSpursJobGuardInitialize] -> 0x8c174c
+·! LDR: **** cellSpurs import: [cellSpursShutdownJobChain] -> 0x8c176c
+·! LDR: **** cellSpurs import: [cellSpursSetPriorities] -> 0x8c178c
+·! LDR: **** cellSpurs import: [cellSpursSetMaxContention] -> 0x8c17ac
+·! LDR: **** cellSpurs import: [cellSpursGetJobChainId] -> 0x8c17cc
+·! LDR: **** cellSpurs import: [cellSpursEventFlagAttachLv2EventQueue] -> 0x8c17ec
+·! LDR: **** cellSpurs import: [_cellSpursAttributeInitialize] -> 0x8c180c
+·! LDR: **** cellSpurs import: [cellSpursJobChainAttributeSetName] -> 0x8c182c
+·! LDR: **** cellSpurs import: [cellSpursJoinJobChain] -> 0x8c184c
+·! LDR: **** cellSpurs import: [cellSpursInitializeWithAttribute] -> 0x8c186c
+·! LDR: **** cellSpurs import: [cellSpursAttachLv2EventQueue] -> 0x8c188c
+·! LDR: **** cellSpurs import: [cellSpursKickJobChain] -> 0x8c18ac
+·! LDR: **** cellSpurs import: [cellSpursFinalize] -> 0x8c18cc
+·! LDR: **** cellSpurs import: [cellSpursJobGuardNotify] -> 0x8c18ec
+·! LDR: **** cellSpurs import: [cellSpursRunJobChain] -> 0x8c190c
+
+·! LDR: ** Imported module 'cellSysutil' (0x0, 0x0)
+·! LDR: **** cellSysutil import: [cellSysutilUnregisterCallback] -> 0x8c192c
+·! LDR: **** cellSysutil import: [cellVideoOutConfigure] -> 0x8c194c
+·! LDR: **** cellSysutil import: [cellSysutilCheckCallback] -> 0x8c196c
+·! LDR: **** cellSysutil import: [cellSaveDataListLoad2] -> 0x8c198c
+·! LDR: **** cellSysutil import: [cellVideoOutGetDeviceInfo] -> 0x8c19ac
+·! LDR: **** cellSysutil import: [cellMsgDialogClose] -> 0x8c19cc
+·! LDR: **** cellSysutil import: [cellSaveDataListAutoLoad] -> 0x8c19ec
+·! LDR: **** cellSysutil import: [cellSaveDataFixedSave2] -> 0x8c1a0c
+·! LDR: **** cellSysutil import: [cellSaveDataListSave2] -> 0x8c1a2c
+·! LDR: **** cellSysutil import: [cellMsgDialogOpenErrorCode] -> 0x8c1a4c
+·! LDR: **** cellSysutil import: [cellSysutilGetSystemParamInt] -> 0x8c1a6c
+·! LDR: **** cellSysutil import: [cellMsgDialogAbort] -> 0x8c1a8c
+·! LDR: **** cellSysutil import: [cellVideoOutGetNumberOfDevice] -> 0x8c1aac
+·! LDR: **** cellSysutil import: [cellMsgDialogOpen2] -> 0x8c1acc
+·! LDR: **** cellSysutil import: [cellVideoOutGetState] -> 0x8c1aec
+·! LDR: **** cellSysutil import: [cellHddGameCheck] -> 0x8c1b0c
+·! LDR: **** cellSysutil import: [cellSysutilGetSystemParamString] -> 0x8c1b2c
+·! LDR: **** cellSysutil import: [cellMsgDialogProgressBarInc] -> 0x8c1b4c
+·! LDR: **** cellSysutil import: [cellGameDataExitBroken] -> 0x8c1b6c
+·! LDR: **** cellSysutil import: [cellSysutilRegisterCallback] -> 0x8c1b8c
+·! LDR: **** cellSysutil import: [cellGameDataGetSizeKB] -> 0x8c1bac
+·! LDR: **** cellSysutil import: [cellHddGameExitBroken] -> 0x8c1bcc
+·! LDR: **** cellSysutil import: [cellDiscGameGetBootDiscInfo] -> 0x8c1bec
+·! LDR: **** cellSysutil import: [cellGameDataCheckCreate2] -> 0x8c1c0c
+·! LDR: **** cellSysutil import: [cellVideoOutGetResolution] -> 0x8c1c2c
+·! LDR: **** cellSysutil import: [cellSaveDataDelete2] -> 0x8c1c4c
+·! LDR: **** cellSysutil import: [cellHddGameGetSizeKB] -> 0x8c1c6c
+·! LDR: **** cellSysutil import: [cellSaveDataAutoLoad2] -> 0x8c1c8c
+·! LDR: **** cellSysutil import: [cellSysCacheMount] -> 0x8c252c
+·! LDR: **** cellSysutil import: [cellAudioOutConfigure] -> 0x8c254c
+·! LDR: **** cellSysutil import: [cellAudioOutGetSoundAvailability] -> 0x8c256c
+
+·! LDR: ** Imported module 'cellSysmodule' (0x0, 0x0)
+·! LDR: **** cellSysmodule import: [cellSysmoduleUnloadModule] -> 0x8c1cac
+·! LDR: **** cellSysmodule import: [cellSysmoduleLoadModule] -> 0x8c1ccc
+
+·! LDR: ** Imported module 'cellResc' (0x0, 0x0)
+·! LDR: **** cellResc import: [cellRescSetWaitFlip] -> 0x8c1cec
+·! LDR: **** cellResc import: [cellRescSetDsts] -> 0x8c1d0c
+·! LDR: **** cellResc import: [cellRescResetFlipStatus] -> 0x8c1d2c
+·! LDR: **** cellResc import: [cellRescAdjustAspectRatio] -> 0x8c1d4c
+·! LDR: **** cellResc import: [cellRescSetDisplayMode] -> 0x8c1d6c
+·! LDR: **** cellResc import: [cellRescSetConvertAndFlip] -> 0x8c1d8c
+·! LDR: **** cellResc import: [cellRescExit] -> 0x8c1dac
+·! LDR: **** cellResc import: [cellRescInit] -> 0x8c1dcc
+·! LDR: **** cellResc import: [cellRescGetBufferSize] -> 0x8c1dec
+·! LDR: **** cellResc import: [cellRescGetLastFlipTime] -> 0x8c1e0c
+·! LDR: **** cellResc import: [cellRescSetSrc] -> 0x8c1e2c
+·! LDR: **** cellResc import: [cellRescSetBufferAddress] -> 0x8c1e4c
+·! LDR: **** cellResc import: [cellRescGetFlipStatus] -> 0x8c1e6c
+·! LDR: **** cellResc import: [cellRescVideoOutResolutionId2RescBufferMode] -> 0x8c1e8c
+·! LDR: **** cellResc import: [cellRescSetVBlankHandler] -> 0x8c1eac
+·! LDR: **** cellResc import: [cellRescCreateInterlaceTable] -> 0x8c1ecc
+
+·! LDR: ** Imported module 'cellSail' (0x0, 0x0)
+·! LDR: **** cellSail import: [cellSailGraphicsAdapterGetFrame] -> 0x8c1eec
+·! LDR: **** cellSail import: [cellSailPlayerSetSoundAdapter] -> 0x8c1f0c
+·! LDR: **** cellSail import: [cellSailPlayerInitialize] -> 0x8c1f2c
+·! LDR: **** cellSail import: [cellSailGraphicsAdapterPtsToTimePosition] -> 0x8c1f4c
+·! LDR: **** cellSail import: [cellSailPlayerFinalize] -> 0x8c1f6c
+·! LDR: **** cellSail import: [cellSailPlayerSetGraphicsAdapter] -> 0x8c1f8c
+·! LDR: **** cellSail import: [cellSailGraphicsAdapterInitialize] -> 0x8c1fac
+·! LDR: **** cellSail import: [cellSailGraphicsAdapterSetPreferredFormat] -> 0x8c1fcc
+·! LDR: **** cellSail import: [cellSailMemAllocatorInitialize] -> 0x8c1fec
+·! LDR: **** cellSail import: [cellSailPlayerOpenStream] -> 0x8c200c
+·! LDR: **** cellSail import: [cellSailFutureGet] -> 0x8c202c
+·! LDR: **** cellSail import: [cellSailSoundAdapterInitialize] -> 0x8c204c
+·! LDR: **** cellSail import: [cellSailGraphicsAdapterUpdateAvSync] -> 0x8c206c
+·! LDR: **** cellSail import: [cellSailPlayerReplaceEventHandler] -> 0x8c208c
+·! LDR: **** cellSail import: [cellSailSoundAdapterPtsToTimePosition] -> 0x8c20ac
+·! LDR: **** cellSail import: [cellSailFutureInitialize] -> 0x8c20cc
+·! LDR: **** cellSail import: [cellSailSourceNotifyInputEos] -> 0x8c20ec
+·! LDR: **** cellSail import: [cellSailPlayerGetDescriptorCount] -> 0x8c210c
+·! LDR: **** cellSail import: [cellSailGraphicsAdapterFinalize] -> 0x8c212c
+·! LDR: **** cellSail import: [cellSailSourceNotifyCallCompleted] -> 0x8c214c
+·! LDR: **** cellSail import: [cellSailPlayerAddDescriptor] -> 0x8c216c
+·! LDR: **** cellSail import: [cellSailSoundAdapterGetFrame] -> 0x8c218c
+·! LDR: **** cellSail import: [cellSailPlayerCloseStream] -> 0x8c21ac
+·! LDR: **** cellSail import: [cellSailFutureFinalize] -> 0x8c21cc
+·! LDR: **** cellSail import: [cellSailSourceNotifyStreamOut] -> 0x8c21ec
+·! LDR: **** cellSail import: [cellSailSourceInitialize] -> 0x8c220c
+·! LDR: **** cellSail import: [cellSailFutureSet] -> 0x8c222c
+·! LDR: **** cellSail import: [cellSailPlayerBoot] -> 0x8c224c
+·! LDR: **** cellSail import: [cellSailPlayerRegisterSource] -> 0x8c226c
+·! LDR: **** cellSail import: [cellSailSoundAdapterFinalize] -> 0x8c228c
+·! LDR: **** cellSail import: [cellSailPlayerSetPaused] -> 0x8c22ac
+·! LDR: **** cellSail import: [cellSailPlayerCreateDescriptor] -> 0x8c22cc
+·! LDR: **** cellSail import: [cellSailPlayerStart] -> 0x8c22ec
+·! LDR: **** cellSail import: [cellSailPlayerStop] -> 0x8c230c
+·! LDR: **** cellSail import: [cellSailSourceFinalize] -> 0x8c232c
+·! LDR: **** cellSail import: [cellSailSoundAdapterUpdateAvSync] -> 0x8c234c
+·! LDR: **** cellSail import: [cellSailSoundAdapterGetFormat] -> 0x8c236c
+·! LDR: **** cellSail import: [cellSailPlayerSetRepeatMode] -> 0x8c238c
+·! LDR: **** cellSail import: [cellSailPlayerDestroyDescriptor] -> 0x8c23ac
+·! LDR: **** cellSail import: [cellSailGraphicsAdapterGetFormat] -> 0x8c23cc
+
+·! LDR: ** Imported module 'sceNp' (0x0, 0x0)
+·! LDR: **** sceNp import: [sceNpTerm] -> 0x8c23ec
+·! LDR: **** sceNp import: [sceNpDrmIsAvailable] -> 0x8c240c
+·! LDR: **** sceNp import: [sceNpInit] -> 0x8c242c
+
+·! LDR: ** Imported module 'cellAudio' (0x0, 0x0)
+·! LDR: **** cellAudio import: [cellAudioInit] -> 0x8c258c
+·! LDR: **** cellAudio import: [cellAudioSetNotifyEventQueue] -> 0x8c25ac
+·! LDR: **** cellAudio import: [cellAudioGetPortTimestamp] -> 0x8c25cc
+·! LDR: **** cellAudio import: [cellAudioPortClose] -> 0x8c25ec
+·! LDR: **** cellAudio import: [cellAudioPortStop] -> 0x8c260c
+·! LDR: **** cellAudio import: [cellAudioGetPortConfig] -> 0x8c262c
+·! LDR: **** cellAudio import: [cellAudioPortStart] -> 0x8c264c
+·! LDR: **** cellAudio import: [cellAudioQuit] -> 0x8c266c
+·! LDR: **** cellAudio import: [cellAudioPortOpen] -> 0x8c268c
+·! LDR: **** cellAudio import: [cellAudioGetPortBlockTag] -> 0x8c26ac
+·! LDR: **** cellAudio import: [cellAudioRemoveNotifyEventQueue] -> 0x8c26cc
+
+·! LDR: ** Imported module 'cellAtrac' (0x0, 0x0)
+·! LDR: **** cellAtrac import: [cellAtracSetSecondBuffer] -> 0x8c26ec
+·! LDR: **** cellAtrac import: [cellAtracGetChannel] -> 0x8c270c
+·! LDR: **** cellAtrac import: [cellAtracGetStreamDataInfo] -> 0x8c272c
+·! LDR: **** cellAtrac import: [cellAtracAddStreamData] -> 0x8c274c
+·! LDR: **** cellAtrac import: [cellAtracGetMaxSample] -> 0x8c276c
+·! LDR: **** cellAtrac import: [cellAtracSetDataAndGetMemSize] -> 0x8c278c
+·! LDR: **** cellAtrac import: [cellAtracDeleteDecoder] -> 0x8c27ac
+·! LDR: **** cellAtrac import: [cellAtracSetLoopNum] -> 0x8c27cc
+·! LDR: **** cellAtrac import: [cellAtracDecode] -> 0x8c27ec
+·! LDR: **** cellAtrac import: [cellAtracIsSecondBufferNeeded] -> 0x8c280c
+·! LDR: **** cellAtrac import: [cellAtracGetLoopInfo] -> 0x8c282c
+·! LDR: **** cellAtrac import: [cellAtracGetInternalErrorInfo] -> 0x8c284c
+·! LDR: **** cellAtrac import: [cellAtracGetSecondBufferInfo] -> 0x8c286c
+·! LDR: **** cellAtrac import: [cellAtracGetRemainFrame] -> 0x8c288c
+·! LDR: **** cellAtrac import: [cellAtracCreateDecoder] -> 0x8c28ac
+
+·! LDR: ** Imported module 'sysPrxForUser' (0x0, 0x0)
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_lock] -> 0x8c28cc
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_unlock] -> 0x8c28ec
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_create] -> 0x8c290c
+·! LDR: **** sysPrxForUser import: [_sys_process_atexitspawn] -> 0x8c292c
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_create] -> 0x8c294c
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_get_id] -> 0x8c296c
+·! LDR: **** sysPrxForUser import: [_sys_heap_malloc] -> 0x8c298c
+·! LDR: **** sysPrxForUser import: [sys_prx_register_library] -> 0x8c29ac
+·! LDR: **** sysPrxForUser import: [_sys_heap_memalign] -> 0x8c29cc
+·! LDR: **** sysPrxForUser import: [_sys_spu_printf_initialize] -> 0x8c29ec
+·! LDR: **** sysPrxForUser import: [sys_initialize_tls] -> 0x8c2a0c
+·! LDR: **** sysPrxForUser import: [sys_time_get_system_time] -> 0x8c2a2c
+·! LDR: **** sysPrxForUser import: [_sys_heap_free] -> 0x8c2a4c
+·! LDR: **** sysPrxForUser import: [_sys_process_at_Exitspawn] -> 0x8c2a6c
+·! LDR: **** sysPrxForUser import: [sys_prx_exitspawn_with_level] -> 0x8c2a8c
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_once] -> 0x8c2aac
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_trylock] -> 0x8c2acc
+·! LDR: **** sysPrxForUser import: [_sys_heap_delete_heap] -> 0x8c2aec
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_exit] -> 0x8c2b0c
+·! LDR: **** sysPrxForUser import: [_sys_heap_create_heap] -> 0x8c2b2c
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_destroy] -> 0x8c2b4c
+·! LDR: **** sysPrxForUser import: [_sys_spu_printf_finalize] -> 0x8c2b6c
+·! LDR: **** sysPrxForUser import: [sys_spu_image_close] -> 0x8c2b8c
+·! LDR: **** sysPrxForUser import: [sys_process_exit] -> 0x8c2bac
+·! LDR: **** sysPrxForUser import: [sys_spu_image_import] -> 0x8c2bcc

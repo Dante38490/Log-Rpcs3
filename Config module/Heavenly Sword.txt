@@ -1,0 +1,199 @@
+Title: Heavenly Sword™ 
+Serial: BCES00078
+
+  Load libraries:
+-libatrac3plus.sprx
+-libsre.sprx
+-libkey2char.sprx
+ 
+·! LDR: ** Imported module 'cellGcmSys' (0x0, 0x0)
+·! LDR: **** cellGcmSys import: [cellGcmAddressToOffset] -> 0xe8e734
+·! LDR: **** cellGcmSys import: [cellGcmGetControlRegister] -> 0xe8e754
+·! LDR: **** cellGcmSys import: [cellGcmGetConfiguration] -> 0xe8e774
+·! LDR: **** cellGcmSys import: [cellGcmSetUserHandler] -> 0xe8edd4
+·! LDR: **** cellGcmSys import: [cellGcmSetQueueHandler] -> 0xe8edf4
+·! LDR: **** cellGcmSys import: [_cellGcmInitBody] -> 0xe8ee14
+·! LDR: **** cellGcmSys import: [cellGcmGetOffsetTable] -> 0xe8ee34
+·! LDR: **** cellGcmSys import: [_cellGcmFunc15] -> 0xe8ee54
+·! LDR: **** cellGcmSys import: [cellGcmSetFlipMode] -> 0xe8ee74
+·! LDR: **** cellGcmSys import: [cellGcmSetDebugOutputLevel] -> 0xe8ee94
+·! LDR: **** cellGcmSys import: [cellGcmSetWaitFlip] -> 0xe8eeb4
+·! LDR: **** cellGcmSys import: [cellGcmMapMainMemory] -> 0xe8eed4
+·! LDR: **** cellGcmSys import: [cellGcmSetFlipHandler] -> 0xe8eef4
+·! LDR: **** cellGcmSys import: [cellGcmSetDisplayBuffer] -> 0xe8ef14
+·! LDR: **** cellGcmSys import: [cellGcmSetVBlankHandler] -> 0xe8ef34
+·! LDR: **** cellGcmSys import: [cellGcmSetFlipImmediate] -> 0xe8ef54
+·! LDR: **** cellGcmSys import: [cellGcmSetInvalidateTile] -> 0xe8ef74
+·! LDR: **** cellGcmSys import: [cellGcmSetGraphicsHandler] -> 0xe8ef94
+·! LDR: **** cellGcmSys import: [cellGcmSetTile] -> 0xe8efb4
+·! LDR: **** cellGcmSys import: [cellGcmSetZcull] -> 0xe8efd4
+·! LDR: **** cellGcmSys import: [cellGcmSetFlip] -> 0xe8eff4
+·! LDR: **** cellGcmSys import: [cellGcmGetLabelAddress] -> 0xe8f014
+
+·! LDR: ** Imported module 'sys_io' (0x0, 0x0)
+·! LDR: **** sys_io import: [cellPadSetActDirect] -> 0xe8e794
+·! LDR: **** sys_io import: [cellPadInit] -> 0xe8f034
+·! LDR: **** sys_io import: [cellKbGetConfiguration] -> 0xe8f054
+·! LDR: **** sys_io import: [cellKbClearBuf] -> 0xe8f074
+·! LDR: **** sys_io import: [cellKbGetInfo] -> 0xe8f094
+·! LDR: **** sys_io import: [cellMouseGetData] -> 0xe8f0b4
+·! LDR: **** sys_io import: [cellPadGetInfo] -> 0xe8f0d4
+·! LDR: **** sys_io import: [cellMouseClearBuf] -> 0xe8f0f4
+·! LDR: **** sys_io import: [cellKbInit] -> 0xe8f114
+·! LDR: **** sys_io import: [cellKbCnvRawCode] -> 0xe8f134
+·! LDR: **** sys_io import: [cellPadEnd] -> 0xe8f154
+·! LDR: **** sys_io import: [cellMouseGetInfo] -> 0xe8f174
+·! LDR: **** sys_io import: [cellPadGetData] -> 0xe8f194
+·! LDR: **** sys_io import: [cellKbSetCodeType] -> 0xe8f1b4
+·! LDR: **** sys_io import: [cellPadSetSensorMode] -> 0xe8f1d4
+·! LDR: **** sys_io import: [cellKbEnd] -> 0xe8f1f4
+·! LDR: **** sys_io import: [cellMouseInit] -> 0xe8f214
+·! LDR: **** sys_io import: [cellPadGetCapabilityInfo] -> 0xe8f234
+·! LDR: **** sys_io import: [cellKbSetReadMode] -> 0xe8f254
+·! LDR: **** sys_io import: [cellMouseEnd] -> 0xe8f274
+·! LDR: **** sys_io import: [cellPadSetPressMode] -> 0xe8f294
+·! LDR: **** sys_io import: [cellKbRead] -> 0xe8f2b4
+
+·! LDR: ** Imported module 'sys_net' (0x0, 0x0)
+·! LDR: **** sys_net import: [sys_net::sys_net_initialize_network_ex] -> 0xe8e7b4
+·! LDR: **** sys_net import: [sys_net::listen] -> 0xe8e7d4
+·! LDR: **** sys_net import: [sys_net::socketselect] -> 0xe8e7f4
+·! LDR: **** sys_net import: [sys_net::connect] -> 0xe8e814
+·! LDR: **** sys_net import: [sys_net::socketclose] -> 0xe8e834
+·! LDR: **** sys_net import: [sys_net::setsockopt] -> 0xe8e854
+·! LDR: **** sys_net import: [sys_net::socket] -> 0xe8e874
+·! LDR: **** sys_net import: [sys_net::bind] -> 0xe8e894
+·! LDR: **** sys_net import: [sys_net::sys_net_show_ifconfig] -> 0xe8e8b4
+·! LDR: **** sys_net import: [sys_net::sys_net_finalize_network] -> 0xe8e8d4
+·! LDR: **** sys_net import: [sys_net::accept] -> 0xe8e8f4
+·! LDR: **** sys_net import: [sys_net::inet_addr] -> 0xe8e914
+·! LDR: **** sys_net import: [sys_net::send] -> 0xe8e934
+·! LDR: **** sys_net import: [sys_net::recv] -> 0xe8e954
+
+·! LDR: ** Imported module 'cellSpurs' (0x0, 0x0)
+·! LDR: **** cellSpurs import: [cellSpursInitialize] -> 0xe8e974
+·! LDR: **** cellSpurs import: [cellSpursFinalize] -> 0xe8e994
+·! LDR: **** cellSpurs import: [cellSpursRequestIdleSpu] -> 0xe8f2d4
+·! LDR: **** cellSpurs import: [cellSpursGetInfo] -> 0xe8f2f4
+·! LDR: **** cellSpurs import: [cellSpursEventFlagDetachLv2EventQueue] -> 0xe8f314
+·! LDR: **** cellSpurs import: [cellSpursEventFlagWait] -> 0xe8f334
+·! LDR: **** cellSpurs import: [cellSpursDetachLv2EventQueue] -> 0xe8f354
+·! LDR: **** cellSpurs import: [cellSpursCreateTaskset] -> 0xe8f374
+·! LDR: **** cellSpurs import: [cellSpursRemoveWorkload] -> 0xe8f394
+·! LDR: **** cellSpurs import: [_cellSpursEventFlagInitialize] -> 0xe8f3b4
+·! LDR: **** cellSpurs import: [cellSpursWaitForWorkloadShutdown] -> 0xe8f3d4
+·! LDR: **** cellSpurs import: [cellSpursAddWorkload] -> 0xe8f3f4
+·! LDR: **** cellSpurs import: [cellSpursSetPriorities] -> 0xe8f414
+·! LDR: **** cellSpurs import: [cellSpursEventFlagAttachLv2EventQueue] -> 0xe8f434
+·! LDR: **** cellSpurs import: [cellSpursShutdownWorkload] -> 0xe8f454
+·! LDR: **** cellSpurs import: [cellSpursJoinTaskset] -> 0xe8f474
+·! LDR: **** cellSpurs import: [cellSpursShutdownTaskset] -> 0xe8f494
+·! LDR: **** cellSpurs import: [cellSpursAttachLv2EventQueue] -> 0xe8f4b4
+·! LDR: **** cellSpurs import: [cellSpursCreateTask] -> 0xe8f4d4
+·! LDR: **** cellSpurs import: [cellSpursSetExceptionEventHandler] -> 0xe8f4f4
+·! LDR: **** cellSpurs import: [cellSpursEventFlagSet] -> 0xe8f514
+·! LDR: **** cellSpurs import: [cellSpursReadyCountStore] -> 0xe8f534
+
+·! LDR: ** Imported module 'sys_fs' (0x0, 0x0)
+·! LDR: **** sys_fs import: [cellFsClose] -> 0xe8e9b4
+·! LDR: **** sys_fs import: [cellFsOpendir] -> 0xe8e9d4
+·! LDR: **** sys_fs import: [cellFsRead] -> 0xe8e9f4
+·! LDR: **** sys_fs import: [cellFsReaddir] -> 0xe8ea14
+·! LDR: **** sys_fs import: [cellFsOpen] -> 0xe8ea34
+·! LDR: **** sys_fs import: [cellFsStat] -> 0xe8ea54
+·! LDR: **** sys_fs import: [cellFsUnlink] -> 0xe8ea74
+·! LDR: **** sys_fs import: [cellFsLseek] -> 0xe8ea94
+·! LDR: **** sys_fs import: [cellFsMkdir] -> 0xe8eab4
+·! LDR: **** sys_fs import: [cellFsTruncate] -> 0xe8ead4
+·! LDR: **** sys_fs import: [cellFsWrite] -> 0xe8eaf4
+·! LDR: **** sys_fs import: [cellFsFstat] -> 0xe8eb14
+·! LDR: **** sys_fs import: [cellFsClosedir] -> 0xe8eb34
+·! LDR: **** sys_fs import: [cellFsRmdir] -> 0xe8f7f4
+·! LDR: **** sys_fs import: [cellFsFsync] -> 0xe8f814
+
+·! LDR: ** Imported module 'cellNetCtl' (0x0, 0x0)
+·! LDR: **** cellNetCtl import: [cellNetCtlTerm] -> 0xe8eb54
+·! LDR: **** cellNetCtl import: [cellNetCtlGetState] -> 0xe8eb74
+·! LDR: **** cellNetCtl import: [cellNetCtlInit] -> 0xe8eb94
+·! LDR: **** cellNetCtl import: [cellNetCtlGetInfo] -> 0xe8f8b4
+
+·! LDR: ** Imported module 'cellSysutil' (0x0, 0x0)
+·! LDR: **** cellSysutil import: [cellSysutilUnregisterCallback] -> 0xe8ebb4
+·! LDR: **** cellSysutil import: [cellSysutilCheckCallback] -> 0xe8ebd4
+·! LDR: **** cellSysutil import: [cellSysCacheMount] -> 0xe8ebf4
+·! LDR: **** cellSysutil import: [cellSysutilGetSystemParamInt] -> 0xe8ec14
+·! LDR: **** cellSysutil import: [cellMsgDialogAbort] -> 0xe8ec34
+·! LDR: **** cellSysutil import: [cellMsgDialogOpen2] -> 0xe8ec54
+·! LDR: **** cellSysutil import: [cellSaveDataAutoSave2] -> 0xe8ec74
+·! LDR: **** cellSysutil import: [cellSysutilRegisterCallback] -> 0xe8ec94
+·! LDR: **** cellSysutil import: [cellGameDataGetSizeKB] -> 0xe8ecb4
+·! LDR: **** cellSysutil import: [cellAudioOutGetSoundAvailability] -> 0xe8ecd4
+·! LDR: **** cellSysutil import: [cellGameDataCheckCreate2] -> 0xe8ecf4
+·! LDR: **** cellSysutil import: [cellMsgDialogOpen] -> 0xe8ed14
+·! LDR: **** cellSysutil import: [cellSaveDataAutoLoad2] -> 0xe8ed34
+·! LDR: **** cellSysutil import: [cellVideoOutConfigure] -> 0xe8f8d4
+·! LDR: **** cellSysutil import: [cellAudioOutConfigure] -> 0xe8f8f4
+·! LDR: **** cellSysutil import: [cellVideoOutGetState] -> 0xe8f914
+·! LDR: **** cellSysutil import: [cellVideoOutGetResolutionAvailability] -> 0xe8f934
+·! LDR: **** cellSysutil import: [cellVideoOutGetResolution] -> 0xe8f954
+
+·! LDR: ** Imported module 'cellSysmodule' (0x0, 0x0)
+·! LDR: **** cellSysmodule import: [cellSysmoduleUnloadModule] -> 0xe8ed54
+·! LDR: **** cellSysmodule import: [cellSysmoduleLoadModule] -> 0xe8ed74
+·! LDR: **** cellSysmodule import: [cellSysmoduleInitialize] -> 0xe8ed94
+·! LDR: **** cellSysmodule import: [cellSysmoduleFinalize] -> 0xe8edb4
+
+·! LDR: ** Imported module 'cellAudio' (0x0, 0x0)
+·! LDR: **** cellAudio import: [cellAudioInit] -> 0xe8f554
+·! LDR: **** cellAudio import: [cellAudioPortClose] -> 0xe8f574
+·! LDR: **** cellAudio import: [cellAudioPortStop] -> 0xe8f594
+·! LDR: **** cellAudio import: [cellAudioGetPortConfig] -> 0xe8f5b4
+·! LDR: **** cellAudio import: [cellAudioPortStart] -> 0xe8f5d4
+·! LDR: **** cellAudio import: [cellAudioQuit] -> 0xe8f5f4
+·! LDR: **** cellAudio import: [cellAudioPortOpen] -> 0xe8f614
+
+·! LDR: ** Imported module 'cellAtrac' (0x0, 0x0)
+·! LDR: **** cellAtrac import: [cellAtracGetBitrate] -> 0xe8f634
+·! LDR: **** cellAtrac import: [cellAtracGetChannel] -> 0xe8f654
+·! LDR: **** cellAtrac import: [cellAtracGetStreamDataInfo] -> 0xe8f674
+·! LDR: **** cellAtrac import: [cellAtracAddStreamData] -> 0xe8f694
+·! LDR: **** cellAtrac import: [cellAtracGetMaxSample] -> 0xe8f6b4
+·! LDR: **** cellAtrac import: [cellAtracSetDataAndGetMemSize] -> 0xe8f6d4
+·! LDR: **** cellAtrac import: [cellAtracDeleteDecoder] -> 0xe8f6f4
+·! LDR: **** cellAtrac import: [cellAtracResetPlayPosition] -> 0xe8f714
+·! LDR: **** cellAtrac import: [cellAtracSetLoopNum] -> 0xe8f734
+·! LDR: **** cellAtrac import: [cellAtracDecode] -> 0xe8f754
+·! LDR: **** cellAtrac import: [cellAtracGetBufferInfoForResetting] -> 0xe8f774
+·! LDR: **** cellAtrac import: [cellAtracGetSoundInfo] -> 0xe8f794
+·! LDR: **** cellAtrac import: [cellAtracGetRemainFrame] -> 0xe8f7b4
+·! LDR: **** cellAtrac import: [cellAtracCreateDecoder] -> 0xe8f7d4
+
+·! LDR: ** Imported module 'cellSync' (0x0, 0x0)
+·! LDR: **** cellSync import: [cellSyncMutexLock] -> 0xe8f834
+·! LDR: **** cellSync import: [cellSyncMutexUnlock] -> 0xe8f854
+·! LDR: **** cellSync import: [cellSyncMutexInitialize] -> 0xe8f874
+·! LDR: **** cellSync import: [cellSyncMutexTryLock] -> 0xe8f894
+
+·! LDR: ** Imported module 'cellKey2char' (0x0, 0x0)
+·! LDR: **** cellKey2char import: [cellKey2CharClose] -> 0xe8f974
+·! LDR: **** cellKey2char import: [cellKey2CharGetChar] -> 0xe8f994
+·! LDR: **** cellKey2char import: [cellKey2CharOpen] -> 0xe8f9b4
+·! LDR: **** cellKey2char import: [cellKey2CharSetMode] -> 0xe8f9d4
+
+·! LDR: ** Imported module 'sysPrxForUser' (0x0, 0x0)
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_lock] -> 0xe8f9f4
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_unlock] -> 0xe8fa14
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_create] -> 0xe8fa34
+·! LDR: **** sysPrxForUser import: [_sys_process_atexitspawn] -> 0xe8fa54
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_create] -> 0xe8fa74
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_get_id] -> 0xe8fa94
+·! LDR: **** sysPrxForUser import: [sys_process_is_stack] -> 0xe8fab4
+·! LDR: **** sysPrxForUser import: [sys_initialize_tls] -> 0xe8fad4
+·! LDR: **** sysPrxForUser import: [sys_time_get_system_time] -> 0xe8faf4
+·! LDR: **** sysPrxForUser import: [sys_prx_exitspawn_with_level] -> 0xe8fb14
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_trylock] -> 0xe8fb34
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_exit] -> 0xe8fb54
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_destroy] -> 0xe8fb74
+·! LDR: **** sysPrxForUser import: [sys_spu_image_close] -> 0xe8fb94
+·! LDR: **** sysPrxForUser import: [sys_process_exit] -> 0xe8fbb4
+·! LDR: **** sysPrxForUser import: [sys_spu_image_import] -> 0xe8fbd4

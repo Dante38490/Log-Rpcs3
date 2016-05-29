@@ -1,0 +1,151 @@
+Title: Ratchet & Clank™: Quest for Booty
+Serial: NPEA00088
+
+  Load libraries:
+-lisre.sprx
+ 
+·! LDR: ** Imported module 'sysPrxForUser' (0x0, 0x0)
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_lock] -> 0x779f2c
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_unlock] -> 0x779f4c
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_create] -> 0x779f6c
+·! LDR: **** sysPrxForUser import: [_sys_process_atexitspawn] -> 0x779f8c
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_create] -> 0x779fac
+·! LDR: **** sysPrxForUser import: [sys_mmapper_free_memory] -> 0x779fcc
+·! LDR: **** sysPrxForUser import: [sys_mmapper_unmap_memory] -> 0x779fec
+·! LDR: **** sysPrxForUser import: [sys_initialize_tls] -> 0x77a00c
+·! LDR: **** sysPrxForUser import: [sys_time_get_system_time] -> 0x77a02c
+·! LDR: **** sysPrxForUser import: [sys_prx_exitspawn_with_level] -> 0x77a04c
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_exit] -> 0x77a06c
+·! LDR: **** sysPrxForUser import: [sys_mmapper_allocate_memory] -> 0x77a08c
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_destroy] -> 0x77a0ac
+·! LDR: **** sysPrxForUser import: [sys_mmapper_map_memory] -> 0x77a0cc
+·! LDR: **** sysPrxForUser import: [sys_process_exit] -> 0x77a0ec
+·! LDR: **** sysPrxForUser import: [sys_game_process_exitspawn] -> 0x77a10c
+·! LDR: **** sysPrxForUser import: [sys_lwcond_destroy] -> 0x77aaac
+·! LDR: **** sysPrxForUser import: [sys_lwcond_wait] -> 0x77aacc
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_get_id] -> 0x77aaec
+·! LDR: **** sysPrxForUser import: [sys_process_is_stack] -> 0x77ab0c
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_trylock] -> 0x77ab2c
+·! LDR: **** sysPrxForUser import: [sys_lwcond_create] -> 0x77ab4c
+·! LDR: **** sysPrxForUser import: [sys_lwcond_signal_all] -> 0x77ab6c
+·! LDR: **** sysPrxForUser import: [sys_lwcond_signal] -> 0x77ab8c
+
+·! LDR: ** Imported module 'sys_fs' (0x0, 0x0)
+·! LDR: **** sys_fs import: [cellFsClose] -> 0x77a12c
+·! LDR: **** sys_fs import: [cellFsOpendir] -> 0x77a14c
+·! LDR: **** sys_fs import: [cellFsRead] -> 0x77a16c
+·! LDR: **** sys_fs import: [cellFsOpen] -> 0x77a18c
+·! LDR: **** sys_fs import: [cellFsStat] -> 0x77a1ac
+·! LDR: **** sys_fs import: [cellFsUnlink] -> 0x77a1cc
+·! LDR: **** sys_fs import: [cellFsGetDirectoryEntries] -> 0x77a1ec
+·! LDR: **** sys_fs import: [cellFsMkdir] -> 0x77a20c
+·! LDR: **** sys_fs import: [cellFsWrite] -> 0x77a22c
+·! LDR: **** sys_fs import: [cellFsFstat] -> 0x77a24c
+·! LDR: **** sys_fs import: [cellFsClosedir] -> 0x77a26c
+·! LDR: **** sys_fs import: [cellFsRmdir] -> 0x77abac
+·! LDR: **** sys_fs import: [cellFsReaddir] -> 0x77abcc
+·! LDR: **** sys_fs import: [cellFsFsync] -> 0x77abec
+·! LDR: **** sys_fs import: [cellFsLseek] -> 0x77ac0c
+
+·! LDR: ** Imported module 'sys_io' (0x0, 0x0)
+·! LDR: **** sys_io import: [cellPadInfoPressMode] -> 0x77a28c
+·! LDR: **** sys_io import: [cellPadInit] -> 0x77a2ac
+·! LDR: **** sys_io import: [cellPadGetInfo] -> 0x77a2cc
+·! LDR: **** sys_io import: [cellPadEnd] -> 0x77a2ec
+·! LDR: **** sys_io import: [cellPadInfoSensorMode] -> 0x77a30c
+·! LDR: **** sys_io import: [cellPadGetData] -> 0x77a32c
+·! LDR: **** sys_io import: [cellPadSetSensorMode] -> 0x77a34c
+·! LDR: **** sys_io import: [cellPadSetActDirect] -> 0x77a36c
+·! LDR: **** sys_io import: [cellPadSetPressMode] -> 0x77a38c
+
+·! LDR: ** Imported module 'cellGcmSys' (0x0, 0x0)
+·! LDR: **** cellGcmSys import: [cellGcmGetTiledPitchSize] -> 0x77a3ac
+·! LDR: **** cellGcmSys import: [_cellGcmInitBody] -> 0x77a3cc
+·! LDR: **** cellGcmSys import: [_cellGcmSetFlipCommand] -> 0x77a3ec
+·! LDR: **** cellGcmSys import: [cellGcmAddressToOffset] -> 0x77a40c
+·! LDR: **** cellGcmSys import: [_cellGcmFunc15] -> 0x77a42c
+·! LDR: **** cellGcmSys import: [cellGcmSetFlipMode] -> 0x77a44c
+·! LDR: **** cellGcmSys import: [cellGcmMapEaIoAddress] -> 0x77a46c
+·! LDR: **** cellGcmSys import: [cellGcmSetDisplayBuffer] -> 0x77a48c
+·! LDR: **** cellGcmSys import: [cellGcmGetControlRegister] -> 0x77a4ac
+·! LDR: **** cellGcmSys import: [cellGcmSetVBlankHandler] -> 0x77a4cc
+·! LDR: **** cellGcmSys import: [cellGcmSetTile] -> 0x77a4ec
+·! LDR: **** cellGcmSys import: [cellGcmSetZcull] -> 0x77a50c
+·! LDR: **** cellGcmSys import: [cellGcmGetConfiguration] -> 0x77a52c
+·! LDR: **** cellGcmSys import: [cellGcmGetLabelAddress] -> 0x77a54c
+
+·! LDR: ** Imported module 'cellAudio' (0x0, 0x0)
+·! LDR: **** cellAudio import: [cellAudioInit] -> 0x77a56c
+·! LDR: **** cellAudio import: [cellAudioQuit] -> 0x77a58c
+·! LDR: **** cellAudio import: [cellAudioPortClose] -> 0x77ac2c
+·! LDR: **** cellAudio import: [cellAudioPortStop] -> 0x77ac4c
+·! LDR: **** cellAudio import: [cellAudioGetPortConfig] -> 0x77ac6c
+·! LDR: **** cellAudio import: [cellAudioPortStart] -> 0x77ac8c
+·! LDR: **** cellAudio import: [cellAudioPortOpen] -> 0x77acac
+
+·! LDR: ** Imported module 'cellSysutil' (0x0, 0x0)
+·! LDR: **** cellSysutil import: [cellVideoOutConfigure] -> 0x77a5ac
+·! LDR: **** cellSysutil import: [cellSysutilCheckCallback] -> 0x77a5cc
+·! LDR: **** cellSysutil import: [cellSaveDataListLoad2] -> 0x77a5ec
+·! LDR: **** cellSysutil import: [cellSaveDataListAutoLoad] -> 0x77a60c
+·! LDR: **** cellSysutil import: [cellSaveDataListSave2] -> 0x77a62c
+·! LDR: **** cellSysutil import: [cellSysutilGetSystemParamInt] -> 0x77a64c
+·! LDR: **** cellSysutil import: [cellAudioOutConfigure] -> 0x77a66c
+·! LDR: **** cellSysutil import: [cellSaveDataListAutoSave] -> 0x77a68c
+·! LDR: **** cellSysutil import: [cellWebBrowserEstimate2] -> 0x77a6ac
+·! LDR: **** cellSysutil import: [cellWebBrowserInitialize] -> 0x77a6cc
+·! LDR: **** cellSysutil import: [cellWebBrowserConfig2] -> 0x77a6ec
+·! LDR: **** cellSysutil import: [cellVideoOutGetState] -> 0x77a70c
+·! LDR: **** cellSysutil import: [cellHddGameCheck] -> 0x77a72c
+·! LDR: **** cellSysutil import: [cellWebBrowserShutdown] -> 0x77a74c
+·! LDR: **** cellSysutil import: [cellSysutilRegisterCallback] -> 0x77a76c
+·! LDR: **** cellSysutil import: [cellVideoOutGetResolutionAvailability] -> 0x77a78c
+·! LDR: **** cellSysutil import: [cellWebBrowserCreate2] -> 0x77a7ac
+·! LDR: **** cellSysutil import: [cellDiscGameGetBootDiscInfo] -> 0x77a7cc
+·! LDR: **** cellSysutil import: [cellAudioOutGetSoundAvailability] -> 0x77a7ec
+·! LDR: **** cellSysutil import: [cellGameDataCheckCreate2] -> 0x77a80c
+·! LDR: **** cellSysutil import: [cellWebBrowserConfigSetFunction2] -> 0x77a82c
+·! LDR: **** cellSysutil import: [cellVideoOutGetResolution] -> 0x77a84c
+·! LDR: **** cellSysutil import: [cellWebBrowserDestroy2] -> 0x77a86c
+·! LDR: **** cellSysutil import: [cellSaveDataDelete2] -> 0x77a88c
+
+·! LDR: ** Imported module 'cellSysmodule' (0x0, 0x0)
+·! LDR: **** cellSysmodule import: [cellSysmoduleUnloadModule] -> 0x77a8ac
+·! LDR: **** cellSysmodule import: [cellSysmoduleLoadModule] -> 0x77a8cc
+·! LDR: **** cellSysmodule import: [cellSysmoduleInitialize] -> 0x77a8ec
+
+·! LDR: ** Imported module 'cellSpurs' (0x0, 0x0)
+·! LDR: **** cellSpurs import: [_cellSpursTasksetAttributeInitialize] -> 0x77a90c
+·! LDR: **** cellSpurs import: [cellSpursEventFlagDetachLv2EventQueue] -> 0x77a92c
+·! LDR: **** cellSpurs import: [cellSpursEventFlagWait] -> 0x77a94c
+·! LDR: **** cellSpurs import: [cellSpursEventFlagClear] -> 0x77a96c
+·! LDR: **** cellSpurs import: [_cellSpursEventFlagInitialize] -> 0x77a98c
+·! LDR: **** cellSpurs import: [cellSpursTasksetAttributeSetName] -> 0x77a9ac
+·! LDR: **** cellSpurs import: [cellSpursEventFlagAttachLv2EventQueue] -> 0x77a9cc
+·! LDR: **** cellSpurs import: [_cellSpursAttributeInitialize] -> 0x77a9ec
+·! LDR: **** cellSpurs import: [cellSpursJoinTaskset] -> 0x77aa0c
+·! LDR: **** cellSpurs import: [cellSpursShutdownTaskset] -> 0x77aa2c
+·! LDR: **** cellSpurs import: [cellSpursInitializeWithAttribute] -> 0x77aa4c
+·! LDR: **** cellSpurs import: [cellSpursCreateTasksetWithAttribute] -> 0x77aa6c
+·! LDR: **** cellSpurs import: [cellSpursFinalize] -> 0x77aa8c
+·! LDR: **** cellSpurs import: [_cellSpursLFQueueInitialize] -> 0x77accc
+·! LDR: **** cellSpurs import: [cellSpursLFQueueAttachLv2EventQueue] -> 0x77acec
+·! LDR: **** cellSpurs import: [cellSpursRequestIdleSpu] -> 0x77ad0c
+·! LDR: **** cellSpurs import: [cellSpursGetInfo] -> 0x77ad2c
+·! LDR: **** cellSpurs import: [cellSpursWorkloadAttributeSetName] -> 0x77ad4c
+·! LDR: **** cellSpurs import: [cellSpursDetachLv2EventQueue] -> 0x77ad6c
+·! LDR: **** cellSpurs import: [cellSpursRemoveWorkload] -> 0x77ad8c
+·! LDR: **** cellSpurs import: [cellSpursWaitForWorkloadShutdown] -> 0x77adac
+·! LDR: **** cellSpurs import: [cellSpursLFQueueDetachLv2EventQueue] -> 0x77adcc
+·! LDR: **** cellSpurs import: [cellSpursSetPriorities] -> 0x77adec
+·! LDR: **** cellSpurs import: [_cellSpursLFQueuePushBody] -> 0x77ae0c
+·! LDR: **** cellSpurs import: [cellSpursShutdownWorkload] -> 0x77ae2c
+·! LDR: **** cellSpurs import: [cellSpursAttachLv2EventQueue] -> 0x77ae4c
+·! LDR: **** cellSpurs import: [cellSpursCreateTask] -> 0x77ae6c
+·! LDR: **** cellSpurs import: [cellSpursAddWorkloadWithAttribute] -> 0x77ae8c
+·! LDR: **** cellSpurs import: [cellSpursSetExceptionEventHandler] -> 0x77aeac
+·! LDR: **** cellSpurs import: [_cellSpursWorkloadAttributeInitialize] -> 0x77aecc
+·! LDR: **** cellSpurs import: [cellSpursReadyCountStore] -> 0x77aeec
+
+·! LDR: ** Imported module 'cellSync' (0x0, 0x0)
+·! LDR: **** cellSync import: [cellSyncLFQueueGetDirection] -> 0x77af0c
