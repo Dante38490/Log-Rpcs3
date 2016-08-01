@@ -1,0 +1,229 @@
+﻿·! LDR: Title: Railfan
+·! LDR: Serial: BLJM60013
+
+  Load libraries:
+    - libfont.sprx
+    - libfontFT.sprx
+    - libfreetype.sprx
+    - libfreetypeTT.sprx
+    - libpamf.sprx
+    - libpngdec.sprx
+    - libresc.sprx
+    - librtc.sprx
+    - libsmvd2.sprx
+    - libsre.sprx
+    - libvdec.sprx
+
+·! LDR: ** Imported module 'cellFont' (0x0, 0x0)
+·! LDR: **** cellFont import: [cellFontCreateRenderer] -> 0x14cb5c
+·! LDR: **** cellFont import: [cellFontGetHorizontalLayout] -> 0x14cb7c
+·! LDR: **** cellFont import: [cellFontDestroyRenderer] -> 0x14cb9c
+·! LDR: **** cellFont import: [cellFontSetupRenderScalePixel] -> 0x14cbbc
+·! LDR: **** cellFont import: [cellFontSetEffectWeight] -> 0x14cbdc
+·! LDR: **** cellFont import: [cellFontOpenFontInstance] -> 0x14cbfc
+·! LDR: **** cellFont import: [cellFontSetScalePixel] -> 0x14cc1c
+·! LDR: **** cellFont import: [cellFontEndLibrary] -> 0x14cc3c
+·! LDR: **** cellFont import: [cellFontBindRenderer] -> 0x14cc5c
+·! LDR: **** cellFont import: [cellFontEnd] -> 0x14cc7c
+·! LDR: **** cellFont import: [cellFontRenderCharGlyphImage] -> 0x14cc9c
+·! LDR: **** cellFont import: [cellFontRenderSurfaceInit] -> 0x14ccbc
+·! LDR: **** cellFont import: [cellFontOpenFontset] -> 0x14ccdc
+·! LDR: **** cellFont import: [cellFontCloseFont] -> 0x14ccfc
+·! LDR: **** cellFont import: [cellFontRenderSurfaceSetScissor] -> 0x14cd1c
+·! LDR: **** cellFont import: [cellFontGetCharGlyphMetrics] -> 0x14cd3c
+·! LDR: **** cellFont import: [cellFontInitializeWithRevision] -> 0x14cd5c
+·! LDR: **** cellFont import: [cellFontUnbindRenderer] -> 0x14cd7c
+·! LDR: **** cellFont import: [cellFontSetResolutionDpi] -> 0x14cd9c
+
+·! LDR: ** Imported module 'cellFontFT' (0x0, 0x0)
+·! LDR: **** cellFontFT import: [cellFontInitLibraryFreeTypeWithRevision] -> 0x14cdbc
+
+·! LDR: ** Imported module 'cellResc' (0x0, 0x0)
+·! LDR: **** cellResc import: [cellRescGcmSurface2RescSrc] -> 0x14cddc
+·! LDR: **** cellResc import: [cellRescSetWaitFlip] -> 0x14cdfc
+·! LDR: **** cellResc import: [cellRescSetDsts] -> 0x14ce1c
+·! LDR: **** cellResc import: [cellRescResetFlipStatus] -> 0x14ce3c
+·! LDR: **** cellResc import: [cellRescSetDisplayMode] -> 0x14ce5c
+·! LDR: **** cellResc import: [cellRescSetConvertAndFlip] -> 0x14ce7c
+·! LDR: **** cellResc import: [cellRescExit] -> 0x14ce9c
+·! LDR: **** cellResc import: [cellRescSetFlipHandler] -> 0x14cebc
+·! LDR: **** cellResc import: [cellRescInit] -> 0x14cedc
+·! LDR: **** cellResc import: [cellRescGetBufferSize] -> 0x14cefc
+·! LDR: **** cellResc import: [cellRescSetSrc] -> 0x14cf1c
+·! LDR: **** cellResc import: [cellRescSetBufferAddress] -> 0x14cf3c
+·! LDR: **** cellResc import: [cellRescGetFlipStatus] -> 0x14cf5c
+·! LDR: **** cellResc import: [cellRescVideoOutResolutionId2RescBufferMode] -> 0x14cf7c
+
+·! LDR: ** Imported module 'cellRtc' (0x0, 0x0)
+·! LDR: **** cellRtc import: [cellRtcGetCurrentClockLocalTime] -> 0x14cf9c
+
+·! LDR: ** Imported module 'cellVpost' (0x0, 0x0)
+·! LDR: **** cellVpost import: [cellVpostClose] -> 0x14cfbc
+·! LDR: **** cellVpost import: [cellVpostQueryAttr] -> 0x14cfdc
+·! LDR: **** cellVpost import: [cellVpostExec] -> 0x14cffc
+·! LDR: **** cellVpost import: [cellVpostOpen] -> 0x14d01c
+
+·! LDR: ** Imported module 'cellAdec' (0x0, 0x0)
+·! LDR: **** cellAdec import: [cellAdecDecodeAu] -> 0x14d03c
+·! LDR: **** cellAdec import: [cellAdecStartSeq] -> 0x14d05c
+·! LDR: **** cellAdec import: [cellAdecQueryAttr] -> 0x14d07c
+·! LDR: **** cellAdec import: [cellAdecClose] -> 0x14d09c
+·! LDR: **** cellAdec import: [cellAdecGetPcm] -> 0x14d0bc
+·! LDR: **** cellAdec import: [cellAdecGetPcmItem] -> 0x14d0dc
+·! LDR: **** cellAdec import: [cellAdecOpen] -> 0x14d0fc
+·! LDR: **** cellAdec import: [cellAdecEndSeq] -> 0x14d11c
+
+·! LDR: ** Imported module 'cellDmux' (0x0, 0x0)
+·! LDR: **** cellDmux import: [cellDmuxQueryEsAttr] -> 0x14d13c
+·! LDR: **** cellDmux import: [cellDmuxSetStream] -> 0x14d15c
+·! LDR: **** cellDmux import: [cellDmuxDisableEs] -> 0x14d17c
+·! LDR: **** cellDmux import: [cellDmuxResetEs] -> 0x14d19c
+·! LDR: **** cellDmux import: [cellDmuxReleaseAu] -> 0x14d1bc
+·! LDR: **** cellDmux import: [cellDmuxGetAu] -> 0x14d1dc
+·! LDR: **** cellDmux import: [cellDmuxResetStream] -> 0x14d1fc
+·! LDR: **** cellDmux import: [cellDmuxOpen] -> 0x14d21c
+·! LDR: **** cellDmux import: [cellDmuxEnableEs] -> 0x14d23c
+·! LDR: **** cellDmux import: [cellDmuxClose] -> 0x14d25c
+·! LDR: **** cellDmux import: [cellDmuxQueryAttr] -> 0x14d27c
+·! LDR: **** cellDmux import: [cellDmuxFlushEs] -> 0x14d29c
+
+·! LDR: ** Imported module 'cellPamf' (0x0, 0x0)
+·! LDR: **** cellPamf import: [cellPamfStreamTypeToEsFilterId] -> 0x14d2bc
+·! LDR: **** cellPamf import: [cellPamfReaderSetStreamWithTypeAndIndex] -> 0x14d2dc
+·! LDR: **** cellPamf import: [cellPamfGetStreamOffsetAndSize] -> 0x14d2fc
+·! LDR: **** cellPamf import: [cellPamfReaderGetStreamInfo] -> 0x14d31c
+·! LDR: **** cellPamf import: [cellPamfReaderGetStreamTypeAndChannel] -> 0x14d33c
+·! LDR: **** cellPamf import: [cellPamfReaderInitialize] -> 0x14d35c
+·! LDR: **** cellPamf import: [cellPamfGetHeaderSize] -> 0x14d37c
+·! LDR: **** cellPamf import: [cellPamfReaderGetNumberOfSpecificStreams] -> 0x14d39c
+
+·! LDR: ** Imported module 'cellUsbd' (0x0, 0x0)
+·! LDR: **** cellUsbd import: [cellUsbdInterruptTransfer] -> 0x14d3bc
+·! LDR: **** cellUsbd import: [cellUsbdOpenPipe] -> 0x14d3dc
+·! LDR: **** cellUsbd import: [cellUsbdScanStaticDescriptor] -> 0x14d3fc
+·! LDR: **** cellUsbd import: [cellUsbdRegisterLdd] -> 0x14d41c
+·! LDR: **** cellUsbd import: [cellUsbdEnd] -> 0x14d43c
+·! LDR: **** cellUsbd import: [cellUsbdUnregisterLdd] -> 0x14d45c
+·! LDR: **** cellUsbd import: [cellUsbdControlTransfer] -> 0x14d47c
+·! LDR: **** cellUsbd import: [cellUsbdInit] -> 0x14d49c
+
+·! LDR: ** Imported module 'cellGcmSys' (0x0, 0x0)
+·! LDR: **** cellGcmSys import: [cellGcmGetTiledPitchSize] -> 0x14d4bc
+·! LDR: **** cellGcmSys import: [_cellGcmInitBody] -> 0x14d4dc
+·! LDR: **** cellGcmSys import: [cellGcmAddressToOffset] -> 0x14d4fc
+·! LDR: **** cellGcmSys import: [_cellGcmFunc15] -> 0x14d51c
+·! LDR: **** cellGcmSys import: [cellGcmSetFlipMode] -> 0x14d53c
+·! LDR: **** cellGcmSys import: [cellGcmGetFlipStatus] -> 0x14d55c
+·! LDR: **** cellGcmSys import: [cellGcmSetWaitFlip] -> 0x14d57c
+·! LDR: **** cellGcmSys import: [cellGcmMapMainMemory] -> 0x14d59c
+·! LDR: **** cellGcmSys import: [cellGcmSetFlipHandler] -> 0x14d5bc
+·! LDR: **** cellGcmSys import: [cellGcmSetDisplayBuffer] -> 0x14d5dc
+·! LDR: **** cellGcmSys import: [cellGcmGetControlRegister] -> 0x14d5fc
+·! LDR: **** cellGcmSys import: [cellGcmResetFlipStatus] -> 0x14d61c
+·! LDR: **** cellGcmSys import: [cellGcmSetTile] -> 0x14d63c
+·! LDR: **** cellGcmSys import: [cellGcmSetZcull] -> 0x14d65c
+·! LDR: **** cellGcmSys import: [cellGcmSetFlip] -> 0x14d67c
+·! LDR: **** cellGcmSys import: [cellGcmGetConfiguration] -> 0x14d69c
+·! LDR: **** cellGcmSys import: [cellGcmGetLabelAddress] -> 0x14d6bc
+
+·! LDR: ** Imported module 'cellSysmodule' (0x0, 0x0)
+·! LDR: **** cellSysmodule import: [cellSysmoduleUnloadModule] -> 0x14d6dc
+·! LDR: **** cellSysmodule import: [cellSysmoduleLoadModule] -> 0x14d6fc
+·! LDR: **** cellSysmodule import: [cellSysmoduleInitialize] -> 0x14d71c
+·! LDR: **** cellSysmodule import: [cellSysmoduleFinalize] -> 0x14d73c
+
+·! LDR: ** Imported module 'cellSysutil' (0x0, 0x0)
+·! LDR: **** cellSysutil import: [cellSysutilUnregisterCallback] -> 0x14d75c
+·! LDR: **** cellSysutil import: [cellVideoOutConfigure] -> 0x14d77c
+·! LDR: **** cellSysutil import: [cellSysutilCheckCallback] -> 0x14d79c
+·! LDR: **** cellSysutil import: [cellSaveDataListSave] -> 0x14d7bc
+·! LDR: **** cellSysutil import: [cellSysutilGetSystemParamInt] -> 0x14d7dc
+·! LDR: **** cellSysutil import: [cellSaveDataFixedSave] -> 0x14d7fc
+·! LDR: **** cellSysutil import: [cellAudioOutConfigure] -> 0x14d81c
+·! LDR: **** cellSysutil import: [cellSaveDataFixedLoad] -> 0x14d83c
+·! LDR: **** cellSysutil import: [cellVideoOutGetState] -> 0x14d85c
+·! LDR: **** cellSysutil import: [cellSysutilRegisterCallback] -> 0x14d87c
+·! LDR: **** cellSysutil import: [cellSaveDataDelete] -> 0x14d89c
+·! LDR: **** cellSysutil import: [cellAudioOutGetSoundAvailability] -> 0x14d8bc
+·! LDR: **** cellSysutil import: [cellAudioOutSetCopyControl] -> 0x14d8dc
+·! LDR: **** cellSysutil import: [cellVideoOutGetResolution] -> 0x14d8fc
+·! LDR: **** cellSysutil import: [cellSaveDataListLoad] -> 0x14d91c
+
+·! LDR: ** Imported module 'cellAudio' (0x0, 0x0)
+·! LDR: **** cellAudio import: [cellAudioInit] -> 0x14d93c
+·! LDR: **** cellAudio import: [cellAudioSetNotifyEventQueue] -> 0x14d95c
+·! LDR: **** cellAudio import: [cellAudioGetPortTimestamp] -> 0x14d97c
+·! LDR: **** cellAudio import: [cellAudioPortClose] -> 0x14d99c
+·! LDR: **** cellAudio import: [cellAudioPortStop] -> 0x14d9bc
+·! LDR: **** cellAudio import: [cellAudioGetPortConfig] -> 0x14d9dc
+·! LDR: **** cellAudio import: [cellAudioPortStart] -> 0x14d9fc
+·! LDR: **** cellAudio import: [cellAudioQuit] -> 0x14da1c
+·! LDR: **** cellAudio import: [cellAudioPortOpen] -> 0x14da3c
+·! LDR: **** cellAudio import: [cellAudioGetPortBlockTag] -> 0x14da5c
+·! LDR: **** cellAudio import: [cellAudioRemoveNotifyEventQueue] -> 0x14da7c
+
+·! LDR: ** Imported module 'sys_fs' (0x0, 0x0)
+·! LDR: **** sys_fs import: [cellFsClose] -> 0x14da9c
+·! LDR: **** sys_fs import: [cellFsRead] -> 0x14dabc
+·! LDR: **** sys_fs import: [cellFsOpen] -> 0x14dadc
+·! LDR: **** sys_fs import: [cellFsLseek] -> 0x14dafc
+·! LDR: **** sys_fs import: [cellFsWrite] -> 0x14db1c
+·! LDR: **** sys_fs import: [cellFsFstat] -> 0x14db3c
+
+·! LDR: ** Imported module 'libvdec' (0x0, 0x0)
+·! LDR: **** libvdec import: [cellVdecClose] -> 0x14db5c
+·! LDR: **** libvdec import: [cellVdecGetPicItem] -> 0x14db7c
+·! LDR: **** libvdec import: [cellVdecDecodeAu] -> 0x14db9c
+·! LDR: **** libvdec import: [cellVdecGetPicture] -> 0x14dbbc
+·! LDR: **** libvdec import: [cellVdecEndSeq] -> 0x14dbdc
+·! LDR: **** libvdec import: [cellVdecOpen] -> 0x14dbfc
+·! LDR: **** libvdec import: [cellVdecStartSeq] -> 0x14dc1c
+·! LDR: **** libvdec import: [cellVdecQueryAttr] -> 0x14dc3c
+
+·! LDR: ** Imported module 'sys_io' (0x0, 0x0)
+·! LDR: **** sys_io import: [cellPadInfoPressMode] -> 0x14dc5c
+·! LDR: **** sys_io import: [cellPadInit] -> 0x14dc7c
+·! LDR: **** sys_io import: [cellKbClearBuf] -> 0x14dc9c
+·! LDR: **** sys_io import: [cellKbGetInfo] -> 0x14dcbc
+·! LDR: **** sys_io import: [cellMouseGetData] -> 0x14dcdc
+·! LDR: **** sys_io import: [cellPadGetInfo] -> 0x14dcfc
+·! LDR: **** sys_io import: [cellPadGetRawData] -> 0x14dd1c
+·! LDR: **** sys_io import: [cellKbInit] -> 0x14dd3c
+·! LDR: **** sys_io import: [cellPadEnd] -> 0x14dd5c
+·! LDR: **** sys_io import: [cellMouseGetInfo] -> 0x14dd7c
+·! LDR: **** sys_io import: [cellPadInfoSensorMode] -> 0x14dd9c
+·! LDR: **** sys_io import: [cellPadGetData] -> 0x14ddbc
+·! LDR: **** sys_io import: [cellPadSetSensorMode] -> 0x14dddc
+·! LDR: **** sys_io import: [cellKbEnd] -> 0x14ddfc
+·! LDR: **** sys_io import: [cellMouseInit] -> 0x14de1c
+·! LDR: **** sys_io import: [cellMouseEnd] -> 0x14de3c
+·! LDR: **** sys_io import: [cellPadSetPressMode] -> 0x14de5c
+·! LDR: **** sys_io import: [cellKbRead] -> 0x14de7c
+
+·! LDR: ** Imported module 'cellPngDec' (0x0, 0x0)
+·! LDR: **** cellPngDec import: [cellPngDecCreate] -> 0x14de9c
+·! LDR: **** cellPngDec import: [cellPngDecDecodeData] -> 0x14debc
+·! LDR: **** cellPngDec import: [cellPngDecClose] -> 0x14dedc
+·! LDR: **** cellPngDec import: [cellPngDecDestroy] -> 0x14defc
+·! LDR: **** cellPngDec import: [cellPngDecReadHeader] -> 0x14df1c
+·! LDR: **** cellPngDec import: [cellPngDecOpen] -> 0x14df3c
+·! LDR: **** cellPngDec import: [cellPngDecSetParameter] -> 0x14df5c
+
+·! LDR: ** Imported module 'sysPrxForUser' (0x0, 0x0)
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_lock] -> 0x14df7c
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_unlock] -> 0x14df9c
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_create] -> 0x14dfbc
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_create] -> 0x14dfdc
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_get_id] -> 0x14dffc
+·! LDR: **** sysPrxForUser import: [_sys_heap_malloc] -> 0x14e01c
+·! LDR: **** sysPrxForUser import: [_sys_heap_memalign] -> 0x14e03c
+·! LDR: **** sysPrxForUser import: [sys_initialize_tls] -> 0x14e05c
+·! LDR: **** sysPrxForUser import: [sys_time_get_system_time] -> 0x14e07c
+·! LDR: **** sysPrxForUser import: [_sys_heap_free] -> 0x14e09c
+·! LDR: **** sysPrxForUser import: [sys_prx_exitspawn_with_level] -> 0x14e0bc
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_trylock] -> 0x14e0dc
+·! LDR: **** sysPrxForUser import: [_sys_heap_delete_heap] -> 0x14e0fc
+·! LDR: **** sysPrxForUser import: [sys_ppu_thread_exit] -> 0x14e11c
+·! LDR: **** sysPrxForUser import: [_sys_heap_create_heap] -> 0x14e13c
+·! LDR: **** sysPrxForUser import: [sys_lwmutex_destroy] -> 0x14e15c
+·! LDR: **** sysPrxForUser import: [sys_process_exit] -> 0x14e17c
